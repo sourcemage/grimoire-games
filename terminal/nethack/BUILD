@@ -47,7 +47,7 @@ sedit "s/\.Z/.gz/"  include/config.h
 sedit "s/\/\* #define DLB \*\//#define DLB/"  include/config.h
 sedit "s/\/\* #define LINUX \*\//#define LINUX/"  include/unixconf.h
 sedit "s/\/\* #define TIMED_DELAY \*\//#define TIMED_DELAY/" include/unixconf.h
-sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/lib\/games\/nethackdir/" include/config.h
+sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" include/config.h
 
 # kind of tricky, we want the first 2 remarked out before we define the
 # ones we use so we those don't get remarked out. $ marks end of line.
@@ -65,10 +65,10 @@ sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = -O2 -fomit
 sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/"  util/Makefile
 sedit "s/^VARDATND =/& x11tiles pet_mark.xbm rip.xpm/"  Makefile
 sedit "s/= bin/= games/" Makefile
-sedit "s/PREFIX	 = \/usr/PREFIX =\/usr\/lib/" Makefile
-sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/lib\/games\/nethackdir/" Makefile
+sedit "s/PREFIX	 = \/usr/PREFIX =\/usr\/share/" Makefile
+sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" Makefile
 sedit "s/lib\/\$(GAME)/\$(GAME)/" Makefile
-sedit "s/games\/lib/lib\/games/" sys/unix/nethack.sh
+sedit "s/games\/lib/share\/games/" sys/unix/nethack.sh
 
 # here's that shell assign again, better safe than sorry.
 sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  Makefile  &&
@@ -79,7 +79,7 @@ make install                                &&
 # check POST_INSTALL for more info. 
 cd doc                                      &&
 make distrib                                &&
-cp *.txt /usr/lib/games/nethackdir          &&
+cp *.txt /usr/share/games/nethackdir        &&
 make manpages                               &&
 
 #merged from POST_INSTALL
@@ -87,22 +87,22 @@ make manpages                               &&
 if  [  !  -d  /usr/games  ]
   then  install  -d  -m  755  -g  bin  /usr/games
 fi                                          &&
-ln -s /usr/lib/games/nethack /usr/games/nethack   &&
+ln -s /usr/share/games/nethack /usr/games/nethack   &&
 
 #more X11 stuff
 
-gamedir=${INSTALL_ROOT}/usr/lib/games/nethackdir  &&
+gamedir=${INSTALL_ROOT}/usr/share/games/nethackdir  &&
 
 
 if [ "$X11" = "yes" ];then
   cd ../win/X11                               &&
-  cp nh_icon.xpm /usr/lib/games/nethackdir    &&
+  cp nh_icon.xpm /usr/share/games/nethackdir  &&
   bdftopcf -o nh10.pcf nh10.bdf               &&
   bdftopcf -o ibm.pcf ibm.bdf                 &&
-  cp *.pcf /usr/lib/games/nethackdir          &&
-  cp NetHack.ad /usr/lib/games/nethackdir     &&
-  cp nethack.rc /usr/lib/games/nethackdir     &&
-  cp Install.X11 /usr/lib/games/nethackdir    &&
+  cp *.pcf /usr/share/games/nethackdir        &&
+  cp NetHack.ad /usr/share/games/nethackdir   &&
+  cp nethack.rc /usr/share/games/nethackdir   &&
+  cp Install.X11 /usr/share/games/nethackdir  &&
   case $COPY_FILES in
   y|Y)
   for i in `cat /etc/group | grep '^games:' | cut -d: -f4 | tr ',' ' '`; do
