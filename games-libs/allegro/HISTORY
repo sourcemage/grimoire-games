@@ -1,3 +1,9 @@
+2004-11-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 4.1.16  (Bug #7593)
+	  Added BUILD_API=2
+	* BUILD: Converted to build_api 2
+	* INSTALL: Added
+
 2004-04-27 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 4.1.14
 	  Removed MAINTAINER

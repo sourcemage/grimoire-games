@@ -1,13 +1,14 @@
            SPELL=allegro
-         VERSION=4.1.14
+         VERSION=4.1.16
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/alleg/${SOURCE}
-          MD5[0]=2f186dc6540390a42a718124ac117381
+          MD5[0]=4ebff06880a9f02ce25a7fe764c60dab
         WEB_SITE=http://alleg.sourceforge.net/
          ENTERED=20020107
          UPDATED=20021025
       LICENSE[0]=PD
+       BUILD_API=2
            SHORT="Allegro is a cross-platform game library."
 cat << EOF
 Allegro is a multi-platform game library that provides many functions
