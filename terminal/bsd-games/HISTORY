@@ -1,4 +1,7 @@
 2004-03-27 Jason Flatt <jflatt@sourcemage.org>
+	* BUILD: Modified chown settings per Clément MATHIEU and bug # 6478.
+
+2004-03-27 Jason Flatt <jflatt@sourcemage.org>
 	* DETAILS: Updated to version 2.16
 
 2004-01-06 hgg <hgreig@bigpond.net.au>
