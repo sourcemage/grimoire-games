@@ -1,3 +1,12 @@
+2003-02-07  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.6.2
+
+		Changed SOURCE_URL to use GNOME_URL, as the
+		newer versions are being hosted by GNOME
+
+		Updated the dependencies to GNOME 2, gtk+2, and esound
+
 2003-01-21  Eric Sandall <eric@sandall.us>
 
 		Updated to v0.5.2 (Bug #2310)
