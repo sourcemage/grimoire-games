@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20031124
           MD5[0]=1ab6bbb4935777fd4e989000dff65b2c
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="csmash, Cannon Smash, is a 3D table tennis game."
 cat << EOF
 Cannon Smash is a 3D table-tennis game. This game represents various
