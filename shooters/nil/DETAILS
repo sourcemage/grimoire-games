@@ -1,18 +1,9 @@
            SPELL=nil
-if [ "$CVS" = "yes" ] ; then
-         VERSION=cvsroot 
-  FORCE_DOWNLOAD=1
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://cvs.sourceforge.net/cvstarballs/$SOURCE
-          MD5[0]="ignore"                         
-else
          VERSION=20040123
           SOURCE=$SPELL-cvs-backup-$VERSION-1600.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
           MD5[0]=2cefc1890024770d40c5e1cbacc23954
-fi
         WEB_SITE=http://nil.sf.net
          ENTERED=20040529
          UPDATED=20040529
