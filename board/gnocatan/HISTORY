@@ -1,3 +1,12 @@
+2003-10-23 Eric Sandall <eric@sandall.us>
+	* BUILD: After hearing people talking about this on
+	IRC, I figured I'd try it, but what do I find?  It
+	doesn't even run (segfaults) because it can't find
+	it's pixmaps, which got installed to /usr/share/games/pixmaps,
+	and the game itself got installed to /usr/share/games/games,
+	so, I figured I'd fix it so I could try it, but now it's time
+	for class, so adieu.
+
 2003-10-16 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: updated to 0.8.0.0
 	added DOCS so it doesn't install the manpages twice
