@@ -1,4 +1,4 @@
-depends  tiff    &&
-depends  esound  &&
-depends  gtkglarea  &&
-depends  gnome-libs
+depends  gnome-libs  &&
+depends  tiff        &&
+depends  esound      &&
+depends  gtkglarea
