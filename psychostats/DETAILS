@@ -2,7 +2,8 @@
          VERSION=1.9.1
           SOURCE=${SPELL}${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
-   SOURCE_URL[0]=ftp://ftp.thaiguy.net/${SOURCE}
+   SOURCE_URL[0]=http://www.psychostats.com/download/${SPELL}/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.thaiguy.net/${SOURCE}
           MD5[0]=bce3ad9f96d4b44ce769093f8a3084ea
         WEB_SITE=http://www.psychostats.com
       LICENSE[0]=UNKNOWN
