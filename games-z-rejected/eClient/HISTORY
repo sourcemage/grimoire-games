@@ -1,3 +1,6 @@
-2003-09-20  Eric Sandall <eric@sandall.us>
+2003-11-01 Eric Sandall <eric@sandall.us>
+    * DEPENDS: Changed requires to depends, and uppercase
 
-		Created spell
+2003-09-20 Eric Sandall <eric@sandall.us>
+	* Created spell
+

@@ -1,3 +1,2 @@
-requires  x11-libs  &&
-
+depends  X11-LIBS  &&
 depends  gcc2
