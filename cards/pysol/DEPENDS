@@ -1,3 +1,5 @@
+depends  tk      &&
+message  "${MESSAGE_COLOR}Needs python built against tk${DEFAULT_COLOR}"  &&
 depends  python  &&
 
 if  [  "$PYSOL_SOUND"  =  "y"  ];  then

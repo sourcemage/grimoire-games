@@ -1,3 +1,6 @@
+2005-03-29 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Needs tk and python built against tk
+
 2005-03-04 Eric Sandall <eric@sandall.us>
 	* Thought process that lead to this thanks to Ben Ford :)
 	* PREPARE: Don't use persistent_add for versions ;)
@@ -15,9 +18,10 @@
 	* pysol: Added wrapper script
 
 2005-01-19 Eric Sandall <eric@sandall.us>
-	* Thanks to http://www.fedoraforum.org/forum/archive/index.php/t-2543.html
-	  I've found the pysol source files (Markus no longer distributes, or even
-	  works on, PySol) in pysol-devel from http://www.btree.org/linux/packages/fedora/core/2/i386/pysol-devel-4.82-2.noarch.rpm
+	* Thanks to
+	  http://www.fedoraforum.org/forum/archive/index.php/t-2543.html
+	  I've found the pysol source files (Markus no longer distributes, or
+	  even works on, PySol) in pysol-devel from http://www.btree.org/linux/packages/fedora/core/2/i386/pysol-devel-4.82-2.noarch.rpm
 	* pysol-compile.sh: Grabbed and modified from 
 	  http://www.gophernet.org/projects/pysol-compile.sh
 	* DETAILS: Added BUILD_API=2
@@ -60,7 +64,8 @@
 	* New Games grimoire is born!
 
 2003-05-25 hgg <hgreig@bigpond.net.au>
-	* DETAILS: temporarily changed to SOURCE_URL as authors server not uptodate
+	* DETAILS: temporarily changed to SOURCE_URL as authors server not
+	  uptodate
 
 2002-08-24 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated version to 4.81
