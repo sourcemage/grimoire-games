@@ -1,5 +1,5 @@
 depends  SDL        &&
 depends  SDL_image  &&
 if  [  -n  "$KOBO_OGL"  ];  then
-  depends  glut
+  depends  GLUT
 fi

@@ -1,2 +1,2 @@
-depends  plib  &&
-depends  glut
+depends  GLUT  &&
+depends  plib

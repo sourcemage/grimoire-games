@@ -1,3 +1,7 @@
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
+
 2003-12-01 hgg <hgreig@bigpond.net.au>
 	* BUILD: pm bug 4944, adding mkdir -p /usr/games 
 
@@ -6,3 +10,4 @@
 
 2003-06-10 hgg <hgreig@bigpond.net.au>
 	* Added spell to grimoire afte updating to 1.1.0
+

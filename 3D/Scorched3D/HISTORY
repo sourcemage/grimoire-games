@@ -1,7 +1,10 @@
-2003-08-02  hgg <hgreig@bigond.net.au>
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
 
-		Add to games grimoire
+2003-08-02 hgg <hgreig@bigond.net.au>
+	* Add to games grimoire
 
-2003-08-02  Arwed v. Merkatz <v.merkatz@gmx.net>
+2003-08-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* created the spell
 
-		created the spell

@@ -1,7 +1,10 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
 
-2002-12-11  Arwed v. Merkatz <v.merkatz@gmx.net>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Created this spell
+2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell
+

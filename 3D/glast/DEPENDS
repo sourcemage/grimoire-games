@@ -1,4 +1,4 @@
-depends  glut       &&
+depends  GLUT       &&
 depends  SDL        &&
 depends  SDL_image  &&
 depends  SDL_mixer

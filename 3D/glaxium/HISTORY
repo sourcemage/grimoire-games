@@ -1,77 +1,58 @@
-2003-07-09  hgg <hgreig@bigpond.net.au>
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
 
-		Add CONFLICTS for NVIDIA_headers
+2003-07-09 hgg <hgreig@bigpond.net.au>
+	* CONFLICTS: Add CONFLICTS for NVIDIA_headers
+	* BUILD: Add sedit for libpng ld problem
 
-		Add sedit for libpng ld problem
-
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-18  hgg  <hgreig@bigpond.net.au>
-		
-		Milestone glaxium builds!!!!!
-		Added CFLAGS to Build to overcome failure with xfree86 headers
-		Many thanks to rycee for this fix
+2003-05-18 hgg <hgreig@bigpond.net.au>
+	* Milestone glaxium builds!!!!!
+	* BUILD: Added CFLAGS to Build to overcome failure with xfree86 headers
+	Many thanks to rycee for this fix
 
-2003-05-09  hgg  <hgreig@bigpond.net.au>
+2003-05-09 hgg <hgreig@bigpond.net.au>
+	* Update spell as current xfree86 has GL extension headers
+	Glaxium still won't compile with any headers though.
 
-		Update spell as current xfree86 has GL extension headers
-		Glaxium still won't compile with any headers though.
+2003-01-31 Eric Sandall <eric@sandall.us>
+	Fixed Bug #2443
 
-2003-01-31  Eric Sandall <eric@sandall.us>
+2002-10-23 Eric Sandall <eric@sandall.us>
+	Re-added Agt's mirror (he updated to 0.5)
+	Fixed a spelling error in SHORT
+	Added braces around variables
 
-		Fixed Bug #2443
+2002-10-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.5
+	* USEGCC2: Removed
+	Moved SOURCE_URL to maintainers site, as Agt's was out of date
+	Added OpenGL patch from SGI for /usr/include/GL
 
-2002-10-23  Eric Sandall <eric@sandall.us>
+2002-09-07 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* USEGCC2: Added
+	* BUILD: fixes  (fixes BUG #877)
 
-		Re-added Agt's mirror (he updated to 0.5)
+2002-09-04 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: Added MD5 and LICENSE fields
+	Changed MAINTAINER
 
-		Fixed a spelling error in SHORT
+2002-04-27 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: SOURCE_URL[0] is now more generic.
+	libpng workaround no longer necessary since 2002-04-29 (thanks
+	Unet), therefore removed.
 
-		Added braces around variables
+2002-04-26 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: http://www.multimania.com/hosxe/ went 404 therefore updated
+	SOURCE_URL[0] and WEB_SITE.
+	Added workaround for the compilation to succeed
+	(CPPFLAGS='-I/usr/include/libpng'). Added libpng to DEPENDS.
+	/usr/games is created if needed.
+	Man pages are now installed in /usr/share/man (FHS compliance).
 
-2002-10-21  Eric Sandall <eric@sandall.us>
-
-		Updated to v0.5
-
-		Removed USEGCC2, works with gcc3
-
-		Moved SOURCE_URL to maintainers site, as Agt's was out of date
-
-		Added OpenGL patch from SGI for /usr/include/GL
-
-2002-09-07  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Added USEGCC2 file
-
-		BUILD fixes  (fixes BUG #877)
-
-2002-09-04  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Added MD5 and LICENSE fields
-
-		Changed MAINTAINER
-
-2002-04-27  Jerome Zago <jerome.zago@insalien.org>
-
-		SOURCE_URL[0] is now more generic.
-
-		libpng workaround no longer necessary since 2002-04-29 (thanks
-		Unet), therefore removed.
-
-2002-04-26  Jerome Zago <jerome.zago@insalien.org>
- 
-		http://www.multimania.com/hosxe/ went 404 therefore updated
-		SOURCE_URL[0] and WEB_SITE.
-
-		Added workaround for the compilation to succeed
-		(CPPFLAGS='-I/usr/include/libpng'). Added libpng to DEPENDS.
-
-		/usr/games is created if needed.
-
-		Man pages are now installed in /usr/share/man (FHS compliance).

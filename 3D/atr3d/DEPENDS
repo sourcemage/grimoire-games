@@ -1,2 +1,2 @@
-depends openal &&
-depends glut
+depends  GLUT    &&
+depends  openal
