@@ -1,0 +1,15 @@
+           SPELL=cal3d
+         VERSION=0.8
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
+          MD5[0]=6bbad8742c5deb3d7b37e8ad48c22e59
+        WEB_SITE=http://sourceforge.net/projects/cal3d/
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=LGPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Skeletal based 3D character animation library"
+cat << EOF
+Cal3D is a skeletal based 3d character animation library written in C++ in a platform-/graphic API-independent way.
+EOF
