@@ -1,0 +1,5 @@
+2004-09-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS,DETAILS,HISTORY: minor fixes, added sdl sdl_mixer, linged up equals signs
+
+2004-09-17 abcdefg <abcdefg@solcon.nl>
+	* DEPENDS, DETAILS, HISTORY: created this spell
