@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
           MD5[0]=2634cff0a12bc13a18aeed26e3e03dfa
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
-           SHORT="Networked monopoly-like game"
+           SHORT="GTK-based Monopoly (monopd) game"
 cat << EOF
 GtkAtlantic is a Monopoly-like game
 

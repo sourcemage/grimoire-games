@@ -1,0 +1,15 @@
+           SPELL=atlantik
+         VERSION=0.5.1
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://unixcode.org/downloads/${SPELL}/${SOURCE}
+        WEB_SITE=http://unixcode.org/${SPELL}
+         ENTERED=20030108
+         UPDATED=20030108
+          MD5[0]=48d930346208a4f16a61471b5d2deba4
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="KDE-based Monopoly (monopd) front-end"
+cat << EOF
+Atlantik is the leading open-source game client for Monopoly-like board games to be played on the monopd network. Atlantik is available for computers running the KDE Desktop Environment.
+EOF
