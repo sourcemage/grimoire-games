@@ -1,3 +1,5 @@
 depends SDL	&&
 depends Python	&&
+depends autoconf	&&
+depends automake	&&
 optional_depends vorbis-tools
