@@ -6,9 +6,7 @@ depends  autoconf                &&
 depends  Python                  &&
 depends  postgresql              &&
 
-if  [  "$CVS"  =  "y"  ];  then
-  optional_depends  howl                               \
-                    ""                                 \
-                    ""                                 \
-                    "for Zeroconf networking support"
-fi
+optional_depends  howl                               \
+                  ""                                 \
+                  ""                                 \
+                  "for Zeroconf networking support"
