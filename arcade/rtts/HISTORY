@@ -1,7 +1,8 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-12-01 hgg <hgreig@bigpond.net.au>
+	* BUILD: pm bug 4944, adding mkdir -p /usr/games 
 
-2003-06-10  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Added spell to grimoire afte updating to 1.1.0
+2003-06-10 hgg <hgreig@bigpond.net.au>
+	* Added spell to grimoire afte updating to 1.1.0
