@@ -1,12 +1,12 @@
            SPELL=ClanLib
-         VERSION=0.6.3-1
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-0.6.3
-   SOURCE_URL[0]=http://clanlib.org/download/files/$SOURCE
+         VERSION=0.6.5-1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\-1/}
+   SOURCE_URL[0]=http://clanlib.org/download/files/${SOURCE}
         WEB_SITE=http://clanlib.org
          ENTERED=20011105
          UPDATED=20020827
-          MD5[0]=dfddcc6905df527c483bd78097340ca1
+          MD5[0]=c7e32ef61ee3021e8781f8eab2bdbdfb
       LICENSE[0]=LGPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Multi-Platform game development library"
