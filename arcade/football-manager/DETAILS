@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/fm-${VERSION}
          ENTERED=20030415
          UPDATED=20030415
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="Game where you are the manager of a soccer team."
 cat << EOF
 Addictive soccer manager game!
