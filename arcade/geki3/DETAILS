@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-KXL-$VERSION
       LICENCE[0]=GPL
         WEB_SITE=http://kxl.hn.org/
          ENTERED=20040420
+       BUILD_API=2
            SHORT='Geki3 is 2D horizontal scroll shooting game'
 cat << EOF
 Geki3 is 2D horizontal scroll shooting game

@@ -1,5 +1,5 @@
            SPELL=gweled
-         VERSION=0.4
+         VERSION=0.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://sebdelestaing.free.fr/$SPELL/Release/$SOURCE
@@ -7,7 +7,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040501
          UPDATED=20040501
       LICENSE[0]=GPL
-	  MD5[0]=dd86901f7ab0a2bd90b5f44a2255ee07
+	  MD5[0]=40d10ec355331ae4f078f354e12f05b9
+       BUILD_API=2
            SHORT="Gweled - Bejeweled/Diamond Mine clone for Gnome"
 cat << EOF
 Gweled is a Gnome version of a popular PalmOS/Windows/Java game
