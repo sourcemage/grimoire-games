@@ -1,15 +1,16 @@
            SPELL=glaxium
          VERSION=0.5
-          SOURCE=${SPELL}_$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_$VERSION
-   SOURCE_URL[0]=http://xhosxe.free.fr/$SPELL/$SOURCE
+          SOURCE=${SPELL}_${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
+   SOURCE_URL[0]=http://xhosxe.free.fr/${SPELL}/${SOURCE}
+   SOURCE_URL[1]=http://agt.nerim.net/mirror/sorcerer/${SOURCE}
         WEB_SITE=http://freshmeat.net/projects/glaxium/
           MD5[0]=fde2e40873a8103746ae4a41fa5c2e75
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20020426
       MAINTAINER=v.merkatz@gmx.net
-           SHORT="galxium is an OpenGL-based space-ship shoot-em-up styled game."
+           SHORT="glaxium is an OpenGL-based space-ship shoot-em-up styled game."
 cat << EOF
 Glaxium is an OpenGL-based space-ship "shoot-em-up" styled game. It is
 designed to provide the same feel as the old 2D games of that type, but

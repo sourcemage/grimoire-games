@@ -1,3 +1,11 @@
+2002-10-23  Eric Sandall <eric@sandall.us>
+
+		Re-added Agt's mirror (he updated to 0.5)
+
+		Fixed a spelling error in SHORT
+
+		Added braces around variables
+
 2002-10-21  Eric Sandall <eric@sandall.us>
 
 		Updated to v0.5
