@@ -7,8 +7,9 @@
        MAINTAINER=v.merkatz@gmx.net
            MD5[0]=a1e63e7df583176cb93833d37e9ee5f8
        LICENSE[0]=NETHACK
-         ENTERED=20020518
-         UPDATED=20020518
+          ENTERED=20020518
+          UPDATED=20020518
+       MAKE_NJOBS=1
            SHORT="glhack is an OpenGL port of the famous nethack"
 cat << EOF
 glHack is a port of the game NetHack, using hardware acceleration via OpenGL® to render the 2D graphics.  It uses LibSDL as the video and input library. 
