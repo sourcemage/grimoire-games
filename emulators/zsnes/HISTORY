@@ -5,7 +5,10 @@
 	  Added BUILD_API=2
 	* BUILD: Converted to build_api 2
 	  Run ./autogen.sh instead of ./configure now
+	  Removed TABS
 	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Removed TABS
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
