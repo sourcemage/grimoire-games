@@ -2,7 +2,7 @@
          VERSION=0.3d
           SOURCE=${SPELL}_$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_$VERSION
-   SOURCE_URL[0]=http://agt.nerim.net/mirror/sorcerer/glaxium_0.3d.tgz
+   SOURCE_URL[0]=http://agt.nerim.net/mirror/sorcerer/$SOURCE
         WEB_SITE=http://freshmeat.net/projects/glaxium/
          ENTERED=20010922
          UPDATED=20020426
