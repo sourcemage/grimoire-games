@@ -1,5 +1,7 @@
 #!/bin/sh
 # Script to correctly run FreeLords
 
-cd  /usr/share/games/freelords  &&
-./fl
+cd  /usr/share/games/freelords/bin  &&
+if [ "$1" != "-l" ]; then
+        exec ./freelords $@
+fi

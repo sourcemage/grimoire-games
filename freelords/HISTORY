@@ -1,3 +1,12 @@
+2003-02-04  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.2.0 (stable, not CVS snapshots)
+
+		Added libsigc++2, expat, and cppsocket as dependencies
+
+		Fails to find paragui, even if it's installed, so I
+		disabled the test with "--disable-paraguitest"
+
 2002-11-01  Eric Sandall <eric@sandall.us>
 
 		Updated to v20021101, and renamed VERSION

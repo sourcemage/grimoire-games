@@ -1,9 +1,9 @@
            SPELL=paragui
-         VERSION=1.0.2
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://savannah.gnu.org/download/$SPELL/$SOURCE
-          MD5[0]=a3b6d309940c18a40ad08e278bf21977
+         VERSION=1.0.3
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://savannah.gnu.org/download/${SPELL}/stable.pkg/${VERSION}/${SOURCE}
+          MD5[0]=9140ce12c6f072b8648ca28b717993a0
         WEB_SITE=http://www.paragui.org/
          ENTERED=20020826
          UPDATED=20021018

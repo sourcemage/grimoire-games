@@ -1,4 +1,7 @@
-depends  paragui    &&
-depends  SDL        &&
-depends  SDL_image  &&
-depends  Python
+depends  libsigc++2  &&
+depends  expat       &&
+depends  cppsocket   &&
+depends  SDL         &&
+depends  SDL_image   &&
+depends  Python      &&
+depends  paragui     "--disable-paraguitest"
