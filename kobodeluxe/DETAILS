@@ -2,14 +2,14 @@
           VERSION=0.4pre8
            SOURCE=KoboDeluxe-${VERSION}.tar.gz
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/KoboDeluxe-${VERSION}
-    SOURCE_URL[0]=http://www.olofson.net/skobo/download/${SOURCE}
-         WEB_SITE=http://www.olofson.net/skobo
-         ENTERED=20011219
-         UPDATED=20020110
-          MD5[0]=9488a5132177848d60b2f7ef349e77e4
-      LICENSE[0]=GPL
-      MAINTAINER=v.merkatz@gmx.net
-           SHORT="An enhanced port of the scrolling video game XKobo."
+    SOURCE_URL[0]=http://olofson.net/kobodl/download/${SOURCE}
+         WEB_SITE=http://olofson.net/kobodl/
+          ENTERED=20011219
+          UPDATED=20020110
+           MD5[0]=9488a5132177848d60b2f7ef349e77e4
+       LICENSE[0]=GPL
+       MAINTAINER=v.merkatz@gmx.net
+            SHORT="An enhanced port of the scrolling video game XKobo."
 cat << EOF
 Kobo Deluxe is a 3'rd person  scrolling 2d shooter with a simple
 and responsive control system  - which you'll need to tackle the

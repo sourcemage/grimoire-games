@@ -1,9 +1,9 @@
            SPELL=nethack
-         VERSION=3.4.0
-          SOURCE=$SPELL-340.tgz
+         VERSION=3.4.1
+          SOURCE=$SPELL-341.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.nethack.org/pub/nethack/nh340/src/$SOURCE
-          MD5[0]=ae4340a7614ae99b18c4110cddd193ed
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+          MD5[0]=5be935b470c37426b4caa69c0e181b22
         WEB_SITE=http://www.nethack.org/
          ENTERED=20020326
          UPDATED=20020326

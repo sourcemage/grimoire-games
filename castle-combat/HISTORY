@@ -1,4 +1,10 @@
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-20  hgg <hgreig@bigpond.net.au>
+
+		Update to 0.7.3
+
+		Added some sedit magic to use system headers
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 

@@ -1,10 +1,10 @@
            SPELL=castle-combat
-         VERSION=0.7.2
+         VERSION=0.7.3
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
         WEB_SITE=http://www.linux-games.com/castle-combat/
-          MD5[0]=28603118b6a45bfac1e2abc81cd235fd
+          MD5[0]=0bba93ab5502653b89dc599526a71f8a
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
          ENTERED=20010922
