@@ -1,9 +1,9 @@
            SPELL=jumpnbump
-         VERSION=1.41
+         VERSION=1.50
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.jumpbump.mine.nu/port/$SOURCE
-          MD5[0]=7442332663845f3e265c5dd05c9606e6
+          MD5[0]=6012829d9466a155b66b0a40447c8a21
         WEB_SITE=http://www.jumpbump.mine.nu/
          ENTERED=20040522
          UPDATED=20040522

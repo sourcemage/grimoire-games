@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20020828
           MD5[0]=d2abd7cbc62dd0e90dfd112ffda6e95a
       LICENSE[0]=GPL
-      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="cuyo: Tetris-like game with many surprises"
 cat << EOF
 cuyo is a Tetris-like game.  You have to try to put balls of

@@ -1,3 +1,7 @@
+2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: URL changed to the old site since that's the proper one...
+	* PROVIDES: removed even though it's a fun game....
+
 2003-11-24 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on GLUT, not glut specifically
 	* HISTORY: Formatted to Guru Handbook

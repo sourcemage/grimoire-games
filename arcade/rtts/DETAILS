@@ -1,5 +1,5 @@
            SPELL=rtts
-         VERSION=1.1.0
+         VERSION=1.1.1
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=$SPELL-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
@@ -8,13 +8,12 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
   SOURCE2_URL[0]=http://www.rtts.org/files/$SOURCE2
   SOURCE2_URL[1]=http://www.leprau.de/rtts/$SOURCE2
         WEB_SITE=http://www.rtts.org/
-          MD5[0]=82c86a63fb5c952d834cd9737c81b244
-          MD5[1]=196bf8c7fb167547d39cc5147e354b31
+          MD5[0]=feabdf38a16cbe6dafd11ed6b88c7dfc
+          MD5[1]=1ff33e5b00ad560b1c3c50c3edf04bdc
          ENTERED=20030610
          UPDATED=20030610
       LICENSE[0]=GPL
       LICENSE[1]=UNKNOWN
-      MAINTAINER=sandalle@yahoo.com
            SHORT="Return to the Shadows - Vertical scroller, originally written as a 'Raptor' clone"
 cat << EOF
 Return to the Shadows is a vertical scroller, greatly inspired by Raptor by Cygnus Studios/Apogee. It is fully supported on Windows and Linux/x86, but it should be easy to compile it on any other platform that supports SDL and OpenGL.
