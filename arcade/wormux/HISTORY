@@ -1,3 +1,6 @@
+2004-12-05 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: updated MD5
+
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update to 0.5beta4
 	* BUILD: removed from spell
