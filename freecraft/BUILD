@@ -1,7 +1,12 @@
 (
 
+  # Create game directories, if they don't exist
   if  [  !  -d  /usr/games  ]
-    then  install  -d  -m  755 -g bin  /usr/games
+    then  install  -d  -m  755  -g  bin  /usr/games
+  fi
+
+  if  [  !  -d  /var/lib/games  ]
+    then  install  -d  -m  755  -g  games  /var/lib/games
   fi
 
   # Install game binaries to /usr/games, not /usr/bin
@@ -61,6 +66,11 @@
   # Now, unpack the media files...
   # Should update the spell to optionally use
   # the CD, similar to quake2
-  unpack  ${SOURCE2}  ${MD5[1]}
+  unpack  ${SOURCE2}  ${MD5[1]}    &&
+  # Now, unpack compressed media files
+  for i in `find ./ -type f|grep gz`
+  do
+    gzip -d $i
+  done
 
 )  >  $C_FIFO  2>&1
