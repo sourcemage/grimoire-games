@@ -1,0 +1,17 @@
+           SPELL=xfrisk
+         VERSION=1.2
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/xf/XF}
+   SOURCE_URL[0]=http://morphy.iki.fi/xfrisk/files/${SOURCE}
+        WEB_SITE=http://morphy.iki.fi/xfrisk/index.html
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=9245e651b8b122fedbc92f5007c0d65e
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT=""
+cat << EOF
+ XFrisk is a computer version of the classic Risk  board game. It is a multiplayer game played on a TCP/IP network, uses the X11 window system for graphics and runs on most UNIX and UNIX-like platforms.
+
+XFrisk was originally developed by Elan Feingold, with numerous bug fixes and comments from various people. Eventually he ran out of time for continuing the project and in 1999 it was transferred to a loose group of people hanging out at the IRCNet #linux channel. As version 1.1 had never been officially released but something like it had been created after version 1.0, the next version with numerous updates was released as 1.2.
+EOF
