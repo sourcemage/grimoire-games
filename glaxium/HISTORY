@@ -1,3 +1,8 @@
+2003-05-09  hgg  <hgreig@bigpond.net.au>
+
+		Update spell as current xfree86 has GL extension headers
+		Glaxium still won't compile with any headers though.
+
 2003-01-31  Eric Sandall <eric@sandall.us>
 
 		Fixed Bug #2443
