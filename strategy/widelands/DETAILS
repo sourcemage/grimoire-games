@@ -1,0 +1,22 @@
+           SPELL=widelands
+         VERSION=$(date +%Y%m%d)
+          SOURCE=$SPELL-cvs.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-cvs
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/widelands:widelands
+        WEB_SITE=http://widelands.sourceforge.net
+          MD5[0]=IGNORE
+      LICENSE[0]=GPL
+         ENTERED=20040925
+         UPDATED=20040925
+  FORCE_DOWNLOAD=on
+       BUILD_API=2
+           SHORT="a strategy game aiming for gameplay similar to Settlers"
+cat << EOF
+Widelands is a strategy game aiming for gameplay similar to Settlers II by
+BlueByte. 
+In this game, you start out on a small piece of land with nothing more than a
+few of useful resources. Using those, you can build yourself an empire with
+many thousands of inhabitants. On your way towards this goal, you will have to
+build up an economic infrastructure, explore the lands around you and face
+enemies who are trying to rule the world just like you do.
+EOF
