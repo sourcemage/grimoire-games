@@ -1,3 +1,7 @@
+2004-09-06 Eric Sandall <eric@sandall.us>
+	* DEPENDS: teTeX renamed to tetex
+	  Formatted to Guru Handbook
+
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 5.6.2
 
