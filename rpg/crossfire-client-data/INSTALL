@@ -1,5 +1,5 @@
-make  install                                     &&
-mkdir   -p  ${INSTALL_ROOT}/usr/share/crossfire   &&
-cd          ${INSTALL_ROOT}/usr/share/crossfire   &&
-unpack  ${SOURCE2}  ${MD5[1]}                     &&
-unpack  ${SOURCE3}  ${MD5[2]}
+local  I_DIR                                     &&
+I_DIR=${INSTALL_ROOT}/usr/share/games/crossfire  &&
+mkdir  -p  $I_DIR                                &&
+chown  games:games  -R  *                        &&
+cp  -a  .  $I_DIR

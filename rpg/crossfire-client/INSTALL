@@ -1,5 +1,6 @@
-make  install                                     &&
-mkdir   -p  ${INSTALL_ROOT}/usr/share/crossfire   &&
-cd          ${INSTALL_ROOT}/usr/share/crossfire   &&
-unpack  ${SOURCE2}  ${MD5[1]}                     &&
-unpack  ${SOURCE3}  ${MD5[2]}
+default_install  &&
+
+chown  -R  games.games       \
+       /usr/games/cfclient   \
+       /usr/games/cfsndserv  \
+       /usr/games/gcfclient

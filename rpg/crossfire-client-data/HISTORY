@@ -1,6 +1,10 @@
 2004-11-08 Eric Sandall <eric@sandall.us>
-	* DETAILS: Added BUILD_API=2  (Bug #7608)
-	* INSTALL: Added  `make  install  &&`  (Bug #7608)
+	* Moved binary files out of crossfire-client and into here
+	* DETAILS: Set ARCHIVE to "off"
+	* BUILD: Run only `true`
+	* include,DEPENDS: Removed
+	* PRE_BUILD: Added to unpack SOURCEs
+	* INSTALL: Installs to /usr/share/games/crossfire and sets permissions
 
 2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 1.7.0 bug #7261

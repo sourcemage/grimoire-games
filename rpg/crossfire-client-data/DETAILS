@@ -1,21 +1,19 @@
-           SPELL=crossfire-client
+           SPELL=crossfire-client-data
          VERSION=1.7.0
-          SOURCE=$SPELL-$VERSION.tar.gz
-         SOURCE2=$SPELL-sounds-1.4.0.tar.gz
-         SOURCE3=$SPELL-images-$VERSION.tar.gz
+          SOURCE=crossfire-client-sounds-1.4.0.tar.gz
+         SOURCE2=crossfire-client-images-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
   SOURCE2_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE2
-  SOURCE3_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE3
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20020124
-          MD5[0]=b1088e237f40fa517de2c7bb516e032f
-          MD5[1]=c2fb0e3bf5d2daf03b630cd7fcc3fcd6
-          MD5[2]=a5da16b5de47e7e7c9e8937f4848abed
+          MD5[0]=c2fb0e3bf5d2daf03b630cd7fcc3fcd6
+          MD5[1]=a5da16b5de47e7e7c9e8937f4848abed
       LICENSE[0]=GPL
        BUILD_API=2
-           SHORT="crossfire-client is a multi-player graphical MUD."
+         ARCHIVE="off"
+           SHORT="Data files for crossfire-client"
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made
 for X. It has certain flavours from other games, especially Gauntlet

@@ -1,4 +1,5 @@
-depends  libpng  &&
+depends  libpng                 &&
+depends  crossfire-client-data  &&
 
 optional_depends  gtk+             \
                   ""               \

@@ -1,6 +1,10 @@
 2004-11-08 Eric Sandall <eric@sandall.us>
+	* Moved data files to crossfire-client-data
 	* DETAILS: Added BUILD_API=2  (Bug #7608)
-	* INSTALL: Added  `make  install  &&`  (Bug #7608)
+	* INSTALL: Setup proper permissions for binaries in /usr/games
+	* BUILD: Use /usr/share/games/crossfire
+	  Removed --disable-alsa
+	* DEPENDS: Added dependency on crossfire-client-data
 
 2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 1.7.0 bug #7261
@@ -19,7 +23,8 @@
 
 2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 1.5.0
-	* BUILD: Fixed linking error due to errno.h which allows the gtk client to compile
+	* BUILD: Fixed linking error due to errno.h which allows the gtk client
+	  to compile
 	* Sounds unchanged since 1.4.0
 
 2002-10-15 Eric Sandall <eric@sandall.us>
