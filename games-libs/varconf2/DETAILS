@@ -1,9 +1,9 @@
            SPELL=varconf2
-         VERSION=0.6.0
+         VERSION=0.6.1
           SOURCE=${SPELL/2/}-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/2/}-$VERSION
-   SOURCE_URL[0]=http://purple.worldforge.org/downloads/libs/${SPELL/2/}/$SOURCE
-          MD5[0]=42604f42f617170792fdeab993cfdddc
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL/2/}/$SOURCE
+          MD5[0]=9e60c9ceaecf7bbd78af2e03401affd2
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL/2/}
          ENTERED=20020915
          UPDATED=20020915
