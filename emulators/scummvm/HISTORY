@@ -1,3 +1,16 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.7.0
+	  SOURCE no longer has -src in the name
+	  Shortened SHORT
+	  Added BUILD_API=2
+	  Renamed CVS to SCUMMVM_CVS
+	* PREPARE: Renamed CVS to SCUMMVM_CVS
+	* DEPENDS: Renamed CVS to SCUMMVM_CVS
+	* BUILD: Converted to build_api 2
+	  Removed TABs
+	  Use sedit instead of cp and sed
+	* INSTALL: Branched from BUILD
+
 2004-09-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: MD5 fix
 
@@ -18,7 +31,8 @@
 	* removed patch
 
 2004-01-13 hgg <hgreig@bigpond.net.au>
-	* DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on
+	* DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else
+	  ... fi. Devel sorcery broke on
 	  DEPENDS using conditionals bug 5466
 
 2004-01-08 hgg <hgreig@bigpond.net.au>
@@ -26,7 +40,8 @@
 
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.5.1
-	* DEPENDS: rewrite ( ALSA is currently broken) use the cvs version if you want alsa
+	* DEPENDS: rewrite ( ALSA is currently broken) use the cvs version if you
+	  want alsa
 	* BUILD: drop the case esac stuff
 	* CONFIGURE: delete
 

@@ -15,6 +15,6 @@ optional_depends  libvorbis                      \
                   ""                             \
                   "Enable Vorbis audio support"  &&
 
-if  [  "$CVS"  ==  "y"  ]
-then  depends  CVS
+if  [  "$SCUMMVM_CVS"  ==  "y"  ];  then
+  depends  CVS
 fi

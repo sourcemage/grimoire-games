@@ -1,4 +1,5 @@
 depends  scummvm  &&
-if [ "$CVS" = "yes" ] 
-then depends cvs
+
+if [ "$SCUMMVM_TOOLS_CVS" = "y" ];  then
+  depends  CVS
 fi
