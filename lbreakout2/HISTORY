@@ -1,9 +1,14 @@
+2002-12-17  Eric Sandall <eric@sandall.us>
+
+		Updated to v2.4
+
 2002-10-02  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		now uses /var/games to save the global highscores
 		instead of /var/lib/games
 
 2002-09-21  Eric Sandall <eric@sandall.us>
+
 		New version: 2.3.5
 
 2002-09-13  Arwed v. Merkatz <v.merkatz@gmx.net>
@@ -13,6 +18,7 @@
 2002-09-10  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		New version: 2.3.3
+
 		workaround for a gcc bug in BUILD
 
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
@@ -20,8 +26,11 @@
 		changed MAINTAINER
 
 2002-08-24  Eric Sandall <eric@sandall.us>
+
 		Updated version to 2.3.2
+
 		Added MD5 and LICENSE
+
 		Changed SOURCE_URL to use $SOURCEFORGE_URL
 
 2002-08-02  Jerome Zago <jerome.zago@insalien.org>
