@@ -1,0 +1,2 @@
+#Remove untracked files in /usr/lib
+rm -rf /usr/lib/u4

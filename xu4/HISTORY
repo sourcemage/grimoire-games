@@ -1,3 +1,12 @@
+2003-05-08  hgg <hgreig@bigpond.net.au>
+
+		Update to 0.6 
+
+		Sedit Makefile so binaries don't end up in /usr/local
+		
+		Change POST_INSTALL and added PRE_REMOVE so 
+		Ultima4.zip is tracked 
+
 2003-01-27  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.09  (Bug #2392, thanks to Snakebyte)

@@ -1,5 +1,5 @@
            SPELL=xu4
-         VERSION=0.09
+         VERSION=0.6
           SOURCE=${SPELL}-${VERSION}.tar.gz
          SOURCE2=ultima4.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/u4
@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/u4
   SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
   SOURCE2_URL[1]=http://members.tripod.com/~hardwire1/${SOURCE2}
   SOURCE2_URL[2]=http://www.members.aol.com/tommage/UltimaPage/${SOURCE2}
-          MD5[0]=d95c785a57c57db9f4a54ce2f7cd6d58
+          MD5[0]=84ab5a9fd92500c9c2c431ca9ffc36fe
           MD5[1]=241a69cfc37ad531f74aea83172af572
         WEB_SITE=http://xu4.sourceforge.net/
       LICENSE[0]=GPL
