@@ -1,3 +1,6 @@
+2003-12-01 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: X11-LIBS not X11-LIB
+
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: big letters for x11-libs
 
