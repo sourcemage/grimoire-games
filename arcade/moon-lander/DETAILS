@@ -8,7 +8,7 @@
          UPDATED=20010922
           MD5[0]=1dd30eaf74a906dc5138120962ac00de
       LICENSE[0]=BSD
-      MAINTAINER=v.merkatz@gmx.net
+       BUILD_API=2 
            SHORT="Land a spaceship on the moon."
 cat << EOF
 Land a spaceship on the moon, like the arcade game, but with better
