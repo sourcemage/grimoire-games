@@ -1,13 +1,17 @@
            SPELL=prboom
-         VERSION=2.2.2
+         VERSION=2.2.3
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=doom-1.8.wad.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/prboom/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/prboom/$SOURCE
   SOURCE2_URL[0]=ftp://ftp.idsoftware.com/idstuff/doom/$SOURCE2
+          MD5[0]=29e5df7a8e64f24e421fda1983602a45
+          MD5[1]=5f4eb849b1af12887dec04a2a12e5e62
         WEB_SITE=http://prboom.sourceforge.net/
          ENTERED=20011123
          UPDATED=20011228
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="a portable POSIX Doom port"
 cat << EOF
 PrBoom is a game engine - it provides a program to play Doom levels, but 
