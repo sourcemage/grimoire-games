@@ -1,4 +1,5 @@
+make  install                                     &&
 mkdir   -p  ${INSTALL_ROOT}/usr/share/crossfire   &&
 cd          ${INSTALL_ROOT}/usr/share/crossfire   &&
-unpack  ${SOURCE2}  ${MD5[1]}      &&
+unpack  ${SOURCE2}  ${MD5[1]}                     &&
 unpack  ${SOURCE3}  ${MD5[2]}
