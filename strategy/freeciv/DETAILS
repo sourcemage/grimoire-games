@@ -12,10 +12,10 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.freeciv.org/
          ENTERED=20010922
          UPDATED=20010922
-      MAINTAINER=jerome.zago@insalien.org
       LICENSE[0]=GPL
       LICENSE[1]=GPL
-           SHORT="Freeciv is a reimplementation of Civilization."
+       BUILD_API=2
+           SHORT="Reimplementation of Civilization I/II/III"
 cat << EOF
 Freeciv is a multiuser reimplementation for Unix/X of the famous Microprose 
 game of Civilization. By default, the game is an improved Civ II, but this 

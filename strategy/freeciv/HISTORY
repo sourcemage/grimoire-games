@@ -1,3 +1,16 @@
+2005-03-14 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added BUILD_API=2
+	  Removed MAINTAINER
+	  Shortened SHORT
+	* CONFIGURE: Converted to config_query_list
+	  Renamed CLIENT to FREECIV_CLIENT
+	* DEPENDS: Renamed CLIENT to FREECIV_CLIENT
+	* PRE_BUILD: Check SOURCE and SOURCE2 for md5sums here
+	* BUILD: Use OPTS to set extra flags and default_build
+	  Converted to build_api 2
+	  Renamed CLIENT to FREECIV_CLIENT
+	* INSTALL: Use default_install and copy media files over
+
 2005-01-23 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Use spell_ok instead of spell_installed
 

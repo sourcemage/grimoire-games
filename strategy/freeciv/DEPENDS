@@ -1,9 +1,9 @@
-if  [  $CLIENT = "xaw3d"  ]; then
+if    [  $FREECIV_CLIENT  ==  "xaw3d"  ]; then
   depends  Xaw3d
-elif  [  $CLIENT = "gtk"  ]; then
-  depends  gtk+  &&
+elif  [  $FREECIV_CLIENT  ==  "gtk"    ]; then
+  depends  gtk+   &&
   depends  imlib
-elif  [  $CLIENT = "gtk2"  ]; then
+elif  [  $FREECIV_CLIENT  ==  "gtk2"   ]; then
   depends  gtk+2
 fi  &&
 
