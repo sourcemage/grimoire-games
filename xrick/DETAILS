@@ -1,9 +1,9 @@
            SPELL=xrick
-         VERSION=010808
-          SOURCE=$SPELL-$VERSION.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://www.bigorno.net/xrick/$SOURCE
-          MD5[0]=9a308cb8fbb206642970b02b9d44218e
+         VERSION=021212
+          SOURCE=${SPELL}-${VERSION}.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://www.bigorno.net/xrick/${SOURCE}
+          MD5[0]=c5be6eefae75732c0e37ccbaf54c055e
         WEB_SITE=http://www.bigorno.net/xrick/index.html
          ENTERED=20020415
          UPDATED=20020415

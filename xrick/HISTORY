@@ -1,3 +1,15 @@
+2003-01-05  Eric Sandall <eric@sandall.us>
+
+		Updated to v021212
+
+		Fixed to copy data files now
+
+		Added script to correctly run
+
+		Binaries now install as user 'games'
+
+		Added SMGL optimizations to Makefile
+
 2002-08-26  Eric Sandall <eric@sandall.us>
 
       Updated/added MAINTAINER, MD5, LICENSE
