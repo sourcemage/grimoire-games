@@ -9,6 +9,7 @@ autoconf &&
                  $OPTS                 &&
   make                                 &&
   prepare_install                      &&
+  mkdir -p ${INSTALL_ROOT}/usr/games   &&
   make install                         &&
 echo -e "#!/bin/sh \n
 # Needs ~/stellarium to start. \n
