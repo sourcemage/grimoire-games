@@ -1,3 +1,8 @@
+2003-05-13  hgg  <hgreig@bigpond.net.au>
+
+		Added build as Current Atlas-C++ install to different 
+		dir and CPPFLAGS needed to build
+
 2003-03-11  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.9.6

@@ -1,3 +1,8 @@
+2003-05-13  hgg  <hgreig@bigpond.net.au>
+
+		Added CPPFLAGS to build as gdk-pixbuf is one dir 
+		lower in /usr/include
+
 2003-01-31  Eric Sandall <eric@sandall.us>
 
 		Fixed Bug #2443
