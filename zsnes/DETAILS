@@ -2,7 +2,7 @@
          VERSION=1337
           SOURCE=$SPELL""$VERSION""src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1.337 # change on new version
-   SOURCE_URL[0]=http://prdownloads.sourceforge.net/zsnes/$SOURCE
+   SOURCE_URL[0]=http://telia.dl.sourceforge.net/zsnes/$SOURCE
         WEB_SITE=http://zsnes.com
          ENTERED=20020312
          UPDATED=20020312
