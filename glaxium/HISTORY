@@ -1,3 +1,9 @@
+2002-09-04  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
 2002-04-27  Jerome Zago <jerome.zago@insalien.org>
 
 		SOURCE_URL[0] is now more generic.

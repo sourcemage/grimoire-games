@@ -2,11 +2,11 @@
           VERSION=0.9.0
            SOURCE=$SPELL-$VERSION.tgz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://belnet.dl.sourceforge.net/sourceforge/glhack/$SOURCE
-    SOURCE_URL[1]=http://unc.dl.sourceforge.net/sourceforge/glhack/$SOURCE
-    SOURCE_URL[2]=http://telia.dl.sourceforge.net/sourceforge/glhack/$SOURCE
+    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
          WEB_SITE=http://glhack.sourceforge.net
        MAINTAINER=v.merkatz@gmx.net
+           MD5[0]=1f6d5c2a6c8232b22455b535126ccf30
+       LICENSE[0]=NETHACK
          ENTERED=20020518
          UPDATED=20020518
            SHORT="glhack is an OpenGL port of the famous nethack"
