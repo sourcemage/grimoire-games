@@ -1,4 +1,7 @@
 2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added freetype2 dependencie
+
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Updated to 37.1
 	* BUILD: droped sedit
 	* BUILD: change the mv dir from to

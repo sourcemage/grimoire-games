@@ -1,3 +1,4 @@
+depends  freetype2 &&
 depends  GLUT      &&
 depends  SDL_net   &&
 depends  SDL_mixer &&
