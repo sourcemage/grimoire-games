@@ -1,3 +1,6 @@
+2004-07-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version bump 0.6.1
+
 2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version bump from 0.5.0 to 0.6.0
 	* BUILD: removed the 6 in descumm6 since it doesn't exist
