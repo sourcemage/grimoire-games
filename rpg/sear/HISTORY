@@ -1,3 +1,8 @@
+2004-07-21 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on eris-transitional (not eris cvs)
+	  Depends on sage still
+	* PREPARE: Removed
+
 2004-07-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.5.0
 	  Media updated to 20040719

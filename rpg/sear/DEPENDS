@@ -1,8 +1,9 @@
-depends  GLUT        &&
-depends  eris        &&
-depends  mercator    &&
-depends  SDL_image   &&
-depends  SDL_mixer   &&
-depends  varconf2    &&
-depends  cal3d       &&
+depends  GLUT               &&
+depends  eris-transitional  &&
+depends  mercator           &&
+depends  SDL_image          &&
+depends  SDL_mixer          &&
+depends  varconf2           &&
+depends  cal3d              &&
+depends  sage               &&
 depends  lib3ds
