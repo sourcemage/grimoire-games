@@ -6,7 +6,9 @@
   make                                     &&
   prepare_install                          &&
   make    install                          
-echo -e "#! /bin/sh \n exec ${INSTALL_ROOT}/usr/share/games/abuse/abuse.sdl -datadir \
+echo -e "#! /bin/sh \n if ! [ -f ~/.abuse/gamma.lsp ]; then mkdir -p ~/.abuse && cp \
+${INSTALL_ROOT}/usr/share/games/abuse/gamma.lsp ~/.abuse/gamma.lsp ; fi \n exec \
+${INSTALL_ROOT}/usr/share/games/abuse/abuse.sdl -datadir \
 ${INSTALL_ROOT}/usr/share/games/abuse \$*" > .abuse && 
 install -m0755 .abuse ${INSTALL_ROOT}/usr/games/abuse    &&
 
