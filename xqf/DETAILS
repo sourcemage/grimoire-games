@@ -1,11 +1,13 @@
            SPELL=xqf
-         VERSION=0.9.8
+         VERSION=0.9.9
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=2e6a86dde0c96049944f69c7f03bfea1
         WEB_SITE=http://www.linuxgames.com/xqf
          ENTERED=20020320
          UPDATED=20020320
+      LICENSE[0]=GPL
       MAINTAINER=jerome.zago@insalien.org
            SHORT="XQF is a gamespy like app for linux"
 cat << EOF
