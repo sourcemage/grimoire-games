@@ -1,0 +1,10 @@
+2002-06-19  Jerome Zago <jerome.zago@insalien.org>
+
+		Worked on FHS compliance (binary into /usr/games, man page 
+		into /usr/share/man, data into /usr/share/games).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
+2002-06-10  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		Created this spell.
