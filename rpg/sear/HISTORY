@@ -1,3 +1,6 @@
+2003-10-08 Eric Sandall <eric@sandall.us>
+	* BUILD: Fix a problem with an animation that doesn't like cal3d 0.9
+
 2003-10-07 Eric Sandall <eric@sandall.us>
 	* BUILD: Removed fix for run_script and permissions
 	* DETAILS: New media out with permission and media.script fixes

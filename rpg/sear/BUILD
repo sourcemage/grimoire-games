@@ -1,6 +1,9 @@
 (
 
-  sedit  's/0.9.5/0.9.2/'  configure          &&
+  sedit  's:animation_standing=:#animation_standing=:"  \
+         sear-media-${VERSION}/pig.cal                  &&
+  sedit  's/0.9.5/0.9.2/'  configure                    &&
+
   ./configure --prefix=${INSTALL_ROOT}/usr    \
           --sysconfdir=${INSTALL_ROOT}/etc    \
        --localstatedir=${INSTALL_ROOT}/var    \
