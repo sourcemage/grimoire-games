@@ -1,0 +1,6 @@
+2004-04-24 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to the games grimoire arcade/njam
+
+2004-04-24 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY, PRE_BUILD: Spell created
+
