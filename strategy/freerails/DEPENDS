@@ -1,5 +1,6 @@
 if grep -q "with-paragui" ${SPELL_CONFIG}
 then depends SDL &&
+     depends SDL_ttf &&
      depends paragui &&
      depends freetype1	
 fi &&
