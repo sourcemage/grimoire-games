@@ -1,14 +1,13 @@
            SPELL=toppler
-         VERSION=1.0.5
+         VERSION=1.0.6
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=e170a82a3ad87034588afb8b90c71588
+          MD5[0]=3975c0e16a49dd380bd19da22de9b511
         WEB_SITE=http://toppler.sourceforge.net/
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
            SHORT="toppler is a game of climbing a tower while avoiding creatures"
 cat << EOF
 Tower Toppler (aka Nebulous) is the reimplementation an old 'jump and 
