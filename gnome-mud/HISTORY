@@ -1,7 +1,10 @@
+2003-06-10  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.10.1
+
 2003-06-07  hgg <hgreig@bigpond.net.au>
 
 		Update depends as developers ported to gtk+2 between releases
-
 
 2003-06-05  Eric Sandall <eric@sandall.us>
 
