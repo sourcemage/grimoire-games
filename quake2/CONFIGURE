@@ -16,7 +16,7 @@ if  !  grep  -q  "COPY_PAK="  $SPELL_CONFIG;  then
 
   message "${SPELL_COLOR}${SPELL}${DEFAULT_COLOR}: ${MESSAGE_COLOR}Now I need to know where the game data is."
   message "${QUERY_COLOR}Please enter the path to the \"baseq2\" directory on the disc"
-  message "[/mnt/cdrom/Install/Data/baseq2]${DEFAULT_COLOR}"
+  message "[/mnt/cdrom/Install/Data/baseq2]${DEFAULT_COLOR} "
 
   read   -t  $PROMPT_DELAY -e
 

@@ -1,3 +1,12 @@
+2002-06-16  Chris Brien <christopher_brien@hotmail.com>
+
+		Moved the installation of the game data into POST_INSTALL
+		and POST_REMOVE. This means the game data is not tracked,
+		so that "cast --fix" will pass if the cdrom isn't mounted.
+		Also, it doesn't try to tar up 400 meg of game data in a
+		200 meg tmpfs /tmp.
+
+
 2002-04-23  Chris Brien <christopher_brien@hotmail.com>
 
 		Initial version using relnevs source.
