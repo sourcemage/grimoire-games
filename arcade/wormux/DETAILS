@@ -1,0 +1,15 @@
+           SPELL=wormux
+         VERSION=0.2.3
+          SOURCE=$SPELL-src-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://download.gna.org/wormux/$SOURCE
+        WEB_SITE=http://www.haypocalc.com/wormux/
+         ENTERED=20040524
+         UPDATED=20040524
+          MD5[0]=acb92b179df7feeeac2d68298b03a935
+      LICENSE[0]=GPL
+           SHORT="A free Worms clone"
+
+cat << EOF
+A free worms clone written in C++.
+EOF
