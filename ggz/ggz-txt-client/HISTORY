@@ -1,15 +1,15 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-11-28 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add ggz-client-libs
+	* HISTORY: reformat
 
-2003-06-05  hgg <hgreig@bigpond.net.au>
-		
-		Update for 0.0.7
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-05-28  hgg <hgreig@bigpond.net.au>
- 
-		Updated DEPENDS to reflect easysock's absorption into libggz
+2003-06-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for 0.0.7
 
-2002-12-17  Eric Sandall <eric@sandall.us>
+2003-05-28 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Updated DEPENDS to reflect easysock's absorption into libggz
 
-		Created spell
+2002-12-17 Eric Sandall <eric@sandall.us>
+	* Created spell
