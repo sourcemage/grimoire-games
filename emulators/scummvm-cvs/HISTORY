@@ -1,29 +1,27 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-11-22 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add cvs altered to optional_depends for others
+	* CONFIGURE: removed now handled in depends
+	* BUILD: changed from case esac to $OPTS, added mkdir -p /usr/games
 
-2003-05-06  hgg  <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Changed DETAILS so not only does it rebuild everyday but
-		it also updates the source everyday.
+2003-05-06 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Changed DETAILS so not only does it rebuild everyday but
+	it also updates the source everyday.
+	TODO. unpack today's source tomorrow and cvs update
 
-		TODO. unpack today's source tomorrow and cvs update
 
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* PREBUILD: Added PRE_BUILD with MD5[0]=ignore to allow unattended builds 
 
-2003-05-05  hgg		 <hgreig@bigpond.net.au>
+2003-03-30 Eric Sandall <eric@sandall.us>
+	* Apparently this program doesn't work well
+	with distcc, so add PRE_BUILD from Jose
+	(Bug #2968)
 
-		Added PRE_BUILD with MD5[0]=ignore to allow unattended builds 
+2003-03-29 Eric Sandall <eric@sandall.us>
+	* Added to games
 
-2003-03-30  Eric Sandall <eric@sandall.us>
-
-		Apparently this program doesn't work well
-		with distcc, so add PRE_BUILD from Jose
-		(Bug #2968)
-
-2003-03-29  Eric Sandall <eric@sandall.us>
-
-		Added to games
-
-2002-12-11  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Created this spell
+2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell

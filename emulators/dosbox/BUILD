@@ -10,5 +10,6 @@
   prepare_install                                               &&
   mkdir -p ${INSTALL_ROOT}/usr/share/games/$SPELL               &&
   make install                                                  &&
+  mkdir -p /usr/games                                           &&
   install -m 0755  $SCRIPT_DIRECTORY/dosbox /usr/games
 )  >  ${C_FIFO}  2>&1

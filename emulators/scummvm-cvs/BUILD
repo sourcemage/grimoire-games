@@ -1,24 +1,21 @@
 (
-
-  case  $ALSA  in
-    y|Y)  DEFINES="$DEFINES  -DUSE_ALSA"  ;
-          LIBS="$LIBS  -lasound"  ;;
-  esac
-
-  case  $MAD  in
-    y|Y)  DEFINES="$DEFINES  -DUSE_MAD"  ;
-          LIBS="$LIBS  -lmad"  ;;
-  esac
-
-  case  $VORBIS  in
-    y|Y)  DEFINES="$DEFINES  -DUSE_VORBIS"  ;
-    	  LIBS="$LIBS  -lvorbisfile -lvorbis"  ;;
-  esac
-
+  if echo $OPTS| grep -q "with-alsa"; then
+     DEFINES="$DEFINES  -DUSE_ALSA"  &&
+     LIBS="$LIBS  -lasound"  
+  fi  &&
+  if echo $OPTS| grep -q "with-mad"; then
+    DEFINES="$DEFINES  -DUSE_MAD"  &&
+    LIBS="$LIBS  -lmad"  
+  fi  &&
+  if echo $OPTS| grep -q "with-mad"; then
+    DEFINES="$DEFINES  -DUSE_VORBIS"  &&
+    LIBS="$LIBS  -lvorbisfile -lvorbis" 
+  fi  &&
   cd $SOURCE_DIRECTORY/backends/sdl		&&
   patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
   cd $SOURCE_DIRECTORY				&&
-
+echo $LIBS
+echo $DEFINES
   ./configure			&&
 
   cp -f Makefile Makefile.orig					&&
@@ -31,6 +28,7 @@
 
   make                        	&&
   prepare_install             	&&
+  mkdir -p /usr/games           &&
   install -m0755 scummvm /usr/games/scummvm	&&
   install -m0644 scummvm.xpm /usr/share/icons
 
