@@ -1,4 +1,8 @@
 2003-01-12  Eric Sandall <eric@sandall.us>
+                                                                                
+		Now installs data into /usr/share/games
+
+2003-01-12  Eric Sandall <eric@sandall.us>
 
 		Updated to v1.1
 

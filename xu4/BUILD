@@ -2,8 +2,9 @@
 
   cd  src                                                &&
   sedit  "s:CFLAGS=:CFLAGS=${CFLAGS} :"  Makefile        &&
-  sedit  's:/usr/bin:/usr/games:'  Makefile              &&
-#  sedit  's:libdir)/u4/:libdir)/u4/ultima4/:'  Makefile  &&
+  sedit  's:/bin:/games:'  Makefile                      &&
+  sedit  's:/lib:/share/games:'  Makefile                &&
+  sedit  's:/share:/share:'  Makefile                    &&
 
   make             &&
   prepare_install  &&

@@ -1,8 +1,8 @@
 (
 
-  prepare_install                 &&
-  mkdir  -p  /usr/lib/FlightGear  &&
-  cd  ${SOURCE_DIRECTORY}         &&
-  cp  -rv  *  /usr/lib
+  prepare_install                          &&
+  mkdir  -p  /usr/share/games/FlightGear   &&
+  cd  ${SOURCE_DIRECTORY}/data             &&
+  cp  -rv  *  /usr/share/games/FlightGear
 
-) > $C_FIFO 2>&1
+) > ${C_FIFO} 2>&1

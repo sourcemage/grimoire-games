@@ -1,6 +1,8 @@
 2003-01-25  Eric Sandall <eric@sandall.us>
 
-		Updated to 0.9.1a
+		Updated to 0.9.1a  (Bug #2377, thanks to Eric Sesterhenn/Snakebyte)
+
+		Now installs to /usr/share/games
 
 2002-12-05  Eric Sandall <eric@sandall.us>
 

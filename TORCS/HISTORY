@@ -1,6 +1,6 @@
 2003-01-25  Eric Sandall <eric@sandall.us>
 
-		Updated to 1.1.0
+		Updated to 1.1.0  (Bug #2379, thanks to Snakebyte)
 
 		Had to modify DETAILS and BUILD, as there is no
 		longer a -src-all.  :(

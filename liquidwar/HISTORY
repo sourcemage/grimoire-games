@@ -2,7 +2,7 @@
 
 		Updated to 5.5.8  (Bug #2386, thanks to Snakebyte)
 
-		Modifed BUILD to install data into /usr/lib/games,
+		Modifed BUILD to install data into /usr/share/games,
 		can't have the binary in only /usr/games, same
 		problem as before
 

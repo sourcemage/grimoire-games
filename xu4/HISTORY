@@ -1,3 +1,10 @@
+2003-01-27  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.09  (Bug #2392, thanks to Snakebyte)
+
+		Made binary install into /usr/games
+		and data into /usr/share/games, not /usr/lib
+
 2002-11-20  Eric Sandall <eric@sandall.us>
 
 		Spell created

@@ -5,7 +5,7 @@
 		all that well, the path has to be set to /usr/bin, so 
 		I cannot install that into /usr/games, as it should be.
 
-		Updated to 3.0.6  (Bug #2379, thanks to Snakebyte)
+		Updated to 3.0.6  (Bug #2378, thanks to Snakebyte)
 
 2002-08-29  Gareth Clay <g.clay@warwick.ac.uk>
 

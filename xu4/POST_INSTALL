@@ -1,5 +1,5 @@
 install  -m  755  -g  games  -d  /usr/lib/u4/  &&
 cd  /usr/lib/u4/                               &&
 unpack  ${SOURCE2}  ${MD5[1]}                  &&
-ln  -s  ULTIMA4  ultima4                       &&
-ln  -s  MOSLO    moslo
+ln  -sf  ULTIMA4  ultima4                      &&
+ln  -sf  MOSLO    moslo

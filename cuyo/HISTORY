@@ -3,7 +3,7 @@
 		Updated to 1.6.1  (Bug #2381, thanks to Snakebyte)
 
 		Modifed BUILD to install binary into /usr/bin and
-		data into /usr/lib/games, again, the binary cannot
+		data into /usr/share/games, again, the binary cannot
 		go into /usr/games as I get the following error
 		when I try with '--bindir=/usr/games'
 		(same as Maelstrom):
