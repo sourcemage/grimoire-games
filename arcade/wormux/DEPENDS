@@ -1,1 +1,3 @@
-depends ClanLib
+depends ClanLib &&
+depends libxml++1 &&
+depends gettext

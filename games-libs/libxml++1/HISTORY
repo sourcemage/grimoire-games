@@ -1,0 +1,22 @@
+2004-07-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version  1.0.4
+	* To whom it may concern... this is needed for wormux
+
+2003-12-21 Treeve Jelbert <treeve01@pi.be>
+	* DETAILS: version  1.0.0
+	* HISTORY: reformatted
+
+2003-06-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.24.0
+
+2003-02-26 Julian v. Bock <julian@wongr.net>
+	* DETAILS: set VERSION to 0.21.0.
+
+2003-02-12 Julian v. Bock <julian@wongr.net>
+	* DETAILS: set VERSION to 0.19.0.
+
+2003-01-22 Julian v. Bock <julian@wongr.net>
+	* add spell.
+
+2003-01-03 M.L. <mlubrano@sourcemage.org>
+	* Created spell.
