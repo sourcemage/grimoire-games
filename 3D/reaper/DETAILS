@@ -16,7 +16,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL 
       LICENSE[1]=GPL 
       LICENSE[2]=GPL 
-            SHORT="Space combat simulator"
+           SHORT="Space combat simulator"
 cat << EOF
 Enlisted as a mercenary pilot for a greedy corporation,
 you are to do whatever is deemed necessary in order to

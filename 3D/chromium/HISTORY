@@ -1,6 +1,7 @@
 2004-07-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAINTAINER
 	  Cleaned up spacing
+	  Shortened SHORT
 
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* BUILD: add mkdir -p after prepare_install
