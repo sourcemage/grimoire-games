@@ -13,10 +13,11 @@ then	./configure --prefix=/usr -with-kde $OPTS &&
 			else
 				if [ "$X11" = "y" ] 
 				then	./configure --prefix=/usr -without-gtk -without-kde $OPTS &&
-				make	&&
-				prepare_install	&&
-				make install
-                      		fi
+					make	&&
+					prepare_install	&&
+					make install
+                      		else default_build
+				fi
 			fi
 fi
 ) > $C_FIFO 2>&1 
