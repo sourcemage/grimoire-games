@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://qcd2.mps.ohio-state.edu/attack/
          ENTERED=20020131
          UPDATED=20020131
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="crack-attack is a network multi-player variation of tetris"
 cat << EOF
 A puzzle/action game in which you rush to eliminate colored blocks

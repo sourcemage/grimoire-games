@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.speakeasy.org/~morse/copter-commander/
          ENTERED=20020128
          UPDATED=20020212
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="copter-commander is a arcade game like Armor Alley."
 cat << EOF
 A unique blend of arcade action and real time strategy, Copter

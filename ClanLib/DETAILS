@@ -11,6 +11,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://clanlib.org
          ENTERED=20011105
          UPDATED=20011105
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="Multi-Platform game development library"
 cat << EOF
 Clanlib is a medium level development kit.  At its lowest levell it

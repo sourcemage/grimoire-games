@@ -6,6 +6,7 @@
          WEB_SITE=http://www.linux-games.com
          ENTERED=20010922
          UPDATED=20010922
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="blackbox is game where one guesses where crystals are hidden."
 cat << EOF
 There's a black box. You can shoot in and watch, where the shot leaves

@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20011104
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="crossfire is the server for a multi-player graphical MUD."
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made
