@@ -1,6 +1,6 @@
 diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
---- kaf.orig/mameprocess.cpp	2004-08-02 10:50:47.924577952 -0700
-+++ kaf/mameprocess.cpp	2004-08-02 10:53:05.629643600 -0700
+--- kaf.orig/mameprocess.cpp	2004-10-18 17:01:32.894484448 +0000
++++ kaf/mameprocess.cpp	2004-10-18 17:01:47.461269960 +0000
 @@ -68,7 +68,7 @@ void MameProcess::setGameArguments( Game
    clearArguments();
  
@@ -47,7 +47,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
  
  }
  
-@@ -474,7 +474,7 @@ void MameProcess::setSoundArguments()
+@@ -511,7 +511,7 @@ void MameProcess::setSoundArguments()
  
      addArgument( "-samplepath" );
      mp_options->setGroup( G_MAME );
@@ -56,7 +56,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
      mp_options->setGroup( G_SOUND );
  
    }
-@@ -711,7 +711,7 @@ void MameProcess::setMiscArguments()
+@@ -751,7 +751,7 @@ void MameProcess::setMiscArguments()
      addArgument( "-cheat" );
      addArgument( "-cheat_file" );
  	mp_options->setGroup( G_MAME );
@@ -65,7 +65,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
  	mp_options->setGroup( G_MISC );
    }
    else
-@@ -850,7 +850,7 @@ int MameProcess::checkVersion()
+@@ -890,7 +890,7 @@ int MameProcess::checkVersion()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -74,7 +74,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
  
    addArgument( "-noloadconfig" );
    addArgument( "-version" );
-@@ -953,7 +953,7 @@ void MameProcess::checkSupportedGames()
+@@ -993,7 +993,7 @@ void MameProcess::checkSupportedGames()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -84,9 +84,9 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
    addArgument( "-noloadconfig" );
    addArgument( "-list" );
 diff -urpN kaf.orig/options.cpp kaf/options.cpp
---- kaf.orig/options.cpp	2004-08-02 10:50:47.913579624 -0700
-+++ kaf/options.cpp	2004-08-02 10:51:58.502848424 -0700
-@@ -55,19 +55,19 @@ void Options::setDefaults()
+--- kaf.orig/options.cpp	2004-10-18 17:01:32.895484296 +0000
++++ kaf/options.cpp	2004-10-18 17:01:47.461269960 +0000
+@@ -64,19 +64,19 @@ void Options::setDefaults()
    qDebug( "Restoring default options..." );
  
    setGroup( G_MAME );
@@ -120,8 +120,8 @@ diff -urpN kaf.orig/options.cpp kaf/options.cpp
    setGroup( G_GENERAL );
    setString( O_CHECK_EVENT_TICK, "200" );
 diff -urpN kaf.orig/wndinfo.cpp kaf/wndinfo.cpp
---- kaf.orig/wndinfo.cpp	2004-08-02 10:50:47.927577496 -0700
-+++ kaf/wndinfo.cpp	2004-08-02 10:51:58.503848272 -0700
+--- kaf.orig/wndinfo.cpp	2004-10-18 17:01:32.893484600 +0000
++++ kaf/wndinfo.cpp	2004-10-18 17:01:47.462269808 +0000
 @@ -62,7 +62,7 @@ void WndInfo::loadGameIcon( Game* pGame 
    QString sPrevGroup = mp_options->currentGroup();
    mp_options->setGroup( G_MAME );
@@ -132,8 +132,8 @@ diff -urpN kaf.orig/wndinfo.cpp kaf/wndinfo.cpp
    sFileIco += pGame->name();
    sFileIco += mp_options->mameIconFileType();
 diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
---- kaf.orig/wndmainwindow.cpp	2004-08-02 10:50:47.915579320 -0700
-+++ kaf/wndmainwindow.cpp	2004-08-02 10:51:58.507847664 -0700
+--- kaf.orig/wndmainwindow.cpp	2004-10-18 17:01:32.895484296 +0000
++++ kaf/wndmainwindow.cpp	2004-10-18 17:01:47.462269808 +0000
 @@ -363,7 +363,7 @@ void WndMainWindow::slotSearchForAvailab
  {
    activateProgressBar( mp_games->total() );
@@ -193,8 +193,8 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
    QFile file( sExePath );
  
 diff -urpN kaf.orig/wndmamepaths.cpp kaf/wndmamepaths.cpp
---- kaf.orig/wndmamepaths.cpp	2004-08-02 10:50:47.913579624 -0700
-+++ kaf/wndmamepaths.cpp	2004-08-02 10:51:58.509847360 -0700
+--- kaf.orig/wndmamepaths.cpp	2004-10-18 17:01:32.895484296 +0000
++++ kaf/wndmamepaths.cpp	2004-10-18 17:01:47.463269656 +0000
 @@ -82,19 +82,19 @@ void WndMamePaths::removeLastSlashFromPa
  void WndMamePaths::updateMenus()
  {
