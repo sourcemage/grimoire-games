@@ -1,7 +1,4 @@
 (
-#tarball depcomp is truncated somehow?
-#taken from previous release?
-cp $SCRIPT_DIRECTORY/depcomp .
   ./configure  --build=${BUILD}      \
                --prefix=${INSTALL_ROOT}/usr         \
                --sysconfdir=${INSTALL_ROOT}/etc     \
