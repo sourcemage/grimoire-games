@@ -1,5 +1,5 @@
 #!/bin/sh
 # Script to correctly run FreeLords
 
-cd  /usr/lib/games/freelords  &&
+cd  /usr/share/games/freelords  &&
 ./fl

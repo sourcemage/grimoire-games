@@ -1,0 +1,12 @@
+2002-10-31  Eric Sandall <eric@sandall.us>
+
+		Updated to install into /usr/share/games intead
+		of /usr/lib/games
+
+		Modified to change group ownership to "games"
+
+2002-10-13  Eric Sandall <eric@sandall.us>
+
+		Created spell
+
+		Added to grimoire
