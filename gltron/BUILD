@@ -4,7 +4,7 @@
   sedit  "s/-lSDL /-lSDL -lpthread /"           configure
 
   ./configure  --prefix=/usr                     \
-               --bindir=/usr/share/games/gltron  &&
+               --bindir=/usr/lib/games/gltron    &&
   sedit  "s/-O2/$CFLAGS/"  Makefile              &&
   make                                           &&
   prepare_install                                &&

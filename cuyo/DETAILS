@@ -1,12 +1,12 @@
            SPELL=cuyo
-         VERSION=1.6.0alpha4
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/cuyo/$SOURCE
+         VERSION=1.6.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/cuyo/${SOURCE}
         WEB_SITE=http://www.karimmi.de/cuyo/
          ENTERED=20020129
          UPDATED=20020828
-          MD5[0]=96412425d5a8011c2ef40be6157a79e0
+          MD5[0]=c0157ad32006841bc4915b7e999e2f1a
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="cuyo: Tetris-like game with many surprises"

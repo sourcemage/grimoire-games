@@ -1,10 +1,10 @@
            SPELL=gltron
-         VERSION=0.61
-          SOURCE=$SPELL-$VERSION-source.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+         VERSION=0.62
+          SOURCE=${SPELL}-${VERSION}-source.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
         WEB_SITE=http://www.gltron.org/
-          MD5[0]=9dd9a34b5a2b25cff3e3134e94ee5235
+          MD5[0]=50287a612ff8afaeb215ea1a515a3a5b
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20010922

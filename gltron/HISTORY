@@ -1,3 +1,9 @@
+2003-01-26  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.62  (Bug #2383, thanks to Snakebyte)
+
+		Changed data dir to /usr/lib/games
+
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added MD5 and LICENSE fields
