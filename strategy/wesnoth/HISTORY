@@ -1,3 +1,6 @@
+2004-08-24 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.8.2
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_ttf, SDL_image, SDL_mixer, and SDL_net renamed to sdl*
 
