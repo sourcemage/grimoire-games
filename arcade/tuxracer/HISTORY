@@ -1,3 +1,7 @@
+2003-08-26  hgg <hgreig@bigpond.net.au>
+
+		Add gcc3.3.X preprocessing fix.
+
 2003-07-26  hgg <hgreig@bigpond.net.au>
 
 		Update BUILD to remove patch and check for NVIDIA_headers

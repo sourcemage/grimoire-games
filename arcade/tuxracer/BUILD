@@ -4,6 +4,8 @@
      then export CFLAGS="$CFLAGS -DGLX_GLXEXT_PROTOTYPES" 
   fi                                                                &&
 
+ patch -p1 < $SCRIPT_DIRECTORY/tuxracer-0.61-gcc3.3.X.patch           &&
+
   ./configure  --build=${BUILD}                                     \
                --prefix=${INSTALL_ROOT}/usr                                        \
                --sysconfdir=${INSTALL_ROOT}/etc                                    \
