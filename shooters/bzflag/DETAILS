@@ -1,10 +1,10 @@
            SPELL=bzflag
-         VERSION=1.10.4
-             SFX=20040125
+         VERSION=1.10.6
+             SFX=20040515
           SOURCE=$SPELL-$VERSION.$SFX.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION.$SFX
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-          MD5[0]=34eed1e87393f6a0be4fb63a3c64d447
+          MD5[0]=b04e6c8be3ded75f5baf09628a2dcb45
         WEB_SITE=http://BZFlag.org
          ENTERED=20010922
          UPDATED=20040126
