@@ -3,6 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
           MD5[0]=04da68e4f4365731f5f75460769f0392
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
          ENTERED=20020915

@@ -1,10 +1,13 @@
+2003-10-04  Eric Sandall <eric@sandall.us>
+        * DETAILS: Added mirror, main site should be back up soon
+
 2003-07-29  hgg <hgreig@bigpond.net.au>
 
-                Update gcc check so it actually works :-)
+		Update gcc check so it actually works :-)
 
 2003-07-02  hgg <hgreig@bigpond.net.au>
 
-                Check for gcc3.3 before applying assert.h fixes
+		Check for gcc3.3 before applying assert.h fixes
 
 2003-06-28  hgg <hgreig@bigpond.net.au>
 
