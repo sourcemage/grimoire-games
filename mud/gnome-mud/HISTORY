@@ -1,3 +1,6 @@
+2003-11-20 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.10.3
+
 2003-10-09 hgg <hgreig@bigpond.net.au>
         * DETAILS,POST_BUILD: add GATHER_DOCS="off" and remove POST_BUILD
 
