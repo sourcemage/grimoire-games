@@ -36,35 +36,35 @@
 	* DETAILS: Updated to 0.2.3
 	* freelordssrc: Added for configuration information
 	* Their makefile still doesn't work right, but perhaps
-	it just needs a little tweaking with ./configure?
+	  it just needs a little tweaking with ./configure?
 
 2003-03-29 Eric Sandall <eric@sandall.us>
 	* freelords: Script now runs bin/freelords, since that
-	is where the binary expects to be
+	  is where the binary expects to be
 
 2003-03-21 Eric Sandall <eric@sandall.us>
-	* DETAILS: Updated to 0.2.1  (Bug #2853)
-	Updated SOURCE_URL[0] to use SOURCEFORGE_URL
+	* DETAILS: Updated to 0.2.1 (Bug #2853)
+	  Updated SOURCE_URL[0] to use SOURCEFORGE_URL
 	* BUILD,freelords: Cleaned up
 
 2003-02-04 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.2.0 (stable, not CVS snapshots)
 	* DEPENDS: Added libsigc++2, expat, and cppsocket
-	Fails to find paragui, even if it's installed, so I
-	disabled the test with "--disable-paraguitest"
+	  Fails to find paragui, even if it's installed, so I
+	  disabled the test with "--disable-paraguitest"
 
 2002-11-01 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to v20021101, and renamed VERSION
-	and SOURCE to fit new name with temporary
-	fix for wrong untar directory from VERSION
-	Added MENU_* entries
+	  and SOURCE to fit new name with temporary
+	  fix for wrong untar directory from VERSION
+	  Added MENU_* entries
 	* DEPENDS: Added SDL and SDL_image as dependencies
 	* BUILD: Removed old, invalid patches
 
 2002-10-31 Eric Sandall <eric@sandall.us>
 	* BUILD: Updated to install into /usr/share/games intead
-	of /usr/lib/games, modified to change group ownership to
-	"games"
+	  of /usr/lib/games, modified to change group ownership to
+	  "games"
 
 2002-10-13 Eric Sandall <eric@sandall.us>
 	* Created spell

@@ -1,11 +1,9 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-06-17  hgg <hgreig@bigpond.net.au>
+2003-06-17 hgg <hgreig@bigpond.net.au>
+	* Added spell to grimoire after reconfiguring for optional OPENGL/ SDL usage
 
-		Added spell to grimoire after reconfiguring for optional OPENGL/ SDL usage
+2003-06-06 Jason Flatt <jasonflatt@wizard.com>
+	* Created this spell.
 
-2003-06-06  Jason Flatt <jasonflatt@wizard.com>
-
-		Created this spell.

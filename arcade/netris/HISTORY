@@ -1,13 +1,10 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* added MD5 and LICENSE fields
+	* added MAINTAINER
 
-		added MD5 and LICENSE fields
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* Added this History file.
 
-		added MAINTAINER
-
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
-
-		Added this History file.

@@ -16,7 +16,7 @@
 
 2003-06-09 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Re-Update to 1.0.2 with complete package,
-	buggy tarball in first
+	  buggy tarball in first
 
 2003-06-09 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 1.0.2
@@ -34,10 +34,10 @@
 	* DETAILS: Updated to v0.99.1
 
 2003-01-21 Eric Sandall <eric@sandall.us>
-	* DETAILS: Updated to v0.98.4  (Bug #2310)
+	* DETAILS: Updated to v0.98.4 (Bug #2310)
 
 2003-01-02 Eric Sandall <eric@sandall.us>
-	* DETAILS: Updated to v0.98.3  (Bug #2077)
+	* DETAILS: Updated to v0.98.3 (Bug #2077)
 
 2002-11-26 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to v0.98.2

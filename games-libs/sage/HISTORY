@@ -1,13 +1,13 @@
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
-	Store the cvs version as .bz2
+	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
 2004-03-22 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.1.1
-	Removed MAINTAINER
+	  Removed MAINTAINER
 
 2003-12-01 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: X11-LIBS not X11-LIB

@@ -1,19 +1,15 @@
-2003-09-30  hgg <hgreig@bigpond.net.au>
+2003-09-30 hgg <hgreig@bigpond.net.au>
+	* Remove ARCHIVE hacks
 
-		Remove ARCHIVE hacks
+2003-06-20 hgg <hgreig@bigpond.net.au>
+	* Added PREPARE to remove cache after fixing bug #1068
 
-2003-06-20  hgg <hgreig@bigpond.net.au>
-		
-		Added PREPARE to remove cache after fixing bug #1068
+2003-06-19 hgg <hgreig@bigpond.net.au>
+	* Added POST_BUILD with ARCHIVE=off and removed same from DETAILS
 
-2003-06-19  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Added POST_BUILD with ARCHIVE=off and removed same from DETAILS
+2002-06-20 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
-
-2002-06-20  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Created this spell

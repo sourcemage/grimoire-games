@@ -16,7 +16,7 @@
 
 2003-08-27 hgg <hgreig@bigpond.net.au>
 	* DETAILS,BUILD: Clean up after checking Bug #4129. ./configure doesn't honour --bindir or --datadir 
-	switches only --prefix
+	  switches only --prefix
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* PREPARE: Added warning to configure for gtk+
@@ -27,11 +27,12 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-18 hgg  <hgreig@bigpond.net.au>
+2003-05-18 hgg <hgreig@bigpond.net.au>
 	* CONFIGURE: Fixed bug #3353
 
 2003-05-15 hgg <hgreig@bigpond.net.au>
 	* CONFIGURE: Fixed configured to remember default builds
 
-2003-05-03 hgg	hgreig@bigpond.net.au
-	* ALL: new spell
+2003-05-03 hgg hgreig@bigpond.net.au
+ * ALL: new spell
+

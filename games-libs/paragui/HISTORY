@@ -9,7 +9,7 @@
 
 2003-06-04 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 1.0.4-beta2
-	especially for freerails
+	  especially for freerails
 
 2003-02-05 Eric Sandall <eric@sandall.us>
 	* Fixed Bug #2500, thanks to Christian Sonne
@@ -18,7 +18,8 @@
 	* DETAILS: Updated to 1.0.3
 
 2002-10-24 Eric Sandall <eric@sandall.us>
-	* DEPENDS: Fixed typo 
+	* DEPENDS: Fixed typo
 
 2002-08-26 Eric Sandall <eric@sandall.us>
 	* Added paragui to games
+

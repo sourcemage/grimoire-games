@@ -1,5 +1,5 @@
-2004-02-16 hgg <hgreig@bigpond.net.au> 
-	* DETAILS: update to 0.0.8, update WEBSITE, SOURCE_URL, remove maintainer 
+2004-02-16 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.0.8, update WEBSITE, SOURCE_URL, remove maintainer
 
 2003-11-19 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: PM bug#4679 add ggz-client-libs 

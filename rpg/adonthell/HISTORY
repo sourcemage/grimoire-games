@@ -1,42 +1,33 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* Update for ${INSTALL_ROOT}
 
 2003-02-09 Seth Woolley <seth@tautology.org>
-
-		Reverting the MD5
+	* Reverting the MD5
 
 2003-01-30 Seth Woolley <seth@tautology.org>
+	* Modified DETAILS to correct MD5
 
-		Modified DETAILS to correct MD5
+2003-01-21 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* updated the MD5SUM (they updated the source tarball without
+	  changing the version number)
 
-2003-01-21  Arwed v. Merkatz <v.merkatz@gmx.net>
+2002-10-07 Eric Sandall <eric@sandall.us>
+	* Updated to v0.3.3
+	  Fixed BUILD (no space in LDFLAGS between -L and directory)
+	  Updated SOURCE_URL to use new location (added src/ before $SOURCE)
 
-		updated the MD5SUM (they updated the source tarball without
-		changing the version number)
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* Added MD5 and license, changed maintainer
 
-2002-10-07  Eric Sandall <eric@sandall.us>
+2002-06-04 Jerome Zago <jerome.zago@insalien.org>
+	* Prepended LDFLAGS="-L /usr/X11/lib" to ./configure in BUILD
+	  or it wouldn't link.
+	* Removed ./autogen.sh stuff in BUILD (Julian v. Bock).
+	  This fixes bug #165.
 
-		Updated to v0.3.3
-		Fixed BUILD (no space in LDFLAGS between -L and directory)
-		Updated SOURCE_URL to use new location (added src/ before $SOURCE)
+2002-05-17 David Pradier <pradierdavid@yahoo.fr>
+	* Created this spell.
 
-2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
-
-		Added MD5 and license, changed maintainer
-
-2002-06-04  Jerome Zago <jerome.zago@insalien.org>
-
-		Prepended LDFLAGS="-L /usr/X11/lib" to ./configure in BUILD
-		or it wouldn't link.
-
-		Removed ./autogen.sh stuff in BUILD (Julian v. Bock).
-		This fixes bug #165.
-
-2002-05-17  David Pradier <pradierdavid@yahoo.fr>
-
-		Created this spell.

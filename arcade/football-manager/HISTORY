@@ -1,23 +1,18 @@
-2003-07-17  hgg <hgreig@bigpond.net.au>
+2003-07-17 hgg <hgreig@bigpond.net.au>
+	* change name due to conflict with another in shell-term
 
-		change name due to conflict with another in shell-term
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-05-20 hgg <hgreig@bigpond.net.au>
+	* Reorder DETAILS file to declare WEBSITE before SOURCE_URL
 
-2003-05-20  hgg <hgreig@bigpond.net.au>
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* Update for ${INSTALL_ROOT}
 
-		Reorder DETAILS file to declare WEBSITE before SOURCE_URL
+2003-04-15 Eric Sandall <eric@sandall.us>
+	* Added to games
 
-2003-05-19  hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2003-04-15 Eric Schabell <eschabell@sourcemage.org>
+	* Created spell.
 
-2003-04-15  Eric Sandall <eric@sandall.us>
-
-		Added to games
-
-2003-04-15  Eric Schabell <eschabell@sourcemage.org>
-
-		Created spell.

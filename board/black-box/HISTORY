@@ -5,27 +5,28 @@
 	* BUILD: Added sedit to enable use of global SDL_mixer.
 	* HISTORY: Converted to new format.
 
-2003-08-17  hgg <hgreig@bigpond.net.au>
+2003-08-17 hgg <hgreig@bigpond.net.au>
 	* BUILD: Add patch from Arwed for gcc3.3.X
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-	New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-01-31  Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <eric@sandall.us>
 	* BUILD: Fixed Bug #2443
 
-2002-10-10  Arwed v. Merkatz <v.merkatz@gmx.net>
+2002-10-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: Changed SOURCE_URL (fixes bug #1162)
 
-2002-08-29  Gareth Clay <g.clay@warwick.ac.uk>
+2002-08-29 Gareth Clay <g.clay@warwick.ac.uk>
 	* DETAILS: Changed website
 	* DETAILS: *Really* changed the maintainer this time :)
 
-2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
 	* DETAILS: Added md5, license and changed maintainer
 
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
 	* HISTORY: Added this History file.
+

@@ -3,10 +3,11 @@
 
 2003-12-11 David C. Haley <dhaley@hot.rr.com>
 	* BUILD: added prepare_install
-	added and optimized copying of files to /etc/share/cel
-	* POST_BUILD:  removed file copying code (see BUILD)
+	  added and optimized copying of files to /etc/share/cel
+	* POST_BUILD: removed file copying code (see BUILD)
 	* PRE_BUILD: added default_pre_build
-	removed redundant lines replaced by default_pre_build
+	  removed redundant lines replaced by default_pre_build
 
 2003-12-05 David C. Haley <dhaley@hot.rr.com>
 	* Spell Created
+

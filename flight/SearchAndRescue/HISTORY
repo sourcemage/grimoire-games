@@ -16,10 +16,10 @@
 
 2002-08-29 Gareth Clay <g.clay@warwick.ac.uk>
 	* DETAILS: Added md5 and license fields
-	Changed maintainer
+	  Changed maintainer
 
 2002-04-26 Jerome Zago <jerome.zago@insalien.org>
 	* DETAILS: New version: 0.7.20
 	* BUILD: Man pages are now installed in /usr/share/man instead of
-	/usr/man, to be more FHS compliant.
+	  /usr/man, to be more FHS compliant.
 

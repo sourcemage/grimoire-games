@@ -15,7 +15,7 @@
 
 2003-05-03 hgg <hgreig@bigpond.net.au>
 	* DETAILS: upgraded to 2.7.3
-	added 32x32 bmp
+	  added 32x32 bmp
 
 2003-03-29 Eric Sandall <eric@sandall.us>
 	* DETAILS,BUILD: Added patch so that it can now compile
@@ -25,3 +25,4 @@
 
 2003-01-02 Eric Sandall <eric@sandall.us>
 	* Created spell
+

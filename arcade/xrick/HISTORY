@@ -1,5 +1,5 @@
 2004-02-02 Eric Sandall <eric@sandall.us>
-	* BUILD: Creates /usr/games if it doesn't exist  (Bug #5634)
+	* BUILD: Creates /usr/games if it doesn't exist (Bug #5634)
 	* HISTORY: Formatted to Guru Handbook
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
@@ -9,8 +9,8 @@
 	* DETAILS: Updated to v021212
 	* xrick: Added script to correctly run
 	* BUILD: Fixed to copy data files now
-	Binaries now install as user 'games'
-	Added SMGL optimizations to Makefile
+	  Binaries now install as user 'games'
+	  Added SMGL optimizations to Makefile
 
 2002-08-26 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE

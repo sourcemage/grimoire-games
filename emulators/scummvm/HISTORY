@@ -4,8 +4,8 @@
 	* removed patch
 
 2004-01-13 hgg <hgreig@bigpond.net.au>
-        * DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on
-        DEPENDS using conditionals bug 5466
+	* DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on
+	  DEPENDS using conditionals bug 5466
 
 2004-01-08 hgg <hgreig@bigpond.net.au>
 	* ALL: merge the regular and -cvs spell
@@ -25,7 +25,7 @@
 2003-05-27 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to version 0.4.1
 
-2003-05-05 hgg	<hgreig@bigpond.net.au>
+2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Changed DETAILS to show current subversion
 
 2003-03-19 Eric Sandall <eric@sandall.us>
@@ -33,3 +33,4 @@
 
 2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* Created this spell
+

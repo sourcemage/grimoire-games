@@ -1,35 +1,26 @@
-2003-07-29  hgg <hgreig@bigpond.net.au>
+2003-07-29 hgg <hgreig@bigpond.net.au>
+	* Update gcc check so it actually works :-)
 
-                Update gcc check so it actually works :-)
+2003-07-02 hgg <hgreig@bigpond.net.au>
+	* Check for gcc3.3 before applying assert.h fixes
 
-2003-07-02  hgg <hgreig@bigpond.net.au>
+2003-06-29 hgg <hgreig@bigpond.net.au>
+	* Fix for gcc3.3
 
-                Check for gcc3.3 before applying assert.h fixes
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-06-29  hgg <hgreig@bigpond.net.au>
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* Update for ${INSTALL_ROOT}
 
-		Fix for gcc3.3
+2002-11-07 Eric Sandall <eric@sandall.us>
+	* Updated to v1.00
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>
+	* Upped to version 0.99.1RC2
+	* Added md5sum and license fields
+	* Changed maintainer
 
-2003-05-19  hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* Added this History file.
 
-2002-11-07  Eric Sandall <eric@sandall.us>
-
-		Updated to v1.00
-
-2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
-
-		Upped to version 0.99.1RC2
-
-		Added md5sum and license fields
-
-		Changed maintainer
-
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
-
-		Added this History file.

@@ -1,14 +1,14 @@
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
-	Updated stable version to 0.7.1
-	Store the cvs version as .bz2
+	  Updated stable version to 0.7.1
+	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
 2004-02-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.7.0
-	Removed MAINTAINER
+	  Removed MAINTAINER
 
 2003-12-07 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: libsigc++2 not yee olde versionne

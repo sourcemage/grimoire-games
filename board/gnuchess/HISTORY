@@ -18,5 +18,6 @@
 
 2002-05-02 Jerome Zago <jerome.zago@insalien.org>
 	* ALL: New spell sent by Joel Mayes <bluebird@optushome.com.au>.
-	Added POST_BUILD to avoid the redundant 'gather_docs' step.
-	Binaries now go into /usr/games (FHS compliance).
+	  Added POST_BUILD to avoid the redundant 'gather_docs' step.
+	  Binaries now go into /usr/games (FHS compliance).
+

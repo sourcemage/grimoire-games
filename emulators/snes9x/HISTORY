@@ -12,4 +12,5 @@
 
 2003-11-19 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, Makefile.in.patch:
-	created the spell
+	  created the spell
+

@@ -10,7 +10,7 @@
 
 2003-05-29 hgg <hgreig@bigpond.net.au>
 	* PRE_BUILD: Added PRE_BUILD with warning regards non-maintained package
-	per bug# 2390
+	  per bug# 2390
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
@@ -23,3 +23,4 @@
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>
 	* HISTORY: Added this History file.
+

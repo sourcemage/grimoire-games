@@ -11,7 +11,7 @@
 2003-06-05 Seth Woolley <seth@tautology.org>
 	* DETAILS: Modified to fix md5 for SOURCE.
 
-2003-06-05 hgg < hgreig@bigpond.net.au>
+2003-06-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update t0 2.0.34 and change URL's
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
@@ -19,3 +19,4 @@
 
 2002-09-16 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* Created this spell
+

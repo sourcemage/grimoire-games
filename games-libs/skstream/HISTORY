@@ -1,13 +1,13 @@
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
-	Store the cvs version as .bz2
+	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
 2004-03-25 Eric Sandall <eric@sandall.us>
 	* DETAILS: Forgot md5sum!
-	Removed MAINTAINER
+	  Removed MAINTAINER
 
 2003-12-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.1
@@ -19,8 +19,8 @@
 2003-09-29 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Can optionally use zip and cppunit
 	* DETAILS: 0.3.0 just now released
-	Tested Atlas-C++, wfmath, and eris against the update
-	eris fails, but should be updated soon
+	  Tested Atlas-C++, wfmath, and eris against the update
+	  eris fails, but should be updated soon
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!

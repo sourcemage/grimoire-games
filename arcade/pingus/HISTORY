@@ -1,15 +1,12 @@
-2003-07-29  hgg <hgreig@bigpond.net.au>
+2003-07-29 hgg <hgreig@bigpond.net.au>
+	* Update gcc check so it actually works :-)
 
-                Update gcc check so it actually works :-)
+2003-07-02 hgg <hgreig@bigpond.net.au>
+	* Check for gcc3.3 before applying assert.h fixes
 
-2003-07-02  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-                Check for gcc3.3 before applying assert.h fixes
+2003-06-12 hgg <hgreig@bigpond.net.au>
+	* Created this spell
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
-
-2003-06-12  hgg <hgreig@bigpond.net.au>
-
-		Created this spell 

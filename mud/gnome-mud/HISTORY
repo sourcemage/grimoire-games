@@ -8,7 +8,7 @@
 	* DETAILS: update to 0.10.3
 
 2003-10-09 hgg <hgreig@bigpond.net.au>
-        * DETAILS,POST_BUILD: add GATHER_DOCS="off" and remove POST_BUILD
+	* DETAILS,POST_BUILD: add GATHER_DOCS="off" and remove POST_BUILD
 
 2003-07-11 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 0.10.2
@@ -27,7 +27,7 @@
 	* DEPENDS: Added pygtk2 as a dependency
 
 2003-01-31 Eric Sandall <eric@sandall.us>
-	* BUILD: Fixed Bug #2443  (Removed BUILD, no longer needed)
+	* BUILD: Fixed Bug #2443 (Removed BUILD, no longer needed)
 
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: changed MAINTAINER, changed SOURCE_URL to use $SOURCEFORGE_URL
@@ -38,6 +38,7 @@
 2002-05-02 Jerome Zago <jerome.zago@insalien.org>
 	* DETAILS: New version: 0.9.0
 	* BUILD: Added workaround for the compilation to succeed (LIBS='-ltcl8.3 -ltk8.3').
-	Man pages are now installed in /usr/share/man (FHS compliance).
+	  Man pages are now installed in /usr/share/man (FHS compliance).
 	* POST_BUILD: Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 	* DEPENDS: Removed dependency on xfree86 for consistency (thanks Julian v. Bock <julian@openit.de>).
+

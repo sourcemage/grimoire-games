@@ -4,7 +4,7 @@
 
 2004-01-13 hgg <hgreig@bigpond.net.au>
 	* DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on 
-	DEPENDS using conditionals bug 5466
+	  DEPENDS using conditionals bug 5466
 
 2004-01-08 hgg <hgreig@bigpond.net.au>
 	* ALL: merging of cvs into regular (putting my money where my mouth is)
@@ -18,8 +18,9 @@
 2003-05-27 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to version 0.4.1
 
-2003-05-05 hgg	<hgreig@bigpond.net.au>
+2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Changed to show current subversion
 
 2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* Created this spell
+

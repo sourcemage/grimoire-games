@@ -5,7 +5,7 @@
 	* DEPENDS: Removed dependency on cvs, added dependency on X11-LIBS.
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
-	New Games grimoire is born!
+	* New Games grimoire is born!
 
 2003-05-26 hgg <hgreig@bigpond.net.au>
 	* PRE_BUILD: removed 
@@ -23,3 +23,4 @@
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>
 	* HISTORY: Added this file.
+

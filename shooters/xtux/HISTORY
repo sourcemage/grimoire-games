@@ -11,7 +11,7 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-08 hgg	<hgreig@bigpond.net.au>
+2003-05-08 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 20030306 and removed exploit warning
 
 2003-02-07 Eric Sandall <eric@sandall.us>
@@ -20,8 +20,9 @@
 2002-08-26 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
 
-2002-03-20 Kyle Sallee
+2002-03-20 Kyle Sallee <anonymous@sourcemage.org>
 	* Spell was updated by David Pradier <pradierdavid@yahoo.fr>
 
-200?-??-?? Kyle Sallee
-	* Spell was submitted by ???
+200?-??-?? Kyle Sallee <anonymous@sourcemage.org>
+ * Spell was submitted by ???
+

@@ -38,7 +38,7 @@
 
 2002-12-02 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: added dependency on libpng, glut and freetype2
-	(why was there an empty depends file???)
+	  (why was there an empty depends file???)
 
 2002-10-23 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: Added MD5 and LICENSE fields
@@ -46,7 +46,7 @@
 2002-06-29 Jerome Zago <jerome.zago@insalien.org>
 	* DETAILS: New version: 1.5 (thanks Gareth Clay <g.clay@warwick.ac.uk>)
 	* BUILD: Binary now goes into /usr/games and static data into
-	/usr/share/games (FHS compliance).
+	  /usr/share/games (FHS compliance).
 
 2002-05-16 Gareth Clay <g.clay@warwick.ac.uk>
 	* New spell.

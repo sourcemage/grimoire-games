@@ -1,12 +1,12 @@
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
-	Removed MAINTAINER
+	  Removed MAINTAINER
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
 2003-11-26 hgg <hgreig@bigpond.net.au>
-	* DEPENDS: add  libxml
+	* DEPENDS: add libxml
 
 2003-10-04 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added mirror, main site should be back up soon

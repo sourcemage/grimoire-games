@@ -32,7 +32,7 @@
 	* DETAILS: Updated to 0.3.3
 
 2003-05-19hgg <hgreig@bigpond.net.au>
-	* DETAILS: Update for ${INSTALL_ROOT}
+ * DETAILS: Update for ${INSTALL_ROOT}
 
 2003-05-07 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.2
@@ -57,8 +57,9 @@
 
 2002-06-19 Jerome Zago <jerome.zago@insalien.org>
 	* BUILD: Worked on FHS compliance (binary into /usr/games, man page 
-	into /usr/share/man, data into /usr/share/games).
+	  into /usr/share/man, data into /usr/share/games).
 	* POST_BUILD: Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 
 2002-06-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* ALL: Created this spell.
+

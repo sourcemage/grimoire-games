@@ -17,9 +17,10 @@
 
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: added MD5 and LICENSE fields
-	changed MAINTAINER
+	  changed MAINTAINER
 
 2002-04-26 Jerome Zago <jerome.zago@insalien.org>
 	* DETAILS: New version: 3.2
 	* BUILD: Man and info pages now go into /usr/share/{info|man} (FHS compliance).
-	* POST_BUILD: Added  to avoid the unnecessary 'gather_docs' step.
+	* POST_BUILD: Added to avoid the unnecessary 'gather_docs' step.
+

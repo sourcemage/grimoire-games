@@ -13,7 +13,7 @@
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* DETAILS,BUILD: Update to 1.7g2 including BUILD as package now supports ./configure 
-		
+
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
@@ -22,14 +22,14 @@
 
 2002-07-27 Gareth Clay <g.clay@warwick.ac.uk>
 	* DETAILS: Bumped version to 1.7e6
-	Added md5 and license fields
-	Changed maintainer
+	  Added md5 and license fields
+	  Changed maintainer
 
 2002-04-17 Jerome Zago <jerome.zago@insalien.org>
 	* DETAILS: New version: 1.7e4 (thanks Jeremy Kolb <jkolb@brandeis.edu>).
-	Man pages are now installed.
+	  Man pages are now installed.
 
 2002-04-10 Jerome Zago <jerome.zago@insalien.org>
 	* BUILD: /usr/games and /usr/share/man/man6 are created if needed
-	(thanks Ted Berg <tedberg@etherstorm.net>).
+	  (thanks Ted Berg <tedberg@etherstorm.net>).
 

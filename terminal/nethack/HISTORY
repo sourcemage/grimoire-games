@@ -1,7 +1,7 @@
 2004-01-22 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: change to X11-SERVER bug#4497
 
-2003-11-26 hgg <hgreig@bigpond.net.au> 
+2003-11-26 hgg <hgreig@bigpond.net.au>
 	* BUILD: create /usr/games if it doesn't exist
 
 2003-09-02 hgg <hgreig@bigpond.net.au>
@@ -9,8 +9,8 @@
 
 2003-08-24 Eric Sandall <eric@sandall.us>
 	* DETAILS:One make job
-	Now installs to appropriate locations  (Bug #4131)
-	Permissions for games
+	  Now installs to appropriate locations (Bug #4131)
+	  Permissions for games
 
 2003-07-26 hgg <hgreig@bigpond.net.au>
 	* More work!
@@ -23,7 +23,7 @@
 
 2003-05-20 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 3.4.1
-	Update to use ${SOURCEFORGE_URL}
+	  Update to use ${SOURCEFORGE_URL}
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
@@ -36,4 +36,5 @@
 
 2002-08-24 Eric Sandall <eric@sandall.us>
 	* Added nethack spell from nealbirch
-	Added MD5 and LICENSE
+	  Added MD5 and LICENSE
+

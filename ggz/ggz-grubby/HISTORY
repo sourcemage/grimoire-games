@@ -1,5 +1,5 @@
-2004-02-16 hgg <hgreig@bigpond.net.au> 
-	* DETAILS: update to 0.0.8, update WEBSITE, SOURCE_URL, remove maintainer 
+2004-02-16 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.0.8, update WEBSITE, SOURCE_URL, remove maintainer
 
 2003-11-20 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: ggz-client-libs added

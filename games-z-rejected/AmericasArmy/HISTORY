@@ -1,11 +1,9 @@
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
 
-2003-09-13  hgg <hgrreig@bigpond.net.au>
+2003-09-13 hgg <hgrreig@bigpond.net.au>
+	* add z-rejected warnings and such
 
-		add z-rejected warnings and such
-
-2003-06-20  hgg <hgreig@bigpond.net.au> 
-
-		Created this spell. 
+2003-06-20 hgg <hgreig@bigpond.net.au>
+	* Created this spell.
 
