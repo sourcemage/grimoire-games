@@ -4,17 +4,16 @@
 # SOURCE2 is a newer version of the launcher, dated 2003-09-18
           SOURCE2=elaunch
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-    SOURCE_URL[0]=http://atitd.com/${SOURCE}
-   SOURCE2_URL[0]=http://atitd.com/${SOURCE2}
+    SOURCE_URL[0]=http://egenesis.centralserver.net/${SOURCE}
+   SOURCE2_URL[0]=http://egenesis.centralserver.net/${SOURCE2}
            MD5[0]=071fce94852928d1b5ac9fd89e40d7eb
            MD5[1]=bfe4f4f360d34ad3e74d2f582e88992d
          WEB_SITE=http://www.atitd.com/
           ENTERED=20030920
-          UPDATED=20030920
+          UPDATED=20040422
        LICENSE[0]=UNKNOWN
            REJECT="binary only game"
           ARCHIVE=off
-       MAINTAINER=eric@sandall.us
  	    SHORT="A Tale in the Desert is a civilization-building game"
 cat << EOF
 A Tale in the Desert is an online game set in ancient Egypt where players work together to build the perfect society. It uses the internet to allow thousands of players to play together in the same world. All of the characters you will see and talk to in the game are controlled by other people just like you, not by a computer. A Tale in the Desert is the first online game to focus on long-term planning and long-term goals rather than combat. Goals include the creation of great works of art and architecture, becoming a powerful leader, and building wealth.
