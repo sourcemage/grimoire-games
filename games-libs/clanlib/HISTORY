@@ -1,3 +1,7 @@
+2005-01-16 Jason Flatt <jflatt@sourcemage.org>
+	* BUILD: fixed sed by removing extra "\"s.
+	* DEPENDS: added --disable-mikmod.
+
 2004-12-2 Arjan Bouter <abouter@sourcemage.org>
 	*DETAILS changed spellname to clanlib,
 	 still fails to compile for me though
