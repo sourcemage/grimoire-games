@@ -1,10 +1,13 @@
-2003-10-04  Eric Sandall <eric@sandall.us>
-        * DETAILS: Added mirror, main site should be back up soon
-		* DEPENDS: Depends on SDL_mixer, sage (not stage), and varconf2
-		* PRE_BUILD: Added to check md5sum of SOURCE2
-		* BUILD: Installs proper script to load textures
-		TODO: Install to /usr/share/games with a script in /usr/games
+2003-10-07 Eric Sandall <eric@sandall.us>
+	* BUILD: Removed fix for run_script and permissions
+	* DETAILS: New media out with permission and media.script fixes
 
-2002-09-15  Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+	* DEPENDS: Depends on SDL_mixer, sage (not stage), and varconf2
+	* PRE_BUILD: Added to check md5sum of SOURCE2
+	* BUILD: Installs proper script to load textures
+	TODO: Install to /usr/share/games with a script in /usr/games
 
-		Created spell
+2002-09-15 Eric Sandall <eric@sandall.us>
+	* Created spell

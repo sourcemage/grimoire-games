@@ -8,11 +8,8 @@
   make                                        &&
   prepare_install                             &&
   make    install                             &&
-  cp  -r  sear-media*  /usr/share/sear/       &&
-  sedit  's:runScript:run_script:'            \
-         media.script                         &&
+  cp  -r  sear-media-*  /usr/share/sear/      &&
   cp  media.script  /usr/share/sear           &&
-  chown  -R  root.games  /usr/share/sear      &&
-  chmod  -R  a+r         /usr/share/sear
+  chown  -R  root.games  /usr/share/sear
 
 )  >  ${C_FIFO}  2>&1
