@@ -1,0 +1,15 @@
+           SPELL=fm
+         VERSION=0.99
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${WEB_SITE}/${SOURCE}
+          MD5[0]="447de9196b9441f5bd4dadf9a0a75f95"
+        WEB_SITE=http://www.autismuk.freeserve.co.uk
+         ENTERED=20030415
+         UPDATED=20030415
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Game where you are the manager of a soccer team."
+cat << EOF
+Addictive soccer manager game!
+EOF
