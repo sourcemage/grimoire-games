@@ -1,0 +1,7 @@
+2002-04-11  Jerome Zago <jerome.zago@insalien.org>
+
+		New spell sent by Richard Brauer
+		<richard.brauer@physik.rwth-aachen.de>.
+
+		Binaries now go into /usr/games, Man and info pages into 
+		/usr/share/{info|man}, scores into /var/games (FHS compliance).

@@ -1,0 +1,8 @@
+2002-04-26  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 3.2
+
+		Man and info pages now go into /usr/share/{info|man} (FHS
+		compliance).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.

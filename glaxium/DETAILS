@@ -2,10 +2,11 @@
          VERSION=0.3d
           SOURCE=${SPELL}_$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_$VERSION
-   SOURCE_URL[0]=http://www.multimania.com/hosxe/$SOURCE
-        WEB_SITE=http://www.multimania.com/hosxe/glaxium.html
+   SOURCE_URL[0]=http://agt.nerim.net/mirror/sorcerer/glaxium_0.3d.tgz
+        WEB_SITE=http://freshmeat.net/projects/glaxium/
          ENTERED=20010922
-         UPDATED=20010922
+         UPDATED=20020426
+      MAINTAINER="jerome.zago@insalien.org"
            SHORT="galxium is an OpenGL-based space-ship shoot-em-up styled game."
 cat << EOF
 Glaxium is an OpenGL-based space-ship "shoot-em-up" styled game. It is

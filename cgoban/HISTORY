@@ -1,0 +1,6 @@
+2002-04-10  Jerome Zago <jerome.zago@insalien.org>
+ 
+		Man pages are now installed in /usr/share/man instead of
+		/usr/man, to be more FHS compliant.
+
+		/usr/games and /usr/share/man/man6 are created if needed.

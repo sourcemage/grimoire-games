@@ -5,9 +5,9 @@
                --bindir=/usr/games  &&
   make                              &&
   prepare_install                   &&
-  make    install                   \
+  install  --directory  /usr/games  /usr/share/man/man6	 &&	# not automatic
+  make    install		    \
           BINDIR=/usr/games         \
-          MANDIR=/usr/man/
-
+          MANDIR=/usr/share/man
 
 ) > $C_FIFO 2>&1

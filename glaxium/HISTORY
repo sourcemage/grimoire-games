@@ -1,0 +1,11 @@
+2002-04-26  Jerome Zago <jerome.zago@insalien.org>
+ 
+		http://www.multimania.com/hosxe/ went 404 therefore updated
+		SOURCE_URL[0] and WEB_SITE.
+
+		Added workaround for the compilation to succeed
+		(CPPFLAGS='-I/usr/include/libpng'). Added libpng to DEPENDS.
+
+		/usr/games is created if needed.
+
+		Man pages are now installed in /usr/share/man (FHS compliance).

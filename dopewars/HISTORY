@@ -1,5 +1,15 @@
-History for the dopewars spell
-==============================
+2002-03-20  David Pradier <pradierdavid@yahoo.fr>
 
-            Spell was submitted kongar@tsrsb.org.tr
-20020320    Spell was accepted by <pradierdavid@yahoo.fr>
+		New spell sent by Kagan Kongar <kongar@tsrsb.org.tr>.
+
+2002-04-17  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 1.5.5
+
+		Added workaround for the compilation to succeed
+		(LIBS="-lncurses" in BUILD). I've made upstream aware of the
+		problem.
+
+		Man pages are now installed in /usr/share/man (FHS compliance).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.

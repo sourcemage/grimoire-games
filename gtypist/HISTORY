@@ -1,0 +1,8 @@
+2002-04-10  Jerome Zago <jerome.zago@insalien.org>
+
+		New spell sent by Nathan Doss <ndoss@mtlaurel.org>.
+
+		Man and info pages now go into /usr/share/{info|man} (FHS
+		compliance).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
