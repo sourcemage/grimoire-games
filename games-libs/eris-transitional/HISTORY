@@ -1,3 +1,7 @@
+2004-11-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.2.1
+	* DEPENDS,CONFIGURE: Can now use either libsigc++2 or libsigc++3
+
 2004-10-13 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added SourceForge mirror first
 
