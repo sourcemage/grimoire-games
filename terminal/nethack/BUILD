@@ -74,6 +74,7 @@ sedit "s/games\/lib/share\/games/" sys/unix/nethack.sh                          
 sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  Makefile                           &&
 make  all                                                                            &&
 prepare_install                                                                      &&
+mkdir -p ${INSTALL_ROOT}/usr/games                                                   && 
 make install                                                                         &&
 # this whole mess takes care of docs, fonts and stuff
 # check POST_INSTALL for more info. 
