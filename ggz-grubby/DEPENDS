@@ -1,3 +1,2 @@
 depends  libggz      &&
-depends  easysock    &&
 depends  expat
