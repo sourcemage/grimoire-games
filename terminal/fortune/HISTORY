@@ -2,6 +2,7 @@
 	* DETAILS: BUILD_API=2
 	Removed MAINTAINER
 	Made SHORT shorter
+	Updated UPDATED
 	* BUILD: Converted to BUILD_API 2
 	* INSTALL: Added
 	* zippy.patch: Fix a spelling error
