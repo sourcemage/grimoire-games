@@ -1,5 +1,5 @@
            SPELL=SimGear
-         VERSION=0.0.18
+         VERSION=0.2.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.simgear.org/pub/simgear/Source/$SOURCE
@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20020424
-          MD5[0]=913ce9bb90c9887eb89d9bf20f10f190
+          MD5[0]=d4f700014cc6d23e2c85b1030c882800
       LICENSE[0]=LGPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="SimGear is simulation construction tools used by FlightGear."

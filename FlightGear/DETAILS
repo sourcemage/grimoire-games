@@ -1,5 +1,5 @@
            SPELL=FlightGear
-         VERSION=0.7.10
+         VERSION=0.8.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Source/$SOURCE
@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.flightgear.org
          ENTERED=20010922
          UPDATED=20020424
-          MD5[0]=a25216b243017c6ec67646693476fa95
+          MD5[0]=98260ffc0cc2eefc3d87a4dfeb540204
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="FlightGear is a flight simulator."
