@@ -1,11 +1,14 @@
            SPELL=rockdodger
-         VERSION=0.4.2
+         VERSION=0.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/spacerocks/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/spacerocks/$SOURCE
+          MD5[0]=fef14f776ebcee78a93f02f09069793e
         WEB_SITE=http://spacerocks.sourceforge.net
          ENTERED=20011009
          UPDATED=20020223
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="spacerocks is a spaceship arcade style game."
 
 cat << EOF
