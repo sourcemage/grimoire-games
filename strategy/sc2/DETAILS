@@ -1,17 +1,20 @@
            SPELL=sc2
-         VERSION=0.1
+         VERSION=0.2
           SOURCE=uqm-${VERSION}-source.tgz
-         SOURCE2=uqm-${VERSION}-content-full.tgz
+         SOURCE2=uqm-${VERSION}-content.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/uqm-${VERSION}-source
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
   SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
         WEB_SITE=http://sc2.sourceforge.net
          ENTERED=20030107
-         UPDATED=20030107
-          MD5[0]=24f9c01dfe7055163c469fc0215a12fe
-          MD5[1]=a7dade002a33b9f9d873fd00574be134
+         UPDATED=20030808
+          MD5[0]=ddcb3c16455189302c4270f069f905bd
+          MD5[1]=ad4de1c9318d9196ebf332d935bb6032
       LICENSE[0]=GPL
       LICENSE[1]=UNKNOWN
+      LICENSE[2]=UNKNOWN
+      LICENSE[3]=UNKNOWN
+         ARCHIVE=off  
       MAINTAINER=eric@sandall.us
            SHORT="Port of Star Control II: The Ur-Quan Masters"
 cat << EOF

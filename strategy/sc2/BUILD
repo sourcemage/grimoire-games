@@ -1,26 +1,11 @@
 (
 
-  echo  "\n"  |  ./build.sh  uqm  config  &&
-
-  sedit  's:/usr/local/games/:/usr/share/games/:'  config.state              &&
-  sedit  's:/usr/local/games/bin/:/usr/games/:'  build.vars                  &&
-  sedit  's:/usr/local/games/lib/:/usr/share/games/${SPELL}/:'  build.vars   &&
-  sedit  's:/usr/local/games:/usr/share/games:'  build/build.config          &&
-  sedit  's:/usr/local/games/lib/uqm/content:/usr/share/games/sc2/content:'  \
-    src/config.h                                                             &&
-
+echo -e "1 \n 1 \n 4 \n 1 \n ${INSTALL_ROOT}/usr/share/games/ \n 2 \n ${INSTALL_ROOT}/usr/games/ \
+\n 3 \n ${INSTALL_ROOT}/usr/share/games/ \n" | ./build.sh  uqm  config            &&
   ./build.sh  uqm  depend                 &&
   ./build.sh  uqm                         &&
   prepare_install                         &&
-  install  -d  -o  games  -m  755         \
-    /usr/share/games/${SPELL}/content     &&
-  install  -o  games  -m  755             \
-    uqm-debug  /usr/games                 &&
-  chown  -R  games  content               &&
-  chmod  -R  755  content                 &&
-  cp  -aRp  content/*                     \
-    /usr/share/games/${SPELL}/content     &&
-  ln  -sf  /usr/games/uqm-debug           \
-           /usr/games/sc2
+  ./build.sh uqm install                  &&
+  ln  -sfn  /usr/games/uqm /usr/games/sc2
 
 )  >  ${C_FIFO}  2>&1

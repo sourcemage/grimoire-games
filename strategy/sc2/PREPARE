@@ -1,0 +1,40 @@
+           SPELL=sc2
+         VERSION=0.2
+
+#bug 1068
+if  grep -q 'ARCHIVE="on"' $LOCAL_CONFIG ;
+ then sedit "s/ARCHIVE=\"on\"/ARCHIVE=\${ARCHIVE:=on}/g" $LOCAL_CONFIG
+fi &&
+
+
+if ! grep -q CONFIGURED $SPELL_CONFIG;
+then 
+  if query "Would you like to download the voice and music packages for URQUAN MASTERS ?\n
+WARNING  \t[Voice package == 112MB]\n
+WARNING  \t[Music package ==19MB]\n
+  \t\t\tDownload is extremely optional ?" n
+  then echo "SPELL=sc2" >> $SPELL_CONFIG                             &&
+       echo "VERSION=0.2" >> $SPELL_CONFIG                           &&
+       echo "SOURCE3=uqm-\${VERSION}-voice.zip" >> $SPELL_CONFIG     &&
+       echo "SOURCE4=uqm-\${VERSION}-3domusic.zip" >> $SPELL_CONFIG  &&
+       echo "SOURCE3_URL[0]=\${SOURCEFORGE_URL}/\${SPELL}/\${SOURCE3}" >> $SPELL_CONFIG &&
+       echo "SOURCE4_URL[0]=\${SOURCEFORGE_URL}/\${SPELL}/\${SOURCE4}" >> $SPELL_CONFIG &&
+       echo  "MD5[2]=f7213e8db6ca4bca4ddfdeed8a7ca0d6" >> $SPELL_CONFIG &&
+       echo  "MD5[3]=f7760aa305b743304504e04df742f57e" >> $SPELL_CONFIG &&
+       echo  "CONFIGURED=Y" >> $SPELL_CONFIG
+     fi
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
