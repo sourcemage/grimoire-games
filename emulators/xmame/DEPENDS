@@ -5,7 +5,7 @@ optional_depends \
 
 
 optional_depends \
-	alsa-driver   \
+	alsa-lib   \
 	use_alsa '' \
 	"Do you want to utilize alsa sound output ?"
 
