@@ -1,0 +1,20 @@
+--- Makefile.in	2004-07-14 22:24:09.672174320 -0700
++++ Makefile.in	2004-07-14 22:24:53.157563536 -0700
+@@ -231,7 +231,7 @@
+ GZIP_ENV = --best
+ #>- all: all-redirect
+ #>+ 1
+-all: docs-am  all-redirect
++all: all-redirect
+ .SUFFIXES:
+ $(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+ #>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign Makefile
+@@ -532,7 +532,7 @@
+ .NOEXPORT:
+ 
+ #>+ 2
+-docs-am:
++#docs-am:
+ 
+ #>+ 5
+ force-reedit:

@@ -1,0 +1,108 @@
+--- lotrmap/docs/en/Makefile.in	2004-07-14 22:32:26.316672880 -0700
++++ lotrmap/docs/en/Makefile.in	2004-07-14 22:34:01.281236072 -0700
+@@ -201,7 +201,8 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-EXTRA_DIST = index.html index-1.html index-2.html index-3.html index-4.html index-5.html index-6.html 
++EXTRA_DIST = 
++#index.html index-1.html index-2.html index-3.html index-4.html index-5.html index-6.html 
+ mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+ CONFIG_HEADER = ../../../config.h
+ CONFIG_CLEAN_FILES = 
+@@ -319,72 +320,72 @@
+ maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+ 
+ 
+-install-data-local:
++#install-data-local:
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index.html $(prefix)/doc/lotrmap/index.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index.html $(DESTDIR)$(prefix)/doc/lotrmap/index.html
++#	$(INSTALL_DATA) $(srcdir)/index.html $(DESTDIR)$(prefix)/doc/lotrmap/index.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-1.html $(prefix)/doc/lotrmap/index-1.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-1.html $(DESTDIR)$(prefix)/doc/lotrmap/index-1.html
++#	$(INSTALL_DATA) $(srcdir)/index-1.html $(DESTDIR)$(prefix)/doc/lotrmap/index-1.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-2.html $(prefix)/doc/lotrmap/index-2.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-2.html $(DESTDIR)$(prefix)/doc/lotrmap/index-2.html
++#	$(INSTALL_DATA) $(srcdir)/index-2.html $(DESTDIR)$(prefix)/doc/lotrmap/index-2.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-3.html $(prefix)/doc/lotrmap/index-3.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-3.html $(DESTDIR)$(prefix)/doc/lotrmap/index-3.html
++#	$(INSTALL_DATA) $(srcdir)/index-3.html $(DESTDIR)$(prefix)/doc/lotrmap/index-3.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-4.html $(prefix)/doc/lotrmap/index-4.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-4.html $(DESTDIR)$(prefix)/doc/lotrmap/index-4.html
++#	$(INSTALL_DATA) $(srcdir)/index-4.html $(DESTDIR)$(prefix)/doc/lotrmap/index-4.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-5.html $(prefix)/doc/lotrmap/index-5.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-5.html $(DESTDIR)$(prefix)/doc/lotrmap/index-5.html
++#	$(INSTALL_DATA) $(srcdir)/index-5.html $(DESTDIR)$(prefix)/doc/lotrmap/index-5.html
+ #>- 	$(mkinstalldirs) $(prefix)/doc/lotrmap/
+ #>+ 1
+-	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
++#	$(mkinstalldirs) $(DESTDIR)$(prefix)/doc/lotrmap/
+ #>- 	$(INSTALL_DATA) $(srcdir)/index-6.html $(prefix)/doc/lotrmap/index-6.html
+ #>+ 1
+-	$(INSTALL_DATA) $(srcdir)/index-6.html $(DESTDIR)$(prefix)/doc/lotrmap/index-6.html
++#	$(INSTALL_DATA) $(srcdir)/index-6.html $(DESTDIR)$(prefix)/doc/lotrmap/index-6.html
+ 
+-uninstall-local:
++#uninstall-local:
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-1.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-1.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-1.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-2.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-2.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-2.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-3.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-3.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-3.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-4.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-4.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-4.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-5.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-5.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-5.html
+ #>- 	-rm -f $(prefix)/doc/lotrmap/index-6.html
+ #>+ 1
+-	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-6.html
++#	-rm -f $(DESTDIR)$(prefix)/doc/lotrmap/index-6.html
+ 
+ ####### kdevelop will overwrite this part!!! (end)############
+ 

@@ -1,0 +1,20 @@
+--- lotrmap/limage.cpp	2004-07-14 20:54:47.941281312 -0700
++++ lotrmap/limage.cpp	2004-07-14 20:56:46.102318104 -0700
+@@ -109,7 +109,7 @@
+ 	return gp;
+ }
+ 
+-void LImage::gotoXY( QPoint p, bool tell_sister=true )
++void LImage::gotoXY( QPoint p, bool tell_sister )
+ {
+ 	/* a fixed LImage gets the offset from her sister in draw() */
+ 	if ( !ffixed ) {
+@@ -123,7 +123,7 @@
+         repaint ( false );
+ }
+ 
+-void LImage::gotoXY( int x, int y, bool tell_sister=true )
++void LImage::gotoXY( int x, int y, bool tell_sister )
+ {
+ 	gotoXY( QPoint(x, y), tell_sister );
+ }
