@@ -1,11 +1,20 @@
+2004-07-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Use config_query response for CVS
+	  BUILD_API=2
+	* BUILD: Use config_query response for CVS
+	* DEPENDS: wfmath -> atlas-c++ -> skstream, so removed atlas-c++ and
+	  skstream
+	* PREPARE: Converted to config_query
+	* CONFLICTS: Removed (no longer conflicts with eris)
+
 2004-05-26 Eric Sandall <eric@sandall.us>
 	* DETAILS: Ummm, checkout mercator, not skstream, for CVS
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
 2004-05-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Install either cvs or 0.2.0 release
-	Removed MAINTAINER
-	Added long and short descriptions
+	  Removed MAINTAINER
+	  Added long and short descriptions
 	* DEPENDS: No more -cvs spells
 	* BUILD: Check for cvs and build correctly
 	* PREPARE: Added to query for cvs
