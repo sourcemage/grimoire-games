@@ -1,9 +1,9 @@
            SPELL=liquidwar
-         VERSION=5.5.8
+         VERSION=5.5.9
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/${SPELL}/${SOURCE}
-          MD5[0]=bcc4f7a666782dea4a798324c4a6689a
+          MD5[0]=414749ec5e81ef00c70f5d076f8afbd1
         WEB_SITE=http://www.ufoot.org/liquidwar
          ENTERED=20020210
          UPDATED=20020320
