@@ -1,0 +1,15 @@
+           SPELL=spectemu
+         VERSION=0.95.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.inf.bme.hu/~mszeredi/spectemu/$SOURCE
+        WEB_SITE=http://www.inf.bme.hu/~mszeredi/spectemu/
+         ENTERED=20020602
+         UPDATED=20020602
+         MAINTAINER=pradierdavid@yahoo.fr 
+           SHORT="An emulator for the greatest games machine of all time."
+cat << EOF
+Spectemu is an emulator for the 48k ZX Spectrum.
+
+For the ultimate Speccy game archive, check out www.worldofspectrum.org
+EOF
