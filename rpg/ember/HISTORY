@@ -1,3 +1,6 @@
+2005-03-14 Eric Sandall <eric@sandall.us>
+	* DEPENDS: False dependency on boost fixed in CVS
+
 2005-03-10 Eric Sandall <eric@sandall.us>
 	* PREPARE: Query for CVS release (default 'y')
 	* DETAILS: Added 0.2.0 stable release

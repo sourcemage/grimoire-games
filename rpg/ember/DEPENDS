@@ -10,5 +10,8 @@ depends  eris         &&
 depends  varconf2     &&
 message  "${MESSAGE_COLOR}Broken with ogre built with GLX${DEFAULT_COLOR}"  &&
 depends  ogre         &&
-depends  boost        &&
-depends  openal
+depends  openal       &&
+
+if  [  "$CVS"  ==  "n"  ];  then
+  depends  boost
+fi
