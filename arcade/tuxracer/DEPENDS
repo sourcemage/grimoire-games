@@ -3,4 +3,7 @@ depends  tcl        &&
 depends  SDL        &&
 depends  SDL_mixer  &&
 
-optional_depends "NVIDIA_headers" "" "" "for NVIDIA specific extensions to OpenGL (suitable ONLY for NVIDIA cards)"
+optional_depends  nvidia_headers  \
+                  ""              \
+                  ""              \
+                  "for NVIDIA specific extensions to OpenGL (suitable ONLY for NVIDIA cards)"

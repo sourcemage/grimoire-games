@@ -1,6 +1,6 @@
 (
 
-  if ! spell_installed NVIDIA_headers;
+  if  !  spell_installed  nvidia_headers;
      then export CFLAGS="$CFLAGS -DGLX_GLXEXT_PROTOTYPES" 
   fi                                                                &&
 

@@ -1,3 +1,7 @@
+2004-07-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: NVIDIA_headers renamed to nvidia_headers
+	* BUILD: NVIDIA_headers renamed to nvidia_headers
+
 2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: URL changed to the old site since that's the proper one...
 	* PROVIDES: removed even though it's a fun game....

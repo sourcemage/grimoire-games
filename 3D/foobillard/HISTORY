@@ -1,3 +1,6 @@
+2004-07-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: NVIDIA_headers renamed to nvidia_headers
+
 2004-02-25 hgg <hgreig@bigpond.net.au>
 	* DETAILS: emove maintainer and one of the two short lines bug 6124
 

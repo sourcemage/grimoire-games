@@ -1,3 +1,6 @@
+2004-07-18 Eric Sandall <eric@sandall.us>
+	* BUILD: Just in case they're on the stable grimoire with NVIDIA_headers
+
 2004-07-17 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on nvidia_header if nvidia_driver is installed
 	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
