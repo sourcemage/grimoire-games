@@ -5,7 +5,7 @@ elif  [  $CLIENT = "gtk"  ]; then
   depends  imlib
 elif  [  $CLIENT = "gtk2"  ]; then
   depends  gtk+2
-fi
+fi  &&
 
 optional_depends  "esound"  ""  ""  "for sound support through esound"  &&
 optional_depends  "SDL_mixer"  ""  ""  "for sound support through SDL"  &&

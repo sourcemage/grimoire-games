@@ -1,3 +1,7 @@
+2003-04-29  Eric Sandall <eric@sandall.us>
+
+		Fixed DEPENDS flow control, thanks to Dufflebunk  (Bug #3241)
+
 2003-03-03  Eric Sandall <eric@sandall.us>
 
 		Added standard sounds  (Bug #441, the fix of which somehow got lost)
