@@ -1,9 +1,9 @@
            SPELL=stellarium
-         VERSION=0.5.0
+         VERSION=0.5.1
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://stellarium.free.fr/download/${SOURCE}
-          MD5[0]=7bb21293ab4e7a958228b9c1bc2919ef
+          MD5[0]=418007aef72eb9605e40d2fb0f0a0380
         WEB_SITE=http://stellarium.free.fr
          ENTERED=20021208
          UPDATED=20030208
