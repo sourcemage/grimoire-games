@@ -1,3 +1,7 @@
+2002-11-19  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added DEPENDS file, depends Xaw3d (fixes bug #1725)
+
 2002-10-31  Eric Sandall <eric@sandall.us>
 
 		Created spell
