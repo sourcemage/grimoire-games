@@ -1,15 +1,14 @@
            SPELL=gnocatan
-         VERSION=0.8.0.0
+         VERSION=0.8.1.16
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+          MD5[0]=4de8c88879e5d347c422a9638987f1a9
         WEB_SITE=http://gnocatan.sourceforge.net/
-      MAINTAINER=v.merkatz@gmx.net
-          MD5[0]=333e41cfb943a8e11556315b81bea4a0
-      LICENSE[0]=GPL
          ENTERED=20020527
          UPDATED=20031016
             DOCS="COPYING README NEWS"
+      LICENSE[0]=GPL
            SHORT="gnocatan is a gnome game based on The Settlers of Catan"
 cat << EOF
 Gnocatan is an Internet playable implementation of the Settlers of
