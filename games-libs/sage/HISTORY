@@ -1,3 +1,7 @@
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added SourceForge mirror first
+	* DEPENDS: Pass --disable-sdltest to OPTS
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 

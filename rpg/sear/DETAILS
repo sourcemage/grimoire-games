@@ -4,10 +4,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=$SPELL-media-${MEDIA_VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/clients/$SPELL/$SOURCE
-   SOURCE_URL[1]=http://purple.worldforge.org/downloads/clients/${SPELL}/${SOURCE}
-  SOURCE2_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/clients/$SPELL/media/$SOURCE2
-  SOURCE2_URL[1]=http://purple.worldforge.org/downloads/clients/${SPELL}/media/${SOURCE2}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/clients/$SPELL/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/clients/${SPELL}/${SOURCE}
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE2
+  SOURCE2_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/clients/$SPELL/media/$SOURCE2
+  SOURCE2_URL[2]=http://purple.worldforge.org/downloads/clients/${SPELL}/media/${SOURCE2}
           MD5[0]=a81fd8a76c77a22049dcc1b8bac365cb
           MD5[1]=e5009aa40218d089b4f63e9e2732b4e4
         WEB_SITE=http://www.worldforge.org/dev/eng/clients/$SPELL

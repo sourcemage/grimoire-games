@@ -8,8 +8,9 @@ if  [  "$CVS"  ==  "y"  ];  then
   FORCE_DOWNLOAD=1
 else
           SOURCE=$SPELL-$VERSION.tar.bz2
-   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/servers/$SPELL/$SOURCE
-   SOURCE_URL[1]=http://purple.worldforge.org/downloads/servers/${SPELL}/${SOURCE}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/servers/$SPELL/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/servers/${SPELL}/${SOURCE}
           MD5[0]=6fa8f34c9a5dd1a1cc4fe3f82b8aac0b
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
