@@ -1,0 +1,18 @@
+	    SPELL=atr3d
+	  VERSION=0.6
+ 	   SOURCE=$SPELL\_source\_$VERSION.tgz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+    SOURCE_URL[0]=ftp://ftp.avoidtheroid.com/pub/atr3d/$SOURCE
+ 	 WEB_SITE=http://www.avoidtheroid.com
+	  ENTERED=20030612
+	  UPDATED=20030612
+	   MD5[0]=3454ad22ef41fddc4c8ff6ca78a63287
+       LICENSE[0]=GPL
+       MAINTAINER=hgreig@bigpond.net.au
+ 	    SHORT="Avoid The Roid"
+ cat << EOF
+ Avoid The Roid by Bill Jordan is a 3D asteroids like game. The game is written in c++ and uses unix sockets for networking, pthreads for the thread library, 
+OpenGL for the graphics library, glut for windows and input, and OpenAL for audio.
+ EOF
+ 
+

@@ -1,0 +1,2 @@
+depends openal &&
+depends glut
