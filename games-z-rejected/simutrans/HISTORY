@@ -2,6 +2,7 @@
 	* BUILD, INSTALL: converted to BUILD_API 2, create /usr/games if it
 	  doesn't exist
 	* DETAILS: set ARCHIVE=off, the spell only copies files
+	* UNATTEND_SAFE: added
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
