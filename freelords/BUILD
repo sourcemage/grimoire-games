@@ -31,6 +31,9 @@
     /usr/games                             &&
   chown  -R  root.games  ${I_DIR}          &&
   chown  root.games  /usr/games/freelords  &&
-  chmod  +x  /usr/games/freelords
+  chmod  +x  /usr/games/freelords          &&
+  cp  freelordsrc  /etc                    &&
+  chown  root.games  /etc/freelordsrc      &&
+  chmod 664  /etc/freelordsrc
 
 )  >  ${C_FIFO}  2>&1

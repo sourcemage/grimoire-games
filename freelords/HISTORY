@@ -1,3 +1,12 @@
+2003-05-07  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.2.3
+
+		Added freelordsrc for configuration information
+
+		Their makefile still doesn't work right, but perhaps
+		it just needs a little tweaking with ./configure?
+
 2003-03-29  Eric Sandall <eric@sandall.us>
 
 		Script now runs bin/freelords, since that
