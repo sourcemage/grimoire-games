@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
-          MD5[0]=2e6fdcbbbe84b82b4cd7355d3b90c031
+          MD5[0]=b38809102006f8af7e6fa4ee030aa9ea
         WEB_SITE=http://lgames.sourceforge.net
          ENTERED=20020129
          UPDATED=20020224
