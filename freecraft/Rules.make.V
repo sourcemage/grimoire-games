@@ -1,6 +1,6 @@
 ##   ___________		     _________		      _____  __
 ##   \_	  _____/______   ____   ____ \_   ___ \____________ _/ ____\/  |_
-##    |    __) \_  __ \_/ __ \_/ __ \/    \  \/\_  __ \__  \   __\   __\ 
+##    |    __) \_  __ \_/ __ \_/ __ \/    \  \/\_  __ \__  \   __\   __|
 ##    |     \   |  | \/\  ___/\  ___/\     \____|  | \// __ \|  |   |  |
 ##    \___  /   |__|    \___  >\___  >\______  /|__|  (____  /__|   |__|
 ##	  \/		    \/	   \/	     \/		   \/
@@ -16,7 +16,7 @@ RM=rm -f
 MAKE=make
 
 # Prefix for 'make install'
-PREFIX=${INSTALL_ROOT}/usr/games
+PREFIX=/usr/local
 
 # Use SIOD support
 CCL		= -DUSE_CCL
@@ -28,34 +28,34 @@ VIDEOLIB	= -lvga -ldl
 
 # Sound support
 DSOUND		= -DWITH_SOUND
+ARTSC		= -DWITH_ARTSC $(shell artsc-config --cflags)
+ARTSCLIB	= $(shell artsc-config --libs)
 FLAC		= -DUSE_FLAC
 FLACLIB		= -lFLAC
 OGG		= -DUSE_OGG
 OGGLIB		= -lvorbisfile -lvorbis -logg
 MAD		= -DUSE_MAD
 MP3LIB		= -lmad
-SDLCD           = -DUSE_SDLCD
-SDLCD	=  $(shell sdl-config --cflags)
-CLONELIBS	= $(shell sdl-config --libs)
+LIBCDA          = -DUSE_LIBCDA
 
 
 # Compression support
-ZDEFS		= -DUSE_BZ2LIB
-ZLIBS		= -lbz2
+ZDEFS		= -DUSE_ZLIB -DUSE_BZ2LIB
+ZLIBS		= -lz -lbz2
 
-XLDFLAGS	= -L/usr/X11R6/lib -L/usr/lib  
-XIFLAGS		= -I/usr/X11R6/include -I/usr/include  
+XLDFLAGS	= -L/usr/X11R6/lib -L/usr/local/lib  
+XIFLAGS		= -I/usr/X11R6/include -I/usr/local/include  
 
 #####################################################################
 # Don't change anything below here unless you know what you're doing!
 
-VERSION=	'-DVERSION="1.17.2"'
+VERSION=	'-DVERSION="1.18"'
 PROFILE=
 
-TOOLLIBS=$(XLDFLAGS) -lpng -lz -lm
+TOOLLIBS=$(XLDFLAGS) -lpng -lz -lm $(THREADLIB)
 CLONELIBS= $(XLDFLAGS) -lpng -lz -lm \
-	$(CCLLIB) $(VIDEOLIB) $(ZLIBS) \
-	$(FLACLIB) $(OGGLIB) $(MP3LIB) -lz -lm
+	$(THREADLIB) $(CCLLIB) $(VIDEOLIB) $(ZLIBS) \
+	$(ARTSCLIB) $(FLACLIB) $(OGGLIB) $(MP3LIB) -lz -lm
 DISTLIST=$(TOPDIR)/distlist
 TAGS=$(TOPDIR)/src/tags
 
@@ -67,24 +67,16 @@ OE=o
 OBJDIR=obj
 
 #ARCHOBJS=stdmman.$(OE) svgalib.$(OE) unix_lib.$(OE) bitm_lnx.$(OE)
-IFLAGS=	-I$(TOPDIR)/src/include $(XIFLAGS)
-DFLAGS=	$(CCL) $(VERSION) \
+IFLAGS=	-I$(TOPDIR)/src/include $(XIFLAGS) -I$(TOPDIR)/src/movie/vp31/include
+DFLAGS=	$(THREAD) $(CCL) $(VERSION) \
 	$(VIDEO) $(ZDEFS) $(DSOUND) \
 	$(DEBUG) $(SDLCD) $(LIBCDA) \
-	$(FLAC) $(OGG) $(MAD) 
-CFLAGS=-O2 -pipe -fsigned-char -fomit-frame-pointer -fconserve-space -fexpensive-optimizations -ffast-math  $(IFLAGS) $(DFLAGS)  -DUNIT_ON_MAP -DNEW_AI -DUSE_LIBMODPLUG -DUSE_HP_FOR_XP
+	$(ARTSC) $(FLAC) $(OGG) $(MAD) 
+CFLAGS=-O2 -pipe -fsigned-char -fomit-frame-pointer -fconserve-space -fexpensive-optimizations -ffast-math  $(IFLAGS) $(DFLAGS)  -DUNIT_ON_MAP -DNEW_AI -DUSE_LIBMODPLUG -DUSE_HP_FOR_XP -DNEW_FOW -DBUILDING_DESTROYED 
 CTAGSFLAGS=-i defptvS -a -f 
 
 # Locks versions with a symbolic name
 LOCKVER=	rcs -q -n$(NAME)
-
-$(OBJDIR)/%.$(OE): %.c
-	$(CC) -c $(CFLAGS) $< -o $@
-	@$(AR) cru $(TOPDIR)/src/$(OBJDIR)/libclone.a $@
-
-$(OBJDIR)/%.$(OE): %.cpp
-	$(CC) -c $(CFLAGS) $< -o $@
-	@$(AR) cru $(TOPDIR)/src/$(OBJDIR)/libclone.a $@
 
 # Source code documentation
 DOXYGEN=	doxygen

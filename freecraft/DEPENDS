@@ -20,11 +20,10 @@ optional_depends  "vorbis-tools"            \
                   ""                        \
                   "for Ogg Vorbis support"  &&
 
-# Problems with FLAC for the time being
-#optional_depends  "flac"              \
-#                  ""                  \
-#                  ""                  \
-#                  "for Flac support"  &&
+optional_depends  "flac"              \
+                  ""                  \
+                  ""                  \
+                  "for Flac support"  &&
 
 optional_depends  "mad"                             \
                   ""                                \

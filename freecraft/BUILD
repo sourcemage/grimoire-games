@@ -45,14 +45,13 @@
     sedit  's:\$(OGG)::'  Rules.make
   fi
 
-  # Always remove FLAC support until fixed
-  #if  !  spell_installed  "flac"  ;  then
+  if  !  spell_installed  "flac"  ;  then
     sedit  's:^FLAC:#FLAC:'  Rules.make
     sedit  's:^FLACLIB:#FLACLIB:'  Rules.make
     sedit  's:-DUSE_FLAC$::'  Rules.make
     sedit  's:\$(FLACLIB)::'  Rules.make
     sedit  's:\$(FLAC)::'  Rules.make
-  #fi
+  fi
 
   if  !  spell_installed  "mad"  ;  then
     sedit  's:MAD:#MAD:'  Rules.make
