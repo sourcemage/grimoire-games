@@ -1,0 +1,16 @@
+           SPELL=quake-shareware
+         VERSION=1.06
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.quakeforge.net/files/$SOURCE
+        WEB_SITE=http://www.quakeforge.net
+      MAINTAINER=v.merkatz@gmx.net
+          MD5[0]=dbce1bb6e1f82d68b4d89bb4db2ff29b
+      LICENSE[0]=PD
+         ENTERED=20020826
+         UPDATED=20020826
+         ARCHIVE="off"
+           SHORT="the quake shareware game data"
+cat << EOF
+The part of the quake game data distributed in the public domain.
+EOF

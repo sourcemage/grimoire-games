@@ -1,0 +1,16 @@
+           SPELL=pinball
+         VERSION=0.2.0a
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\a/}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://pinball.sourceforge.net/
+         ENTERED=20020303
+         UPDATED=20020304
+          MD5[0]=b6d6abd09e5d5f17518a3bf752c32b72
+      LICENSE[0]=GPL
+      MAINTAINER=v.merkatz@gmx.net
+           SHORT="pinball is the Emilia pinball project."
+cat << EOF
+The Emilia Pinball Project strives to fulfill your needs for a great
+pinball game in Linux.
+EOF

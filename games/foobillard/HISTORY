@@ -1,0 +1,48 @@
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2003-05-09  hgg <hgreig@bigpond.net.au>
+
+		Update ./configure as bumpref features are NVIDIA_GLX header specific
+
+2003-05-08  hgg <hgreig@bigpond.net.au>
+
+		Changed patch as current xfree86 has extra gl extensions included
+
+2003-05-05  hgg	<hgreig@bigpond.net.au>
+
+		Updated to 2.6
+
+2003-01-24  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		updated to 2.4
+
+2002-12-11  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		updated to 2.0
+
+2002-12-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		updated to 1.9
+		added patch for newer glext.h
+		added myself as maintainer
+
+2002-12-02  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added dependency on libpng, glut and freetype2
+		(why was there an empty depends file???)
+
+2002-10-23  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		Added MD5 and LICENSE fields
+
+2002-06-29  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 1.5 (thanks Gareth Clay <g.clay@warwick.ac.uk>)
+		Binary now goes into /usr/games and static data into
+		/usr/share/games (FHS compliance).
+
+2002-05-16  Gareth Clay <g.clay@warwick.ac.uk>
+
+		New spell.

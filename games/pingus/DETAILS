@@ -1,0 +1,20 @@
+	    SPELL=pingus
+	  VERSION=0.6.0
+ 	   SOURCE=$SPELL-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=http://pingus.seul.org/files/$SOURCE
+ 	 WEB_SITE=http://pingus.seul.org/welcome.html
+	  ENTERED=20030612
+	  UPDATED=20030612
+	   MD5[0]=382f2c3911dab38694333d261bd9c04e
+       LICENSE[0]=GPL
+       MAINTAINER=hgreig@bigpond.net.au
+ 	    SHORT="Pingus is a Lemmings(tm) clone"
+ cat << EOF
+While Pingus is based on the idea of Lemmings(tm), it has included some other ideas, which weren't 
+presented in the original Lemmings(tm), like the worldmap or secret levels, which might be familiar 
+from games the Super Mario World and other Nintendo games. We have also a few new actions, like the jumper 
+which weren't presented in the original game.
+EOF
+ 
+

@@ -1,0 +1,21 @@
+           SPELL=rocksndiamonds
+         VERSION=2.1.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.artsoft.org/RELEASES/unix/$SPELL/$SOURCE
+        WEB_SITE=http://www.artsoft.org/rocksndiamonds/
+      LICENSE[0]=GPL
+          MD5[0]=321afd98478accc02edc4397159ae6ad
+      MAINTAINER=v.merkatz@gmx.net
+         ENTERED=20021211
+         UPDATED=20021211
+           SHORT="If you know the game 'Boulderdash' (Commodore C64) or 'Emerald Mine' (Amiga), you know what ROCKS'N'DIAMONDS is about."
+cat << EOF
+This is a nice little game with color graphics and sound for your
+Unix system with color X11. You need an 8-Bit color display or better.
+It is not recommended on black&white systems, and maybe not on gray
+scale systems.
+                                                                                
+If you know the game "Boulderdash" (Commodore C64) or "Emerald Mine"
+(Amiga), you know what "ROCKS'N'DIAMONDS" is about.
+EOF

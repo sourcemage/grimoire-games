@@ -1,0 +1,4 @@
+depends  gnome-common2  &&
+depends  libgnomeui     &&
+depends  gtk+2          &&
+depends  esound

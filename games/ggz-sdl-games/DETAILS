@@ -1,0 +1,16 @@
+           SPELL=ggz-sdl-games
+         VERSION=0.0.7
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
+          MD5[0]=75efdcc9b67e28ec8e85485768f62780
+      LICENSE[0]=LGPL
+        WEB_SITE=http://ggz.sourceforge.net
+         ENTERED=20030606
+         UPDATED=20030606
+      MAINTAINER=hgreig@bigpond.net.au
+           SHORT="GGZ Gaming Zone SDL game modules"
+cat << EOF
+GGZ Gaming Zone server libraries provides the common procedures and
+utilities required to run the GGZ game servers.
+EOF

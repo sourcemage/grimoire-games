@@ -1,0 +1,4 @@
+depends  libpng     &&
+depends  SDL        &&
+depends  freetype2  &&
+depends  glut

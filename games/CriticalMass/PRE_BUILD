@@ -1,0 +1,24 @@
+critterpatch() {
+mkdir /tmp/xdelta &&
+cd /tmp/xdelta &&
+cp $SOURCE_CACHE/${SOURCE} . &&
+bunzip2 $SOURCE &&
+xdelta patch $SCRIPT_DIRECTORY/criticalmass.xdelta CriticalMass-0.97.tar  CriticalMass.tar &&
+bzip2 CriticalMass.tar &&
+mv CriticalMass.tar.bz2 $SOURCE_CACHE/ &&
+rm -rf /tmp/xdelta  &&
+mk_source_dir  ${SOURCE_DIRECTORY} &&
+cd $SOURCE_DIRECTORY &&
+unpack ${SOURCE2} ${MD5[1]} # this does same as unpack ${SOURCE} ${MD5[0]}
+}
+SOURCE2="CriticalMass.tar.bz2" 
+
+if [ -f ${SOURCE_CACHE}/${SOURCE2} ]
+then    mk_source_dir  ${SOURCE_DIRECTORY} &&
+	cd $SOURCE_DIRECTORY &&
+	unpack ${SOURCE2} ${MD5[1]} 
+else 
+ critterpatch
+fi    
+
+

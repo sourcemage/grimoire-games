@@ -1,0 +1,19 @@
+           SPELL=trackballs
+         VERSION=0.9.0
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+          MD5[0]=a501633e5bbf2ec5c5525df1358d3c5b
+      LICENSE[0]=GPL
+        WEB_SITE=http://trackballs.sourceforge.net/
+      MAINTAINER=rycee@home.se
+         ENTERED=20030221
+         UPDATED=20030221
+           SHORT="Trackballs is a game inspired by the classical Marble Madness"
+cat << EOF
+Trackballs is a simple game similar to the classical game Marble Madness on the
+Amiga in the 80's. By steering a marble ball through a labyrinth filled with
+vicious hammers, pools of acid and other obstacles the player collects points.
+When the ball reaches the destination it continues to the next, more difficult
+track - unless the time runs out.
+EOF

@@ -1,0 +1,6 @@
+depends  SDL  &&
+
+optional_depends "SDL_mixer"          \
+                 ""                   \
+                 ""                   \
+                 "for sound support"

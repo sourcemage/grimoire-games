@@ -1,0 +1,21 @@
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2003-05-15  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.2.8
+
+		Removed erroneous descriptor from DETAILS
+
+2003-02-17  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.2.7
+
+2003-01-25  Eric Sandall <eric@sandall.us>
+
+		Fixed website  (Bug #2384, thanks to Snakebyte)
+
+2003-01-08  Eric Sandall <eric@sandall.us>
+
+		Created spell

@@ -1,0 +1,17 @@
+--- build.orig	2003-03-19 10:13:54.000000000 +0000
++++ build.rules	2003-03-19 10:14:10.000000000 +0000
+@@ -6,11 +6,11 @@
+ OBJS	 += backends/sdl/sdl-common.o 
+ 
+ # The normal (non OpenGL-accelerated) SDL backend
+-OBJS	 += backends/sdl/sdl.o 
++#OBJS	 += backends/sdl/sdl.o 
+ 
+ # Uncomment these lines (instead of the above) to use SDL with OpenGL
+-# OBJS	   += backends/sdl/sdl_gl.o
+-# LIBS     += -lGL
++OBJS	   += backends/sdl/sdl_gl.o
++LIBS     += -lGL
+ 
+ # Uncomment this in addition to the above if you compile on Mac OS X
+ # DEFINES += -DMACOSX

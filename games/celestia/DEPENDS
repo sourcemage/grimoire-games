@@ -1,0 +1,14 @@
+depends xfree86 &&
+depends jpeg	&&
+depends libpng	&&
+depends glut	&&
+
+if 	[ "$KDE" = "y" ]
+then 	depends kdelibs
+fi &&
+
+if	[ "$GTK" = "y" ]
+then	depends gnome-libs
+fi 
+
+

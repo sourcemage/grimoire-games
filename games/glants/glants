@@ -1,0 +1,5 @@
+#!/bin/sh
+# Script to run game
+
+cd  /usr/share/games/glants
+./glants

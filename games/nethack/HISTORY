@@ -1,0 +1,23 @@
+2003-05-20  hgg <hgreig@bigpond.net.au>
+	
+		Update to 3.4.1
+		
+		Update to use ${SOURCEFORGE_URL}
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2002-10-24  Eric Sandall <eric@sandall.us>
+
+		Fixed POST_INSTALL to create /usr/games if it doesn't exist
+
+2002-09-10  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		removed dependency on xfree86 (fixes bug #930)
+
+2002-08-24  Eric Sandall <eric@sandall.us>
+
+		Added nethack spell from nealbirch
+
+		Added MD5 and LICENSE

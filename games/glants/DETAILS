@@ -1,0 +1,18 @@
+           SPELL=glants
+         VERSION=0.6
+          SOURCE=${SPELL}v${VERSION/\./}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}v${VERSION/\./}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://glants.sourceforge.net/
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=8cc3f08593424b2f14de71d262946045
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]="OpenGL Ants"
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]=${SHORT}
+           SHORT="Simulation game loosely based on BattleZone and SpectreVR"
+cat << EOF
+glAnts is a combination game and simulation loosely based on Battlezone or SpectreVR. It supports third and first person views. Drive your mech and kill the bots. Windows and Linux versions are available. 
+EOF

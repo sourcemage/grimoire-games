@@ -1,0 +1,37 @@
+           SPELL=TORCS
+         VERSION=1.2.1
+          SOURCE=${SPELL}-${VERSION}-src.tgz
+         SOURCE2=${SPELL}-${VERSION}-src-robots-base.tgz
+         SOURCE3=${SPELL}-${VERSION}-data.tgz
+         SOURCE4=${SPELL}-${VERSION}-data-tracks-base.tgz
+         SOURCE5=${SPELL}-${VERSION}-data-cars-Patwo-Design.tgz
+         SOURCE6=${SPELL}-${VERSION}-data-cars-extra.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/torcs-${VERSION/c/}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE2}
+  SOURCE3_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE3}
+  SOURCE4_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE4}
+  SOURCE5_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE5}
+  SOURCE6_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE6}
+        WEB_SITE=http://torcs.sourceforge.net/
+          MD5[0]=e42015a13940095090ed4448272f2367
+          MD5[1]=24b99c3741e9c665e7f9bb8d891b8d58
+          MD5[2]=6026a925d535fc9aec43e58241a6ee5b
+          MD5[3]=0a37bc54ca140b066e1b89941942f5c2
+          MD5[4]=1774e1d076bc58370bb6cd1a844f9e14
+          MD5[5]=055759ba95c538d0452fb51bd3ac2f63
+      LICENSE[0]=GPL
+      LICENSE[1]=GPL
+      LICENSE[2]=GPL
+      LICENSE[3]=GPL
+      LICENSE[4]=UNKNOWN
+      LICENSE[5]=GPL
+         ENTERED=20010926
+         UPDATED=20011219
+            FUZZ="off"
+           SHORT="TORCS is a 3D racing cars simulator using OpenGL."
+cat << EOF
+TORCS is a 3D racing cars simulator using OpenGL. The goal is to have 
+programmed robot drivers racing against each others. Nevertheless, a
+joystick interface is present in order to drive yourself.
+EOF

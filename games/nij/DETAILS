@@ -1,0 +1,18 @@
+           SPELL=nij
+         VERSION=0.0.7
+          SOURCE=${SPELL}new.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+   SOURCE_URL[0]=http://www.anemaet.nl/nij/nijnew.tgz
+        WEB_SITE=http://www.anemaet.nl/nij/
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=af99740538209051f6bc41f85dd2b5e1
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]=${SPELL}
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]=${SHORT}
+           SHORT="2D Action game starring a girl without a name"
+cat << EOF
+Nij is a 2d action game starring a girl without a name. The game's about killing a whole mafia gang. There are all kinds of enemys such as rockets. The game has 4 levels. There are some shoot parts and some jump & run parts :) 
+EOF

@@ -1,0 +1,29 @@
+           SPELL=crossfire
+         VERSION=1.5.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+         SOURCE2=$SPELL-$VERSION.arch.tar.bz2
+         SOURCE3=$SPELL-$VERSION.maps-big.tar.bz2
+         SOURCE4=$SPELL-$VERSION.maps-small.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.sourceforge.net/pub/sourceforge/crossfire/$SOURCE
+  SOURCE2_URL[0]=ftp://ftp.sourceforge.net/pub/sourceforge/crossfire/$SOURCE2
+  SOURCE3_URL[0]=ftp://ftp.sourceforge.net/pub/sourceforge/crossfire/$SOURCE3
+  SOURCE4_URL[0]=ftp://ftp.sourceforge.net/pub/sourceforge/crossfire/$SOURCE4
+          MD5[0]=744f71d9a2a1a4b7baf8a1f4698324f4 
+          MD5[1]=c61ac713bd472fdf4bcee476cbb1512a
+          MD5[2]=bd4c8d75b5e1cdfaa608b697e903682c
+          MD5[3]=98b31873a191116ac37abfc92d56b1f9
+        WEB_SITE=http://crossfire.real-time.com
+         ENTERED=20011104
+         UPDATED=20011104
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
+           SHORT="crossfire is the server for a multi-player graphical MUD."
+cat << EOF
+Crossfire is a multi-player graphical arcade and adventure game made
+for X. It has certain flavours from other games, especially Gauntlet
+and the rogue-like games (Nethack, Moria, Angband, and Ragnarok). Any 
+number of players can move around in their own window, finding and
+using items and battling monsters. They can choose to cooperate or
+compete in the same world.
+EOF

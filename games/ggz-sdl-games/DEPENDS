@@ -1,0 +1,4 @@
+depends  SDL          &&
+depends  SDL_image    &&
+depends  SDL_ttf      &&
+depends  ggz-client-libs

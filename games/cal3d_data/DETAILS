@@ -1,0 +1,15 @@
+           SPELL=cal3d_data
+         VERSION=0.8
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
+          MD5[0]=71864cd4e2092077a54203434f73aab6
+        WEB_SITE=http://sourceforge.net/projects/cal3d/
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=LGPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Example Cal3d model data"
+cat << EOF
+Examples for Cal3d model data.
+EOF

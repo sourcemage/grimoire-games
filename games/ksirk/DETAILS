@@ -1,0 +1,21 @@
+           SPELL=ksirk
+         VERSION=1.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://ksirk.tuxfamily.org/downloads/uploads/${SOURCE}
+        WEB_SITE=http://ksirk.tuxfamily.org/
+         ENTERED=20030610
+         UPDATED=20030610
+          MD5[0]=48e01bbc60f899413ebe26c025f11cc7
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]="KsirK Risk(R) clone"
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]=${SHORT}
+           SHORT="Ksirk is a clone of Risk(R)"
+cat << EOF
+KsirK is a computerized version of a well known strategy game for KDE.
+Help files are available through the KDE Help Centre/ Center.
+When playing against the computer, the computer must be the first player, and you the second (due to 
+bug).
+EOF

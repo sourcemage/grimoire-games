@@ -1,0 +1,33 @@
+if  !  grep  -q  "ALSA"  $SPELL_CONFIG;  then
+
+  if    query  "Enable alsa sound support?" y
+  then  ALSA=y
+  else  ALSA=n
+  fi
+
+  echo  "ALSA=$ALSA"  >>  $SPELL_CONFIG
+
+fi
+
+if  !  grep  -q  "MAD"  $SPELL_CONFIG;  then
+
+  if    query  "Enable MAD mpeg audio support?" y
+  then  MAD=y
+  else  MAD=n
+  fi
+
+  echo  "MAD=$MAD"  >>  $SPELL_CONFIG
+
+fi
+
+if  !  grep  -q  "VORBIS"  $SPELL_CONFIG;  then
+
+  if    query  "Enable Vorbis audio support?" y
+  then  VORBIS=y
+  else  VORBIS=n
+  fi
+
+  echo  "VORBIS=$VORBIS"  >>  $SPELL_CONFIG
+
+fi
+

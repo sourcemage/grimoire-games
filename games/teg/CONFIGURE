@@ -1,0 +1,15 @@
+if  !  grep  -q  "CONFIGURED"  ${SPELL_CONFIG}
+  then
+
+  if      query  "Install server?"  n
+    then  echo   'SERVER="y"'  >>  ${SPELL_CONFIG}
+    else  echo   'SERVER="n"'  >>  ${SPELL_CONFIG}
+  fi
+
+  if      query  "Install robot (AI)?"  y
+    then  echo   'ROBOT="y"'  >>  ${SPELL_CONFIG}
+    else  echo   'ROBOT="n"'  >>  ${SPELL_CONFIG}
+  fi
+
+  echo  'CONFIGURED="y"'  >>  ${SPELL_CONFIG}
+fi

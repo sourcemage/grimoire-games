@@ -1,0 +1,31 @@
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2003-01-31  Eric Sandall <eric@sandall.us>
+
+		Fixed Bug #2443
+
+		Also now copies scripts...don't know how this was missed
+		as the game won't run without them...and another show-
+		stopper is that --datadir wasn't set, so the binary
+		was looking in the wrong spot for the data...
+
+2003-01-26  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.62  (Bug #2383, thanks to Snakebyte)
+
+		Changed data dir to /usr/lib/games
+
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
+		changed SOURCE_URL to use $SOURCEFORGE_URL
+
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+
+		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
+		too slow.

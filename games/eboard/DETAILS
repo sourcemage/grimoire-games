@@ -1,0 +1,17 @@
+           SPELL=eboard
+         VERSION=0.8.0
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=a2ea33328c7f2112471bc983988964fb
+        WEB_SITE=http://eboard.sf.net
+         ENTERED=20030503
+         UPDATED=20030503
+      LICENSE[0]=GPL
+      MAINTAINER=unet@sourcemage.org
+           SHORT="eboard is an chess interface"
+cat << EOF
+eboard is a graphical user interfaces for chess. They display a chessboard on
+the screen, accept moves made with the mouse, and load and save games in
+Portable Game Notation (PGN), and many many more...
+EOF

@@ -1,0 +1,10 @@
+if  !  grep  -q  "CONFIGURED"  ${SPELL_CONFIG}
+  then
+
+  if      query  "Do you want OSS-compatible sound?"  y
+    then  echo   'OSSSOUND="y"'  >>  ${SPELL_CONFIG}
+    else  echo   'OSSSOUND="n"'  >>  ${SPELL_CONFIG}
+  fi
+
+  echo  'CONFIGURED="y"'  >>  ${SPELL_CONFIG}
+fi

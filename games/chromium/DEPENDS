@@ -1,0 +1,6 @@
+depends openal &&
+depends SDL    &&
+depends smpeg  &&
+depends libpng &&
+depends libvorbis &&
+depends tcl

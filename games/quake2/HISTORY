@@ -1,0 +1,40 @@
+2003-06-06  Eric Sandall <eric@sandall.us>
+
+		Updated LICENSE to GPL
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2003-05-14  Seth Woolley <seth@tautology.org>
+
+		Added &&s and unpack to BUILD
+
+2003-05-05  hgg 	<hgreig@bigpond.net.au>
+
+		Updated to r0.15
+		
+		Added arts sound compilation to Makefile
+		
+		Added maxpak.pak for fancier GL rendering
+
+2002-09-18  Eric Sandall <eric@sandall.us>
+
+		Added POST_INSTALL and POST_REMOVE, thanks to Chris Brian (fixes Bug #876)
+
+2002-08-26  Eric Sandall <eric@sandall.us>
+
+      Updated/added MAINTAINER, MD5, LICENSE
+
+2002-06-16  Chris Brien <christopher_brien@hotmail.com>
+
+		Moved the installation of the game data into POST_INSTALL
+		and POST_REMOVE. This means the game data is not tracked,
+		so that "cast --fix" will pass if the cdrom isn't mounted.
+		Also, it doesn't try to tar up 400 meg of game data in a
+		200 meg tmpfs /tmp.
+
+
+2002-04-23  Chris Brien <christopher_brien@hotmail.com>
+
+		Initial version using relnevs source.

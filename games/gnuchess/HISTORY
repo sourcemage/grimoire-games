@@ -1,0 +1,25 @@
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
+2003-05-05  hgg		 <hgreig@bigpond.net.au>
+
+		Updated to v#5.06
+
+2002-11-29  Eric Sandall <eric@sandall.us>
+
+		Updated to v5.05, changed SOURCE_DIRECTORY to match
+
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+		
+		changed MAINTAINER
+
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+
+		New spell sent by Joel Mayes <bluebird@optushome.com.au>.
+
+		Added POST_BUILD to avoid the redundant 'gather_docs' step.
+
+		Binaries now go into /usr/games (FHS compliance).

@@ -1,0 +1,42 @@
+2003-06-10  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.10.1
+
+2003-06-07  hgg <hgreig@bigpond.net.au>
+
+		Update depends as developers ported to gtk+2 between releases
+
+2003-06-05  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.10.0
+
+		Added pygtk2 as a dependency
+
+2003-01-31  Eric Sandall <eric@sandall.us>
+
+		Fixed Bug #2443  (Removed BUILD, no longer needed)
+
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		changed MAINTAINER
+
+		changed SOURCE_URL to use $SOURCEFORGE_URL
+
+2002-08-24  Eric Sandall <eric@sandall.us>
+		
+		Version to 0.9.1
+		Added MD5 and LICENSE
+
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+ 
+		New version: 0.9.0
+
+		Added workaround for the compilation to succeed
+		(LIBS='-ltcl8.3 -ltk8.3').
+
+		Man pages are now installed in /usr/share/man (FHS compliance).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
+		Removed dependency on xfree86 for consistency (thanks Julian v.
+		Bock <julian@openit.de>).
