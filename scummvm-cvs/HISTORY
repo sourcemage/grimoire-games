@@ -1,3 +1,11 @@
+2003-05-06  hgg  <hgreig@bigpond.net.au>
+
+		Changed DETAILS so not only does it rebuild everyday but
+		it also updates the source everyday.
+
+		TODO. unpack today's source tomorrow and cvs update
+
+
 2003-05-05  hgg		 <hgreig@bigpond.net.au>
 
 		Added PRE_BUILD with MD5[0]=ignore to allow unattended builds 
