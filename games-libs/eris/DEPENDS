@@ -1,5 +1,5 @@
 depends  libsigc++2  &&
-depends  Atlas-C++   &&
+depends  atlas-c++   &&
 
 if [ "${CVS}" = "yes" ];  then
   depends  skstream  &&

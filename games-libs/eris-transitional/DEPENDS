@@ -1,4 +1,4 @@
-depends  Atlas-C++-transitional  &&
+depends  atlas-c++-transitional  &&
 depends  libsigc++2              &&
 depends  skstream                &&
 depends  wfmath

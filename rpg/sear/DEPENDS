@@ -1,6 +1,6 @@
 depends  GLUT        &&
 depends  skstream    &&
-depends  Atlas-C++   &&
+depends  atlas-c++   &&
 depends  wfmath      &&
 depends  eris        &&
 depends  SDL_image   &&
