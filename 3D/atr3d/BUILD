@@ -1,4 +1,3 @@
-(
 sh ./autogen.sh                                                 &&
   ./configure  --build=$BUILD        				\
 	         --prefix=${INSTALL_ROOT}/usr         		\
@@ -6,9 +5,4 @@ sh ./autogen.sh                                                 &&
                  --sysconfdir=${INSTALL_ROOT}/etc     		\
                  --localstatedir=${INSTALL_ROOT}/var  		\
 		 --bindir=${INSTALL_ROOT}/usr/games		\
-                 $OPTS                 &&
-  make                               &&
-  prepare_install                    &&
-  make install
-
-)  >  ${C_FIFO}  2>&1
+                 $OPTS                 

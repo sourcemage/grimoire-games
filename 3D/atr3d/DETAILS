@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20030612
          UPDATED=20030612
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Avoid The Roid"
 cat << EOF
 Avoid The Roid by Bill Jordan is a 3D asteroids like game. The game is written in c++ and uses unix sockets for networking, pthreads for the thread library, 
