@@ -1,2 +1,5 @@
 depends gzip     &&
-depends ncurses 
+depends ncurses  &&
+if [ "$X11" = "yes" ];then
+depends xfree86
+fi

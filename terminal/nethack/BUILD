@@ -81,13 +81,62 @@ cd doc                                      &&
 make distrib                                &&
 cp *.txt /usr/lib/games/nethackdir          &&
 make manpages                               &&
-cd ../win/X11                               &&
-cp nh_icon.xpm /usr/lib/games/nethackdir    &&
-bdftopcf -o nh10.pcf nh10.bdf               &&
-bdftopcf -o ibm.pcf ibm.bdf                 &&
-cp *.pcf /usr/lib/games/nethackdir          &&
-cp NetHack.ad /usr/lib/games/nethackdir     &&
-cp nethack.rc /usr/lib/games/nethackdir     &&
-cp Install.X11 /usr/lib/games/nethackdir    
 
+#merged from POST_INSTALL
+# put nethack in $PATH 
+if  [  !  -d  /usr/games  ]
+  then  install  -d  -m  755  -g  bin  /usr/games
+fi                                          &&
+ln -s /usr/lib/games/nethack /usr/games/nethack   &&
+
+#more X11 stuff
+
+gamedir=${INSTALL_ROOT}/usr/lib/games/nethackdir  &&
+
+
+if [ "$X11" = "yes" ];then
+  cd ../win/X11                               &&
+  cp nh_icon.xpm /usr/lib/games/nethackdir    &&
+  bdftopcf -o nh10.pcf nh10.bdf               &&
+  bdftopcf -o ibm.pcf ibm.bdf                 &&
+  cp *.pcf /usr/lib/games/nethackdir          &&
+  cp NetHack.ad /usr/lib/games/nethackdir     &&
+  cp nethack.rc /usr/lib/games/nethackdir     &&
+  cp Install.X11 /usr/lib/games/nethackdir    &&
+  case $COPY_FILES in
+  y|Y)
+  for i in `cat /etc/group | grep '^games:' | cut -d: -f4 | tr ',' ' '`; do
+      h=`cat /etc/passwd | grep ^$i: | cut -d: -f6`
+        if [ -e "$h/.nethackrc" ]; then
+            echo "$i has a .nethackrc already";
+        else
+            cp $gamedir/nethack.rc $h/.nethackrc;
+            chown $i:users $h/.nethackrc;
+        fi
+        if [ -e "$h/.Xdefaults" ]; then
+            echo "$i may need to add the .NetHack.ad to .Xdefaults";
+        else
+            cp $gamedir/NetHack.ad $h/.Xdefaults;
+            chown $i:users $h/.Xdefaults
+        fi
+  # add to /etc/skel future users can play too!
+  cp $gamedir/nethack.rc /etc/skel/.nethackrc;    
+  cp $gamedir/NetHack.ad /etc/skel/.Xdefaults
+  done
+  ;;
+	*) true ;;
+  esac
+
+  # put fonts where they belong
+  cp $gamedir/*.pcf  /usr/X11R6/lib/X11/fonts/misc/ &&
+  cd /usr/X11R6/lib/X11/fonts/misc                  &&
+  mkfontdir
+fi
 ) > $C_FIFO 2>&1
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ if ! grep -q CONFIGURED  $SPELL_CONFIG  ; then
 	else echo -e "X11=yes \nCONFIGURED=yes">> $SPELL_CONFIG	
 	fi
 fi                     &&
-if ! grep -q "COPY_FILES=" $SPELL_CONFIG; then
+if  grep -q  "X11" $SPELL_CONFIG  &&  ! grep -q  "COPY_FILES" $SPELL_CONFIG ; then
    if query "Copy nethackrc and Xdefaults to game users home directories?" y
    then echo "COPY_FILES=y"  >>  $SPELL_CONFIG
    else echo "COPY_FILES=n"  >>  $SPELL_CONFIG
