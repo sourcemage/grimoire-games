@@ -3,11 +3,41 @@
 sh sys/unix/setup.sh  &&
 # make corrections
 # (/) and (*) are special characters that need to be escaped with a \
-# just X11 graphics, if you want others, define them here. You will
-# need to figure out the depends for that. k.i.s.s.
-sedit "s/\/\* #define X11_GRAPHICS \*\//#define X11_GRAPHICS/"  include/config.h
-# use Xpm for effects
-sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h
+if [ "$TTY" = "yes" ] ; then
+echo "BUILDING for TTY console"
+elif [ "$X11" = "yes" ];then
+     # just X11 graphics, if you want others, define them here. You will
+     # need to figure out the depends for that. k.i.s.s.
+    sedit "s/\/\* #define X11_GRAPHICS \*\//#define X11_GRAPHICS/"  include/config.h &&
+     # if you wanted to add support for gnome, qt or kde graphics this is
+     # the spot to do it. Don't forget to define them in config.h if you do.
+    sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINX11SRC)/'  src/Makefile                  &&
+    sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINX11OBJ)/'  src/Makefile                  &&
+    sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINX11LIB)/'  src/Makefile                  &&
+     # use Xpm for effects
+    sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
+    # the special character (^) matches the string from the begining of a line.
+    # this adds Xpm support we defined above. 
+    sedit "s/^WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11/& -lXpm /"  src/Makefile     
+elif [ "$QT" = "yes" ]; then 
+    sedit "s/\/\* #define QT_GRAPHICS \*\//#define QT_GRAPHICS/"  include/config.h   &&
+     # use Xpm for effects
+    sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
+    sedit "s/#LD=g++/LD=g++/g" src/Makefile                                          &&
+    sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINQTSRC)/'  src/Makefile                   &&
+    sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINQTOBJ)/'  src/Makefile                   &&
+    sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINQTLIB)/'  src/Makefile                   &&
+    export QTDIR=/usr                                                                &&
+#    export CFLAGS="$CFLAGS -I/usr/include/qt"
+    sedit "s/-I\$(QTDIR)\/include/-I\$(QTDIR)\/include\/qt/g" src/Makefile
+elif [ "$GTK" = "yes" ]; then   
+    sedit "s/\/\* #define GNOME_GRAPHICS \*\//#define GNOME_GRAPHICS/"  include/config.h   &&
+     # use Xpm for effects
+    sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
+    sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINGNOMESRC)/'  src/Makefile                &&
+    sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINGNOMEOBJ)/'  src/Makefile                &&
+    sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINGNOMELIB)/'  src/Makefile                  
+fi
 # you want to use gzip here
 sedit "s/\/usr\/bin\/compress/\/bin\/gzip/"  include/config.h
 #  a period (.)is a special character that needs to be escaped 
@@ -27,16 +57,8 @@ sedit "s/^LFLAGS =$/# &/"  src/Makefile
 sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = -O2 -fomit-frame-pointer -I..\/include/"  src/Makefile
 sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/" src/Makefile
 # ($) is a special character that needs to be escaped.
-# if you wanted to add support for gnome, qt or kde graphics this is
-# the spot to do it. Don't forget to define them in config.h if you do.
-sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINX11SRC)/'  src/Makefile
-sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINX11OBJ)/'  src/Makefile
-sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINX11LIB)/'  src/Makefile
 # linux uses ncurses
 sedit "s/WINTTYLIB = -ltermlib/WINTTYLIB = -lncurses/"  src/Makefile
-# the special character (^) matches the string from the begining of a line.
-# this adds Xpm support we defined above. 
-sedit "s/^WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11/& -lXpm /"  src/Makefile
 # we probably don't need to assign the shell again.
 sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  util/Makefile
 sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = -O2 -fomit-frame-pointer -I..\/include/"  util/Makefile
