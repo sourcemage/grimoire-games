@@ -1,6 +1,5 @@
 message "${PROBLEM_COLOR} Gnome-libs are being phased out so the qt-x11 build is preferred until 
 ${SPELL_COLOR}Celestia${PROBLEM_COLOR} is ported to gtk+2 and GNOME2${DEFAULT_COLOR}"
-sleep 10 &&
 if [ ! -s $SPELL_CONFIG ] ; then 
 	if query "Celestia prefers the qt-x11 toolkit, but will also build with gtk+ or X11 
 (in that order). If you have more than one toolkit installed and would like  

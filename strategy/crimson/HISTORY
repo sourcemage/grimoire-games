@@ -1,69 +1,54 @@
-2003-09-08  hgg <hgreig@bigpond.net.au>
-	
-		Update to 0.3.6
+2003-10-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3.7
+	* HISTORY: convert to new format
+	* POST_BUILD: remove now bug #1068 is fixed
 
-2003-08-24  hgg <hgreig@bigpond.net.au>
+2003-09-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3.6
 
-		Update website and SOURCE_URL
+2003-08-24 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update website and SOURCE_URL
 
-2003-08-08  hgg <hgreig@bigpond.net.au>
+2003-08-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3.5
 
-		Update to 0.3.5
+2003-07-04 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3.4
 
-2003-07-04  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* ALL: New Games grimoire is born!
 
-		Update to 0.3.4
+2003-05-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.3
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-05-19hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for ${INSTALL_ROOT}
 
-2003-05-29  Eric Sandall <eric@sandall.us>
+2003-05-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.2
 
-		Updated to 0.3.3
+2003-03-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.1
 
-2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2003-02-06 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.0
 
-2003-05-07  Eric Sandall <eric@sandall.us>
+2002-11-01 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.2.8
+	* BUILD: Removed TABs from BUILD, add && after $OPTS
+	* DEPENDS: Cleaned up DEPENDS
 
-		Updated to 0.3.2
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Changed maintainer, tidied up long description
+	* HISTORY: Fixed HISTORY compliance
 
-2003-03-28  Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.2.7, Added MD5 and LICENSE
 
-		Updated to 0.3.1
+2002-06-19 Jerome Zago <jerome.zago@insalien.org>
+	* BUILD: Worked on FHS compliance (binary into /usr/games, man page 
+	into /usr/share/man, data into /usr/share/games).
+	* POST_BUILD: Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 
-2003-02-06  Eric Sandall <eric@sandall.us>
-
-		Updated to 0.3.0
-
-2002-11-01  Eric Sandall <eric@sandall.us>
-
-		Updated to v0.2.8
-
-		Removed TABs from BUILD, add && after $OPTS
-
-		Cleaned up DEPENDS
-
-2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
-
-		Changed maintainer
-		Tidied up long description
-		Fixed HISTORY compliance
-
-2002-08-26  Eric Sandall <eric@sandall.us>
-
-		Updated to 0.2.7
-		Added MD5 and LICENSE
-
-2002-06-19  Jerome Zago <jerome.zago@insalien.org>
-
-		Worked on FHS compliance (binary into /usr/games, man page 
-		into /usr/share/man, data into /usr/share/games).
-
-		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
-
-2002-06-10  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Created this spell.
+2002-06-10 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* ALL: Created this spell.

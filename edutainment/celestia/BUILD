@@ -1,6 +1,6 @@
 (
-OPTS="$OPTS --prefix=${INSTALL_ROOT}/usr --disable-debug"
-
+OPTS="$OPTS --prefix=${INSTALL_ROOT}/usr --disable-debug"       &&
+sedit "s/-lXi //" configure                                     &&
 if [ "$KDE" = "y" ]
 then	./configure --with-kde $OPTS                            &&
         make                                                    &&

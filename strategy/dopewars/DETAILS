@@ -5,10 +5,10 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://dopewars.sourceforge.net/
          ENTERED=20020320
-         UPDATED=20020502
+         UPDATED=20031009
           MD5[0]=f354078181584d03b75695b10982d1b8
       LICENSE[0]=GPL
-      MAINTAINER=g.clay@warwick.ac.uk
+     GATHER_DOCS="off"
            SHORT="dopewars is a Drug dealing game set in New York"
 cat << EOF
 dopewars is a Drug dealing game set in New York.

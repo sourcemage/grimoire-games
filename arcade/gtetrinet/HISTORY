@@ -1,64 +1,48 @@
-2003-09-02  hgg <hgreig@bigpond.net.au>
+2003-10-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.7.5
+	* HISTORY: Convert to new format
 
-		Update to 0.7.4
+2003-09-02 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.7.4
 
-2003-06-25  hgg <hgreig@bigpond.net.au>
+2003-06-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.7.3
 
-		Update to 0.7.3
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* ALL: New Games grimoire is born!
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.7.2
 
-2003-06-08  hgg <hgreig@bigpond.net.au>
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
 
-		Update to 0.7.2
+2003-04-14 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.7.1
 
-2003-05-19  hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2003-03-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.7.0
 
-2003-04-14  Eric Sandall <eric@sandall.us>
+2003-02-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.6.2 Changed SOURCE_URL to  
+	use GNOME_URL, as the newer versions are being hosted by GNOME
+	* DEPENDS: Updated to GNOME 2, gtk+2, and esound
 
-		Updated to 0.7.1
+2003-01-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.5.2 (Bug #2310)
 
-2003-03-17  Eric Sandall <eric@sandall.us>
+2002-10-28 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: Updated to 0.4.4
 
-		Updated to 0.7.0
+2002-10-22 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.4.3
 
-2003-02-07  Eric Sandall <eric@sandall.us>
+2002-10-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.4.2
 
-		Updated to 0.6.2
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields
+	changed MAINTAINER changed SOURCE_URL to use SOURCEFORGE_URL
 
-		Changed SOURCE_URL to use GNOME_URL, as the
-		newer versions are being hosted by GNOME
-
-		Updated the dependencies to GNOME 2, gtk+2, and esound
-
-2003-01-21  Eric Sandall <eric@sandall.us>
-
-		Updated to v0.5.2 (Bug #2310)
-
-2002-10-28  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Updated to 0.4.4
-
-2002-10-22  Eric Sandall <eric@sandall.us>
-
-		Updated to 0.4.3
-
-2002-10-17  Eric Sandall <eric@sandall.us>
-
-		Updated to 0.4.2
-
-2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		added MD5 and LICENSE fields
-
-		changed MAINTAINER
-
-		changed SOURCE_URL to use SOURCEFORGE_URL
-
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
-
-		Added this History file.
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.

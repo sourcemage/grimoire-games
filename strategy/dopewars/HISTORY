@@ -1,50 +1,34 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-10-09 hgg <hgreig@bigpond.net.au>
+        * DETAILS,POST_BUILD: add GATHER_DOCS="off" and remove POST_BUILD
 
-2003-06-08  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* ALL: New Games grimoire is born!
 
-		Update for 1.5.9
+2003-06-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for 1.5.9
 
-2003-05-19  hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for ${INSTALL_ROOT}
 
-2002-10-21  Eric Sandall <eric@sandall.us>
+2002-10-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.5.8
 
-		Updated to v1.5.8
+2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Changed to use $SOURCEFORGE_URL, Changed maintainer
 
-2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
+2002-08-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated version to 1.5.7, Added MD5 and LICENSE
 
-		Changed to use $SOURCEFORGE_URL
+2002-05-02 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.5.6
+	Changed SOURCE_URL[0] since prdownloads.sourceforge.net was too slow.
 
-		Changed maintainer
+2002-04-17 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.5.5
+	* BUILD: Added workaround for the compilation to succeed
+	(LIBS="-lncurses" in BUILD). I've made upstream aware of the problem.
+	Man pages are now installed in /usr/share/man (FHS compliance).
+	* POST_BUILD: Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 
-2002-08-24  Eric Sandall <eric@sandall.us>
-
-		Updated version to 1.5.7
-
-		Added MD5 and LICENSE
-
-2002-05-02  Jerome Zago <jerome.zago@insalien.org>
-
-		New version: 1.5.6
-
-		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
-		too slow.
-
-2002-04-17  Jerome Zago <jerome.zago@insalien.org>
-
-		New version: 1.5.5
-
-		Added workaround for the compilation to succeed
-		(LIBS="-lncurses" in BUILD). I've made upstream aware of the
-		problem.
-
-		Man pages are now installed in /usr/share/man (FHS compliance).
-
-		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
-
-2002-03-20  David Pradier <pradierdavid@yahoo.fr>
-
-		New spell sent by Kagan Kongar <kongar@tsrsb.org.tr>.
+2002-03-20 David Pradier <pradierdavid@yahoo.fr>
+	* ALL: New spell sent by Kagan Kongar <kongar@tsrsb.org.tr>.
