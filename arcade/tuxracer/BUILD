@@ -1,5 +1,3 @@
-(
-
   if  !  spell_installed  nvidia_headers;
      then export CFLAGS="$CFLAGS -DGLX_GLXEXT_PROTOTYPES" 
   fi                                                                &&
@@ -14,12 +12,4 @@
                --with-tcl-lib-name=tcl`gaze installed tcl | cut -d. -s -f1-3 | cut -c -3` \
                --disable-sdltest                                    \
                --with-data-dir=${INSTALL_ROOT}/usr/share/${SPELL}-data-${VERSION}  \
-               ${OPTS}                                              &&
-  make                                                              &&
-  prepare_install                                                   &&
-  make    install                                                   &&
-  chmod  -R a+r  ${SPELL}-data-${VERSION}                           &&
-  cp     -r      ${SPELL}-data-${VERSION}  /usr/share
-
-) > ${C_FIFO} 2>&1
-
+               ${OPTS}
