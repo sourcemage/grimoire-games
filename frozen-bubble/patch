@@ -1,0 +1,39 @@
+diff --recursive -C 1 frozen-bubble-0.9.2.orig/fb.pl frozen-bubble-0.9.2/fb.pl
+*** frozen-bubble-0.9.2.orig/fb.pl	2002-05-22 20:47:02.000000000 +0000
+--- frozen-bubble-0.9.2/fb.pl	2002-05-22 20:50:05.000000000 +0000
+***************
+*** 153,164 ****
+  
+- 
+- #- sdlpl-1.12 is bugged for SDL::Surface::display_format :-(
+- sub my_display_format {
+- 	my $surface = shift;
+- 	my $tmp = SDL::sdlpl::sdl_display_format($surface->{-surface});
+- 	SDL::sdlpl::sdl_free_surface($surface->{-surface});
+- 	$surface->{-surface} = $tmp;
+- 	return $surface;
+- }
+- 
+  #- ----------- sound related stuff ----------------------------------------
+--- 153,154 ----
+***************
+*** 1211,1213 ****
+  	put_image($imgbin{hiscore_frame}, $high_posx - 7, $high_posy - 6);
+! 	fb_c_stuff::shrink($app->{-surface}, my_display_format($background)->{-surface}, $high_posx, $high_posy, $high_rect->{-rect}, 4);
+  	$centered_print->($high_posx, $high_posy,    $high->{name});
+--- 1201,1205 ----
+  	put_image($imgbin{hiscore_frame}, $high_posx - 7, $high_posy - 6);
+! 	fb_c_stuff::shrink($app->{-surface},
+! 	    $background->display_format()->{-surface}, $high_posx, $high_posy,
+! 	    $high_rect->{-rect}, 4);
+  	$centered_print->($high_posx, $high_posy,    $high->{name});
+***************
+*** 1378,1380 ****
+      } else {
+! 	fb_c_stuff::effect($app->{-surface}, my_display_format($background)->{-surface});
+      }
+--- 1370,1373 ----
+      } else {
+! 	fb_c_stuff::effect($app->{-surface},
+! 			   $background->display_format()->{-surface});
+      }

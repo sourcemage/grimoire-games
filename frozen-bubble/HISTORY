@@ -5,3 +5,9 @@
 2002-05-15  Jerome Zago <jerome.zago@insalien.org>
 
 		/usr/games is now created if needed.
+
+2002-05-22  Jerome Zago <jerome.zago@insalien.org>
+
+		Added a patch kindly sent by Guillaume Cottenceau 
+		<gc@mandrakesoft.com> (upstream maintainer) so that 
+		frozen-bubble works again with SDL-sdlpl 1.15+.
