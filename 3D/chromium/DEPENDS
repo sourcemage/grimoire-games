@@ -1,0 +1,7 @@
+//sgl/games/grimoire/3D/chromium/DEPENDS#2 - edit change 40138 (xtext)
+depends  openal     &&
+depends  sdl        &&
+depends  smpeg      &&
+depends  libpng     &&
+depends  libvorbis  &&
+depends  tcl

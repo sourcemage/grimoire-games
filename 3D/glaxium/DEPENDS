@@ -1,4 +1,0 @@
-depends  GLUT       &&
-depends  autoconf   &&
-depends  libpng     &&
-depends  sdl_mixer
