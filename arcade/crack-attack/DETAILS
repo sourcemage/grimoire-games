@@ -1,12 +1,12 @@
            SPELL=crack-attack
-         VERSION=1.1.9
+         VERSION=1.1.10
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://aluminumangel.org/attack/$SOURCE
         WEB_SITE=http://qcd2.mps.ohio-state.edu/attack/
          ENTERED=20020131
-         UPDATED=20031009
-          MD5[0]=2391ee72a1bae1f410561560c5b69554
+         UPDATED=20031027
+          MD5[0]=15b16350396189f4d810d808ab72c840
       LICENSE[0]=GPL
            SHORT="crack-attack is a network multi-player variation of tetris"
 cat << EOF
