@@ -6,4 +6,4 @@
   mv     data/* doc/ scripts/ /usr/share/xtux  &&
   mv     xtux tux_serv /usr/games
 
-) > $C_FIFO 2>&1
+) > ${C_FIFO} 2>&1
