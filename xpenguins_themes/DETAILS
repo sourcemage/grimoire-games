@@ -4,8 +4,8 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/themes
    SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
         WEB_SITE=http://xpenguins.seul.org/
-         ENTERED=200204011
-         UPDATED=200204011
+         ENTERED=20020411
+         UPDATED=20020608
       MAINTAINER=richard.brauer@physik.rwth-aachen.de
            SHORT="More themes for xpenguins (e.g. Winnieh the Pooh"
 cat << EOF

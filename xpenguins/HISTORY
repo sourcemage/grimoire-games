@@ -1,7 +1,17 @@
-History for the xpenguins spell
-===============================
+2002-06-08  Eric Schabell <eric@schabell.com>
 
-20020313    Spell was submitted to sgl-spells ML
-            by Fabio Pianese <fkb@iago.polito.it>
-20020314    Spell was accepted by David Pradier <pradierdavid@yahoo.fr>
-20020511    Corrected wrong DEPENDS file
+		Fixed date lines that caused recompile every
+		update and made History file conform to Template.
+  
+2002-05-11  Name <email>
+
+		Corrected wrong DEPENDS file
+
+2002-03-14  Name <email>  
+
+		Spell was accepted by David Pradier <pradierdavid@yahoo.fr>
+
+2002-03-13  Name <email>  
+
+		Spell was submitted to sgl-spells ML
+            	by Fabio Pianese <fkb@iago.polito.it>
