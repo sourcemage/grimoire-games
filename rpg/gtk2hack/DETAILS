@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040701
          UPDATED=20040701
        BUILD_API=2
-           SHORT=""
+           SHORT="a gtk2 version of nethack"
 cat << EOF
+a gtk2 version of nethack
 EOF
