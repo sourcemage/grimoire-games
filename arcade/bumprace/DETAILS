@@ -8,6 +8,7 @@
           UPDATED=20010922
            MD5[0]=e49db46ede2020f38f952f5ec6e96cd1
        LICENSE[0]=GPL
+        BUILD_API=2
        MAINTAINER=g.clay@warwick.ac.uk
             SHORT="bumprace is a game to get from start to finish without crashing."
 cat << EOF

@@ -1,5 +1,6 @@
 OPTS="$OPTS --enable-png --enable-debug=no --enable-dyn" &&
 
+patch -p0 < $SCRIPT_DIRECTORY/0.6.5-gcc3.patch &&
 #gcc3.3 hack
 if [[ $(gcc -dumpversion)   == 3.3* ]] ; then
 sedit '25a\

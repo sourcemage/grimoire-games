@@ -1,3 +1,7 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* Added gcc 3 patch so that it will compile properly
+	  (at least under 3.4.3, perhaps others can double-check)
+
 2005-01-16 Jason Flatt <jflatt@sourcemage.org>
 	* BUILD: fixed sed by removing extra "\"s.
 	* DEPENDS: added --disable-mikmod.
