@@ -2,7 +2,7 @@
          VERSION=1.0.0
           SOURCE=$SPELL-$VERSION-all-src.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://prdownloads.sourceforge.net/torcs/$SOURCE
+   SOURCE_URL[0]=http://telia.dl.sourceforge.net/torcs/$SOURCE
         WEB_SITE=http://torcs.free.fr/
          ENTERED=20010926
          UPDATED=20011219
