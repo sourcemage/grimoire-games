@@ -1,7 +1,7 @@
            SPELL=SearchAndRescue
          VERSION=0.7.21
           SOURCE=${SPELL}-${VERSION}.tar.bz2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY/${SPELL}-${VERSION}
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
           MD5[0]=4d32278f278f2612a92aea7acdf4a27f
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
