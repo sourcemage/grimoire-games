@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://adonthell.linuxgames.com
 	MAINTAINER=pradierdavid@yahoo.fr
          ENTERED=20020517
-         UPDATED=20020517
+         UPDATED=20020604
            SHORT="Open Source Role Playing Game Engine"
 cat << EOF
 Listen to the water

@@ -1,3 +1,11 @@
+2002-06-04  Jerome Zago <jerome.zago@insalien.org>
+
+		Prepended LDFLAGS="-L /usr/X11/lib" to ./configure in BUILD
+		or it wouldn't link.
+
+		Removed ./autogen.sh stuff in BUILD (Julian v. Bock).
+		This fixes bug #165.
+
 2002-05-17  David Pradier <pradierdavid@yahoo.fr>
 
-		Created this spell
+		Created this spell.
