@@ -1,0 +1,8 @@
+mkdir  -p  ${INSTALL_ROOT}/usr/games  &&
+make  install                         &&
+echo -e "#!/bin/sh \n
+# Needs ~/stellarium to start. \n
+if [ ! -d ~/.stellarium ] \n  then mkdir ~/.stellarium\nfi\n
+${INSTALL_ROOT}/usr/share/games/stellarium/stellarium \$*" >binscript  &&
+
+install  binscript  ${INSTALL_ROOT}/usr/games/stellarium

@@ -1,3 +1,12 @@
+2004-10-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.6.1
+	  Added BUILD_API=2 and LICENSE[0]
+	  Shortened SHORT
+	  Made SourceForge mirrors first SOURCE_URL
+	* BUILD: Converted to build_api 2
+	  Removed TABs
+	* INSTALL: Added
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
