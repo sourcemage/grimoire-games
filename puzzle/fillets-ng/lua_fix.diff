@@ -1,0 +1,11 @@
+--- configure.old	2004-08-11 11:37:36.000000000 +0200
++++ configure	2004-08-22 10:39:11.000000000 +0200
+@@ -3569,7 +3569,7 @@
+             You can download lua from http://www.lua.org" >&2;}
+    { (exit 1); exit 1; }; }
+ else
+-  $LUA_LIBS
++  LUA_LIBS="$LUA_LIBS -llualib"
+ fi
+ 
+ fi
