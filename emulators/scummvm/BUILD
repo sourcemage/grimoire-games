@@ -12,8 +12,6 @@
     DEFINES="$DEFINES  -DUSE_VORBIS"  &&
     LIBS="$LIBS  -lvorbisfile -lvorbis" 
   fi  &&
-  cd $SOURCE_DIRECTORY/backends/sdl		&&
-  patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
   cd $SOURCE_DIRECTORY				&&
 
   ./configure			&&

@@ -1,5 +1,5 @@
            SPELL=scummvm
-         VERSION=${VERSION:=0.5.1}
+         VERSION=${VERSION:=0.6.0}
 if [ "$CVS" = "yes" ] ; then
          VERSION=cvs  
   FORCE_DOWNLOAD=1 
@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src
 else
           SOURCE=${SPELL}-${VERSION}.tar.bz2  
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE 
-          MD5[0]=c55faed6b9314743296ad5d709ae18b6 
+          MD5[0]=d9c5544a9bf13d7615e70812da75a665
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/\b/} 
 fi
         WEB_SITE=http://www.scummvm.org/

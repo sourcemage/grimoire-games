@@ -9,7 +9,7 @@
 
   make                                                    &&
   prepare_install                                         &&
-  if [ "$CVS" = "no" ] ; then install -m0755 descumm6 /usr/games/descumm6 ; fi &&
+  if [ "$CVS" = "no" ] ; then install -m0755 descumm /usr/games/descumm ; fi &&
   install -m0755 descumm /usr/games/descumm               &&
   install -m0755 extract /usr/games/extract               &&
   install -m0755 rescumm /usr/games/rescumm               &&

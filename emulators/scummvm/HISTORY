@@ -1,3 +1,8 @@
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version bump from 0.5.1 to 0.6.0
+	* BUILD: removed patching, it failed to patch
+	* removed patch
+
 2004-01-13 hgg <hgreig@bigpond.net.au>
         * DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on
         DEPENDS using conditionals bug 5466
