@@ -1,0 +1,5 @@
+config_query_option  CAL3D_DEBUG  "Enable debug?"  n       \
+                     "--enable-debug"   "--disable-debug"  &&
+
+config_query_option  CAL3D_RTTI   "Enable RunTime Type Identification?"  n  \
+                     "--enable-rtti"    "--disable-rtti"
