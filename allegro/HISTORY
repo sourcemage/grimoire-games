@@ -1,3 +1,10 @@
+2003-01-26  Eric Sandall <eric@sandall.us>
+
+		Updated to 4.1.8  (Bug #2380, thanks to Snakebyte)
+
+		Modified BUILD to actually install documentation,
+		both info and man (both are compressed .gz)
+
 2002-10-25  Gareth Clay <garethclay@ntlworld.com>
 
 		Updated to version 4.1.4
