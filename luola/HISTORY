@@ -1,3 +1,10 @@
+2002-09-21  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		New version: 0.9.8
+
+		fixed BUILD file (removed the unnecessary sed)
+		now installs binary to /usr/games
+
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added MD5 and LICENSE fields
