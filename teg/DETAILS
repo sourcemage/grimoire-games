@@ -1,0 +1,20 @@
+           SPELL=teg
+         VERSION=0.11.0
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://teg.sourceforge.net/
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=f18dd87c39cc0ae40bb2ca1e070a2922
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]="Tenes Empanados Graciela"
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]="Risk clone"
+           SHORT="Clone of Risk with Gaming Zone and IPv6 support"
+cat << EOF
+enes Empanadas Graciela is a clone of Plan Tactico y Estrategico de la Guerra ,a turn based strategy game, based on Risk.
+Its a multiplayer game (it can be played accross the internet), it has a server, a GNOME client, an a robot.
+It has support for GGZ Gaming Zone and IPv6 
+EOF
