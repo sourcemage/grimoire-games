@@ -1,0 +1,16 @@
+           SPELL=sage
+         VERSION=0.1.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
+          MD5[0]=03dc20d1c3ea513fd17f2284a9f95ae8
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="OpenGL extensions library for SDL"
+cat << EOF
+Sage is an OpenGL extensions library that uses SDL to obtain its function pointers in a cross-platform manner.
+EOF
