@@ -1,0 +1,7 @@
+depends  SDL   &&
+depends  glut  &&
+
+optional_depends  "wxGTK"                             \
+                  ""                                  \
+                  ""                                  \
+                  "for wx[windows|GTK] GUI launcher"

@@ -1,0 +1,18 @@
+           SPELL=fbg
+         VERSION=0.8.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://home.attbi.com/~furiousjay/code/fbg.html
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=f4f155cc3caee8a669787bc80919e48b
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]="Falling Block Game"
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]=${SHORT}
+           SHORT="Puzzle game similar to Tetris(R)"
+cat << EOF
+Falling Block Game is a puzzle game that is similar to the Hasbro classic, Tetris. Many such games have been released for a variety of platforms, but most have passable graphics or poor gameplay/piece control.
+EOF

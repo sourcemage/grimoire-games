@@ -1,10 +1,10 @@
            SPELL=freelords
-         VERSION=20020827
-          SOURCE=${SPELL}-SDL-${VERSION}.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-SDL-${VERSION}
+         VERSION=CVS-SDL-20021101
+          SOURCE=FreeLords-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/FreeLords-${VERSION/02/01}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
    SOURCE_URL[1]=http://download.freelords.org/sources/$SOURCE
-          MD5[0]=0aa09f6a969a096650da2becb2d6b631
+          MD5[0]=f6da8c4f2c9502b1de673343d0dabc6d
         WEB_SITE=http://www.freelords.org/
          ENTERED=20020826
          UPDATED=20020826

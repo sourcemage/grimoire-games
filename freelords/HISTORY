@@ -1,5 +1,9 @@
 2002-11-01  Eric Sandall <eric@sandall.us>
 
+		Updated to v20021101, and renamed VERSION
+		and SOURCE to fit new name with temporary
+		fix for wrong untar directory from VERSION
+
 		Added SDL and SDL_image as dependencies
 
 		Added MENU_* entries
