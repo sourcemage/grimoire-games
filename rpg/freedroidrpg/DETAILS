@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 SOURCE_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE
-          MD5[0]=5b8b8e74e641c73645a7597ca8515707
+          MD5[0]=f2291ff6d292cde08d096ba8999f1683
       LICENSE[0]=GPL
         WEB_SITE=http://freedroid.sourceforge.net/
          ENTERED=20030818
