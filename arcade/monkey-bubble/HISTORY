@@ -1,3 +1,6 @@
+2005-01-17 Adam Clark <adamsgl@dhbit.ca>
+	* DEPENDS: Actually depends on gst-plugins, not just gstreamer
+
 2004-07-02 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: depends on gstreamer now
 	* DETAILS: updated to 0.3.2
