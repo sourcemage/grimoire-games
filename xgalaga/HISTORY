@@ -1,3 +1,7 @@
+2003-06-05  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to fix md5 for SOURCE.
+
 2003-06-05  hgg < hgreig@bigpond.net.au>
 
 		Update t0 2.0.34 and change URL's
