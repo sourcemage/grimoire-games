@@ -2,4 +2,4 @@
 # Script to run NIJ
 
 cd  /usr/share/games/nij
-./game
+/usr/lib/games/nij/game
