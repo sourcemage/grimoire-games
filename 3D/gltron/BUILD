@@ -12,14 +12,6 @@
   sedit  "s/-O2/${CFLAGS}/"  Makefile                           &&
   make                                                          &&
   prepare_install                                               &&
-  #  make  install                                              &&
-  mkdir -p ${INSTALL_ROOT}/usr/share/games/gltron               &&
-  for i in art data sounds scripts 
-  do cp -r $i ${INSTALL_ROOT}/usr/share/games/gltron
-  done                                                          && 
-  cp gltron ${INSTALL_ROOT}/usr/share/games/gltron              &&
-  mkdir -p ${INSTALL_ROOT}/usr/games                            &&
-  ln -sf ${INSTALL_ROOT}/usr/share/games/gltron/gltron          \
-                   ${INSTALL_ROOT}/usr/games/gltron
+  make  install                                              
 
 ) > ${C_FIFO} 2>&1
