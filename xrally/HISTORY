@@ -1,4 +1,9 @@
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-26  hgg <hgreig@bigpond.net.au>
+
+		removed PRE_BUILD and altered BUILD & DETAILS
+		added new patch file to SCRIPT_DIRECTORY		
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
