@@ -64,7 +64,7 @@
   make                             &&
   prepare_install                  &&
   make  PREFIX=${INSTALL_ROOT}/usr  install       &&
-  cd  /usr/share/games/freecraft   &&
+  cd  ${INSTALL_ROOT}/usr/share/games/freecraft   &&
   chmod  755  *  -R                &&
   chown  root.games  *  -R
 

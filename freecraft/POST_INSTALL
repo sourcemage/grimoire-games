@@ -1,5 +1,5 @@
 (
-  cd  /usr/share/games/freecraft   &&
+  cd  ${INSTALL_ROOT}/usr/share/games/freecraft   &&
   # Now, unpack the media files...
   # Should update the spell to optionally use
   # the CD, similar to quake2
