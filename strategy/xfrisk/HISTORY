@@ -1,19 +1,18 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2004-01-29 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Xaw3d is optional, if not installed regular Xaw will be found and used, 
+	therefore adding X11-LIBS also
 
-2003-05-05  hgg 	<hgreig@bigpond.net.au>
-		
-		Updated to v#1.3beta
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Updated BUILD file for default BUILD as OPTS are already set
+2003-05-05 hgg	<hgreig@bigpond.net.au>
+	* DETAILS: Updated to v#1.3beta
+	* BUILD: for default BUILD as OPTS are already set
 
 
-2002-11-19  Arwed v. Merkatz <v.merkatz@gmx.net>
+2002-11-19 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* added DEPENDS file, depends Xaw3d (fixes bug #1725)
 
-		added DEPENDS file, depends Xaw3d (fixes bug #1725)
-
-2002-10-31  Eric Sandall <eric@sandall.us>
-
-		Created spell
+2002-10-31 Eric Sandall <eric@sandall.us>
+	* Created spell
 
