@@ -1,9 +1,9 @@
            SPELL=gnocatan
-         VERSION=0.8.1.43
+         VERSION=0.8.1.50
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-          MD5[0]=901eff7f2f062ed78e4de433a34292a8
+          MD5[0]=cb7406621669ce6275b95cbe8fa3ca6e
         WEB_SITE=http://gnocatan.sourceforge.net/
          ENTERED=20020527
          UPDATED=20031016
