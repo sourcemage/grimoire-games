@@ -1,12 +1,12 @@
            SPELL=wesnoth
-         VERSION=0.7.10
+         VERSION=0.7.11
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.wesnoth.org/files/$SOURCE
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
          UPDATED=20040509
-          MD5[0]=41a2ccbac33b7759ff8a997503e2686b
+          MD5[0]=6db8f1d3c287b5dc33ee2d5cd8594d07
       LICENSE[0]=GPL
            SHORT="Battle for Wesnoth is a fantasy turn-based strategy game."
 cat << EOF
