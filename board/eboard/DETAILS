@@ -1,14 +1,13 @@
            SPELL=eboard
-         VERSION=0.9.0
+         VERSION=0.9.5
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-          MD5[0]=211559257c9a5653a0a23b8b0f5719cb
+          MD5[0]=63b161e423063eb30244b890fb42a98e
         WEB_SITE=http://eboard.sf.net
          ENTERED=20030503
-         UPDATED=20030503
+         UPDATED=20031201
       LICENSE[0]=GPL
-      MAINTAINER=unet@sourcemage.org
            SHORT="eboard is an chess interface"
 cat << EOF
 eboard is a graphical user interfaces for chess. They display a chessboard on
