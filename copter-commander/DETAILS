@@ -2,11 +2,13 @@
          VERSION=1.8
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/coco/$SOURCE
-        WEB_SITE=http://www.speakeasy.org/~morse/copter-commander/
+   SOURCE_URL[0]=$SOURCEFORGE_URL/coco/$SOURCE
+        WEB_SITE=http://copter-commander.org
          ENTERED=20020128
          UPDATED=20020212
-      MAINTAINER=pradierdavid@yahoo.fr
+          MD5[0]=9d7330e8c19be495a605ecaea117ba57
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="copter-commander is a arcade game like Armor Alley."
 cat << EOF
 A unique blend of arcade action and real time strategy, Copter

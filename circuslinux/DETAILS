@@ -6,7 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.newbreedsoftware.com/circus-linux/
          ENTERED=20020131
          UPDATED=20020131
-      MAINTAINER=pradierdavid@yahoo.fr
+          MD5[0]=2c85b1f339ab9aaa12f9eb8f51a36a4e
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="circus linux is a clone of the Atris 2600 game Circus Atari"
 cat << EOF
 Circus Linux! is a clone of the Atari 2600 game "Circus Atari." The

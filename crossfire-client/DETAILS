@@ -10,7 +10,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20020124
-      MAINTAINER=pradierdavid@yahoo.fr
+          MD5[0]=395c2e920d638fb1cd5f75e8eefc5621
+          MD5[1]=93a382ff2f943b071eb4567d349a726a
+          MD5[2]=4ea35140434c8de062da505097cb9ad0
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="crossfire-client is a multi-player graphical MUD."
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made

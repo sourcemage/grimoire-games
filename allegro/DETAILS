@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020107
          UPDATED=20020327
       LICENSE[0]=PD
-      MAINTAINER=jerome.zago@insalien.org
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="allegro is a cross-platform game library."
 cat << EOF
 Allegro is a multi-platform game library that provides many functions

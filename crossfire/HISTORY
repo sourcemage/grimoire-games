@@ -1,6 +1,13 @@
+2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Added missing md5sum
+		Changed maintainer
+		Fixed HISTORY file standard compliance :)
+
 2002-08-24  Eric Sandall <eric@sandall.us>
+		
 		Updated to v1.3.0
-      Modified to use $SOURCEFORGE_URL
+		Modified to use $SOURCEFORGE_URL
 		Added MD5 and LICENSE
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>

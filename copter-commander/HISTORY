@@ -1,3 +1,9 @@
+2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Changed to use $SOURCEFORGE_URL
+		Added md5, license fields
+		Changed maintainer
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.

@@ -7,14 +7,14 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp2.sourceforge.net/pub/sourceforge/crossfire/$SOURCE
   SOURCE2_URL[0]=ftp://ftp2.sourceforge.net/pub/sourceforge/crossfire/$SOURCE2
   SOURCE3_URL[0]=ftp://ftp2.sourceforge.net/pub/sourceforge/crossfire/$SOURCE3
-          MD5[0]=
+          MD5[0]=dd1f8850a9ce6fb0510023465cc46d05
           MD5[1]=0ca4a62bbee345e64ef43e4e5037d277
           MD5[2]=ec4a8c84da8ba686a9d516c618f84ea3
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20011104
       LICENSE[0]=GPL
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="crossfire is the server for a multi-player graphical MUD."
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made
