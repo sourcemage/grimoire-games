@@ -1,12 +1,14 @@
-            SPELL=castle-combat
-          VERSION=0.7.2
-           SOURCE=$SPELL-$VERSION.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
-         WEB_SITE=http://www.linux-games.com/castle-combat/
+           SPELL=castle-combat
+         VERSION=0.7.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
+        WEB_SITE=http://www.linux-games.com/castle-combat/
+          MD5[0]=28603118b6a45bfac1e2abc81cd235fd
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
          ENTERED=20010922
          UPDATED=20020308
-      MAINTAINER=jerome.zago@insalien.org
            SHORT="castle-combat is a clone of the old DOS game rampart."
 cat << EOF
 It's a clone of the old DOS game Rampart. Up to four players (or more in
