@@ -1,12 +1,13 @@
 2002-08-26  Eric Sandall <eric@sandall.us>
+
 		Updated/added MAINTAINER
 
 2002-08-24  Eric Sandall <eric@sandall.us>
+
 		Updated version to 2.5b
 		Added MD5 and LICENSE
 
-History for the qstat spell
-===========================
+2002-03-14  Kyle Sallee
 
-            Spell was proposed by nhudson@hiwaay.net
-20020314    Spell was accepted by <pradierdavid@yahoo.fr>
+		Spell was accepted by <pradierdavid@yahoo.fr>
+		Spell was proposed by nhudson@hiwaay.net

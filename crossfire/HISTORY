@@ -1,13 +1,21 @@
+2002-10-15  Eric Sandall <eric@sandall.us>
+
+		Updated to v1.4.0 (and changed to .gz as they don't use .bz2 anymore :()
+
 2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
 
 		Added missing md5sum
+
 		Changed maintainer
+
 		Fixed HISTORY file standard compliance :)
 
 2002-08-24  Eric Sandall <eric@sandall.us>
 		
 		Updated to v1.3.0
+
 		Modified to use $SOURCEFORGE_URL
+
 		Added MD5 and LICENSE
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>

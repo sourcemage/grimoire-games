@@ -1,4 +1,12 @@
 depends  SDL        &&
 depends  SDL_image  &&
-depends  SDL_mixer  &&
-optional_depends  "SDL_gfx"  "--enable-sdl-gfx"  ""  "to draw better graphics"
+
+optional_depends  "SDL_mixer"          \
+                  "--enable-sound"     \
+                  "--disable-sound"    \
+                  "for sound support"  &&
+
+optional_depends  "SDL_gfx"                  \
+                  "--enable-sdl-gfx"         \
+                  "--disable-sdl-gfx"        \
+                  "to draw better graphics"

@@ -3,5 +3,6 @@
 		removed dependency on xfree86 (fixes bug #930)
 
 2002-08-24  Eric Sandall <eric@sandall.us>
+
 		Added nethack spell from nealbirch
 		Added MD5 and LICENSE

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Script to correctly run FreeLords
+
+cd  /usr/lib/games/freelords  &&
+./fl

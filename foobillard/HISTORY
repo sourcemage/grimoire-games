@@ -1,7 +1,6 @@
 2002-06-29  Jerome Zago <jerome.zago@insalien.org>
 
 		New version: 1.5 (thanks Gareth Clay <g.clay@warwick.ac.uk>)
-
 		Binary now goes into /usr/games and static data into
 		/usr/share/games (FHS compliance).
 

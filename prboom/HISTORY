@@ -5,6 +5,7 @@
 		moved content of Changelog to HISTORY file
 
 2002-08-24  Eric Sandall <eric@sandall.us>
+
 		Version updated to 2.2.3
 		Added MD5 and LICENSE
 		Changed SOURCE_URL[1] to use $SOURCEFORGE_URL

@@ -2,6 +2,7 @@
 		Added POST_INSTALL and POST_REMOVE, thanks to Chris Brian (fixes Bug #876)
 
 2002-08-26  Eric Sandall <eric@sandall.us>
+
       Updated/added MAINTAINER, MD5, LICENSE
 
 2002-06-16  Chris Brien <christopher_brien@hotmail.com>

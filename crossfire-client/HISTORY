@@ -1,14 +1,25 @@
+2002-10-15  Eric Sandall <eric@sandall.us>
+
+		Updated to v1.4.0
+
+		Sounds now are at the same version as the rest
+
 2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
 
 		Umm... *really* added the MD5 and LICENSE :)
+
 		Changed maintainer
+
 		Fixed HISTORY file standards compliance
 
 2002-08-24  Eric Sandall <eric@sandall.us>
 
 		Updated version to 1.3.0
+
 		Added MD5 and LICENSE
+
 		Added -images source as SOURCE3
+
 		Changed all SOURCE_URLs to use $SOURCEFORGE_URL
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>

@@ -1,7 +1,8 @@
 2002-08-27  Arwed v. Merkatz <v.merkatz@gmx.net>
-                fixed SOURCE_URL (was missing the http:// )
-                added MD5 and LICENSE fields
-                added myself as maintainer
+
+		fixed SOURCE_URL (was missing the http:// )
+		added MD5 and LICENSE fields
+		added myself as maintainer
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 

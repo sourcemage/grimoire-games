@@ -3,6 +3,7 @@
 		New version: 0.5.2
 
 2002-10-02  Eric Sandall <eric@sandall.us>
+
 		Added libtool as a dependency
 
 2002-06-20  Arwed v. Merkatz <v.merkatz@gmx.net>

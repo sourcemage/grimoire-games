@@ -1,9 +1,15 @@
 2002-08-26  Eric Sandall <eric@sandall.us>
+
       Updated/added MAINTAINER, MD5, LICENSE
 
-History for the tuxnes spell
-======================
+2002-05-11  Kyle Sallee
 
-200203??    Spell was proposed by... dunno, but would like to know it.   
-20020320    Spell was accepted by David Pradier <pradierdavid@yahoo.fr>
-20020511    Corrected wrong depends file
+		Corrected wrong depends file
+
+2002-03-20  Kyle Sallee
+
+		Spell was accepted by David Pradier <pradierdavid@yahoo.fr>
+
+2002-03-??  Kyle Sallee
+
+		Spell was proposed by... dunno, but would like to know it.   

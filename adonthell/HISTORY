@@ -1,4 +1,5 @@
 2002-10-07  Eric Sandall <eric@sandall.us>
+
 		Updated to v0.3.3
 		Fixed BUILD (no space in LDFLAGS between -L and directory)
 		Updated SOURCE_URL to use new location (added src/ before $SOURCE)
