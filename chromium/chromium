@@ -1,3 +1,0 @@
-#!/bin/sh
-export  CHROMIUM_DATA=/usr/share/games/Chromium-0.9/data
-/usr/libexec/chromium
