@@ -1,1 +1,1 @@
-depends  paragui
+depends  paragui "--disable-paraguitest"
