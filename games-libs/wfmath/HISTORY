@@ -1,3 +1,6 @@
+2005-03-10 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added message about needing atlas-c++/devel
+
 2004-10-13 Eric Sandall <eric@sandall.us>
 	* DETAILS: Add SourceForge mirror first
 
