@@ -3,7 +3,7 @@
           SOURCE=xmame-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/xmame-${VERSION}
    SOURCE_URL[0]=http://x.mame.net/download/${SOURCE}
-          MD5[0]=f997f93afff4571a0746d908997d64f3
+          MD5[0]=36deff293d1fdb22e780f5f7b91645b6
         WEB_SITE=http://x.mame.net
          ENTERED=20010922
          UPDATED=20020131

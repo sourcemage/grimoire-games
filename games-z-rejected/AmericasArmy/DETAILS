@@ -10,7 +10,7 @@
  	 WEB_SITE=http://www.americasarmy.com/
 	  ENTERED=20030620
 	  UPDATED=20030620
-	   MD5[0]=9ddb191395c679875e6001651af715d6
+	   MD5[0]=86542e80682cd18b9aedf89de1eedfc7
        LICENSE[0]=UNKNOWN
 	   REJECT="binary only game"
           ARCHIVE=off

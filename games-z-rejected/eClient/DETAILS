@@ -6,8 +6,8 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
     SOURCE_URL[0]=http://egenesis.centralserver.net/${SOURCE}
    SOURCE2_URL[0]=http://egenesis.centralserver.net/${SOURCE2}
-           MD5[0]=071fce94852928d1b5ac9fd89e40d7eb
-           MD5[1]=bfe4f4f360d34ad3e74d2f582e88992d
+           MD5[0]=ac970115172f53f4656d8e2450176fc5
+           MD5[1]=f2551200445f9b49a63f48bdf8af369c
          WEB_SITE=http://www.atitd.com/
           ENTERED=20030920
           UPDATED=20040422
