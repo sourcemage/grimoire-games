@@ -1,15 +1,15 @@
-2003-09-30  hgg <hgreig@bigpond.net.au>
+2003-12-28 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.9.13
+	* DETAILS,BUILD: new stamp set
 
-		Update to 0.9.12
+2003-09-30 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.9.12
 
-2003-07-04  hgg <hgreig@bigpond.net.au>
+2003-07-04 hgg <hgreig@bigpond.net.au>
+	* BUILD: Add non-default icon dirs to build
 
-		Add non-default icon dirs to build
+2003-07-03 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Add stamps (SOURCE2) for a little princess in the SMGL world
 
-2003-07-03  hgg <hgreig@bigpond.net.au>
-
-		Add stamps (SOURCE2) for a little princess in the SMGL world
-
-2003-06-18  hgg <hgreig@bigpond.net.au>
-
-		Created this spell 
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* Created this spell 

@@ -1,5 +1,5 @@
            SPELL=luola
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=stdlevels.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -7,12 +7,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
   SOURCE2_URL[0]=http://www.saunalahti.fi/~laakkon1/linux/luola/bin/$SOURCE2
         WEB_SITE=http://www.saunalahti.fi/~laakkon1/linux/luola/index.php
          ENTERED=20011214
-         UPDATED=20030807
-          MD5[0]=81569cfff888f79e023ddab2143b6ddd
+         UPDATED=20031227
+          MD5[0]=7335714f0f293aaecb80ea92fa1bc807
           MD5[1]=b932d10ab7fa35277771d705a1d8fb24
       LICENSE[0]=GPL
       LICENSE[1]=GPL
-      MAINTAINER=v.merkatz@gmx.net
            SHORT="luola is a cavern-flying game for 1-4 players"
 cat << EOF
 Luola is a cavern-flying game for 1-4 players. Each player flies a
