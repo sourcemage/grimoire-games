@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://trackballs.sourceforge.net/
          ENTERED=20030221
          UPDATED=20030221
+       BUILD_API=2
            SHORT="Trackballs is a game inspired by the classical Marble Madness"
 cat << EOF
 Trackballs is a simple game similar to the classical game Marble Madness on the
