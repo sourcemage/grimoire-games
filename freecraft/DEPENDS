@@ -9,22 +9,28 @@ optional_depends  "SDL"                         \
                   ""                            \
                   ""                            \
                   "for additional SDK support"  &&
+
 optional_depends  "bzip2"                              \
                   ""                                   \
                   ""                                   \
                   "for high-quality data compression"
+
 optional_depends  "vorbis-tools"            \
                   ""                        \
                   ""                        \
                   "for Ogg Vorbis support"  &&
-optional_depends  "flac"              \
-                  ""                  \
-                  ""                  \
-                  "for Flac support"  &&
+
+# Problems with FLAC for the time being
+#optional_depends  "flac"              \
+#                  ""                  \
+#                  ""                  \
+#                  "for Flac support"  &&
+
 optional_depends  "mad"                             \
                   ""                                \
                   ""                                \
                   "for MP3 support (using libmad)"  &&
+
 optional_depends  "crafted"                  \
                   ""                         \
                   ""                         \

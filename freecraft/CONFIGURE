@@ -1,0 +1,21 @@
+if  !  grep  -q  'CONFIGURED="y"'  ${SPELL_CONFIG}  ;  then
+  
+  message  "${MESSAGE_COLOR}X-X11 Support (default)"
+  message  "S-SDL Support"
+  message  "V-SVGALIB Support"
+  message  "B-SDL/SVGALIB Support"
+  message  "Which video mode do you which to compile for: ${DEFAULT_COLOR}"
+
+  read   -t  $PROMPT_DELAY -e
+
+  VIDEO=${REPLY:=X}
+  echo  "VIDEO=${VIDEO}"  >>  ${SPELL_CONFIG}
+
+  if      query  "Do you want sound support?"  y
+    then  echo   'SOUND="y"'  >>  ${SPELL_CONFIG}
+    else  echo   'SOUND="n"'  >>  ${SPELL_CONFIG}
+  fi
+
+  echo  'CONFIGURED="y"'  >>  ${SPELL_CONFIG}
+
+fi
