@@ -1,10 +1,10 @@
            SPELL=Scorched3D
-         VERSION=36.2
+         VERSION=37.1
           SOURCE=$SPELL-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/scorched
    SOURCE_URL[0]=${SOURCEFORGE_URL}/scorched3d/$SOURCE
         WEB_SITE=http://www.employees.org/~gcamp/scorched/
-          MD5[0]=4bec6ad1014e36d10cf1e04b5e141ec6
+          MD5[0]=697d56e7b6ab307fb02a76230fadc206
          ENTERED=20030802
          UPDATED=20030802
       LICENSE[0]=GPL

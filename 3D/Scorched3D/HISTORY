@@ -1,3 +1,8 @@
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 37.1
+	* BUILD: droped sedit
+	* BUILD: change the mv dir from to
+
 2004-01-28 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 36.2 (thanks to Rycee)
 	Removed MAINTAINER
