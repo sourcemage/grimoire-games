@@ -6,7 +6,8 @@
                --prefix=/usr               \
                --bindir=/usr/games         \
                --datadir=/usr/share/games  \
-               --enable-glut               \
+	       --enable-bumpref=no         \
+#               --enable-glut               \
                $OPTS    &&
   make                  &&
   prepare_install       &&

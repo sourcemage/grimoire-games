@@ -1,3 +1,7 @@
+2003-05-09  hgg <hgreig@bigpond.net.au>
+
+		Update ./configure as bumpref features are NVIDIA_GLX header specific
+
 2003-05-08  hgg <hgreig@bigpond.net.au>
 
 		Changed patch as current xfree86 has extra gl extensions included
