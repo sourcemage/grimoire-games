@@ -1,2 +1,3 @@
-patch -p0 < $SCRIPT_DIRECTORY/lua_fix.diff   &&
+OPTS="$OPTS --with-lua=/usr"
+
 default_build

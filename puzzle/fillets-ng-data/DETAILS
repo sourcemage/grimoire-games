@@ -1,5 +1,5 @@
            SPELL=fillets-ng-data
-         VERSION=0.5.1
+         VERSION=0.6.1
        BUILD_API=2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://fillets.sf.net
          ENTERED=20040822
          UPDATED=20040822
-          MD5[0]=c32d812ffb83572e8a1f0de373b56126
+          MD5[0]=ba428ddb3736ed985a13aef8677688f7
       LICENSE[0]=GPL
          ARCHIVE=off
            SHORT='Data files for fillets-ng game'
