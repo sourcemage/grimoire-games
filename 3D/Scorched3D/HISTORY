@@ -1,3 +1,9 @@
+2004-01-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 36.2 (thanks to Rycee)
+	Removed MAINTAINER
+	* BUILD, *.patch: Removed gcc-3.3 patch
+	* BUILD: Change ./autogen to ./configure
+
 2004-01-24 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Now depends on any provisor of GLUT
 	* HISTORY: Formatted to Guru Handbook

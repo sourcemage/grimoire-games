@@ -1,14 +1,13 @@
            SPELL=Scorched3D
-         VERSION=35
+         VERSION=36.2
           SOURCE=$SPELL-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/scorched
    SOURCE_URL[0]=${SOURCEFORGE_URL}/scorched3d/$SOURCE
         WEB_SITE=http://www.employees.org/~gcamp/scorched/
-          MD5[0]=63df1bc5e28f2b5914d6c2aba7be1dac
-      LICENSE[0]=GPL
+          MD5[0]=4bec6ad1014e36d10cf1e04b5e141ec6
          ENTERED=20030802
          UPDATED=20030802
-      MAINTAINER=v.merkatz@gmx.net
+      LICENSE[0]=GPL
            SHORT="Scorched3D is based loosely on the DOS game Scorched Earth 'The Mother Of All Games'"
 cat << EOF
 In its simplest form Scorched is an artillery game. Tanks take turns to earn
