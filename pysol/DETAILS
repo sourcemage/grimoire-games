@@ -1,5 +1,5 @@
            SPELL=pysol
-         VERSION=4.80
+         VERSION=4.81
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.oberhumer.com/opensource/pysol/download/$SOURCE
