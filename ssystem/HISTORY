@@ -1,6 +1,10 @@
+2002-11-29  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		changed SOURCE_URL to a working one (fixes bug #1774)
+
 2002-08-26  Eric Sandall <eric@sandall.us>
 
-      Updated/added MAINTAINER, MD5, LICENSE
+		Updated/added MAINTAINER, MD5, LICENSE
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
