@@ -1,7 +1,7 @@
 depends  libsigc++2  &&
-depends  atlas-c++   &&
 
-if [ "${CVS}" = "yes" ];  then
+if  [  "$CVS"  ==  "y"  ];  then
+  message  "${SPELL_COLOR}eris${MESSAGE_COLOR CVS requires ${SPELL_COLOR}atlas-c++${MESSAGE_COLOR} CVS"  &&
   depends  skstream  &&
   depends  wfmath    &&
   depends  cvs

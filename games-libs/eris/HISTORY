@@ -1,3 +1,13 @@
+2004-07-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Ummm...checkout libs/eris, not libs/skstream, for cvs
+	  BUILD_API=2
+	  Use config_query response for CVS
+	* BUILD: Use config_query response for CVS
+	* DEPENDS: Use config_query response for CVS
+	  Removed atlas-c++ (wfmath and wfmath2 depend on it)
+	  Added message saying eris-cvs needs atlas-c++-cvs
+	* PREPARE: Converted to config_query
+
 2004-05-26 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
