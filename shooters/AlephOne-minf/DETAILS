@@ -1,11 +1,11 @@
            SPELL=AlephOne-minf
          VERSION=demo
-          SOURCE=${SPELL}-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
+#          SOURCE=${SPELL}-${VERSION}.tar.gz
+#SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+#   SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
         WEB_SITE=http://sourceforge.net/projects/marathon/
       LICENSE[0]=UNKNOWN
-          MD5[0]=919272dd85f57d3af895f230aadda433
+#          MD5[0]=919272dd85f57d3af895f230aadda433
          ENTERED=20030608
          UPDATED=20030608
          ARCHIVE=off

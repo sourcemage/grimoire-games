@@ -1,0 +1,34 @@
+            SPELL=eclient
+              PKG=eClient
+          VERSION=20030918
+           SOURCE=${PKG}-linux.run
+# SOURCE2 is a newer version of the launcher, dated 2003-09-18
+          SOURCE2=elaunch
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+    SOURCE_URL[0]=http://egenesis.centralserver.net/${SOURCE}
+   SOURCE2_URL[0]=http://egenesis.centralserver.net/${SOURCE2}
+           MD5[0]=ac970115172f53f4656d8e2450176fc5
+           MD5[1]=f2551200445f9b49a63f48bdf8af369c
+         WEB_SITE=http://www.atitd.com/
+          ENTERED=20030920
+          UPDATED=20040422
+       LICENSE[0]=UNKNOWN
+           REJECT="binary only game"
+          ARCHIVE=off
+ 	    SHORT="A Tale in the Desert is a civilization-building game"
+cat << EOF
+A Tale in the Desert is an online game set in ancient Egypt where players
+work together to build the perfect society. It uses the internet to allow
+thousands of players to play together in the same world. All of the
+characters you will see and talk to in the game are controlled by other
+people just like you, not by a computer. A Tale in the Desert is the first
+online game to focus on long-term planning and long-term goals rather than
+combat. Goals include the creation of great works of art and architecture,
+becoming a powerful leader, and building wealth.
+
+  Operating System:       Required:         Recommended:
+  Linux                   Pentium 400       Pentium 700
+  XFree86 4               192 MB RAM        256 MB RAM
+  Accelerated Video       3D Accelerator    GeForce/Radeon
+EOF
+

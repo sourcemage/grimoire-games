@@ -1,0 +1,18 @@
+2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Lo-case rename from AmericasArmy
+
+2004-07-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAINTAINER
+	  Cleaned up spacing
+	  Shorted SHORT
+	* PRE_BUILD: Remove rejected query
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
+2003-09-13 hgg <hgrreig@bigpond.net.au>
+	* add z-rejected warnings and such
+
+2003-06-20 hgg <hgreig@bigpond.net.au>
+	* Created this spell.
+

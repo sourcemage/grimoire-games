@@ -1,2 +1,1 @@
-depends  X11-SERVER  &&
-depends  gcc2
+depends eclient

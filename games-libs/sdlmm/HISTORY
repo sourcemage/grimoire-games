@@ -1,0 +1,15 @@
+2005-04-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFLICTS: added
+	* renamed from SDLmm
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-07-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAINTAINER
+	  Cleaned up spacing
+	  Shortened SHORT
+
+2003-09-02 hgg <hgreig@bigpond.net.au>
+	* Created this spell 
+

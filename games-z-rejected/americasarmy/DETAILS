@@ -1,0 +1,33 @@
+           SPELL=americasarmy
+         VERSION=1.70
+          SOURCE=armyops-lnx-170.sh.bin
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.eongames.com/icculus.org/armyops/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.farlep.net/pub/clubix/patches/aa/$SOURCE
+   SOURCE_URL[2]=http://www.sh.nu/download/$SOURCE
+   SOURCE_URL[3]=http://guinness.devrandom.net/~primus/$SOURCE
+   SOURCE_URL[4]=ftp://ftp.stenstad.net/mirrors/icculus.org/$SOURCE
+          MD5[0]=86542e80682cd18b9aedf89de1eedfc7
+        WEB_SITE=http://www.americasarmy.com/
+         ENTERED=20030620
+         UPDATED=20030620
+      LICENSE[0]=UNKNOWN
+          REJECT="binary only game"
+         ARCHIVE=off
+           SHORT="America's Army the full Linux version"
+cat << EOF
+Nobody knows military simulations like the world's premier land force, the U.S. Army. So when the 
+Army began making a simulation to let civilians experience the barracks to the battlefields, it 
+sent its talented development teams to experience the Army as a recruit would. The developers 
+crawled through obstacle courses, shot weapons, parachute jumped, and visited the Army bases, all 
+to let you play Army in the most realistic way ever depicted in a computer game.
+
+NOTE: 316M download, 900M INSTALLED
+
+The recommended requirements for the game are: 
+	Pentium4 1.4GHz (or equivalent)
+	256MB RAM
+	64MB GeForce2 or similar 3D card
+	1GB disk space
+	Broadband network connection
+EOF

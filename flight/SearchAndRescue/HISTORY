@@ -1,3 +1,8 @@
+2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* deprecating in favour of searchandrescue
+	* BUILD,PRE_BUILD,INSTALL,DETAILS
+	* DEPENDS,TRIGGERS:formated to deprecation standard
+
 2004-07-23 Eric Sandall <eric@sandall.us>
 	* DETAILS: BUILD_API=2
 	  Shortened SHORT
