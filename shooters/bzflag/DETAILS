@@ -1,9 +1,9 @@
            SPELL=bzflag
-         VERSION=1.7g0
+         VERSION=1.7g2
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://ftp.BZFlag.org/$SPELL/$SOURCE
-          MD5[0]=66b3a245fe95ad568afe4f65cc8f4653
+          MD5[0]=5a230b16bba30eee4ec41bba80ddf572
         WEB_SITE=http://BZFlag.org
          ENTERED=20010922
          UPDATED=20020827
