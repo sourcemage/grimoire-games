@@ -4,7 +4,8 @@
                --bindir=/usr/games         \
                --datadir=/usr/share/games  \
                --libdir=/usr/share/games   \
-               --mandir=/usr/share/man     &&
+               --mandir=/usr/share/man     \
+               ${OPTS}                     &&
   make                                     &&
   prepare_install                          &&
   make    install

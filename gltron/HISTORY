@@ -1,3 +1,12 @@
+2003-01-31  Eric Sandall <eric@sandall.us>
+
+		Fixed Bug #2443
+
+		Also now copies scripts...don't know how this was missed
+		as the game won't run without them...and another show-
+		stopper is that --datadir wasn't set, so the binary
+		was looking in the wrong spot for the data...
+
 2003-01-26  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.62  (Bug #2383, thanks to Snakebyte)

@@ -11,13 +11,17 @@
 
   aclocal                                                     &&
   autoconf                                                    &&
-  ./configure  --prefix=/usr                                  \
+  ./configure  --build=${BUILD}                               \
+               --prefix=/usr                                  \
                --bindir=/usr/games                            \
+               --sysconfdir=/etc                              \
+               --localstatedir=/var                           \
                --mandir=/usr/share/man                        &&
+               ${OPTS}                                        &&
   make                                                        &&
   prepare_install                                             &&
   # not automatic
   install  --directory  /usr/games                            &&
   make    install
 
-)  >  $C_FIFO  2>&1
+)  >  ${C_FIFO}  2>&1
