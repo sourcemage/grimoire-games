@@ -1,3 +1,12 @@
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* PREPARE: Use config_query_list to ask for stable, devel, or cvs
+	  config_query variable renamed to ATLAS_CPP_BRANCH from CVS
+	* DETAILS: Added "devel" 0.5.91 version (uses SOURCEFORGE_URL)
+	  Check ATLAS_CPP_BRANCH
+	* BUILD: Check ATLAS_CPP_BRANCH
+	* DEPENDS: Check ATLAS_CPP_BRANCH
+	  If "cvs" is set, depend on some CVS
+
 2004-07-21 Eric Sandall <eric@sandall.us>
 	* DEPENDS: CVS version depends on atlas-python
 

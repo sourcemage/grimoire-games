@@ -1,12 +1,18 @@
            SPELL=atlas-c++
          VERSION=${VERSION:=0.4.6}
-if  [  "$CVS"  ==  "y"  ];  then
+if    [  "$ATLAS_CPP_BRANCH"  =  "cvs"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/Atlas-C++
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+elif  [  "$ATLAS_CPP_BRANCH"  =  "devel"  ];  then
+         VERSION=0.5.91
+          SOURCE=Atlas-C++-$VERSION.tar.bz2
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+          MD5[0]=3bcd5613c1add4da556e1ef6f3ec2e1b
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
 else
           SOURCE=Atlas-C++-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/$SOURCE

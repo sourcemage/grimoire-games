@@ -1,7 +1,8 @@
 depends  cppsocket  &&
 depends  skstream   &&
 
-if  [  "$CVS"  ==  "y"  ]
+if  [  "$ATLAS_CPP_BRANCH"  =  "cvs"  ]
 then
-  depends  atlas-python
+  depends  atlas-python  &&
+  depends  CVS
 fi
