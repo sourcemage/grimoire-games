@@ -1,8 +1,0 @@
---- configure.in.old	2003-03-29 22:53:54.000000000 -0800
-+++ configure.in	2003-03-29 22:54:04.000000000 -0800
-@@ -97,4 +97,4 @@
- AC_FUNC_VPRINTF
- AC_CHECK_FUNCS(gethostname mkdir select strstr strtol usleep mkstemp)
- 
--AC_OUTPUT(Makefile src/makefile lib/Makefile lib/apex/Makefile lib/bone/Makefile lib/data/Makefile lib/edit/Makefile lib/file/Makefile lib/help/Makefile lib/info/Makefile lib/pref/Makefile lib/save/Makefile lib/script/Makefile lib/user/Makefile lib/xtra/Makefile)
-+AC_OUTPUT(Makefile src/makefile lib/Makefile lib/apex/Makefile lib/bone/Makefile lib/data/Makefile lib/edit/Makefile lib/file/Makefile lib/help/Makefile lib/info/Makefile lib/pref/Makefile lib/save/Makefile lib/user/Makefile lib/xtra/Makefile)

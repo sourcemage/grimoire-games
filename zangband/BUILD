@@ -1,8 +1,6 @@
 (
 
   I_DIR=/usr/share/games/${SPELL}                        &&
-  patch  -p0  <  ${SCRIPT_DIRECTORY}/configure.in.patch  &&
-  sedit  "s:script::"  lib/Makefile.am                   &&
   ./bootstrap                                            &&
   ./configure  --build=${BUILD}                          \
                --prefix=/usr/games                       \
@@ -17,7 +15,7 @@
   make                                                   &&
   prepare_install                                        &&
   mkdir  -p   ${I_DIR}                                   &&
-  cp  src/zangband  ${I_DIR}                             &&
+  cp  zangband  ${I_DIR}                                 &&
   cp  -r  lib  ${I_DIR}                                  &&
   cp  ${SCRIPT_DIRECTORY}/zangband  /usr/games           &&
   chmod  775  /usr/games/zangband                        &&
