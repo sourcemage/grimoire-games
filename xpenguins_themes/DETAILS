@@ -1,0 +1,20 @@
+	   SPELL=xpenguins_themes
+         VERSION=0.9
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/themes
+   SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
+        WEB_SITE=http://xpenguins.seul.org/
+         ENTERED=200204011
+         UPDATED=200204011
+      MAINTAINER=richard.brauer@physik.rwth-aachen.de
+           SHORT="More themes for xpenguins (e.g. Winnieh the Pooh"
+cat << EOF
+xpenguins_themes supplies even more themes vor the xpenguins package.
+New are: The Simpsons, Sonic the Hedgehog, Lemmings and Winnie the Pooh.
+
+Please be aware that according to the author the license/copyright
+situation is unclear.
+
+Naturally, installing this package doesn't make much sense unless you 
+have xpenguins installed.
+EOF

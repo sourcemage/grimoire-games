@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://amcl.sourceforge.net
          ENTERED=20020116
          UPDATED=20020116
+         MAINTAINER=torgeir@nes.ac
            SHORT="gnome-mud client"
 cat << EOF
 GNOME-Mud (formerly AMCL) is a Multi-User Dungeon (MUD) client

@@ -1,0 +1,29 @@
+           SPELL=xrick
+         VERSION=010808
+          SOURCE=$SPELL-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.bigorno.net/xrick/$SOURCE
+        WEB_SITE=http://www.bigorno.net/xrick/index.html
+         ENTERED=20020415
+         UPDATED=20020415
+           SHORT="xrick is a clone of the clasic game Rick Dangerous"
+cat << EOF
+Way before Lara Croft, back in the 1980's and early 1990's, Rick Dangerous was
+the Indiana Jones of computer games, running away from rolling rocks, avoiding
+traps, from South America to a futuristic missile base via Egypt and the
+Schwarzendumpf castle.
+
+xrick is a clone of Rick Dangerous. Written entirely in C, it relies on the
+Simple DirectMedia Layer library and has been ported to Linux (its primary
+target), Windows, BeOs, Amiga, ... download and install the game, learn how to
+play, and enjoy!
+
+CAUTION!
+The author wrote:
+
+I have written the xrick code. However, graphics and maps and sounds are by the authors of the original Rick Dangerous game, and "Rick Dangerous" remains a trademark of its owner(s) -- maybe Core Design (who wrote the game) or FireBird (who published it). I have not been successful at contacting Core Design.
+
+This makes it a bit difficult to formally release the whole code, including data for graphics and maps and sounds, under the terms of licences such as the GNU General Public License. So the code is released in the spirit of the GNU GPL. Whatever that means.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+EOF

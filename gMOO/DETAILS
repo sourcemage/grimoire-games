@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.nowmoo.demon.nl/
          ENTERED=20020116
          UPDATED=20020116
+         MAINTAINER=torgeir@nes.ac
            SHORT="GTK+ MOO/MUD Client"
 cat << EOF
 gMOO is a GTK+ based MOO client.  Current features include multiple

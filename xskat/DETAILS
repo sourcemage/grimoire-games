@@ -1,0 +1,23 @@
+           SPELL=xskat
+         VERSION=3.4
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.gulu.net/xskat/$SOURCE
+        WEB_SITE=http://www.gulu.net/xskat
+         ENTERED=20020414
+         UPDATED=20020414
+      MAINTAINER=peter@schneider-kamp.de
+           SHORT="XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11"
+cat << EOF
+XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11.
+Features:
+    * Single- and multiplayer mode.
+    * Playing over LAN or IRC.
+    * Game lists and logs.
+    * Three types of scoring.
+    * English or German text.
+    * German or French suited cards.
+    * Different computer strategies.
+    * Pre-definable card distributions.
+    * Variations: Ramsch, Bock, Kontra & Re, ... 
+EOF
