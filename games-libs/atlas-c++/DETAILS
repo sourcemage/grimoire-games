@@ -7,7 +7,7 @@ if [ "${CVS}" = "yes" ];  then
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
 else
-          SOURCE=$SPELL-$VERSION.tar.bz2
+          SOURCE=Atlas-C++-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/$SOURCE
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/Atlas-C++/${SOURCE}
           MD5[0]=07f36239b9ecc998697a972d4e5df76b
