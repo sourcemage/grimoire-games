@@ -1,9 +1,9 @@
            SPELL=qstat
-         VERSION=25b
-          SOURCE=$SPELL$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL$VERSION
-   SOURCE_URL[0]=http://www.qstat.org/$SOURCE
-          MD5[0]=257cf837e91cf12c2d8f76a36854d2a7
+         VERSION=25c
+          SOURCE=${SPELL}${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
+   SOURCE_URL[0]=http://www.qstat.org/${SOURCE}
+          MD5[0]=ff20e66196d40629dbbfe9f370046914
         WEB_SITE=http://www.qstat.org
          ENTERED=20020320
          UPDATED=20020320

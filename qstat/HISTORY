@@ -1,3 +1,9 @@
+2002-11-12  Eric Sandall <eric@sandall.us>
+
+		Updated to v2.5c
+
+		Modified BUILD to use optimizations and use 'install'
+
 2002-08-26  Eric Sandall <eric@sandall.us>
 
 		Updated/added MAINTAINER
@@ -5,9 +11,11 @@
 2002-08-24  Eric Sandall <eric@sandall.us>
 
 		Updated version to 2.5b
+
 		Added MD5 and LICENSE
 
 2002-03-14  Kyle Sallee
 
 		Spell was accepted by <pradierdavid@yahoo.fr>
+
 		Spell was proposed by nhudson@hiwaay.net
