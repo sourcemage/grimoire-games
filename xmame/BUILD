@@ -7,7 +7,9 @@ rm  -f  $SPELL_CONFIG
 (
 
   # Fix permission problems accessing ${SOURCE_DIRECTORY}/doc/ on install
-  chown  -R  root.root  *                   &&
+  chown  -R  root.root  src                 &&
+  rm  doc                                   &&
+  ln  -sf  src/unix/doc  doc                &&
 
   make  PREFIX=/usr                         \
         BINDIR=/usr/games                   \
