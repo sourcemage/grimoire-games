@@ -1,11 +1,13 @@
            SPELL=liquidwar
-         VERSION=5.5.0
+         VERSION=5.5.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/$SOURCE
+          MD5[0]=7876fa73de15033fc41e85550f3d90c4
         WEB_SITE=http://www.ufoot.org/liquidwar
          ENTERED=20020210
          UPDATED=20020320
+      LICENSE[0]=GPL
       MAINTAINER=jerome.zago@insalien.org
            SHORT="Liquid War is a unique multiplayer wargame."
 cat << EOF
