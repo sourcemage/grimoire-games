@@ -1,0 +1,8 @@
+depends Python &&
+depends cal3d  &&
+depends X11-SERVER &&
+depends sdl &&
+depends openal &&
+depends freefont-ttf &&
+
+optional_depends "pyvorbis" "" "" "for sound support"

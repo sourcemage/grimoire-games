@@ -1,0 +1,6 @@
+2004-09-28 Sebastian Sareyko <sebi@smoon.homelinux.org>
+	* Added freefont-ttf dependency
+	* Added a patch to fix compiling with nvidia_headers installed
+
+2004-09-26 Sebastian Sareyko <sebi@smoon.homelinux.org>
+	* Created this.

@@ -1,0 +1,22 @@
+           SPELL=slune
+         VERSION=0.7
+          SOURCE=Slune-with-deps-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Slune-with-deps-$VERSION
+   SOURCE_URL[0]=http://download.gna.org/slune/$SOURCE
+          MD5[0]=a394bd996bf3b74898dbc4db8cfa5c9b
+        WEB_SITE=http://home.gna.org/oomadness/en/slune/index.html
+      LICENSE[0]=GPL
+         ENTERED=20040926
+         UPDATED=20040926
+           SHORT="Slune is a 3D racing game."
+cat << EOF
+Slune is a 3D game! It includes racing, car-crashing, and lots of action!
+In addition, a multiplayer mode is available.
+
+Slune relies on very original technical choices:
+ * The game, the network engine and a part of the 3D engine are
+   written in Python (whereas the other part of the 3D engine is
+   in C),
+ * The multiplayer mode is based on Peer-To-Peer, and not on
+   client-server. No server is needed!
+EOF
