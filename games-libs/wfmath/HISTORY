@@ -1,23 +1,24 @@
-2003-10-04  Eric Sandall <eric@sandall.us>
-		* DETAILS: Added mirror, main site should be back up soon
+2004-02-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.2
+	Removed MAINTAINER
+	* HISTORY: Formatted to Guru Handbook
 
-2003-09-29  Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
 
-		Changed website to not use victor, but instead the normal website
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Changed website to not use victor, but instead the normal website
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-05-10  hgg  <hgreig@bigpond.net.au>
+2003-05-10 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 0.2.11
 
-		Updated to 0.2.11
+2002-10-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v2.10
+	* HISTORY: Added
 
-2002-10-11  Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <eric@sandall.us>
+	* Created wfmath and included in grimoire
 
-		Updated to v2.10
-		Added HISTORY file
-
-2002-09-16  Eric Sandall <eric@sandall.us>
-
-		Created wfmath and included in grimoire
