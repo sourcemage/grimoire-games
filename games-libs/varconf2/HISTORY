@@ -1,2 +1,5 @@
+2003-11-26 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add pkgconfig
+
 2003-10-04  Eric Sandall <eric@sandall.us>
-		* Forked from varconf for sear
+	* Forked from varconf for sear
