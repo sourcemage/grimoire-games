@@ -1,0 +1,2 @@
+depends SDL && 
+optional_depends SDL_mixer "" "nosound" "Sound support"
