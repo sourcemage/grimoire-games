@@ -1,3 +1,6 @@
+2003-12-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.14.1
+
 2003-12-07 hgg <hgreig@bigpond.net.au>
 	* CONFIGURE: doesn't need a dialog menu
 
@@ -52,3 +55,4 @@
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>
 	* Added this History file.
+
