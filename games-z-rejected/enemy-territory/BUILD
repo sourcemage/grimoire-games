@@ -23,5 +23,6 @@ echo -e "#!/bin/sh \n
 cd "${I_DIR}" \n ./etded.x86 \$* \n exit \$?" > etded &&
 install et ${INSTALL_ROOT}/usr/games &&
 install etded ${INSTALL_ROOT}/usr/games &&
+mkdir -p ${INSTALL_ROOT}/usr/share/applnk/Games/ &&
 install -m0644 $SCRIPT_DIRECTORY/et.kdelnk ${INSTALL_ROOT}/usr/share/applnk/Games/ 
 )  >  ${C_FIFO}  2>&1

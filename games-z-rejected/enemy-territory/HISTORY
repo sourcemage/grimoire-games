@@ -1,3 +1,7 @@
+2003-06-29  hgg <hgreig@bigpond.net.au>
+
+		Update BUILD to make the kdelnk dir
+
 2003-06-28  hgg <hgreig@bigpond.net.au>
 
 		changed /tmp remount to have "," not -o 
