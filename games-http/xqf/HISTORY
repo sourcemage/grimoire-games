@@ -1,3 +1,13 @@
+2004-08-20 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0
+	  Added BUILD_API=2
+	  List more of the supported games in the long description
+	  Shortened SHORT
+	* DEPENDS: Added more optional dependencies
+	  Removed dependency on gtk+ (gdk-pixbuf depends on it)
+	  Added code from CONFIGURE for using gtk+2
+	* CONFIGURE: Ask user if they want the gtk+2 interface
+
 2004-03-30 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.9.14
 	  Removed MAINTAINER
