@@ -7,11 +7,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
           MD5[0]=IGNORE
   FORCE_DOWNLOAD=on
 else
-         VERSION=0.1.1
+         VERSION=0.1.2
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/super-tux/$SOURCE
-          MD5[0]=af63bc5e7333b65e9c2a6b4f1a5abf47
+          MD5[0]=0963dff1f5618fdf98ca35f4eb6b4d16
 fi
         WEB_SITE=http://super-tux.sourceforge.net
        BUILD_API=2
