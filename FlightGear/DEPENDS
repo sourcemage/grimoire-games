@@ -1,2 +1,2 @@
-depends  SimGear  &&
+depends  SimGear    &&
 depends  fgfs-base
