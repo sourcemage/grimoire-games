@@ -4,8 +4,8 @@
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
           WEB_SITE=http://www.shatters.net/celestia/
-           ENTERED=03052003
-           UPDATED=03052003
+           ENTERED=20030503
+           UPDATED=20030503
             MD5[0]=b35d488b7ddb0df8e83e49bc7acd7db6
         LICENSE[0]=GPL
  	MAINTAINER=hgreig@bigpond.net.au
