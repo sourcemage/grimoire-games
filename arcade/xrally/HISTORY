@@ -1,25 +1,25 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2004-03-11 Robert Helgesson <rycee@home.se>
+	* BUILD: Fixed bug #4683 with a few sedits.
+	* HISTORY: Converted to new format.
+	* DETAILS: Removed MAINTAINER.
+	* DEPENDS: Removed dependency on cvs, added dependency on X11-LIBS.
 
-2003-05-26  hgg <hgreig@bigpond.net.au>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	New Games grimoire is born!
 
-		removed PRE_BUILD and altered BUILD & DETAILS
-		added new patch file to SCRIPT_DIRECTORY		
+2003-05-26 hgg <hgreig@bigpond.net.au>
+	* PRE_BUILD: removed 
+	* BUILD, DETAILS: Altered.
+	* xrally-1.1.1.patch: added new patch file to SCRIPT_DIRECTORY
 
-2003-05-19  hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-14  Seth Woolley <seth@tautology.org>
+2003-05-14 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: Added unpack
 
-		Added unpack to PRE_BUILD
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE, SOURCEFORGE_URL
 
-2002-08-26  Eric Sandall <eric@sandall.us>
-
-		Updated/added MAINTAINER, MD5, LICENSE
-		Added SOURCEFORGE_URL
-
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
-
-		Added this History file.
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this file.

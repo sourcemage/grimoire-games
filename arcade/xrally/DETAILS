@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
            SHORT="xrally is an improved vrsion of the arcade game Rally X."
 cat << EOF
 XRally is a clone of the Rally X arcade game. In Rally X, you control 
