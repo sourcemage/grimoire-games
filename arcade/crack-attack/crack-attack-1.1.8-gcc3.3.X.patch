@@ -1,0 +1,110 @@
+diff -ruN crack-attack-1.1.8.orig/src/GarbageFlavorImage.cxx crack-attack-1.1.8/src/GarbageFlavorImage.cxx
+--- crack-attack-1.1.8.orig/src/GarbageFlavorImage.cxx	2002-05-29 07:48:15.000000000 +1000
++++ crack-attack-1.1.8/src/GarbageFlavorImage.cxx	2003-08-26 19:11:55.000000000 +1000
+@@ -28,7 +28,7 @@
+ #include <iomanip.h>
+ 
+ #ifndef _WIN32
+-#  include <strstream.h>
++#  include <strstream>
+ #else
+ #  include <strstrea.h>
+ #endif
+@@ -186,7 +186,7 @@
+ void GarbageFlavorImage::buildGarbageTextureFileName ( char file_name[256],
+  const char *dir_name, int n )
+ {
+-  ostrstream s(file_name, 256);
++  std::ostrstream s(file_name, 256);
+   s << dir_name << GC_GARBAGE_TEX_FILE_NAME_BASE "_"
+    << setw(GC_GARBAGE_TEX_NUMBER_DIGITS) << setfill('0') << n << ".tga" << ends;
+ }
+diff -ruN crack-attack-1.1.8.orig/src/obj_messages.cxx crack-attack-1.1.8/src/obj_messages.cxx
+--- crack-attack-1.1.8.orig/src/obj_messages.cxx	2002-05-29 07:48:16.000000000 +1000
++++ crack-attack-1.1.8/src/obj_messages.cxx	2003-08-26 19:14:13.000000000 +1000
+@@ -30,7 +30,7 @@
+ #include <math.h>
+ 
+ #ifndef _WIN32
+-#  include <strstream.h>
++#  include <strstream>
+ #else
+ #  include <glext.h>
+ #  include <strstrea.h>
+diff -ruN crack-attack-1.1.8.orig/src/obj_score_record.cxx crack-attack-1.1.8/src/obj_score_record.cxx
+--- crack-attack-1.1.8.orig/src/obj_score_record.cxx	2002-05-29 07:48:16.000000000 +1000
++++ crack-attack-1.1.8/src/obj_score_record.cxx	2003-08-26 19:15:30.000000000 +1000
+@@ -27,7 +27,7 @@
+ #include <math.h>
+ 
+ #ifndef _WIN32
+-#  include <strstream.h>
++#  include <strstream>
+ #else
+ #  include <glext.h>
+ #  include <strstrea.h>
+@@ -68,9 +68,9 @@
+    = new GLubyte[DC_LETTER_TEX_LENGTH * DC_SCORE_REC_RANK_STRING_TEX_WIDTH * 4];
+ 
+   char rank_string[8];
+-  ostrstream s(rank_string, 8);
++  std::ostrstream s(rank_string, 8);
+   for (int n = Score::player_rank; n--; ) {
+-    ostrstream s(rank_string, 8);
++    std::ostrstream s(rank_string, 8);
+     s << (GC_SCORE_REC_LENGTH - n) << ends;
+ 
+     for (int i = DC_LETTER_TEX_LENGTH * DC_SCORE_REC_RANK_STRING_TEX_WIDTH * 4;
+@@ -94,11 +94,11 @@
+  const char *name, GLubyte *texture )
+ {
+   char score_string[32];
+-  ostrstream s(score_string, 32);
++  std::ostrstream s(score_string, 32);
+   s << score << ends;
+ 
+   char rank_string[8];
+-  ostrstream t(rank_string, 8);
++  std::ostrstream t(rank_string, 8);
+   t << (GC_SCORE_REC_LENGTH - rank) << ends;
+ 
+   int score_width
+@@ -195,7 +195,7 @@
+   }
+ 
+   char score[32];
+-  ostrstream s(score, 32);
++  std::ostrstream s(score, 32);
+   s << Score::record[GC_SCORE_REC_LENGTH - 1].score << ends;
+ 
+   width = String::stringWidth(score, DC_SCORE_TO_BEAT_TEX_LENGTH_S);
+diff -ruN crack-attack-1.1.8.orig/src/TextureLoader.h crack-attack-1.1.8/src/TextureLoader.h
+--- crack-attack-1.1.8.orig/src/TextureLoader.h	2002-05-29 07:48:16.000000000 +1000
++++ crack-attack-1.1.8/src/TextureLoader.h	2003-08-26 19:09:20.000000000 +1000
+@@ -4,7 +4,7 @@
+ #include <GL/glut.h>
+ 
+ #ifndef _WIN32
+-#  include <strstream.h>
++#  include <strstream>
+ #else
+ #  include <glext.h>
+ #  include <strstrea.h>
+@@ -31,7 +31,7 @@
+ 
+   static inline void buildLocalDataDirectoryName ( char dir_name[256] )
+   {
+-    ostrstream s(dir_name, 256);
++    std::ostrstream s(dir_name, 256);
+ #ifndef _WIN32
+     s << getenv("HOME") << GC_LOCAL_DATA_DIRECTORY << ends;
+ #else
+@@ -43,7 +43,7 @@
+   static inline void buildLocalDataFileName ( const char base_name[256],
+    char file_name[256] )
+   {
+-    ostrstream s(file_name, 256);
++    std::ostrstream s(file_name, 256);
+ #ifndef _WIN32
+     s << getenv("HOME") << GC_LOCAL_DATA_DIRECTORY << base_name << ends;
+ #else
