@@ -1,8 +1,12 @@
+2003-06-06  hgg <hgreig@bigpond.net.au>	
+
+		Update to 0.69.1
+
 2003-05-26  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.68.1
 
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
