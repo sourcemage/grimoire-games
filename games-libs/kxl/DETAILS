@@ -1,0 +1,20 @@
+           SPELL=kxl
+         VERSION=1.1.7
+          SOURCE=KXL-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/KXL-$VERSION
+   SOURCE_URL[0]=http://kxl.hn.org/download/${SOURCE}
+          MD5[0]="83cd0c60416a4e2c016051d6e4f84134"
+      LICENCE[0]=GPL
+        WEB_SITE=http://kxl.hn.org/
+         ENTERED=20040220
+           SHORT='KXL is a library for developing games on X Window'
+cat << EOF
+KXL is the library developed for the purpose of the ability to develop
+a game easily on X Window System of Linux.
+
+KXL is the composition of the window of one sheet, and the frame
+buffer of one sheet.
+
+KXL corresponds to reading of a bitmap picture, and offers a still
+simple drawing function and a wave sound function.
+EOF
