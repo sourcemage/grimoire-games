@@ -1,5 +1,5 @@
 (
-if [ $(gcc -dumpversion)   == "3.3" ] ; then
+if [[ $(gcc -dumpversion)   == 3.3* ]] ; then
 sedit '20a\
 \#include \<assert.h\>\' src/editor/generic_property_frame.cxx  &&
 sedit '20a\
