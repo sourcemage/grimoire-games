@@ -1,0 +1,22 @@
+if [ ! -s $SPELL_CONFIG ] ; then 
+	if query "Celestia prefers the qt-x11 toolkit, but will also build with gtk+ or X11 
+(in that order). If you have more than one toolkit installed and would like  
+to specify which GUI for Celestia then answer "y" to continue" n
+	then
+		if query "Use KDE for enhanced Celestia GUI " y
+		then  KDE=y &&
+		echo "KDE=$KDE" >> $SPELL_CONFIG
+		else  
+			if query "Use GNOME for enhanced Celestia GUI " y
+			then  GTK=y &&
+			echo "GTK=$GTK" >> $SPELL_CONFIG
+			else 
+				if query "Use X11 for enhanced Celestia GUI " y
+				then X11=y &&
+				echo "X11=$X11" >> $SPELL_CONFIG
+				fi
+			fi
+		fi
+	fi
+fi
+
