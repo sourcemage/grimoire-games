@@ -9,7 +9,7 @@ mv CriticalMass.tar.bz2 $SOURCE_CACHE/ &&
 rm -rf /tmp/xdelta  &&
 mk_source_dir  ${SOURCE_DIRECTORY} &&
 cd $SOURCE_DIRECTORY &&
-unpack ${SOURCE2} ${MD5[1]} 
+unpack ${SOURCE2} ${MD5[1]} # this does same as unpack ${SOURCE} ${MD5[0]}
 }
 SOURCE2="CriticalMass.tar.bz2" 
 
