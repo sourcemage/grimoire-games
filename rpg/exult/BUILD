@@ -1,6 +1,6 @@
 (
 #swathe of gcc3.3 hacks for assert "undeclared"
-if gcc -dumpversion > /dev/null ==3.3 ; then
+if [ $(gcc -dumpversion)   == "3.3" ] ; then
 sedit '8a\
 \#include \<assert.h\>\' files/rwregress.cc 		&&
 sedit '28a\

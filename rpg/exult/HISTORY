@@ -1,3 +1,7 @@
+2003-07-29  hgg <hgreig@bigpond.net.au>
+
+                Update gcc check so it actually works :-)
+
 2003-07-02  hgg <hgreig@bigpond.net.au>
 
                 Check for gcc3.3 before applying assert.h fixes

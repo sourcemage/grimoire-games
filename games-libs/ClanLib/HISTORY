@@ -1,3 +1,7 @@
+2003-07-29  hgg <hgreig@bigpond.net.au>
+
+                Update gcc check so it actually works :-)
+
 2003-07-25  hgg <hgreig@bigpond.net.au>
 	
 		Mimick previous fix for CXXFLAGS

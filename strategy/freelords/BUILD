@@ -2,7 +2,7 @@
 #peculiar hacks for gcc3.3 ?
 #i can only assume gcc headers dont include glibc's assert.h ?
 
-if gcc -dumpversion > /dev/null ==3.3 ; then
+if [ $(gcc -dumpversion)   == "3.3" ] ; then
 sedit  '18a\
 \#include \<assert.h\>\' src/stack.h 			&&
 sedit  '19a\
