@@ -1,12 +1,12 @@
              SPELL=celestia
-           VERSION=1.3.0
+           VERSION=1.3.1
             SOURCE=$SPELL-$VERSION.tar.gz
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
           WEB_SITE=http://www.shatters.net/celestia/
            ENTERED=20030503
-           UPDATED=20030503
-            MD5[0]=b35d488b7ddb0df8e83e49bc7acd7db6
+           UPDATED=20040216
+            MD5[0]=a96727cd99c94b2df8c9550a341726f6
         LICENSE[0]=GPL
  	MAINTAINER=hgreig@bigpond.net.au
              SHORT="Celestia is a free real-time space simulation"
