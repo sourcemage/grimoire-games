@@ -1,14 +1,15 @@
            SPELL=globulation2
-         VERSION=0.8.8
+         VERSION=0.8.11
           SOURCE=glob2-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-$VERSION
    SOURCE_URL[0]=http://www.ysagoon.com/glob2/data/$SOURCE
-          MD5[0]=9ea6640465285ff1e13749e4d7ee639a
+          MD5[0]=ed7e304e24e526a9659dc7be1fafc3d3
         WEB_SITE=http://www.ysagoon.com/glob2/
          ENTERED=20040814
          UPDATED=20040814
       LICENSE[0]=GPL
-           SHORT="Globulation 2 is an innovative high quality Real-Time Strategy"
+       BUILD_API=2
+           SHORT="Innovative high quality Real-Time Strategy"
 cat << EOF
 Globulation 2 is an innovative high quality Real-Time Strategy [RTS],
 which minimizes micro-management by automatically assigning tasks to
