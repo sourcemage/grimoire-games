@@ -1,14 +1,13 @@
            SPELL=lbreakout2
-         VERSION=2.5beta-2
+         VERSION=2.5beta-3
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
-          MD5[0]=4240d333deedd8f853021fa3bebfa742
+          MD5[0]=9a0600c9dad6b055de6b806deecf6dc8
         WEB_SITE=http://lgames.sourceforge.net
          ENTERED=20020129
-         UPDATED=20020224
+         UPDATED=20040122
       LICENSE[0]=GPL
-      MAINTAINER=v.merkatz@gmx.net
            SHORT='Successor to LBreakout with more levels'
 cat << EOF
 LBreakout is a breakout game with nice effects, graphics, and sounds. 
