@@ -8,3 +8,7 @@
 2002-05-27  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		Created this spell.
+
+2002-06-14  Jerome Zago <jerome.zago@insalien.org>
+
+		Fixed DEPENDS. This partially fixes bug #209.
