@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.idsoftware.com
          ENTERED=20020408
          UPDATED=20020408
-      LICENSE[0]=UNKNOWN
+      LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
            SHORT="The sequel to the mother of all games."
 cat << EOF
