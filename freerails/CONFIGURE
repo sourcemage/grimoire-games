@@ -1,0 +1,11 @@
+if  !  grep  -q  CONFIGURED  ${SPELL_CONFIG}
+then
+
+  if    query  "Enable Xinerama support?"  n
+  then  echo   'OPTS="${OPTS}  --with-xinerama"'     >>  ${SPELL_CONFIG}
+  else  echo   'OPTS="${OPTS}  --without-xinerama"'  >>  ${SPELL_CONFIG}
+  fi
+
+  echo  "CONFIGURED='y'"  >>  ${SPELL_CONFIG}
+
+fi

@@ -1,0 +1,15 @@
+optional_depends  SDL                                              \
+                  "--with-sdl"                                     \
+                  ""                                               \
+                  "Enable SDL+ParaGUI client (Either this or QT)"  &&
+
+optional_depends  paragui                                                        \
+                  "--with-paragui-client"                                        \
+                  ""                                                             \
+                  "Enable SDL+ParaGUI client (Requires SDL)(Either this or QT)"
+
+# Doesn't work
+#optional_depends  qt-x11                                           \
+#                  "--enable-qt-mt"               \
+#                  ""                                               \
+#                  "Enable QT client (Either this or SDL+ParaGUI)"
