@@ -7,6 +7,7 @@
          ENTERED=20020208
          UPDATED=20020208
           MD5[0]=76e220e933069f1a5ab4f8937c5c1890
+      LICENSE[0]=BSD
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="dgen-sdl is an emulator of the SEGA Genesis/MegaDrive"
 cat << EOF

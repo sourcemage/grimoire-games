@@ -1,5 +1,9 @@
 2002-08-29  Gareth Clay <g.clay@warwick.ac.uk>
 
+		Added license field (thanks to Eric Sandall ;) )
+
+2002-08-29  Gareth Clay <g.clay@warwick.ac.uk>
+
 		Added md5 and changed maintainer
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
