@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20040216
           MD5[0]=b9392c71088db509e3cbdce68431443d
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Clone of Risk with Gaming Zone and IPv6 support"
 cat << EOF
 enes Empanadas Graciela is a clone of Plan Tactico y Estrategico de la Guerra ,a turn based strategy game, based on Risk.
