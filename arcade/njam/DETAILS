@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
          ENTERED=20040424
       LICENSE[0]=GPL
           MD5[0]=5b0f77b2687905ea314cd2d37a9e1766
+       BUILD_API=2
            SHORT="Njam is a full-featured cross-platform pacman-like game"
 cat << EOF
 Njam is a full-featured cross-platform pacman-like game 
