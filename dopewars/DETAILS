@@ -1,12 +1,12 @@
            SPELL=dopewars
-         VERSION=1.5.8
+         VERSION=1.5.9
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://dopewars.sourceforge.net/
          ENTERED=20020320
          UPDATED=20020502
-          MD5[0]=c75dad46f4218d2f3ffafd1bc9e09bc7
+          MD5[0]=f354078181584d03b75695b10982d1b8
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="dopewars is a Drug dealing game set in New York"
