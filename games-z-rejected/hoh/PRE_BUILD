@@ -1,0 +1,4 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+
+default_pre_build
