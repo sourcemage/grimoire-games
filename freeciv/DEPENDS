@@ -1,0 +1,19 @@
+depends glib   &&
+depends gtk+   &&
+depends imlib  &&
+depends SDL    &&
+
+optional_depends  "zlib"         \
+                  "--with-zlib"  \
+                  ""             \
+                  "for transparent savegame (un)compression"
+
+optional_depends  "esound"        \
+                  ""              \
+                  "--disable-esd" \
+                  "for esd sound output"
+
+optional_depends  "SDL_mixer"           \
+                  ""                    \
+                  "--disable-sdl-mixer" \
+                  "for sound"
