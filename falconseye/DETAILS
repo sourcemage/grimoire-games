@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/falconseye
         WEB_SITE=http://falconseye.sourceforge.net
          ENTERED=20020105
          UPDATED=20020105
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="falconseye is a graphic nethack derivative."
 cat << EOF
 Falcon's Eye is a mouse-driven interface for NetHack that enhances

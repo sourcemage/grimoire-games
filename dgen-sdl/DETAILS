@@ -6,6 +6,7 @@
          WEB_SITE=http://www.pknet.com/~joe/dgen-sdl.html
          ENTERED=20020208
          UPDATED=20020208
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="dgen-sdl is an emulator of the SEGA Genesis/MegaDrive"
 cat << EOF
 DGen/SDL is a free, open source emulator for Sega Genesis/MegaDrive
