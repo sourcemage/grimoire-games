@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1_0
          ENTERED=20030612
          UPDATED=2003-612
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Abe's Amazing Adventure is an awesome game"
 cat << EOF
 A scrolling, platform-jumping, key-collecting, ancient pyramid exploring game, vaguely in the style of 
