@@ -1,1 +1,2 @@
-conflicts falconseye
+conflicts falconseye  &&
+conflicts gtk2hack
