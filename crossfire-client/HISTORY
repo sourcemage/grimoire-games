@@ -1,3 +1,9 @@
+2002-08-24  Eric Sandall <eric@sandall.us>
+		Updated version to 1.3.0
+		Added MD5 and LICENSE
+		Added -images source as SOURCE3
+		Changed all SOURCE_URLs to use $SOURCEFORGE_URL
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.
