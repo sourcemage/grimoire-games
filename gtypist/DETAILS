@@ -1,12 +1,14 @@
            SPELL=gtypist
          VERSION=2.6
-          SOURCE=$SPELL-$VERSION.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.gnu.org/gnu/gtypist/$SOURCE
+   SOURCE_URL[0]=${GNU_URL}/$SPELL/$SOURCE
         WEB_SITE=http://www.gnu.org/software/gtypist/
          ENTERED=20020410
          UPDATED=20020502
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=70fb9b95c6863bcc9ec91f3581d12b73
+      LICENSE[0]=GPL
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="GNU Typist is a console-based typing tutor"
 cat << EOF
 GNU Typist is an interactive typing tutor program. It uses an 

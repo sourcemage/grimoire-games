@@ -1,3 +1,16 @@
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		New version: 0.7.1
+
+		changed MAINTAINER
+
+		changed SOURCE_URL to use $SOURCEFORGE_URL
+
+		sedit added to BUILD to fix an error in the Makefile
+		(tar doesn't have an option --no-same-owner)
+
 2002-06-14  Jerome Zago <jerome.zago@insalien.org>
 
 		Fixed BUILD (otherwise the spell wouldn't compile).

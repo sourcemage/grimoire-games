@@ -1,3 +1,14 @@
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
+		changed SOURCE_URL to use GNU_URL
+
+		New version: 2.6.1
+		reverted back to 2.6 due to missing files in 2.6.1
+
 2002-05-02  Jerome Zago <jerome.zago@insalien.org>
 
 		New version: 2.6

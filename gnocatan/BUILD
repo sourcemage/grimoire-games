@@ -1,5 +1,7 @@
 (
 
+  sedit "s:--no-same-owner::" client/Makefile.in
+
   ./configure  --build=$BUILD			\
                --prefix=/usr			\
                --bindir=/usr/games		\

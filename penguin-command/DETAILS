@@ -1,12 +1,15 @@
             SPELL=penguin-command
-          VERSION=1.6.2
+          VERSION=1.6.5
            SOURCE=$SPELL-$VERSION.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
-         WEB_SITE=http://www.linux-games.com
+    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+         WEB_SITE=http://www.linux-games.com/$SPELL/index.html
          ENTERED=20010922
          UPDATED=20011011
-           SHORT="penguine-command is a missile command clone."
+          MD5[0]=75dcccb83af6074017444f705edbb8e3
+      LICENSE[0]=GPL
+      MAINTAINER=v.merkatz@gmx.net
+           SHORT="penguin-command is a missile command clone."
 cat << EOF
 This is a clone of the classic "Missile Command" Game, but it has better
 graphics and music. The gameplay has only been slightly modified.
