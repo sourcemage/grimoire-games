@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020326
       LICENSE[0]=NETHACK
       MAINTAINER=nealbirch@attbi.com
+      MAKE_NJOBS=1
            SHORT="The latest incarnation of Nethack for X."
 cat << EOF
 Nethack is an adventure game with a long history. Setup is for X, as it was meant to be played.
