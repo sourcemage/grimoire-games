@@ -1,3 +1,12 @@
+2004-07-23 Eric Sandall <eric@sandall.us>
+	* DETAILS: BUILD_API=2
+	  Shortened SHORT
+	  Removed MAINTAINER
+	* BUILD: Converted to BUILD_API 2
+	  Removed TABs
+	* INSTALL: Added
+	  Removed TABs
+
 2004-01-24 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Now depends on any provisor of GLUT
 	* HISTORY: Formatted to Guru Handbook

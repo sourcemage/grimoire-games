@@ -11,8 +11,8 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20010922
          UPDATED=20020426
       LICENSE[0]=GPL
-      MAINTAINER=g.clay@warwick.ac.uk
-           SHORT="SearchAndRescue is a 3d helicopter game."
+       BUILD_API=2
+           SHORT="3D helicopter game."
 cat << EOF
 Search And Rescue is a game in which the player pilots rescue
 helicopters to rescue victims in various situations of distress.
