@@ -1,4 +1,11 @@
 depends  libsigc++2  &&
-depends  skstream2   &&
 depends  Atlas-C++   &&
-depends  wfmath
+
+if [ "${CVS}" = "yes" ];  then
+  depends  skstream  &&
+  depends  wfmath    &&
+  depends  cvs
+else
+  depends  skstream2  &&
+  depends  wfmath2
+fi
