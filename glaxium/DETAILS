@@ -1,10 +1,10 @@
            SPELL=glaxium
-         VERSION=0.3d
-          SOURCE=${SPELL}_$VERSION.tgz
+         VERSION=0.5
+          SOURCE=${SPELL}_$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_$VERSION
-   SOURCE_URL[0]=http://agt.nerim.net/mirror/sorcerer/$SOURCE
+   SOURCE_URL[0]=http://xhosxe.free.fr/$SPELL/$SOURCE
         WEB_SITE=http://freshmeat.net/projects/glaxium/
-          MD5[0]=41e0b4f9fcaca9509d0ffcdfeb5b39bc
+          MD5[0]=fde2e40873a8103746ae4a41fa5c2e75
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20020426

@@ -1,13 +1,24 @@
+2002-10-21  Eric Sandall <eric@sandall.us>
+
+		Updated to v0.5
+
+		Removed USEGCC2, works with gcc3
+
+		Moved SOURCE_URL to maintainers site, as Agt's was out of date
+
+		Added OpenGL patch from SGI for /usr/include/GL
+
 2002-09-07  Arwed v. Merkatz <v.merkatz@gmx.net>
 
-		added USEGCC2 file
+		Added USEGCC2 file
+
 		BUILD fixes  (fixes BUG #877)
 
 2002-09-04  Arwed v. Merkatz <v.merkatz@gmx.net>
 
-		added MD5 and LICENSE fields
+		Added MD5 and LICENSE fields
 
-		changed MAINTAINER
+		Changed MAINTAINER
 
 2002-04-27  Jerome Zago <jerome.zago@insalien.org>
 

@@ -1,0 +1,6 @@
+if  [  -d  /usr/include/GL/glaxium-bak  ] ;  then
+  cd  /usr/include/GL     &&
+  mv  glaxium-bak/*  .    &&
+  rm  glxext.h  wglext.h  &&
+  rmdir  glaxium-bak
+fi
