@@ -1,0 +1,3 @@
+depends	xfree86 &&
+depends gtk+ &&
+depends tuxnes

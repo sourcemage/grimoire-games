@@ -1,0 +1,8 @@
+20011228, prboom-2.2.2, kongar
+
+- rewrote the last line of BUILD. Std. unpack function is not
+  capable of handling .wad.gz files, gunzip -c is used instead.
+
+- the name of the wad file is changed from doom-1.8.wad to
+  doom1.wad. Prboom is not capable of handling more then
+  one dot in the filename.

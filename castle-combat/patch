@@ -1,0 +1,45 @@
+diff --recursive -C 2 castle-combat-0.7.2.orig/configure.in castle-combat-0.7.2/configure.in
+*** castle-combat-0.7.2.orig/configure.in	Fri Mar  8 22:00:13 2002
+--- castle-combat-0.7.2/configure.in	Fri Mar  8 21:05:08 2002
+***************
+*** 53,61 ****
+  AC_CHECK_LIB(m, main, , AC_MSG_ERROR(Your system is missing libm!))
+  AC_CHECK_LIB(png, main, , AC_MSG_ERROR(Your system is missing libpng!))
+  AC_CHECK_LIB(SDL_mixer, main, SOUND="-lSDL_mixer"; CFLAGS="$CFLAGS -DUSE_SOUND", , $SDL_LIBS)
+  
+  ######## Set compiler flags and libraries
+  CFLAGS="$CFLAGS $SDL_CFLAGS -DDATADIR=\"\\\"$datadir/castle-combat\\\"\" -Wall"
+! LIBS="-LSDL_net -lSDL_net $SDL_LIBS $LIBS $INETLIB"
+  
+  AC_SUBST(SOUND)
+--- 53,62 ----
+  AC_CHECK_LIB(m, main, , AC_MSG_ERROR(Your system is missing libm!))
+  AC_CHECK_LIB(png, main, , AC_MSG_ERROR(Your system is missing libpng!))
++ AC_CHECK_LIB(SDL_net, main, , AC_MSG_ERROR(Your system is missing libSDL_net!), $SDL_LIBS)
+  AC_CHECK_LIB(SDL_mixer, main, SOUND="-lSDL_mixer"; CFLAGS="$CFLAGS -DUSE_SOUND", , $SDL_LIBS)
+  
+  ######## Set compiler flags and libraries
+  CFLAGS="$CFLAGS $SDL_CFLAGS -DDATADIR=\"\\\"$datadir/castle-combat\\\"\" -Wall"
+! LIBS="$SDL_LIBS $LIBS $INETLIB"
+  
+  AC_SUBST(SOUND)
+***************
+*** 65,69 ****
+  Makefile
+  src/Makefile
+- src/SDL_net/Makefile
+  data/Makefile
+  data/gfx/Makefile
+--- 66,69 ----
+diff --recursive -C 2 castle-combat-0.7.2.orig/src/Makefile.am castle-combat-0.7.2/src/Makefile.am
+*** castle-combat-0.7.2.orig/src/Makefile.am	Fri Mar  8 22:00:13 2002
+--- castle-combat-0.7.2/src/Makefile.am	Fri Mar  8 22:02:36 2002
+***************
+*** 1,6 ****
+  bin_PROGRAMS = castle-combat castle-combat-server
+  
+- SUBDIRS = SDL_net
+- 
+  castle_combat_LDADD = -lz -lpng @SOUND@
+  
+--- 1,4 ----

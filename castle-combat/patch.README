@@ -1,0 +1,4 @@
+By default, this package overwrites a file belonging to SDL_net, since it
+builds its own version of SDL_net and installs by default
+/usr/include/SDL/SDL_net.h. Thus this patch that doesn't build or install its
+own version of SDL_net, using the system version instead.

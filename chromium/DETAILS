@@ -1,0 +1,16 @@
+           SPELL=chromium
+         VERSION=0.9.12
+          SOURCE=$SPELL-src-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Chromium-0.9
+   SOURCE_URL[0]=http://www.reptilelabour.com/software/files/chromium/$SOURCE
+        WEB_SITE=http://www.reptilelabour.com/software/chromium
+         ENTERED=20011202
+         UPDATED=20011202
+           SHORT="Chromium B.S.U. is a fast paced, arcade-style, top-scrolling shooter."
+
+cat << EOF
+
+Chromium B.S.U. is a fast paced, arcade-style, top-scrolling shooter. It
+uses OpenGL for graphics, and OpenAL for sound effects.
+
+EOF

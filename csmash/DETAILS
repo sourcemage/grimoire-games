@@ -1,0 +1,13 @@
+           SPELL=csmash
+         VERSION=0.6.4
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/cannonsmash/$SOURCE
+        WEB_SITE=http://cannonsmash.sourceforge.net
+         ENTERED=20010922
+         UPDATED=20020227
+           SHORT="csmash, Cannon Smash, is a 3D table tennis game."
+cat << EOF
+Cannon Smash is a 3D table-tennis game. This game represents various
+strategies of tabletennis on the computer.
+EOF

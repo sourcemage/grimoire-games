@@ -1,0 +1,14 @@
+           SPELL=tuxpuck
+         VERSION=0.7.9
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.efd.lth.se/~d00jkr/tuxpuck/$SOURCE
+        WEB_SITE=http://www.efd.lth.se/~d00jkr/tuxpuck/
+         ENTERED=20011214
+         UPDATED=20020218
+           SHORT="tuxpuck is a shufflepuck game, in alpha stage of development"
+cat << EOF
+TuxPuck is a shufflepuck game written in C/C++ using SDL. The player
+moves a pad around a board and tries to shoot down the puck through
+the opponents defense.
+EOF

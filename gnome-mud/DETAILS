@@ -1,0 +1,15 @@
+         SPELL=gnome-mud
+         VERSION=0.8
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/amcl/$SOURCE
+        WEB_SITE=http://amcl.sourceforge.net
+         ENTERED=20020116
+         UPDATED=20020116
+           SHORT="gnome-mud client"
+cat << EOF
+GNOME-Mud (formerly AMCL) is a Multi-User Dungeon (MUD) client
+that aims to make mudding a bit easier. It can define aliases, triggers,
+variables, keyboard shortcuts, and has a connection wizard for easy
+management of different player characters and MUDs.
+EOF

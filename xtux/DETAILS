@@ -1,0 +1,21 @@
+           SPELL=xtux
+         VERSION=20010601
+          SOURCE=$SPELL-src-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://ftp2.sourceforge.net/xtux/$SOURCE
+        WEB_SITE=http://xtux.sourceforge.net
+	MAINTAINER=pradierdavid@yahoo.fr
+         ENTERED=20011106
+         UPDATED=20020320
+           SHORT="XTux is a Quake3 like 2D game with TUX!"
+cat << EOF
+CAUTION !!!! The current version of xtux is known to be the subject of an exploit. Do not install it on something important. As soon as the exploit is fixed, wewill update xtux.
+*******************************************************************
+In XTux, you can play as Tux the Linux penguin, the BSD daemon, or
+some other open source characters (GNU, Vi, KDE dragon, etc.) and
+either fight each other over the network or join forces to take on
+Microsoft, killing MS Henchmen, Bill the Borg, Clippy the Office
+assistant paperclip, and others. It features 3D-rendered graphics, a
+wide variety of maps (including a Linux desktop, SLASHDOT!, the
+street, an office) and a cheesy plot.
+EOF

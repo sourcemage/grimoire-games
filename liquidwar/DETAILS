@@ -1,0 +1,16 @@
+           SPELL=liquidwar
+         VERSION=5.4.5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/$SOURCE
+        WEB_SITE=http://www.ufoot.org/liquidwar
+         ENTERED=20020210
+         UPDATED=20020320
+      MAINTAINER="jerome.zago@insalien.org"
+           SHORT="Liquid War is a unique multiplayer wargame."
+cat << EOF
+Liquid War is a truly original multiplayer wargame. You control an
+army formed with thousands of pixels (fighters) which look like
+liquid and try to eat your opponent. You can play against a primitive 
+NPC/AI or up to 5 other human players. Network play is available.
+EOF

@@ -1,0 +1,17 @@
+            SPELL=xscorch
+          VERSION=0.1.14
+           SOURCE=$SPELL-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=http://chaos2.org/$SPELL/$SOURCE
+         WEB_SITE=http://chaos2.org/xscorch
+         ENTERED=20010922
+         UPDATED=20011211
+           SHORT="xscorch is a clone of the classic DOS game Scorched Earth."
+cat << EOF
+Xscorch is a clone of the classic DOS game "Scorched Earth". The basic
+goal is to annihilate enemy tanks using overpowered guns. Players can
+purchase weapons and accessories to defend their tank, and they can
+attack enemy tanks by adjusting the angle of the tank's turret and the
+firing power. Xscorch supports gameplay with humans and computer AIs,
+and network gameplay is in development.
+EOF

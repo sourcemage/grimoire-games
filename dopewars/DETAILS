@@ -1,0 +1,21 @@
+           SPELL=dopewars
+         VERSION=1.5.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+        WEB_SITE=http://dopewars.sourceforge.net/
+         ENTERED=20020320
+         UPDATED=20020320
+      MAINTAINER=kongar@tsrsb.org.tr
+           SHORT="dopewars is a Drug dealing game set in New York"
+cat << EOF
+dopewars is a Drug dealing game set in New York.
+dopewars is a UNIX rewrite of the MS-DOS program of the same name, 
+which in turn was inspired by John E. Dell's "Drug Wars" game. You 
+have one month to buy and sell drugs on the streets of New York, 
+the aim being first to pay off your debt to the loan shark and then
+to make a fortune. And if you have to shoot a few cops in the process,
+well... 
+The game includes TCP networking allowing you to meet (and shoot) 
+other human drug dealers.
+EOF

@@ -1,0 +1,15 @@
+           SPELL=xigc
+         VERSION=4.2
+          SOURCE=$SPELL\_v$VERSION.joy.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL\_v$VERSION
+   SOURCE_URL[0]=ftp://igs.joyjoy.net/Go/igs_clients/Unix/$SOURCE
+        WEB_SITE=ftp://igs.joyjoy.net/Go/igs_clients/Unix
+         ENTERED=20020320
+         UPDATED=20020320
+      MAINTAINER=eru@subdimension.com
+           SHORT="xigc: a client for internet go servers."
+cat << EOF
+xigc provides an X Window System interface to the Internet
+Go  Server  (IGS)  and  the No-Name Go Servers (NNGS).
+EOF
+

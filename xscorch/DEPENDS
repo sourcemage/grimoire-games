@@ -1,0 +1,6 @@
+depends  gtk+  &&
+
+optional_depends  "libmikmod"                \
+                  "--enable-mikmod"          \
+                  "--disable-libmikmodtest"  \
+                  "to play mod, s3m, xm, it, med, mtm, 669 files"

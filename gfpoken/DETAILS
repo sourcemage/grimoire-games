@@ -1,0 +1,14 @@
+           SPELL=gfpoken
+         VERSION=0.25
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://gfpoken.bigw.org/$SOURCE
+        WEB_SITE=http://gfpoken.bigw.org
+         ENTERED=20020320
+         UPDATED=20020320
+	 MAINTAINER=heffer@mailberlin.net
+           SHORT="GFingerPoken is a black-box type game"
+cat << EOF
+GFingerPoken is a black-box type game for gtk 1.2 or higher. 
+It was heavily inspired by Marble, an old MS-Windows shareware game
+EOF

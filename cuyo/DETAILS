@@ -1,0 +1,17 @@
+           SPELL=cuyo
+         VERSION=1.03
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/cuyo/$SOURCE
+        WEB_SITE=http://www.karimmi.de/cuyo/
+         ENTERED=20020129
+         UPDATED=20020129
+           SHORT="cuyo: Tetris-like game with many surprises"
+cat << EOF
+cuyo is a Tetris-like game.  You have to try to put balls of
+the same color together. (You don't need to form rows or
+columns.  Any shape will do.) When enough of balls of the
+same color are connected, they explode. (What is enough
+depends on the level).  This game will waste many work hours
+so be careful!
+EOF

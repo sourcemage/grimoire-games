@@ -1,0 +1,17 @@
+           SPELL=rockdodger
+         VERSION=0.4.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/spacerocks/$SOURCE
+        WEB_SITE=http://spacerocks.sourceforge.net
+         ENTERED=20011009
+         UPDATED=20020223
+           SHORT="spacerocks is a spaceship arcade style game."
+
+cat << EOF
+
+Dodge the space rocks, use your shields, fire your thrusters, cross your
+fingers, and kiss your ship goodbye. Space Rocks is a game written in C
+for GNU/Linux. SDL 1.1 or later is required.
+
+EOF

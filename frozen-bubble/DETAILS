@@ -1,0 +1,14 @@
+           SPELL=frozen-bubble
+         VERSION=0.9.2
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://guillaume.cottenceau.free.fr/fb/$SOURCE
+        WEB_SITE=http://www.frozen-bubble.org
+         ENTERED=20020209
+         UPDATED=20020209
+           SHORT="frozen-bubble is game of throwing/build groups of bubbles"
+cat << EOF
+Frozen Bubble is a game in which you throw colorful bubbles and build 
+groups to destroy the bubbles. In 1p mode, destroy all the bubbles to 
+access the next level. In 2p mode, have your opponent die before you.
+EOF

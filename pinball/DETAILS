@@ -1,0 +1,13 @@
+           SPELL=pinball
+         VERSION=0.0.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+        WEB_SITE=http://pinball.sourceforge.net/
+         ENTERED=20020303
+         UPDATED=20020304
+           SHORT="pinball is the emillia pinball project."
+cat << EOF
+The Emilia Pinball Project strives to fulfil your needs for a great
+pinball game in Linux.
+EOF

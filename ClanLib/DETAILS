@@ -1,0 +1,19 @@
+           SPELL=ClanLib
+        # Version 0.4.4 is stable
+          VERSION=0.4.4
+        # Version 0.5.0 will not compile, has bugs.
+        # VERSION=0.5.0
+        # Version 0.5.1 will not compile, has bugs
+        # VERSION=0.5.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://dark.x.dtu.dk/~mbn/clanlib/download/$SOURCE
+        WEB_SITE=http://clanlib.org
+         ENTERED=20011105
+         UPDATED=20011105
+           SHORT="Multi-Platform game development library"
+cat << EOF
+Clanlib is a medium level development kit.  At its lowest levell it
+provides a platform independent way of dealing with display, sound,
+input, networking, files, threadding and such.
+EOF

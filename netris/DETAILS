@@ -1,0 +1,13 @@
+           SPELL=netris
+         VERSION=0.5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.netris.org/pub/netris/$SOURCE
+        WEB_SITE=http://www.netris.org/
+         ENTERED=20020129
+         UPDATED=20020129
+           SHORT="Netris -- A free networked version of T*tris"
+cat << EOF
+This is an unfinished developmental version of Netris, 
+a free networked version of T*tris.
+EOF

@@ -1,0 +1,15 @@
+            SPELL=dgen-sdl
+          VERSION=1.23
+           SOURCE=$SPELL-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=http://www.pknet.com/~joe/$SOURCE
+         WEB_SITE=http://www.pknet.com/~joe/dgen-sdl.html
+         ENTERED=20020208
+         UPDATED=20020208
+           SHORT="dgen-sdl is an emulator of the SEGA Genesis/MegaDrive"
+cat << EOF
+DGen/SDL is a free, open source emulator for Sega Genesis/MegaDrive
+systems. The latest version supports save states, interlace mode,
+Game Genie, Linux joystick support, compressed ROM images, and other
+nice features.
+EOF

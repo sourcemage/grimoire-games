@@ -1,0 +1,13 @@
+           SPELL=zsnes
+         VERSION=1337
+          SOURCE=$SPELL""$VERSION""src.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1.337 # change on new version
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/zsnes/$SOURCE
+        WEB_SITE=http://zsnes.com
+         ENTERED=20020312
+         UPDATED=20020312
+      MAINTAINER=jkolb@brandeis.edu
+           SHORT="Super Nintendo Emulator"
+cat << EOF
+Super Nintendo Emulator, support for save states, translations via dejap.zsnes.com, full sound, opengl support, codes, and automatic ips patching.
+EOF

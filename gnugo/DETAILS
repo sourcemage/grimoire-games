@@ -1,0 +1,16 @@
+           SPELL=gnugo
+         VERSION=3.0.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNU_URL/$SPELL/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/gnu/$SPELL/$SOURCE
+        WEB_SITE=http://www.gnu.org/software/gnugo/gnugo.html
+         ENTERED=20020219
+         UPDATED=20020219
+           SHORT="gnugo is the game of Go."
+cat << EOF
+This sofware is a program that plays the game of Go.  GNU Go has played
+thousands of games on the NNGS Go Server.  GNU Go is now also
+playing regulary on the Legend Go Server in Taiwan and the WING server
+in Japan.
+EOF

@@ -1,0 +1,13 @@
+           SPELL=gtetrinet
+         VERSION=0.4.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+        WEB_SITE=http://gtetrinet.sourceforge.net
+         ENTERED=20020219
+         UPDATED=20020219
+           SHORT="GTetrinet - the GNOME Tetrinet client"
+cat << EOF
+GTetrinet is the Gnome client for Tetrinet, a popular multiplayer
+version of Tetris.
+EOF

@@ -1,0 +1,14 @@
+           SPELL=fortune
+         VERSION=mod-9708
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/$SOURCE
+        WEB_SITE=http://www.bbassett.net/fortune/
+         ENTERED=20011116
+         UPDATED=20011116
+           SHORT="Fortune is a program which randomly pulls quotations from a large database."
+cat << EOF
+Fortune is a program which randomly pulls quotations from a large database
+(over 15,000 at current count). Fortune started out life as a part of
+NetBSD, but has been ported to and enhanced for the Linux platform.
+EOF

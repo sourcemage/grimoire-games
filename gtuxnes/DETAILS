@@ -1,0 +1,16 @@
+           SPELL=gtuxnes
+         VERSION=0.75
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://shawcable.linux.tucows.com/files/$SPELL-$VERSION.tar.gz
+        WEB_SITE=http://tuxnes.sourceforge.net/
+	MAINTAINER=pradierdavid@yahoo.fr
+         ENTERED=20020320
+         UPDATED=20020320
+           SHORT="GTuxNES is a graphical launcher for the Nintendo Emulator TuxNES."
+cat << EOF
+GTuxNES is a graphical launcher for the Nintendo Emulator TuxNES.  TuxNES
+is entirely command line based and I got tired of typing the dozen options
+I wanted to use every time I started the emulator.  So my response was to
+build GTuxNES.  GTuxNES is built using GTK libraries version 1.2.8.
+EOF

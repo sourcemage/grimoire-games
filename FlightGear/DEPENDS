@@ -1,0 +1,2 @@
+depends  SimGear  &&
+depends  fgfs-base

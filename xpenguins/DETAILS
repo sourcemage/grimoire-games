@@ -1,0 +1,16 @@
+           SPELL=xpenguins
+         VERSION=2.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
+        WEB_SITE=http://xpenguins.seul.org
+         ENTERED=20020314
+         UPDATED=
+      MAINTAINER=fkb@iago.polito.it
+           SHORT="Draws cute little penguins walking along the tops of your windows"
+cat << EOF
+Ever wanted cute little penguins walking along the tops of your windows?
+Ever wanted to send an army of cute little penguins to invade the screen of
+someone else on your network? Probably not, but why not try this program out
+anyway - it's free (licensed under the GNU GPL).
+EOF

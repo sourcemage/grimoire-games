@@ -1,0 +1,14 @@
+           SPELL=tinyfugue
+         VERSION=40s1
+          SOURCE=tf-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
+   SOURCE_URL[0]=ftp://ftp.tcp.com/pub/mud/Clients/tinyfugue/$SOURCE
+        WEB_SITE=http://tf.tcp.com/~hawkeye/tf/
+         ENTERED=20020131
+         UPDATED=20020131
+           SHORT="TinyFugue is a flexible, screen-oriented MUD client, for use with any type of MUD."
+cat << EOF
+TinyFugue is a power screen-oriented MUD client that can talk to any type of
+MUD. It has many abilities: input triggers, full scripting, firewall support,
+and macros.
+EOF

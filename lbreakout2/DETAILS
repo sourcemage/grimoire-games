@@ -1,0 +1,16 @@
+           SPELL=lbreakout2
+         VERSION=2.2.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://ftp1.sourceforge.net/lgames/$SOURCE
+        WEB_SITE=http://lgames.sourceforge.net
+         ENTERED=20020129
+         UPDATED=20020224
+           SHORT='Successor to Lreakout with more levels'
+cat << EOF
+LBreakout is a breakout game with nice effects, graphics, and sounds. 
+It's got a menu to configure a lot of things and a high score chart.
+It can be played either by mouse or keyboard. New levels can also be
+created, and most other aspects of the game can be customized.
+EOF
+

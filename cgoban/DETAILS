@@ -1,0 +1,30 @@
+           SPELL=cgoban
+         VERSION=1.9.12
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.igoweb.org/~wms/comp/cgoban/$SOURCE
+        WEB_SITE=http://www.igoweb.org/~wms/comp/cgoban
+         ENTERED=20020219
+         UPDATED=20020308
+      MAINTAINER="jerome.zago@insalien.org"
+           SHORT="CGoban provides go-related services"
+cat << EOF
+CGoban ("Complete Goban") provides a large set of go-related services for Unix and X11. A list of the functions that it provides:
+
+  * Play go against another player.
+    When playing a game locally, you have a choice of rule sets and time
+    controls.
+    - Chinese rules have a true Superko rule.
+    - Japanese rules correctly recognize seki and award no points.
+    - Japanese rules let you locally resolve disputes at the end of the game.
+  * Edit and view SGF files. CGoban provides full fonctionality for editing 
+    and viewing SGF files.
+  * Connect to a go server over internet.  CGoban can connect to NNGS or
+    IGS and gives a convennient graphical user interface to the server.
+  * Act as a bridge to go modern protocol. Go modern protocol has
+    become a standard way for computer go programs to communicate.
+    CGoban can let you connect to devices (such as modems) speaking go
+    modern protocol, act as a graphical board for programs that speak go
+    modern protocol out of stdin/stdout, or connect programs to one of
+    the internet go servers.
+EOF

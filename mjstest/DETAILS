@@ -1,0 +1,13 @@
+           SPELL=mjstest
+         VERSION=1.2
+          SOURCE=mjstest.c
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.asta.uni-essen.de/~raoul/resources/$SOURCE
+        WEB_SITE=http://www.asta.uni-essen.de/~raoul
+         ENTERED=20010922
+         UPDATED=20010922
+           SHORT="mjstest is a simple joystick test program."
+cat << EOF
+This is a simple joystick test program and an example
+on how to write programs using joystick device.
+EOF

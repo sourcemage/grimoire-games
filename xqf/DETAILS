@@ -1,0 +1,14 @@
+           SPELL=xqf
+         VERSION=0.9.8
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+        WEB_SITE=http://www.linuxgames.com/xqf
+         ENTERED=20020320
+         UPDATED=20020320
+      MAINTAINER=nhudson@hiwaay.net
+           SHORT="XQF is a gamespy like app for linux"
+cat << EOF
+XQF is a Quake/Quake World/Quake2/Quake3 server browser and launcher for
+UNIX/X11.  Its a front end to QStat
+EOF

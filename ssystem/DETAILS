@@ -1,0 +1,16 @@
+           SPELL=ssystem
+         VERSION=1.6
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://entanet.linux.tucows.com/files/x11/scientific/$SOURCE
+        WEB_SITE=http://www1.las.es/~amil/ssystem
+         ENTERED=20010922
+         UPDATED=20010922
+           SHORT="ssystem is an OpenGL solar system simulator."
+cat << EOF
+Ssystem is an OpenGL Solar System simulator. It will let you visit the
+Sun, the nine planets and a few major satellites (catalog based
+background stars are also supported) with four different camera modes.
+Although it's not 100% accurate, planets' positions in a given date are
+within a range of the real positions.
+EOF

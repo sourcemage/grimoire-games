@@ -1,0 +1,23 @@
+           SPELL=xrally
+         VERSION=1.1.1
+          SOURCE=$SPELL-1.1.tar.bz2
+         SOURCE2=xrally-$VERSION.patch
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+  SOURCE2_URL[0]=http://www.linuxgames.com/$SPELL/$SOURCE2
+        WEB_SITE=http://www.linuxgames.com/$SPELL/
+         ENTERED=20020131
+         UPDATED=20020131
+           SHORT="xrally is an improved vrsion of the arcade game Rally X."
+cat << EOF
+XRally is a clone of the Rally X arcade game. In Rally X, you control 
+a blue car which has to run through a maze-like level collecting
+flags and avoiding colliding with enemy (red) cars. In order to
+protect itself, the blue car can discharge clouds of smoke which stun 
+the enemy cars for a while. The enemy cars can also crash into each
+other, what gives you some extra time. One of the main features of
+XRally is that it is fully customizable. You can create custom
+tilesets and levels and load them at run time, changing the entire
+look of the game. (You could, for instance, create a water tileset,
+using boats instead of cars.)
+EOF

@@ -1,0 +1,15 @@
+           SPELL=crack-attack
+         VERSION=1.1.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://aluminumangel.org/attack/$SOURCE
+        WEB_SITE=http://qcd2.mps.ohio-state.edu/attack/
+         ENTERED=20020131
+         UPDATED=20020131
+           SHORT="crack-attack is a network multi-player variation of tetris"
+cat << EOF
+A puzzle/action game in which you rush to eliminate colored blocks
+before they fill your screen. Particularly clever eliminations cause
+garbage to clutter your opponent's screen. Who will survive the
+longest!? Playable both online and off.
+EOF
