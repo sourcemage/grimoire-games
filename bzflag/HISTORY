@@ -1,7 +1,13 @@
+2002-12-09  Eric Sandall <eric@sandall.us>
+
+		Updated to v1.7g0
+
 2002-07-27  Gareth Clay <g.clay@warwick.ac.uk>
 
 		Bumped version to 1.7e6
+
 		Added md5 and license fields
+
 		Changed maintainer
 
 2002-04-17  Jerome Zago <jerome.zago@insalien.org>
