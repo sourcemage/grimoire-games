@@ -1,4 +1,9 @@
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-29  hgg <hgreig@bigpond.net.au>
+
+		Added PRE_BUILD with warning regards non-maintained package
+		per bug# 2390
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
