@@ -1,3 +1,6 @@
+2004-08-01 Eric Sandall <eric@sandall.us>
+	* DETAILS: I had the wrong md5sum for 0.3.3
+
 2004-07-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.3
 	  BUILD_API=2

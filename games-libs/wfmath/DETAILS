@@ -10,7 +10,7 @@ else
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=d41d8cd98f00b204e9800998ecf8427e
+          MD5[0]=ca1d5bc1cc83ebe83bf5f9ea02131554
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wfmath/
