@@ -1,6 +1,6 @@
 (
-
-  ./configure  --build=${BUILD}      \
+ patch -p1 < $SCRIPT_DIRECTORY/black-box-fix.diff &&
+  ./configure  --build=${BUILD}                     \
                --prefix=${INSTALL_ROOT}/usr         \
                --bindir=${INSTALL_ROOT}/usr/games   \
                --sysconfdir=${INSTALL_ROOT}/etc     \
