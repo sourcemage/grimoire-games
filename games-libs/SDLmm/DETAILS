@@ -5,7 +5,7 @@
     SOURCE_URL[0]=$SOURCEFORGE_URL/sdlmm/$SOURCE
  	 WEB_SITE=http://sdlmm.sourceforge.net/
 	  ENTERED=20030902
-	  UPDATED=20030920
+	  UPDATED=20030902
 	   MD5[0]=a2984edaac794a3c5ebce40e21a993db
        LICENSE[0]=GPL
        MAINTAINER=hgreig@bigpond.net.au
