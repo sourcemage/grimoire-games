@@ -1,9 +1,9 @@
            SPELL=gav
-         VERSION=0.7.3
+         VERSION=0.8.0
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=465b1b32a179ade552983602c6ed6242
+          MD5[0]=8df72f59a1d950e3887a07eeb81bcaf3
         WEB_SITE=http://gav.sourceforge.net/index.php
       LICENSE[0]=GPL
          ENTERED=20021127

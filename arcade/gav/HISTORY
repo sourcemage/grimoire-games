@@ -1,3 +1,7 @@
+2004-04-10 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.8.0
+	* DEPENDS: Depends on SDL_net
+
 2004-01-07 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: add SDL_image
 
@@ -17,3 +21,4 @@
 2002-11-27 Eric Sandall <eric@sandall.us>
 	* Created spell
 	Added to games
+
