@@ -1,3 +1,7 @@
+2004-03-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Forgot md5sum!
+	Removed MAINTAINER
+
 2003-12-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.1
 	* HISTORY: Formatted to Guru Handbook
