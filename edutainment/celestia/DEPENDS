@@ -1,13 +1,7 @@
 depends jpeg	&&
 depends libpng	&&
-depends glut	&&
-
-if 	[ "$KDE" = "y" ]
-then 	depends kdelibs
-fi &&
-
-if	[ "$GTK" = "y" ]
-then	depends gnome-libs
-fi 
+depends "GLUT" "--with-glut" 	&&
+optional_depends "kdelibs" "--with-kde" "--without-kde" "Use KDE for an enhanced GUI (choices are glut, kde or gtk1)" &&
+optional_depends "gnome-libs" "--with-gtk" "--without-gtk" "Use GTK+ for an enhanced GUI"
 
 
