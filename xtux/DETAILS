@@ -3,10 +3,12 @@
           SOURCE=$SPELL-src-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://ftp2.sourceforge.net/xtux/$SOURCE
+          MD5[0]=660ffcd2f80851e3f17d036492fbdeba
         WEB_SITE=http://xtux.sourceforge.net
-	MAINTAINER=pradierdavid@yahoo.fr
          ENTERED=20011106
          UPDATED=20020320
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="XTux is a Quake3 like 2D game with TUX!"
 cat << EOF
 CAUTION !!!! The current version of xtux is known to be the subject of an exploit. Do not install it on something important. As soon as the exploit is fixed, wewill update xtux.

@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://x.mame.net/download/$SOURCE
+          MD5[0]=8bcc236dfaec3942acce64cdd10ffe35
         WEB_SITE=http://x.mame.net
          ENTERED=20010922
          UPDATED=20020131
+      LICENSE[0]=UNKNOWN
+      MAINTAINER=eric@sandall.us
            SHORT="xmame is (coin-op) video game emulator."
 cat << EOF
 Xmame is the X11/Unix port of MAME. MAME is the Multiple Arcade Machine

@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SOURCE
+          MD5[0]=490c81c352979ea3bc3686f524d9e8fd
         WEB_SITE=http://www.geekcomix.com/dm/tuxmath/
          ENTERED=20020131
          UPDATED=20020131
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="tuxmath is a game where you do math fast or watch your city get blasted."
 cat << EOF
 "Tux, of Math Command" is an educational math tutorial game for

@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://www.bigorno.net/xrick/$SOURCE
+          MD5[0]=9a308cb8fbb206642970b02b9d44218e
         WEB_SITE=http://www.bigorno.net/xrick/index.html
          ENTERED=20020415
          UPDATED=20020415
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="xrick is a clone of the clasic game Rick Dangerous"
 cat << EOF
 Way before Lara Croft, back in the 1980's and early 1990's, Rick Dangerous was

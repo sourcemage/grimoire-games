@@ -3,10 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.efd.lth.se/~d00jkr/tuxpuck/$SOURCE
+          MD5[0]=ab6e84968b0e21c496f252da057216a4
         WEB_SITE=http://www.efd.lth.se/~d00jkr/tuxpuck/
          ENTERED=20011214
          UPDATED=20020324
-      MAINTAINER=jerome.zago@insalien.org
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="tuxpuck is a shufflepuck game, in alpha stage of development"
 cat << EOF
 TuxPuck is a shufflepuck game written in C using SDL. The player

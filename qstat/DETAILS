@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL$VERSION
          ENTERED=20020320
          UPDATED=20020320
       LICENSE[0]=ART
-      MAINTAINER=nhudson@hiwaay.net
+      MAINTAINER=eric@sandall.us
            SHORT="Command line utility to disply Quake servers"
 cat << EOF
 Qstat is a command line utility that displays the status of internet

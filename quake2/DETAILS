@@ -3,12 +3,13 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://icculus.org/$SPELL/files/$SOURCE
+          MD5[0]=00e9cbd6320910a28dd607601c2fb9d7
         WEB_SITE=http://www.idsoftware.com
          ENTERED=20020408
          UPDATED=20020408
-      MAINTAINER=christopher_brien@hotmail.com
+      LICENSE[0]=UNKNOWN
+      MAINTAINER=eric@sandall.us
            SHORT="The sequel to the mother of all games."
-
 cat << EOF
 Shortly after landing on an ALIEN surface you learn that HUNDREDS of your men have been reduced to just a few. Now you must FIGHT your way through heavily fortified MILITARY installations, lower the city's defences and shut down the enemy's WAR machine. Only then will the fate of HUMANITY be known.
 EOF

@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020320
          UPDATED=20020320
       LICENSE[0]=GPL
-      MAINTAINER=jerome.zago@insalien.org
+      MAINTAINER=eric@sandall.us
            SHORT="XQF is a gamespy like app for linux"
 cat << EOF
 XQF is a Quake/Quake World/Quake2/Quake3 server browser and launcher for

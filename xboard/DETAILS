@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://gatekeeper.dec.com/pub/GNU/xboard/$SOURCE
+          MD5[0]=7789c598e30b1c4af00a5a82838ea776
         WEB_SITE=http://www.tim-mann.org/xboard.html
          ENTERED=20020425
          UPDATED=20020425
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="xboard is a X chess program"
 cat << EOF
 XBoard is a graphical user interfaces for chess. They display a chessboard on

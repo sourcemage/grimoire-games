@@ -3,10 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.gulu.net/xskat/$SOURCE
+          MD5[0]=ba1bfb41a8a8058b190a4629c6a444df
         WEB_SITE=http://www.gulu.net/xskat
          ENTERED=20020414
          UPDATED=20020414
-      MAINTAINER=peter@schneider-kamp.de
+      LICENSE[0]=PD
+      MAINTAINER=eric@sandall.us
            SHORT="XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11"
 cat << EOF
 XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11.

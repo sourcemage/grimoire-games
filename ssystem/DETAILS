@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://entanet.linux.tucows.com/files/x11/scientific/$SOURCE
+          MD5[0]=ba7e8043b33b3a173f754f2abf03bdf3
         WEB_SITE=http://www1.las.es/~amil/ssystem
          ENTERED=20010922
          UPDATED=20010922
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="ssystem is an OpenGL solar system simulator."
 cat << EOF
 Ssystem is an OpenGL Solar System simulator. It will let you visit the

@@ -1,12 +1,14 @@
-	   SPELL=xpenguins_themes
+           SPELL=xpenguins_themes
          VERSION=0.9
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/themes
    SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
+          MD5[0]=cbd5d628ec7fc42083cf0716662f480a
         WEB_SITE=http://xpenguins.seul.org/
          ENTERED=20020411
          UPDATED=20020608
-      MAINTAINER=richard.brauer@physik.rwth-aachen.de
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="More themes for xpenguins (e.g. Winnieh the Pooh"
 cat << EOF
 xpenguins_themes supplies even more themes vor the xpenguins package.

@@ -1,12 +1,14 @@
-	   SPELL=xpenguins
+           SPELL=xpenguins
          VERSION=2.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
+          MD5[0]=7df2049a52d058a216ed8989ae84572a
         WEB_SITE=http://xpenguins.seul.org/
          ENTERED=20020411
          UPDATED=20020608
-      MAINTAINER=richard.brauer@physik.rwth-aachen.de
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="Have nice penguins running across your desktop"
 cat << EOF
 Ever wanted cute little penguins walking along the tops of your windows?

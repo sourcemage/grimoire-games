@@ -3,11 +3,15 @@
           SOURCE=$SPELL-1.1.tar.bz2
          SOURCE2=xrally-$VERSION.patch
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
   SOURCE2_URL[0]=http://www.linuxgames.com/$SPELL/$SOURCE2
+          MD5[0]=5d61f06948367ffe9bcf570d2f2e4ff4
+          MD5[1]=ad7d4a4f9942dc661009190315fc955f
         WEB_SITE=http://www.linuxgames.com/$SPELL/
          ENTERED=20020131
          UPDATED=20020131
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="xrally is an improved vrsion of the arcade game Rally X."
 cat << EOF
 XRally is a clone of the Rally X arcade game. In Rally X, you control 

@@ -5,9 +5,13 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_URL[0]=http://download.sourceforge.net/tuxracer/$SOURCE
    SOURCE2_URL[0]=http://download.sourceforge.net/tuxracer/$SOURCE2
+           MD5[0]=3d1fce015eea9984dd7fbb945c0544b6
+           MD5[1]=e70c2779d3dfde1a0cb22ffc024e7b80
          WEB_SITE=http://www.tuxracer.com
          ENTERED=20010922
          UPDATED=20010922
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="tuxracer is a 3D penguin racing game." 
 cat << EOF
 Tux Racer lets you take on the role of Tux the Linux Penguin as he races

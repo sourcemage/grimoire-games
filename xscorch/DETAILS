@@ -1,11 +1,14 @@
-            SPELL=xscorch
-          VERSION=0.1.15
-           SOURCE=$SPELL-$VERSION.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://chaos2.org/$SPELL/$SOURCE
-         WEB_SITE=http://chaos2.org/xscorch
+           SPELL=xscorch
+         VERSION=0.1.15
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://chaos2.org/$SPELL/$SOURCE
+          MD5[0]=d4fcfc342d24479c62f99d37c3b795f8
+        WEB_SITE=http://chaos2.org/xscorch
          ENTERED=20010922
          UPDATED=20011211
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="xscorch is a clone of the classic DOS game Scorched Earth."
 cat << EOF
 Xscorch is a clone of the classic DOS game "Scorched Earth". The basic

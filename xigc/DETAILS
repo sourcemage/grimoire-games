@@ -3,10 +3,12 @@
           SOURCE=$SPELL\_v$VERSION.joy.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL\_v$VERSION
    SOURCE_URL[0]=ftp://igs.joyjoy.net/Go/igs_clients/Unix/$SOURCE
+          MD5[0]=c923aac71c82d24f10e64228161663f3
         WEB_SITE=ftp://igs.joyjoy.net/Go/igs_clients/Unix
          ENTERED=20020320
          UPDATED=20020320
-      MAINTAINER=eru@subdimension.com
+      LICENSE[0]=PD
+      MAINTAINER=eric@sandall.us
            SHORT="xigc: a client for internet go servers."
 cat << EOF
 xigc provides an X Window System interface to the Internet

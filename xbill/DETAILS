@@ -3,9 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.xbill.org/download/$SOURCE
+          MD5[0]=7d737bb657a984218fd8817cb057a686
         WEB_SITE=http://www.xbill.org
          ENTERED=20011116
          UPDATED=20011116
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="xbill is a game that tests your reflexes"
 cat << EOF
 Xbill is a game that tests you reflexes as you seek and destroy all

@@ -3,10 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.sonic.net/pub/users/nbs/unix/x/vectoroids/$SOURCE
+          MD5[0]=0b485744794600fbde2a0984e1962697
         WEB_SITE=http://www.newbreedsoftware.com/vectoroids
          ENTERED=20011214
          UPDATED=20020426
-      MAINTAINER=jerome.zago@insalien.org
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="Vectoroids is based on the X-Window PDA game Agendaroids"
 cat << EOF
 Vectoroids is based on the X-Window PDA game 'Agendaroids,' but uses

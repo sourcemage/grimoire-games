@@ -3,10 +3,12 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/$SOURCE
+          MD5[0]=4699c4f0c8c827f64de396d3802ce838
         WEB_SITE=http://adonthell.linuxgames.com
-	MAINTAINER=pradierdavid@yahoo.fr
          ENTERED=20020517
          UPDATED=20020517
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="Open Source Role Playing Game"
 cat << EOF
 Listen to the water
