@@ -1,0 +1,6 @@
+2004-04-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to games/emulators
+
+2004-04-04 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, CONFIGURE, DEPENDS, DETAILS,
+	  HISTORY, PRE_BUILD: Spell created

@@ -1,0 +1,34 @@
+depends libspectrum &&
+
+if  grep  -q  "VOUTPUT=--with-svgalib"  $SPELL_CONFIG;  then
+    depends svgalib
+fi &&
+
+if  grep  -q  "VOUTPUT=--with-fb"  $SPELL_CONFIG;  then
+    depends directfb
+fi &&    
+
+if  grep  -q  "VOUTPUT=--with-sdl"  $SPELL_CONFIG;  then
+    depends SDL
+fi &&    
+
+if  grep  -q  "VOUTPUT=--with-ggi"  $SPELL_CONFIG;  then
+    depends libggi
+fi &&    
+
+if  grep  -q  "VOUTPUT=--with-gtk2"  $SPELL_CONFIG;  then
+    depends gtk+2
+else
+    if  grep  -q  "VOUTPUT=--with-gtk"  $SPELL_CONFIG;  then
+	depends gtk+
+    fi     
+fi &&    
+
+optional_depends "X11-LIBS" "--with-x" "--without-x" "for use X" &&
+optional_depends "glib" "--with-glib" "--without-glib" "for use glib" &&
+optional_depends "lib765" "--with-plus3-disk" "--with-plus3-disk=no" "for +3 and .dsk support" &&
+
+optional_depends "libpng" "" "" "for ability save screenshots" &&
+optional_depends "libxml2" "" "" "for ability save/load configuration" &&
+optional_depends "zlib" "" "" "for support compressed .RZX files" &&
+optional_depends "libgcrypt" "" "" "for ability digitally sign .RZX files" 
