@@ -1,0 +1,26 @@
+	    SPELL=enemy-territory
+	  VERSION=2.55
+ 	   SOURCE=et-linux-2.55.x86.run
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=ftp://download.xs4all.nl/disk2/Games/wolfenstein/$SOURCE
+    SOURCE_URL[1]=ftp://ftp.gaminguk.net/Mirrors/fileplanet.blueyonder.co.uk/blueyondergames/enemyterritory/patches/linux/$SOURCE
+    SOURCE_URL[2]=ftp://ftp.jetstreamgames.co.nz/pub/wolf/ET/$SOURCE
+    SOURCE_URL[3]=ftp://ftp.mirror.nl/disk2/Games/wolfenstein//$SOURCE
+    SOURCE_URL[4]=http://files.ausgamers.com:81/wolf/enemyterritory//$SOURCE
+    SOURCE_URL[5]=ftp://ftp3.fragland.net/mods/Enemy_Territory/$SOURCE
+    SOURCE_URL[6]=ftp://ftp5.fragland.net/mods/Enemy_Territory//$SOURCE
+ 	 WEB_SITE=http://www.castlewolfenstein.com
+	  ENTERED=20030615
+	  UPDATED=20030615
+	   MD5[0]="71d938bbc6afddbfab73390333964e9d"
+       LICENSE[0]=ID
+	   REJECT="binary only game"
+       MAINTAINER=hgreig@bigpond.net.au
+ 	    SHORT="Wolfenstein:EnemyTerritory the full version 258MB"
+cat << EOF
+Wolfenstein: Enemy Territory enlists players to battle across multi-level WWII campaigns as one of 
+five classes, gaining skills and promotions, constructing strategic assets, and battling with weapons 
+ranging from tank-mounted machineguns to mortars.
+EOF
+ 
+

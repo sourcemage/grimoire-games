@@ -1,0 +1,2 @@
+depends  SDL_net  &&
+depends  SDL_image 

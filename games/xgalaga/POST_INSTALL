@@ -1,3 +1,0 @@
-touch             /var/games/xgalaga
-chown root.games  /var/games/xgalaga
-chmod 664         /var/games/xgalaga

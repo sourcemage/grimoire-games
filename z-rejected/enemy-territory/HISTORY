@@ -1,0 +1,17 @@
+2003-06-17  hgg <hgreig@bigpond.net.au>
+	
+		Remove log file (left in by mistake,never needed)
+
+		Add warning in prepare until i work around the /tmp issue.
+
+2003-06-17  Chris Brien <cbrien@sourcemage.org>
+		
+		Fixed the kdelnk.
+
+2003-06-15  hgg <hgreig@bigpond.net.au> 
+
+		Created this spell. 
+
+		Custom POST_BUILD to stop CACHE
+
+		Invented new license type for id
