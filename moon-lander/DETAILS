@@ -6,6 +6,9 @@
          WEB_SITE=http://magigames.org/moonlander.html
          ENTERED=20010922
          UPDATED=20010922
+          MD5[0]=1dd30eaf74a906dc5138120962ac00de
+      LICENSE[0]=BSD
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="Land a spaceship on the moon."
 cat << EOF
 Land a spaceship on the moon, like the arcade game, but with better

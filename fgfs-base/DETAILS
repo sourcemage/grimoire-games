@@ -5,9 +5,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/FlightGear
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Shared/$SOURCE
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Shared/$SOURCE
         WEB_SITE=http://flightgear.sourceforge.net
+      LICENSE[0]=GPL
+          MD5[0]=e4440234d68252196418db9fd6c1a34e
          ENTERED=20010922
          UPDATED=20020424
-      MAINTAINER=jerome.zago@insalien.org
+      MAINTAINER=v.merkatz@gmx.net
          ARCHIVE="off"
            SHORT="fgfs-base provides the base files required by FlightGear."
 cat << EOF

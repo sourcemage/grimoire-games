@@ -8,8 +8,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020129
          UPDATED=20020224
       LICENSE[0]=GPL
-      MAINTAINER=pradierdavid@yahoo.fr
-           SHORT='Successor to Lreakout with more levels'
+      MAINTAINER=v.merkatz@gmx.net
+           SHORT='Successor to LBreakout with more levels'
 cat << EOF
 LBreakout is a breakout game with nice effects, graphics, and sounds. 
 It's got a menu to configure a lot of things and a high score chart.

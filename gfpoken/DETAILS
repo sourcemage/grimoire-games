@@ -4,9 +4,11 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://gfpoken.bigw.org/$SOURCE
         WEB_SITE=http://gfpoken.bigw.org
+          MD5[0]=1c4c7bf83a16813293d9a019279b151d
+      LICENSE[0]=GPL
          ENTERED=20020320
          UPDATED=20020320
-	 MAINTAINER=heffer@mailberlin.net
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="GFingerPoken is a black-box type game"
 cat << EOF
 GFingerPoken is a black-box type game for gtk 1.2 or higher. 

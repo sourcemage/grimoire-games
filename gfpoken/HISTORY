@@ -1,5 +1,12 @@
-History for the gfpoken spell
-=============================
+2002-09-03  Arwed v. Merkatz  <v.merkatz@gmx.net>
 
-            Spell was submitted by heffer@mailberlin.net
-20020320    Spell was accepted by <pradierdavid@yahoo.fr>
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
+		fixed up HISTORY file
+
+2002-03-20  David Pradier  <pradierdavid@yahoo.fr>
+
+		added to grimoire
+		Spell was submitted by heffer@mailberlin.net

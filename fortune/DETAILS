@@ -4,6 +4,8 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/$SOURCE
         WEB_SITE=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/
+          MD5[0]=c016e3549942cbb8e86a3a343f865504
+      LICENSE[0]=BSD
          ENTERED=20011116
          UPDATED=20011116
       MAINTAINER=v.merkatz@gmx.net

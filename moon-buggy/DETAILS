@@ -3,9 +3,11 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.mathematik.uni-kl.de/~wwwstoch/voss/$SOURCE
-        WEB_SITE=http://www.mathematik.un-kl.de/~wwwstoch/voss/moon-buggy.html
+        WEB_SITE=http://www.mathematik.uni-kl.de/~wwwstoch/voss/moon-buggy.html
          ENTERED=20020407
          UPDATED=20020407
+          MD5[0]=1e2b0ebd1093b4b4fb3650edcc54cd79
+      LICENSE[0]=GPL
       MAINTAINER=fafnir@tigerduck.de
            SHORT="Textmode game in which you drive across the moon's surface"
 cat << EOF

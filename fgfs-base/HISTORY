@@ -1,3 +1,9 @@
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
 2002-04-24  Jerome Zago <jerome.zago@insalien.org>
 
 		New version: 0.7.10

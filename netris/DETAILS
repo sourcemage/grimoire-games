@@ -6,6 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.netris.org/
          ENTERED=20020129
          UPDATED=20020129
+          MD5[0]=8b8f5189cfd8fcf81db5deccab92df57
+      LICENSE[0]=GPL
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="Netris -- A free networked version of T*tris"
 cat << EOF
 This is an unfinished developmental version of Netris, 
