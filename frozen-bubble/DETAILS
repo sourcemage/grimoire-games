@@ -1,10 +1,11 @@
            SPELL=frozen-bubble
-         VERSION=0.9.3
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://frozenbubble.free.fr/fb/$SOURCE
+         VERSION=1.0.0
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://people.mandrakesoft.com/~gc/fb/${SOURCE}
+   SOURCE_URL[1]=http://guillaume.cottenceau.free.fr/fb/${SOURCE}
+          MD5[0]=8053b11f2fa825edcc94694943f27ac9
         WEB_SITE=http://www.frozen-bubble.org/
-          MD5[0]=089186dc64bb48d09428074388fd4a78
       LICENSE[0]=GPL
          ENTERED=20020209
          UPDATED=20020522

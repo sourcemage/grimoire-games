@@ -1,2 +1,5 @@
-depends  perl  &&
+depends  perl       &&
+depends  SDL        &&
+depends  SDL_image  &&
+depends  SDL_mixer  &&
 depends  SDL-sdlpl

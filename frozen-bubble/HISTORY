@@ -1,3 +1,9 @@
+2003-02-17  Eric Sandall <eric@sandall.us>
+
+		Updated to 1.0.0
+
+		Changed SOURCE_URL, add a mirror in Europe
+
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added MD5 and LICENSE fields
