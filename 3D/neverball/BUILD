@@ -1,8 +1,8 @@
 (
 
-#patch share/config.h
-patch -p1 < $SCRIPT_DIRECTORY/neverball-directory.patch &&
-sedit 's/#X11_PATH/X11_PATH/' $SOURCE_DIR/Makefile &&
+sedit 's:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"/usr/share/neverball/data\":'
+sedit 's/#X11_PATH/X11_PATH/' Makefile &&
+
 case  $CUSTOM in
   y|Y)  ${EDITOR:-nano}  share/config.h  ;;
 esac &&

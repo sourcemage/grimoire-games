@@ -1,5 +1,5 @@
            SPELL=foobillard
-         VERSION=2.8
+         VERSION=3.0a
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://foobillard.sunsite.dk/dnl/$SOURCE

@@ -1,3 +1,6 @@
+2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 1.2
+
 2003-08-23 Eric Sandall <eric@sandall.us>
 	* One make job
 	* Installs into nethackdir (Bug #4130)

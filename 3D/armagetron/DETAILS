@@ -4,7 +4,6 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://armagetron.sourceforge.net/
-      MAINTAINER=xiticix47@hotmail.com
          ENTERED=20031206
          UPDATED=20031206
           MD5[0]=a31b7ec4a7096a1349391bf65a12926e
