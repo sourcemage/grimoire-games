@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# PySol wrapper script
+#
+# Written by Eric Sandall <eric@sandall.us> 2005-03-04
+# for Source Mage GNU/Linux <http://www.sourcemage.org/>
+#
+# Licensed under the GNU General Public License
+#
+
+ PYSOL_DIR=/usr/share/games/pysol  &&
+PYTHON_BIN=/usr/bin/python         &&
+
+$PYTHON_BIN  $PYSOL_DIR/pysol.py

@@ -1,0 +1,30 @@
+PYSOL_IDIR=$INSTALL_ROOT/usr/share/games/pysol  &&
+
+mkdir  -p  ${INSTALL_ROOT}/usr/X11R6/include/X11/pixmaps  &&
+mkdir  -p  $PYSOL_IDIR                                    &&
+cp  -r  src/*  $PYSOL_IDIR  &&
+cp  -r  data   $PYSOL_IDIR  &&
+
+if  [  -d  pysol-sound-server-${SOUNDVER}  ];  then
+  echo  "Installing pysol-sound-server v${SOUNDVER}..."
+  cd  pysol-sound-server-${SOUNDVER}/src           &&
+  make  install                                    &&
+  cd    ../..
+fi                                                 &&
+
+if  [  -d  pysol-music-${MUSICVER}  ];  then
+  echo  "Installing pysol-music v${MUSICVER}..."
+  cp  -p  pysol-music-${MUSICVER}/data/music/*     \
+          /usr/share/games/pysol/4.80/music
+fi                                                 &&
+
+if  [  -d  pysol-cardsets-${CARDSVER}  ];  then
+  echo  "Installing pysol-cardsets v${CARDSVER}..."
+  cp  -a  data/cardset-*                           \
+          /usr/share/games/pysol/4.80
+fi  &&
+
+install  -m  755  -g  games  $SCRIPT_DIRECTORY/pysol  \
+                             /usr/games               &&
+
+chgrp  -R  games  $PYSOL_IDIR
