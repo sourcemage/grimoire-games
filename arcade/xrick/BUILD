@@ -3,6 +3,7 @@
   sedit  "s/-O2/$CFLAGS/"  Makefile              &&
   make                                           &&
   prepare_install                                &&
+  install  -d  -o  games  -m  775  /usr/games    &&
   install  -d  -o  games  -m  755                \
     /usr/share/games/${SPELL}                    &&
   install  -o  games  -m  755   xrick            \
