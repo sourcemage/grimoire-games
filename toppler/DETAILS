@@ -1,9 +1,9 @@
            SPELL=toppler
-         VERSION=0.99.1
+         VERSION=1.0.0
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=b146ca0b05cd773863f242d6baa42a2f
+          MD5[0]=c2c5d7632bf943d4e79aa7707245aa51
         WEB_SITE=http://toppler.sourceforge.net/
          ENTERED=20020131
          UPDATED=20020131
