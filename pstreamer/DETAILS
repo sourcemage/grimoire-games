@@ -1,0 +1,15 @@
+           SPELL=pstreamer
+         VERSION=1.1b
+          SOURCE=${SPELL}${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
+   SOURCE_URL[0]=http://www.psychostats.com/download/psychostreamer/linux/${SOURCE}
+          MD5[0]=a34efab1fd646810a608de64a02a78ec
+        WEB_SITE=http://www.psychostats.com/pstreamer.php
+      LICENSE[0]=UNKNOWN
+         ENTERED=20030227
+         UPDATED=20030227
+      MAINTAINER=eric@sandall.us
+           SHORT="PsychoStreamer is a logging tool for the game Half-Life."
+cat << EOF
+PsychoStreamer is a logging tool for the game Half-Life. With it you're able to have 1 or more game servers stream log data (in real time) to another remote server running the PsychoStreamer deamon.
+EOF
