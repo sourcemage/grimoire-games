@@ -1,4 +1,4 @@
-if  [  "$CVS"  ==  "y"  ];  then
+if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
   ./autogen.sh   &&
   default_build
 else

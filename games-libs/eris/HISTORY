@@ -1,3 +1,13 @@
+2005-01-11 Eric Sandall <eric@sandall.us>
+	* PREPARE: Query for devel, stable, or cvs version now
+	  CVS renamed to ERIS_BRANCH
+	* DETAILS: Check for devel or cvs version
+	  CVS renamed to ERIS_BRANCH
+	  Added BUILD_API=2
+	* BUILD: CVS renamed to ERIS_BRANCH
+	* DEPENDS: CVS renamed to ERIS_BRANCH
+	  devel and cvs depend on atlas-c++ devel
+
 2004-10-25 Eric Sandall <eric@sandall.us>
 	* PREPARE: Missed a "$"
 
