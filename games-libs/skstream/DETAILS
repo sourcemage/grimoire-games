@@ -1,9 +1,9 @@
            SPELL=skstream
-         VERSION=0.2.5
+         VERSION=0.3.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=e0a28a3da66913f3d2d8b5af7e43cb3b
+          MD5[0]=2b83ac981f2b3ff0dd86f409c11df54e
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20020915
          UPDATED=20020915
