@@ -5,10 +5,10 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${GNOME_URL}/sources/${SPELL}/${BRANCH}/${SOURCE}
    #SOURCE_URL[1]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=a32c8dc1f36114034e9c0c33408a8e84
+          MD5[0]=a1c93e245cbd222dbdd8a8fd002e78b9
         WEB_SITE=http://gtetrinet.sourceforge.net
          ENTERED=20020219
-         UPDATED=20031009
+         UPDATED=20040501
       LICENSE[0]=GPL
            SHORT="GTetrinet - the GNOME Tetrinet client"
 cat << EOF
