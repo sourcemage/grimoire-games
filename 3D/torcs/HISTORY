@@ -1,3 +1,13 @@
+2005-02-23 Eric Sandall <eric@sandall.us>
+	* Renamed from 3D/TORCS
+	* DETAILS: Renamed to torcs
+	  Updated UPDATED
+	  Shortened SHORT
+	  Added BUILD_API=2
+	* CONFLICTS: Auto-conflict with TORCS
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 1.2.2
 
