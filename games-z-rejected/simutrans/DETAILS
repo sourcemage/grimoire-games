@@ -1,8 +1,8 @@
         PKG_NAME=simutrans
-	   SPELL=${PKG_NAME}
+           SPELL=${PKG_NAME}
          VERSION=0.82.15.7exp
      PKG_VERSION=0_82_15_7exp
-	  SOURCE=simulinux-$PKG_VERSION.tar.gz
+          SOURCE=simulinux-$PKG_VERSION.tar.gz
          SOURCE2=simubase-$PKG_VERSION.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
    SOURCE_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE
@@ -13,6 +13,8 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
          ENTERED=20040422
           REJECT="is non-source"
       LICENSE[0]=freeware
+       BUILD_API=2
+         ARCHIVE=off
            SHORT="Transport and economic simulation. Transport Tycoon clone."
 cat << EOF
 Simutrans is a transport and economic simulation game. There are

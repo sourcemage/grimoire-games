@@ -1,3 +1,8 @@
+2004-09-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, INSTALL: converted to BUILD_API 2, create /usr/games if it
+	  doesn't exist
+	* DETAILS: set ARCHIVE=off, the spell only copies files
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
