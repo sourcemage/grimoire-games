@@ -1,3 +1,7 @@
+2003-02-09  Seth Woolley <seth@tautology.org>
+
+		Reverting the MD5
+
 2003-01-30  Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to correct MD5
