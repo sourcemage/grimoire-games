@@ -1,0 +1,20 @@
+           SPELL=beer
+         VERSION=0.1
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://qfm.dyndns.org/~richard/beer/$SOURCE
+   SOURCE_URL[1]=http://www-users.rwth-aachen.de/richard.brauer/beer/$SOURCE
+          MD5[0]=55d40ef9eaa9223f59eb38dadd8ecb4a
+        WEB_SITE=http://qfm.dyndns.org/~richard/
+         ENTERED=20020420
+         UPDATED=20020420
+      LICENSE[0]=UNKNOWN
+      MAINTAINER=richard.brauer@physik.rwth-aachen.de
+           SHORT="cd /pub; more beer"
+cat << EOF
+A really useful spell you have all been waiting for. After doing a 
+cast beer, you can always do a 
+> cd /pub
+> more beer
+without getting annoying error messages.
+EOF
