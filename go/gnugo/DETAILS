@@ -1,12 +1,12 @@
            SPELL=gnugo
-         VERSION=3.4
+         VERSION=3.5.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$GNU_URL/$SPELL/$SOURCE
-   SOURCE_URL[1]=ftp://ftp.gnu.org/gnu/$SPELL/$SOURCE
+   SOURCE_URL[1]=ftp://sporadic.stanford.edu/pub/$SOURCE
         WEB_SITE=http://www.gnu.org/software/gnugo/gnugo.html
       LICENSE[0]=GPL
-          MD5[0]=e474f351047994392de5ed557c5d1272
+          MD5[0]=5d38bb57289cd5ea7be6407fc6f23933
          ENTERED=20020219
          UPDATED=20031009
      GATHER_DOCS="off"
