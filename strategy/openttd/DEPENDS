@@ -1,0 +1,4 @@
+depends SDL &&
+depends zlib &&
+depends libpng
+
