@@ -8,7 +8,7 @@ else
          VERSION=0.98r004
           SOURCE=cs98_004.tar.bz2
    SOURCE_URL[0]=ftp://sunsite.dk/projects/crystal/cs098/source/$SOURCE
-          MD5[0]=IGNORE
+          MD5[0]=c5cee693b2fd0265a94fd46b9be5ed7b
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
         WEB_SITE=http://crystal.sourceforge.net
