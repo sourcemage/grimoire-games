@@ -1,3 +1,7 @@
+2003-08-23  hgg <hgreig@bigpond.net.au
+
+		Add optional_depends teTeX
+
 2003-08-22  hgg <hgreig@bigpond.net.au>
 
 		FIx preprocessing bug 
