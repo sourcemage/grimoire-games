@@ -1,3 +1,8 @@
+2003-07-12  hgg <hgreig@bigpond.net.au>
+
+		Bug where configure doesn't set up data paths correctly, so script pointing to 
+		installation is necessary
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!
@@ -6,7 +11,7 @@
 
 		Website now hosted on SourceForge
 
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
