@@ -1,0 +1,658 @@
+--- /usr/src/snes9x-1.42-src/snes9x/configure	2004-01-08 01:15:45.069276096 +1100
++++ /usr/src/snes9x-1.42-src/snes9x/configure~	2004-01-08 01:20:14.027388248 +1100
+@@ -2008,654 +2008,9 @@
+   with_screenshot=yes
+ fi;
+ 
+-OPTIMIZE="${OPTFLAGS-}"
++OPTIMIZE="${CFLAGS-}"
+ RTTIFLAG=""
+ 
+-  echo "$as_me:2014: checking -mcpu=pentiumpro" >&5
+-echo $ECHO_N "checking -mcpu=pentiumpro... $ECHO_C" >&6
+-  if test "${snes9x_cv_option_pentiumpro+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-    OLD_CXXFLAGS="$CXXFLAGS"
+-    CXXFLAGS="$OLD_CXXFLAGS -mcpu=pentiumpro"
+-    old_ac_link="$ac_link"
+-    ac_link="$old_ac_link 2>conftezt.out.2"
+-    if test "$cross_compiling" = yes; then
+-
+-      cat >conftest.$ac_ext <<_ACEOF
+-#line 2027 "configure"
+-#include "confdefs.h"
+-
+-int
+-main ()
+-{
+-
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-rm -f conftest.$ac_objext conftest$ac_exeext
+-if { (eval echo "$as_me:2039: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2042: \$? = $ac_status" >&5
+-  (exit $ac_status); } &&
+-         { ac_try='test -s conftest$ac_exeext'
+-  { (eval echo "$as_me:2045: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2048: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_pentiumpro=yes
+-else
+-  echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_pentiumpro=no
+-fi
+-rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
+-
+-else
+-  cat >conftest.$ac_ext <<_ACEOF
+-#line 2060 "configure"
+-#include "confdefs.h"
+-
+-      int foo;
+-      int main(int argc, char **argv)
+-      {
+-        /* The following code triggs gcc:s generation of aline opcodes,
+-	 * which some versions of as does not support.
+-	 */
+-	if (argc > 0) argc = 0;
+-	return argc;
+-      }
+-
+-_ACEOF
+-rm -f conftest$ac_exeext
+-if { (eval echo "$as_me:2075: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2078: \$? = $ac_status" >&5
+-  (exit $ac_status); } && { ac_try='./conftest$ac_exeext'
+-  { (eval echo "$as_me:2080: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2083: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_pentiumpro=yes
+-else
+-  echo "$as_me: program exited with status $ac_status" >&5
+-echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_pentiumpro=no
+-fi
+-rm -f core core.* *.core conftest$ac_exeext conftest.$ac_objext conftest.$ac_ext
+-fi
+-    CXXFLAGS="$OLD_CXXFLAGS"
+-    ac_link="$old_ac_link"
+-    if grep -i 'unrecognized option' <conftezt.out.2 >/dev/null; then
+-      snes9x_cv_option_pentiumpro=no
+-    elif grep -i 'unknown option' <conftezt.out.2 >/dev/null; then
+-      # cc/HPUX says the following regarding -q64:
+-      #
+-      # cc: warning 422: Unknown option "6" ignored.
+-      # cc: warning 422: Unknown option "4" ignored.
+-      snes9x_cv_option_pentiumpro=no
+-    elif grep -i 'optimizer bugs' <conftezt.out.2 >/dev/null; then
+-      # gcc/FreeBSD-4.6/alpha says the following regarding -O2:
+-      #
+-      # cc1: warning:
+-      # ***
+-      # ***     The -O2 flag TRIGGERS KNOWN OPTIMIZER BUGS ON THIS PLATFORM
+-      # ***
+-      snes9x_cv_option_pentiumpro=no
+-    elif grep -i 'not found' <conftezt.out.2 >/dev/null; then
+-      # cc/AIX says the following regarding +O3:
+-      #
+-      # cc: 1501-228 input file +O3 not found
+-      snes9x_cv_option_pentiumpro=no
+-    elif grep -i 'ignored' <conftezt.out.2 >/dev/null; then
+-      # gcc/AIX says the following regarding -fpic:
+-      #
+-      # cc1: warning: -fpic ignored (all code is position independent)
+-      snes9x_cv_option_pentiumpro=no
+-    else :; fi
+-#    rm conftezt.out.2
+-
+-fi
+-
+-  if test x"$snes9x_cv_option_pentiumpro" = "xyes" ; then
+-    OPTIMIZE="$OPTIMIZE -mcpu=pentiumpro"
+-    case "OPTIMIZE" in
+-      OPTIMIZE)
+-        CXXFLAGS="$CXXFLAGS -mcpu=pentiumpro"
+-      ;;
+-    esac
+-    echo "$as_me:2134: result: yes" >&5
+-echo "${ECHO_T}yes" >&6
+-
+-  else
+-    echo "$as_me:2138: result: no" >&5
+-echo "${ECHO_T}no" >&6
+-
+-  echo "$as_me:2141: checking -mcpu=pentium" >&5
+-echo $ECHO_N "checking -mcpu=pentium... $ECHO_C" >&6
+-  if test "${snes9x_cv_option_pentium+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-    OLD_CXXFLAGS="$CXXFLAGS"
+-    CXXFLAGS="$OLD_CXXFLAGS -mcpu=pentium"
+-    old_ac_link="$ac_link"
+-    ac_link="$old_ac_link 2>conftezt.out.2"
+-    if test "$cross_compiling" = yes; then
+-
+-      cat >conftest.$ac_ext <<_ACEOF
+-#line 2154 "configure"
+-#include "confdefs.h"
+-
+-int
+-main ()
+-{
+-
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-rm -f conftest.$ac_objext conftest$ac_exeext
+-if { (eval echo "$as_me:2166: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2169: \$? = $ac_status" >&5
+-  (exit $ac_status); } &&
+-         { ac_try='test -s conftest$ac_exeext'
+-  { (eval echo "$as_me:2172: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2175: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_pentium=yes
+-else
+-  echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_pentium=no
+-fi
+-rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
+-
+-else
+-  cat >conftest.$ac_ext <<_ACEOF
+-#line 2187 "configure"
+-#include "confdefs.h"
+-
+-      int foo;
+-      int main(int argc, char **argv)
+-      {
+-        /* The following code triggs gcc:s generation of aline opcodes,
+-	 * which some versions of as does not support.
+-	 */
+-	if (argc > 0) argc = 0;
+-	return argc;
+-      }
+-
+-_ACEOF
+-rm -f conftest$ac_exeext
+-if { (eval echo "$as_me:2202: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2205: \$? = $ac_status" >&5
+-  (exit $ac_status); } && { ac_try='./conftest$ac_exeext'
+-  { (eval echo "$as_me:2207: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2210: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_pentium=yes
+-else
+-  echo "$as_me: program exited with status $ac_status" >&5
+-echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_pentium=no
+-fi
+-rm -f core core.* *.core conftest$ac_exeext conftest.$ac_objext conftest.$ac_ext
+-fi
+-    CXXFLAGS="$OLD_CXXFLAGS"
+-    ac_link="$old_ac_link"
+-    if grep -i 'unrecognized option' <conftezt.out.2 >/dev/null; then
+-      snes9x_cv_option_pentium=no
+-    elif grep -i 'unknown option' <conftezt.out.2 >/dev/null; then
+-      # cc/HPUX says the following regarding -q64:
+-      #
+-      # cc: warning 422: Unknown option "6" ignored.
+-      # cc: warning 422: Unknown option "4" ignored.
+-      snes9x_cv_option_pentium=no
+-    elif grep -i 'optimizer bugs' <conftezt.out.2 >/dev/null; then
+-      # gcc/FreeBSD-4.6/alpha says the following regarding -O2:
+-      #
+-      # cc1: warning:
+-      # ***
+-      # ***     The -O2 flag TRIGGERS KNOWN OPTIMIZER BUGS ON THIS PLATFORM
+-      # ***
+-      snes9x_cv_option_pentium=no
+-    elif grep -i 'not found' <conftezt.out.2 >/dev/null; then
+-      # cc/AIX says the following regarding +O3:
+-      #
+-      # cc: 1501-228 input file +O3 not found
+-      snes9x_cv_option_pentium=no
+-    elif grep -i 'ignored' <conftezt.out.2 >/dev/null; then
+-      # gcc/AIX says the following regarding -fpic:
+-      #
+-      # cc1: warning: -fpic ignored (all code is position independent)
+-      snes9x_cv_option_pentium=no
+-    else :; fi
+-#    rm conftezt.out.2
+-
+-fi
+-
+-  if test x"$snes9x_cv_option_pentium" = "xyes" ; then
+-    OPTIMIZE="$OPTIMIZE -mcpu=pentium"
+-    case "OPTIMIZE" in
+-      OPTIMIZE)
+-        CXXFLAGS="$CXXFLAGS -mcpu=pentium"
+-      ;;
+-    esac
+-    echo "$as_me:2261: result: yes" >&5
+-echo "${ECHO_T}yes" >&6
+-
+-  else
+-    echo "$as_me:2265: result: no" >&5
+-echo "${ECHO_T}no" >&6
+-
+-  fi
+-
+-  fi
+-
+-  echo "$as_me:2272: checking -mcpu=ultrasparc" >&5
+-echo $ECHO_N "checking -mcpu=ultrasparc... $ECHO_C" >&6
+-  if test "${snes9x_cv_option_ultrasparc+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-    OLD_CXXFLAGS="$CXXFLAGS"
+-    CXXFLAGS="$OLD_CXXFLAGS -mcpu=ultrasparc"
+-    old_ac_link="$ac_link"
+-    ac_link="$old_ac_link 2>conftezt.out.2"
+-    if test "$cross_compiling" = yes; then
+-
+-      cat >conftest.$ac_ext <<_ACEOF
+-#line 2285 "configure"
+-#include "confdefs.h"
+-
+-int
+-main ()
+-{
+-
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-rm -f conftest.$ac_objext conftest$ac_exeext
+-if { (eval echo "$as_me:2297: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2300: \$? = $ac_status" >&5
+-  (exit $ac_status); } &&
+-         { ac_try='test -s conftest$ac_exeext'
+-  { (eval echo "$as_me:2303: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2306: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_ultrasparc=yes
+-else
+-  echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_ultrasparc=no
+-fi
+-rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
+-
+-else
+-  cat >conftest.$ac_ext <<_ACEOF
+-#line 2318 "configure"
+-#include "confdefs.h"
+-
+-      int foo;
+-      int main(int argc, char **argv)
+-      {
+-        /* The following code triggs gcc:s generation of aline opcodes,
+-	 * which some versions of as does not support.
+-	 */
+-	if (argc > 0) argc = 0;
+-	return argc;
+-      }
+-
+-_ACEOF
+-rm -f conftest$ac_exeext
+-if { (eval echo "$as_me:2333: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2336: \$? = $ac_status" >&5
+-  (exit $ac_status); } && { ac_try='./conftest$ac_exeext'
+-  { (eval echo "$as_me:2338: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2341: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_ultrasparc=yes
+-else
+-  echo "$as_me: program exited with status $ac_status" >&5
+-echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_ultrasparc=no
+-fi
+-rm -f core core.* *.core conftest$ac_exeext conftest.$ac_objext conftest.$ac_ext
+-fi
+-    CXXFLAGS="$OLD_CXXFLAGS"
+-    ac_link="$old_ac_link"
+-    if grep -i 'unrecognized option' <conftezt.out.2 >/dev/null; then
+-      snes9x_cv_option_ultrasparc=no
+-    elif grep -i 'unknown option' <conftezt.out.2 >/dev/null; then
+-      # cc/HPUX says the following regarding -q64:
+-      #
+-      # cc: warning 422: Unknown option "6" ignored.
+-      # cc: warning 422: Unknown option "4" ignored.
+-      snes9x_cv_option_ultrasparc=no
+-    elif grep -i 'optimizer bugs' <conftezt.out.2 >/dev/null; then
+-      # gcc/FreeBSD-4.6/alpha says the following regarding -O2:
+-      #
+-      # cc1: warning:
+-      # ***
+-      # ***     The -O2 flag TRIGGERS KNOWN OPTIMIZER BUGS ON THIS PLATFORM
+-      # ***
+-      snes9x_cv_option_ultrasparc=no
+-    elif grep -i 'not found' <conftezt.out.2 >/dev/null; then
+-      # cc/AIX says the following regarding +O3:
+-      #
+-      # cc: 1501-228 input file +O3 not found
+-      snes9x_cv_option_ultrasparc=no
+-    elif grep -i 'ignored' <conftezt.out.2 >/dev/null; then
+-      # gcc/AIX says the following regarding -fpic:
+-      #
+-      # cc1: warning: -fpic ignored (all code is position independent)
+-      snes9x_cv_option_ultrasparc=no
+-    else :; fi
+-#    rm conftezt.out.2
+-
+-fi
+-
+-  if test x"$snes9x_cv_option_ultrasparc" = "xyes" ; then
+-    OPTIMIZE="$OPTIMIZE -mcpu=ultrasparc"
+-    case "OPTIMIZE" in
+-      OPTIMIZE)
+-        CXXFLAGS="$CXXFLAGS -mcpu=ultrasparc"
+-      ;;
+-    esac
+-    echo "$as_me:2392: result: yes" >&5
+-echo "${ECHO_T}yes" >&6
+-
+-  else
+-    echo "$as_me:2396: result: no" >&5
+-echo "${ECHO_T}no" >&6
+-
+-  echo "$as_me:2399: checking -mcpu=supersparc" >&5
+-echo $ECHO_N "checking -mcpu=supersparc... $ECHO_C" >&6
+-  if test "${snes9x_cv_option_supersparc+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-    OLD_CXXFLAGS="$CXXFLAGS"
+-    CXXFLAGS="$OLD_CXXFLAGS -mcpu=supersparc"
+-    old_ac_link="$ac_link"
+-    ac_link="$old_ac_link 2>conftezt.out.2"
+-    if test "$cross_compiling" = yes; then
+-
+-      cat >conftest.$ac_ext <<_ACEOF
+-#line 2412 "configure"
+-#include "confdefs.h"
+-
+-int
+-main ()
+-{
+-
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-rm -f conftest.$ac_objext conftest$ac_exeext
+-if { (eval echo "$as_me:2424: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2427: \$? = $ac_status" >&5
+-  (exit $ac_status); } &&
+-         { ac_try='test -s conftest$ac_exeext'
+-  { (eval echo "$as_me:2430: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2433: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_supersparc=yes
+-else
+-  echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_supersparc=no
+-fi
+-rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
+-
+-else
+-  cat >conftest.$ac_ext <<_ACEOF
+-#line 2445 "configure"
+-#include "confdefs.h"
+-
+-      int foo;
+-      int main(int argc, char **argv)
+-      {
+-        /* The following code triggs gcc:s generation of aline opcodes,
+-	 * which some versions of as does not support.
+-	 */
+-	if (argc > 0) argc = 0;
+-	return argc;
+-      }
+-
+-_ACEOF
+-rm -f conftest$ac_exeext
+-if { (eval echo "$as_me:2460: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2463: \$? = $ac_status" >&5
+-  (exit $ac_status); } && { ac_try='./conftest$ac_exeext'
+-  { (eval echo "$as_me:2465: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2468: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_supersparc=yes
+-else
+-  echo "$as_me: program exited with status $ac_status" >&5
+-echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_supersparc=no
+-fi
+-rm -f core core.* *.core conftest$ac_exeext conftest.$ac_objext conftest.$ac_ext
+-fi
+-    CXXFLAGS="$OLD_CXXFLAGS"
+-    ac_link="$old_ac_link"
+-    if grep -i 'unrecognized option' <conftezt.out.2 >/dev/null; then
+-      snes9x_cv_option_supersparc=no
+-    elif grep -i 'unknown option' <conftezt.out.2 >/dev/null; then
+-      # cc/HPUX says the following regarding -q64:
+-      #
+-      # cc: warning 422: Unknown option "6" ignored.
+-      # cc: warning 422: Unknown option "4" ignored.
+-      snes9x_cv_option_supersparc=no
+-    elif grep -i 'optimizer bugs' <conftezt.out.2 >/dev/null; then
+-      # gcc/FreeBSD-4.6/alpha says the following regarding -O2:
+-      #
+-      # cc1: warning:
+-      # ***
+-      # ***     The -O2 flag TRIGGERS KNOWN OPTIMIZER BUGS ON THIS PLATFORM
+-      # ***
+-      snes9x_cv_option_supersparc=no
+-    elif grep -i 'not found' <conftezt.out.2 >/dev/null; then
+-      # cc/AIX says the following regarding +O3:
+-      #
+-      # cc: 1501-228 input file +O3 not found
+-      snes9x_cv_option_supersparc=no
+-    elif grep -i 'ignored' <conftezt.out.2 >/dev/null; then
+-      # gcc/AIX says the following regarding -fpic:
+-      #
+-      # cc1: warning: -fpic ignored (all code is position independent)
+-      snes9x_cv_option_supersparc=no
+-    else :; fi
+-#    rm conftezt.out.2
+-
+-fi
+-
+-  if test x"$snes9x_cv_option_supersparc" = "xyes" ; then
+-    OPTIMIZE="$OPTIMIZE -mcpu=supersparc"
+-    case "OPTIMIZE" in
+-      OPTIMIZE)
+-        CXXFLAGS="$CXXFLAGS -mcpu=supersparc"
+-      ;;
+-    esac
+-    echo "$as_me:2519: result: yes" >&5
+-echo "${ECHO_T}yes" >&6
+-
+-  else
+-    echo "$as_me:2523: result: no" >&5
+-echo "${ECHO_T}no" >&6
+-
+-  fi
+-
+-  fi
+-
+-  echo "$as_me:2530: checking -O1" >&5
+-echo $ECHO_N "checking -O1... $ECHO_C" >&6
+-  if test "${snes9x_cv_option_o1+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-    OLD_CXXFLAGS="$CXXFLAGS"
+-    CXXFLAGS="$OLD_CXXFLAGS -O1"
+-    old_ac_link="$ac_link"
+-    ac_link="$old_ac_link 2>conftezt.out.2"
+-    if test "$cross_compiling" = yes; then
+-
+-      cat >conftest.$ac_ext <<_ACEOF
+-#line 2543 "configure"
+-#include "confdefs.h"
+-
+-int
+-main ()
+-{
+-
+-  ;
+-  return 0;
+-}
+-_ACEOF
+-rm -f conftest.$ac_objext conftest$ac_exeext
+-if { (eval echo "$as_me:2555: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2558: \$? = $ac_status" >&5
+-  (exit $ac_status); } &&
+-         { ac_try='test -s conftest$ac_exeext'
+-  { (eval echo "$as_me:2561: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2564: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_o1=yes
+-else
+-  echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_o1=no
+-fi
+-rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
+-
+-else
+-  cat >conftest.$ac_ext <<_ACEOF
+-#line 2576 "configure"
+-#include "confdefs.h"
+-
+-      int foo;
+-      int main(int argc, char **argv)
+-      {
+-        /* The following code triggs gcc:s generation of aline opcodes,
+-	 * which some versions of as does not support.
+-	 */
+-	if (argc > 0) argc = 0;
+-	return argc;
+-      }
+-
+-_ACEOF
+-rm -f conftest$ac_exeext
+-if { (eval echo "$as_me:2591: \"$ac_link\"") >&5
+-  (eval $ac_link) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2594: \$? = $ac_status" >&5
+-  (exit $ac_status); } && { ac_try='./conftest$ac_exeext'
+-  { (eval echo "$as_me:2596: \"$ac_try\"") >&5
+-  (eval $ac_try) 2>&5
+-  ac_status=$?
+-  echo "$as_me:2599: \$? = $ac_status" >&5
+-  (exit $ac_status); }; }; then
+-  snes9x_cv_option_o1=yes
+-else
+-  echo "$as_me: program exited with status $ac_status" >&5
+-echo "$as_me: failed program was:" >&5
+-cat conftest.$ac_ext >&5
+-snes9x_cv_option_o1=no
+-fi
+-rm -f core core.* *.core conftest$ac_exeext conftest.$ac_objext conftest.$ac_ext
+-fi
+-    CXXFLAGS="$OLD_CXXFLAGS"
+-    ac_link="$old_ac_link"
+-    if grep -i 'unrecognized option' <conftezt.out.2 >/dev/null; then
+-      snes9x_cv_option_o1=no
+-    elif grep -i 'unknown option' <conftezt.out.2 >/dev/null; then
+-      # cc/HPUX says the following regarding -q64:
+-      #
+-      # cc: warning 422: Unknown option "6" ignored.
+-      # cc: warning 422: Unknown option "4" ignored.
+-      snes9x_cv_option_o1=no
+-    elif grep -i 'optimizer bugs' <conftezt.out.2 >/dev/null; then
+-      # gcc/FreeBSD-4.6/alpha says the following regarding -O2:
+-      #
+-      # cc1: warning:
+-      # ***
+-      # ***     The -O2 flag TRIGGERS KNOWN OPTIMIZER BUGS ON THIS PLATFORM
+-      # ***
+-      snes9x_cv_option_o1=no
+-    elif grep -i 'not found' <conftezt.out.2 >/dev/null; then
+-      # cc/AIX says the following regarding +O3:
+-      #
+-      # cc: 1501-228 input file +O3 not found
+-      snes9x_cv_option_o1=no
+-    elif grep -i 'ignored' <conftezt.out.2 >/dev/null; then
+-      # gcc/AIX says the following regarding -fpic:
+-      #
+-      # cc1: warning: -fpic ignored (all code is position independent)
+-      snes9x_cv_option_o1=no
+-    else :; fi
+-#    rm conftezt.out.2
+-
+-fi
+-
+-  if test x"$snes9x_cv_option_o1" = "xyes" ; then
+-    OPTIMIZE="$OPTIMIZE -O1"
+-    case "OPTIMIZE" in
+-      OPTIMIZE)
+-        CXXFLAGS="$CXXFLAGS -O1"
+-      ;;
+-    esac
+-    echo "$as_me:2650: result: yes" >&5
+-echo "${ECHO_T}yes" >&6
+-
+-  else
+-    echo "$as_me:2654: result: no" >&5
+-echo "${ECHO_T}no" >&6
+-
+-  fi
+-
+   echo "$as_me:2659: checking -fomit-frame-pointer" >&5
+ echo $ECHO_N "checking -fomit-frame-pointer... $ECHO_C" >&6
+   if test "${snes9x_cv_option_omit_frame_pointer+set}" = set; then

@@ -1,0 +1,38 @@
+--- /usr/src/snes9x-1.42-src/snes9x/Makefile.in	2004-01-08 01:21:08.909044968 +1100
++++ /usr/src/snes9x-1.42-src/snes9x/Makefile.in~	2003-12-05 04:03:08.000000000 +1100
+@@ -88,6 +88,8 @@
+         cheats.o cheats2.o data.o unix/unix.o unix/config.o globals.o \
+ 	$(SPC7110OBJ) $(OBC1OBJ) $(SETAOBJ) $(KREEDOBJ) $(SDD1OBJ)
+ 
++OBJECTS += ../zlib/libz.a
++
+ ifdef GUI
+ GUIOBJS = unix/snes9x_gui.o unix/moc_snes9x_gui.o
+ GUILIBS = -L$(QTDIR)/lib -lqt
+@@ -145,7 +147,7 @@
+ CC = @CC@
+ NASM = @NASM@
+ 
+-INCLUDES = @XINCLUDES@
++INCLUDES = -I../zlib @XINCLUDES@
+ 
+ OPTIMISE = @OPTIMIZE@
+ 
+@@ -184,7 +186,7 @@
+ CFLAGS=$(CCFLAGS)
+ 
+ .SUFFIXES: .o .cpp .c .cc .h .m .i .S .asm .obj .O .CPP .C .ASM
+-LDLIBS = -L/usr/X11R6/lib
++LDLIBS = -L/usr/X11R6/lib -L../zlib
+ 
+ ifdef GLIDE
+ all: offsets gsnes9x
+@@ -223,7 +225,7 @@
+ ../zlib/libz.a:
+ 	cd ../zlib && sh ./configure && make
+ 
+-snes9x: $(OBJECTS) unix/x11.o $(AIDOOBJS) $(GUIOBJS) $(OPENGLOBJS)
++snes9x: $(OBJECTS) ../zlib/libz.a unix/x11.o $(AIDOOBJS) $(GUIOBJS)
+ 	$(CCC) $(INCLUDES) -o $@ $(OBJECTS) $(AIDOOBJS) $(GLIDEOBJS) $(OPENGLOBJS) unix/x11.o $(GUIOBJS) $(LDLIBS) $(GLIDELIBS) $(OPENGLLIBS) $(GUILIBS) @SYSLIBS@ -lXext -lX11 $(EXTRALIBS) -lz -lm
+ 
+ ssnes9x: $(OBJECTS) ../zlib/libz.a unix/svga.o 

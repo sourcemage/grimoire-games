@@ -1,3 +1,3 @@
-depends  glut  &&
+depends  GLUT  &&
 depends  SDL   &&
-depends  SDL_mixer
+depends  SDL_sound

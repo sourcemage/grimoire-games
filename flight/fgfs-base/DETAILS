@@ -1,16 +1,15 @@
            SPELL=fgfs-base
-         VERSION=0.9.2
+         VERSION=0.9.3
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Shared/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Shared/${SOURCE}
         WEB_SITE=http://flightgear.sourceforge.net
       LICENSE[0]=GPL
-          MD5[0]=702a9594b9c4e15163f3fbc40aa82003
+          MD5[0]=532a6bc7ddaaf4690476e2c801749657
          ENTERED=20010922
-         UPDATED=20020424
+         UPDATED=20040107
          ARCHIVE=off
-      MAINTAINER=v.merkatz@gmx.net
            SHORT="fgfs-base provides the base files required by FlightGear."
 cat << EOF
 The Flight Gear Flight Simulator project is a free, open-source,

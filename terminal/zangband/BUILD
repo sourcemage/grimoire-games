@@ -14,6 +14,7 @@
                ${OPTS}                                   &&
   make                                                   &&
   prepare_install                                        &&
+  mkdir  -p ${INSTALL_ROOT}/usr/games                    &&
   mkdir  -p -m0777  ${I_DIR}                             &&
   cp  zangband  ${I_DIR}                                 &&
   cp  -r  lib  ${I_DIR}                                  &&

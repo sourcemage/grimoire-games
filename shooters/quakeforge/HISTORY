@@ -1,23 +1,22 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2004-01-07 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.5.4
+	* TRIGGERS: removed file, zlib is only used during runtime, not compiled in :)
+	* BUILD: disable alsa, not listed yet as depends and they use 0.5 version (very broken)
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-14  Seth Woolley <seth@tautology.org>
+2003-05-14 Seth Woolley <seth@tautology.org>
+	* Added unpack to BUILD
 
-		Added unpack to BUILD
+2002-10-06 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: New version: 0.5.2
 
-2002-10-06  Arwed v. Merkatz <v.merkatz@gmx.net>
+2002-10-02 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added libtool as a dependency
 
-		New version: 0.5.2
-
-2002-10-02  Eric Sandall <eric@sandall.us>
-
-		Added libtool as a dependency
-
-2002-06-20  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		Created this spell
+2002-06-20 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell

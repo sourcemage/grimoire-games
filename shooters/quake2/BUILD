@@ -1,6 +1,17 @@
 (
-  sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile	 &&
-  sedit "s/SDLDIR=\/usr\/local\/lib/SDLDIR=\/usr\/lib\//g" Makefile	&&
+  if spell_installed arts ; then
+  sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile
+  fi                                                                &&
+  if ! spell_installed aalib ; then
+  sedit "s/BUILD_AA=YES/BUILD_AA=NO/g" Makefile
+  fi                                                                &&
+  sedit "s/SDLDIR=\/usr\/local\/lib/SDLDIR=\/usr\/lib\//g" Makefile &&
+  #change to new compiler opts to stop the warnings
+  sedit "s/malign-loops/falign-loops/g" Makefile                    &&
+  sedit "s/malign-jumps/falign-jumps/g" Makefile                    &&
+  sedit "s/malign-functions/falign-functions/g" Makefile            &&
+  # Change compiler CFLAGS
+  sedit "s/-O2/$CFLAGS/g" Makefile                                  &&
   # Nice and easy compilation
   make build_release                                     &&
 

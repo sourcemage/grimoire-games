@@ -1,0 +1,4 @@
+depends OPENGL &&
+depends SDL &&
+depends SDL_image &&
+optional_depends SDL_mixer "" "" "For sound mixing support"

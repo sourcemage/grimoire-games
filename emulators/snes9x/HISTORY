@@ -1,0 +1,7 @@
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* add to grimoire
+	* DETAILS: update to 1.42
+
+2003-11-19 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, Makefile.in.patch:
+	created the spell

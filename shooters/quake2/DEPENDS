@@ -1,1 +1,3 @@
 depends  SDL
+optional_depends "aalib" "" "" "for an ascii client"
+

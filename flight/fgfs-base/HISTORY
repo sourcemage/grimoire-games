@@ -1,42 +1,33 @@
-2003-09-30  hgg <hgreig@bigpond.net.au>
+2004-01-07 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.9.3
 
-		Remove ARCHIVE hacks
+2003-09-30 hgg <hgreig@bigpond.net.au>
+	* PREPARE,POST_BUILD: Remove ARCHIVE hacks
 
-2003-06-20  hgg <hgreig@bigpond.net.au>
-		
-		Added PREPARE to remove cache after fixing bug #1068
+2003-06-20 hgg <hgreig@bigpond.net.au>
+	* PREPARE: Added PREPARE to remove cache after fixing bug #1068
 
-2003-06-19  hgg <hgreig@bigpond.net.au>
+2003-06-19 hgg <hgreig@bigpond.net.au>
+	* POST_BUILD: corrected ARCHIVE=off by added POST_BUILD 
 
-		corrected ARCHIVE=off by added POST_BUILD 
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-06 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.9.2
 
-2003-06-06  hgg <hgreig@bigpond.net.au>
+2003-01-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.9.1a  (Bug #2377, thanks to Eric Sesterhenn/Snakebyte)
+	* BUILD: Now installs to /usr/share/games
 
-		Update to 0.9.2
+2002-12-05 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.9.0
 
-2003-01-25  Eric Sandall <eric@sandall.us>
+2002-09-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: New version: 0.8.0
 
-		Updated to 0.9.1a  (Bug #2377, thanks to Eric Sesterhenn/Snakebyte)
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields, changed MAINTAINER
 
-		Now installs to /usr/share/games
-
-2002-12-05  Eric Sandall <eric@sandall.us>
-
-		Updated to v0.9.0
-
-2002-09-21  Eric Sandall <eric@sandall.us>
-
-		New version: 0.8.0
-
-2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		added MD5 and LICENSE fields
-		changed MAINTAINER
-
-2002-04-24  Jerome Zago <jerome.zago@insalien.org>
-
-		New version: 0.7.10
+2002-04-24 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 0.7.10
