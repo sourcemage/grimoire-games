@@ -1,22 +1,24 @@
            SPELL=atlas-c++
          VERSION=${VERSION:=0.4.6}
-if [ "${CVS}" = "yes" ];  then
+if  [  "$CVS"  ==  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/Atlas-C++
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 else
           SOURCE=Atlas-C++-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/$SOURCE
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/Atlas-C++/${SOURCE}
           MD5[0]=07f36239b9ecc998697a972d4e5df76b
-fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
+fi
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=LGPL
+       BUILD_API=2
            SHORT="Standard implementation of the WorldForge Atlas protocol"
 cat << EOF
 Atlas C++ is the standard implementation of the WorldForge Atlas protocol. It is currently being developed in parallel with a stable branch, and the development code maintained separatly.
