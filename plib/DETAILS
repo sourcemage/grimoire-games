@@ -1,12 +1,14 @@
            SPELL=plib
-         VERSION=1.4.2
+         VERSION=1.6.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://plib.sourceforge.net/dist/$SOURCE
         WEB_SITE=http://plib.sourceforge.net
          ENTERED=20010922
          UPDATED=20010922
-      MAINTAINER=pradierdavid@yahoo.fr
+          MD5[0]=c35a39f0e4fb6e0e0af88f1a4f486096
+      LICENSE[0]=LGPL
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="plib is a portable game library."
 cat << EOF
 PLIB is a set of libraries to write games and other realtime interactive
