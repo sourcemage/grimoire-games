@@ -1,7 +1,9 @@
 (
-
-  configure  --prefix=/usr        \
-             --bindir=/usr/games  \
+cd ./criticalmass  &&
+ ./autogen.sh							 &&
+  
+ ./configure  --prefix=/usr        \
+              --bindir=/usr/games  \
              $OPTS                &&
   make                            &&
   prepare_install                 &&
