@@ -1,7 +1,0 @@
-I_DIR=/usr/share/opentl  &&
-mkdir  -p  ${I_DIR}      &&
-cp  -r  *  ${I_DIR}      &&
-rm  -rf  ${I_DIR}/osx    \
-         tnl.dsw         \
-         tnl.sln
-

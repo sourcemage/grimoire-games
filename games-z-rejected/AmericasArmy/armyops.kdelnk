@@ -1,8 +1,0 @@
-# KDE Config File
-[KDE Desktop Entry]
-Name=armyops
-Comment=America's Army: Operations
-Exec=/usr/share/games/AmericasArmy/armyops
-Icon=/usr/share/games/AmericasArmy/ArmyOps.xpm
-Terminal=0
-Type=Application

@@ -1,9 +1,0 @@
-depends  sdl_mixer   &&
-depends  freetype2   &&
-depends  libpng      &&
-depends  libsigc++2  &&
-depends  smpeg       &&
-
-if  [  "${CVS}"  ==  "y"  ];  then
-  depends  cvs
-fi

@@ -1,8 +1,0 @@
-if grep -q "with-paragui" ${SPELL_CONFIG}
-then depends  sdl_ttf    &&
-     depends  freetype1  &&
-     depends  paragui  "--with-paragui-prefix=/usr"
-fi &&
-if grep -q "enable-qt" ${SPELL_CONFIG}
-then depends qt-x11
-fi

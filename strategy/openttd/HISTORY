@@ -1,9 +1,0 @@
-2004-08-03 Eric Sandall <eric@sandall.us>
-	* DEPENDS: SDL renamed to sdl
-	  Removed zlib as libpng depends on it
-	  Formatted to Guru Handbook
-
-2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: Updated to 0.3.3
-	* HISTORY: Seems it got lost so I had to create it
-	* INSTALL: One dir less to copy

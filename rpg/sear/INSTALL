@@ -1,3 +1,0 @@
-default_install                         &&
-cp  -r  sear-media  /usr/share/sear/    &&
-chown  -R  root.games  /usr/share/sear

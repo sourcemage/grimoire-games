@@ -1,9 +1,0 @@
-2004-05-26 Eric Sandall <eric@sandall.us>
-	* Renamed to atlas-c++-transitional
-	* DETAILS: Updated UPDATED
-	* DEPENDS: Depends only on atlas-c++-transitional
-	* BUILD, POST_INSTALL, PRE_BUILD: Do nothing
-
-2004-04-09 Eric Sandall <eric@sandall.us>
-	* Created for new uclient version (0.16)
-

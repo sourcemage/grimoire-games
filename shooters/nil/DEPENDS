@@ -1,3 +1,0 @@
-depends  sdl_mixer  &&
-depends  sdl_ttf    &&
-depends  sdl_image

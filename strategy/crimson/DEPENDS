@@ -1,6 +1,0 @@
-depends  sdl_ttf  &&
-
-optional_depends  sdl_mixer            \
-                  ""                   \
-                  ""                   \
-                  "for sound support"

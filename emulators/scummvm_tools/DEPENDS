@@ -1,5 +1,0 @@
-depends  scummvm  &&
-
-if [ "$SCUMMVM_TOOLS_CVS" = "y" ];  then
-  depends  CVS
-fi

@@ -1,7 +1,0 @@
-depends  automake  &&
-depends  g++       &&
-
-optional_depends  doxygen                        \
-                  ""                             \
-                  ""                             \
-                  "for generated documentation"

@@ -1,3 +1,0 @@
-default_pre_build              &&
-unpack  ${SOURCE2}  ${MD5[1]}  &&
-gunzip  -c  ${SOURCE_CACHE}/${SOURCE2}  >  ${SOURCE_DIRECTORY}/doom1.wad

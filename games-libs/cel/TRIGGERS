@@ -1,2 +1,0 @@
-on_cast         crystalspace   cast_self        &&
-on_pre_dispel   crystalspace   dispel_self

@@ -1,6 +1,0 @@
-  mkdir -pv  ${INSTALL_ROOT}/usr/lib/$SPELL       &&
-  install -v  ttd ${INSTALL_ROOT}/usr/lib/$SPELL/         &&
-  cp -rv  data lang ${INSTALL_ROOT}/usr/lib/$SPELL/         &&
-  install -v  $SCRIPT_DIRECTORY/$SPELL ${INSTALL_ROOT}/usr/games/              &&
-  mkdir -pv  ${INSTALL_ROOT}/usr/share/doc/$SPELL  &&
-  install -v  docs/* COPYING readme.txt ${INSTALL_ROOT}/usr/share/doc/$SPELL

@@ -1,6 +1,0 @@
-depends  ncurses  &&
-
-optional_depends  "xfree86"               \
-                  "--with-x"              \
-                  "--without-x"           \
-                  "for XWindows support"

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd  /usr/lib/games/widelands
-exec ./widelands "$@"
