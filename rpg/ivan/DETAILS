@@ -1,15 +1,15 @@
            SPELL=ivan
          VERSION=0.50
           SOURCE=$SPELL-$VERSION.tar.gz
-   SOURCE_URL[1]="$SOURCEFORGE_URL/$SPELL/$SOURCE"
+   SOURCE_URL[0]="${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
           MD5[0]=9efcaf24f1e8ae205478d9850d090f87
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://ivan.sourceforge.net
          ENTERED=20050212
          UPDATED=20050212
-      LICENSE[0]=gpl
+      LICENSE[0]=GPL
        BUILD_API=2
-           SHORT=Iter Vehemens ad Necem (IVAN) is a graphical roguelike game - sort of nethack
+           SHORT="Iter Vehemens ad Necem (IVAN) is a graphical roguelike game - sort of nethack"
 cat << EOF
 Iter Vehemens ad Necem (IVAN) is a graphical roguelike game, which currently
 runs in Windows, DOS and Linux. It features advanced bodypart and material
