@@ -1,3 +1,8 @@
+2002-09-10  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		New version: 2.3.3
+		workaround for a gcc bug in BUILD
+
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		changed MAINTAINER
