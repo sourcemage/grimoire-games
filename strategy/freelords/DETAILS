@@ -1,14 +1,15 @@
            SPELL=freelords
-         VERSION=0.3.2
+         VERSION=0.3.3
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://download.freelords.org/sources/${SOURCE}
-          MD5[0]=29f0fc210a31594c1b9e86037732e85d
+          MD5[0]=acf08ac7ff7d88240943a6d28b2aa399
         WEB_SITE=http://www.freelords.org/
          ENTERED=20020826
          UPDATED=20040106
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT='A Warlords clone'
 cat << EOF
 A free Warlords(TM) clone for *nix.
