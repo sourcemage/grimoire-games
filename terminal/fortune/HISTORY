@@ -1,3 +1,7 @@
+2005-01-11 Andrew Stitt <astitt@sourcemage.org>
+	* BUILD: sedit a makefile so that it uses tr instead of rot,
+	  because the pre-packages rot command does not work on ppc.
+
 2004-10-14 Arjan Bouter <abouter@sourcemage.org>
 	* added desktop files
 
