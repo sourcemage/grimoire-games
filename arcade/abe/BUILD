@@ -1,3 +1,4 @@
+
 (
 I_DIR="${INSTALL_ROOT}/usr/share/games/abe" &&
 
@@ -19,5 +20,6 @@ do mkdir -p -m0777 ${I_DIR}/$i && install -m0666 $i/* ${I_DIR}/$i/
 done
 chown -R root.games ${I_DIR} &&
 echo -e "#! /bin/sh \n cd ${I_DIR} && \n exec ./abe \$*" >runabe &&
+mkdir -p /usr/games                                              &&
 install -m0755 -g games runabe ${INSTALL_ROOT}/usr/games/abe
 )  >  ${C_FIFO}  2>&1
