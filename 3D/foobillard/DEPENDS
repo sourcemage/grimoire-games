@@ -1,4 +1,5 @@
 depends  libpng     &&
 depends  SDL        &&
 depends  freetype2  &&
-depends  glut
+depends  glut       &&
+optional_depends "NVIDIA_headers" "--enable-bumpref" "--enable-bumpref=no" "to enable NVIDIA specific extensions to GL" 

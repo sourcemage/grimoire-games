@@ -1,8 +1,12 @@
+2003-07-09  hgg <hgreig@bigpond.net.au>
+
+		Update to 2.8 and remove patch
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!
 
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
