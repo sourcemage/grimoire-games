@@ -1,0 +1,4 @@
+depends gnome-libs &&
+depends ORBit      &&
+depends glib       &&
+depends gtk
