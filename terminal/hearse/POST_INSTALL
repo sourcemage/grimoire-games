@@ -1,0 +1,14 @@
+if [ -e /etc/nethack/hearse.conf ]; then
+  if query "Detected an existing hearse.conf file do you want to keep it" y
+  then
+     echo "Doing nothing"
+  else
+     mkdir -p /etc/nethack
+     cp ${SOURCE_DIRECTORY}/hearse.conf /etc/nethack/
+     echo "Edit your /etc/nethack/hearse.conf file"
+  fi
+else
+     mkdir -p /etc/nethack
+     cp ${SOURCE_DIRECTORY}/hearse.conf /etc/nethack/
+     echo "Edit your /etc/nethack/hearse.conf file"
+fi
