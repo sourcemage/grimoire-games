@@ -1,4 +1,7 @@
 (
+#gcc3.3 hack
+sedit '18a\
+\#include \<assert.h\>\' gameobject.cc &&
 
   ./configure  --build=${BUILD}      \
                --prefix=${INSTALL_ROOT}/usr         \
