@@ -4,9 +4,9 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://download.sourceforge.net/gnocatan/$SOURCE
         WEB_SITE=http://gnocatan.sourceforge.net/
-      MAINTAINER=v.merkatz@gmx.net
+      MAINTAINER=jerome.zago@insalien.org
          ENTERED=20020527
-         UPDATED=20020527
+         UPDATED=20020614
            SHORT="gnocatan is a gnome game based on The Settlers of Catan"
 cat << EOF
 Gnocatan is an Internet playable implementation of the Settlers of
