@@ -1,0 +1,2 @@
+depends  libggz    &&
+depends  expat

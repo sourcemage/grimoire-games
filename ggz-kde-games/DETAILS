@@ -1,9 +1,9 @@
            SPELL=ggz-kde-games
-         VERSION=0.0.6
+         VERSION=0.0.7
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=ceecbe7710650dbb1a49d6225f0313ea
+          MD5[0]=e257c2d85be03f470cceaaeb780ad2b7
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129

@@ -1,0 +1,17 @@
+           SPELL=libggz
+         VERSION=0.0.7
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://download.sourceforge.net/ggz/$SOURCE
+          MD5[0]=044ca37ecc71203dd66bb54edc2e60e8
+      LICENSE[0]=LGPL
+        WEB_SITE=http://ggz.sourceforge.net
+         ENTERED=20020423
+         UPDATED=20020423
+      MAINTAINER=julian@wongr.net
+           SHORT="GGZ Gaming Zone core libraries"
+
+cat << EOF
+This is the GGZ base library libggz, used by the GGZ Gaming Zone server
+(ggzd), the ggzcore library and other components.
+EOF

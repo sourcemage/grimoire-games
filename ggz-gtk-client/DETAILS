@@ -1,9 +1,9 @@
            SPELL=ggz-gtk-client
-         VERSION=0.0.6
+         VERSION=0.0.7
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=89a1c50e6b05bacca53e0b0d7dfc90b2
+          MD5[0]=7b4dd203ca634a9362822ac4cda49d80
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129

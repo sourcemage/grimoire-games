@@ -1,9 +1,9 @@
            SPELL=ggz-txt-client
-         VERSION=0.0.6
+         VERSION=0.0.7
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=fb0ab01b32da301d11536b6161a06f54
+          MD5[0]=5b049ac7d1aec4f81a291db7483c5efc
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129

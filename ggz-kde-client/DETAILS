@@ -1,9 +1,9 @@
            SPELL=ggz-kde-client
-         VERSION=0.0.6
+         VERSION=0.0.7
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=e7e0f3f7c4d71aef749d875b7e28f5e9
+          MD5[0]=e85282d8f3a5d531cfc097e7e3ce224e
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129

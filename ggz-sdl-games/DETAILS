@@ -1,15 +1,15 @@
-           SPELL=ggz-grubby
+           SPELL=ggz-sdl-games
          VERSION=0.0.7
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=4f3d1c2fa8f215b536f460bd9bc97a5b
+          MD5[0]=75efdcc9b67e28ec8e85485768f62780
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129
          UPDATED=20021129
       MAINTAINER=eric@sandall.us
-           SHORT="GGZ Gaming Zone chatbot"
+           SHORT="GGZ Gaming Zone KDE game modules"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and
 utilities required to run the GGZ game servers.
