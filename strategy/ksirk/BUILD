@@ -8,6 +8,7 @@ sedit "s/\$(DESTDIR)\$(KDE_ICON)\/hi48-app-ksirk.png/\$(DESTDIR)\$(kde_icondir)\
                $OPTS                 &&
   make                               &&
   prepare_install                    &&
+  mkdir -p ${INSTALL_ROOT}/usr/share/icons/hicolor/16x16/apps &&
   make    install
 
 )  >  $C_FIFO  2>&1
