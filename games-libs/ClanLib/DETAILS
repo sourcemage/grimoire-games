@@ -11,7 +11,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\-1/}
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Multi-Platform game development library"
 cat << EOF
-Clanlib is a medium level development kit.  At its lowest levell it
+Clanlib is a medium level development kit.  At its lowest level it
 provides a platform independent way of dealing with display, sound,
-input, networking, files, threadding and such.
+input, networking, files, threading and such.
 EOF
