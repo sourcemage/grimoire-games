@@ -37,7 +37,7 @@ rm  -f  $SPELL_CONFIG
   mkdir  ${I_DIR}/roms                      &&
   mkdir  ${I_DIR}/samples                   &&
   mkdir  ${I_DIR}/snap                      &&
-  chown  -R  root.games  ${I_DIR}           &&
-  cp  -r  ctrlr  ${I_DIR}
+  cp  -r  ctrlr  ${I_DIR}                   &&
+  chown  -R  root.games  ${I_DIR}
 
 ) > $C_FIFO 2>&1
