@@ -10,4 +10,9 @@ fi  &&
 optional_depends  bzip2                                \
                   "--enable-bzip2"                     \
                   "--disable-bzip2"                    \
-                  "to use bzip2 for data compression"
+                  "to use bzip2 for data compression"  &&
+
+optional_depends  geoip                                  \
+                  "--enable-geoip"                       \
+                  "--disable-geoip"                      \
+                  "for geographical IP-based locations"

@@ -1,3 +1,8 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0.2
+	* DEPENDS: Optionally depends on geoip
+	* BUILD: Added to install binary to /usr/games
+
 2004-08-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0
 	  Added BUILD_API=2

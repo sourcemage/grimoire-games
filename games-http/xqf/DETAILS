@@ -1,9 +1,9 @@
            SPELL=xqf
-         VERSION=1.0
+         VERSION=1.0.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-          MD5[0]=f6b973b70ac2479d675d17237f543c54
+          MD5[0]=aeaeba6a3be378d97fca188ebedbddf0
         WEB_SITE=http://www.linuxgames.com/xqf
          ENTERED=20020320
          UPDATED=20031128
