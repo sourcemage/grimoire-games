@@ -1,3 +1,6 @@
+2005-01-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Missing .$SFX in it...
+
 2005-01-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version bump to 2.0.0, BUILD_API=2
 	* BUILD: converted to buildapi 2
