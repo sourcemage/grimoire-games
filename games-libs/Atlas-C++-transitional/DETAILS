@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/-transitional/}-$VERSION
           MD5[0]=f6151922231d0b17cba737fc7d219556
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20040409
-         UPDATED=20040409
+         UPDATED=20040526
       LICENSE[0]=LGPL
            SHORT="Standard implementation of the WorldForge Atlas protocol"
 cat << EOF
