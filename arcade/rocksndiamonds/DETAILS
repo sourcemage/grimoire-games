@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
           MD5[0]=53aeae6c00f128017ba119960e788483
          ENTERED=20021211
          UPDATED=20031009
+       BUILD_API=2
            SHORT="ROCKS'N'DIAMONDS is a 'Boulderdash'(Commodore C64) or 'Emerald Mine'(Amiga) clone."
 cat << EOF
 This is a nice little game with color graphics and sound for your

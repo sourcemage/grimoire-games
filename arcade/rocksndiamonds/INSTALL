@@ -1,0 +1,8 @@
+    mkdir  -p  /usr/games
+    cp  rocksndiamonds  /usr/games
+    cp  rocksndiamonds.1  /usr/man/man1
+    mkdir  -p  /usr/share/games/rocksndiamonds
+    cp  -R  graphics levels music sounds  /usr/share/games/rocksndiamonds
+    mkdir  -p  /var/games/rocksndiamonds/scores
+    chgrp  -R  games  /var/games/rocksndiamonds
+    chmod  -R  g+w    /var/games/rocksndiamonds
