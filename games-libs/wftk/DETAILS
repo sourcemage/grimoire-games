@@ -2,7 +2,7 @@
          VERSION=${VERSION:=0.7.1}
 if [ "${CVS}" = "yes" ];  then
          VERSION=cvs
-          SOURCE=$SPELL-$VERSION.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/wftk
   FORCE_DOWNLOAD=1
           MD5[0]="IGNORE"
