@@ -1,8 +1,10 @@
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.55
-	  SOURCE no longer available in .bz2 form
+	  SOURCE_DIRECTORY still uses 1.50 for VERSION
 	  Added BUILD_API=2
-	* BUILD: Converted to build_api 2 and using ./configure
+	* BUILD: Converted to build_api 2
+	  Now uses ./configure
+	  Fix DATA_PATH for jumpbump.dat (doesn't use --datadir)
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
