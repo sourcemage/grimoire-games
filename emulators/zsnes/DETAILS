@@ -1,10 +1,10 @@
            SPELL=zsnes
-         VERSION=1.40
+         VERSION=1.42
           SOURCE=${SPELL}${VERSION/./}src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION/\./_}
    SOURCE_URL[0]=$SOURCEFORGE_URL/zsnes/$SOURCE
-          MD5[0]=3688bcbca9c2ebd54c9c983822bc7e04
-        WEB_SITE=http://zsnes.com
+          MD5[0]=cc05322a81016c386766534b8b7ef870
+        WEB_SITE=http://zsnes.com/
          ENTERED=20020312
          UPDATED=20021018
       LICENSE[0]=GPL
