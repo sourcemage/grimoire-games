@@ -1,3 +1,7 @@
+2004-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added to the spell
+	* CONFIGURE, BUILD: modified to use persistant functions
+
 2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 0.84.1
 
