@@ -23,20 +23,20 @@ rm  -f  $SPELL_CONFIG
         BINDIR=${INSTALL_ROOT}/usr/games    \
         -f  makefile.unix                   \
         install                             &&
-  mkdir  -p  ${I_DIR}                       &&
-  mkdir  ${I_DIR}/artwork                   &&
-  mkdir  ${I_DIR}/cabinets                  &&
-  mkdir  ${I_DIR}/cfg                       &&
-  mkdir  ${I_DIR}/flyers                    &&
-  mkdir  ${I_DIR}/hi                        &&
-  mkdir  ${I_DIR}/icons                     &&
-  mkdir  ${I_DIR}/ini                       &&
-  mkdir  ${I_DIR}/inp                       &&
-  mkdir  ${I_DIR}/memcard                   &&
-  mkdir  ${I_DIR}/nvram                     &&
-  mkdir  ${I_DIR}/roms                      &&
-  mkdir  ${I_DIR}/samples                   &&
-  mkdir  ${I_DIR}/snap                      &&
+  mkdir -p  ${I_DIR}                       &&
+  mkdir -p ${I_DIR}/artwork                   &&
+  mkdir -p ${I_DIR}/cabinets                  &&
+  mkdir -p ${I_DIR}/cfg                       &&
+  mkdir -p ${I_DIR}/flyers                    &&
+  mkdir -p ${I_DIR}/hi                        &&
+  mkdir -p ${I_DIR}/icons                     &&
+  mkdir -p ${I_DIR}/ini                       &&
+  mkdir -p ${I_DIR}/inp                       &&
+  mkdir -p ${I_DIR}/memcard                   &&
+  mkdir -p ${I_DIR}/nvram                     &&
+  mkdir -p ${I_DIR}/roms                      &&
+  mkdir -p ${I_DIR}/samples                   &&
+  mkdir -p ${I_DIR}/snap                      &&
   cp  -r  ctrlr  ${I_DIR}                   &&
   chown  -R  root.games  ${I_DIR}
 

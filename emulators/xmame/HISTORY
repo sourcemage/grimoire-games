@@ -1,3 +1,6 @@
+2004-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: Bug 7045 replaced mkdir's with mkdir's -p
+
 2004-06-22 Jason Flatt <jflatt@sourcemage.org>
 	* DETAILS: Updated to 0.83.1
 	  Removed MAINTAINER.
