@@ -6,6 +6,8 @@
          WEB_SITE=http://www.linux-games.com
          ENTERED=20010922
          UPDATED=20010922
+          MD5[0]=979ff8202f669e44ae1ab47b7cf8d382
+      LICENSE[0]=GPL
       MAINTAINER=pradierdavid@yahoo.fr
            SHORT="blackbox is game where one guesses where crystals are hidden."
 cat << EOF
