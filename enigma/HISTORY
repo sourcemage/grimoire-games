@@ -1,5 +1,10 @@
-History for the enigma spell
-============================
+2002-06-30  Jerome Zago <jerome.zago@insalien.org>
 
-            Spell was submitted by nazadus@swbell.net
-20020320    Spell was accepted by <pradierdavid@yahoo.fr>
+		Better FHS compliance: binaries now go into /usr/games, static
+		data into /usr/share/games/enigma, and variable data into
+		/var/games/enigma (thanks Joel Mayes <bluebird@optushome.com.au>
+		for your patch). This fixes bug #282.
+
+2002-03-20  Nazadus <nazadus@swbell.net>
+
+		New spell.

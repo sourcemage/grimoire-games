@@ -5,9 +5,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/enigma/$SOURCE
         WEB_SITE=http://www.chiark.greenend.org.uk/~sgtatham/enigma
          ENTERED=20020320
-         UPDATED=20020320
+         UPDATED=20020630
            SHORT="A puzzle game involving pushing stuff around."
-      MAINTAINER=nazadus@swbell.net
+      MAINTAINER=jerome.zago@insalien.org
 cat << EOF
 Enigma is a puzzle game involving falling blocks, exploding bombs, and
 pushing stuff around. It has elements of Boulderdash and elements of
