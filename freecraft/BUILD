@@ -5,12 +5,15 @@
     then  install  -d  -m  755  -g  bin  /usr/games
   fi
 
-  if  [  !  -d  /var/lib/games  ]
-    then  install  -d  -m  755  -g  games  /var/lib/games
+  if  [  !  -d  /usr/share/games/freecraft  ]
+    then  install  -d  -m  755  -g  games  /usr/share/games/freecraft
   fi
 
   # Install game binaries to /usr/games, not /usr/bin
   sedit  's:\$(PREFIX)/bin:\$(PREFIX)/games:'  Makefile
+
+  # Install game libraries to /usr/share/games/freecraft, not /usr/lib/games/freecraft
+  sedit  's:\$(PREFIX)/lib/games:\$(PREFIX)/share/games:g'  Makefile
 
   case  $VIDEO  in
       S|s)  cp  ${SCRIPT_DIRECTORY}/Rules.make.SDL  ./Rules.make
@@ -61,8 +64,8 @@
 
   make                             &&
   prepare_install                  &&
-  make  install                    &&
-  cd  /usr/lib/games/freecraft     &&
+  make  PREFIX=/usr  install       &&
+  cd  /usr/share/games/freecraft   &&
   # Now, unpack the media files...
   # Should update the spell to optionally use
   # the CD, similar to quake2
@@ -71,6 +74,8 @@
   for i in `find ./ -type f|grep gz`
   do
     gzip -d $i
-  done
+  done                             &&
+  chmod  755  *  -R                &&
+  chown  root.games  *  -R
 
 )  >  $C_FIFO  2>&1

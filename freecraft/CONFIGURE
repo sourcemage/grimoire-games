@@ -6,7 +6,7 @@ if  !  grep  -q  'CONFIGURED="y"'  ${SPELL_CONFIG}  ;  then
   message  "B-SDL/SVGALIB Support"
   message  "Which video mode do you which to compile for: ${DEFAULT_COLOR}"
 
-  read   -t  $PROMPT_DELAY -e
+  read   -t  ${PROMPT_DELAY} -e
 
   VIDEO=${REPLY:=X}
   echo  "VIDEO=${VIDEO}"  >>  ${SPELL_CONFIG}

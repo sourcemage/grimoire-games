@@ -1,13 +1,6 @@
-2002-10-31  Eric Sandall <eric@sandall.us>
+2002-11-29  Eric Sandall <eric@sandall.us>
 
-		Now creates /var/lib/games, if doesn't exist,
-		with root.games permissions
-
-		Unpacks compressed media files from the $SOURCE2
-
-		Updated UPDATED so users have necessary directories
-		and uncompressed media to play (no errors, now,
-		when loading freecraft)
+		Fixed BUILD some more.  ;)
 
 2002-10-24  Eric Sandall <eric@sandall.us>
 
