@@ -1,7 +1,7 @@
            SPELL=freecraft
          VERSION=030311
-          SOURCE=${SPELL}-${VERSION}-src.tar.bz2
-         SOURCE2=fcmp-030311.tar.bz2
+          SOURCE=${SPELL}-${VERSION}-src.tar.gz
+         SOURCE2=fcmp-030311.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
   SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}

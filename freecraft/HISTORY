@@ -1,3 +1,7 @@
+2003-05-21  Seth Woolley <seth@tautology.org>
+
+		Changed .bz2 to .gz for NO_FUZZ fix in SOURCE and SOURCE2.
+
 2003-05-19 hgg <hgreig@bigpond.net.au>
 
 		Update to 1.18 (using real version numbering)
