@@ -1,0 +1,15 @@
+           SPELL=freecraft
+         VERSION=020630
+          SOURCE=$SPELL-$VERSION-complete-linux.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-complete
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=ca817b2938ab7bea9314611aede6db85
+        WEB_SITE=http://www.freecraft.org/
+         ENTERED=20020826
+         UPDATED=20020826
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT='Free cross-platform RTS engine based on Warcraft'
+cat << EOF
+ FreeCraft is a free cross-platform real-time strategy gaming engine. It is possible to play against human opponents over LAN, internet, or against the computer. The engine can be used to build C&C, WC2, SC and AOE-like real-time strategy (RTS) games. It successfully runs under Linux, BSD, BeOS, MacOS/X, MacOS/Darwin and MS Windows (Windows XP is not supported)
+EOF

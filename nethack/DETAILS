@@ -1,0 +1,16 @@
+           SPELL=nethack
+         VERSION=3.4.0
+          SOURCE=$SPELL-340.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.nethack.org/pub/nethack/nh340/src/$SOURCE
+          MD5[0]=ae4340a7614ae99b18c4110cddd193ed
+        WEB_SITE=http://www.nethack.org/
+         ENTERED=20020326
+         UPDATED=20020326
+      LICENSE[0]=NETHACK
+      MAINTAINER=nealbirch@attbi.com
+           SHORT="The latest incarnation of Nethack for X."
+cat << EOF
+Nethack is an adventure game with a long history. Setup is for X, as it was meant to be played.
+NetHack 3.4.0 is an enhancement to the dungeon exploration game NetHack.It is a distant descendent of Rogue and Hack, and a direct descendent of NetHack 3.3.
+EOF
