@@ -14,7 +14,7 @@
        LICENSE[0]=UNKNOWN
 	   REJECT="binary only game"
        MAINTAINER=hgreig@bigpond.net.au
- 	    SHORT="America's Army the full Linux version(316M download, 900M INSTALLED"
+ 	    SHORT="America's Army the full Linux version(316M download, 900M INSTALLED)"
 cat << EOF
 Nobody knows military simulations like the world's premier land force, the U.S. Army. So when the 
 Army began making a simulation to let civilians experience the barracks to the battlefields, it 
@@ -23,17 +23,11 @@ crawled through obstacle courses, shot weapons, parachute jumped, and visited th
 to let you play Army in the most realistic way ever depicted in a computer game.
 
 The recommended requirements for the game are: 
-
 	Pentium4 1.4GHz (or equivalent)
- 
 	256MB RAM
- 
 	64MB GeForce2 or similar 3D card
- 
 	1GB disk space
- 
 	Broadband network connection
- 
 EOF
  
 
