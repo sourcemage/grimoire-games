@@ -1,12 +1,12 @@
             SPELL=crimson
-          VERSION=0.2.7
+          VERSION=0.2.8
            SOURCE=$SPELL-$VERSION.tar.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_URL[0]=http://www.lanipage.de/jens/crimson/$SOURCE
          WEB_SITE=http://www.lanipage.de/jens/
           ENTERED=20020610
           UPDATED=20020619
-           MD5[0]=b0a4c5a4a64ce528589bf6aa6eea1a5b
+           MD5[0]=2fb6d287ce2fe901a8a39446375e6c7d
        LICENSE[0]=ART
        MAINTAINER=g.clay@warwick.ac.uk
             SHORT="Crimson Fields is a tactical war game in the tradition of Battle Isle"

@@ -2,22 +2,7 @@
 
   I_DIR="/usr/share/games/${SPELL}"
 
-  cd  src                                       &&
-  #  Patch bugs in freelords source code
-  #  No longer needed since v20020827
-#  sedit  's/-Werror/-Wno-deprecated/'                     Makefile           &&
-#  sedit  's/-Werror/-Wno-deprecated/'                     common/Makefile    &&
-#  sedit  's/-Werror/-Wno-deprecated/'                     graphics/Makefile  &&
-#  bzcat  $SCRIPT_DIRECTORY/temple.h.diff.bz2              |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/armyset_army.cpp.diff.bz2      |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/mapset_tile.cpp.diff.bz2       |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/army.cpp.diff.bz2              |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/armysetlist.cpp.diff.bz2       |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/action.cpp.diff.bz2            |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/RuinSearchDialog.cpp.diff.bz2  |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/cityinfo.h.diff.bz2            |  patch  -p0      &&
-#  bzcat  $SCRIPT_DIRECTORY/main.cpp.diff.bz2              |  patch  -p0      &&
-
+  cd  src                                                       &&
   make                                                          &&
   prepare_install                                               &&
   rm  -rf  common/CVS  graphic/CVS                              &&

@@ -1,3 +1,11 @@
+2002-11-01  Eric Sandall <eric@sandall.us>
+
+		Added SDL and SDL_image as dependencies
+
+		Added MENU_* entries
+
+		Removed old, invalid patches
+
 2002-10-31  Eric Sandall <eric@sandall.us>
 
 		Updated to install into /usr/share/games intead

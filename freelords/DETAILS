@@ -10,6 +10,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-SDL-${VERSION}
          UPDATED=20020826
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
+    MENU_ITEM[0]="Free Lords"
+    MENU_EXEC[0]=${SPELL}
+    MENU_DESC[0]=${SHORT}
            SHORT='A Warlords clone'
 cat << EOF
 A free Warlords(TM) clone for *nix.
