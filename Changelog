@@ -1,3 +1,13 @@
+2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* 3D/TORCS: Removed deprecated
+	* flight/SearchAndRescue: Renamed to flight/searchandrescue
+	* games-libs/SDLmm: Renamed to games-libs/sdlmm
+	* games-z-rejected/AmericasArmy: Renamed to games-z-rejected/americasarmy
+	* games-z-rejected/eClient: Rendamed to games-z-rejected/eclient
+	* shooters/AlephOne-m2: Renamed to shooters/alephone-m2
+	* shooters/AlephOne-minf: Renamed to shooters/alephone-minf
+	* strategy/ASC: Removed deprecated
+
 2005-03-16 Eric Sandall <eric@sandall.us>
 	* arcade/CriticalMass: Renamed to arcade/criticalmass
 	* arcade/Maelstrom: Removed deprecated spell
