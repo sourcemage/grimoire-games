@@ -1,12 +1,9 @@
 2004-07-20 David C. Haley <dhaley@hot.rr.com>
 	* DEPENDS: added jam
-
 	* DETAILS: version bump to 0.98r003
 	  compression switched from gzip -> bzip2
-
 	* BUILD: Commented out previously written code under .configure
 	  added jam commands (jam, jam install)
-
 	* HISTORY: cleaned up file just a bit
 
 2004-01-07 hgg <hgreig@bigpond.net.au>
