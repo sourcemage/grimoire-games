@@ -1,3 +1,8 @@
+2002-09-07  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added USEGCC2 file
+		BUILD fixes  (fixes BUG #877)
+
 2002-09-04  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added MD5 and LICENSE fields

@@ -1,4 +1,5 @@
-depends  libpng	&&
-depends  glut	&&
-depends  SDL	&&
+depends  autoconf &&
+depends  libpng	  &&
+depends  glut	  &&
+depends  SDL	  &&
 depends  SDL_mixer

@@ -1,5 +1,7 @@
 (
 
+  aclocal                               &&
+  autoconf                              &&
   ./configure  --prefix=/usr        	\
                --bindir=/usr/games	\
                --mandir=/usr/share/man	&&
