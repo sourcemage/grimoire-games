@@ -1,3 +1,9 @@
+2003-05-05  hgg	 <hgreig@bigpond.net.au>
+
+		Fixed BUG 3272 (BUILD install section)
+
+		Added MD5[0]=ignore to PRE_BUILD to allow for unattended builds
+
 2003-03-29  Eric Sandall <eric@sandall.us>
 
 		Added to games
