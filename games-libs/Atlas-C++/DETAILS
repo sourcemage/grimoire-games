@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20020915
          UPDATED=20020915
-      LICENSE[0]=GPL
+      LICENSE[0]=LGPL
       MAINTAINER=eric@sandall.us
            SHORT="Standard implementation of the WorldForge Atlas protocol"
 cat << EOF
