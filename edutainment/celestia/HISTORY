@@ -1,3 +1,6 @@
+2003-11-27 hgg <hgreig@bigpond.net.au>
+	* BUILD remove the -lXi hack
+
 2003-10-10 hgg <hgreig@bigpond.net.au>
 	* BUILD: fix configure so it doesn't fail for xfree86-libs
 	* HISTORY: convert to new format
