@@ -1,0 +1,5 @@
+#!/bin/bash
+PWD=$(pwd)
+cd /usr/share/games/duke3d
+exec ./duke3d $@
+cd $PWD

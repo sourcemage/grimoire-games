@@ -1,0 +1,6 @@
+message ${SPELL_COLOR}Enemy Territory will not download on a standard SMGL system as /tmp is only 256M \\n\
+You must increase /tmp for this package to download. \\n\
+Answer no to the next question and then issue this command \\n\
+${RED}'mount -t tmpfs tmpfs -o remount,size=512m /tmp' ${SPELL_COLOR}\\n\
+Then after the spell has downloaded and installed restore /tmp to the defaults.${DEFAULT_COLOR} &&
+sleep 20 

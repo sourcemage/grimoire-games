@@ -1,0 +1,3 @@
+depends  kdelibs   &&
+depends  autoconf  &&
+depends  automake

@@ -1,0 +1,11 @@
+2004-04-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Minor bugfixes
+	* Dumped patch for sedit
+	* Added to the games grimoire
+
+2004-04-12 Mantar <mantar.feyelno@sbcglobal.net>
+	* FIXED: Patched default config file to use SMGL's nethackdir
+
+2004-04-11 Mantar <mantar.feyelno@sbcglobal.net>
+	* DEPENDS, DETAILS, HISTORY: created this spell
+

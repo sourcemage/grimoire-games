@@ -1,0 +1,46 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.7.0
+	  SOURCE no longer uses -src
+	  SOURCE_DIRECTORY now has -tools before $VERSION
+	  Shortened reworded SHORT
+	  Added BUILD_API=2
+	  Renamed CVS to SCUMMVM_TOOLS_CVS
+	* PREPARE: Converted to config_query
+	  Renamed variable to SCUMMVM_TOOLS_CVS
+	* DEPENDS: Renamed CVS to SCUMMVM_TOOLS_CVS
+	  Depends on any provider of CVS
+	* BUILD: Converted to build_api 2
+	  Use sedit instead of cp and sed
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+
+2004-07-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version bump 0.6.1
+
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version bump from 0.5.0 to 0.6.0
+	* BUILD: removed the 6 in descumm6 since it doesn't exist
+
+2004-01-13 hgg <hgreig@bigpond.net.au>
+	* DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else
+	  ... fi. Devel sorcery broke on 
+	  DEPENDS using conditionals bug 5466
+
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* ALL: merging of cvs into regular (putting my money where my mouth is)
+
+2003-08-02 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.5.0
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-27 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to version 0.4.1
+
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Changed to show current subversion
+
+2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell
+

@@ -1,0 +1,2 @@
+depends  libgnomeui          &&
+depends  ggz-client-libs

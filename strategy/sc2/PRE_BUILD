@@ -1,0 +1,13 @@
+default_pre_build              &&
+cd  ${SOURCE_DIRECTORY}        &&
+mkdir -p content               &&
+cd   content                   &&
+unpack  ${SOURCE2}  ${MD5[1]}  &&
+if [ -f $SOURCE_CACHE/$SOURCE3 ] ; then 
+unpack  ${SOURCE3}  ${MD5[2]}  
+fi                             &&
+if [ -f $SOURCE_CACHE/$SOURCE4 ] ; then 
+unpack  ${SOURCE4}  ${MD5[3]} 
+fi                             &&
+cd  ${SOURCE_DIRECTORY}        
+

@@ -1,0 +1,23 @@
+#!/bin/env bash
+
+if ! [ -d $HOME/.openttd ]; then
+  mkdir -p $HOME/.openttd
+fi &&
+cd $HOME/.openttd &&
+for f in /usr/lib/openttd/*; do
+  t=$(basename $f) &&
+  if ! [ -e $t ]; then
+    ln -s $f $t
+  fi
+done &&
+if ! [ -d autosave ]; then
+  mkdir -p autosave
+fi &&
+for f in sample.cat trg{1,c,h,i,t}r.grf; do
+  if ! [ -e data/$f ]; then
+    1>&2 echo "Warning: '$f' not found in data."
+    1>&2 echo "         Please install Transport Tycoon Deluxe files."
+    exit 1
+  fi
+done &&
+./ttd "${@}"

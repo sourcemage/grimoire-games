@@ -1,0 +1,17 @@
+           SPELL=atlas-c++-transitional
+         VERSION=0.4.94
+          SOURCE=Atlas-C++-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/transitional/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/Atlas-C++/transitional/${SOURCE}
+          MD5[0]=483450fb958014951d05b3daefed9ccc
+        WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
+         ENTERED=20040409
+         UPDATED=20040409
+      LICENSE[0]=LGPL
+       BUILD_API=2
+           SHORT="Standard implementation of the WorldForge Atlas protocol"
+cat << EOF
+Atlas C++ is the standard implementation of the WorldForge Atlas protocol. It is currently being developed in parallel with a stable branch, and the development code maintained separatly.
+EOF

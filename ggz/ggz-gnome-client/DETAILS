@@ -1,0 +1,15 @@
+           SPELL=ggz-gnome-client
+         VERSION=0.0.8
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=0c5bbc5cdf7c8367c2c66834d75d0329
+      LICENSE[0]=LGPL
+        WEB_SITE=http://ggzgamingzone.org
+         ENTERED=20030606
+         UPDATED=20040216
+           SHORT="GGZ Gaming Zone GNOME client"
+cat << EOF
+GGZ Gaming Zone server libraries provides the common procedures and
+utilities required to run the GGZ game servers.
+EOF

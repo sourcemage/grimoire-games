@@ -1,0 +1,14 @@
+2005-01-18 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updates for Build API 2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image, SDL_net, and SDL_mixer renamed to sdl*
+	  SDL removed as the above depend on sdl
+	  Formatted to Guru Handbook
+
+2004-04-24 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to the games grimoire arcade/njam
+
+2004-04-24 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY, PRE_BUILD: Spell created
+

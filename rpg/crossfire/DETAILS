@@ -1,0 +1,20 @@
+           SPELL=crossfire
+         VERSION=1.6.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
+          MD5[0]=c26bea9c0f2d87883d39c0008a3bf30f 
+        WEB_SITE=http://crossfire.real-time.com
+         ENTERED=20011104
+         UPDATED=20011104
+       BUILD_API=2
+      LICENSE[0]=GPL
+           SHORT="Server for a multi-player graphical MUD."
+cat << EOF
+Crossfire is a multi-player graphical arcade and adventure game made
+for X. It has certain flavours from other games, especially Gauntlet
+and the rogue-like games (Nethack, Moria, Angband, and Ragnarok). Any 
+number of players can move around in their own window, finding and
+using items and battling monsters. They can choose to cooperate or
+compete in the same world.
+EOF

@@ -1,0 +1,17 @@
+        PKG_NAME=3dduke
+	   SPELL=duke3d-shareware
+         VERSION=1.3d
+     PKG_VERSION=13
+	  SOURCE=${PKG_NAME}${PKG_VERSION}.zip
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG_NAME}-install-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.3drealms.com/share/$SOURCE
+          MD5[0]=04e4ca70b8a2d59ed56c451c5c1d5d39
+        WEB_SITE=http://www.3drealms.com/duke3d/
+         ENTERED=20040422
+          REJECT="is non-source"
+      LICENSE[0]=shareware
+           SHORT="First episode of Duke Nukem 3d"
+cat << EOF
+Aliens have landed in futuristic Los Angeles, and it's
+up to Duke to bring the pain and show them the door.
+EOF

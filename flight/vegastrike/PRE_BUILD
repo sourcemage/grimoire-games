@@ -1,0 +1,10 @@
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+unpack $SOURCE ${MD5[0]} &&
+mv $SOURCE_DIRECTORY/$SPELL-$VERSION-installer/* . &&
+rm -r $SOURCE_DIRECTORY/$SPELL-$VERSION-installer/ &&
+tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-source.tgz &&
+tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-setup.tgz &&
+tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-data.tgz &&
+cd $SOURCE_DIRECTORY &&
+patch -p1 < $SCRIPT_DIRECTORY/gl_state.cpp.diff

@@ -1,0 +1,2 @@
+depends  sdl_mixer  &&
+depends  sdl_image

@@ -1,0 +1,32 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  Removed SDL as sdl_mixer depends on sdl
+	  Formatted to Guru Handbook
+	* HISTORY: Formatted to Guru Handbook
+
+2003-07-29 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update gcc check so it actually works :-)
+
+2003-07-02 hgg <hgreig@bigpond.net.au>
+	* BUILD: Check for gcc3.3 before applying assert.h fixes
+
+2003-06-29 hgg <hgreig@bigpond.net.au>
+	* BUILD: Fix for gcc3.3
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2002-11-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.00
+
+2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Upped to version 0.99.1RC2
+	  Added md5sum and license fields
+	  Changed maintainer
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
+

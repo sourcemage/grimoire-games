@@ -1,0 +1,8 @@
+TONG_DIR=/usr/share/games/$SPELL                      &&
+install  -d  -m  755  -o  games  -g  root  $TONG_DIR  &&
+chown  -R  games.root *                               &&
+cp  -r  media  $TONG_DIR                              &&
+cp  tong       $TONG_DIR                              &&
+install  -m  755  -o  games  -g  root                 \
+  $SCRIPT_DIRECTORY/tong  /usr/games                  &&
+chmod  u+s  /usr/games/tong

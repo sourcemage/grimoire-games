@@ -1,0 +1,22 @@
+Xaw3dInstalled=off
+GtkInstalled=off
+Gtk2Installed=off
+if  spell_ok  gtk+2; then
+  Gtk2Installed=on
+elif  spell_ok gtk+; then
+  GtkInstalled=on
+elif  spell_ok Xaw3d; then
+  Xaw3dInstalled=on
+fi
+if  !  grep  -q  "CLIENT="  $SPELL_CONFIG; then
+  if query "build gtk+2 CLIENT" y
+    then   CLIENT=gtk2
+     elif query "build gtk+ CLIENT" y
+        then CLIENT=gtk
+	elif query "build Xaw3d CLIENT" y
+	 then CLIENT=xaw3d
+        else CLIENT=yes
+  fi		
+  echo CLIENT=$CLIENT >>  $SPELL_CONFIG
+fi
+. $SPELL_CONFIG

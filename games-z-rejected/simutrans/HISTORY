@@ -1,0 +1,15 @@
+2004-09-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, INSTALL: converted to BUILD_API 2, create /usr/games if it
+	  doesn't exist
+	* DETAILS: set ARCHIVE=off, the spell only copies files
+	* UNATTEND_SAFE: added
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to grimoire
+
+2004-02-08 Vladimir Navrat <vn158@seznam.cz>
+	* Created spell, TODO: check depends
+

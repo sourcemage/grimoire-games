@@ -1,0 +1,5 @@
+cd ${SOURCE_DIRECTORY}
+install -pv $SCRIPT_DIRECTORY/bos ${INSTALL_ROOT}/usr/games
+mkdir -pv ${INSTALL_ROOT}/usr/share/games/stratagus/bos
+cp -rfv data ${INSTALL_ROOT}/usr/share/games/stratagus/bos/
+

@@ -1,0 +1,6 @@
+depends  freetype2  &&
+depends  GLUT       &&
+depends  sdl_net    &&
+depends  sdl_mixer  &&
+depends  wxGTK      &&
+depends  automake

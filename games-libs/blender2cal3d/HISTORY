@@ -1,0 +1,6 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Python renamed to python in stable
+
+2003-10-09 Eric Sandall <eric@sandall.us>
+	* Created spell
+

@@ -1,0 +1,26 @@
+           SPELL=scummvm_tools
+         VERSION=${VERSION:=0.7.0}
+if [ "$SCUMMVM_TOOLS_CVS" = "y" ] ; then
+         VERSION=cvs 
+  FORCE_DOWNLOAD=1 
+          SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scummvm:tools 
+          MD5[0]="IGNORE" 
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src 
+else
+          SOURCE=scummvm-tools-${VERSION}.tar.bz2 
+   SOURCE_URL[0]=$SOURCEFORGE_URL/scummvm/$SOURCE 
+          MD5[0]=acccb4575f9aaf2adeae655dd2aefa82
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/scummvm-tools-${VERSION}
+fi
+        WEB_SITE=http://www.scummvm.org/
+         ENTERED=20030319
+         UPDATED=20040108
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Tools for the SCUMM engine used in various Lucas Arts games"
+cat << EOF
+ScummVM is an implementation of the SCUMM (Script Creation Utility for Maniac Mansion) engine used in 
+various Lucas Arts games such as Monkey Island and Day of the Tentacle. Also ScummVM is capable of 
+playing several non-SCUMM games, at the moment this includes Simon The Sorcerer.
+EOF

@@ -1,0 +1,18 @@
+           SPELL=neverball
+         VERSION=1.4.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://icculus.org/neverball/$SOURCE
+        WEB_SITE=http://icculus.org/neverball/
+         ENTERED=20040419
+         UPDATED=20040419
+          MD5[0]=ff00a98d482702bab1b9c5a64fc2d5c6
+      LICENSE[0]=GPL
+           SHORT="Roll through an obstacle course or play miniature golf"
+cat << EOF
+Tilt the floor to roll a ball through an obstacle course
+before time runs out. Neverball is part puzzle game, part
+action game, and entirely a test of skill.
+Also found here is Neverputt, a hot-seat multiplayer 
+miniature golf game using the physics and graphics of Neverball. 
+EOF

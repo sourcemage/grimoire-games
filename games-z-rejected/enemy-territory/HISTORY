@@ -1,0 +1,36 @@
+2005-01-15 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: updated to version 2.56 patch 2
+
+2004-07-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAINTAINER
+	  Cleaned up spacing
+	* PRE_BUILD: Remove rejected query
+
+2003-09-13 hgg <hgrreig@bigpond.net.au>
+	* add z-rejected warnings and such
+
+2003-06-29 hgg <hgreig@bigpond.net.au>
+	* Update BUILD to make the kdelnk dir
+
+2003-06-28 hgg <hgreig@bigpond.net.au>
+	* changed /tmp remount to have "," not -o
+
+2003-06-27 hgg <hgreig@bigpond.net.au>
+	* fixed tmp remount command...
+	* Added minimum system requirements to DETAILS
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-06-17 hgg <hgreig@bigpond.net.au>
+	* Remove log file (left in by mistake,never needed)
+	* Add warning in prepare until i work around the /tmp issue.
+
+2003-06-17 Chris Brien <cbrien@sourcemage.org>
+	* Fixed the kdelnk.
+
+2003-06-15 hgg <hgreig@bigpond.net.au>
+	* Created this spell. 
+	* Custom POST_BUILD to stop CACHE
+	* Invented new license type for id
+

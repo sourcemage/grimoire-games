@@ -1,0 +1,10 @@
+2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: changed the url as per bug #6248
+	* DETAILS: removed maintainer line
+
+2003-11-01 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Changed requires to depends, and uppercase
+
+2003-09-19 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* created the spell
+

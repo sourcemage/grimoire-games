@@ -1,0 +1,18 @@
+           SPELL=globulation2
+         VERSION=0.8.8
+          SOURCE=glob2-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-$VERSION
+   SOURCE_URL[0]=http://www.ysagoon.com/glob2/data/$SOURCE
+          MD5[0]=9ea6640465285ff1e13749e4d7ee639a
+        WEB_SITE=http://www.ysagoon.com/glob2/
+         ENTERED=20040814
+         UPDATED=20040814
+      LICENSE[0]=GPL
+           SHORT="Globulation 2 is an innovative high quality Real-Time Strategy"
+cat << EOF
+Globulation 2 is an innovative high quality Real-Time Strategy [RTS],
+which minimizes micro-management by automatically assigning tasks to
+the units. The player has to choose the number of units he wants for
+the different tasks, and the units will do their best to satisfy the
+requests. This allows to manage more units and to focus on the strategy.
+EOF

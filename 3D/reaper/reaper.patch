@@ -1,0 +1,119 @@
+diff -U 3 -r reaper-0.98.2_org/src/game/mission.cpp reaper-0.98.2/src/game/mission.cpp
+--- reaper-0.98.2_org/src/game/mission.cpp	2002-09-24 15:44:18.000000000 -0700
++++ reaper-0.98.2/src/game/mission.cpp	2004-04-22 16:12:12.000000000 -0700
+@@ -123,7 +123,7 @@
+ 		return;
+ 	Mission* m = new Mission();
+ 	m->name = pfx;
+-	m->dialog = env[pfx+"_dialog"];
++	m->dialog = env[pfx+"_dialog"].str();
+ 	misc::split(env[pfx+"_objects"], back_inserter(m->objectgroups));
+ 	int i = 1;
+ 	do {
+diff -U 3 -r reaper-0.98.2_org/src/net/game_mgr.cpp reaper-0.98.2/src/net/game_mgr.cpp
+--- reaper-0.98.2_org/src/net/game_mgr.cpp	2002-09-24 15:44:26.000000000 -0700
++++ reaper-0.98.2/src/net/game_mgr.cpp	2004-04-22 16:49:50.000000000 -0700
+@@ -178,8 +178,18 @@
+ 	}
+ 	oa.set_mtx(om);
+ 
+-	oa.vel     = diff_to_big(dvv) ? st.vel     : oa.vel + dvv;
+-	oa.rot_vel = diff_to_big(dvr) ? st.rot_vel : oa.rot_vel + dvr;
++	//oa.vel     = diff_to_big(dvv) ? st.vel     : (oa.vel + dvv);
++	if (diff_to_big(dvv)) {
++		oa.vel = st.vel;
++	} else {
++		oa.vel = oa.vel + dvv;
++	}
++	//oa.rot_vel = diff_to_big(dvr) ? st.rot_vel : (oa.rot_vel + dvr);
++	if (diff_to_big(dvr)) {
++		oa.rot_vel = st.rot_vel;
++	} else {
++		oa.rot_vel = oa.rot_vel + dvr;
++	}
+ 
+ 	sv.pop_front();
+ }
+diff -U 3 -r reaper-0.98.2_org/src/object/mkinfo.cpp reaper-0.98.2/src/object/mkinfo.cpp
+--- reaper-0.98.2_org/src/object/mkinfo.cpp	2002-09-24 15:44:26.000000000 -0700
++++ reaper-0.98.2/src/object/mkinfo.cpp	2004-04-22 16:52:19.000000000 -0700
+@@ -37,7 +37,7 @@
+ {
+ 	do {
+ 		res::ConfigEnv obj(is, true);
+-		mk.name = obj["object"];
++		mk.name = obj["object"].str();
+ 		if (mk.name.empty())
+ 			continue;
+ 		mk.mtx  = obj["matrix"];
+diff -U 3 -r reaper-0.98.2_org/src/res/config.cpp reaper-0.98.2/src/res/config.cpp
+--- reaper-0.98.2_org/src/res/config.cpp	2002-09-24 15:44:28.000000000 -0700
++++ reaper-0.98.2/src/res/config.cpp	2004-04-22 16:14:34.000000000 -0700
+@@ -99,6 +99,11 @@
+ 	return val;
+ }
+ 
++const std::string ConfVal::str() const
++{
++	return val;
++}
++
+ ConfVal::operator Point() const
+ {
+ 	return read<Point>(val);
+diff -U 3 -r reaper-0.98.2_org/src/res/config.h reaper-0.98.2/src/res/config.h
+--- reaper-0.98.2_org/src/res/config.h	2002-09-24 15:44:28.000000000 -0700
++++ reaper-0.98.2/src/res/config.h	2004-04-22 16:16:49.000000000 -0700
+@@ -28,6 +28,7 @@
+ 	operator Vector() const;
+ 	operator Point() const;
+ 	operator const std::string() const;
++	const std::string str() const;
+ 
+ 	bool operator==(bool b) const;
+ 	bool operator==(int i) const;
+diff -U 3 -r reaper-0.98.2_org/src/world/level.cpp reaper-0.98.2/src/world/level.cpp
+--- reaper-0.98.2_org/src/world/level.cpp	2002-09-24 15:44:29.000000000 -0700
++++ reaper-0.98.2/src/world/level.cpp	2004-04-22 16:23:19.000000000 -0700
+@@ -47,7 +47,7 @@
+ 	try {
+ 		const ConfigEnv& env = resource<ConfigEnv>("levels/" + n + ".rl");
+ 
+-		sky_texture  = env["SkyTexture"];
++		sky_texture  = env["SkyTexture"].str();
+ 		sky_color    = read<Color>(env["SkyColor"]);
+ 		sky_altitude = env["SkyAltitude"];
+ 		sky_width    = env["SkyDensity"];
+@@ -65,18 +65,18 @@
+ 		else
+ 			throw level_error("invalid fog type: " + ftype);
+ 		
+-		terrain_mesh           = env["TerrainMesh"];
+-		terrain_main_texture   = env["TerrainMainTexture"];
+-		terrain_detail_texture = env["TerrainDetailTexture"];
++		terrain_mesh           = env["TerrainMesh"].str();
++		terrain_main_texture   = env["TerrainMainTexture"].str();
++		terrain_detail_texture = env["TerrainDetailTexture"].str();
+ 		terrain_detail_size    = env["TerrainDetailRepeats"];
+ 		dout << terrain_main_texture << ' ' << terrain_detail_texture << '\n';
+ 		for (int i = 0;; ++i) {
+ 			string pfx = "lake" + misc::ltos(i) + "_";
+ 			Lake lake;
+-			lake.mesh     = env[pfx+"LakeMesh"];
++			lake.mesh     = env[pfx+"LakeMesh"].str();
+ 			if (lake.mesh.empty())
+ 				break;
+-			lake.texture  = env[pfx+"LakeTexture"];
++			lake.texture  = env[pfx+"LakeTexture"].str();
+ 			lake.wave_dir = env[pfx+"LakeAmplitude"];
+ 			lakes.push_back(lake);
+ 		}
+@@ -88,7 +88,7 @@
+ 
+ 		std::string ogs = env["ObjectGroups"];
+ 		misc::split(ogs, std::back_inserter(objectgroups));
+-		scenario = env["Scenario"];
++		scenario = env["Scenario"].str();
+ 	}
+ 	catch (const resource_not_found& e) {
+ 		throw level_error(string("LevelInfo: ") + name + " not found!  " + e.what());

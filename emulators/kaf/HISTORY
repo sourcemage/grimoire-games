@@ -1,0 +1,24 @@
+2004-10-18 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.3.5
+	* qt.patch, path.patch: Updated to 1.3.5
+	* BUILD: Uses default_build now
+
+2004-08-02 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.3.2
+	  BUILD_API=2
+	  MAKE_NJOBS=1
+	* BUILD: Converted to BUILD_API 2
+	  No longer apply Makefile.patch
+	* INSTALL: Added
+	  Check for existence of /usr/games and properly create if needed
+	  Use `install` to set permissions and ownership
+	* Makefile.patch: Removed (no longer needed)
+	* path.patch: Updated to the new version
+
+2004-02-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: bug 6164
+
+2003-12-11 Eric Sandall <eric@sandall.us>
+	* Created spell
+	* Added to games/emulators
+

@@ -1,0 +1,83 @@
+2005-01-12 Eric Sandall <eric@sandall.us>
+	* DEPENDS: devel and cvs want libsigc++3
+
+2005-01-11 Eric Sandall <eric@sandall.us>
+	* PREPARE: Query for devel, stable, or cvs version now
+	  CVS renamed to ERIS_BRANCH
+	* DETAILS: Check for devel or cvs version
+	  CVS renamed to ERIS_BRANCH
+	  Added BUILD_API=2
+	* BUILD: CVS renamed to ERIS_BRANCH
+	* DEPENDS: CVS renamed to ERIS_BRANCH
+	  devel and cvs depend on atlas-c++ devel
+
+2004-10-25 Eric Sandall <eric@sandall.us>
+	* PREPARE: Missed a "$"
+
+2004-10-19 Eric Sandall <eric@sandall.us>
+	* PREPARE: Mention that CVS eris needs CVS atlas-c++
+
+2004-07-21 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Missed a closing }
+
+2004-07-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Ummm...checkout libs/eris, not libs/skstream, for cvs
+	  BUILD_API=2
+	  Use config_query response for CVS
+	* BUILD: Use config_query response for CVS
+	* DEPENDS: Use config_query response for CVS
+	  Removed atlas-c++ (wfmath and wfmath2 depend on it)
+	  Added message saying eris-cvs needs atlas-c++-cvs
+	* PREPARE: Converted to config_query
+
+2004-05-26 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Atlas-C++ renamed to atlas-c++
+
+2004-04-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added conditional cvs version
+	  Store the cvs version as .bz2
+	* PREPARE: Added to query for cvs version
+	* BUILD: Added to build cvs or standard version
+	* DEPENDS: Conditionally depend upon cvs
+	  cvs version uses wfmath and skstream, 0.9.8 uses
+	  wfmath2 and skstream2
+
+2003-12-07 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add pkgconfig
+	* HISTORY: reformat
+
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+
+2003-09-30 Eric Sandall <eric@sandall.us>
+	* Added skstream2 (0.2.0) for eris and eris now
+	  depends on it (skstream 0.3.0 is for devel version
+	  of eris, which also require other new libraries)
+
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* Update to 0.9.8
+	  Depends upon libsigc++2 (libsigc++ >= 1.2)
+	  Uses .bz2 compressed tarball instead of .gz
+	  Removed braces and piping outside of default_build
+	  Added two patches (is_ready.patch and skstream-0.3.patch)
+	  to help eris compile against skstream 0.3.0. Still doesn't
+	  compile, but it's closer. Both patches have been submitted
+	  to general@worldforge.org.
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-13 hgg <hgreig@bigpond.net.au>
+	* BUILD: Added build as Current Atlas-C++ install to different 
+	  dir and CPPFLAGS needed to build
+
+2003-03-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.9.6
+	* BUILD: Removed BUILD as it is no longer needed
+
+2002-10-11 Eric Sandall <eric@sandall.us>
+	* HISTORY: Created HISTORY file
+
+2002-09-16 Eric Sandall <eric@sandall.us>
+	* Created eris and added to grimoire
+

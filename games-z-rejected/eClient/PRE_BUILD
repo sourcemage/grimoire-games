@@ -1,0 +1,5 @@
+mk_source_dir                  &&
+cd  ${SOURCE_DIRECTORY}        &&
+unpack  ${SOURCE}   ${MD5[0]}  &&
+unpack  ${SOURCE2}  ${MD5[1]}  &&
+sh  ${SOURCE_CACHE}/${SOURCE}

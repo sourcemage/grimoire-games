@@ -1,0 +1,22 @@
+	   SPELL=caps
+	 VERSION=linux
+	  SOURCE=ipfdevlib_$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ipfdevlib_$VERSION
+   SOURCE_URL[0]=http://www.caps-project.org/files/$SOURCE
+        WEB_SITE=http://www.caps-project.org/
+         ENTERED=20040522
+         UPDATED=20040522
+	  MD5[0]=4d038d02fb2bd82928f0f7558caf8ba1
+      LICENSE[0]="C.A.P.S. Freeware License Agreement(in the tarball="
+           SHORT="The C.A.P.S. library"
+cat << EOF
+caps is the llibrary to access the caps-project images.
+
+The main objective of C.A.P.S. is to guarantee the preservation of such an important part of 
+computer gaming history. However due to the number of commercial games released for the Amiga, 
+C.A.P.S. relies heavily on the Amiga community's contribution. Please carefully read both the 
+introduction section of the site as well as the FAQ for a more in depth explanation of what 
+C.A.P.S. is all about, what it's objectives are and it's purpose. Don't hesitate in contacting us 
+if, after going through all the documentation present here, you still have questions or would like 
+further information.
+EOF

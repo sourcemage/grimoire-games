@@ -1,0 +1,11 @@
+#!/bin/sh
+# Changes to /usr/share/games/simutrans to run simutrans
+# as simutrans only looks for files in the
+# current directory...
+#
+# 2008-02-08  Vladimir Navrat <vn158@seznam.cz>
+#
+
+cd  /usr/share/games/simutrans  &&
+./simutrans $@
+cd  -

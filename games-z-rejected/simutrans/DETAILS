@@ -1,0 +1,49 @@
+        PKG_NAME=simutrans
+           SPELL=${PKG_NAME}
+         VERSION=0.82.15.7exp
+     PKG_VERSION=0_82_15_7exp
+          SOURCE=simulinux-$PKG_VERSION.tar.gz
+         SOURCE2=simubase-$PKG_VERSION.zip
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+   SOURCE_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE
+  SOURCE2_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE2
+          MD5[0]=676d09cb53e6eac61dc02cc7f155e4bf
+          MD5[1]=4f830ad55b66c01ad7d4c67548c80bc9
+        WEB_SITE=http://www.simutrans.de/
+         ENTERED=20040422
+          REJECT="is non-source"
+      LICENSE[0]=freeware
+       BUILD_API=2
+         ARCHIVE=off
+           SHORT="Transport and economic simulation. Transport Tycoon clone."
+cat << EOF
+Simutrans is a transport and economic simulation game. There are
+versions for Linux, BeOS and Windows available. Simutrans has not
+yet reached production state, but it is quite possible to build
+big transport networks between the industries and cities.
+
+The player can create bus and rail connections and transport
+passengers, mail and goods in and between cities and industries.
+Even passenger ferries and oil tankers are included in the game.
+Goods are produced by industries from raw materials, sometimes
+over many steps of intermediate products. I.e. coal and iron ore
+ore needed to produce steel in a steel mill. Oil may be
+transformed to plastics in a refinery. Plastics and steel are
+used to build cars by the car industry. Finally the cars are sold
+in the cities. Now they need gas to run, which also will be
+produced at the refinery.
+
+All goods need to be transported. This is the players task.
+Transport the goods and let the industry live up. But be careful
+not to destroy your environments.
+
+Simutrans is developed by me (Hansjörg Malthaner) in my free time
+as a non-commercial project. There are no warranties. You can get
+it free of charge from my download page. You may make as many
+copies as you like. You may distribute the copies for free,
+but you may not charge for them.
+
+Simutrans or any parts of it may not be used in any ways in
+another commercial or non commercial project without written
+permission of the author (Hansjörg Malthaner). 
+EOF

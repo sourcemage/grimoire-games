@@ -1,0 +1,28 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Python renamed to python in stable
+	  Formatted to Guru Handbook
+
+2004-07-20 David C. Haley <dhaley@hot.rr.com>
+	* DEPENDS: added jam
+	* DETAILS: version bump to 0.98r003
+	  compression switched from gzip -> bzip2
+	* BUILD: Commented out previously written code under .configure
+	  added jam commands (jam, jam install)
+	* HISTORY: cleaned up file just a bit
+
+2004-01-07 hgg <hgreig@bigpond.net.au>
+	* ADD to games grimoire
+
+2003-12-09 David C. Haley <dhaley@hot.rr.com>
+	* BUILD: added and optimized copying of files to /usr/share/CS
+	  removed environmental variable initialization (see POST_BUILD)
+	  added prepare_install
+	  redefined ./configure statement
+
+	* POST_BUILD: removed file copying (see BUILD)
+	  removed old method of adding env. variable to /etc/profile
+	  optimized to use new profile.d system
+
+2003-12-07 David C. Haley <dhaley@hot.rr.com>
+	* Spell Created
+

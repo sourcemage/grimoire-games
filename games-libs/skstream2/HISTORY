@@ -1,0 +1,10 @@
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+
+2003-09-30 Eric Sandall <eric@sandall.us>
+	* Branched from skstream to keep as v0.2.0 for eris
+	  (and other packages which don't work with skstream
+	  0.3.0)
+	* BUILD: Our package is named skstream2, not theirs, and it's
+	  at v0.2.5, not 0.2.0
+

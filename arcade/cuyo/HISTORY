@@ -1,0 +1,34 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Build API 2 update
+	* DETAILS: Version update
+	* BUILD: Edits to get the thing to build
+
+2003-12-08 hgg <hgreig@bigpond.net.au>
+	* BUILD remove -ansi -pedantic flags from makefiles
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 1.7.0
+
+2003-01-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.6.1 (Bug #2381, thanks to Snakebyte)
+	* BUILD: Modifed BUILD to install binary into /usr/bin and
+	  data into /usr/share/games, again, the binary cannot
+	  go into /usr/games as I get the following error
+	  when I try with '--bindir=${INSTALL_ROOT}/usr/games'
+	  (same as Maelstrom):
+	  *bash: /usr/bin/cuyo: No such file or directory
+
+2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Upped to version 1.6.0alpha4
+	  Added md5 and license fields
+	  Changed maintainer
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
+

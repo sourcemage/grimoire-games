@@ -1,0 +1,13 @@
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2002-10-07 Eric Sandall <eric@sandall.us>
+	* Updated to v0.3.3
+	  Fixed SOURCE_URL to use new location (added /src before /$SOURCE)
+
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* Updated/added MAINTAINER, MD5, LICENSE
+
+2002-05-17 David Pradier <pradierdavid@yahoo.fr>
+	* Created this spell
+

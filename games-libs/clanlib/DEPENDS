@@ -1,0 +1,21 @@
+depends  zlib      &&
+depends  autoconf  &&
+depends  automake  &&
+depends  Hermes    &&
+depends  jpeg      &&
+depends  libpng    &&
+
+if  spell_ok  nvidia_driver;  then
+  depends nvidia_headers
+fi  &&
+
+optional_depends  mikmod                          \
+                  "--enable-mikmod"               \
+                  "--disable-mikmod"              \
+                  "To enable clanMikMod support"  &&
+
+optional_depends  libvorbis                       \
+                  "--enable-vorbis"               \
+                  ""                              \
+                  "To enable clanVorbis support"
+ 

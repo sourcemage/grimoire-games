@@ -1,0 +1,32 @@
+2004-10-14 Arjan Bouter <abouter@sourcemage.org>
+	* added desktop files
+
+2004-09-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.8.4
+
+2004-08-28 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.8.3
+
+2004-08-24 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.8.2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_ttf, SDL_image, SDL_mixer, and SDL_net renamed to sdl*
+
+2004-07-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: update to 0.8
+
+2004-06-29 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.7.11
+
+2004-06-21 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.7.10
+
+2004-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.7.9
+	* DEPENDS: added dependencies on SDL_image, SDL_mixer, SDL_ttf
+	  and SDL_net
+
+2004-05-09 David Braaten <xiticix47@hotmail.com>
+	* DETAILS, HISTORY: created the spell
+

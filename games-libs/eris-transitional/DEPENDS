@@ -1,0 +1,9 @@
+depends  atlas-c++-transitional  &&
+depends  skstream                &&
+depends  wfmath                  &&
+
+if  [  "$ERIS_LIBSIGC"  =  "2.0"  ];  then
+  depends  libsigc++3
+else
+  depends  libsigc++2
+fi

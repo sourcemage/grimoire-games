@@ -1,0 +1,20 @@
+2005-01-17 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS, INSTALL: Updated/Added for Build API 2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer and SDL_image renamed to sdl*
+	  Removed SDL as the above depend on sdl
+
+2003-11-24 hgg <hgreig@bigpond.net.au>
+	* BUILD: PM bug 4856, needed mkdir -p /usr/games
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields
+	  added MAINTAINER
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this file.
+

@@ -1,0 +1,30 @@
+           SPELL=xu4
+         VERSION=0.9
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+         SOURCE2=ultima4-1.01.zip
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/u4
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
+          MD5[0]=297ed0486edc02381eb5f6fd438e5825
+          MD5[1]=9b668cc1a2d508a6325442c28cbe53ba
+        WEB_SITE=http://xu4.sourceforge.net/
+      LICENSE[0]=GPL
+      LICENSE[1]=UNKNOWN
+         ENTERED=20021120
+         UPDATED=20040225
+           SHORT="XU4 is a recreation of Ultima(TM) IV"
+cat << EOF
+XU4 is a recreation of the classic computer game Ultima IV. The
+purpose of the project is to make it easy and convenient to play on
+modern operating systems.  xu4 is primarily inspired by the much more
+ambitious project Exult.  Linux is the primary development platform
+but it gets ported to Windows regularly and is rumored to work on Mac
+OS X, too.  It should be trivial to port to any system with SDL
+support.
+
+XU4 isn't a new game based on the Ultima IV story -- it is a faithful
+recreation of the old game, right up to the crappy graphics.  If you
+are looking for a game with modern gameplay and graphics, this is not
+it -- yet.  New features that improve the gameplay and keep with the
+spirit of the original game will be added.
+EOF

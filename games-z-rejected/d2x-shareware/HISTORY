@@ -1,0 +1,6 @@
+2004-04-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to the grimoire
+
+2004-04-30 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY, PRE_BUILD: Spell created
+

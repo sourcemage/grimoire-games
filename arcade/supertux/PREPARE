@@ -1,0 +1,9 @@
+SPELL=supertux
+if ! grep -q CVS $SPELL_CONFIG; then
+  if    query "Build CVS version?" n
+  then  CVS=yes
+  else  CVS=no
+  fi
+  echo  "CVS=$CVS"  >>  $SPELL_CONFIG
+fi
+. $SPELL_CONFIG

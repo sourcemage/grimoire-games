@@ -1,0 +1,14 @@
+           SPELL=geki3
+         VERSION=1.0.3
+          SOURCE=$SPELL-KXL-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-KXL-$VERSION
+   SOURCE_URL[0]=http://kxl.hn.org/download/${SOURCE}
+          MD5[0]="b45f5ace6e5a8611f78a122eccf00b3b"
+      LICENCE[0]=GPL
+        WEB_SITE=http://kxl.hn.org/
+         ENTERED=20040420
+       BUILD_API=2
+           SHORT='Geki3 is 2D horizontal scroll shooting game'
+cat << EOF
+Geki3 is 2D horizontal scroll shooting game
+EOF

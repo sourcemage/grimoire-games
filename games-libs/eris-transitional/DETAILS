@@ -1,0 +1,16 @@
+           SPELL=eris-transitional
+         VERSION=1.2.2
+          SOURCE=${SPELL/-transitional/}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/-transitional/}-${VERSION}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL/-transitional/}/${SOURCE}
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL/-transitional/}/${SOURCE}
+          MD5[0]=3428d698defb17d20c6c74f8ff6f2f18
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL/-transitional/}
+         ENTERED=20040409
+         UPDATED=20040409
+      LICENSE[0]=GPL
+           SHORT="Common back-end to Atlas"
+cat << EOF
+Eris is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, logging into a server, and managing updates from the server. Once the entities are made available locally, Eris also manages updating them as required. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones. It handles the client-side implementation of the meta-server protocol, and querying game servers; out-of-game (OOG) operations (via the Lobby and Rooms), and most important in-game (IG) operations such as entity creation, movement and updates.
+EOF

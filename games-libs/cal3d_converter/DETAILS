@@ -1,0 +1,16 @@
+           SPELL=cal3d_converter
+         VERSION=0.9
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
+          MD5[0]=9225242a753ae8ea6d1e61cdc05ae1f7
+        WEB_SITE=http://sourceforge.net/projects/cal3d/
+         ENTERED=20031009
+         UPDATED=20031009
+      LICENSE[0]=LGPL
+      MAINTAINER=eric@sandall.us
+            DOCS="COPYING README"
+           SHORT="Convert cal3d to/from XML"
+cat << EOF
+Cal3d-Converter is a simple tool that convert binary cal3d file formats to xml (text) file formats (or the inverse).
+EOF

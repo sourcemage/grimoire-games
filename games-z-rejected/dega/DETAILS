@@ -1,0 +1,19 @@
+           SPELL=dega
+         VERSION=1.07
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.emulinks.de/emus/$SOURCE
+        WEB_SITE=http://www.emulinks.de/emus/
+          MD5[0]=2af410d8271341feef295e8e39f0de44
+      LICENSE[0]="free for non-comercial use"
+         ENTERED=20040429
+         UPDATED=20040429
+           SHORT="dega is a Sega Master System / Mark III / Game Gear emulator"
+cat << EOF
+A sega emulator:
+- Master System
+- Mark III
+- Game Gear
+
+Claims to have 97% compatibility
+EOF

@@ -1,0 +1,16 @@
+	   SPELL=hoh
+         VERSION=1.01
+     PKG_VERSION=101
+	  SOURCE=${SPELL}lin-${PKG_VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-install-${VERSION}
+   SOURCE_URL[0]=http://retrospec.sgn.net/games/${SPELL}/bin/$SOURCE
+          MD5[0]=f3d4809e4e445d5d4356b3a93de0ba31
+        WEB_SITE=http://retrospec.sgn.net/games/hoh/
+         ENTERED=20040422
+          REJECT="is non-source"
+      LICENSE[0]=UNKNOWN
+           SHORT="Head over Heels remake"
+cat << EOF
+A spanky new remake of the classic Jon Ritman & Bernie Drummand
+Head over Heels isometric adventure.
+EOF

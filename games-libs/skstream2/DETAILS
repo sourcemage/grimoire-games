@@ -1,0 +1,16 @@
+           SPELL=skstream2
+         VERSION=0.2.5
+          SOURCE=${SPELL/2/}-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/2/}-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL/2/}/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
+          MD5[0]=e0a28a3da66913f3d2d8b5af7e43cb3b
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL/2/}
+         ENTERED=20030930
+         UPDATED=20030930
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="IO-stream based C++ socket library"
+cat << EOF
+skstream is an iostream based C++ socket library. It is ideally suited for use as the underlying transport for Atlas-C++, and has been well tested and debugged. It was first discovered for WorldForge when it was used in uclient, and has been packaged up as its own library for use on other WorldForge components. The code was written by Rafael Guterres Jeffman who is not involved with the project, and is maintained for WorldForge by Al Riddoch and others.
+EOF

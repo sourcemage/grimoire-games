@@ -1,0 +1,5 @@
+message "Note: This spell only provides the engine"
+message "if you want to actually play, get the data"
+message "files provided by the quake1-shareware spell,"
+message "or copy the .pak files of the full version"
+message "to /usr/share/games/quakeforge/id1."

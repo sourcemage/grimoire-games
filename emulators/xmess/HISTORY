@@ -1,0 +1,27 @@
+2005-01-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.89
+	  Added BUILD_API=2
+	  Shortened SHORT
+	* CONFIGURE: Converted to config_query
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+
+2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 0.84.1
+
+2004-06-22 Jason Flatt <jflatt@sourcemage.org>
+	* BUILD: Cleaned up whitespace a bit.
+	* DETAILS: Updated to version 0.83.1
+	  Removed MAINTAINER.
+	  Removed MAKE_NJOBS.
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
+2003-12-11 Eric Sandall <eric@sandall.us>
+	* Forked from the xmame spell
+	* TODO: Should combine this with xmame, perhaps have it
+	  install both, or give the option for one or the other, but
+	  I like the former option better.
+

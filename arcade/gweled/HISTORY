@@ -1,0 +1,10 @@
+2005-01-17 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Build API 2 changes
+	* DETAILS: Version bump
+
+2004-05-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to grimoire
+
+2004-05-01 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY: Spell created
+

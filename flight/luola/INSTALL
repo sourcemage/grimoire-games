@@ -1,0 +1,7 @@
+default_install                         &&
+chown  -R  games.games  ${I_DIR}        &&
+mkdir  -p  ${I_DIR}/levels              &&
+install  -m  755  -o  games  -g  games  \
+  data/levels/*.png  ${I_DIR}/levels    &&
+install  -m  755  -o  games  -g  games  \
+  data/levels/README  ${I_DIR}/levels

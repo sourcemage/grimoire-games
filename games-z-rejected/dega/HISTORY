@@ -1,0 +1,9 @@
+2004-11-21 Andrew Stitt <astitt@sourcemage.org>
+	* DETAILS: fix syntax error
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-04-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, DEPENDS, DETAILS, HISTORY: created spell
+

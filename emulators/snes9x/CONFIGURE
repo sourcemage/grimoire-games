@@ -1,0 +1,7 @@
+if  !  grep  -q  "OPTS"  $SPELL_CONFIG;  then
+  if    query  "Use OpenGL for smoother scaling?"  y
+  then  OPTS="--with-opengl"
+  else  OPTS="--without-opengl"
+  fi
+  echo  "OPTS=\"\$OPTS $OPTS\""  >>  $SPELL_CONFIG
+fi

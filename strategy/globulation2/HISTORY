@@ -1,0 +1,12 @@
+2004-09-16 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.8.8
+	* BUILD: added to add -L/usr/X11R6/lib to LDFLAGS so libGLU is found
+
+2004-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: removed
+	* Minor bugfixes
+	* DETAILS: BUILD_API=2
+
+2004-08-14 Duane Malcolm <d.malcolm@auckland.ac.nz>
+	* DETAILS DEPENDS BUILD HISTORY: Added spell
+

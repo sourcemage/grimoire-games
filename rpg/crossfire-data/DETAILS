@@ -1,0 +1,27 @@
+           SPELL=crossfire-data
+         VERSION=1.6.0
+          SOURCE=crossfire-$VERSION.arch.tar.bz2
+         SOURCE2=crossfire-$VERSION.maps-big.tar.bz2
+         SOURCE3=crossfire-1.5.0.maps-small.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE2
+  SOURCE3_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE3
+          MD5[0]=b2d8a68cb3f7ef9e7cb8278c9658c02b
+          MD5[1]=ee30fa3a93d1cbfdec0f6a93e490b8d0
+          MD5[2]=98b31873a191116ac37abfc92d56b1f9
+        WEB_SITE=http://crossfire.real-time.com
+         ENTERED=20041108
+         UPDATED=20041108
+      LICENSE[0]=GPL
+       BUILD_API=2
+         ARCHIVE="off"
+           SHORT="Data files for crossfire"
+cat << EOF
+Crossfire is a multi-player graphical arcade and adventure game made
+for X. It has certain flavours from other games, especially Gauntlet
+and the rogue-like games (Nethack, Moria, Angband, and Ragnarok). Any 
+number of players can move around in their own window, finding and
+using items and battling monsters. They can choose to cooperate or
+compete in the same world.
+EOF

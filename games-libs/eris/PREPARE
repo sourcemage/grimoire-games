@@ -1,0 +1,2 @@
+config_query_list  ERIS_BRANCH  "Which branch of $SPELL do you want?"  \
+                   stable  devel  cvs

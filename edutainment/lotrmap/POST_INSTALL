@@ -1,0 +1,10 @@
+if ! [ -d ${INSTALL_ROOT}/usr/lib/lotrmap ]; then
+  mkdir ${INSTALL_ROOT}/usr/lib/lotrmap
+fi                                                                     &&
+
+mv ${INSTALL_ROOT}/usr/bin/lotrmap    ${INSTALL_ROOT}/usr/lib/lotrmap  &&
+cp ${SCRIPT_DIRECTORY}/lotrmap.sh     ${INSTALL_ROOT}/usr/bin          &&
+cp ${SOURCE_CACHE}/middleearth2_c.jpg ${INSTALL_ROOT}/usr/lib/lotrmap  &&
+cp lotrmap/middleearth*               ${INSTALL_ROOT}/usr/lib/lotrmap  &&
+cp lotrmap/Middle-Earth_*             ${INSTALL_ROOT}/usr/lib/lotrmap
+

@@ -1,0 +1,2 @@
+depends  libsigc++2  &&
+depends  wfmath

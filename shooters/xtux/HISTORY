@@ -1,0 +1,28 @@
+2003-11-28 hgg <hgreig@bigpond.net.au>
+	* BUILD: use cp -rf instead of mv, and install_root-ify
+
+2003-11-26 hgg <hgreig@bigpond.net.au>
+	* BUILD: pm bug, needed mkdir -p /usr/games
+	* HISTORY: reformat
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-05-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 20030306 and removed exploit warning
+
+2003-02-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 20030207
+
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
+
+2002-03-20 Kyle Sallee <anonymous@sourcemage.org>
+	* Spell was updated by David Pradier <pradierdavid@yahoo.fr>
+
+200?-??-?? Kyle Sallee <anonymous@sourcemage.org>
+ * Spell was submitted by ???
+

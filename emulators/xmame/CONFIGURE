@@ -1,0 +1,9 @@
+config_query  XMAME_CUSTOM  "Would you like to edit the makefile? (for special tweaks only)"  n  &&
+
+if  spell_ok  sdl;  then
+  config_query  XMAME_SDL_SOUND  "Use SDL for sound?"  y  &&
+  config_query  XMAME_SDL_VIDEO  "Use SDL for video?"  y
+else
+  config_query  XMAME_SDL_SOUND  "Use SDL for sound?"  n  &&
+  config_query  XMAME_SDL_VIDEO  "Use SDL for video?"  n
+fi

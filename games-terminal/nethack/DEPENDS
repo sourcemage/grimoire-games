@@ -1,0 +1,13 @@
+depends gzip     &&
+depends ncurses  &&
+# needs some binaries not installed by the libs spell
+if [ "$X11" = "yes" ];then
+depends X11-SERVER
+fi               &&
+if [ "$QT" = "yes" ];then
+depends qt-x11
+fi               &&
+if [ "$GTK" = "yes" ];then
+depends gnome-libs
+fi
+

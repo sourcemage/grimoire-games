@@ -1,0 +1,9 @@
+message "${MESSAGE_COLOR}This package is no longer maintained by the \
+author, it is fully functional but\nwill not release new \
+versions or updates for new compilers. If it breaks on\nyour system, \
+fix it and mail the patch to ...${SPELL_COLOR}\ngames@sourcemage.org\
+${DEFAULT_COLOR}${MESSAGE_COLOR}.\nAn alternative to this package is \
+${SPELL_COLOR}celestia ${DEFAULT_COLOR}" &&
+sleep 5 &&
+ask_continue_with_rejected  &&
+default_pre_build

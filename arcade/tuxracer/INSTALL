@@ -1,0 +1,3 @@
+  make    install                                                   &&
+  chmod  -R a+r  ${SPELL}-data-${VERSION}                           &&
+  cp     -r      ${SPELL}-data-${VERSION}  /usr/share

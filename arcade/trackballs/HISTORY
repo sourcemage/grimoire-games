@@ -1,0 +1,29 @@
+2005-01-20 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updated to Build API 2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_ttf, SDL_mixer, and SDL_image renamed to sdl*
+	  Removed SDL as the above depend on sdl
+	* HISTORY: Formatted to Guru Handbook
+
+2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 1.0.0
+
+2003-07-14 hgg <hgreig@bigpond.net.au>
+	* BUILD: Fix for bug #3747 due to -O3 opts failures
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-27 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for 0.9.0 and add LIBS export
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-02-22 Eric Sandall <eric@sandall.us>
+	* Added Robert's improved spell, as mine wouldn't compile
+
+2003-02-21 Robert Helgesson <rycee@home.se>
+	* Created spell
+

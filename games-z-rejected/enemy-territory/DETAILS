@@ -1,0 +1,49 @@
+           SPELL=enemy-territory
+         VERSION=2.56-2
+          SOURCE=et-linux-${VERSION}.x86.run
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://3dgamers.in-span.net/pub/3dgamers7/games/wolfensteinet/$SOURCE
+   SOURCE_URL[1]=http://3dgamers.intelenet.net/pub/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[2]=http://ftp4.3dgamers.com/pub/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[3]=http://3dgamers.gameservers.net/pub/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[4]=http://3dgamers.planetmirror.com/pub/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[5]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[6]=http://3dgamers.iinet.net.au/pub/3dgamers/games/wolfensteinet/$SOURCE
+          MD5[0]="4dddf1612b9ed5b3fe9d3348ec78c28f"
+        WEB_SITE=http://www.castlewolfenstein.com
+         ENTERED=20030615
+         UPDATED=20050115
+      LICENSE[0]=ID
+          REJECT="binary only game"
+         ARCHIVE=off
+           SHORT="Wolfenstein:EnemyTerritory the full version 258MB"
+cat << EOF
+Wolfenstein: Enemy Territory enlists players to battle across multi-level WWII campaigns as one of 
+five classes, gaining skills and promotions, constructing strategic assets, and battling with weapons 
+ranging from tank-mounted machineguns to mortars.
+
+ Minimum System Requirements
+ 
+ * Intel® Pentium® III 600Mhz processor or AMD equivalent
+ * 128 MB RAM
+ * 32 MB 100% fully OpenGL® compliant 3-D video card
+ * 271 MB total disk space for game files 
+ * 500 MB free disk space for swap file
+ * For internet play, 100% Windows® 98/ME/2000/XP compatible 56.6k modem or better internet 
+connection. 56.6k modem play is not recommended for games with more than 8 players total; broadband 
+players should be able to handle up to 32 depending on their connection with the server on which 
+they're playing.
+ 
+ The following video cards were fully tested with Wolfenstein: Enemy Territory:
+ 
+ GeForce 4 Ti 4600
+ GeForce 4 MX
+ GeForce 3
+ GeForce 2 Ultra
+ GeForce 2 MX
+ GeForce256
+ Radeon 8500/64
+ Radeon 7200/64
+ Radeon 9700 Pro/128
+ Xabre 400
+EOF

@@ -1,0 +1,11 @@
+--- xxx 2004-05-07 22:39:14.000000000 +0200
++++ vegastrike-0.4.1/vegastrike/src/gldrv/gl_state.cpp        2004-05-07 22:39:31.000000000 +0200
+@@ -22,6 +22,7 @@
+ 
+ #include "gfxlib.h"
+ #include "vegastrike.h"
++#include "SDL_opengl.h"
+ #include "vs_globals.h"
+ #include <stack>
+ GFXBOOL bTex[8] = {GFXTRUE,GFXTRUE,GFXTRUE,GFXTRUE};
+

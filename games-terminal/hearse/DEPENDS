@@ -1,0 +1,3 @@
+depends nethack		&&
+depends LWP		&&
+depends Digest-MD5

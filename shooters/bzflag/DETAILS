@@ -1,0 +1,20 @@
+           SPELL=bzflag
+         VERSION=2.0.0
+             SFX=20050117
+          SOURCE=$SPELL-$VERSION.$SFX.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION.$SFX
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+   SOURCE_URL[1]=http://willem.penninckx.org/mirror/${SPELL}/${SOURCE}
+          MD5[0]=0e7f40483e0f04a55fda44970073ead5
+        WEB_SITE=http://BZFlag.org
+         ENTERED=20010922
+         UPDATED=20050118
+       BUILD_API=2
+      LICENSE[0]=GPL
+           SHORT="bzflag is a 3D multiplayer network tank battle game."
+cat << EOF
+BZFlag is a 3D multiplayer tank battle game that pits players against
+each other in a networked environment. It runs on Linux, Windows
+95/98/NT/2000, Irix 5.3 or higher, and Solaris. An OpenGL accelerator is
+highly recommended, but it is playable with 3D in software.
+EOF

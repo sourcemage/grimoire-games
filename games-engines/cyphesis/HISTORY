@@ -1,0 +1,63 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.8
+
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Python renamed to python in stable
+
+2005-01-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.7
+	* PREPARE,DETAILS,BUILD: CVS renamed to CYPHESIS_CVS
+
+2004-11-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.6
+	* DEPENDS: Stable and CVS version now both use howl
+
+2004-11-11 Eric Sandall <eric@sandall.us>
+	* DEPENDS: CVS version can use howl for Zeroconf networking
+
+2004-10-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.5
+
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added SourceForge mirror first
+
+2004-10-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.4
+	* DEPENDS: Depends on atlas-c++-transitional now, not atlas-c++
+
+2004-07-22 Eric Sandall <eric@sandall.us>
+	* Added to games/games-engines
+	* DETAILS: Updated to 0.3.1
+	  BUILD_API=2
+	  Use config_query response for CVS
+	  Use '==' for comparison
+	* BUILD: Use config_query response for CVS
+	* PREPARE: Converted to config_query
+
+2004-05-27 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.0
+	  Removed MAINTAINER
+	* BUILD: Disable postgresql test
+	  Remove patch application
+	* overload.patch: Removed
+
+2004-05-26 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Atlas-C++ renamed to atlas-c++
+	  Depends on skstream not skstream2
+
+2004-05-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Now installs either cvs or stable version
+	* DEPENDS: Depends on mercator
+	* PREPARE: Added to query for cvs
+	* HISTORY: Formatted to Guru Handbook
+
+2003-10-05 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.2.4
+	* DEPENDS: Needs older skstream2 but newer varconf2
+	* overload.patch: Added to fix ambiguous overloading
+	* BUILD: Added to apply patch
+
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+	* HISTORY: Created
+

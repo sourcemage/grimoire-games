@@ -1,0 +1,27 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	* HISTORY: Formatted to Guru Handbook
+
+2004-07-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* CONFLICTS: added conflicts on nethack and gtk2hack
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-20 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update for ${SOURCEFORGE_URL}
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-01-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added MAKE_NJOBS=1, as it fails with multiple jobs.
+
+2002-08-27 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: fixed SOURCE_URL (was missing the http:// )
+	  added MD5 and LICENSE fields
+	  added myself as maintainer
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
+

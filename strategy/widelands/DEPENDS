@@ -1,0 +1,4 @@
+depends  CVS        &&
+depends  g++        &&
+depends  sdl_image  &&
+depends  sdl_ttf

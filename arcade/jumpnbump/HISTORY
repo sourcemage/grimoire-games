@@ -1,0 +1,20 @@
+2004-11-10 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.55
+	  SOURCE_DIRECTORY still uses 1.50 for VERSION
+	  Added BUILD_API=2
+	* BUILD: Converted to build_api 2
+	  Now uses ./configure
+	  Fix DATA_PATH for jumpbump.dat (doesn't use --datadir)
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
+	  Removed SDL as the above depend on sdl
+
+2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 1.50
+
+2004-05-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to grimoire
+
+2004-05-20 Robert Helgesson <rycee@home.se> 
+	* Created spell.

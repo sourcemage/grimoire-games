@@ -1,0 +1,2 @@
+optional_depends  zip      ""  ""  "for ZIP compression support"  &&
+optional_depends  cppunit  ""  ""  "for unit testing"

@@ -1,0 +1,19 @@
+if  [  "$GATHER_DOCS"  ==  "on"  ]; then
+
+debug  "libgrimoire" "Running own gather_docs() on $SPELL"
+
+DOC_DIR=$DOCUMENT_DIRECTORY/$SPELL
+mkdir -p $DOC_DIR
+	                                                                                    
+cp -fR $SOURCE_DIRECTORY/docs $DOC_DIR 2>/dev/null
+cp -f $SOURCE_DIRECTORY/readme.txt $DOC_DIR 2>/dev/null
+#making installed docs readable for all users.
+chmod -fR a+r $DOC_DIR
+
+fi
+
+devoke_installwatch
+init_post_install
+ldconfig
+cd  /
+boost		    

@@ -1,0 +1,35 @@
+depends  jam     &&
+depends  perl    &&
+depends  zlib    &&
+depends  libpng  &&
+depends  jpeg    &&
+
+optional_depends  GLUT                               \
+                  ""                                 \
+                  ""                                 \
+                  "For glut windowing enhancements"  &&
+
+optional_depends  openal                      \
+                  ""                          \
+                  ""                          \
+                  "For openal sound support"  &&
+
+optional_depends  libvorbis                   \
+                  ""                          \
+                  ""                          \
+                  "For vorbis sound support"  &&
+
+optional_depends  python                                                    \
+                  "--with-Python"                                           \
+                  "--without-Python"                                        \
+                  "support for Python (REQUIRED for Crystal Entity Layer)"  &&
+
+optional_depends  libmng                                       \
+                  "--with-libmng"                              \
+                  "--without-libmng"                           \
+                  "support for reading MNG/JNG graphic files"  &&
+
+optional_depends  nasm                                      \
+                  "--with-nasm"                             \
+                  "--without-nasm"                          \
+                  "support for assembly language routines"

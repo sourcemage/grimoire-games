@@ -1,0 +1,15 @@
+depends  zlib      &&
+depends  autoconf  &&
+depends  automake  &&
+depends  Hermes    &&
+depends  jpeg      &&
+depends  libpng    &&
+
+if  spell_ok  nvidia_driver;  then
+  depends nvidia_headers
+fi  &&
+
+optional_depends  mikmod "--enable-clanMikMod" "--disable-clanMikMod" "To enable clanMikMod support"  &&
+optional_depends  libvorbis "--enable-vorbis" "--disable-clanVorbis" "To enable clanVorbis support" &&
+optional_depends  sdl_gfx "--enable-clanSDL" "--disable-clanSDL" "To enable sdl_gfx support. This is needed for wormux."
+

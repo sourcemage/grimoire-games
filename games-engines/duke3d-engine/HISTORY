@@ -1,0 +1,9 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+
+2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to the games/games-engines grimoire/section
+
+2004-03-30 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY, PRE_BUILD: Spell created
+

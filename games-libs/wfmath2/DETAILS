@@ -1,0 +1,15 @@
+           SPELL=wfmath2
+         VERSION=0.2.9
+          SOURCE=wfmath-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/wfmath-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/wfmath/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/wfmath/${SOURCE}
+          MD5[0]=068a53d12012e09a91ca09e6ec2b6722
+        WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wfmath/
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+           SHORT="This is the Worldforge math library"
+cat << EOF
+This is the Worldforge math library.
+EOF

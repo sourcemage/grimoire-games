@@ -1,0 +1,10 @@
+2004-07-12 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Removed, moved rejected query to CONFIGURE
+	* CONFIGURE: Added with rejected query
+
+2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to games grimoire
+
+2004-02-15 Vladimir Navrat <vn158@seznam.cz>
+	* Created spell, TODO: check depends
+

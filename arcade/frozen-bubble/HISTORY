@@ -1,0 +1,36 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Changes for Build API 2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Removed SDL_image and SDL_mixer (SDL-sdlpl depends on them)
+	* HISTORY: Formatted to Guru Handbook
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-02-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0.0
+	  Changed SOURCE_URL, add a mirror in Europe
+
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields
+	  changed MAINTAINER
+
+2002-05-26 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 0.9.3
+	* Removed the patch, which is no longer necessary.
+
+2002-05-22 Jerome Zago <jerome.zago@insalien.org>
+	* Added a patch kindly sent by Guillaume Cottenceau 
+	  <gc@mandrakesoft.com> (upstream maintainer) so that 
+	  frozen-bubble works again with SDL-sdlpl 1.15+.
+
+2002-05-15 Jerome Zago <jerome.zago@insalien.org>
+	* BUILD: /usr/games is now created if needed.
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added
+

@@ -1,0 +1,40 @@
+#
+# written by Markus F. X. J. Oberhumer <markus@oberhumer.com>
+#
+# to use a specific python version call
+#   `make PYTHON=python2.2'
+#
+
+SHELL = /bin/sh
+
+PYTHON = python2.2
+PYTHON = python
+
+all build:
+	$(PYTHON) setup.py build
+
+semi-static:
+	$(PYTHON) setup.py build --semi-static
+
+test: build
+
+# (strip needs GNU binutils)
+strip: build
+	strip -p --strip-unneeded build/lib*/*.so
+	chmod -x build/lib*/*.so
+
+install:
+	$(PYTHON) setup.py install
+
+clean:
+	-rm -rf build
+	-rm -f *.pyc *.pyo */*.pyc */*.pyo
+
+distclean: clean
+	-rm -f setup.py
+
+maintainer-clean: distclean
+
+.PHONY: all build semi-static test strip install clean distclean maintainer-clean
+
+.NOEXPORT:

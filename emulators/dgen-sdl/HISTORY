@@ -1,0 +1,18 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-05-09 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD: added to fix compilation with gcc 3.4
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* DEPENDS, DETAILS, HISTORY: New Games grimoire is born!
+
+2002-08-29 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Added license field (thanks to Eric Sandall ;) )
+
+2002-08-29 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Added md5 and changed maintainer
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
+

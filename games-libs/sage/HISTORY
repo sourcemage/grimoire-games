@@ -1,0 +1,27 @@
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added SourceForge mirror first
+	* DEPENDS: Pass --disable-sdltest to OPTS
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-04-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added conditional cvs version
+	  Store the cvs version as .bz2
+	* PREPARE: Added to query for cvs version
+	* BUILD: Added to build cvs or standard version
+	* DEPENDS: Conditionally depend upon cvs
+
+2004-03-22 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.1.1
+	  Removed MAINTAINER
+
+2003-12-01 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: X11-LIBS not X11-LIB
+
+2003-11-22 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: big letters for x11-libs
+
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* Created spell
+

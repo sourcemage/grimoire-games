@@ -1,0 +1,4 @@
+depends zlib       &&
+depends libpng     &&
+depends X11-LIBS   &&
+optional_depends "svgalib" "--with-svga" "--without-svga" "for svgalib output"

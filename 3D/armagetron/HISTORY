@@ -1,0 +1,11 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image, SDL_mixer renamed to sdl*
+	  Removed SDL as sdl_image depends on sdl
+	  Formatted to Guru Handbook
+
+3004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: removed maintainer line
+
+2003-12-06 : David Braaten <xiticix47@hotmail.com>
+	* ALL: created the spell
+

@@ -1,0 +1,21 @@
+           SPELL=sdlsasteroids
+         VERSION=3.0
+          SOURCE=sasteroids-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/SDLSasteroids-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/sdlsas/${SOURCE}
+        WEB_SITE=http://sdlsas.sourceforge.net/
+         ENTERED=20021031
+         UPDATED=20030815
+          MD5[0]=6c26561c629289f81518fcd68710d95c
+      LICENSE[0]=GPL
+       BUILD_API=2
+    MENU_ITEM[0]="SDL Sasteroids"
+    MENU_EXEC[0]="sasteroids"
+    MENU_DESC[0]=${SHORT}
+    MENU_ITEM[1]="Classic Sasteroids"
+    MENU_EXEC[1]="sasteroids  -classic"
+    MENU_DESC[1]="Classic Sasteroids"
+           SHORT="SDL version of Sasteroids"
+cat << EOF
+SDL Sasteroids is a rework of the original Sasteroids game by Brad Pitzel last released in 1994. It allows the original Sasteroids game to be played on modern hardware, without vgalib and older versions of gcc. Old fans of the original will find many suprises in addition to the same old game released years ago.
+EOF

@@ -1,0 +1,20 @@
+2003-07-03 hgg <hgreig@bigpond.net.au>
+	* Add optional_depends for gnugo,to play as a stand-alone (solitare) client
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* Update for ${INSTALL_ROOT}
+
+2003-01-31 Eric Sandall <eric@sandall.us>
+	* Fixed Bug #2443
+
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* Added md5, license and changed maintainer
+
+2002-04-10 Jerome Zago <jerome.zago@insalien.org>
+	* Man pages are now installed in /usr/share/man instead of
+	  /usr/man, to be more FHS compliant.
+	* /usr/games and /usr/share/man/man6 are created if needed.
+

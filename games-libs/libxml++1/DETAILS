@@ -1,0 +1,16 @@
+           SPELL=libxml++1
+         VERSION=1.0.4
+          SOURCE=libxml++-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/libxml++-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/libxml++/1.0/$SOURCE
+          MD5[0]=1f7e9339e4850cbac96241465f9844d9
+      LICENSE[0]=LGPL
+        WEB_SITE=http://libxmlplusplus.sf.net
+         ENTERED=20010922
+         UPDATED=20020129
+           SHORT="libxml++ is a C++ interface for working with XML files"
+cat << EOF
+libxml++ is a C++ interface for working with XML files, using libxml
+(gnome-xml) to parse and write the actual XML files. It has a simple
+but complete API.
+EOF

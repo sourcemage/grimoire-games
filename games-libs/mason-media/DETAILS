@@ -1,0 +1,17 @@
+           SPELL=mason-media
+         VERSION=0.1
+          SOURCE=${SPELL/\-/_}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/media
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/games/mason/${VERSION}/media/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/games/mason/${VERSION}/media/${SOURCE}
+        WEB_SITE=http://www.worldforge.org/dev/systems/mason/
+          MD5[0]=dc918de66123533849ca36db94a78b40
+         ENTERED=20031006
+         UPDATED=20031006
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+         ARCHIVE="off"
+           SHORT="Media files required for the WorldForge Mason game"
+cat << EOF
+This contains the media files required for the WorldForge Mason game.
+EOF

@@ -1,0 +1,54 @@
+2004-11-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.3
+
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added SourceForge mirror first
+
+2004-10-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.2
+	  Added BUILD_API=2
+	  Use config_query response
+	* PREPARE: Converted to config_query
+	* BUILD: Use config_query response
+
+2004-04-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added conditional cvs version
+	  Store the cvs version as .bz2
+	* PREPARE: Added to query for cvs version
+	* BUILD: Added to build cvs or standard version
+	* DEPENDS: Conditionally depend upon cvs
+
+2004-03-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Forgot md5sum!
+	  Removed MAINTAINER
+
+2003-12-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.1
+	* HISTORY: Formatted to Guru Handbook
+
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Can optionally use zip and cppunit
+	* DETAILS: 0.3.0 just now released
+	  Tested Atlas-C++, wfmath, and eris against the update
+	  eris fails, but should be updated soon
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.2.5
+	* Removed old patch
+
+2003-02-09 Seth Woolley <seth@tautology.org>
+	* DETAILS: Reautomake'd so remd5'd
+
+2002-09-25 Eric Sandall <eric@sandall.us>
+	* BUILD: Removed BUILD, as was only needed on _my_ broken box.
+
+2002-09-16 Eric Sandall <eric@sandall.us>
+	* Added spell
+	* Created spell
+
