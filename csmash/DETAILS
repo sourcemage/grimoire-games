@@ -1,12 +1,12 @@
            SPELL=csmash
-         VERSION=0.6.4
+         VERSION=0.6.5
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/cannonsmash/$SOURCE
         WEB_SITE=http://cannonsmash.sourceforge.net
          ENTERED=20010922
          UPDATED=20021018
-          MD5[0]=ac5cb8e291aa119c1e3948e6164f8bb8
+          MD5[0]=02a11f5d06d1fd7a6f1ba30fd1d9d9cf
       LICENSE[0]=GPL
       MAINTAINER=pradierdavid@yahoo.fr
            SHORT="csmash, Cannon Smash, is a 3D table tennis game."
