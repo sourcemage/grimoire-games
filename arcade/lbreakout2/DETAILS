@@ -1,9 +1,9 @@
            SPELL=lbreakout2
-         VERSION=2.5beta-3
+         VERSION=2.5beta-5
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
-          MD5[0]=9a0600c9dad6b055de6b806deecf6dc8
+          MD5[0]=895b9c09d3cfb9915766816e903d9f2c
         WEB_SITE=http://lgames.sourceforge.net
          ENTERED=20020129
          UPDATED=20040122
