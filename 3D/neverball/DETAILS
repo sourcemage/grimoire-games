@@ -6,7 +6,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://icculus.org/neverball/
          ENTERED=20040419
          UPDATED=20040419
-          MD5[0]=ff00a98d482702bab1b9c5a64fc2d5c6
+       BUILD_API=2
+          MD5[0]=17abacea7b74e8fe7ee65e7f54e93c6b
       LICENSE[0]=GPL
            SHORT="Roll through an obstacle course or play miniature golf"
 cat << EOF
