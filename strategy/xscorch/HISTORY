@@ -1,3 +1,8 @@
+2004-03-25 Eric Sandall <eric@sandall.us>
+	* DTAILS: Updated to 0.2.0
+	Added new site
+	Moved old site as mirror
+
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.1.16
 
@@ -17,4 +22,5 @@
 	Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>
-	* (Added this History file.
+	* Added this History file.
+
