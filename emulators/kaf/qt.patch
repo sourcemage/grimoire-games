@@ -1,0 +1,15 @@
+diff -urpN kaf.old/configure kaf/configure
+--- kaf.old/configure	2003-12-11 19:04:07.313030696 -0800
++++ kaf/configure	2003-12-11 19:08:08.163415872 -0800
+@@ -52,9 +52,9 @@ else
+ fi
+ 
+ echo -n "Looking for QT include files... "
+-if ! test -e "$QTDIR/include/qapplication.h"; then
++if ! test -e "$QTDIR/include/qt/qapplication.h"; then
+   echo "not found."
+-  echo "Error: Cannot find '$QTDIR/include/qapplication.h'."
++  echo "Error: Cannot find '$QTDIR/include/qt/qapplication.h'."
+   exit 1
+ else
+   echo "found."
