@@ -1,5 +1,15 @@
-History for the zsnes spell
-===========================
+2002-06-30  Jerome Zago <jerome.zago@insalien.org>
 
-20020312    Spell proposed by jkolb@brandeis.edu
-20020320    Spell accepted by pradierdavid@yahoo.fr
+		New version: 1.35 (thanks Jeremy Kolb <jkolb@brandeis.edu>)
+
+		Binary now goes into /usr/games and man page into
+		/usr/share/man/man6 (FHS compliance) : a patch was needed.
+
+		/usr/games and /usr/share/man/man6 are now created if needed.
+
+		Note: I considered that spell as a game for the FHS, I hope I
+		was right.
+
+2002-03-12  Jeremy Kolb <jkolb@brandeis.edu>
+
+		New spell.
