@@ -1,5 +1,7 @@
 2004-05-26 Eric Sandall <eric@sandall.us>
 	* Renamed from Atlas-C++
+	* DETAILS: Changed SPELL to atlas-c++
+	SOURCEs and SOURCE_DIRECTORY use Atlas-C++
 	* CONFLICTS: Conflicts with Atlas-C++
 
 2004-04-09 Eric Sandall <eric@sandall.us>
