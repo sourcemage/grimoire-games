@@ -1,0 +1,22 @@
+optional_depends \
+	sdl   \
+	use_sdl '' \
+	"Do you want to utilize sdl sound output ?"
+
+
+optional_depends \
+	alsa-driver   \
+	use_alsa '' \
+	"Do you want to utilize alsa sound output ?"
+
+
+optional_depends \
+	esound   \
+	use_esound '' \
+	"Do you want to utilize esound sound output ?"
+
+
+optional_depends \
+	sdl   \
+	use_sdl_video '' \
+	"Do you want to utilize sdl video output ?"

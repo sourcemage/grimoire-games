@@ -1,3 +1,19 @@
+if list_find "$OPTS" use_sdl; then
+  sedit "s/# SOUND_SDL = 1/SOUND_SDL = 1/" makefile.unix
+fi
+
+if list_find "$OPTS" use_alsa; then
+  sedit "s/# SOUND_ALSA = 1/SOUND_ALSA = 1/" makefile.unix
+fi
+
+if list_find "$OPTS" use_esound; then
+  sedit "s/# SOUND_ESOUND = 1/SOUND_ESOUND = 1/" makefile.unix
+fi
+
+if list_find "$OPTS" use_sdl_video; then
+  sedit "s/# DISPLAY_METHOD = SDL/DISPLAY_METHOD = SDL/" makefile.unix
+fi
+
 case  $CUSTOM in
   y|Y)  ${EDITOR:-nano}  makefile.unix  ;;
 esac
