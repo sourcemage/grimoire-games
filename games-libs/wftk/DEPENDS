@@ -1,6 +1,6 @@
 depends  SDL         &&
 depends  SDL_mixer   &&
-depends  freetype1   &&
+depends  freetype2   &&
 depends  zlib        &&
 depends  libpng      &&
 depends  libsigc++   &&

@@ -1,2 +1,3 @@
 2003-10-12 Eric Sandall <eric@sandall.us>
-		Created wftk, added to games
+	* DEPENDS: Uses freetype2, not freetype1
+	* Created wftk, added to games
