@@ -3,7 +3,7 @@
            SOURCE=${SPELL}-${VERSION}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     SOURCE_URL[0]=http://crimson.seul.org/files/${SOURCE}
-           MD5[0]=a1fd7a18f37d8ea3a4ba0db69cf261e8
+           MD5[0]=45347b9a884bddce88e5c36e652bad90
          WEB_SITE=http://crimson.seul.org/index.html
           ENTERED=20020610
           UPDATED=20040422
