@@ -3,6 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://stellarium.free.fr/download/${SOURCE}
+   SOURCE_URL[1]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
           MD5[0]=e0cad9c42031ba9de0d4616db8e623dc
         WEB_SITE=http://stellarium.free.fr
          ENTERED=20021208
