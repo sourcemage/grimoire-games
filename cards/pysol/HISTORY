@@ -1,3 +1,17 @@
+2003-09-03  Eric Sandall <eric@sandall.us>
+
+		Updated to 4.82
+
+		Removed extra SOURCE_URL[0], not sure how this ever worked
+		with two of them listed
+
+		Changed remaining SOURCE_URL[0] to use new site
+
+		Added optional sound, music, and cardset
+
+		Installs into /usr/share/games instead of /usr/share and
+		/usr/games instead of /usr/bin
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!

@@ -1,0 +1,37 @@
+if  !  grep  -q  "CONFIGURED"  ${SPELL_CONFIG}
+then
+
+  CARDSVER=4.40
+  SOUNDVER=3.00
+  MUSICVER=4.40
+
+  if  query  "Do you want additional cardsets (~17MB)?" n
+  then
+    echo        CARDSVER=${CARDSVER}                                      >>  ${SPELL_CONFIG}
+    echo         SOURCE2=pysol-cardsets-\${CARDSVER}.tar.bz2              >>  ${SPELL_CONFIG}
+    echo  SOURCE2_URL[0]=http://www.pysol.org/download/pysol/\${SOURCE2}  >>  ${SPELL_CONFIG}
+    echo          MD5[1]=8219afd00a0181619c09c154c84fd50b                 >>  ${SPELL_CONFIG}
+  fi
+
+  if  query  "Do you want sound (~149KB)?" n
+  then
+    echo        SOUNDVER=${SOUNDVER}                                      >>  ${SPELL_CONFIG}
+    echo         SOURCE3=pysol-sound-server-\${SOUNDVER}.tar.bz2          >>  ${SPELL_CONFIG}
+    echo  SOURCE3_URL[0]=http://www.pysol.org/download/pysol/\${SOURCE3}  >>  ${SPELL_CONFIG}
+    echo          MD5[2]=8ee1bb9ef2038263e4a8a259494ba02b                 >>  ${SPELL_CONFIG}
+
+    depends  smpeg
+    depends  SDL
+
+    if  query  "Do you want additional music (~1.7MB)?" n
+    then
+      echo        MUSICVER=${MUSICVER}                                      >>  ${SPELL_CONFIG}
+      echo         SOURCE4=pysol-music-\${MUSICVER}.tar.bz2                 >>  ${SPELL_CONFIG}
+      echo  SOURCE4_URL[0]=http://www.pysol.org/download/pysol/\${SOURCE4}  >>  ${SPELL_CONFIG}
+      echo          MD5[3]=7853f0cb0861202f2344693e15ea2f8d                 >>  ${SPELL_CONFIG}
+    fi
+  fi
+
+  echo  "CONFIGURED='y'"  >>  ${SPELL_CONFIG}
+
+fi

@@ -1,10 +1,9 @@
            SPELL=pysol
-         VERSION=4.81
+         VERSION=4.82
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.oberhumer.com/opensource/pysol/download/$SOURCE
-   SOURCE_URL[0]=http://infolab.uvt.nl/people/erics/linux/mirror/$SOURCE
-          MD5[0]=9a3cfa401f9d14cea5b17634d9795826
+   SOURCE_URL[0]=http://www.pysol.org/download/pysol/$SOURCE
+          MD5[0]=7f491112232057cbcceaad9561751782
         WEB_SITE=http://www.oberhumer.com/opensource/pysol
          ENTERED=20020320
          UPDATED=20020320
