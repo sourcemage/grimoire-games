@@ -1,0 +1,17 @@
+           SPELL=gtkatlantic
+         VERSION=0.1.4
+          SOURCE=${SPELL}_${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://wouter.fov120.com/cube/index.php4
+         ENTERED=20030108
+         UPDATED=20030108
+          MD5[0]=2634cff0a12bc13a18aeed26e3e03dfa
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Networked monopoly-like game"
+cat << EOF
+GtkAtlantic is a Monopoly-like game
+
+GtkAtlantic is a Monopoly-like game that runs as a network client with the monopd server.
+EOF

@@ -1,0 +1,3 @@
+depends  libpng     &&
+depends  gtk+       &&
+depends  libxml2
