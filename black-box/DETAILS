@@ -1,14 +1,14 @@
-            SPELL=black-box
-          VERSION=1.4.1
-           SOURCE=$SPELL-$VERSION.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
-         WEB_SITE=http://www.linux-games.com
+           SPELL=black-box
+         VERSION=1.4.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
+        WEB_SITE=http://www.linux-games.com/$SPELL
          ENTERED=20010922
          UPDATED=20010922
           MD5[0]=979ff8202f669e44ae1ab47b7cf8d382
       LICENSE[0]=GPL
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="blackbox is game where one guesses where crystals are hidden."
 cat << EOF
 There's a black box. You can shoot in and watch, where the shot leaves
