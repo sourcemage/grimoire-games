@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
          ENTERED=20010922
          UPDATED=20020426
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="SearchAndRescue is a 3d helicopter game."
 cat << EOF
 Search And Rescue is a game in which the player pilots rescue

@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://grustibus.sourceforge.net
          ENTERED=20020208
          UPDATED=20020208
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="gRustibus is an Xmame front-end for Gnome."
 cat << EOF
 gRustibus is a M.A.M.E. frontend for the GNOME environment. Its goal

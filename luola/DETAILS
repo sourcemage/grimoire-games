@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.saunalahti.fi/~laakkon1/linux/luola/index.php
          ENTERED=20011214
          UPDATED=20020310
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="luola is a cavern-flying game for 1-4 players"
 cat << EOF
 Luola is a cavern-flying game for 1-4 players. Each player flies a

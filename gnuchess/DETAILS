@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.gnu.org/software/chess/chess.html
          ENTERED=20020415
          UPDATED=20020502
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="GNU Chess is the GNU chess program"
 cat << EOF
 GNU Chess lets most modern computers play a full game of chess. It has a plain

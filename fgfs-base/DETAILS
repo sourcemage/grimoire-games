@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/FlightGear
         WEB_SITE=http://flightgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20020424
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
          ARCHIVE="off"
            SHORT="fgfs-base provides the base files required by FlightGear."
 cat << EOF

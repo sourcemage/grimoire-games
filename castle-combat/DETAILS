@@ -6,7 +6,7 @@
          WEB_SITE=http://www.linux-games.com/castle-combat/
          ENTERED=20010922
          UPDATED=20020308
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="castle-combat is a clone of the old DOS game rampart."
 cat << EOF
 It's a clone of the old DOS game Rampart. Up to four players (or more in

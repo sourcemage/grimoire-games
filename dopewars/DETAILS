@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://dopewars.sourceforge.net/
          ENTERED=20020320
          UPDATED=20020502
-      MAINTAINER="jerome.zago@insalien.org"
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="dopewars is a Drug dealing game set in New York"
 cat << EOF
 dopewars is a Drug dealing game set in New York.
