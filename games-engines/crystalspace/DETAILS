@@ -1,0 +1,23 @@
+           SPELL=crystalspace
+         VERSION=0.96r004
+          SOURCE=cs96_004.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
+   SOURCE_URL[0]=ftp://sunsite.dk/projects/crystal/cs096/source/$SOURCE
+        WEB_SITE=http://crystal.sourceforge.net
+         ENTERED=20040107
+         UPDATED=20040107
+          MD5[0]=69ae6cbdc742814997d86b2fae938d5f
+      LICENSE[0]=LGPL
+      MAINTAINER=dhaley@hot.rr.com
+           SHORT="Crystal Space is a 3D graphics engine that can be used in games and other 3D applications."
+cat << EOF
+Crystal Space is a free (LGPL) and portable 3D Game Development Kit written in C++. 
+It supports: true six degrees of freedom, colored lighting, mipmapping, portals, mirrors, alpha transparency, 
+reflective surfaces, 3D sprites (frame basedor with skeletal animation), procedural textures, particle systems, halos, 
+volumetric fog, scripting (using Python or other languages), 16-bit and 32-bit display support, OpenGL, 
+software renderer, font support, hierarchical transformations, ... See the extensive list of features for more details.
+
+Crystal Space currently runs on GNU/Linux, general Unix, Windows, Windows NT, and MacOS/X. It can optionally use OpenGL 
+(on all platforms), SDL (all SDL platforms), X11 (Unix or GNU/Linux) and SVGALIB (GNU/Linux). 
+It can also optionally use assembler routines using NASM and MMX. 
+EOF
