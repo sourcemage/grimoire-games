@@ -1,3 +1,7 @@
+2005-01-18 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* terminal/*: renamed section to games-terminal due to a name conflict with
+		a spell
+
 2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/glaxium: deprecated, no longer supported upstream
 
