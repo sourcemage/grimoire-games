@@ -6,5 +6,6 @@
                --sysconfdir=${INSTALL_ROOT}/etc                 \
                --localstatedir=${INSTALL_ROOT}/var              \
                --bindir=${INSTALL_ROOT}/usr/games               \
-               --with-highscore-path=${INSTALL_ROOT}/var/games  &&
-               ${OPTS} 
+               --with-highscore-path=${INSTALL_ROOT}/var/games  \
+               ${OPTS}   &&
+  make

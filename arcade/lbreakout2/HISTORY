@@ -1,3 +1,8 @@
+2005-01-20 Neuron <vlmarek@volny.cz>
+	* BUILD: added 'make' command, which makes spell first build and then
+	  remove the old one. Also fixed adding of $OPTS variable to
+	  ./configure
+
 2005-01-17 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updates for Build API 2
 	* Version bump
