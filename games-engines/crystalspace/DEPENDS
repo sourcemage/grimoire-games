@@ -1,3 +1,4 @@
+depends jam	  &&
 depends perl      &&
 depends zlib      &&
 depends libpng    &&

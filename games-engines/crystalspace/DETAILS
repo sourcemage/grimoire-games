@@ -1,12 +1,12 @@
            SPELL=crystalspace
-         VERSION=0.96r004
-          SOURCE=cs96_004.tar.gz
+         VERSION=0.98r003
+          SOURCE=cs98_003.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
-   SOURCE_URL[0]=ftp://sunsite.dk/projects/crystal/cs096/source/$SOURCE
+   SOURCE_URL[0]=ftp://sunsite.dk/projects/crystal/cs098/source/$SOURCE
         WEB_SITE=http://crystal.sourceforge.net
          ENTERED=20040107
          UPDATED=20040107
-          MD5[0]=69ae6cbdc742814997d86b2fae938d5f
+          MD5[0]=f83571df1b0df44a5acfa94651287c9c
       LICENSE[0]=LGPL
       MAINTAINER=dhaley@hot.rr.com
            SHORT="Crystal Space is a 3D graphics engine that can be used in games and other 3D applications."
