@@ -2,7 +2,7 @@
          VERSION=0.97-cvs
           SOURCE=$SPELL-${VERSION/\-cvs/}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://unc.dl.sourceforge.net/criticalmass/$SOURCE
+   SOURCE_URL[0]=http://$SOURCEFORGE_URL/criticalmass/$SOURCE
         WEB_SITE=http://criticalmass.sourceforge.net
          ENTERED=20011214
          UPDATED=20020121
