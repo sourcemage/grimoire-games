@@ -1,5 +1,8 @@
+2004-01-23 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on X11-SERVER, not -LIBS
+
 2003-11-01 Eric Sandall <eric@sandall.us>
-    * DEPENDS: Changed requires to depends, and uppercase
+	* DEPENDS: Changed requires to depends, and uppercase
 
 2003-09-20 Eric Sandall <eric@sandall.us>
 	* Created spell
