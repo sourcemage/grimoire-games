@@ -1,0 +1,17 @@
+           SPELL=blender2cal3d
+         VERSION=0.4
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
+          MD5[0]=b7caa878ac4fff64e672693556061a77
+        WEB_SITE=http://sourceforge.net/projects/cal3d/
+         ENTERED=20031009
+         UPDATED=20031009
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+         ARCHIVE="off"
+            DOCS=""
+           SHORT="Blender 2.28 => Cal3D 0.7/0.8 converter"
+cat << EOF
+Blender 2.28 => Cal3D 0.7/0.8 converter
+EOF
