@@ -1,10 +1,11 @@
 (
 
-  ./configure  --build=$BUILD        \
-               --prefix=/usr         \
-               --sysconfdir=/etc     \
-               --localstatedir=/var  \
-               --bindir=/usr/games   \
+  ./configure  --build=$BUILD			\
+               --prefix=/usr			\
+               --bindir=/usr/games		\
+               --datadir=/usr/share/games	\
+               --sysconfdir=/etc		\
+               --localstatedir=/var/games	\
                $OPTS                 &&
   make                               &&
   prepare_install                    &&
