@@ -1,4 +1,8 @@
 depends  nasm      &&
 depends  X11-LIBS  &&
-depends  SDL       &&
-optional_depends  "gtk+2"  "--with-gtk"  "--without-gtk"  "for a GTK gui"
+depends  sdl       &&
+
+optional_depends  gtk+2            \
+                  "--with-gtk"     \
+                  "--without-gtk"  \
+                  "for a GTK gui"

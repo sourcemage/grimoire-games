@@ -1,3 +1,6 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer and SDL_image renamed to sdl*
+
 2004-06-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added CVS support, switched to BUILD_API2
 

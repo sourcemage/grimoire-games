@@ -1,6 +1,6 @@
            SPELL=scummvm
          VERSION=${VERSION:=0.6.1}
-if [ "$CVS" = "yes" ] ; then
+if  [  "$CVS"  ==  "y"  ] ; then
          VERSION=cvs  
   FORCE_DOWNLOAD=1 
           SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 

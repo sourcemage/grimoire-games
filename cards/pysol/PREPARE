@@ -20,8 +20,8 @@ then
     echo  SOURCE3_URL[0]=http://www.pysol.org/download/pysol/\${SOURCE3}  >>  ${SPELL_CONFIG}
     echo          MD5[2]=8ee1bb9ef2038263e4a8a259494ba02b                 >>  ${SPELL_CONFIG}
 
-    depends  smpeg
-    depends  SDL
+    depends  smpeg  &&
+    depends  sdl    &&
 
     if  query  "Do you want additional music (~1.7MB)?" n
     then

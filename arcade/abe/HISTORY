@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  SDL removed as sdl_mixer depends on sdl
+
 2004-07-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAINTAINER
 	  Cleaned up spacing

@@ -1,11 +1,38 @@
-depends lua  &&
-depends  zlib      &&
+depends  lua     &&
 depends  libpng  &&
-depends SDL  &&
-optional_depends "OPENGL" "--with-opengl" "--without-opengl" "for OpenGL support\(advisable\)"  &&
-optional_depends "libogg" "--with-ogg" "--without-ogg" "for ogg support\(recommended\)"  &&
-optional_depends "libvorbis" "--with-ogg" "--without-ogg" "for vorbiss support\(recommended\)"  &&
-optional_depends "libmikmod" "--with-mikmod" "--without-mikmod" "for mikmod support\(recommended\)"  &&
-optional_depends "bzip2" "--with-bzip2" "--without-bzip2" "for bzip2 support"  &&
-optional_depends "flac" "--with-flac" "--without-flac" "for flac support\(not sure if this works\)"  &&
-optional_depends "libmad" "--with-mad" "--without-mad" "for mad support"
+depends  sdl     &&
+
+optional_depends  OPENGL                             \
+                  "--with-opengl"                    \
+                  "--without-opengl"                 \
+                  "for OpenGL support\(advisable\)"  &&
+
+optional_depends  libogg                            \
+                  "--with-ogg"                      \
+                  "--without-ogg"                   \
+                  "for ogg support\(recommended\)"  &&
+
+optional_depends  libvorbis                             \
+                  "--with-ogg"                          \
+                  "--without-ogg"                       \
+                  "for vorbiss support\(recommended\)"  &&
+
+optional_depends  libmikmod                            \
+                  "--with-mikmod"                      \
+                  "--without-mikmod"                   \
+                  "for mikmod support\(recommended\)"  &&
+
+optional_depends  bzip2                \
+                  "--with-bzip2"       \
+                  "--without-bzip2"    \
+                  "for bzip2 support"  &&
+
+optional_depends  flac                                          \
+                  "--with-flac"                                 \
+                  "--without-flac"                              \
+                  "for flac support\(not sure if this works\)"  &&
+
+optional_depends  libmad             \
+                  "--with-mad"       \
+                  "--without-mad"    \
+                  "for mad support"

@@ -1,6 +1,6 @@
-depends  SDL     &&
-depends  SDL_ttf &&
-optional_depends "SDL_mixer"          \
-                 ""                   \
-                 ""                   \
-                 "for sound support"
+depends  sdl_ttf  &&
+
+optional_depends  sdl_mixer            \
+                  ""                   \
+                  ""                   \
+                  "for sound support"

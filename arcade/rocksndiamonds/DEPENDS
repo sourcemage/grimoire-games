@@ -1,5 +1,4 @@
 case  $SDL  in
-  y|Y)  depends  SDL        &&
-        depends  SDL_image  &&
-        depends  SDL_mixer  ;;
+  y|Y)  depends  sdl_image  &&
+        depends  sdl_mixer  ;;
 esac

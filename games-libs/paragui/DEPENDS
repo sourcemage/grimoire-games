@@ -1,10 +1,10 @@
-depends  SDL_image  &&
+depends  sdl_image  &&
 depends  expat      &&
 depends  freetype2  &&
 depends  Python     &&
 depends  zlib       &&
 
-optional_depends  "physfs"                                  \
+optional_depends  physfs                                    \
                   ""                                        \
                   "--enable-internalphysfs"                 \
                   "for external PhysFS filesystem support"

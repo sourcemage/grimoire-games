@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
+	  Removed SDL as the above depend on sdl
+
 2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 3.1.0
 

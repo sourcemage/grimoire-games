@@ -1,4 +1,4 @@
-if [ "${CVS}" = "yes" ];  then
+if  [  "${CVS}"  ==  "y"  ];  then
   ./autogen.sh        &&
   default_build
 else

@@ -1,5 +1,5 @@
 depends  libtool    && # the included version is broken ?
 depends  SDLmm      &&
-depends  SDL_image  &&
-depends  SDL_mixer  &&
+depends  sdl_image  &&
+depends  sdl_mixer  &&
 depends  paragui  "--disable-paraguitest"

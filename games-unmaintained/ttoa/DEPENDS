@@ -1,2 +1,1 @@
-depends  SDL_image  &&
-depends  SDL
+depends  sdl_image

@@ -1,6 +1,5 @@
 depends  GLUT       &&
 depends  gtk+2      &&
-depends  SDL        &&
-depends  SDL_image  &&
-depends  SDL_mixer  &&
+depends  sdl_image  &&
+depends  sdl_mixer  &&
 depends  libvorbis

@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	  Formatted to Guru Handbook
+
 2004-01-07 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.5.4
 	* TRIGGERS: removed file, zlib is only used during runtime, not compiled in :)
@@ -10,7 +14,7 @@
 	* BUILD: Update for ${INSTALL_ROOT}
 
 2003-05-14 Seth Woolley <seth@tautology.org>
-	* Added unpack to BUILD
+	* BUILD: Added unpack to BUILD
 
 2002-10-06 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: New version: 0.5.2

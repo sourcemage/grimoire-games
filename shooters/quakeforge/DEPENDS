@@ -4,6 +4,18 @@ depends  ncurses   &&
 depends  libtool   &&
 
 #optional_depends "alsa-lib" "" "--disable-alsa" "for alsa sound support"
-optional_depends "SDL" "" "" "for SDL video/audio output support" &&
-optional_depends "zlib" "" "" "for compressed pak-file support"    &&
-optional_depends "libvorbis" "" "" "for ogg-vorbis sound file support"
+
+optional_depends  sdl                                   \
+                  ""                                    \
+                  ""                                    \
+                  "for SDL video/audio output support"  &&
+
+optional_depends  zlib                               \
+                  ""                                 \
+                  ""                                 \
+                  "for compressed pak-file support"  &&
+
+optional_depends  libvorbis                            \
+                  ""                                   \
+                  ""                                   \
+                  "for ogg-vorbis sound file support"

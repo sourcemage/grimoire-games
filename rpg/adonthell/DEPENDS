@@ -1,3 +1,7 @@
-depends SDL	&&
-depends Python	&&
-optional_depends vorbis-tools
+depends  sdl     &&
+depends  Python  &&
+
+optional_depends  vorbis-tools            \
+                  ""                      \
+                  ""                      \
+                  "for ogg music output"

@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* PREPARE: SDL renamed to sdl
+	  Added "&&" for depends
+
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* BUILD: needs to make a dir if it doesn't exist
 

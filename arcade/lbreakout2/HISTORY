@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  Removed SDL as sdl_mixer depends on sdl
+
 2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated to 2.5beta-8
 

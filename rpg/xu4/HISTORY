@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  SDL removed as sdl_mixer depends on sdl
+
 2004-02-25 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.9, and actually submit, previous version segfaulted on startup
 

@@ -1,3 +1,7 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Renamed SDL_ttf to sdl_ttf
+	  Removed SDL as sdl_ttf depends on sdl
+
 2004-01-06 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: use paragui --paragui-prefix=/usr
 

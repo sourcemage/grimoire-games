@@ -1,3 +1,2 @@
-depends  SDL        &&
-depends  SDL_image  &&
+depends  sdl_image  &&
 depends  nas

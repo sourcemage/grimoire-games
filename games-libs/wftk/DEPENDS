@@ -1,11 +1,9 @@
-depends  SDL         &&
-depends  SDL_mixer   &&
+depends  sdl_mixer   &&
 depends  freetype2   &&
-depends  zlib        &&
 depends  libpng      &&
 depends  libsigc++2  &&
 depends  smpeg       &&
 
-if [ "${CVS}" = "yes" ];  then
+if  [  "${CVS}"  ==  "y"  ];  then
   depends  cvs
 fi

@@ -9,7 +9,7 @@ if  grep  -q  "VOUTPUT=--with-fb"  $SPELL_CONFIG;  then
 fi &&    
 
 if  grep  -q  "VOUTPUT=--with-sdl"  $SPELL_CONFIG;  then
-    depends SDL
+    depends sdl
 fi &&    
 
 if  grep  -q  "VOUTPUT=--with-ggi"  $SPELL_CONFIG;  then

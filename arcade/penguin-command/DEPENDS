@@ -1,3 +1,2 @@
-depends  libpng  &&
-depends  SDL     &&
-depends  SDL_mixer
+depends  sdl_mixer  &&
+depends  libpng

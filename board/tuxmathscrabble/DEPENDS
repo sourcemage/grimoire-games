@@ -1,4 +1,4 @@
-depends  SDL_mixer  &&
-depends  SDL_image  &&
-depends  SDL_ttf    &&
+depends  sdl_mixer  &&
+depends  sdl_image  &&
+depends  sdl_ttf    &&
 depends  pygame

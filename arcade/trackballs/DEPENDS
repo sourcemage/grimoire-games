@@ -1,5 +1,4 @@
-depends  SDL        &&
-depends  SDL_ttf    &&
-depends  SDL_mixer  &&
-depends  SDL_image  &&
+depends  sdl_ttf    &&
+depends  sdl_mixer  &&
+depends  sdl_image  &&
 depends  guile

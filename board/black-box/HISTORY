@@ -1,8 +1,13 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  Removed SDL as sdl_mixer depends on sdl
+	* HISTORY: Formatted to Guru Handbook
+
 2004-03-11 Robert Helgesson <rycee@home.se>
 	* DETAILS: Removed $SPELL from WEB_SITE.
-	* DETAILS: Removed MAINTAINER.
+	  Removed MAINTAINER.
 	* BUILD: Removed broken call to patch (bug #4718).
-	* BUILD: Added sedit to enable use of global SDL_mixer.
+	  Added sedit to enable use of global SDL_mixer.
 	* HISTORY: Converted to new format.
 
 2003-08-17 hgg <hgreig@bigpond.net.au>

@@ -1,4 +1,4 @@
-optional_depends "SDL" \
-                 ""    \
-                 ""    \
-                 "for an SDL interface"
+optional_depends  sdl                     \
+                  ""                      \
+                  ""                      \
+                  "for an SDL interface"

@@ -1,6 +1,6 @@
 depends  GLUT    &&
 depends  Python  &&
-depends  SDL     &&
+depends  sdl     &&
 depends  libpng  &&
 depends  jpeg    &&
 depends  openal

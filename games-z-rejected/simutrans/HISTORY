@@ -1,3 +1,6 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
 2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to grimoire
 

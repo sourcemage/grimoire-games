@@ -1,7 +1,6 @@
 depends  GLUT       &&
 depends  tcl        &&
-depends  SDL        &&
-depends  SDL_mixer  &&
+depends  sdl_mixer  &&
 
 optional_depends  nvidia_headers  \
                   ""              \

@@ -1,5 +1,4 @@
-depends OPENGL &&
-depends SDL &&
-depends SDL_image &&
-depends SDL_mixer &&
-depends SDL_ttf
+depends  OPENGL     &&
+depends  sdl_image  &&
+depends  sdl_mixer  &&
+depends  sdl_ttf

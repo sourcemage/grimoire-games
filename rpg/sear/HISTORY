@@ -1,3 +1,6 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
+
 2004-07-21 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on eris-transitional (not eris cvs)
 	  Depends on sage still

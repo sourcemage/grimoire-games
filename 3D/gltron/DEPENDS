@@ -1,3 +1,2 @@
-depends  GLUT  &&
-depends  SDL   &&
-depends  SDL_sound
+depends  sdl_sound  &&
+depends  GLUT

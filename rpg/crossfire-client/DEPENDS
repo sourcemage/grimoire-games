@@ -1,3 +1,11 @@
-depends  libpng                                         &&
-optional_depends  "gtk+"       ""  ""  "for gcfclient"  &&
-optional_depends  "SDL_image"  ""  ""  "for SDL support"
+depends  libpng  &&
+
+optional_depends  gtk+             \
+                  ""               \
+                  ""               \
+                  "for gcfclient"  &&
+
+optional_depends  sdl_image          \
+                  ""                 \
+                  ""                 \
+                  "for SDL support"

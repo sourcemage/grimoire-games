@@ -1,5 +1,2 @@
-depends  SDL  	   	&&
-depends  SDL_mixer  	&&	# sound
-depends  SDL_net    	
-#depends  autoconf		# for the patch to be effective
-#depends  automake		# same
+depends  sdl_mixer  &&
+depends  sdl_net

@@ -1,3 +1,8 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_ttf and SDL_mixer renamed to sdl*
+	  Removed SDL as sdl_ttf depends on sdl
+	  Formatted to Guru Handbook
+
 2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 0.4.2
 	* DETAILS: md5sum fixed...

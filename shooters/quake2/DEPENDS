@@ -1,3 +1,6 @@
-depends  SDL
-optional_depends "aalib" "" "" "for an ascii client"
+depends  sdl  &&
 
+optional_depends  aalib                  \
+                  ""                     \
+                  ""                     \
+                  "for an ascii client"

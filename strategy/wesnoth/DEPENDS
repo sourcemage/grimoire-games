@@ -1,4 +1,4 @@
-depends  SDL_ttf    &&
-depends  SDL_image  &&
-depends  SDL_mixer  &&
-depends  SDL_net
+depends  sdl_ttf    &&
+depends  sdl_image  &&
+depends  sdl_mixer  &&
+depends  sdl_net

@@ -1,8 +1,8 @@
 depends  GLUT    &&
-depends  SDL     &&
+depends  sdl     &&
 depends  physfs  &&
 
-optional_depends  "wxGTK"                             \
+optional_depends  wxGTK                               \
                   ""                                  \
                   ""                                  \
                   "for wx[windows|GTK] GUI launcher"

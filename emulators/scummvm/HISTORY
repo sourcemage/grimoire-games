@@ -1,3 +1,11 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	  Formatted to Guru Handbook
+	  Use any provider of CVS
+	  Use config_query response
+	* DETAILS: Use config_query response
+	* PREPARE: Converted to config_query
+
 2004-07-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version bump 0.6.1
 

@@ -1,19 +1,24 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Renamed SDL_mixer to sdl_mixer
+	  Removed SDL as sdl_mixer depends on sdl
+	* HISTORY: Formatted to Guru Handbook
+
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-	* Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
 2003-01-31 Eric Sandall <eric@sandall.us>
 	* Fixed Bug #2443
 
 2002-10-10 Arwed v. Merkatz <v.merkatz@gmx.net>
-	* New version: 1.45
+	* DETAILS: New version: 1.45
 	  changed SOURCE_URL (linux-games.com changed their download site)
 
 2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
-	* Added md5, license and changed maintainer
+	* DETAILS: Added md5, license and changed maintainer
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>
-	* Added this History file.
+	* HISTORY: Added this History file.
 
