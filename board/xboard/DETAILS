@@ -1,9 +1,9 @@
            SPELL=xboard
-         VERSION=4.2.6
+         VERSION=4.2.7
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://gatekeeper.dec.com/pub/GNU/xboard/$SOURCE
-          MD5[0]=7789c598e30b1c4af00a5a82838ea776
+          MD5[0]=551644bf49a4be48c42e87640cf1b5eb
         WEB_SITE=http://www.tim-mann.org/xboard.html
          ENTERED=20020425
          UPDATED=20031009
