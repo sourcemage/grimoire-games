@@ -1,5 +1,6 @@
-depends  SDL   &&
-depends  glut  &&
+depends  SDL     &&
+depends  glut    &&
+depends  physfs  &&
 
 optional_depends  "wxGTK"                             \
                   ""                                  \

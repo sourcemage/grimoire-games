@@ -1,12 +1,12 @@
            SPELL=fbg
-         VERSION=0.8.1
+         VERSION=0.9
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
         WEB_SITE=http://home.attbi.com/~furiousjay/code/fbg.html
          ENTERED=20021031
          UPDATED=20021031
-          MD5[0]=f4f155cc3caee8a669787bc80919e48b
+          MD5[0]=fca1872b6e2a476f9be76c4003f49031
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
     MENU_ITEM[0]="Falling Block Game"
