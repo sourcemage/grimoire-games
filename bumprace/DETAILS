@@ -1,12 +1,12 @@
             SPELL=bumprace
-          VERSION=1.43
+          VERSION=1.45
            SOURCE=$SPELL-$VERSION.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
+    SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
          WEB_SITE=http://www.linux-games.com
           ENTERED=20010922
           UPDATED=20010922
-           MD5[0]=43c267a50ddc0153362e05fffdc8e7f5
+           MD5[0]=e49db46ede2020f38f952f5ec6e96cd1
        LICENSE[0]=GPL
        MAINTAINER=g.clay@warwick.ac.uk
             SHORT="bumprace is a game to get from start to finish without crashing."

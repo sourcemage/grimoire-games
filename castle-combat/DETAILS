@@ -2,7 +2,7 @@
          VERSION=0.7.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
+   SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
         WEB_SITE=http://www.linux-games.com/castle-combat/
           MD5[0]=28603118b6a45bfac1e2abc81cd235fd
       LICENSE[0]=GPL

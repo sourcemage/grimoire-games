@@ -2,7 +2,7 @@
          VERSION=1.4.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.linux-games.com/$SPELL/$SOURCE
+   SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
         WEB_SITE=http://www.linux-games.com/$SPELL
          ENTERED=20010922
          UPDATED=20010922
