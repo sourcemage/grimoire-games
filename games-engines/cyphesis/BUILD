@@ -1,6 +1,6 @@
 export  OPTS="$OPTS  --disable-psqltest"  &&
 
-if  [  "$CVS" ==  "y"  ]
+if  [  "$CYPHESIS_CVS" ==  "y"  ]
 then
   ./autogen.sh  &&
   default_build

@@ -1,1 +1,1 @@
-config_query  CVS  "Would you like to build the latest cvs version of $SPELL ?"  n
+config_query  CYPHESIS_CVS  "Would you like to build the latest cvs version?"  n

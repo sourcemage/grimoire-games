@@ -1,3 +1,7 @@
+2005-01-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.7
+	* PREPARE,DETAILS,BUILD: CVS renamed to CYPHESIS_CVS
+
 2004-11-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.6
 	* DEPENDS: Stable and CVS version now both use howl
