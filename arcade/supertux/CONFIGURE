@@ -1,0 +1,8 @@
+if ! grep -q "OPENGL"  $SPELL_CONFIG; then
+  if   query  "Use OpenGL rendering mode?" y
+  then OPENGL=yes
+  else OPENGL=no
+  fi
+  echo  "OPENGL=$OPENGL"  >>  $SPELL_CONFIG
+fi
+. $SPELL_CONFIG

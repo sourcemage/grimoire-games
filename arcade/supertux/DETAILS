@@ -1,0 +1,19 @@
+           SPELL=supertux
+         VERSION=0.1.1
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/super-tux/$SOURCE
+        WEB_SITE=http://super-tux.sourceforge.net
+          MD5[0]=af63bc5e7333b65e9c2a6b4f1a5abf47
+      LICENSE[0]=GPL
+         ENTERED=20040512
+         UPDATED=20040512
+           SHORT="a classic 2D jump'n run sidescroller game"
+cat << EOF
+SuperTux is a classic 2D jump'n run sidescroller game in a style similar to the
+original SuperMario games. The Milestone1 release of SuperTux features 9
+enemies, 26 playable levels, software and OpenGL rendering modes, configurable
+joystick and keyboard input, new music and completly redone graphics. Together
+with a little story, we hope to provide a good gaming experince with this first
+Milestone release.
+EOF
