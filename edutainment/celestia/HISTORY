@@ -1,3 +1,8 @@
+2003-08-27  hgg <hgreig@bigpond.net.au>
+
+		Clean up after checking Bug #4129. ./configure doesn't honour --bindir or --datadir 
+		switches only --prefix
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 
 		Added warning to configure for gtk+
