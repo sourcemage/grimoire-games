@@ -6,10 +6,10 @@ rm  -f  $SPELL_CONFIG
 
 (
 
-  make  PREFIX=/usr           \
-        BINDIR=/usr/games     \
-        CFLAGS="$CFLAGS"      \
-        CXXFLAGS="$CXXFLAGS"  \
+  make  PREFIX=/usr				\
+        BINDIR=/usr/games			\
+        CFLAGS="${CFLAGS/-O[3-9]/-O2}"		\
+        CXXFLAGS="${CXXFLAGS/-O[3-9]/-O2}"	\
         -f  makefile.unix     &&
   prepare_install             &&
   make  PREFIX=/usr           \

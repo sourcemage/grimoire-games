@@ -1,3 +1,13 @@
+2002-08-02  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 0.60.1 (thanks Eric Womack
+		<eric@lasvegasdata.com>), which fixes bug #500.
+
+		Removed USEGCC2. This also means that I modified BUILD so that
+		this  spell compiles at -O2 at most, since -O3 (speedy) doesn't
+		work anymore (see 2002-08-02 07:21 comment for bug #500 for
+		more details). 
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.
