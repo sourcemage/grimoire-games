@@ -1,3 +1,7 @@
+2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version update 1.7.0 bug #7261
+	* DETAILS: Build api 2
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image renamed to sdl_image
 	  Formatted to Guru Handbook
