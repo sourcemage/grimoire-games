@@ -1,11 +1,11 @@
            SPELL=foobillard
-         VERSION=2.4
+         VERSION=2.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://foobillard.sunsite.dk/dnl/$SOURCE
         WEB_SITE=http://foobillard.sunsite.dk/
            SHORT="A free OpenGl billiard game for linux"
-          MD5[0]=e55ced21b87919d12df3516d54c21d5c
+          MD5[0]=db83f4859911956d7e7ec2d1a97b23c3
       LICENSE[0]=GPL
          ENTERED=20020516
          UPDATED=20020516
