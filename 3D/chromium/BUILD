@@ -4,6 +4,7 @@
   patch -p1 < $SCRIPT_DIRECTORY/chromium.patch &&
   make                               &&
   prepare_install                    &&
+  mkdir -p ${INSTALL_ROOT}/usr/games &&
  cd ${INSTALL_ROOT}/usr/share/games &&
  unpack ${SOURCE2} ${MD5[1]}  &&
  mkdir -p Chromium-0.9/bin    &&
