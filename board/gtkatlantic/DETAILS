@@ -1,9 +1,9 @@
            SPELL=gtkatlantic
-         VERSION=0.3.0
+         VERSION=0.3.1
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=28ff191ab8bd4521c7551ffcaa5e924b
+          MD5[0]=ef8fc7fb492e190c98b01ee9803b5fbc
         WEB_SITE=http://gtkatlantic.sourceforge.net/
          ENTERED=20030108
          UPDATED=20030820
