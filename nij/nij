@@ -1,0 +1,5 @@
+#!/bin/sh
+# Script to run NIJ
+
+cd  /usr/share/games/nij
+./game
