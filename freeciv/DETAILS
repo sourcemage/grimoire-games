@@ -1,9 +1,9 @@
            SPELL=freeciv
-         VERSION=1.13.0
+         VERSION=1.14.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/stable/$SOURCE
-          MD5[0]=71b12753f75d68e53bf792af9612fa42
+          MD5[0]=0626d54f6045df6bf966ad58c5c39b25
         WEB_SITE=http://www.freeciv.org
          ENTERED=20010922
          UPDATED=20010922
@@ -18,7 +18,7 @@ are included. Multiuser gameplay is real-time: in each turn, all human
 players move concurrently. The game is designed to remain fairly playable 
 even on poor network connections. Freeciv can also be played on standalone 
 machines, and its AI players are a good challenge for beginners. The source 
-code comes with the server, two X clients, and non-X clients for MS Windows 
+code comes with the server, three X clients, and non-X clients for MS Windows 
 and Amiga. Freeciv is released under the GNU General Public License. It is 
 maintained by an international team of coders and enthusiasts, and is easily 
 one of the most fun and addictive network games out there.

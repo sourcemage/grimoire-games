@@ -6,6 +6,7 @@
                --datadir=/usr/share/games  \
                --sysconfdir=/etc           \
                --localstatedir=/var/games  \
+               --enable-client=$CLIENT     \
                $OPTS                 &&
   make                               &&
   prepare_install                    &&

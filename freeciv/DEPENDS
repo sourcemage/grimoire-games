@@ -1,0 +1,12 @@
+if  [  $CLIENT = "xaw3d"  ]; then
+  depends  Xaw3d
+elif  [  $CLIENT = "gtk"  ]; then
+  depends  gtk+  &&
+  depends  imlib
+elif  [  $CLIENT = "gtk2"  ]; then
+  depends  gtk+2
+fi
+
+optional_depends  "esound"  ""  ""  "for sound support through esound"  &&
+optional_depends  "SDL_mixer"  ""  ""  "for sound support through SDL"  &&
+optional_depends  "zlib"  ""  ""  "for compressed savegame support"

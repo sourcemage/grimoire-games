@@ -1,3 +1,12 @@
+2003-01-21  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		updated to 1.14.0
+		added DEPENDS file (why did this disappear again?)
+		added CONFIGURE file to ask which client to build
+		(note: xaw3d client segfaults, so i left it out)
+		changed the long description
+		(there's now three X clients instead of two)
+
 2002-10-22  Eric Sandall <eric@sandall.us>
 
 		Fixed Bug #1344

@@ -1,0 +1,22 @@
+Xaw3dInstalled=off
+GtkInstalled=off
+Gtk2Installed=off
+if  spell_installed  gtk+2; then
+  Gtk2Installed=on
+elif  spell_installed gtk+; then
+  GtkInstalled=on
+elif  spell_installed Xaw3d; then
+  Xaw3dInstalled=on
+fi
+if  !  grep  -q  "CLIENT="  $SPELL_CONFIG; then
+  CLIENT=`dialog  --backtitle  "Freeciv Client Configuration"  \
+                  --stdout                                     \
+                  --title      "Select which client to build"  \
+                  --radiolist                                  \
+                  ""                                           \
+                  0 50 10                                      \
+                  gtk    "Gtk+  client"  $GtkInstalled         \
+                  gtk2   "Gtk+2 client"  $Gtk2Installed`
+  echo CLIENT=$CLIENT >>  $SPELL_CONFIG
+fi
+. $SPELL_CONFIG
