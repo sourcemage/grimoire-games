@@ -1,39 +1,32 @@
-2003-07-23  Eric Sandall <eric@sandall.us>
+2003-12-12 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.3.1
+	* HISTORY: reformat
 
-		Fails with multiple jobs
+2003-07-23 Eric Sandall <eric@sandall.us>
+	* DETAILS: Fails with multiple jobs
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-05  hgg <hgreig@bigpond.net.au>
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 0.2.0a
 
-		Updated to 0.2.0a
+2003-01-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.1.2  (Bug #2389, thanks to Snakebyte)
 
-2003-01-26  Eric Sandall <eric@sandall.us>
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields
+	changed MAINTAINER
+	changed SOURCE_URL to use SOURCEFORGE_URL
 
-		Updated to 0.1.2  (Bug #2389, thanks to Snakebyte)
+2002-08-02 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 0.0.7 (thanks Tom Garland <tgarland@email.com>)
+	Improved FHS compliance (static data now goes into
+	/usr/share/games/pinball/).
 
-2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
-
-		added MD5 and LICENSE fields
-
-		changed MAINTAINER
-
-		changed SOURCE_URL to use SOURCEFORGE_URL
-
-2002-08-02  Jerome Zago <jerome.zago@insalien.org>
-
-		New version: 0.0.7 (thanks Tom Garland <tgarland@email.com>)
-
-		Improved FHS compliance (static data now goes into
-		/usr/share/games/pinball/).
-
-2002-05-02  Jerome Zago <jerome.zago@insalien.org>
-
-		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
-		too slow.
+2002-05-02 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
+	too slow.
