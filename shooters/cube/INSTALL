@@ -28,7 +28,7 @@ cp  -r  *.cfg  data  packages  $I_DIR                                      &&
 chown  -R  root.games  $I_DIR                                              &&
 mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                           &&
 mv  source/readme.txt    source/readme.source.txt                          &&
-install  -o  root  -g  games  -d  -m  644  /usr/share/docs/$SPELL          &&
+install  -o  root  -g  games  -d  -m  644  /usr/share/doc/$SPELL           &&
 install  -o  root  -g  games  readme.html  bin_unix/readme.bin.txt         \
          source/readme.source.txt  source/src/CUBE_TODO.txt                \
-         /usr/share/docs/$SPELL
+         /usr/share/doc/$SPELL
