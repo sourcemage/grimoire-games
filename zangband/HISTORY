@@ -1,4 +1,8 @@
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-06-15  hgg <hgreig@bigpond.net.au>
+
+		Update BUILD so I_DIR is +rw for users otherwise game crashes on startup
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 

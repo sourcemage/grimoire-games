@@ -14,12 +14,13 @@
                ${OPTS}                                   &&
   make                                                   &&
   prepare_install                                        &&
-  mkdir  -p   ${I_DIR}                                   &&
+  mkdir  -p -m0777  ${I_DIR}                             &&
   cp  zangband  ${I_DIR}                                 &&
   cp  -r  lib  ${I_DIR}                                  &&
   cp  ${SCRIPT_DIRECTORY}/zangband  /usr/games           &&
   chmod  775  /usr/games/zangband                        &&
   chown  root.games  /usr/games/zangband                 &&
-  chown  root.games  ${I_DIR}  -R
+  chown  root.games  ${I_DIR}  -R                        &&
+  chmod -R a+rw ${I_DIR}
 
 ) > ${C_FIFO} 2>&1
