@@ -1,3 +1,7 @@
+2005-01-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version bump to 2.0.0, BUILD_API=2
+	* BUILD: converted to buildapi 2
+
 2004-10-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: md5fix
 
