@@ -1,5 +1,10 @@
 2002-07-17  Jerome Zago <jerome.zago@insalien.org>
 
+		Added SOURCE_URL[1] for the future, i.e. when a stable version
+		is released (thanks Richard S. Bunke <rbunke@speakeasy.net>).
+
+2002-07-17  Jerome Zago <jerome.zago@insalien.org>
+
 		New version: 1.13.0 (thanks Richard S. Bunke
 		<rbunke@speakeasy.net>), 1.12.0 being no longer available.
 
