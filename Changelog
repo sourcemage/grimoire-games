@@ -1,3 +1,6 @@
+2005-02-13 Neuron <vlmarek@volny.cz>
+	* rpg/ivan: Added new rogue-like game with graphics
+
 2005-01-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/reaper: deprecated, project seems dead for over two years, fails to compile
 
