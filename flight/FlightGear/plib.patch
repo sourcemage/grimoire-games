@@ -1,0 +1,28 @@
+diff -C2 -r1.4 -r1.5
+*** a/ExternalNet.hxx	12 Jan 2003 22:11:55 -0000	1.4
+--- b/ExternalNet.hxx	22 Mar 2004 15:00:42 -0000	1.5
+***************
+*** 41,45 ****
+  public:
+  
+!     HTTPClient ( cchar* host, int port, cchar* path ) :
+          done( false )
+      {
+--- 41,45 ----
+  public:
+  
+!     HTTPClient ( const char* host, int port, const char* path ) :
+          done( false )
+      {
+***************
+*** 47,51 ****
+  	connect (host, port);
+  
+! 	cchar* s = netFormat ( "GET %s HTTP/1.0\r\n\r\n", path );
+  	bufferSend( s, strlen(s) ) ;
+  
+--- 47,51 ----
+  	connect (host, port);
+  
+! 	const char* s = netFormat ( "GET %s HTTP/1.0\r\n\r\n", path );
+  	bufferSend( s, strlen(s) ) ;
