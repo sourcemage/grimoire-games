@@ -1,11 +1,14 @@
            SPELL=tuxtype
-         VERSION=1.0.1
+         VERSION=1.0.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=a554f035927161517e884674222304ac
         WEB_SITE=http://www.geekcomix.com/dm/tuxtype/
          ENTERED=20020131
          UPDATED=20020131
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
            SHORT="tuxtype is a typing tutorial agme starting Tux"
 cat << EOF
 TuxTyping is an educational typing tutorial game starring Tux, the
