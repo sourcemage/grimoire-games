@@ -1,6 +1,6 @@
 (
 
-sedit 's:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"/usr/share/neverball/data\":'
+sedit 's:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"/usr/share/neverball/data\":' Makefile &&
 sedit 's/#X11_PATH/X11_PATH/' Makefile &&
 
 case  $CUSTOM in

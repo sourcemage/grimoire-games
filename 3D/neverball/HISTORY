@@ -1,3 +1,6 @@
+2004-09-04 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: missing a Makefile && at end of sedit line
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image, SDL_mixer, SDL_ttf renamed to sdl*
 	  Removed SDL as the above depend on sdl
