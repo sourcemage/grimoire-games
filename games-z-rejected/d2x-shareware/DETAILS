@@ -1,0 +1,15 @@
+           SPELL=d2x-shareware
+         VERSION=1.0
+          SOURCE=d2shar10.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/d2shar10
+   SOURCE_URL[0]=http://www.icculus.org/${SPELL%-*}/data/$SOURCE
+        WEB_SITE=http://www.icculus.org/${SPELL%-*}/
+         ENTERED=20040430
+         UPDATED=20040430
+      LICENSE[0]=shareware
+          REJECT="is non source, shareware/demo"
+	  MD5[0]=bcb0fb662b78fa1e088261ca06a56d09
+           SHORT="d2x Descent 2 - shareware/demo data"
+cat << EOF
+d2x Descent 2 - shareware/demo data
+EOF

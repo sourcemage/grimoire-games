@@ -1,0 +1,14 @@
+           SPELL=d2x-engine
+         VERSION=0.2.5
+          SOURCE=${SPELL%-*}-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL%-*}-$VERSION
+   SOURCE_URL[0]=http://www.icculus.org/${SPELL%-*}/src/$SOURCE
+        WEB_SITE=http://www.icculus.org/${SPELL%-*}/
+         ENTERED=20040430
+         UPDATED=20040430
+      LICENSE[0]=GPL
+	  MD5[0]=14d6cacde6a41b69103e273d31f3f27d
+           SHORT="d2x is Descent2 rewrite"
+cat << EOF
+d2x is Descent2 rewrite
+EOF
