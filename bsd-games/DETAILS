@@ -1,0 +1,17 @@
+           SPELL=bsd-games
+         VERSION=2.13
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/Linux/games/$SOURCE
+          MD5[0]=ebb1ec66f9b3c6cf26df8b93c450bb18
+         ENTERED=20030123
+         UPDATED=20030123
+      LICENSE[0]=BSD
+           SHORT="bsd-games are games and fun programs from BSD."
+cat << EOF
+caesar: rot13 generalized.
+snake: Run around a field picking up money and avoid being bitten.
+fish: The card game Go Fish.
+random: Drop lines at random from a text file or generate random numbers.
+etc.
+EOF
