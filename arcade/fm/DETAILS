@@ -1,7 +1,7 @@
-           SPELL=fm
+           SPELL=football-manager
          VERSION=0.99
-          SOURCE=${SPELL}-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+          SOURCE=fm-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/fm-${VERSION}
         WEB_SITE=http://www.autismuk.freeserve.co.uk
    SOURCE_URL[0]=${WEB_SITE}/${SOURCE}
           MD5[0]="447de9196b9441f5bd4dadf9a0a75f95"
