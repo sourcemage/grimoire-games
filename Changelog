@@ -1,16 +1,23 @@
+2004-10-30 Eric Sandall <eric@sandall.us>
+	* strategy/ASC: Renamed to strategy/asc
+
 2004-07-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-        * updates and fixes:
-        * 3D:neverball, Scorched3D, foobillard, glhack, mahjongg3d
-        * For an exact ChangeLog see the mailing list SM-Discuss where I'm sending the info...
+	* updates and fixes:
+	* 3D:neverball, Scorched3D, foobillard, glhack, mahjongg3d
+	* For an exact ChangeLog see the mailing list SM-Discuss where I'm sending
+	  the info...
 
 2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-        * updates and fixes:
-        * arcade: jumpnbump, lbreakout2, netris, rocksndiamonds, rtts
-        * strategy: ASC, castle-combat, openttd, xfrisk
-        * deprecated: crafted
-        * For an exact ChangeLog see the mailing list SM-Discuss where I'm sending the info...
+	* updates and fixes:
+	* arcade: jumpnbump, lbreakout2, netris, rocksndiamonds, rtts
+	* strategy: ASC, castle-combat, openttd, xfrisk
+	* deprecated: crafted
+	* For an exact ChangeLog see the mailing list SM-Discuss where I'm sending
+	  the info...
 
 2004-01-08 hgg <hgreig@bigpond.net.au>
-	* scummvm-cvs,scummvm_tools-cvs: These two -cvs spells have been merged into the regular scummvm or 
-	scummvm_tools spell. dispel scummvm-cvs and scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, 
-	then just say yes to cvs version.
+	* scummvm-cvs,scummvm_tools-cvs: These two -cvs spells have been merged into
+	  the regular scummvm or scummvm_tools spell. dispel scummvm-cvs and
+	  scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, then just say yes
+	  to cvs version.
+
