@@ -1,3 +1,22 @@
+2003-09-26  Eric Sandall <eric@sandall.us>
+
+        Update to 2.3.0
+
+        Seems to have hardcoded 'prboom.wad' to the current
+        directory, so I moved the binary prboom from /usr/games
+        to /usr/share/games/doom and wrote a wrapper script
+        to replace /usr/games.  prboom-game-server seems to
+        work okay.
+
+        Also sets the permissions correctly (root.games) for
+        /usr/share/games/doom and it's binaries in /usr/games
+
+        Checks md5sum for SOURCE2 (doom-1.8.wad.gz) during PRE_BUILD
+
+        unpack for SOURCE2 doesn't seem to work, so it needs an
+        additional gunzip -c to put the uncompressed doom wad
+        (which the game wants named as doom1.wad) in SOURCE_DIRECTORY
+
 2003-09-20  Eric Sandall <eric@sandall.us>
 
 		Update to 2.2.4

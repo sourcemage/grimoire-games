@@ -1,11 +1,11 @@
            SPELL=prboom
-         VERSION=2.2.4
+         VERSION=2.3.0
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=doom-1.8.wad.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/prboom/$SOURCE
   SOURCE2_URL[0]=ftp://ftp.idsoftware.com/idstuff/doom/$SOURCE2
-          MD5[0]=1ae0c8648251426dcb12f96e659c2532
+          MD5[0]=68266de600dbc6404c67cfa04c55547b
           MD5[1]=5f4eb849b1af12887dec04a2a12e5e62
         WEB_SITE=http://prboom.sourceforge.net/
          ENTERED=20011123
