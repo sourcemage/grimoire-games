@@ -1,8 +1,5 @@
 (
 
-  if  !  spell_installed  "gtk+"
-    then  OPTS="${OPTS}  --disable-client"
-  fi
 
   case  ${SERVER}  in
     N|n)  OPTS="${OPTS}  --disable-server"
@@ -21,7 +18,11 @@
                --localstatedir=${INSTALL_ROOT}/var  \
                $OPTS                 &&
   make                               &&
+  cp -f ${INSTALL_ROOT}/etc/ggz.modules ${INSTALL_ROOT}/etc/ggz.modules.teg &&
   prepare_install                    &&
+  if [ ! -f ${INSTALL_ROOT}/etc/ggz.modules ];
+  then cp ${INSTALL_ROOT}/etc/ggz.modules.teg ${INSTALL_ROOT}/etc/ggz.modules 
+  fi                                 &&
   make    install
 
 )  >  $C_FIFO  2>&1
