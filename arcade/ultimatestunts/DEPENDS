@@ -1,0 +1,4 @@
+depends g++
+depends openal
+depends sdl
+depends ode
