@@ -1,5 +1,7 @@
 2003-10-04  Eric Sandall <eric@sandall.us>
         * DETAILS: Added mirror, main site should be back up soon
+		* DETAILS: Downgraded to 0.5.4, 0.6.0 doesn't build varconf-config
+		needed by other packages (e.g. stage)
 
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
