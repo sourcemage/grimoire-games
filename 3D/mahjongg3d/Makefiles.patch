@@ -1,0 +1,33 @@
+diff -Nur mahjongg3d.release/Makefile mahjongg3d.release.fix/Makefile
+--- mahjongg3d.release/Makefile	2004-05-13 14:17:23.000000000 +0200
++++ mahjongg3d.release.fix/Makefile	2004-05-15 11:36:00.000000000 +0200
+@@ -25,7 +25,7 @@
+ sub-src: src/$(MAKEFILE) FORCE
+ 	cd src && $(MAKE) -f $(MAKEFILE)
+ 
+-Makefile: mahjongg3d.pro  $(QTDIR)/mkspecs/default/qmake.conf 
++Makefile: mahjongg3d.pro
+ 	$(QMAKE) -o Makefile mahjongg3d.pro
+ qmake: qmake_all
+ 	@$(QMAKE) -o Makefile mahjongg3d.pro
+diff -Nur mahjongg3d.release/src/Makefile mahjongg3d.release.fix/src/Makefile
+--- mahjongg3d.release/src/Makefile	2004-05-14 13:36:32.000000000 +0200
++++ mahjongg3d.release.fix/src/Makefile	2004-05-15 11:30:48.000000000 +0200
+@@ -16,7 +16,7 @@
+ CXXFLAGS = -pipe -Wall -W -g -D_REENTRANT  -DQT_THREAD_SUPPORT -DQT_SHARED -DQT_NO_DEBUG
+ LEXFLAGS = 
+ YACCFLAGS= -d
+-INCPATH  = -I$(QTDIR)/mkspecs/default -I. -I$(QTDIR)/include -I/usr/X11R6/include -I/usr/X11R6/include
++INCPATH  = -I$(QTDIR)/mkspecs/default -I. -I/usr/include/qt -I/usr/X11R6/include -I/usr/X11R6/include
+ LINK     = g++
+ LFLAGS   =  -Wl,-rpath,$(QTDIR)/lib
+ LIBS     = $(SUBLIBS) -L$(QTDIR)/lib -L/usr/X11R6/lib -L/usr/X11R6/lib -lqt-mt -lGLU -lGL -lXmu -lXext -lX11 -lm -lpthread
+@@ -167,7 +167,7 @@
+ $(MOC): 
+ 	( cd $(QTDIR)/src/moc ; $(MAKE) )
+ 
+-Makefile: src.pro  $(QTDIR)/mkspecs/default/qmake.conf $(QTDIR)/lib/libqt-mt.prl
++Makefile: src.pro
+ 	$(QMAKE) -o Makefile src.pro
+ qmake: 
+ 	@$(QMAKE) -o Makefile src.pro
