@@ -1,11 +1,11 @@
             SPELL=glhack
-          VERSION=1.0
-           SOURCE=$SPELL-$VERSION.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+          VERSION=1.1
+           SOURCE=${SPELL}-${VERSION}.tar.gz
+ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
          WEB_SITE=http://glhack.sourceforge.net
        MAINTAINER=v.merkatz@gmx.net
-           MD5[0]=b13414eb8d2f961b53032af77a77c2ff
+           MD5[0]=a1e63e7df583176cb93833d37e9ee5f8
        LICENSE[0]=NETHACK
          ENTERED=20020518
          UPDATED=20020518
