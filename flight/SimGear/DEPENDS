@@ -1,2 +1,2 @@
-depends  plib  &&
-depends  metakit
+depends  metakit  &&
+depends  plib

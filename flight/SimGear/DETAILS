@@ -4,12 +4,14 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.simgear.org/pub/simgear/Source/$SOURCE
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.simgear.org/Source/$SOURCE
+          MD5[0]=ecb9b4a22e9bcd896f57ac8e53039fa7
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20040107
-          MD5[0]=ecb9b4a22e9bcd896f57ac8e53039fa7
       LICENSE[0]=LGPL
-           SHORT="SimGear is simulation construction tools used by FlightGear."
+       BUILD_API=2
+      MAKE_NJOBS=2
+           SHORT="Simulation construction tools used by FlightGear."
 cat << EOF
 SimGear is simulation construction tools used by FlightGear
 EOF
