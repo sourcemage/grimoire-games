@@ -1,10 +1,10 @@
            SPELL=dosbox
-         VERSION=0.62
+         VERSION=0.63
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
       LICENSE[0]=GPL
-          MD5[0]=4ca7ba01d238bff257cfef5fe1d09d57
+          MD5[0]=058b6b9f59a00e25eaa597284dc5f967
         WEB_SITE=http://dosbox.sourceforge.net
          ENTERED=20031012
          UPDATED=20040206

@@ -1,3 +1,6 @@
+2004-12-20 Adam Clark <adamsgl@dhbit.ca>
+	* DETAILS: Version bump 0.63
+
 2004-12-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD: use default_build and converted to BUILD_API 2
 	* dosbox: removed, unnecessary
