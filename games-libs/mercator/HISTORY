@@ -1,0 +1,15 @@
+2004-05-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Ummm, checkout mercator, not skstream, for CVS
+	* DEPENDS: Atlas-C++ renamed to atlas-c++
+
+2004-05-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Install either cvs or 0.2.0 release
+	Removed MAINTAINER
+	Added long and short descriptions
+	* DEPENDS: No more -cvs spells
+	* BUILD: Check for cvs and build correctly
+	* PREPARE: Added to query for cvs
+	* Copied from mercator-cvs
+
+2003-10-12 Eric Sandall <eric@sandall.us>
+	* Created eris
