@@ -1,3 +1,6 @@
+2005-01-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* 3D/reaper: deprecated, project seems dead for over two years, fails to compile
+
 2005-01-23 Neuron <vlmarek@volny.cz>
 	* arcade/blobwars: Added new spell
 
