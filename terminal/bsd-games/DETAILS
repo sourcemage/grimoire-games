@@ -1,9 +1,9 @@
            SPELL=bsd-games
-         VERSION=2.15
+         VERSION=2.16
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://metalab.unc.edu/pub/Linux/games/$SOURCE
-          MD5[0]=e2acd508a389bae0a1fd18c98a0d20d5
+          MD5[0]='8e94882c6c4e9c4011b98aaf094607e1'
          ENTERED=20030123
          UPDATED=20040106
       LICENSE[0]=BSD
