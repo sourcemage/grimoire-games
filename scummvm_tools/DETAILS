@@ -1,6 +1,6 @@
            SPELL=scummvm_tools
-         VERSION=0.3.0
-          SOURCE=${SPELL}_${VERSION}b-src.tar.bz2
+         VERSION=0.3.0b
+          SOURCE=${SPELL}_${VERSION}-src.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tools
    SOURCE_URL[0]=$SOURCEFORGE_URL/scummvm/$SOURCE
         WEB_SITE=http://www.scummvm.org/
