@@ -1,5 +1,5 @@
 (
-
+patch -p0 < ${SCRIPT_DIRECTORY}/config.patch                        &&
   ./configure  --build=${BUILD}                                     \
                --prefix=/usr                                        \
                --sysconfdir=/etc                                    \

@@ -1,0 +1,36 @@
+--- configure.old	2003-05-05 11:48:08.000000000 +1000
++++ configure	2003-05-05 11:51:20.000000000 +1000
+@@ -2831,6 +2831,8 @@
+ if test "x$have_tcl_lib" = "xno" -a "x$with_tcl_lib_name" = "x" ; then
+ 
+     TCL_LIB_LIST=`grep -v -E "^$TCL_LIB_NAME\$" <<EOF 
++tcl8.4
++tcl84
+ tcl8.3
+ tcl83
+ tcl8.2
+@@ -2946,6 +2948,7 @@
+ 
+         TCL_HEADER_LIST=`grep -v -E "^$TCL_HEADER\$" <<EOF 
+ tcl.h
++tcl8.4.h
+ tcl8.3.h
+ tcl83.h
+ tcl8.2.h
+@@ -2989,7 +2992,7 @@
+ 
+ 
+ if test "x$have_tcl_h" = "xno" -a "x$with_tcl_inc" = "x"; then
+-    TCL_INC_LIST="/usr/include/tcl8.3 /usr/include/tcl8.2 \
++    TCL_INC_LIST="/usr/include/tcl8.4 /usr/include/tcl8.3 /usr/include/tcl8.2 \
+                  /usr/include/tcl8.0 /usr/include/tcl"
+ 
+     for TCL_INC in $TCL_INC_LIST ; do
+@@ -3034,6 +3037,7 @@
+ 
+         TCL_HEADER_LIST=`grep -v -E "^$TCL_HEADER\$" <<EOF 
+ tcl.h
++tcl8.4.h
+ tcl8.3.h
+ tcl83.h
+ tcl8.2.h
