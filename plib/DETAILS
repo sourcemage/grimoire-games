@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://plib.sourceforge.net
          ENTERED=20010922
          UPDATED=20010922
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="plib is a portable game library."
 cat << EOF
 PLIB is a set of libraries to write games and other realtime interactive
