@@ -1,0 +1,15 @@
+           SPELL=grapevine
+         VERSION=0.4.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-gui/$SOURCE
+          MD5[0]=ddcf0ebd9195c0d0879f06d253712c8b
+        WEB_SITE=http://www.mithunc.net/grapevine/
+         ENTERED=20050317
+         UPDATED=20050317
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="GTK+2 GUI for Cedega"
+cat << EOF
+A graphical interface for installing, configuring, and running programs using Transgaming's Cedega (http://www.transgaming.com).
+EOF
