@@ -1,12 +1,12 @@
-           SPELL=SDLSasteroids
+           SPELL=sdlsasteroids
          VERSION=3.0
-#          SOURCE=sasteroids-${VERSION}.tar.gz
+          SOURCE=sasteroids-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/SDLSasteroids-${VERSION}
-#   SOURCE_URL[0]=${SOURCEFORGE_URL}/sdlsas/${SOURCE}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/sdlsas/${SOURCE}
         WEB_SITE=http://sdlsas.sourceforge.net/
          ENTERED=20021031
-         UPDATED=20050120
-#          MD5[0]=dfce329732e4d46ebb7b95699f025a84
+         UPDATED=20030815
+          MD5[0]=6c26561c629289f81518fcd68710d95c
       LICENSE[0]=GPL
        BUILD_API=2
     MENU_ITEM[0]="SDL Sasteroids"

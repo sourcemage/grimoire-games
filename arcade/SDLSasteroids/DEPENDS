@@ -1,2 +1,1 @@
-depends  sdl_ttf    &&
-depends  sdl_mixer
+depends  sdlsasteroids
