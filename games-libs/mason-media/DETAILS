@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/medim
          UPDATED=20031006
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
+         ARCHIVE="off"
            SHORT="Media files required for the WorldForge Mason game"
 cat << EOF
 This contains the media files required for the WorldForge Mason game.

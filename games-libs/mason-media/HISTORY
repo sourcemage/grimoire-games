@@ -1,3 +1,6 @@
+2003-10-07  Eric Sandall <eric@sandall.us>
+		* DETAILS: Added ARCHIVE="off", thanks to Arwed
+
 2003-10-06  Eric Sandall <eric@sandall.us>
         * Created spell
 		* Added to games-libs
