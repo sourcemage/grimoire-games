@@ -1,0 +1,35 @@
+           SPELL=advancemame
+       BUILD_API=2
+         VERSION=0.89.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+        WEB_SITE=http://advancemame.sourceforge.net
+         ENTERED=20041216
+         UPDATED=20041216
+          MD5[0]=a514753df0a0a6d5c78ae3eec4dc1b64
+      LICENSE[0]=GPL
+           SHORT="AdvanceMAME is an unofficial MAME version for GNU/Linux"
+cat << EOF
+AdvanceMAME is an unofficial MAME version for GNU/Linux, Mac OS X, DOS and Windows with an advanced video support for helping the use with TVs, 
+Arcade Monitors, Fixed Frequencies Monitors and also with normal PC Monitors.
+
+The major features are:
+
+    * Automatic creation of "perfect" video modes with the correct size and clock.
+    * A lot of video boards supported for direct hardware registers programming. (see the card*.txt files)
+    * Support for 8, 15, 16 and 32 bits video modes.
+    * Real hardware scanlines.
+    * Software video image stretching by fractional factors, for example to play vertical games like "Pac-Man" with horizontal Arcade Monitors or TVs.
+    * Special "scale", "lq" and "hq" effects to improve the aspect with modern PC Monitors.
+    * Special "blit" effects to improve the image quality in stretching.
+    * Special "rgb" effects to simulate the aspect of a real Arcade Monitor.
+    * Change of the video mode and other video options at runtime.
+    * Support of Symmetric Multi-Processing (SMP) with a multiple thread architecture (only for Linux).
+    * Sound and video recording in WAV, PNG and MNG files.
+    * Support for up to 4 mice in Linux and 2 in DOS.
+    * Automatic exit after some time of inactivity.
+    * Scripts capabilities to drive external hardware devices like LCDs and lights.
+    * Textual configuration files.
+    * Help screen describing the user input keys
+EOF
