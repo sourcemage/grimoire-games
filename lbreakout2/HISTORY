@@ -1,3 +1,8 @@
+2002-10-02  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		now uses /var/games to save the global highscores
+		instead of /var/lib/games
+
 2002-09-21  Eric Sandall <eric@sandall.us>
 		New version: 2.3.5
 

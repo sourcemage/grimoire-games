@@ -1,3 +1,8 @@
+2002-10-02  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		now installs scores and savefiles to /var/games/glhack instead
+		of /var/lib/games/glhack
+
 2002-09-04  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added MD5 and LICENSE fields
@@ -6,4 +11,4 @@
 
 2002-05-18  Arwed v. Merkatz <v.merkatz@gmx.net>
 
-            Created this spell
+		Created this spell
