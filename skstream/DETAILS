@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=81d27ba441d48db2cb5784a998e975a4
+          MD5[0]=2a8d4ce71f6de22291cb02c96d0e0730
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20020915
          UPDATED=20020915
