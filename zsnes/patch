@@ -1,0 +1,20 @@
+diff --recursive -C1 zsnes-1.35.orig/src/Makefile.in zsnes-1.35/src/Makefile.in
+*** zsnes-1.35.orig/src/Makefile.in	2002-06-29 23:50:43.000000000 +0000
+--- zsnes-1.35/src/Makefile.in	2002-06-29 23:52:02.000000000 +0000
+***************
+*** 169,175 ****
+  install:
+! 	@INSTALL@ -m 0755 @ZSNESEXE@ @prefix@/bin
+! 	@INSTALL@ -m 0644 linux/zsnes.1 @prefix@/man/man1
+  
+  uninstall:
+! 	rm -f @prefix@/bin/$(notdir @ZSNESEXE@) @prefix@/man/man5/zsnes.5
+  
+--- 169,175 ----
+  install:
+! 	@INSTALL@ -m 0755 @ZSNESEXE@ @bindir@
+! 	@INSTALL@ -m 0644 linux/zsnes.1 @mandir@/man6/zsnes.6
+  
+  uninstall:
+! 	rm -f @bindir@/$(notdir @ZSNESEXE@) @mandir@/man6/zsnes.6
+  
