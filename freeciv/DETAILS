@@ -1,13 +1,15 @@
            SPELL=freeciv
-         VERSION=1.12.0
+         VERSION=1.13.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/stable/$SOURCE
         WEB_SITE=http://www.freeciv.org
          ENTERED=20010922
          UPDATED=20010922
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="Freeciv is a reimplementation of Civilization."
+         LICENSE=GPL
+             MD5=a3544f113dbab77f3c6f00130c1bf181
 cat << EOF
 Freeciv is a multiuser reimplementation for Unix/X of the famous Microprose 
 game of Civilization. By default, the game is an improved Civ II, but this 

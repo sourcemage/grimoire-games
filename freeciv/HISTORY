@@ -1,3 +1,15 @@
+2002-07-17  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 1.13.0 (thanks Richard S. Bunke
+		<rbunke@speakeasy.net>), 1.12.0 being no longer available.
+
+		Improved FHS compliance (binaries in /usr/games, read-only 
+		architecture-independent data in /usr/share/games...).
+
+		Added POST_BUILD to remove some unnecessary "documentation".
+
+		Added LICENSE and MD5 to DETAILS.
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.
