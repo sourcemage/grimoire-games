@@ -1,10 +1,10 @@
            SPELL=gens
-         VERSION=2.12a
-          SOURCE=$SPELL-rc2.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-linux-$VERSION
+         VERSION=rc3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/GensForLinux
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
         WEB_SITE=http://gens.consolemul.com/
-          MD5[0]=dce6e4e9290b77603ceb9e91c66711e9
+          MD5[0]=dde7ba45b56d7bd96eb57e1922ae1ee4
       LICENSE[0]=GPL
          ENTERED=20040302
          UPDATED=20040302
