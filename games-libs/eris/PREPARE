@@ -1,1 +1,2 @@
+message  "${MESSAGE_COLOR}The CVS version needs the CVS version of atlas-c++{DEFAULT_COLOR}"  &&
 config_query  CVS  "Would you like to build the latest cvs version of $SPELL ?"  n

@@ -1,3 +1,6 @@
+2004-10-19 Eric Sandall <eric@sandall.us>
+	* PREPARE: Mention that CVS eris needs CVS atlas-c++
+
 2004-07-21 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Missed a closing }
 
