@@ -1,3 +1,11 @@
+2003-03-21  Eric Sandall <eric@sandall.us>
+
+		Updated to 0.2.1  (Bug #2853)
+
+		Updated SOURCE_URL[0] to use SOURCEFORGE_URL
+
+		Cleaned up BUILD and freelords script
+
 2003-02-04  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.2.0 (stable, not CVS snapshots)
