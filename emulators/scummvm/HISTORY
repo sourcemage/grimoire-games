@@ -1,3 +1,7 @@
+2004-01-13 hgg <hgreig@bigpond.net.au>
+        * DETAILS,DEPENDS: change from conditional [ "$CVS" = "*" ] to if ... else ... fi. Devel sorcery broke on
+        DEPENDS using conditionals bug 5466
+
 2004-01-08 hgg <hgreig@bigpond.net.au>
 	* ALL: merge the regular and -cvs spell
 

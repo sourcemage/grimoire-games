@@ -2,4 +2,6 @@ depends  SDL								         &&
 optional_depends  "alsa-lib" "with-alsa" "" "Enable alsa sound support"          &&
 optional_depends  "libmad" "with-mad" "" "Enable MAD mpeg audio support"         &&
 optional_depends  "libvorbis" "with-vorbis" "" "Enable Vorbis audio support"     &&
-[ "$CVS" = "yes" ] && depends cvs
+if [ "$CVS" = "yes" ]
+then depends cvs
+fi

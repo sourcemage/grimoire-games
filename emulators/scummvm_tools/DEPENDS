@@ -1,2 +1,4 @@
 depends  scummvm  &&
-[ "$CVS" = "yes" ] && depends cvs
+if [ "$CVS" = "yes" ] 
+then depends cvs
+fi
