@@ -1,30 +1,29 @@
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-11-24 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.6.6 and remove MAINTAINER
+	* HISTORY: reformat
+	* DEPENDS: add gtk+2, remove zlib
+	* TRIGGERS: remove 
+	* BUILD: remove sedit of makefile, no longer needed
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-10  hgg  <hgreig@bigpond.net.au>
+2003-05-10 hgg  <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 0.6.5
 
-		Updated to 0.6.5
+2002-10-19 Eric Sandall <eric@sandall.us>
+	* Fixed Bug #1417
 
-2002-10-19  Eric Sandall <eric@sandall.us>
+2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Added md5 and license fields
+	Changed maintainer
 
-   		Fixed Bug #1417
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
 
-2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
-
-		Added md5 and license fields
-
-		Changed maintainer
-
-2002-05-11  David Pradier <pradierdavid@yahoo.fr>
-
-		Added this History file.
-
-2002-05-13  Jerome Zago <jerome.zago@insalien.org>
-
-		Added SDL_image to DEPENDS (thanks Spencer Ogden
-		<spencero@mail.utexas.edu>).
+2002-05-13 Jerome Zago <jerome.zago@insalien.org>
+	* DEPENDS: Added SDL_image (thanks Spencer Ogden
+	<spencero@mail.utexas.edu>).

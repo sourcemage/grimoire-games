@@ -1,5 +1,5 @@
-depends  zlib       &&
-depends  glut       &&
+depends  GLUT       &&
+depends  gtk+2      &&
 depends  SDL        &&
 depends  SDL_image  &&
 depends  SDL_mixer  &&
