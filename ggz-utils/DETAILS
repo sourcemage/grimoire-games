@@ -1,0 +1,16 @@
+           SPELL=ggz-utils
+         VERSION=0.0.6
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
+          MD5[0]=3aedff56ab8b063171d5aafbc9d8ea88
+      LICENSE[0]=LGPL
+        WEB_SITE=http://ggz.sourceforge.net
+         ENTERED=20021129
+         UPDATED=20021129
+      MAINTAINER=eric@sandall.us
+           SHORT="GGZ Gaming Zone utilities"
+cat << EOF
+GGZ Gaming Zone server libraries provides the common procedures and
+utilities required to run the GGZ game servers.
+EOF

@@ -1,0 +1,5 @@
+depends  kdebase        &&
+depends  ggz-kde-games  &&
+depends  libggz         &&
+depends  easysock       &&
+depends  expat
