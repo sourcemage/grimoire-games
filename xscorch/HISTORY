@@ -1,3 +1,12 @@
+2002-06-19  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 0.1.15
+
+		Worked on FHS compliance (man pages into /usr/share/man,
+		data into /usr/share/games).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.
