@@ -1,5 +1,0 @@
-depends  automake  &&
-depends  autoconf  &&
-depends  gtk+      &&
-depends  zlib      &&
-depends  libpng
