@@ -1,3 +1,6 @@
+2004-01-06 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3.1
+
 2003-10-15 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3
 	* BUILD: gcc 3.3 check no longer needed, cleaned up spacing

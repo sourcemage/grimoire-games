@@ -1,17 +1,16 @@
            SPELL=gnome-mud
-         VERSION=0.10.3
+         VERSION=0.10.4a
           BRANCH=0.10
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
-#   SOURCE_URL[1]=${SOURCEFORGE_URL}/amcl/$SOURCE
-          MD5[0]=2c612951b693a81149e197719b4d24de
+#   SOURCE_URL[0]=${SOURCEFORGE_URL}/amcl/$SOURCE
+          MD5[0]=706d14f06e090d60093d5502b6121700
         WEB_SITE=http://amcl.sourceforge.net
          ENTERED=20020116
-         UPDATED=20031120
+         UPDATED=20040106
      GATHER_DOCS="off"
       LICENSE[0]=GPL
-      MAINTAINER=v.merkatz@gmx.net
            SHORT="Multi-User Dungeon (MUD) client"
 cat << EOF
 GNOME-Mud (formerly AMCL) is a Multi-User Dungeon (MUD) client

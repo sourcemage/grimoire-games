@@ -1,4 +1,4 @@
 depends  SDLmm      &&
 depends  SDL_image  &&
 depends  SDL_mixer  &&
-depends  paragui
+depends  paragui  "--disable-paraguitest"
