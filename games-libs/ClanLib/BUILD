@@ -6,7 +6,7 @@ sedit '25a\
 \#include \<assert.h\>\' Sources/Core/IOData/Unix/directory_scanner_unix.h
 fi             &&
 
-if spell_installed MesaLib;
+if ! spell_installed NVIDIA_headers;
 then export CFLAGS="$CFLAGS -DGLX_GLXEXT_LEGACY"
 fi             &&
  default_build

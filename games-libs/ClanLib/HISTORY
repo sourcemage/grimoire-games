@@ -1,7 +1,7 @@
 2003-07-23  hgg <hgreig@bigpond.net.au>
 	
-		IRC bug, stupid conflict with MesaLib and xfree86.Add check for MesaLib and change 
-		CFLAGS to include -DGLX_GLXEXT_LEGACY.
+		IRC bug, stupid conflict with MesaLib, free86 and NVIDIA_headers .Add check for 
+		NVIDIA_headers and change CFLAGS to include -DGLX_GLXEXT_LEGACY.
 
 2003-07-16  hgg <hgreig@bigpond.net.au>
 
