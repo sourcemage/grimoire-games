@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
          ENTERED=20010922
          UPDATED=20020424
       MAINTAINER=v.merkatz@gmx.net
-         ARCHIVE="off"
            SHORT="fgfs-base provides the base files required by FlightGear."
 cat << EOF
 The Flight Gear Flight Simulator project is a free, open-source,
