@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
           MD5[0]=ab5db87b991fe6b2703ace0813250706
-        WEB_SITE=http://www.geekcomix.com/dm/tuxtype/
+        WEB_SITE=http://tuxtype.sourceforge.net/
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
