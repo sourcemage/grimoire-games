@@ -1,0 +1,37 @@
+--- liquidwar-5.5.9/src/netconf.c	2003-03-06 19:29:07.000000000 +1100
++++ liquidwar-5.5.9/src/netconf.c.new	2003-08-22 00:43:28.000000000 +1000
+@@ -70,27 +70,27 @@
+ /*==================================================================*/
+ 
+ #define LW_NETCONF_CHECK_RANGE(VAL,MAX) \
+-if (config-> ## VAL < 0) \
++if (config->  VAL < 0) \
+ { \
+ result=0; \
+ log_print_str("Error: " #VAL " is "); \
+-log_print_int(config-> ## VAL); \
++log_print_int(config->  VAL); \
+ log_println_str(", and should be >= 0"); \
+-config-> ## VAL = 0; \
++config->  VAL = 0; \
+ } \
+-if (config-> ## VAL > MAX) \
++if (config->  VAL > MAX) \
+ { \
+ result=0; \
+ log_print_str("Error: " #VAL " is > "); \
+-log_print_int(config-> ## VAL); \
++log_print_int(config->  VAL); \
+ log_print_str(", and should be <= "); \
+ log_println_int(MAX); \
+-config-> ## VAL = MAX; \
++config->  VAL = MAX; \
+ }
+ 
+ #define LW_NETCONF_PRINT_VALUE(VAL) \
+ log_print_str(#VAL " = "); \
+-log_println_int(config-> ## VAL);
++log_println_int(config->  VAL);
+ 
+ /*==================================================================*/
+ /* types                                                            */
