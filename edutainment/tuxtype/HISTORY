@@ -1,3 +1,6 @@
+2003-12-08 hgg <hgreig@bigpond.net.au>
+	* BUILD: typo in last edit 
+
 2003-11-28 hgg <hgreig@bigpond.net.au>
 	* BUILD: add mkdir -p /usr/games (bug 4792)
 
