@@ -1,3 +1,6 @@
+2005-01-19 Neuron <vlmarek@volny.cz>
+	* DETAILS: Fixed md5sum of the tarball
+
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updated for BUILD API 2
 	* DETAILS: Version bump
