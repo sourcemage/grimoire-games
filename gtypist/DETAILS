@@ -1,12 +1,12 @@
            SPELL=gtypist
-         VERSION=2.6
+         VERSION=2.6.2
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${GNU_URL}/$SPELL/$SOURCE
         WEB_SITE=http://www.gnu.org/software/gtypist/
          ENTERED=20020410
          UPDATED=20020502
-          MD5[0]=70fb9b95c6863bcc9ec91f3581d12b73
+          MD5[0]=0c5f89ebd15733c1e78b52470e9667bf
       LICENSE[0]=GPL
       MAINTAINER=v.merkatz@gmx.net
            SHORT="GNU Typist is a console-based typing tutor"
