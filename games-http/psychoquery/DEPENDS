@@ -1,1 +1,1 @@
-requires  webserver
+depends  WEBSERVER

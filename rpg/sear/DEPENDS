@@ -1,5 +1,4 @@
-requires  GLUT       &&
-
+depends  GLUT        &&
 depends  skstream    &&
 depends  Atlas-C++   &&
 depends  wfmath      &&
