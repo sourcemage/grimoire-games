@@ -1,3 +1,7 @@
+2003-06-20  hgg <hgreig@bigpond.net.au>
+		
+		Added PREPARE to remove cache after fixing bug #1068
+
 2003-06-19  hgg <hgreig@bigpond.net.au>
 
 		Added POST_BUILD with ARCHIVE=off and removed same from DETAILS
