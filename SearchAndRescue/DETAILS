@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
-          MD5[0]=4d32278f278f2612a92aea7acdf4a27f
+          MD5[0]=f2f77d9c72fc83de2471da1445494d21
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
          ENTERED=20010922
          UPDATED=20020426
