@@ -1,3 +1,12 @@
+2003-05-05  hgg <hgreig@bigpond.net.au>
+
+		Updated to 1.2.1
+	
+		Added base robots package so races have competitors
+
+		Changed License for Patwo-cars to unknown as it id not GPL
+
+
 2003-01-30  Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to correct MD5
