@@ -1,3 +1,10 @@
+2005-03-16 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.1
+	  SOURCE and SOURCE_DIRECTORY now use $VERSION
+	* BUILD: Setup to use default_build and use OPTS for games directories
+	* INSTALL: Cleaned up formatting
+	  abe binary is now in src
+
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updated for BUILD_API=2
 
