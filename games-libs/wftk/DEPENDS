@@ -1,0 +1,7 @@
+depends  SDL         &&
+depends  SDL_mixer   &&
+depends  freetype1   &&
+depends  zlib        &&
+depends  libpng      &&
+depends  libsigc++   &&
+depends  smpeg
