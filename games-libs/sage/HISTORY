@@ -1,8 +1,13 @@
+2004-03-22 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.1.1
+	Removed MAINTAINER
+
 2003-12-01 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: X11-LIBS not X11-LIB
 
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: big letters for x11-libs
 
-2003-10-04  Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <eric@sandall.us>
 	* Created spell
+
