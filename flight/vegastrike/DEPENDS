@@ -1,6 +1,6 @@
-requires GLUT  &&
-depends Python &&
-depends SDL  &&
-depends libpng &&
-depends jpeg &&
-depends openal
+depends  GLUT    &&
+depends  Python  &&
+depends  SDL     &&
+depends  libpng  &&
+depends  jpeg    &&
+depends  openal
