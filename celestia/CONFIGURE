@@ -17,6 +17,7 @@ to specify which GUI for Celestia then answer "y" to continue" n
 				fi
 			fi
 		fi
+	else echo DEFAULT=yes >> $SPELL_CONFIG	
 	fi
 fi
 
