@@ -1,3 +1,6 @@
+2005-01-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.2.2
+
 2004-11-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.2.1
 	* DEPENDS,CONFIGURE: Can now use either libsigc++2 or libsigc++3
