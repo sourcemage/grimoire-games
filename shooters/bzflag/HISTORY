@@ -1,3 +1,10 @@
+2005-03-18 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.0.2.20050318
+	  Moved SFX to part of VERSION
+	  Removed SFX from SOURCE and SOURCE_DIRECTORY
+	  Shortened SHORT
+	* BUILD: Pass game options to OPTS and then call default_build
+
 2005-01-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Missing .$SFX in it...
 
