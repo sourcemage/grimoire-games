@@ -1,15 +1,14 @@
            SPELL=wftk
-         VERSION=0.6.0
+         VERSION=0.7.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=88decd64f5d81280d38908f139ddc7e1
+          MD5[0]=2b562235943754d9e853fa5de5443d1a
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wftk/
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]="LGPL,GPL"
-      MAINTAINER=eric@sandall.us
            SHORT="WorldForge Toolkit widget library"
 cat << EOF
 'wftk' means 'WorldForge Toolkit': a widget library, written in C++, that is designed to allow quick, easy creation and management of GUI applications.  The wftk logo, to the right, depicts a hammer and wrench in stained glass - tools used to decorate a window.
