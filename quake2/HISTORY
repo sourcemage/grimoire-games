@@ -1,3 +1,7 @@
+2003-05-14  Seth Woolley <seth@tautology.org>
+
+		Added &&s and unpack to BUILD
+
 2003-05-05  hgg 	<hgreig@bigpond.net.au>
 
 		Updated to r0.15

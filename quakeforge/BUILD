@@ -10,6 +10,7 @@
   prepare_install                   &&
   make    install                   &&
 
+  unpack $SOURCE2 ${MD5[1]}         &&
   cp $SOURCE_CACHE/$SOURCE2 /usr/share/games/quakeforge/id1
 
 ) > $C_FIFO 2>&1
