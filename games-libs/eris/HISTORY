@@ -1,46 +1,38 @@
-2003-10-04  Eric Sandall <eric@sandall.us>
+2003-12-07 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add pkgconfig
+	* HISTORY: reformat
+
+2003-10-04 Eric Sandall <eric@sandall.us>
         * DETAILS: Added mirror, main site should be back up soon
 
-2003-09-30  Eric Sandall <eric@sandall.us>
+2003-09-30 Eric Sandall <eric@sandall.us>
+	* Added skstream2 (0.2.0) for eris and eris now
+	depends on it (skstream 0.3.0 is for devel version
+	of eris, which also require other new libraries)
 
-		Added skstream2 (0.2.0) for eris and eris now
-		depends on it (skstream 0.3.0 is for devel version
-		of eris, which also require other new libraries)
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* Update to 0.9.8
+	Depends upon libsigc++2 (libsigc++ >= 1.2)
+	Uses .bz2 compressed tarball instead of .gz
+	Removed braces and piping outside of default_build
+	Added two patches (is_ready.patch and skstream-0.3.patch)
+	to help eris compile against skstream 0.3.0.  Still doesn't
+	compile, but it's closer.  Both patches have been submitted
+	to general@worldforge.org.
 
-2003-09-29  Eric Sandall <eric@sandall.us>
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-		Update to 0.9.8
+2003-05-13 hgg  <hgreig@bigpond.net.au>
+	* BUILD: Added build as Current Atlas-C++ install to different 
+	dir and CPPFLAGS needed to build
 
-		Depends upon libsigc++2 (libsigc++ >= 1.2)
-
-		Uses .bz2 compressed tarball instead of .gz
-
-		Removed braces and piping outside of default_build
-
-		Added two patches (is_ready.patch and skstream-0.3.patch)
-		to help eris compile against skstream 0.3.0.  Still doesn't
-		compile, but it's closer.  Both patches have been submitted
-		to general@worldforge.org.
-
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
-
-2003-05-13  hgg  <hgreig@bigpond.net.au>
-
-		Added build as Current Atlas-C++ install to different 
-		dir and CPPFLAGS needed to build
-
-2003-03-11  Eric Sandall <eric@sandall.us>
-
-		Updated to 0.9.6
-
-		Removed BUILD as it is no longer needed
+2003-03-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.9.6
+	* BUILD: Removed BUILD as it is no longer needed
 
 2002-10-11  Eric Sandall <eric@sandall.us>
-
-      Created HISTORY file
+	* HISTORY: Created HISTORY file
 
 2002-09-16  Eric Sandall <eric@sandall.us>
-
-      Created eris and added to grimoire
+	* Created eris and added to grimoire
