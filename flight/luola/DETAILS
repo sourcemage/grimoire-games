@@ -1,5 +1,5 @@
            SPELL=luola
-         VERSION=1.1.7
+         VERSION=1.2.0
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=stdlevels.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -7,8 +7,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
   SOURCE2_URL[0]=http://www.saunalahti.fi/~laakkon1/linux/luola/bin/$SOURCE2
         WEB_SITE=http://www.saunalahti.fi/~laakkon1/linux/luola/index.php
          ENTERED=20011214
-         UPDATED=20020310
-          MD5[0]=aa725353ea956347dd75773ac6847485
+         UPDATED=20030807
+          MD5[0]=81569cfff888f79e023ddab2143b6ddd
           MD5[1]=b932d10ab7fa35277771d705a1d8fb24
       LICENSE[0]=GPL
       LICENSE[1]=GPL
