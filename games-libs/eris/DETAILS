@@ -1,9 +1,9 @@
            SPELL=eris
-         VERSION=0.9.6
-          SOURCE=${SPELL}-${VERSION}.tar.gz
+         VERSION=0.9.8
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
-          MD5[0]=1f970c19290bd02017b335211635d6dd
+          MD5[0]=639b47e22b10f3a991131dca19eb841f
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
          ENTERED=20020915
          UPDATED=20020915
