@@ -1,7 +1,7 @@
-           SPELL=Maelstrom
+           SPELL=maelstrom
          VERSION=3.0.6
-          SOURCE=${SPELL}-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+          SOURCE=Maelstrom-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Maelstrom-${VERSION}
    SOURCE_URL[0]=http://www.devolution.com/~slouken/Maelstrom/src/${SOURCE}
         WEB_SITE=http://www.devolution.com/~slouken/Maelstrom/
          ENTERED=20011215
