@@ -1,12 +1,14 @@
            SPELL=bzflag
-         VERSION=1.7e4
+         VERSION=1.7e6
           SOURCE=$SPELL-$VERSION.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://ftp.BZFlag.org/$SPELL/$SOURCE
         WEB_SITE=http://BZFlag.org
          ENTERED=20010922
          UPDATED=20020417
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=3069fa19d8f1a046ea63c42c44f886d7
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="bzflag is a 3D multiplayer network tank battle game."
 cat << EOF
 BZFlag is a 3D multiplayer tank battle game that pits players against
