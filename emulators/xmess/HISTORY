@@ -1,3 +1,11 @@
+2005-01-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.89
+	  Added BUILD_API=2
+	  Shortened SHORT
+	* CONFIGURE: Converted to config_query
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+
 2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 0.84.1
 

@@ -1,14 +1,15 @@
            SPELL=xmess
-         VERSION=0.84.1
+         VERSION=0.89
           SOURCE=xmame-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/xmame-${VERSION}
    SOURCE_URL[0]=http://x.mame.net/download/${SOURCE}
-          MD5[0]=71e9d1496570cf171901065c62e60f68
+          MD5[0]=ad140ef838e108975d3529b8dc9f227a
         WEB_SITE=http://x.mame.net
          ENTERED=20010922
          UPDATED=20020131
       LICENSE[0]=http://x.mame.net/license.html
-           SHORT="xmess - a video game emulator"
+       BUILD_API=2
+           SHORT="Video game emulator"
 cat << EOF
 Xmess is the X11/Unix port of MESS. MESS is the Multi-Emulator Super System
 video game emulator. The latest stable release is capable of playing over 2000 arcade games.
