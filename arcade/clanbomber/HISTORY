@@ -1,3 +1,7 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD: Added patch for gcc 3.4
+	  (please test to ensure backwards compatability)
+
 2004-07-13 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: Created spell
 
