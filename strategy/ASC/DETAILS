@@ -1,12 +1,12 @@
 	    SPELL=ASC
-	  VERSION=1.13.9.1
+	  VERSION=1.14.0.0
  	   SOURCE=asc-source-$VERSION.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/asc-$VERSION
     SOURCE_URL[0]=$SOURCEFORGE_URL/asc-hq/$SOURCE
  	 WEB_SITE=http://www.asc-hq.org/index.html
 	  ENTERED=20030902
-	  UPDATED=20040106
-	   MD5[0]=c8c9689eff7751cd86cfb922bbc8d29b
+	  UPDATED=20040216
+	   MD5[0]=6a36a2152adb8e797ff68f432fa55f39
        LICENSE[0]=GPL
  	    SHORT="ASC is a free, turn based strategy game"
 cat << EOF
