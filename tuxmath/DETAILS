@@ -2,7 +2,7 @@
          VERSION=2001.09.07-0102
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
           MD5[0]=490c81c352979ea3bc3686f524d9e8fd
         WEB_SITE=http://www.geekcomix.com/dm/tuxmath/
          ENTERED=20020131

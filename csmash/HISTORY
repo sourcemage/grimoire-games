@@ -1,6 +1,11 @@
+2002-10-19  Eric Sandall <eric@sandall.us>
+
+      Fixed Bug #1417
+
 2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
 
 		Added md5 and license fields
+
 		Changed maintainer
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>

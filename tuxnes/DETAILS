@@ -2,7 +2,7 @@
          VERSION=0.75
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SPELL-$VERSION.tar.gz
           MD5[0]=c9d37261c3a0498b877c36b63b2ed55f
         WEB_SITE=http://tuxnes.sourceforge.net/
          ENTERED=20020115
