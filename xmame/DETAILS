@@ -1,9 +1,9 @@
            SPELL=xmame
-         VERSION=0.66.2
+         VERSION=0.67.2
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://x.mame.net/download/${SOURCE}
-          MD5[0]=24a20999c675c338e3efa3d0785765c1
+          MD5[0]=7e4c85a3d4e509cf33835e8c80097683
         WEB_SITE=http://x.mame.net
          ENTERED=20010922
          UPDATED=20020131
