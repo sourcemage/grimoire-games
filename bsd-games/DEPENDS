@@ -1,2 +1,0 @@
-depends ncurses &&
-depends miscfiles    #boggle and hangman need /usr/share/dict/words

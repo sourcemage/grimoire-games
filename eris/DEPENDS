@@ -1,3 +1,0 @@
-depends  skstream   &&
-depends  Atlas-C++  &&
-depends  wfmath

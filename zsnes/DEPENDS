@@ -1,4 +1,0 @@
-depends SDL	&&
-depends nasm	&&
-depends	zlib	&&
-depends	libpng

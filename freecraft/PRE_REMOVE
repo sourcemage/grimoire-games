@@ -1,4 +1,0 @@
-(
-rm -rf ${INSTALL_ROOT}/usr/share/games/freecraft/data
-
-)  >  $C_FIFO  2>&1

@@ -1,3 +1,0 @@
-depends  SDL        &&
-depends  SDL_mixer  
-#depends  TiMidity++

@@ -1,3 +1,0 @@
-depends SDL	&&
-depends Python	&&
-optional_depends vorbis-tools

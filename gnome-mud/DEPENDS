@@ -1,4 +1,0 @@
-depends  vte         &&
-depends  libgnome    &&
-depends  libgnomeui  &&
-depends  pygtk2

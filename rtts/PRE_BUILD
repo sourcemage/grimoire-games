@@ -1,6 +1,0 @@
-default_pre_build                       &&
-cd $SOURCE_DIRECTORY                    &&  
-mkdir source &&
-cd source/ &&
-unpack  ${SOURCE2}   ${MD5[1]}         
-

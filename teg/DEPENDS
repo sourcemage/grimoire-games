@@ -1,9 +1,0 @@
-optional_depends  "gtk+"               \
-                  ""                   \
-                  ""                   \
-                  "to run the client"  &&
-
-optional_depends  "ggz-client-libs"         \
-                  "--enable-ggz"            \
-                  "--disable-ggz"           \
-                  "for Gaming Zone support"
