@@ -1,5 +1,3 @@
-depends  kdebase        &&
-depends  ggz-kde-games  &&
-depends  libggz         &&
-depends  easysock       &&
-depends  expat
+depends  kdebase          &&
+depends  ggz-kde-games    &&
+depends  ggz-client-libs

@@ -1,4 +1,2 @@
-depends  gtk+            &&
-depends  libggz          &&
-depends  easysock        &&
-depends  expat
+depends  gtk+             &&
+depends  ggz-client-libs

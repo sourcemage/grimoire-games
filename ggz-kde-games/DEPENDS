@@ -1,4 +1,2 @@
-depends  kdebase         &&
-depends  libggz          &&
-depends  easysock        &&
-depends  expat
+depends  kdebase          &&
+depends  ggz-client-libs
