@@ -1,18 +1,8 @@
-optional_depends  SDL                                              \
-                  "--with-sdl"                                     \
-                  ""                                               \
-                  "Enable SDL+ParaGUI client (Either this or QT)"  &&
-
-optional_depends  paragui                                                        \
-                  "--with-paragui-client"                                        \
-                  ""                                                             \
-                  "Enable SDL+ParaGUI client (Either this or QT)"
-optional_depends freetype1                                  \
-                  ""                                        \
-                  ""                                        \
-                  "Enable SDL+ParaGUI client (Either this or QT)"
-#qt UI is currently broken
-#optional_depends  qt-x11                                           \
-#                  "--enable-qt-mt"               \
-#                  ""                                               \
-#                  "Enable QT client (Either this or SDL+ParaGUI)"
+if grep -q "with-paragui" ${SPELL_CONFIG}
+then depends SDL &&
+     depends paragui &&
+     depends freetype1	
+fi &&
+if grep -q "enable-qt" ${SPELL_CONFIG}
+then depends qt-x11
+fi
