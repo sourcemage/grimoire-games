@@ -3,7 +3,7 @@
           SOURCE=$SPELL-1.1.tar.bz2
          SOURCE2=xrally-$VERSION.patch
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://prdownloads.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=http://telia.dl.sourceforge.net/$SPELL/$SOURCE
   SOURCE2_URL[0]=http://www.linuxgames.com/$SPELL/$SOURCE2
         WEB_SITE=http://www.linuxgames.com/$SPELL/
          ENTERED=20020131
