@@ -1,5 +1,5 @@
            SPELL=torcs
-         VERSION=1.2.2
+         VERSION=1.2.3
           SOURCE=TORCS-${VERSION}-src.tgz
          SOURCE2=TORCS-${VERSION}-src-robots-base.tgz
          SOURCE3=TORCS-${VERSION}-data.tgz
