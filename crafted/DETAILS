@@ -1,0 +1,15 @@
+           SPELL=crafted
+         VERSION=0.1.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/freecraft/$SOURCE
+          MD5[0]=f4370ef30805ae8b4c9c03027e1298e1
+        WEB_SITE=http://www.freecraft.org/
+         ENTERED=20020826
+         UPDATED=20020826
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT='Map editor for freecraft'
+cat << EOF
+A map editor for FreeCraft.
+EOF
