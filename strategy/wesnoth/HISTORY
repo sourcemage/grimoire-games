@@ -1,3 +1,8 @@
-2004-05-09 : David Braaten <xiticix47@hotmail.com>
-	* ALL: created the spell
+2004-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.7.9
+	* DEPENDS: added dependencies on SDL_image, SDL_mixer, SDL_ttf
+	  and SDL_net
+
+2004-05-09 David Braaten <xiticix47@hotmail.com>
+	* DETAILS, HISTORY: created the spell
 
