@@ -1,10 +1,10 @@
 (
 
-  ./configure  --prefix=/usr                    \
-               --bindir=/usr/games              \
-               --infodir=/usr/share/info        \
-               --mandir=/usr/share/man          \
-               --sharedstatedir=/var/games      \
+  ./configure  --prefix=${INSTALL_ROOT}/usr                    \
+               --bindir=${INSTALL_ROOT}/usr/games              \
+               --infodir=${INSTALL_ROOT}/usr/share/info        \
+               --mandir=${INSTALL_ROOT}/usr/share/man          \
+               --sharedstatedir=${INSTALL_ROOT}/var/games      \
                --with-setgid=games              \
                $OPTS                &&
   make                              &&

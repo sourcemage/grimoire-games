@@ -3,8 +3,8 @@
   sedit "s:--no-same-owner::" client/Makefile.in
 
   ./configure  --build=$BUILD			\
-               --prefix=/usr			\
-               --bindir=/usr/games		\
+               --prefix=${INSTALL_ROOT}/usr			\
+               --bindir=${INSTALL_ROOT}/usr/games		\
                $OPTS                 &&
   make                               &&
   prepare_install                    &&

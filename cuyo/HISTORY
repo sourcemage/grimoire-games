@@ -1,3 +1,7 @@
+2003-05-19 hgg <hgreig@bigpond.net.au>
+		
+		Update for ${INSTALL_ROOT}
+
 2003-05-05  hgg <hgreig@bigpond.net.au>
 
 		Updated to 1.7.0
@@ -10,7 +14,7 @@
 		Modifed BUILD to install binary into /usr/bin and
 		data into /usr/share/games, again, the binary cannot
 		go into /usr/games as I get the following error
-		when I try with '--bindir=/usr/games'
+		when I try with '--bindir=${INSTALL_ROOT}/usr/games'
 		(same as Maelstrom):
 		-bash: /usr/bin/cuyo: No such file or directory
 

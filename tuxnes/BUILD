@@ -1,9 +1,9 @@
 (
 
-  ./configure	--prefix=/usr                   \
-		--bindir=/usr/games             \
-                --sysconfdir=/etc               \
-                --localstatedir=/var            \
+  ./configure	--prefix=${INSTALL_ROOT}/usr                   \
+		--bindir=${INSTALL_ROOT}/usr/games             \
+                --sysconfdir=${INSTALL_ROOT}/etc               \
+                --localstatedir=${INSTALL_ROOT}/var            \
                 $OPTS                           &&
  make 						&&
  prepare_install                                &&

@@ -5,10 +5,10 @@
        configure.original  >  configure
 
   ./configure  --build=${BUILD}      \
-               --prefix=/usr         \
-               --sysconfdir=/etc     \
-               --localstatedir=/var  \
-               --bindir=/usr/games   \
+               --prefix=${INSTALL_ROOT}/usr         \
+               --sysconfdir=${INSTALL_ROOT}/etc     \
+               --localstatedir=${INSTALL_ROOT}/var  \
+               --bindir=${INSTALL_ROOT}/usr/games   \
                --disable-sdltest     \
                ${KOBO_OGL}           \
                ${KOBO_OSS}           &&

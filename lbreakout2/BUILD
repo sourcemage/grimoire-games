@@ -4,11 +4,11 @@
   CFLAGS=`echo ${CFLAGS} |sed s:"-O.::"`
   
   ./configure  --build=${BUILD}                  \
-               --prefix=/usr                     \
-               --sysconfdir=/etc                 \
-               --localstatedir=/var              \
-               --bindir=/usr/games               \
-               --with-highscore-path=/var/games  &&
+               --prefix=${INSTALL_ROOT}/usr                     \
+               --sysconfdir=${INSTALL_ROOT}/etc                 \
+               --localstatedir=${INSTALL_ROOT}/var              \
+               --bindir=${INSTALL_ROOT}/usr/games               \
+               --with-highscore-path=${INSTALL_ROOT}/var/games  &&
                ${OPTS}                           &&
 
   make                                           &&

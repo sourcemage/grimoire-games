@@ -1,4 +1,4 @@
-gamedir=/usr/lib/games/nethackdir
+gamedir=${INSTALL_ROOT}/usr/lib/games/nethackdir
 
 case $COPY_FILES in
 y|Y)

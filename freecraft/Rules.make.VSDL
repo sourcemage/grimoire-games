@@ -16,7 +16,7 @@ RM=rm -f
 MAKE=make
 
 # Prefix for 'make install'
-PREFIX=/usr/games
+PREFIX=${INSTALL_ROOT}/usr/games
 
 # Use SIOD support
 CCL		= -DUSE_CCL

@@ -1,12 +1,12 @@
 (
 
   LIBS="-lncurses" 				\
-  ./configure  --prefix=/usr			\
-               --sysconfdir=/etc                \
-               --localstatedir=/var             \
-               --bindir=/usr/games              \
-               --datadir=/usr/share/dopewars    \
-               --mandir=/usr/share/man          \
+  ./configure  --prefix=${INSTALL_ROOT}/usr			\
+               --sysconfdir=${INSTALL_ROOT}/etc                \
+               --localstatedir=${INSTALL_ROOT}/var             \
+               --bindir=${INSTALL_ROOT}/usr/games              \
+               --datadir=${INSTALL_ROOT}/usr/share/dopewars    \
+               --mandir=${INSTALL_ROOT}/usr/share/man          \
                $OPTS                         &&
   make                                       &&
   prepare_install                            &&

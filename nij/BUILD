@@ -4,7 +4,7 @@
   sedit  's:local/::'  Makefile
   sedit  "s:CFLAGS = :CFLAGS = ${CFLAGS} :"  Makefile
 
-  N_DIR=/usr/share/games/${SPELL}                                   &&
+  N_DIR=${INSTALL_ROOT}/usr/share/games/${SPELL}                                   &&
   rm  game                                                          &&
   make                                                              &&
   prepare_install                                                   &&

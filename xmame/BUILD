@@ -11,14 +11,14 @@ rm  -f  $SPELL_CONFIG
   rm  doc                                   &&
   ln  -sf  src/unix/doc  doc                &&
 
-  make  PREFIX=/usr                         \
-        BINDIR=/usr/games                   \
+  make  PREFIX=${INSTALL_ROOT}/usr                         \
+        BINDIR=${INSTALL_ROOT}/usr/games                   \
         CFLAGS="${CFLAGS/-O[3-9]/-O2}"	     \
         CXXFLAGS="${CXXFLAGS/-O[3-9]/-O2}"  \
         -f  makefile.unix                   &&
   prepare_install                           &&
-  make  PREFIX=/usr                         \
-        BINDIR=/usr/games                   \
+  make  PREFIX=${INSTALL_ROOT}/usr                         \
+        BINDIR=${INSTALL_ROOT}/usr/games                   \
         -f  makefile.unix                   \
         install
 

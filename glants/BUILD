@@ -3,7 +3,7 @@
   # Add our optimizations.  ;)
   sedit  "s:CFLAGS = :CFLAGS = ${CFLAGS} :"  src/Makefile
 
-  N_DIR=/usr/share/games/${SPELL}                                        &&
+  N_DIR=${INSTALL_ROOT}/usr/share/games/${SPELL}                                        &&
   make  clean                                                            &&
   make                                                                   &&
   install  -d  -m  755  -g  games  ${N_DIR}                              &&

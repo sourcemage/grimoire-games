@@ -12,7 +12,7 @@
 
   prepare_install                                        &&
 
-  installdir=/usr/lib/quake2                             &&
+  installdir=${INSTALL_ROOT}/usr/lib/quake2                             &&
 
   # Install the binaries
   mkdir -p ${installdir}/baseq2                          &&

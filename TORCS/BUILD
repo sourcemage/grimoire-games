@@ -1,12 +1,12 @@
 (
 
   ./configure  --build=${BUILD}            \
-               --prefix=/usr/              \
-               --exec-prefix=/usr/games    \
-               --bindir=/usr/bin           \
-               --datadir=/usr/share        \
-               --sysconfdir=/etc           \
-               --localstatedir=/var/games  \
+               --prefix=${INSTALL_ROOT}/usr/              \
+               --exec-prefix=${INSTALL_ROOT}/usr/games    \
+               --bindir=${INSTALL_ROOT}/usr/bin           \
+               --datadir=${INSTALL_ROOT}/usr/share        \
+               --sysconfdir=${INSTALL_ROOT}/etc           \
+               --localstatedir=${INSTALL_ROOT}/var/games  \
                ${OPTS}                     &&
   make                                     &&
   prepare_install                          &&

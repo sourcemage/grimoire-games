@@ -1,8 +1,8 @@
 (
 
-  make  PREFIX=/usr  OPTIMIZE="$CFLAGS"  &&
+  make  PREFIX=${INSTALL_ROOT}/usr  OPTIMIZE="$CFLAGS"  &&
   prepare_install                        &&
-  make  install  PREFIX=/usr             &&
+  make  install  PREFIX=${INSTALL_ROOT}/usr             &&
   mkdir -p /usr/games			 &&
   mv  /usr/bin/frozen-bubble   /usr/games
 

@@ -12,7 +12,7 @@
   sh    sys/unix/setup.sh                           &&
   make  all                                         &&
   prepare_install                                   &&
-  make  GAMEDIR=/usr/games/lib/nethackdir  install  &&
+  make  GAMEDIR=${INSTALL_ROOT}/usr/games/lib/nethackdir  install  &&
   install  -m 775  sys/unix/nethack.sh              \
                    /usr/games/falconseye
 

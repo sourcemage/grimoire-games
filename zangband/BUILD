@@ -1,11 +1,11 @@
 (
 
-  I_DIR=/usr/share/games/${SPELL}                        &&
+  I_DIR=${INSTALL_ROOT}/usr/share/games/${SPELL}                        &&
   ./bootstrap                                            &&
   ./configure  --build=${BUILD}                          \
-               --prefix=/usr/games                       \
-               --sysconfdir=/etc                         \
-               --localstatedir=/var                      \
+               --prefix=${INSTALL_ROOT}/usr/games                       \
+               --sysconfdir=${INSTALL_ROOT}/etc                         \
+               --localstatedir=${INSTALL_ROOT}/var                      \
                CYGWIN_TRUE=1                             \
                CYGWIN_FALSE=0                            \
                CYGWIN=no                                 \

@@ -4,11 +4,11 @@
   sedit  "s/-lSDL /-lSDL -lpthread /"           configure
 
   ./configure  --build=${BUILD}                  \
-               --prefix=/usr                     \
-               --bindir=/usr/games               \
-               --datadir=/usr/share/games        \
-               --sysconfdir=/etc                 \
-               --localstatedir=/var              \
+               --prefix=${INSTALL_ROOT}/usr                     \
+               --bindir=${INSTALL_ROOT}/usr/games               \
+               --datadir=${INSTALL_ROOT}/usr/share/games        \
+               --sysconfdir=${INSTALL_ROOT}/etc                 \
+               --localstatedir=${INSTALL_ROOT}/var              \
                ${OPTS}                           &&
   sedit  "s/-O2/${CFLAGS}/"  Makefile            &&
   make                                           &&

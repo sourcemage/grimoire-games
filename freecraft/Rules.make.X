@@ -16,7 +16,7 @@ RM=rm -f
 MAKE=make
 
 # Prefix for 'make install'
-PREFIX=/usr
+PREFIX=${INSTALL_ROOT}/usr
 
 # Use SIOD support
 CCL		= -DUSE_CCL

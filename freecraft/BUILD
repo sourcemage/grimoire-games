@@ -64,7 +64,7 @@
 
   make                             &&
   prepare_install                  &&
-  make  PREFIX=/usr  install       &&
+  make  PREFIX=${INSTALL_ROOT}/usr  install       &&
   cd  /usr/share/games/freecraft   &&
   # Now, unpack the media files...
   # Should update the spell to optionally use

@@ -3,9 +3,9 @@
   I_DIR="/usr/share/games/${SPELL}"
  
   ./configure  --build=${BUILD}            \
-               --prefix=/usr/share         \
-               --sysconfdir=/etc           \
-               --localstatedir=/var        \
+               --prefix=${INSTALL_ROOT}/usr/share         \
+               --sysconfdir=${INSTALL_ROOT}/etc           \
+               --localstatedir=${INSTALL_ROOT}/var        \
                --disable-paraguitest       \
                CPPFLAGS=${CPPFLAGS}        \
                ${OPTS}                     &&

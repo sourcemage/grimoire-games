@@ -1,3 +1,3 @@
-OPTS="${OPTS}  --bindir=/usr/games"
+OPTS="${OPTS}  --bindir=${INSTALL_ROOT}/usr/games"
 
 default_build

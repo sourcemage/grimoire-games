@@ -5,11 +5,11 @@
   autoconf                                                    &&
   CFLAGS="$CFLAGS -DGL_GLEXT_LEGACY"                          &&
   ./configure  --build=${BUILD}                               \
-               --prefix=/usr                                  \
-               --bindir=/usr/games                            \
-               --sysconfdir=/etc                              \
-               --localstatedir=/var                           \
-               --mandir=/usr/share/man                        &&
+               --prefix=${INSTALL_ROOT}/usr                                  \
+               --bindir=${INSTALL_ROOT}/usr/games                            \
+               --sysconfdir=${INSTALL_ROOT}/etc                              \
+               --localstatedir=${INSTALL_ROOT}/var                           \
+               --mandir=${INSTALL_ROOT}/usr/share/man                        &&
                ${OPTS}                                        &&
   make                                                        &&
   prepare_install                                             &&

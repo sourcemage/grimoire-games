@@ -1,9 +1,9 @@
 (
 
-  ./configure  --prefix=/usr             \
-               --bindir=/usr/games       \
-               --infodir=/usr/share/info \
-               --mandir=/usr/share/man   \
+  ./configure  --prefix=${INSTALL_ROOT}/usr             \
+               --bindir=${INSTALL_ROOT}/usr/games       \
+               --infodir=${INSTALL_ROOT}/usr/share/info \
+               --mandir=${INSTALL_ROOT}/usr/share/man   \
                $OPTS            &&
   make                          &&
   prepare_install		&&

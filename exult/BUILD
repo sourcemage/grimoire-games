@@ -7,10 +7,10 @@
        audio/midi_drivers/forked_player.cc.original  >     \
        audio/midi_drivers/forked_player.cc
 
-  ./configure  --prefix=/usr         \
-               --sysconfdir=/etc     \
-               --localstatedir=/var  \
-               --bindir=/usr/games   \
+  ./configure  --prefix=${INSTALL_ROOT}/usr         \
+               --sysconfdir=${INSTALL_ROOT}/etc     \
+               --localstatedir=${INSTALL_ROOT}/var  \
+               --bindir=${INSTALL_ROOT}/usr/games   \
                $OPTS                 &&
   make                               &&
   prepare_install                    &&

@@ -1,7 +1,7 @@
 (
 
-  ./configure  --prefix=/usr                  \
-               --bindir=/usr/games            &&
+  ./configure  --prefix=${INSTALL_ROOT}/usr                  \
+               --bindir=${INSTALL_ROOT}/usr/games            &&
   sedit  "s/-lvorbis/-lvorbis -lvorbisfile/"  \
          makefile                             &&
   make                                        &&

@@ -1,10 +1,10 @@
 (
 
-  ./configure  --prefix=/usr               \
-               --bindir=/usr/games         \
-               --datadir=/usr/share/games  \
-               --libdir=/usr/share/games   \
-               --mandir=/usr/share/man     \
+  ./configure  --prefix=${INSTALL_ROOT}/usr               \
+               --bindir=${INSTALL_ROOT}/usr/games         \
+               --datadir=${INSTALL_ROOT}/usr/share/games  \
+               --libdir=${INSTALL_ROOT}/usr/share/games   \
+               --mandir=${INSTALL_ROOT}/usr/share/man     \
                ${OPTS}                     &&
   make                                     &&
   prepare_install                          &&

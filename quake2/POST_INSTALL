@@ -1,5 +1,5 @@
 
-  installdir=/usr/lib/quake2
+  installdir=${INSTALL_ROOT}/usr/lib/quake2
 
   # Either copy or link the game data
   for i in `ls ${BASE_PATH} | grep pak`; do

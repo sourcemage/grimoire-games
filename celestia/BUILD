@@ -1,18 +1,18 @@
 (
 if [ "$KDE" = "y" ]
-then	./configure --prefix=/usr -with-kde $OPTS &&
+then	./configure --prefix=${INSTALL_ROOT}/usr -with-kde $OPTS &&
 		make	&&
 		prepare_install	&&
 		make install
 		else
 			if [ "$GTK" = "y" ] 
-			then	./configure --prefix=/usr -with-gtk $OPTS &&
+			then	./configure --prefix=${INSTALL_ROOT}/usr -with-gtk $OPTS &&
 			make	&&
 			prepare_install	&&
 			make install
 			else
 				if [ "$X11" = "y" ] 
-				then	./configure --prefix=/usr -without-gtk -without-kde $OPTS &&
+				then	./configure --prefix=${INSTALL_ROOT}/usr -without-gtk -without-kde $OPTS &&
 					make	&&
 					prepare_install	&&
 					make install
