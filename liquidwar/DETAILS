@@ -1,5 +1,5 @@
            SPELL=liquidwar
-         VERSION=5.5.8
+         VERSION=5.5.7
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/$SOURCE
