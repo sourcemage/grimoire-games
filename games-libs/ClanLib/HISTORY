@@ -1,3 +1,8 @@
+2004-07-17 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on nvidia_header if nvidia_driver is installed
+	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
+	  renames make it into stable grimoire
+
 2004-02-20 David C. Haley <dhaley@hot.rr.com>
 	* DETAILS: Minor spelling corrections
 	* HISTORY: Updated to Guru Handbook

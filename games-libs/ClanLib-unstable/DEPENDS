@@ -5,10 +5,23 @@ depends  Hermes    &&
 depends  jpeg      &&
 depends  libpng    &&
 
-if spell_installed NVIDIA_driver
-then depends NVIDIA_headers
-fi
+if  spell_installed  NVIDIA_driver
+then
+  depends NVIDIA_headers
+fi  &&
 
-optional_depends  "mikmod" "--enable-mikmod" "" "To enable clanMikMod support" &&
-optional_depends  "libvorbis" "--enable-vorbis" "" "To enable clanVorbis support"
+if  spell_installed  nvidia_driver
+then
+  depends nvidia_headers
+fi  &&
+
+optional_depends  mikmod                          \
+                  "--enable-mikmod"               \
+                  ""                              \
+                  "To enable clanMikMod support"  &&
+
+optional_depends  libvorbis                       \
+                  "--enable-vorbis"               \
+                  ""                              \
+                  "To enable clanVorbis support"
  
