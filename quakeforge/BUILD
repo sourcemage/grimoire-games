@@ -1,7 +1,5 @@
 (
 
-  ./bootstrap   &&
-
   ./configure  --build=$BUILD       \
                --prefix=/usr        \
                --bindir=/usr/games  \
