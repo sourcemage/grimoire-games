@@ -10,6 +10,8 @@
 	  Removed TABs
 	  Use sedit instead of cp and sed
 	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Removed TABs
 
 2004-09-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: MD5 fix

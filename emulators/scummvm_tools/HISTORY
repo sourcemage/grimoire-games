@@ -12,6 +12,7 @@
 	* BUILD: Converted to build_api 2
 	  Use sedit instead of cp and sed
 	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
 
 2004-07-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version bump 0.6.1
