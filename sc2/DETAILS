@@ -1,0 +1,21 @@
+           SPELL=sc2
+         VERSION=0.1
+          SOURCE=uqm-${VERSION}-source.tgz
+         SOURCE2=uqm-${VERSION}-content-full.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/uqm-${VERSION}-source
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
+        WEB_SITE=http://sc2.sourceforge.net
+         ENTERED=20030107
+         UPDATED=20030107
+          MD5[0]=24f9c01dfe7055163c469fc0215a12fe
+          MD5[1]=a7dade002a33b9f9d873fd00574be134
+      LICENSE[0]=GPL
+      LICENSE[1]=UNKNOWN
+      MAINTAINER=eric@sandall.us
+           SHORT="Port of Star Control II: The Ur-Quan Masters"
+cat << EOF
+ The project started in August 2002, when Toys For Bob  released the sources of Star Control 2 3DO version to the fan community. Our goal is to port this wonderful game to current personal computers and operating systems. It is and will remain 100% free of charge, and anyone can contribute to the project and thus help make it even better. 
+
+Welcome aboard. Star Control II will take you on a far journey, a space odyssey encompassing the realms of science-fiction and role-playing. This epic adventure spans hundreds of light years, and evokes a history reaching back over 250,000 years. As you travel out among the stars, your decisions and actions will directly affect the destiny of 18 intelligent, star-faring species, including the inhabitants of Earth. Star Control II is only in part a sequel to Star Control, which focused exclusively on the strategy and tactics of the bitter Ur-Quan Slave War (known by the philosophical as the Great Crucible of Sentience). You need not have played the first game to enjoy this one. However, if you have never fought a Star Control space-battle, you may wish to practice with the SuperMelee game before facing enemy forces. The evil aliens you will encounter are adept at the art of war, and unforgiving of weakness. The history that follows details the critical involvement of Earth in the conflict between the Alliance of Free Stars and the villainous Ur-Quan Hierarchy. Study what happened, learn from the mistakes of those that went before. Only in this way will you be prepared for the mystery, the intrigue and the blazing action of Star Control II.
+EOF

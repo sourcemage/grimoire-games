@@ -1,0 +1,5 @@
+depends  SDL        &&
+depends  SDL_image  &&
+depends  SDL_mixer  &&
+# SDL_mixer >= 1.2.5, not yet released (2003-01-07)
+depends  libvorbis
