@@ -1,0 +1,2 @@
+install $SOURCE_DIRECTORY/allegro.cfg /etc/allegro.cfg
+default_post_build

@@ -1,0 +1,13 @@
+# This file should be default_post_build() with gather_docs commented out.
+# This is necessary otherwise some documentation is duplicated. A better long
+# term solution is described in [Sgl-sorcery-discuss] On Duplicate Documentation
+
+install_pam_confs
+install_services
+install_xinetd_confs
+# gather_docs
+devoke_installwatch
+ldconfig
+# release_saved_libraries
+cd  /
+boost

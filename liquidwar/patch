@@ -1,0 +1,21 @@
+diff --recursive -C 1 liquidwar-5.4.5.orig/Makefile.in liquidwar-5.4.5/Makefile.in
+*** liquidwar-5.4.5.orig/Makefile.in	Fri Mar 15 15:19:25 2002
+--- liquidwar-5.4.5/Makefile.in	Fri Mar 15 15:19:54 2002
+***************
+*** 138,140 ****
+  	@if [ -f $(MAKE_DOC_DIR)/man/liquidwar.6.gz ]; then echo "Installing liquidwar man page in $(MANDIR)."; install -d $(DESTDIR)$(MANDIR); install -m 0644 $(MAKE_DOC_DIR)/man/*.gz $(DESTDIR)$(MANDIR); fi
+! 	@if [ -f $(MAKE_DOC_DIR)/info/liquidwar.info.gz ]; then echo "Installing info page $(INFODIR)/liquidwar.info.gz."; install -d $(DESTDIR)$(INFODIR); install -m 644 $(MAKE_DOC_DIR)/info/liquidwar.info.gz $(DESTDIR)$(INFODIR); if which install-info; then if test -d $(DESTDIR)$(INFODIRDIR); then if test -f $(DESTDIR)$(INFODIRDIR)/dir; then echo "Installing liquidwar info entry."; install-info --infodir=$(DESTDIR)$(INFODIRDIR) $(MAKE_DOC_DIR)/info/liquidwar.info.gz; fi; fi; fi; fi
+  	@if [ -f $(MAKE_DOC_DIR)/ps/liquidwar.ps ]; then echo "Installing liquidwar PostScript doc in $(DOCDIR)/ps."; install -d $(DESTDIR)$(DOCDIR)/ps; install -m 0644 $(MAKE_DOC_DIR)/ps/*.ps $(DESTDIR)$(DOCDIR)/ps; fi
+--- 138,140 ----
+  	@if [ -f $(MAKE_DOC_DIR)/man/liquidwar.6.gz ]; then echo "Installing liquidwar man page in $(MANDIR)."; install -d $(DESTDIR)$(MANDIR); install -m 0644 $(MAKE_DOC_DIR)/man/*.gz $(DESTDIR)$(MANDIR); fi
+! 	@if [ -f $(MAKE_DOC_DIR)/info/liquidwar.info.gz ]; then echo "Installing info page $(INFODIR)/liquidwar.info.gz."; install -d $(DESTDIR)$(INFODIR); install -m 644 $(MAKE_DOC_DIR)/info/liquidwar.info.gz $(DESTDIR)$(INFODIR); if which install-info; then if test -d $(DESTDIR)$(INFODIRDIR); then if test -f $(DESTDIR)$(INFODIRDIR)/dir; then echo "Installing liquidwar info entry."; install-info --info-dir=$(DESTDIR)$(INFODIRDIR) $(MAKE_DOC_DIR)/info/liquidwar.info.gz; fi; fi; fi; fi
+  	@if [ -f $(MAKE_DOC_DIR)/ps/liquidwar.ps ]; then echo "Installing liquidwar PostScript doc in $(DOCDIR)/ps."; install -d $(DESTDIR)$(DOCDIR)/ps; install -m 0644 $(MAKE_DOC_DIR)/ps/*.ps $(DESTDIR)$(DOCDIR)/ps; fi
+***************
+*** 172,174 ****
+  	@rm -f $(DESTDIR)$(INFODIR)/liquidwar.info.gz
+! 	@if which install-info; then if test -d $(DESTDIR)$(INFODIRDIR); then if test -f $(DESTDIR)$(INFODIRDIR)/dir; then echo "Removing info entry."; install-info --infodir=$(DESTDIR)$(INFODIRDIR) --remove liquidwar; fi; fi; fi
+  	@echo "Removing icon $(PIXDIR)/liquidwar.xpm."
+--- 172,174 ----
+  	@rm -f $(DESTDIR)$(INFODIR)/liquidwar.info.gz
+! 	@if which install-info; then if test -d $(DESTDIR)$(INFODIRDIR); then if test -f $(DESTDIR)$(INFODIRDIR)/dir; then echo "Removing info entry."; install-info --info-dir=$(DESTDIR)$(INFODIRDIR) --remove liquidwar; fi; fi; fi
+  	@echo "Removing icon $(PIXDIR)/liquidwar.xpm."
