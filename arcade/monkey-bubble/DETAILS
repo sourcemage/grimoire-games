@@ -1,10 +1,10 @@
            SPELL=monkey-bubble
-         VERSION=0.1.9
+         VERSION=0.3.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://home.gna.org/monkeybubble/downloads/$SOURCE
         WEB_SITE=http://home.gna.org/monkeybubble/
-          MD5[0]=789ddce0f4ccd7880982a92ae0d3ffea
+          MD5[0]=7c47404282ddf00a2b269ee5eb4b0626
       LICENSE[0]=GPL
          ENTERED=20031001
          UPDATED=20031001

@@ -1,3 +1,7 @@
+2004-07-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: depends on gstreamer now
+	* DETAILS: updated to 0.3.2
+
 2004-06-23 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: updated to 0.1.9
 	  SOURCE_URL and WEBSITE changed to http://home.gna.org/monkeybubble/
