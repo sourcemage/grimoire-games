@@ -1,14 +1,13 @@
            SPELL=crafty
-         VERSION=19.3
+         VERSION=19.14
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.cis.uab.edu/pub/hyatt/v19/$SOURCE
-        WEB_SITE=ftp://ftp.cis.uab.edu/pub/hyatt/doc/crafty.doc.ascii
-	  MD5[0]=e1f1430707d3a178fa0cce0c58018564
-      LICENSE[0]=UNKNOWN
+        WEB_SITE=ftp://ftp.cis.uab.edu/pub/hyatt/doc/readme.txt
+	  MD5[0]=13a38ecb8ffb53f6c541772fd45ccb94
+      LICENSE[0]=Seems to be open source
 	 ENTERED=20030412
          UPDATED=20030412
-      MAINTAINER=marcg@phreaker.net
            SHORT="Crafty is a computer chess program."
 cat << EOF
 Crafty is a state-of-the-art  computer  chess  program,  and
