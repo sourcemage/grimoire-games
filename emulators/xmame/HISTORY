@@ -1,3 +1,7 @@
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.78.1
+	Removed MAKE_NJOBS=1
+
 2003-12-14 Eric Sandall <eric@sandall.us>
 	* BUILD: Create some default directories
 	ctrlr needs to have it's permissions set as well
