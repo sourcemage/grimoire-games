@@ -1,3 +1,11 @@
+2004-04-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added conditional cvs version
+	Store the cvs version as .bz2
+	Removed MAINTAINER
+	* PREPARE: Added to query for cvs version
+	* BUILD: Added to build cvs or standard version
+	* DEPENDS: Conditionally depend upon cvs
+
 2003-12-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.6.1
 	Changed SOURCE_URL to use ftp.worldforge.org
@@ -7,3 +15,4 @@
 
 2003-10-04  Eric Sandall <eric@sandall.us>
 	* Forked from varconf for sear
+
