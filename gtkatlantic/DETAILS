@@ -1,12 +1,12 @@
            SPELL=gtkatlantic
-         VERSION=0.1.4
+         VERSION=0.2.7
           SOURCE=${SPELL}_${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+          MD5[0]=f610baa699b44c243d39ccc3cf8254da
         WEB_SITE=http://gtkatlantic.sourceforge.net/
          ENTERED=20030108
          UPDATED=20030108
-          MD5[0]=2634cff0a12bc13a18aeed26e3e03dfa
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
            SHORT="GTK-based Monopoly (monopd) game"
