@@ -1,0 +1,24 @@
+           SPELL=wastesedge
+         VERSION=0.3.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/$SOURCE
+        WEB_SITE=http://adonthell.linuxgames.com
+	MAINTAINER=pradierdavid@yahoo.fr
+         ENTERED=20020517
+         UPDATED=20020517
+           SHORT="Open Source Role Playing Game"
+cat << EOF
+Listen to the water
+that surrounds our shore -
+To the wind
+that blows into our face -
+To the stories they tell
+before all disappears in darkness
+
+Tomas Hterin
+Fare thee well, Adonthell
+
+At first sight, everything looks peaceful on the island of Adonthell. But Tomas Hterin's verse has become true in a way that no one would ever have expected. Now there is an urgent need for someone to take a light into the darkness and stand where even those of greater wisdom failed.
+Perhaps you are the one who will save Adonthell and bring peace back to the country.
+EOF
