@@ -1,2 +1,2 @@
-depends  x11-lib  &&
+depends  X11-LIB  &&
 depends  SDL
