@@ -1,0 +1,11 @@
+--- neverball-1.2.1/share/config.h.original	2004-04-11 01:20:09.000000000 -0700
++++ neverball-1.2.1/share/config.h	2004-04-11 01:21:42.000000000 -0700
+@@ -15,7 +15,7 @@
+  *
+  * If the game is to be installed globally, change this value.
+  */
+-#define CONFIG_PATH "./data"
++#define CONFIG_PATH "/usr/share/neverball/data"
+ 
+ /*
+  * Global settings are stored in USER_CONFIG_FILE.  Replays are stored

@@ -1,0 +1,7 @@
+2004-04-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+        * Fixed the md5sum to the uncompressed tarball
+        * Other minor fixes in the files
+2004-04-11 Mantar mantar.feyelno@sbcglobal.net
+	* Added neverball-directory.patch, updated BUILD
+2004-04-10 Mantar mantar.feyelno@sbcglobal.net
+	* DEPENDS, DETAILS, HISTORY, CONFIGURE, BUILD: created this spell
