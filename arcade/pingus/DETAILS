@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20030612
           MD5[0]=382f2c3911dab38694333d261bd9c04e
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Lemmings(tm) clone"
 cat << EOF
 While Pingus is based on the idea of Lemmings(tm), it has included some other ideas, which weren't 

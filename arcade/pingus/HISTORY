@@ -1,3 +1,7 @@
+2005-01-19 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updated for Build API 2
+	* BUILD, patches: Added for clean gcc3.3 & 3.4 building
+
 2004-12-13 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: source changed to bz2
 

@@ -8,7 +8,7 @@
          UPDATED=20011011
           MD5[0]=25fa1e614ef69abce80c1777ab77719c
       LICENSE[0]=GPL
-      MAINTAINER=v.merkatz@gmx.net
+       BUILD_API=2 
            SHORT="penguin-command is a missile command clone."
 cat << EOF
 This is a clone of the classic "Missile Command" Game, but it has better
