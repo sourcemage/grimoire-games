@@ -1,13 +1,23 @@
            SPELL=freeciv
+if  [  "$FREECIV_BETA"  ==  "y"  ];  then
+         VERSION=2.0.0-beta8
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/beta/freeciv-2.0.0-beta8.tar.bz2
+   SOURCE_URL[1]=ftp://ftp.netc.pt/pub/freeciv/beta/$SOURCE
+   SOURCE_URL[2]=ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.freeciv.org/beta/$SOURCE
+          MD5[0]=10e32a98c92ab7503def84e4bd852da5
+else
          VERSION=1.14.2
           SOURCE=${SPELL}-${VERSION}.tar.bz2
-         SOURCE2=stdsounds2.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/stable/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.netc.pt/pub/freeciv/stable/${SOURCE}
    SOURCE_URL[2]=ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.freeciv.org/stable/${SOURCE}
-  SOURCE2_URL[0]=http://www.freeciv.org/ftp/contrib/sounds/sets/${SOURCE2}
           MD5[0]=b5bb816e85b2295641bc5b46c4f8189b
+fi
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+         SOURCE2=stdsounds2.tar.gz
+  SOURCE2_URL[0]=http://www.freeciv.org/ftp/contrib/sounds/sets/${SOURCE2}
           MD5[1]=448e81657e28e50a10aba8f36e31ee03
         WEB_SITE=http://www.freeciv.org/
          ENTERED=20010922
