@@ -1,2 +1,3 @@
+depends  tiff    &&
 depends  esound  &&
 depends  gtkglarea
