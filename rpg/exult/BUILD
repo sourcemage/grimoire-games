@@ -1,4 +1,23 @@
 (
+#swathe of gcc3.3 hacks for assert "undeclared"
+sedit '8a\
+\#include \<assert.h\>\' files/rwregress.cc &&
+sedit '28a\
+\#include \<assert.h\>\' files/databuf.h &&
+sedit '28a\
+\#include \<assert.h\>\' conf/xmain.cc &&
+sedit '29a\
+\#include \<assert.h\>\' usecode/compiler/ucfun.cc &&
+sedit '29a\
+\#include \<assert.h\>\' tools/cmanip.cc &&
+sedit '22a\
+\#include \<assert.h\>\' usecode/ucxt/src/ucdata.cc &&
+sedit '22a\
+\#include \<assert.h\>\' usecode/ucxt/src/ops.cc &&
+sedit '22a\
+\#include \<assert.h\>\' usecode/ucxt/src/ucfunc.cc &&
+sedit '38a\
+\#include \<assert.h\>\' usecode/ucxt/src/ucxt.cc &&
 
   cp   audio/midi_drivers/forked_player.cc  \
        audio/midi_drivers/forked_player.cc.original

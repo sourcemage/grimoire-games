@@ -1,5 +1,11 @@
 (
-
+#peculiar hacks for gcc3.3 ?
+#i can only assume gcc headers dont include glibc's assert.h ?
+sedit  '18a\
+\#include \<assert.h\>\' src/stack.h &&
+sedit  '19a\
+\#include \<assert.h\>\' src/ArmyInfo.h &&
+#end gcc3.3 hack
   autoconf &&	 
   
   ./configure  --build=${BUILD}            		  \
