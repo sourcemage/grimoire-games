@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.frozen-bubble.org
          ENTERED=20020209
          UPDATED=20020209
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="frozen-bubble is game of throwing/build groups of bubbles"
 cat << EOF
 Frozen Bubble is a game in which you throw colorful bubbles and build 
