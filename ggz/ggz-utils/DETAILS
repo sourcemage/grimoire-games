@@ -1,14 +1,13 @@
            SPELL=ggz-utils
-         VERSION=0.0.7
+         VERSION=0.0.8
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=94ae6f5621407c92486e3d7ac6092729
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=2c0d0e699f8e26922572bb00ee518827
       LICENSE[0]=LGPL
-        WEB_SITE=http://ggz.sourceforge.net
+        WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
-         UPDATED=20031119
-      MAINTAINER=eric@sandall.us
+         UPDATED=20040216
            SHORT="GGZ Gaming Zone utilities"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and

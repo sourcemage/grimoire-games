@@ -1,14 +1,13 @@
            SPELL=ggz-client-libs
-         VERSION=0.0.7
+         VERSION=0.0.8
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.sourceforge.net/ggz/$SOURCE
-          MD5[0]=f88b887e6eccd616035c3b78d37db010
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=70f107946ac9739977b0d55e3401ef3b
       LICENSE[0]=LGPL
-        WEB_SITE=http://ggz.sourceforge.net
+        WEB_SITE=http://ggzgamingzone.org
          ENTERED=20020209
-         UPDATED=20020423
-      MAINTAINER=r0dzilla@bellsouth.net
+         UPDATED=20040216
            SHORT="GGZ Gaming Zone core client libraires"
 cat << EOF
 GGZ Gaming Zone core client libraries provides the common procedures and

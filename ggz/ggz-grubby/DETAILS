@@ -1,14 +1,13 @@
            SPELL=ggz-grubby
-         VERSION=0.0.7
+         VERSION=0.0.8
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=4f3d1c2fa8f215b536f460bd9bc97a5b
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=7114802f8402fb54c80d27ae8f2404a6
       LICENSE[0]=LGPL
-        WEB_SITE=http://ggz.sourceforge.net
+        WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
-         UPDATED=20021129
-      MAINTAINER=eric@sandall.us
+         UPDATED=20040216
            SHORT="GGZ Gaming Zone chatbot"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and

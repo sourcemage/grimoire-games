@@ -1,14 +1,13 @@
            SPELL=ggz-kde-games
-         VERSION=0.0.7
+         VERSION=0.0.8
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/ggz/${SOURCE}
-          MD5[0]=e257c2d85be03f470cceaaeb780ad2b7
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=c0e022d34c488463c7917bd1415d4ec3
       LICENSE[0]=LGPL
-        WEB_SITE=http://ggz.sourceforge.net
+        WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
-         UPDATED=20021129
-      MAINTAINER=eric@sandall.us
+         UPDATED=20040216
            SHORT="GGZ Gaming Zone KDE game modules"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and
