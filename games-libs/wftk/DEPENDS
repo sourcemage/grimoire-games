@@ -3,5 +3,5 @@ depends  SDL_mixer   &&
 depends  freetype2   &&
 depends  zlib        &&
 depends  libpng      &&
-depends  libsigc++   &&
+depends  libsigc++2  &&
 depends  smpeg

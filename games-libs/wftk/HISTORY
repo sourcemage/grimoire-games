@@ -1,3 +1,6 @@
+2003-12-07 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: libsigc++2 not yee olde versionne
+
 2003-10-12 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Uses freetype2, not freetype1
 	* Created wftk, added to games
