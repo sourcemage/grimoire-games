@@ -12,5 +12,5 @@ fi  &&
 
 optional_depends  mikmod "--enable-clanMikMod" "--disable-clanMikMod" "To enable clanMikMod support"  &&
 optional_depends  libvorbis "--enable-vorbis" "--disable-clanVorbis" "To enable clanVorbis support" &&
-optional_depends  sdl_gfx "--enable-clanSDL" "--disable-clanSDL" "To enable dsl_gfx support"
+optional_depends  sdl_gfx "--enable-clanSDL" "--disable-clanSDL" "To enable sdl_gfx support. This is needed for wormux."
 
