@@ -1,12 +1,12 @@
            SPELL=zx-fuse
 	     PKG=fuse
-         VERSION=0.6.2.1
+         VERSION=0.7.0
           SOURCE=$PKG-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
         WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
          ENTERED=20040425
-          MD5[0]=a5e577bfc9d3b74472d57f2a37518994
+          MD5[0]=56147f6df9db4a89ea89cc017bc7dc83
       LICENSE[0]=GPL
            SHORT="Fuse (the Free Unix Spectrum Emulator)"
 cat << EOF

@@ -1,3 +1,6 @@
+2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 0.84.1
+
 2004-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Bug 7045 replaced mkdir's with mkdir's -p
 

@@ -5,7 +5,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
         WEB_SITE=http://fuse-emulator.sourceforge.net/libspectrum.php
          ENTERED=20040425
-          MD5[0]=3114e885364dbb4c7d402ec9468d811c
+          MD5[0]=1ae5c1cd4600aef8b4b2cea364300f48
       LICENSE[0]=GPL
            SHORT="libspectrum - file i/o for ZX Spectrum emulator"
 cat << EOF

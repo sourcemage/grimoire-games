@@ -1,3 +1,6 @@
+2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 0.84.1
+
 2004-06-22 Jason Flatt <jflatt@sourcemage.org>
 	* BUILD: Cleaned up whitespace a bit.
 	* DETAILS: Updated to version 0.83.1
