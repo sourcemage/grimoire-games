@@ -1,3 +1,8 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Build API 2 update
+	* DETAILS: Version update
+	* BUILD: Edits to get the thing to build
+
 2003-12-08 hgg <hgreig@bigpond.net.au>
 	* BUILD remove -ansi -pedantic flags from makefiles
 

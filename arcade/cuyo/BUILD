@@ -1,16 +1,10 @@
-(
-  sedit "s/-ansi//" src/Makefile.in                            &&
-  sedit "s/-ansi//" src/Makefile.am                            &&
-  sedit "s/-pedantic//" src/Makefile.in                        &&
-  sedit "s/-pedantic//" src/Makefile.am                        &&
+  sedit 's:include/qglobal.h:include/qt/qglobal.h:' configure  &&
+  sedit 's:I$QTDIR/include:I$QTDIR/include/qt:' configure	&&
   ./configure  --build=${BUILD}            \
+               --with-qt                   \
+               --with-x                    \
                --prefix=${INSTALL_ROOT}/usr/              \
                --datadir=${INSTALL_ROOT}/usr/share/games  \
                --sysconfdir=${INSTALL_ROOT}/etc           \
                --localstatedir=${INSTALL_ROOT}/var/games  \
-               ${OPTS}                     &&
-  make                                     &&
-  prepare_install                          &&
-  make    install
-
-) > ${C_FIFO} 2>&1
+               ${OPTS}
