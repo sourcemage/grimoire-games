@@ -7,7 +7,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20020424
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=913ce9bb90c9887eb89d9bf20f10f190
+      LICENSE[0]=LGPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="SimGear is simulation construction tools used by FlightGear."
 cat << EOF
 SimGear is simulation construction tools used by FlightGear

@@ -8,6 +8,7 @@
                $OPTS                         &&
   make                                       &&
   prepare_install                            &&
+  mkdir -p /usr/games/enigma                 &&
   make    install
 
 ) > $C_FIFO 2>&1  

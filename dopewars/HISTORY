@@ -1,4 +1,10 @@
+2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Changed to use $SOURCEFORGE_URL
+		Changed maintainer
+
 2002-08-24  Eric Sandall <eric@sandall.us>
+
 		Updated version to 1.5.7
 		Added MD5 and LICENSE
 

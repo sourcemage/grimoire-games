@@ -7,7 +7,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.flightgear.org
          ENTERED=20010922
          UPDATED=20020424
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=a25216b243017c6ec67646693476fa95
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="FlightGear is a flight simulator."
 cat << EOF
 The Flight Gear Flight Simulator project is a free, open-source,

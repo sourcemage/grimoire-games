@@ -6,6 +6,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://cannonsmash.sourceforge.net
          ENTERED=20010922
          UPDATED=20020227
+          MD5[0]=ac5cb8e291aa119c1e3948e6164f8bb8
+      LICENSE[0]=GPL
       MAINTAINER=pradierdavid@yahoo.fr
            SHORT="csmash, Cannon Smash, is a 3D table tennis game."
 cat << EOF

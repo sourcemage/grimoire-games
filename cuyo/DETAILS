@@ -1,12 +1,14 @@
            SPELL=cuyo
-         VERSION=1.03
+         VERSION=1.6.0alpha4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/cuyo/$SOURCE
         WEB_SITE=http://www.karimmi.de/cuyo/
          ENTERED=20020129
-         UPDATED=20020129
-      MAINTAINER=pradierdavid@yahoo.fr
+         UPDATED=20020828
+          MD5[0]=96412425d5a8011c2ef40be6157a79e0
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="cuyo: Tetris-like game with many surprises"
 cat << EOF
 cuyo is a Tetris-like game.  You have to try to put balls of

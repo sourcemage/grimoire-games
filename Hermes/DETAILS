@@ -6,7 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://clanlib.org/hermes
          ENTERED=20011105
          UPDATED=20020614
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=991c4ebdefeb2b5711fb947439dfad88
+      LICENSE[0]=LGPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Graphics library"
 cat << EOF
 Hermes is a graphics library for ClanLib

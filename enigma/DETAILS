@@ -1,11 +1,13 @@
            SPELL=enigma
-         VERSION=1.02
+         VERSION=1.03
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/enigma/$SOURCE
+   SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/enigma/$SOURCE
         WEB_SITE=http://www.chiark.greenend.org.uk/~sgtatham/enigma
          ENTERED=20020320
          UPDATED=20020630
+          MD5[0]=af16fa2cb44b77080c3a09443337d7aa
+      LICENSE[0]=PD
            SHORT="A puzzle game involving pushing stuff around."
       MAINTAINER=jerome.zago@insalien.org
 cat << EOF

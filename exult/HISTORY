@@ -1,3 +1,9 @@
+2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Upped to version 0.99.1RC2
+		Added md5sum and license fields
+		Changed maintainer
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.

@@ -1,14 +1,17 @@
            SPELL=exult
-         VERSION=0.98rc1
+         VERSION=0.99.1RC2
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=drsfx.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.sourceforge.net/$SPELL/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
   SOURCE2_URL[0]=http://www.unet.univie.ac.at/~a9848357/exult/$SOURCE2
         WEB_SITE=http://exult.sourceforge.net/
          ENTERED=20011217
          UPDATED=20020320
-      MAINTAINER=jerome.zago@insalien.org
+          MD5[0]=851b98ca72e86769f79e038d7df876cc
+          MD5[1]=93a3c46a110778c3cdfb4d306ed87664
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Exult is an open-source game engine for playing Ultima7"
 cat << EOF
 Exult is an open-source game engine for playing Ultima7 on modern

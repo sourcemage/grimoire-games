@@ -1,3 +1,8 @@
+2002-08-28  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Added md5 and license fields
+		Changed maintainer
+
 2002-06-14  Jerome Zago <jerome.zago@insalien.org>
 
 		Removed BUILD, CONFLICTS, DEPENDS since they all seemed
