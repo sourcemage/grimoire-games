@@ -1,0 +1,6 @@
+depends  cal3d         &&
+depends  gtkmm2        &&
+depends  gtkglextmm    &&
+depends  libpng        &&
+depends  libmodelfile  &&
+depends  varconf2

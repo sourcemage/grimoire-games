@@ -1,0 +1,36 @@
+           SPELL=entityforge
+if  [  "$CVS"  =  "y"  ];  then
+         VERSION=$(date +%Y%m%d)
+          SOURCE=${SPELL}-cvs.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-cvs
+   SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/tools/entityforge
+          MD5[0]=IGNORE
+  FORCE_DOWNLOAD="on"
+else
+         VERSION=0.2.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+          MD5[0]=312a38e05a1214caa87171a7f5f42639
+fi
+        WEB_SITE=http://www.worldforge.org/dev/eng/tools/${SPELL}
+         ENTERED=20031012
+         UPDATED=20031012
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Media display and manipulation tool for WorldForge"
+cat << EOF
+EntityForge is a 3D graphical media display and manipulation tool.
+
+It's intended for several uses:
+  * WYSIWYG (What You See Is What You Get) display of character models and animations in a game engine environment.
+  * Conversion of character models and animations to and from various formats and packaging styles, with emphasis on Cal3D.
+  * Limited model post-editing. (Material swaps, animation weighting, etc.)
+  * Object composition for packaging and distribution by artists and world developers.
+
+What actually works:
+  * Load Cal3d model and animation sets and render in realtime, fully textured and in wireframe.
+  * Animation 'tryout', including blending weight adjustments for multiple simultaneous animations.
+  * Toggle rendering of individual meshes.
+  * Arbitrarily change material assignments for individual meshes.
+EOF

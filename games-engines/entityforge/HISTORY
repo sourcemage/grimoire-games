@@ -1,0 +1,24 @@
+2004-10-21 Eric Sandall <eric@sandall.us>
+	* BUILD: Don't apply patches to CVS version
+	* DEPENDS: Depends on libmodelfile
+
+2004-10-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.2.1
+
+2004-10-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added CVS check and 0.2 stable release
+	  Added SOURCEFORGE mirror for stable release
+	  Added BUILD_API=2
+	* PREPARE: Added to query for CVS
+	* BUILD: Run ./autogen.sh if using CVS
+	  Apply patches
+	* entityforge-0.2.gtkmm2.patch: Added to work with gtkmm2 2.4+
+	* entityforge-0.2.gtkglextmm.patch: Added to work with gtkglextmm 1.1+
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Renamed to entityforge
+	  Removed MAINTAINER
+	  Entered long and short descriptions
+
+2003-10-18 Eric Sandall <eric@sandall.us>
+	* Created
