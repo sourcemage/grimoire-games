@@ -1,6 +1,6 @@
            SPELL=pingus
          VERSION=0.6.0
-          SOURCE=$SPELL-$VERSION.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://pingus.seul.org/files/$SOURCE
         WEB_SITE=http://pingus.seul.org/welcome.html
