@@ -1,25 +1,26 @@
 (
+#I inherited this BUILD. Please know that it took me hours to understand it too.
+#I wish there were some "simpler" way of doing this
+# I added the QT TTY and GNOME builds and it took me hours of work
+#hgg(20030902)
 # make makefiles unix
 sh sys/unix/setup.sh  &&
 # make corrections
-# (/) and (*) are special characters that need to be escaped with a \
 if [ "$TTY" = "yes" ] ; then
-echo "BUILDING for TTY console"
+echo "BUILDING for TTY console" 
 elif [ "$X11" = "yes" ];then
-     # just X11 graphics, if you want others, define them here. You will
-     # need to figure out the depends for that. k.i.s.s.
+echo "BUILDING for X11"                                                              &&
+     # just X11 graphics, if you want others, define them here.
     sedit "s/\/\* #define X11_GRAPHICS \*\//#define X11_GRAPHICS/"  include/config.h &&
-     # if you wanted to add support for gnome, qt or kde graphics this is
-     # the spot to do it. Don't forget to define them in config.h if you do.
     sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINX11SRC)/'  src/Makefile                  &&
     sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINX11OBJ)/'  src/Makefile                  &&
     sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINX11LIB)/'  src/Makefile                  &&
      # use Xpm for effects
     sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
-    # the special character (^) matches the string from the begining of a line.
-    # this adds Xpm support we defined above. 
-    sedit "s/^WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11/& -lXpm /"  src/Makefile     
+    sedit "s/^WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11/& -L\/usr\/X11R6\/lib\/ -lXpm /"  src/Makefile &&
+    sedit "s/^VARDATND =/& x11tiles NetHack.ad pet_mark.xbm rip.xpm/g" Makefile 
 elif [ "$QT" = "yes" ]; then 
+echo "BUILDING for QT"                                                               &&
     sedit "s/\/\* #define QT_GRAPHICS \*\//#define QT_GRAPHICS/"  include/config.h   &&
      # use Xpm for effects
     sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
@@ -28,70 +29,65 @@ elif [ "$QT" = "yes" ]; then
     sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINQTOBJ)/'  src/Makefile                   &&
     sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINQTLIB)/'  src/Makefile                   &&
     export QTDIR=/usr                                                                &&
-#    export CFLAGS="$CFLAGS -I/usr/include/qt"
-    sedit "s/-I\$(QTDIR)\/include/-I\$(QTDIR)\/include\/qt/g" src/Makefile
-elif [ "$GTK" = "yes" ]; then   
+    sedit "s/-I\$(QTDIR)\/include/-I\$(QTDIR)\/include\/qt/g" src/Makefile           &&
+    sedit "s/^VARDATND =/& x11tiles NetHack.ad pet_mark.xbm rip.xpm nhsplash.xpm/" Makefile 
+elif [ "$GTK" = "yes" ]; then
+echo "BUILDING for GNOME"                                                            &&
     sedit "s/\/\* #define GNOME_GRAPHICS \*\//#define GNOME_GRAPHICS/"  include/config.h   &&
      # use Xpm for effects
     sedit "s/\/\* # define USE_XPM \*\//# define USE_XPM/"  include/config.h         &&
     sedit 's/WINSRC = \$(WINTTYSRC)/& \$(WINGNOMESRC)/'  src/Makefile                &&
     sedit 's/WINOBJ = \$(WINTTYOBJ)/& \$(WINGNOMEOBJ)/'  src/Makefile                &&
-    sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINGNOMELIB)/'  src/Makefile                  
-fi
+    sedit 's/WINLIB = \$(WINTTYLIB)/& \$(WINGNOMELIB)/'  src/Makefile                &&
+    sedit "s/GNOMEINC=-I\/usr\/lib\/glib\/include -I\/usr\/lib\/gnome-libs\/include -I..\/win\/gnome/& \
+\-I\/usr\/include\/gnome-1.0 -I\/usr\/include\/gtk-1.2 -I\/usr\/include\/glib-1.2 -I\/usr\/lib\/gnome-libs\/include/" src/Makefile  &&
+    sedit "s/^VARDATND =/& x11tiles pet_mark.xbm NetHack.ad rip.xpm mapbg.xpm/" Makefile 
+fi                                                                                   &&
 # you want to use gzip here
-sedit "s/\/usr\/bin\/compress/\/bin\/gzip/"  include/config.h
-#  a period (.)is a special character that needs to be escaped 
-# in the search field only.
-# change extension to match gzip
-sedit "s/\.Z/.gz/"  include/config.h
-sedit "s/\/\* #define DLB \*\//#define DLB/"  include/config.h
-sedit "s/\/\* #define LINUX \*\//#define LINUX/"  include/unixconf.h
-sedit "s/\/\* #define TIMED_DELAY \*\//#define TIMED_DELAY/" include/unixconf.h
-sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" include/config.h
+sedit "s/\/usr\/bin\/compress/\/bin\/gzip/"  include/config.h                        &&
+sedit "s/\.Z/.gz/"  include/config.h                                                 && 
+sedit "s/\/\* #define DLB \*\//#define DLB/"  include/config.h                       && 
+sedit "s/\/\* #define LINUX \*\//#define LINUX/"  include/unixconf.h                 &&
+sedit "s/\/\* #define TIMED_DELAY \*\//#define TIMED_DELAY/" include/unixconf.h      && 
+sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" include/config.h  &&
 
 # kind of tricky, we want the first 2 remarked out before we define the
 # ones we use so we those don't get remarked out. $ marks end of line.
 # the special character (&) repeats the search string.
-sedit "s/^CFLAGS = -O -I\.\.\/include$/# &/" src/Makefile
-sedit "s/^LFLAGS =$/# &/"  src/Makefile
-sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = -O2 -fomit-frame-pointer -I..\/include/"  src/Makefile
-sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/" src/Makefile
-# ($) is a special character that needs to be escaped.
+sedit "s/^CFLAGS = -O -I\.\.\/include$/# &/" src/Makefile                            &&
+sedit "s/^LFLAGS =$/# &/"  src/Makefile                                              && 
+sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = $CFLAGS -fomit-frame-pointer -I..\/include/"  src/Makefile &&
+sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/" src/Makefile  &&
 # linux uses ncurses
-sedit "s/WINTTYLIB = -ltermlib/WINTTYLIB = -lncurses/"  src/Makefile
+sedit "s/WINTTYLIB = -ltermlib/WINTTYLIB = -lncurses/"  src/Makefile                 &&
 # we probably don't need to assign the shell again.
-sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  util/Makefile
-sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = -O2 -fomit-frame-pointer -I..\/include/"  util/Makefile
-sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/"  util/Makefile
-sedit "s/^VARDATND =/& x11tiles pet_mark.xbm rip.xpm/"  Makefile
-sedit "s/= bin/= games/" Makefile
-sedit "s/PREFIX	 = \/usr/PREFIX =\/usr\/share/" Makefile
-sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" Makefile
-sedit "s/lib\/\$(GAME)/\$(GAME)/" Makefile
-sedit "s/games\/lib/share\/games/" sys/unix/nethack.sh
+sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  util/Makefile                      && 
+sedit "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = $CFLAGS -fomit-frame-pointer -I..\/include/"  util/Makefile &&
+sedit "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/" util/Makefile &&
+sedit "s/= bin/= games/" Makefile                                                    &&
+sedit "s/PREFIX	 = \/usr/PREFIX =\/usr\/share/" Makefile                             &&
+sedit "s/\/usr\/games\/lib\/nethackdir/\/usr\/share\/games\/nethackdir/" Makefile    &&
+sedit "s/lib\/\$(GAME)/\$(GAME)/" Makefile                                           &&
+sedit "s/games\/lib/share\/games/" sys/unix/nethack.sh                               &&
 
 # here's that shell assign again, better safe than sorry.
-sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  Makefile  &&
-make  all                                   &&
-prepare_install                             &&
-make install                                &&
+sedit "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  Makefile                           &&
+make  all                                                                            &&
+prepare_install                                                                      &&
+make install                                                                         &&
 # this whole mess takes care of docs, fonts and stuff
 # check POST_INSTALL for more info. 
-cd doc                                      &&
-make distrib                                &&
-cp *.txt /usr/share/games/nethackdir        &&
-make manpages                               &&
+cd doc                                                                               &&
+make distrib                                                                         &&
+cp *.txt /usr/share/games/nethackdir                                                 &&
+make manpages                                                                        &&
 
-#merged from POST_INSTALL
-# put nethack in $PATH 
-if  [  !  -d  /usr/games  ]
+if  [  !  -d  /usr/games  ] && [ "$BUILT" = "yes" ]
   then  install  -d  -m  755  -g  bin  /usr/games
-fi                                          &&
-ln -s /usr/share/games/nethack /usr/games/nethack   &&
+fi                                                                                   &&
 
-#more X11 stuff
-
-gamedir=${INSTALL_ROOT}/usr/share/games/nethackdir  &&
+ln -s /usr/share/games/nethack /usr/games/nethack                                    &&
+gamedir=${INSTALL_ROOT}/usr/share/games/nethackdir                                   &&
 
 
 if [ "$X11" = "yes" ];then
@@ -128,10 +124,10 @@ if [ "$X11" = "yes" ];then
   esac
 
   # put fonts where they belong
-  cp $gamedir/*.pcf  /usr/X11R6/lib/X11/fonts/misc/ &&
-  cd /usr/X11R6/lib/X11/fonts/misc                  &&
+  cp $gamedir/*.pcf  /usr/X11R6/lib/X11/fonts/misc/   &&
+  cd /usr/X11R6/lib/X11/fonts/misc                    &&
   mkfontdir
-fi
+fi                                                    &&
 
   chown  root.games  /usr/share/games/nethack*  -R    &&
   chmod  g+w         /usr/share/games/nethackdir  -R

@@ -1,24 +1,29 @@
 if ! grep -q CONFIGURED  $SPELL_CONFIG  ; then 
-	if query "NetHack can use X11(DEFAULT)  or TTY(console) for Windowing \nAnswer "y" to Change DEFAULT" n
+	if query "NetHack can use X11(DEFAULT), QT-X11, GNOME1  or TTY(console) for Windowing \n\t
+Answer "y" to Change DEFAULT" n
 	then
-		#if query "Use QT/KDE" n
-		#then echo  QT=yes >> $SPELL_CONFIG
-		#else  
-			if query "Use TTY " n
-			then  echo TTY=yes >> $SPELL_CONFIG
-			#else 
-			#	if query "Use GNOME " n
-			#	then echo GTK=yes >> $SPELL_CONFIG
-			#	fi
-			#fi
-		fi
-	else echo -e "X11=yes \nCONFIGURED=yes">> $SPELL_CONFIG	
-	fi
+		if query "Use QT-X11" n
+		 then QT=yes  &&
+                       echo -e "QT=$QT \nCONFIGURED=yes">> $SPELL_CONFIG
+		else
+                  if query "Use TTY " n
+		     then  TTY=yes  &&
+                        echo -e "TTY=$TTY \nCONFIGURED=yes">> $SPELL_CONFIG
+		  else if query "Use GNOME1 " n
+		        then GTK=yes
+                          echo -e "GTK=$GTK \nCONFIGURED=yes">> $SPELL_CONFIG
+		       fi
+                  fi
+                fi          
+        else X11=yes &&
+             echo -e "X11=$X11 \nCONFIGURED=yes">> $SPELL_CONFIG	
+        fi 
 fi                     &&
 if  grep -q  "X11" $SPELL_CONFIG  &&  ! grep -q  "COPY_FILES" $SPELL_CONFIG ; then
    if query "Copy nethackrc and Xdefaults to game users home directories?" y
-   then echo "COPY_FILES=y"  >>  $SPELL_CONFIG
-   else echo "COPY_FILES=n"  >>  $SPELL_CONFIG
+   then COPY_FILES=y 
+   else COPY_FILES=n 
    fi
+   echo COPY_FILES=$COPY_FILES  >>  $SPELL_CONFIG
 fi
 

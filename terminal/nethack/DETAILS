@@ -1,12 +1,12 @@
            SPELL=nethack
-         VERSION=3.4.1
-          SOURCE=$SPELL-341.tgz
+         VERSION=3.4.2
+          SOURCE=$SPELL-342.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-          MD5[0]=5be935b470c37426b4caa69c0e181b22
+          MD5[0]=a75903d91e3026a5a6885bcc8c658b12
         WEB_SITE=http://www.nethack.org/
          ENTERED=20020326
-         UPDATED=20020326
+         UPDATED=20030902
       LICENSE[0]=NETHACK
       MAINTAINER=nealbirch@attbi.com
       MAKE_NJOBS=1

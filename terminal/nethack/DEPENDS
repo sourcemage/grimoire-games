@@ -2,4 +2,11 @@ depends gzip     &&
 depends ncurses  &&
 if [ "$X11" = "yes" ];then
 depends xfree86
+fi               &&
+if [ "$QT" = "yes" ];then
+depends qt-x11
+fi               &&
+if [ "$GTK" = "yes" ];then
+depends gnome-libs
 fi
+
