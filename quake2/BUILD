@@ -1,5 +1,6 @@
 (
-
+ sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile	&&
+ sedit "s/SDLDIR=\/usr\/local\/lib/SDLDIR=\/usr\/lib\//g" Makefile	&&
   # Nice and easy compilation
   make build_release
 
@@ -15,9 +16,12 @@
 
   # Install the binaries
   mkdir -p ${installdir}/baseq2
-  mkdir -p ${installdir}/baseq2
+  mkdir -p ${installdir}/baseq2/players
   mkdir -p ${installdir}/baseq2/video
   cp -pa * ${installdir}/
+
+  # Copy the opengl maxpak
+  cp -pa $SOURCE_CACHE/${SOURCE2} ${installdir}/baseq2/
 
   # Copy the player models
   cp -pa ${BASE_PATH}/players/* ${installdir}/baseq2/players/
@@ -25,5 +29,4 @@
   # Finally put an executable in /usr/games
   mkdir  -pv  /usr/games
   cp  -pav  ${SCRIPT_DIRECTORY}/quake2  /usr/games
-
 ) > $C_FIFO 2>&1
