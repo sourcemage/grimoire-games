@@ -14,10 +14,10 @@
     y|Y)  DEFINES="$DEFINES  -DUSE_VORBIS"  ;
     	  LIBS="$LIBS  -lvorbisfile -lvorbis"  ;;
   esac
-
-  cd $SOURCE_DIRECTORY/backends/sdl		&&
-  patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
-  cd $SOURCE_DIRECTORY				&&
+#game seems to have better definition without this?
+# cd $SOURCE_DIRECTORY/backends/sdl		&&
+# patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
+# cd $SOURCE_DIRECTORY				&&
 
   ./configure			&&
 

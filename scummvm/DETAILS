@@ -1,11 +1,11 @@
            SPELL=scummvm
-         VERSION=0.3.0b
-          SOURCE=${SPELL}_${VERSION}-src.tar.bz2
+         VERSION=0.4.1
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/\b/}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://www.scummvm.org/
       LICENSE[0]=GPL
-          MD5[0]=5482b06ec6620fdaf5374f4d7db423cc
+          MD5[0]=6ec9e5e46c9fc9de8eabce8ef5155e24
       MAINTAINER=jbernardo@sourcemage.org
          ENTERED=20030319
          UPDATED=20030319

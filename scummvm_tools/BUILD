@@ -8,8 +8,7 @@
 
   make                        	&&
   prepare_install             	&&
-  install -m0755 descumm3 /usr/games/descumm3	&&
-  install -m0755 descumm5 /usr/games/descumm5	&&
+  install -m0755 descumm /usr/games/descumm	&&
   install -m0755 descumm6 /usr/games/descumm6	&&
   install -m0755 extract /usr/games/extract	&&
   install -m0755 rescumm /usr/games/rescumm	&&
@@ -17,3 +16,5 @@
 
 
 ) > $C_FIFO 2>&1
+
+
