@@ -6,7 +6,7 @@
 		
 		New Games grimoire is born!
 
-2003-05-20  Seth Woolley <seth@tautology.org>
+2003-05-20 Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to fix my broken SOURCEFORGE_URL fixes
 
@@ -14,11 +14,11 @@
 		
 		Update for ${INSTALL_ROOT}
 
-2003-05-18  Seth Woolley <seth@tautology.org>
+2003-05-18 Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS for SOURCEFORGE_URL fix
 
-2003-05-14  Seth Woolley <seth@tautology.org>
+2003-05-14 Seth Woolley <seth@tautology.org>
 
 		Added comment to PRE_BUILD to fake out my audit script
 		because hgg's hack actually works.
