@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ipfdevlib_$VERSION
         WEB_SITE=http://www.caps-project.org/
          ENTERED=20040522
          UPDATED=20040522
-	  MD5[0]=53503016a11a318df054ca8fe855cde6
+	  MD5[0]=4d038d02fb2bd82928f0f7558caf8ba1
       LICENSE[0]="C.A.P.S. Freeware License Agreement(in the tarball="
            SHORT="The C.A.P.S. library"
 cat << EOF
