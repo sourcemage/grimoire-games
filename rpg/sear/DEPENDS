@@ -1,0 +1,13 @@
+requires  GLUT       &&
+
+depends  skstream    &&
+depends  Atlas-C++   &&
+depends  wfmath      &&
+depends  eris        &&
+depends  SDL_image   &&
+depends  SDL_mixer   &&
+depends  libsigc++2  &&
+depends  varconf2    &&
+depends  cal3d       &&
+depends  sage        &&
+depends  lib3ds
