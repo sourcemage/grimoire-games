@@ -1,5 +1,5 @@
            SPELL=zsnes
-         VERSION=1.35
+         VERSION=1.36
           SOURCE=${SPELL}${VERSION/./}src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://telia.dl.sourceforge.net/zsnes/$SOURCE
