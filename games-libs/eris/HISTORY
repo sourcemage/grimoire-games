@@ -1,3 +1,6 @@
+2005-01-12 Eric Sandall <eric@sandall.us>
+	* DEPENDS: devel and cvs want libsigc++3
+
 2005-01-11 Eric Sandall <eric@sandall.us>
 	* PREPARE: Query for devel, stable, or cvs version now
 	  CVS renamed to ERIS_BRANCH

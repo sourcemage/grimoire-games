@@ -1,12 +1,13 @@
-depends  libsigc++2  &&
 
 if  [  "$ERIS_BRANCH"  ==  "cvs"    -o   \
        "$ERIS_BRANCH"  ==  "devel"       ];  then
   message  "${SPELL_COLOR}eris${MESSAGE_COLOR} requires ${SPELL_COLOR}atlas-c++${MESSAGE_COLOR} devel"  &&
-  depends  skstream  &&
-  depends  wfmath    &&
+  depends  libsigc++3  &&
+  depends  skstream    &&
+  depends  wfmath      &&
   depends  cvs
 else
-  depends  skstream2  &&
+  depends  libsigc++2  &&
+  depends  skstream2   &&
   depends  wfmath2
 fi
