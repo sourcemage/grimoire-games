@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20050317
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged=1
        BUILD_API=2
+         ARCHIVE="off"
           REJECT="Binary only and license issues"
            SHORT="Commercial WINE development for games"
 cat << EOF
