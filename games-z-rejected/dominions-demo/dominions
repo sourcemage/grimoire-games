@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export DOM_DATA=/usr/share/games/dominions
+
+exec /usr/games/domdemo $@
