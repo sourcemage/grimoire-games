@@ -1,11 +1,13 @@
 2004-10-30 Eric Sandall <eric@sandall.us>
 	* Renamed from ASC
-	* DETAILS: Removed TABs
+	* DETAILS: Updated to 1.15.1.0
+	  Removed TABs
 	  Formatted to Guru Handbook
 	  Shortened SHORT
 	  Added BUILD_API=2
 	* BUILD: Converted to build_api 2
 	  Removed TABs
+	* DEPENDS: Depends on libsigc++2
 	* CONFLICTS: Conflicts with ASC
 
 2004-08-03 Eric Sandall <eric@sandall.us>

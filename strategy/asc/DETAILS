@@ -1,9 +1,9 @@
            SPELL=asc
-         VERSION=1.15.0.0
+         VERSION=1.15.1.0
           SOURCE=$SPELL-source-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-hq/$SOURCE
-          MD5[0]=a00f1e7c94b1c429247f68a71fbc765c
+          MD5[0]=b02a8dc0d19381fce61fbca0b6ac1300
         WEB_SITE=http://www.asc-hq.org/index.html
          ENTERED=20030902
          UPDATED=20040216

@@ -6,6 +6,6 @@ CXXFLAGS="$(echo "$CXXFLAGS" | sed -e 's/-O3//')"  &&
            --datadir=${INSTALL_ROOT}/usr/share/  \
         --sysconfdir=${INSTALL_ROOT}/etc         \
      --localstatedir=${INSTALL_ROOT}/var         \
-            --bindir=${INSTALL_ROOT}/usr/game    \
+            --bindir=${INSTALL_ROOT}/usr/games   \
                      $OPTS                       &&
 make
