@@ -1,3 +1,7 @@
+2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: Minor fix, was missing a version.h file
+	* Makefile.xorg.fix.diff: A fix for X.Org based systems
+
 2004-01-29 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: Xaw3d is optional, if not installed regular Xaw will be found and used, 
 	  therefore adding X11-LIBS also

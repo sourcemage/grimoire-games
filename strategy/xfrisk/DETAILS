@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-$VERSION
          UPDATED=20021031
           MD5[0]=42b384c7939e44ab9019ceda8de44837
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
            SHORT="Computer version of Risk(R), with networked multiplayer"
 cat << EOF
 XFrisk is a computer version of the classic Risk  board game. It is a multiplayer game played on a TCP/IP network, uses the X11 window system for graphics and runs on most UNIX and UNIX-like platforms.

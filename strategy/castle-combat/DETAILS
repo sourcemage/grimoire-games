@@ -1,12 +1,11 @@
            SPELL=castle-combat
-         VERSION=0.7.3
+         VERSION=0.7.4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
         WEB_SITE=http://www.linux-games.com/castle-combat/
-          MD5[0]=0bba93ab5502653b89dc599526a71f8a
+          MD5[0]=4f05ec24619879716d995153c02d8e52
       LICENSE[0]=GPL
-      MAINTAINER=g.clay@warwick.ac.uk
          ENTERED=20010922
          UPDATED=20020308
            SHORT="castle-combat is a clone of the old DOS game rampart."
