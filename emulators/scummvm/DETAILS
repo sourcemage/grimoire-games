@@ -1,13 +1,21 @@
            SPELL=scummvm
-         VERSION=0.5.1
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/\b/}
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+         VERSION=${VERSION:=0.5.1}
+[ "$CVS" = "no" ] && \
+          SOURCE=${SPELL}-${VERSION}.tar.bz2  \
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE \
+          MD5[0]=c55faed6b9314743296ad5d709ae18b6 \
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/\b/} ;
+[ "$CVS" = "yes" ] && \
+         VERSION=cvs  \
+  FORCE_DOWNLOAD=1 \
+          SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 \
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scummvm:scummvm \
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src \
+          MD5[0]="IGNORE" ;
         WEB_SITE=http://www.scummvm.org/
       LICENSE[0]=GPL
-          MD5[0]=c55faed6b9314743296ad5d709ae18b6
          ENTERED=20030319
-         UPDATED=20031122
+         UPDATED=20040108
            SHORT="ScummVM is an implementation of the SCUMM engine used in various Lucas Arts games."
 cat << EOF
 ScummVM is an implementation of the SCUMM (Script Creation Utility for Maniac Mansion) 

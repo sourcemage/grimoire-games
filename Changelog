@@ -1,0 +1,4 @@
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* scummvm-cvs,scummvm_tools-cvs: These two -cvs spells have been merged into the regular scummvm or 
+	scummvm_tools spell. dispel scummvm-cvs and scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, 
+	then just say yes to cvs version.

@@ -1,3 +1,6 @@
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* ALL: merge the regular and -cvs spell
+
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.5.1
 	* DEPENDS: rewrite ( ALSA is currently broken) use the cvs version if you want alsa

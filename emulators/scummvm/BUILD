@@ -12,10 +12,9 @@
     DEFINES="$DEFINES  -DUSE_VORBIS"  &&
     LIBS="$LIBS  -lvorbisfile -lvorbis" 
   fi  &&
-#game seems to have better definition without this?
-# cd $SOURCE_DIRECTORY/backends/sdl		&&
-# patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
-# cd $SOURCE_DIRECTORY				&&
+  cd $SOURCE_DIRECTORY/backends/sdl		&&
+  patch -p0 < $SCRIPT_DIRECTORY/rules.diff	&&
+  cd $SOURCE_DIRECTORY				&&
 
   ./configure			&&
 
@@ -25,7 +24,8 @@
   -e "s@^CFLAGS[[:blank:]]*:=.*-g -O@CFLAGS  +=${CFLAGS}@g"	\
   -e "s@^LDFLAGS[[:blank:]]*:=.*@LDFLAGS  +=${LDFLAGS}@g"	\
   Makefile.orig > Makefile					&&
-
+  # change compiler flags         
+  sedit "s/-O/$CFLAGS/" Makefile                                &&
 
   make                        	        &&
   prepare_install             	        &&

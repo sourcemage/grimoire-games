@@ -1,2 +1,2 @@
-depends  SDL							&&
-depends  scummvm
+depends  scummvm  &&
+[ "$CVS" = "yes" ] && depends cvs
