@@ -1,12 +1,12 @@
            SPELL=SearchAndRescue
-         VERSION=0.7.20
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/$SOURCE
+         VERSION=0.7.21
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
+          MD5[0]=4d32278f278f2612a92aea7acdf4a27f
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
          ENTERED=20010922
          UPDATED=20020426
-          MD5[0]=3e06b21b60d09e18c35ab2bd6aa58f3b
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="SearchAndRescue is a 3d helicopter game."
