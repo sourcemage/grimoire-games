@@ -1,0 +1,4 @@
+depends "SDL"       &&
+depends "SDL_ttf"   &&
+depends "SDL_mixer"
+

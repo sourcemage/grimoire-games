@@ -1,0 +1,16 @@
+            SPELL=g2ex
+          VERSION=final
+           SOURCE=${SPELL}_${VERSION}.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/gunocide2ex
+    SOURCE_URL[0]=http://www.gunocide.polyfrag.com/files/$SOURCE
+         WEB_SITE=http://gunocide.polyfrag.com/
+         ENTERED=20020606
+         UPDATED=20020606
+      MAINTAINER=dossen+sgl@daimi.au.dk
+           SHORT="Gunocide II EX is a fast paced 2D Shoot'Em'Up for Linux."
+cat << EOF
+Gunocide II EX is a fast paced 2D Shoot'Em'Up for Linux. Once upon a
+time it was a commercial game for win32 plattforms but now it is free
+and enhanced for Linux. So don't waste your time by reading this shit
+but grab your copy now! 
+EOF
