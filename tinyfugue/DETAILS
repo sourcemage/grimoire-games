@@ -2,7 +2,7 @@
          VERSION=40s1
           SOURCE=tf-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
-   SOURCE_URL[0]=ftp://ftp.tcp.com/pub/mud/Clients/tinyfugue/$SOURCE
+   SOURCE_URL[0]=http://ftp.tcp.com/pub/mud/Clients/$SPELL/$SOURCE
           MD5[0]=50e6d5ed71aadea1343bde851369055f
         WEB_SITE=http://tf.tcp.com/~hawkeye/tf/
          ENTERED=20020131

@@ -1,6 +1,10 @@
+2002-11-20  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		changed SOURCE_URL to use http instead of ftp (fixes bug #1748)
+
 2002-08-26  Eric Sandall <eric@sandall.us>
 
-      Updated/added MAINTAINER, MD5, LICENSE
+		Updated/added MAINTAINER, MD5, LICENSE
 
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
