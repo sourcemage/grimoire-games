@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://download.freelords.org/sources/${SOURCE}
-          MD5[0]=acb38226110a8671363e4facafccd0f9
+          MD5[0]=bd28573b2c7a6aa7905831a59eff77d4
         WEB_SITE=http://www.freelords.org/
          ENTERED=20020826
          UPDATED=20020826
