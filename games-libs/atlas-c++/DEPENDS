@@ -1,2 +1,7 @@
 depends  cppsocket  &&
-depends  skstream
+depends  skstream   &&
+
+if  [  "$CVS"  ==  "y"  ]
+then
+  depends  atlas-python
+fi

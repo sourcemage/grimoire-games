@@ -1,3 +1,6 @@
+2004-07-21 Eric Sandall <eric@sandall.us>
+	* DEPENDS: CVS version depends on atlas-python
+
 2004-07-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: BUILD_API=2
 	  SOURCE_DIRECTORY is different for release and cvs
