@@ -1,7 +1,13 @@
+depends  zlib      &&
 depends  autoconf  &&
 depends  automake  &&
 depends  Hermes    &&
+depends  jpeg      &&
+depends  libpng    &&
+
+
 optional_depends  mikmod &&
+optional_depends  lua &&
 optional_depends  libogg &&
 optional_depends  libvorbis
 

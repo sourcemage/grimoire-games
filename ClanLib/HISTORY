@@ -1,3 +1,11 @@
+2003-06-13  hgg <hgreig@bigpond.net.au>
+
+		Downgrade to 0.6.5 as pingus broke on newer version
+
+		Update DEPENDS file
+
+		RE-Added BUILD to disable-debug in configure(halves compile time)
+		
 2003-06-12  hgg <hgreig@bigpond.net.au>
 
 		Update to 0.7.2-1
