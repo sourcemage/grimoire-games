@@ -4,4 +4,8 @@ depends  freetype2   &&
 depends  zlib        &&
 depends  libpng      &&
 depends  libsigc++2  &&
-depends  smpeg
+depends  smpeg       &&
+
+if [ "${CVS}" = "yes" ];  then
+  depends  cvs
+fi

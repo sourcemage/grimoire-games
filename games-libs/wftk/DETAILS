@@ -1,10 +1,17 @@
            SPELL=wftk
-         VERSION=0.7.0
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+         VERSION=${VERSION:=0.7.1}
+if [ "${CVS}" = "yes" ];  then
+         VERSION=cvs
+   SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/wftk
+  FORCE_DOWNLOAD=1
+          MD5[0]="IGNORE"
+else
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=2b562235943754d9e853fa5de5443d1a
+          MD5[0]=776a98e02a007469c063b7746bb458c7
+fi
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wftk/
          ENTERED=20031012
          UPDATED=20031012
