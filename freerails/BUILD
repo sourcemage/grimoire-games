@@ -1,2 +1,13 @@
+(
 sh  ./autogen.sh  &&
-default_build
+  ./configure  --build=$BUILD        				\
+		 --bindir=${INSTALL_ROOT}/usr/games		\
+	         --prefix=${INSTALL_ROOT}/usr         		\
+		 --datadir=${INSTALL_ROOT}/usr/share/games 	\
+                 --sysconfdir=${INSTALL_ROOT}/etc     		\
+                 --localstatedir=${INSTALL_ROOT}/var  		\
+                 $OPTS                 &&
+  make                               &&
+  prepare_install                    &&
+  make    install
+)  >  ${C_FIFO}  2>&1

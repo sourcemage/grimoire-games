@@ -6,9 +6,12 @@ optional_depends  SDL                                              \
 optional_depends  paragui                                                        \
                   "--with-paragui-client"                                        \
                   ""                                                             \
-                  "Enable SDL+ParaGUI client (Requires SDL)(Either this or QT)"
-
-# Doesn't work
+                  "Enable SDL+ParaGUI client (Either this or QT)"
+optional_depends freetype1                                  \
+                  ""                                        \
+                  ""                                        \
+                  "Enable SDL+ParaGUI client (Either this or QT)"
+#qt UI is currently broken
 #optional_depends  qt-x11                                           \
 #                  "--enable-qt-mt"               \
 #                  ""                                               \

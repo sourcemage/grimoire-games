@@ -1,9 +1,9 @@
            SPELL=freerails
-         VERSION=0.0.8
-          SOURCE=${SPELL}.${VERSION}.tar.bz2
+         VERSION=0.0.9
+          SOURCE=${SPELL}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=cd684cf4be469f2c1dceba740925dc43
+          MD5[0]=5381f393da88156a41f866760b1ecbad
         WEB_SITE=http://freerails.sourceforge.net/
          ENTERED=20030429
          UPDATED=20030429

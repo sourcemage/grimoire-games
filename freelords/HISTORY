@@ -1,4 +1,10 @@
-2003-05-19 hgg <hgreig@bigpond.net.au>
+2003-05-27  hgg <hgreig@bigpond.net.au>
+
+		Fiddled with spell to simplify install
+
+		Removed freelords shell script
+
+2003-05-19  hgg <hgreig@bigpond.net.au>
 		
 		Update for ${INSTALL_ROOT}
 
