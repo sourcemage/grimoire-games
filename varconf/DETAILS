@@ -1,9 +1,9 @@
            SPELL=varconf
-         VERSION=0.5.3
+         VERSION=0.5.4
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=505e29a1bc60963c2b1d068fd793b466
+          MD5[0]=e64510f8d391b46a3011e584a94f9115
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20020915
          UPDATED=20020915
