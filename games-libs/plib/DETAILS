@@ -1,12 +1,12 @@
            SPELL=plib
-         VERSION=1.8.3
+         VERSION=1.8.4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://plib.sourceforge.net/dist/$SOURCE
-          MD5[0]=c3e2b9fd99678f05cfd49a9f53396588
+          MD5[0]=cc8b8c36dd801d6d9eec83fb0b29afee
         WEB_SITE=http://plib.sourceforge.net
          ENTERED=20010922
-         UPDATED=20010922
+         UPDATED=20050123
       LICENSE[0]=LGPL
        BUILD_API=2
            SHORT="Portable game library."
