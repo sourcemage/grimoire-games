@@ -25,6 +25,9 @@ done
 esac
 
 # put nethack in $PATH 
+if  [  !  -d  /usr/games  ]
+  then  install  -d  -m  755  -g  bin  /usr/games
+fi
 ln -s /usr/lib/games/nethack /usr/games/nethack   &&
 # put fonts where they belong
 cp $gamedir/*.pcf  /usr/X11R6/lib/X11/fonts/misc/ &&
