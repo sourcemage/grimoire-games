@@ -6,7 +6,7 @@ rm  -f  $SPELL_CONFIG
 
 (
 
-  I_DIR="/usr/share/games/${SPELL}"  &&
+  I_DIR="/usr/share/games/${SPELL}"         &&
 
   # Fix permission problems accessing ${SOURCE_DIRECTORY}/doc/ on install
   chown  -R  root.root  src                 &&
