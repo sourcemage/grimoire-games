@@ -2,7 +2,7 @@
          VERSION=1.8
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://prdownloads.sourceforge.net/coco/$SOURCE
+   SOURCE_URL[0]=http://telia.dl.sourceforge.net/coco/$SOURCE
         WEB_SITE=http://www.speakeasy.org/~morse/copter-commander/
          ENTERED=20020128
          UPDATED=20020212
