@@ -1,5 +1,8 @@
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
-	* Changing from Scorched3D to scorched3d
+	* BUILD, DETAILS: Updated to BUILD API 2
+	* Changes made to rename spell from Scorched3D to scorched3d
+	* Updated to version 38
+	* Fixed WEB_SITE
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_net and SDL_mixer renamed to sdl*
