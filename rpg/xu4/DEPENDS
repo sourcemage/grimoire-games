@@ -1,4 +1,4 @@
-depends  xfree86    &&
+depends  X11-LIBS   &&
 depends  SDL        &&
 depends  SDL_mixer  &&
 depends  libpng     
