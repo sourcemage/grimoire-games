@@ -1,3 +1,12 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.40
+	  SOURCE_DIRECTORY changed
+	  Removed MAINTAINER
+	  Added BUILD_API=2
+	* BUILD: Converted to build_api 2
+	  Run ./autogen.sh instead of ./configure now
+	* INSTALL: Branched from BUILD
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	  Removed zlib as libpng depends on it
