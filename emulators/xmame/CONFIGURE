@@ -1,8 +1,9 @@
-if  !  grep  -q  "CUSTOM="  $SPELL_CONFIG;  then
+config_query  XMAME_CUSTOM  "Would you like to edit the makefile? (for special tweaks only)"  n  &&
 
-  if    query  "Would you like to edit the makefile? (for special tweaks only)"  n
-  then  echo   "CUSTOM=y"  >>  $SPELL_CONFIG
-  else  echo   "CUSTOM=n"  >>  $SPELL_CONFIG
-  fi
-
+if  spell_ok  sdl;  then
+  config_query  XMAME_SDL_SOUND  "Use SDL for sound?"  y  &&
+  config_query  XMAME_SDL_VIDEO  "Use SDL for video?"  y
+else
+  config_query  XMAME_SDL_SOUND  "Use SDL for sound?"  n  &&
+  config_query  XMAME_SDL_VIDEO  "Use SDL for video?"  n
 fi

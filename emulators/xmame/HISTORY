@@ -1,3 +1,18 @@
+2005-01-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.89
+	  Added BUILD_API=2
+	  Shortened SHORT
+	* CONFIGURE: Converted to config_query
+	  Added queries for SDL sound and video
+	* DEPENDS: Removed redundant optional dependencies for sdl
+	  Depend on sdl according to CONFIGURE
+	  Formatted to Guru Handbook
+	  Removed TABs
+	* BUILD: Converted to build_api 2
+	  Use config_query responses for SDL sound and video and custom makefile
+	  Removed TABs
+	* INSTALL: Branched from BUILD
+
 2004-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added to the spell
 	* CONFIGURE, BUILD: modified to use persistant functions
