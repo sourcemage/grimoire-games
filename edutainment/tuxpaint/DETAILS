@@ -1,5 +1,5 @@
 	    SPELL=tuxpaint
-	  VERSION=0.9.11
+	  VERSION=0.9.12
  	   SOURCE=$SPELL-$VERSION.tar.gz
 	  SOURCE2=$SPELL-stamps-2003.02.22.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -7,8 +7,8 @@
    SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
  	 WEB_SITE=http://www.newbreedsoftware.com/tuxpaint/
 	  ENTERED=20030618
-	  UPDATED=20030618
-	   MD5[0]=80a39dc66d71f66de8fbf82a680c987b
+	  UPDATED=20030930
+	   MD5[0]=bb7d64e0f5a898c006be97c0fa1deffa
 	   MD5[1]=7a32b1989d8ae9ffc613b0f74643947c
        LICENSE[0]=GPL
        MAINTAINER=hgreig@bigpond.net.au
