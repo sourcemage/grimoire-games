@@ -1,10 +1,10 @@
            SPELL=janus
-         VERSION=0.4.5
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=930397135c0d983395dfb233ccc8070c
-        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
+         VERSION=0.4.6
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
+          MD5[0]=04da68e4f4365731f5f75460769f0392
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
