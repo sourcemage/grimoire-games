@@ -18,6 +18,7 @@
   fi                                                 &&
 
   prepare_install                                    &&
+  mkdir -p ${INSTALL_ROOT}/usr/X11R6/include/X11/pixmaps &&
   make    install                                    &&
 
 
