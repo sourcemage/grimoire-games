@@ -1,10 +1,10 @@
            SPELL=gnuchess
-         VERSION=5.05
+         VERSION=5.06
           SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/chess
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION 
    SOURCE_URL[0]=$GNU_URL/chess/$SOURCE
         WEB_SITE=http://www.gnu.org/software/chess/chess.html
-          MD5[0]=7cfa4e029a4402e2f75f7660afe2d116
+          MD5[0]=54cc6867acb78f27884ff322f2633f82
       LICENSE[0]=GPL
          ENTERED=20020415
          UPDATED=20020502
