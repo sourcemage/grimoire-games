@@ -13,6 +13,6 @@
  cat << EOF
  Avoid The Roid by Bill Jordan is a 3D asteroids like game. The game is written in c++ and uses unix sockets for networking, pthreads for the thread library, 
 OpenGL for the graphics library, glut for windows and input, and OpenAL for audio.
- EOF
+EOF
  
 
