@@ -1,7 +1,7 @@
-depends  mercator    &&
-depends  skstream    &&
-depends  atlas-c++   &&
-depends  varconf2    &&
-depends  autoconf    &&
-depends  Python      &&
+depends  mercator                &&
+depends  skstream                &&
+depends  atlas-c++-transitional  &&
+depends  varconf2                &&
+depends  autoconf                &&
+depends  Python                  &&
 depends  postgresql  

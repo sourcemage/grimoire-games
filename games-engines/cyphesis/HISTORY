@@ -1,3 +1,7 @@
+2004-10-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.4
+	* DEPENDS: Depends on atlas-c++-transitional now, not atlas-c++
+
 2004-07-22 Eric Sandall <eric@sandall.us>
 	* Added to games/games-engines
 	* DETAILS: Updated to 0.3.1
@@ -9,14 +13,14 @@
 
 2004-05-27 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.0
-	Removed MAINTAINER
+	  Removed MAINTAINER
 	* BUILD: Disable postgresql test
-	Remove patch application
+	  Remove patch application
 	* overload.patch: Removed
 
 2004-05-26 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
-	Depends on skstream not skstream2
+	  Depends on skstream not skstream2
 
 2004-05-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Now installs either cvs or stable version
