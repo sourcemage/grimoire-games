@@ -27,5 +27,5 @@ ${INSTALL_ROOT}/usr/games/vsinstall                              &&
 #stupid hack to let the soft know where the data are at runtime.
 #and I know the ident suck but I wasn't sure I could cut in the
 #middle of a sed.
-sedit '374i\ \t\t\t<var name="datadir" value="/usr/share/games/vegastrike/data"/>' \
+sedit '393i\ \t\t\t<var name="datadir" value="/usr/share/games/vegastrike/data"/>' \
 ${INSTALL_ROOT}/usr/share/games/vegastrike/data/vegastrike.config

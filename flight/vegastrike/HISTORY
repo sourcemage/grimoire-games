@@ -1,3 +1,7 @@
+2005-02-19 Mathieu Lonjaret <lejatorn@sourcemage.org>
+	* DETAILS, INSTALL: bump to 0.4.3
+	* vsinstall: corrected mistake in path.
+
 2005-02-12 Mathieu Lonjaret <lejatorn@sourcemage.org>
 	* DETAILS, BUILD, INSTALL, PRE_BUILD: update to 0.4.2
 	* removed gl_state.cpp.diff, added vsinstall and FINAL
