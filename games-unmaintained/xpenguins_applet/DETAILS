@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020411
          UPDATED=20020411
       LICENSE[0]=GPL
+          REJECT="Deprecated gnome1 version"
       MAINTAINER=eric@sandall.us
            SHORT="Control xpenguins from the gnome applet"
 cat << EOF

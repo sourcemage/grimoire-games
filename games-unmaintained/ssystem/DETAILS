@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www1.las.es/~amil/ssystem
          ENTERED=20010922
          UPDATED=20010922
+          REJECT="Authors closed this project"
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
            SHORT="ssystem is an OpenGL solar system simulator."
