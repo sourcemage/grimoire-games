@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://clanlib.org/hermes
          ENTERED=20011105
          UPDATED=20011105
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="Graphics library"
 cat << EOF
 Hermes is a graphics library for ClanLib

@@ -6,6 +6,7 @@
          WEB_SITE=http://www.olofson.net/skobo
          ENTERED=20011219
          UPDATED=20020110
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="An enhanced port of the scrolling video game XKobo."
 cat << EOF
 Kobo Deluxe is a 3'rd person  scrolling 2d shooter with a simple

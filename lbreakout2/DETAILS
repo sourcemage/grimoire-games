@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://lgames.sourceforge.net
          ENTERED=20020129
          UPDATED=20020224
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT='Successor to Lreakout with more levels'
 cat << EOF
 LBreakout is a breakout game with nice effects, graphics, and sounds. 

@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://gtetrinet.sourceforge.net
          ENTERED=20020219
          UPDATED=20020219
+      MAINTAINER=pradierdavid@yahoo.fr
            SHORT="GTetrinet - the GNOME Tetrinet client"
 cat << EOF
 GTetrinet is the Gnome client for Tetrinet, a popular multiplayer
