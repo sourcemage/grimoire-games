@@ -6,7 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
         WEB_SITE=http://www.psc.edu/~smp/a3d
          ENTERED=20010922
          UPDATED=20010922
-      MAINTAINER=pradierdavid@yahoo.fr
+          MD5[0]=22ff1dbd67894954dffd294ebda49ea4
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Asteroids3D is a 3D, first-person game of blowing up asteroids."
 cat << EOF
 Asteroids3D is a 3D, first-person game of blowing up asteroids.
