@@ -1,0 +1,5 @@
+2005-03-10 Eric Sandall <eric@sandall.us>
+	* Branched from ember
+	* DETAILS: Added ARCHIVE="off"
+	* INSTALL: Install to /usr/share/games/ember/data
+

@@ -1,0 +1,2 @@
+mkdir  -p  $INSTALL_ROOT/usr/share/games/ember/data      &&
+cp  -r  media  $INSTALL_ROOT/usr/share/games/ember/data

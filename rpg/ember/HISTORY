@@ -1,0 +1,59 @@
+2005-03-10 Eric Sandall <eric@sandall.us>
+	* PREPARE: Query for CVS release (default 'y')
+	* DETAILS: Added 0.2.0 stable release
+	  Updated UPDATED
+	  Added MAKE_NJOBS=1 and FORCE_DOWNLOAD="on"
+	  Moved media (SOURCE2) to ember-media
+	* DEPENDS: Removed freetype2 and xerces-c (cegui depends on them)
+	  Added mercator, removed wfmath and libsigc++ (mercator depends on them)
+	  Added boost (again)
+	  Ember does not work when ogre is built with GLX
+	  Added message that ember needs eris/devel and atlas-c++/devel
+	  Depends on ember-media
+	* PRE_BUILD: Removed
+	* BUILD: Only run ./autogen.sh if using CVS version
+	  Set --datadir and --bindir to proper game path
+	  Use default_build
+	* malloc.diff: Removed as it no longer is needed
+
+2004-11-19 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added dependencies on openal and xerces-c
+
+2004-11-17 Eric Sandall <eric@sandall.us>
+	* Renamed from dime to ember
+	* DETAILS: Added BUILD_API=2
+	* BUILD: Converted to BUILD_API=2
+	* BUILD,PRE_BUILD: Move patch from BUILD to PRE_BUILD
+	* CONFLICTS: Default to 'y' for conflicting with dime
+	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
+
+2004-05-26 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Atlas-C++ renamed to atlas-c++
+	  All -cvs spells were renamed
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Renamed to dime
+	  Removed MAINTAINER
+	  Entered long and short descriptions
+
+2003-10-27 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Doesn't need boost anymore
+
+2003-10-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on ogre fixed in CVS
+
+2003-10-15 Eric Sandall <eric@sandall.us>
+	* ConfigService.cpp.overload.patch,Font.cpp.assert.patch: Removed
+	  I have CVS access now to WF, so these patches are in.  :)
+
+2003-10-14 Eric Sandall <eric@sandall.us>
+	* ConfigService.cpp.overload.patch: Added to fix an ambiguous overload
+	* Font.cpp.assert.patch: Added to fix an ambiguous overload
+	* malloc.diff: Added to fix a mis-configuration from Sorcery
+	  (posted to sm-sorcery-discuss)
+	* BUILD: Modified to apply patches (malloc.diff applies after
+	  ./configure has generated config.h)
+	* DEPENDS: Depends on freetype2, jpeg, wftk-cvs, boost, cal3d and openal
+
+2003-10-13 Eric Sandall <eric@sandall.us>
+	* Created wfmath
