@@ -1,12 +1,12 @@
             SPELL=crimson
-          VERSION=0.3.8
+          VERSION=0.4.0
            SOURCE=${SPELL}-${VERSION}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     SOURCE_URL[0]=http://crimson.seul.org/files/${SOURCE}
-           MD5[0]=76789eac1b1f8170775b1ef7820f9dda
+           MD5[0]=a1fd7a18f37d8ea3a4ba0db69cf261e8
          WEB_SITE=http://crimson.seul.org/index.html
           ENTERED=20020610
-          UPDATED=20040111
+          UPDATED=20040225
       GATHER_DOCS="off"
        LICENSE[0]=ART
             SHORT="Crimson Fields is a tactical war game in the tradition of Battle Isle"

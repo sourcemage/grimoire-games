@@ -1,5 +1,5 @@
-depends  SDL  &&
-
+depends  SDL     &&
+depends  SDL_ttf &&
 optional_depends "SDL_mixer"          \
                  ""                   \
                  ""                   \
