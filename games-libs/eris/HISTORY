@@ -1,3 +1,9 @@
+2003-09-30  Eric Sandall <eric@sandall.us>
+
+		Added skstream2 (0.2.0) for eris and eris now
+		depends on it (skstream 0.3.0 is for devel version
+		of eris, which also require other new libraries)
+
 2003-09-29  Eric Sandall <eric@sandall.us>
 
 		Update to 0.9.8
