@@ -1,2 +1,0 @@
-
-optional_depends "svgalib" "" "" "to use spectemu in console mode"

@@ -1,0 +1,25 @@
+           SPELL=quakeforge
+         VERSION=0.5
+          SOURCE=$SPELL-current.tar.bz2
+         SOURCE2=pakQF.pak
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.quakeforge.net/files/$SOURCE
+  SOURCE2_URL[0]=http://www.quakeforge.net/files/$SOURCE2
+        WEB_SITE=http://www.quakeforge.net
+      MAINTAINER=v.merkatz@gmx.net
+          MD5[0]=37d670550b7f798ce929930c09370af5
+          MD5[1]=ad739dc7d4d1102530b086ab4606a57e
+      LICENSE[0]=GPL
+      LICENSE[1]=GPL
+         ENTERED=20020826
+         UPDATED=20020826
+           SHORT="QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine."
+cat << EOF
+QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine. Our purpose? To improve the state of the game by improving the engine and making it accessable to the largest number of players we can.
+
+Arguably the single most important issue on the minds of players today is the rampant cheating which is currently happening on many of the larger servers. It's a serious problem and it really makes a good game hard to find. We're working hard to fix these problems at the engine level.
+
+But what good is that if you have to have a copy of our client and the server has to run our server? There are other projects out there and some of them have very unique qualities. QuakeForge is cooperating with QSG, a group comprised of representatives from nearly every known Quake source project to ensure that our clients and servers run with other clients and servers just fine. We have all agreed to implement any effective cheat prevention methods.
+
+Other things we're doing include merging the two code trees, adding features, and improving the OpenGL renderer. And QuakeForge is still the most portable source tree based on the id Software code.
+EOF

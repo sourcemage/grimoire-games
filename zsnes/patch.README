@@ -1,2 +1,0 @@
-The default Makefile.in ignored --bindir and --mandir options from configure.
-Also, "game" manpages should go in man6 not man1.

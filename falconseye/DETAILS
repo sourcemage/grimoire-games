@@ -2,11 +2,13 @@
          VERSION=1.9.3
           SOURCE=nethack_source_331_jtp_193.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/falconseye
-   SOURCE_URL[0]=falconseye.sourceforge.net/$SOURCE
+   SOURCE_URL[0]=http://falconseye.sourceforge.net/$SOURCE
+          MD5[0]=764f31f32d4ee39ba809f672a86c08ae
+      LICENSE[0]=NETHACK
         WEB_SITE=http://falconseye.sourceforge.net
          ENTERED=20020105
          UPDATED=20020105
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="falconseye is a graphic nethack derivative."
 cat << EOF
 Falcon's Eye is a mouse-driven interface for NetHack that enhances

@@ -1,0 +1,18 @@
+depends autoconf &&
+depends automake &&
+depends ncurses  &&
+
+optional_depends "SDL" \
+                 ""    \
+                 ""    \
+                 "for SDL video/audio output support" &&
+
+optional_depends "zlib" \
+                 ""     \
+                 ""     \
+                 "for compressed pak-file support"    &&
+
+optional_depends "libvorbis" \
+                 ""          \
+                 ""          \
+                 "for ogg-vorbis sound file support"

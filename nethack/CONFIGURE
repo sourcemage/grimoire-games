@@ -1,6 +1,0 @@
-if ! grep -q "COPY_FILES=" $SPELL_CONFIG; then
-   if query "Copy nethackrc and Xdefaults to game users home directories?" y
-   then echo "COPY_FILES=y"  >>  $SPELL_CONFIG
-   else echo "COPY_FILES=n"  >>  $SPELL_CONFIG
-   fi
-fi

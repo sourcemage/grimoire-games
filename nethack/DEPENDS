@@ -1,3 +1,0 @@
-depends xfree86  &&
-depends gzip     &&
-depends ncurses 

@@ -3,10 +3,10 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/$SOURCE
-        WEB_SITE=http://www.bbassett.net/fortune/
+        WEB_SITE=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/
          ENTERED=20011116
          UPDATED=20011116
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=v.merkatz@gmx.net
            SHORT="Fortune is a program which randomly pulls quotations from a large database."
 cat << EOF
 Fortune is a program which randomly pulls quotations from a large database
