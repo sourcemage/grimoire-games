@@ -1,5 +1,5 @@
            SPELL=foobillard
-         VERSION=1.4
+         VERSION=1.5
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://foobillard.sunsite.dk/dnl/$SOURCE
@@ -7,12 +7,12 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
            SHORT="A free OpenGl billiard game for linux"
          ENTERED=20020516
          UPDATED=20020516
-      MAINTAINER=pradierdavid@yahoo.fr
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="An OpenGL billiard game for Linux."
 cat << EOF
 An OpenGL billiard game for Linux. Features:
 
-    *  wood paneled table with gold covers and gold diamonds
+    * wood paneled table with gold covers and gold diamonds
     * reflections on balls
     * shadow pixmaps
     * detail switching of balls according to distance
