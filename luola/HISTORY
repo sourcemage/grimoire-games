@@ -1,3 +1,13 @@
+2003-05-04  Eric Sandall <eric@sandall.us>
+
+		Updated to 1.1.1
+
+		BUILD now copies the stdlevel files
+
+		PRE_BUILD now uses default_pre_build for some
+
+		Still doesn't install according to FHS
+
 2003-04-25  Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to fix md5 for SOURCE2.
