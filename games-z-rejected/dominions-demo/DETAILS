@@ -2,15 +2,14 @@
          VERSION=1.15
           SOURCE=domdemo${VERSION/./}.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/dom_demo
-   SOURCE_URL[0]=http://www.illwinter.com/$SOURCE
-        WEB_SITE=http://www.illwinter.com/dominions.html
+   SOURCE_URL[0]=http://www.illwinter.com/dom/$SOURCE
+        WEB_SITE=http://www.illwinter.com/dom/
           MD5[0]=62ec73bb80db416e8b4a2a98aeda6429
          ARCHIVE=off
       LICENSE[0]=UNKNOWN
           REJECT="binary only demo"
          ENTERED=20030919
-         UPDATED=20030919
-      MAINTAINER=v.merkatz@gmx.net
+         UPDATED=20040422
            SHORT="Dominions - Priests Prophets & Pretenders is a turn based fantasy game in which you take the role of a pretending god."
 cat << EOF
 Dominions - Priests Prophets & Pretenders is a turn based fantasy game in which
