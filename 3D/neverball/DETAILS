@@ -1,11 +1,11 @@
            SPELL=neverball
-         VERSION=1.3.4
+         VERSION=1.3.7
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://icculus.org/neverball/$SOURCE
         WEB_SITE=http://icculus.org/neverball/
          ENTERED=20040419
-          MD5[0]=ffa18e0bd896f36197c50a30543bd2d5
+          MD5[0]=f7a3bc6f3b3cec5627e6fb6a58c67506
       LICENSE[0]=GPL
            SHORT="Roll through an obstacle course or play miniature golf"
 cat << EOF
