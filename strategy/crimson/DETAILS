@@ -1,9 +1,9 @@
             SPELL=crimson
-          VERSION=0.3.3
+          VERSION=0.3.4
            SOURCE=${SPELL}-${VERSION}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     SOURCE_URL[0]=http://www.lanipage.de/jens/crimson/${SOURCE}
-           MD5[0]=1e9c298da978303a8c427c621e107d14
+           MD5[0]=535f933853ff73c8c671eec3b704cd6c
          WEB_SITE=http://www.lanipage.de/jens/
           ENTERED=20020610
           UPDATED=20020619
