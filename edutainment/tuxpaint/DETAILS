@@ -1,12 +1,15 @@
 	    SPELL=tuxpaint
 	  VERSION=0.9.11
  	   SOURCE=$SPELL-$VERSION.tar.gz
+	  SOURCE2=$SPELL-stamps-2003.02.22.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+   SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
  	 WEB_SITE=http://www.newbreedsoftware.com/tuxpaint/
 	  ENTERED=20030618
 	  UPDATED=20030618
 	   MD5[0]=80a39dc66d71f66de8fbf82a680c987b
+	   MD5[1]=7a32b1989d8ae9ffc613b0f74643947c
        LICENSE[0]=GPL
        MAINTAINER=hgreig@bigpond.net.au
  	    SHORT="Tux Paint is a drawing program for young children"
@@ -18,5 +21,3 @@ filesystem).
  Unlike popular drawing programs like "The GIMP," it has a very limited toolset. However, it provides 
 a much simpler interface, and has entertaining, child-oriented additions such as sound effects.
 EOF
- 
-

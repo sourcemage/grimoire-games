@@ -1,0 +1,1 @@
+optional_depends "gnugo" "" "" "To play as a stand-alone (solitaire) client"

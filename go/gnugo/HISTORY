@@ -1,3 +1,7 @@
+2003-07-03  hgg <hgreig@bigpond.net.au>
+	
+		Added optional_depends cgoban, to play with a gui front end
+
 2003-06-28  hgg <hgreig@bigpond.net.au>
 
 		Fix BUILD for gcc3.3

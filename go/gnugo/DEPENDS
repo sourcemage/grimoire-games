@@ -1,0 +1,1 @@
+optional_depends "cgoban" "" "" "To play with a gui front end"
