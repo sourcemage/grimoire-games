@@ -1,0 +1,4 @@
+depends  SDL_image  &&
+depends  expat      &&
+depends  freetype2  &&
+depends  zlib
