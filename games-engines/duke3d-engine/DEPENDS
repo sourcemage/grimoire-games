@@ -1,0 +1,2 @@
+depends cvs &&
+depends SDL_mixer
