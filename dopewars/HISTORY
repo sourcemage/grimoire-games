@@ -13,3 +13,10 @@
 		Man pages are now installed in /usr/share/man (FHS compliance).
 
 		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 1.5.6
+
+		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
+		too slow.

@@ -1,0 +1,13 @@
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+ 
+		New version: 0.9.0
+
+		Added workaround for the compilation to succeed
+		(LIBS='-ltcl8.3 -ltk8.3').
+
+		Man pages are now installed in /usr/share/man (FHS compliance).
+
+		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
+		Removed dependency on xfree86 for consistency (thanks Julian v.
+		Bock <julian@openit.de>).

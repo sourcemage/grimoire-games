@@ -1,11 +1,11 @@
            SPELL=gtypist
-         VERSION=2.5
+         VERSION=2.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.gnu.org/gnu/gtypist/$SOURCE
         WEB_SITE=http://www.gnu.org/software/gtypist/
          ENTERED=20020410
-         UPDATED=20020410
+         UPDATED=20020502
       MAINTAINER="jerome.zago@insalien.org"
            SHORT="GNU Typist is a console-based typing tutor"
 cat << EOF

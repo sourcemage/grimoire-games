@@ -1,0 +1,8 @@
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+
+		New spell sent by Joel Mayes <bluebird@optushome.com.au>.
+
+		Added POST_BUILD to avoid the redundant 'gather_docs' step.
+
+		Binaries now go into /usr/games, man pages into /usr/share/man
+		(FHS compliance).

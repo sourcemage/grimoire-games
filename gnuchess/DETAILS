@@ -1,0 +1,17 @@
+           SPELL=gnuchess
+         VERSION=5.04
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNU_URL/chess/$SOURCE
+        WEB_SITE=http://www.gnu.org/software/chess/chess.html
+         ENTERED=20020415
+         UPDATED=20020502
+      MAINTAINER="jerome.zago@insalien.org"
+           SHORT="GNU Chess is the GNU chess program"
+cat << EOF
+GNU Chess lets most modern computers play a full game of chess. It has a plain
+terminal interface but supports visual interfaces such as X-Windows "xboard" as
+well as a full 3-dimensional wooden chess-board protocol for the Novag Chess
+board enabling one to be relatively free of the computer itself. See the
+distribution README for explanation.
+EOF

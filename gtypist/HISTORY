@@ -6,3 +6,7 @@
 		compliance).
 
 		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
+
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+
+		New version: 2.6

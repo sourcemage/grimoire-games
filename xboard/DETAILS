@@ -1,0 +1,15 @@
+           SPELL=xboard
+         VERSION=4.2.6
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://gatekeeper.dec.com/pub/GNU/xboard/$SOURCE
+        WEB_SITE=http://www.tim-mann.org/xboard.html
+         ENTERED=20020425
+         UPDATED=20020425
+           SHORT="xboard is a X chess program"
+cat << EOF
+XBoard is a graphical user interfaces for chess. They display a chessboard on
+the screen, accept moves made with the mouse, and load and save games in
+Portable Game Notation (PGN). They serve as front-ends for many different chess
+services
+EOF
