@@ -1,0 +1,26 @@
+           SPELL=coal
+         VERSION=0.2.4
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/COAL/$SOURCE
+          MD5[0]=29b9f9faa6b3b2aca09a4f4350156006
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="C++ utility library for WorldForge developers"
+cat << EOF
+COAL is a C++ utility library for client and editor developers. It provides:
+  * An abstract framework for storing and retrieving map data.
+  * Facilities for converting 3D polygon regions into 2D tile grids (ported from Sal's libMIM).
+  * Convenience functions for interfacing with Atlas.
+  * Possibly CORBA wrappers, in the distant future.
+  * More to follow...
+
+Client developers can use COAL to handle data storage and to act as a layer between the application and the Atlas libraries. As map updates come in from the server, COAL will process them and update its internal database. The client app can then query COAL as it needs, for map rendering and so forth. COAL may eventually also handle character inventory data caching and other useful object handling features.
+
+COAL stores map data as 3D regions. If the client app enables COAL's 2D mode, COAL will also translate the regions into a map of 2D tiles which a 2D client can render as it sees fit, using whatever media repository it wants.
+
+NOTE: COAL and related components like libAtlas and the map format are still in flux, so the focus, goals, and dependencies of COAL may change in response to its changing environment. If you see anything that's silly or downright wrong with the code and its implementation, please let me know. The purpose of COAL is to make life easier for client developers, so anything I can do to make it more useful is a step in the right direction.
+EOF

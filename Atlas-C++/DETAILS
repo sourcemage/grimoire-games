@@ -1,0 +1,15 @@
+           SPELL=Atlas-C++
+         VERSION=0.4.5
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://victor.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+          MD5[0]=dc67fc5e79fa43e036ee4d666bb3bc75
+        WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Standard implementation of the WorldForge Atlas protocol"
+cat << EOF
+Atlas C++ is the standard implementation of the WorldForge Atlas protocol. It is currently being developed in parallel with a stable branch, and the development code maintained separatly.
+EOF

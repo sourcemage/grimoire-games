@@ -1,0 +1,23 @@
+           SPELL=varconf
+         VERSION=0.5.3
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+          MD5[0]=505e29a1bc60963c2b1d068fd793b466
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="C++ utility library for editor developers"
+cat << EOF
+Varconf is a C++ utility library for all editor developers. It provides:
+  * An framework for storing and retrieving configuration data.
+  * Loading and saving of config files.
+  * Handling of complex command line arguments.
+  * Signals to notify the application of configuration changes.
+
+Server, client and tool developers can use varconf to handle the configuration of their application. Initially written for stage, varconf is now used by many WorldForge compoents.
+
+While it has good support for handling flat configuration data, it is not suited for more complex structured data. I recommend that developers use Atlas to store complex data.
+EOF

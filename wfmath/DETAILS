@@ -1,0 +1,15 @@
+           SPELL=wfmath
+         VERSION=0.2.9
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+          MD5[0]=068a53d12012e09a91ca09e6ec2b6722
+        WEB_SITE=ftp://victor.worldforge.org/pub/worldforge/libs/$SPELL/
+         ENTERED=20020915
+         UPDATED=20020915
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="This is the Worldforge math library"
+cat << EOF
+This is the Worldforge math library.
+EOF

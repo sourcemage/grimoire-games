@@ -1,0 +1,10 @@
+--- skstream.cpp.old	2002-09-15 15:48:37.000000000 -0700
++++ skstream.cpp	2002-09-15 15:48:47.000000000 -0700
+@@ -148,6 +148,7 @@
+ #ifndef _WIN32
+ #include <unistd.h>
+ #include <fcntl.h>
++#include <asm/errno.h>
+ #else
+ #ifndef EINPROGRESS
+ #define EINPROGRESS WSAEINPROGRESS
