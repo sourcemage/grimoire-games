@@ -1,0 +1,33 @@
+2004-04-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added conditional cvs version
+	  Store the cvs version as .bz2
+	  Removed MAINTAINER
+	* PREPARE: Added to query for cvs version
+	* BUILD: Added to build cvs or standard version
+	* DEPENDS: Conditionally depend upon cvs
+
+2003-10-09 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added dependency on cppsocket
+	* HISTORY: Updated to follow Guru Handbook
+
+2003-10-05 Eric Sandall <eric@sandall.us>
+	* DETAILS: Released under the LGPL, not GPL
+
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
+
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Victor is no more, moved to new server
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-10 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 0.4.6
+
+2002-10-11 Eric Sandall <eric@sandall.us>
+	* HISTORY: Created
+
+2002-09-16 Eric Sandall <eric@sandall.us>
+	* Created Atlas-C++ and added to grimoire
+
