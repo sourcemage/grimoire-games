@@ -1,0 +1,14 @@
+           SPELL=ttoa
+         VERSION=0.0.8
+          SOURCE=${SPELL}-${VERSION}.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/newland
+   SOURCE_URL[0]=http://www.anemaet.nl/ttoa/download/${SOURCE}
+          MD5[0]=5b62ef4cc93c38ccf889d763b9a46181
+        WEB_SITE=http://ttoa.fadingdream.com/
+      LICENSE[0]=GPL
+         ENTERED=20021127
+         UPDATED=20021127
+           SHORT="The Time of Asundix is a 2D top-down fantasy adventure game"
+cat << EOF
+TTOA is a free, 2d top-down fantasy adventure game. It's written in C with libSDL and SDL_Image. The storyline takes some time to explain: Intorox is an almighty wizard. He lived in a time that no soul can remember. Intorox had created 16 stones, stones that held incredible mighty powers. He called them: The Stones of Truth. Before he came to pass. he spread the stones over the world so that nobody could ever re-use the power. Hygross is a very dark and cloudy land, it has been like that for ages. It is a home to all kinds of creatures like Elves,Goblins, Orcs and Worms. Asundix, a small goblin is the Ruler of Hygross, but he has not always been the Ruler. Asundix was once just a normal, but very small fat goblin, But when he found all 4 of the stones,wich were hidden in Hygross he gained enormous strenght and became a very powerfull goblin. He kept his prescious stones in the dark dungeons his poor slaves made. All guarded by one of his strongest guardians and lots of evil creatures. Now After many years gone by, he has created a huge army and plans to send his evil ploths out into "our" world...
+EOF

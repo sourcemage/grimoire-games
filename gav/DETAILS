@@ -1,0 +1,14 @@
+           SPELL=gav
+         VERSION=0.5.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+          MD5[0]=ecebbf389d9d7c86ccd3778a8e681734
+        WEB_SITE=http://gav.sourceforge.net/index.php
+      LICENSE[0]=GPL
+         ENTERED=20021127
+         UPDATED=20021127
+           SHORT="Multiplayer remake of Arcade Vollyball using SDL"
+cat << EOF
+A remake of Arcade Volleyball, an old CGA DOS game in which 1 or 2 player play a 1-player, 2D version of volleyball.
+EOF
