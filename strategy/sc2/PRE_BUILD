@@ -1,6 +1,6 @@
 default_pre_build              &&
 cd  ${SOURCE_DIRECTORY}        &&
-mkdir content                  &&
+mkdir -p content               &&
 cd   content                   &&
 unpack  ${SOURCE2}  ${MD5[1]}  &&
 if [ -f $SOURCE_CACHE/$SOURCE3 ] ; then 
