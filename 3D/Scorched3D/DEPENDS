@@ -1,0 +1,5 @@
+depends  SDL_net   &&
+depends  SDL_mixer &&
+depends  wxGTK     &&
+depends  glut      &&
+depends  automake
