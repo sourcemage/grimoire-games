@@ -1,3 +1,8 @@
+2003-07-05  hgg <hgreig@bigpond.net.au>
+
+		Remove lua as optional depends as clanLua also requires tolua which is broken by 
+		gcc3.3, have added NVIDIA_headers to depends if NVIDIA_driver is installed bug#3675
+
 2003-07-02  hgg <hgreig@bigpond.net.au>
 
                 Check for gcc3.3 before applying assert.h fixes
