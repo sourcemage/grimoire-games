@@ -3,7 +3,6 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/stable/$SOURCE
-   SOURCE_URL[1]=ftp://ftp.freeciv.org/freeciv/stable/OLD/$SOURCE
         WEB_SITE=http://www.freeciv.org
          ENTERED=20010922
          UPDATED=20010922

@@ -1,7 +1,16 @@
-2002-10-12  Eric Sandall <eric@sandall.us
+2002-10-22  Eric Sandall <eric@sandall.us>
+
+		Fixed Bug #1344
+
+		And updated to v0.9.9 (I'm sure I did this before, must 
+		not have committed), still needs work.  :(
+
+2002-10-12  Eric Sandall <eric@sandall.us>
 
 		SDL_mixer is an optional_depends
+
 		Cleaned up DEPENDS
+
 		Added more from default_build to BUILD
 
 2002-09-21  Arwed v. Merkatz <v.merkatz@gmx.net>
