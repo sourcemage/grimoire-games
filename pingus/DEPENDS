@@ -1,0 +1,2 @@
+depends ClanLib &&
+depends libxml2
