@@ -1,5 +1,9 @@
-./configure --prefix=${INSTALL_ROOT}/usr    \
-        --sysconfdir=${INSTALL_ROOT}/etc    \
-     --localstatedir=${INSTALL_ROOT}/var    \
-                     $OPTS                  &&
-make
+if  [  "$SEAR_CVS"  ==  "y"  ];  then
+  ./autogen.sh
+fi  &&
+
+OPTS="          $OPTS                             \
+       --bindir=${INSTALL_ROOT}/usr/games         \
+      --datadir=${INSTALL_ROOT}/usr/share/games"  &&
+
+default_build

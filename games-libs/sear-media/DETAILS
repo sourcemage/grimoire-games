@@ -1,0 +1,17 @@
+           SPELL=sear-media
+         VERSION=20040719
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/clients/sear/media/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/clients/sear/media/$SOURCE
+          MD5[0]=e5009aa40218d089b4f63e9e2732b4e4
+        WEB_SITE=http://www.worldforge.org/dev/eng/clients/$SPELL
+         ENTERED=20050311
+         UPDATED=20050311
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Media for Sear WorldForge client"
+cat << EOF
+Media set used by the WorldForge game client: Sear.
+EOF

@@ -1,3 +1,4 @@
+depends  sear-media         &&
 depends  GLUT               &&
 depends  eris-transitional  &&
 depends  mercator           &&

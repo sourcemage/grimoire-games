@@ -1,3 +1,8 @@
+2005-03-11 Eric Sandall <eric@sandall.us>
+	* PREPARE,DETAILS,BUILD: Added CVS option
+	* DEPENDS: Depends on sear-media
+	* INSTALL,PRE_BUILD: Removed (sear-media is now in separate spell)
+
 2004-10-13 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added SourceForge mirror for both sources first
 
