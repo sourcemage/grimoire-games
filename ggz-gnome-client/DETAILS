@@ -6,10 +6,10 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
           MD5[0]=309e289afa44c01491d86683988006a3
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
-         ENTERED=20021129
-         UPDATED=20021129
-      MAINTAINER=eric@sandall.us
-           SHORT="GGZ Gaming Zone KDE client"
+         ENTERED=20030606
+         UPDATED=20030606
+      MAINTAINER=hgreig@#bigpond.net.au
+           SHORT="GGZ Gaming Zone GNOME client"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and
 utilities required to run the GGZ game servers.
