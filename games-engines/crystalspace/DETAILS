@@ -1,14 +1,21 @@
            SPELL=crystalspace
-         VERSION=0.98r003
-          SOURCE=cs98_003.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
+if  [  "$CS_CVS"  ==  "y"  ];  then
+         VERSION=0.99
+          SOURCE=cs-current-snapshot.tar.bz2
+   SOURCE_URL[0]=http://crystal.sourceforge.net/cvs-snapshots/bzip2/$SOURCE
+          MD5[0]=IGNORE
+else
+         VERSION=0.98r004
+          SOURCE=cs98_004.tar.bz2
    SOURCE_URL[0]=ftp://sunsite.dk/projects/crystal/cs098/source/$SOURCE
+          MD5[0]=IGNORE
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
         WEB_SITE=http://crystal.sourceforge.net
          ENTERED=20040107
          UPDATED=20040107
-          MD5[0]=f83571df1b0df44a5acfa94651287c9c
       LICENSE[0]=LGPL
-      MAINTAINER=dhaley@hot.rr.com
+       BUILD_API=2
            SHORT="Crystal Space is a 3D graphics engine that can be used in games and other 3D applications."
 cat << EOF
 Crystal Space is a free (LGPL) and portable 3D Game Development Kit written in C++. 

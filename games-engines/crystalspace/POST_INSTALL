@@ -1,1 +1,0 @@
-echo 'export CRYSTAL=/usr/share/crystalspace' >> ${INSTALL_ROOT}/etc/profile.d/crystalspace.sh

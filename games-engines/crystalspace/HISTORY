@@ -1,3 +1,15 @@
+2005-03-14 David C. Haley <dhaley@hot.rr.com>
+	* PREPARE: Created
+	  Asks about CVS daily snapshot
+	* DETAILS: stable version bump 0.98r003 -> 0.98r004
+	  Removed Maintainer field
+	  Modified to handle CVS or stable
+	* BUILD: Removed old code refered to @ 2004-07-20
+	* crystalspace.sh: Created
+	* INSTALL: Created
+	  Handles Jam install, copying of crystalspace.sh, and creating symlink
+	* POST_INSTALL: Removed; functionality taken over by INSTALL
+
 2005-01-08 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Python renamed to python in stable
 	  Formatted to Guru Handbook
