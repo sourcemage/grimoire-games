@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020131
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
-           SHORT="tuxtype is a typing tutorial agme starting Tux"
+           SHORT="tuxtype is a typing tutorial game starting Tux"
 cat << EOF
 TuxTyping is an educational typing tutorial game starring Tux, the
 Linux Penguin. The player guides Tux to eat fish which are falling
