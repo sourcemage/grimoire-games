@@ -2,9 +2,9 @@
 
   ./configure  --build=${BUILD}            \
                --prefix=${INSTALL_ROOT}/usr/              \
-               --exec-prefix=${INSTALL_ROOT}/usr/games    \
-               --bindir=${INSTALL_ROOT}/usr/bin           \
-               --datadir=${INSTALL_ROOT}/usr/share        \
+               --libdir=${INSTALL_ROOT}/usr/lib              \
+               --bindir=${INSTALL_ROOT}/usr/games           \
+               --datadir=${INSTALL_ROOT}/usr/share/games        \
                --sysconfdir=${INSTALL_ROOT}/etc           \
                --localstatedir=${INSTALL_ROOT}/var/games  \
                ${OPTS}                     &&
