@@ -1,3 +1,15 @@
+2003-03-03  Eric Sandall <eric@sandall.us>
+
+		Added standard sounds  (Bug #441, the fix of which somehow got lost)
+		Decided to just add stdsounds to current freeciv spell instead of
+		having separate spell just for sounds.  Now sound will always be
+		downloaded and installed.  Will separate into freeciv-stdsounds at a
+		later time, since there are many other themed sounds to have installed.
+
+		Fixed LICENSE[x] format
+
+		Added Portuguese and French mirrors
+
 2003-01-21  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		updated to 1.14.0
