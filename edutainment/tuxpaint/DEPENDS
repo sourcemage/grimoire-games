@@ -1,0 +1,8 @@
+depends SDL  		&&
+depends SDL_image 	&&
+depends SDL_mixer 	&&
+depends SDL_ttf 	&&
+depends libpng 		&&
+depends gettext		&&
+depends freetype2	&&
+optional_depends netpbm " " " " "for printing support"
