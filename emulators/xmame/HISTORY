@@ -12,6 +12,8 @@
 	  Use config_query responses for SDL sound and video and custom makefile
 	  Removed TABs
 	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  If using SDL, binary is called xmame.SDL: Create xmame symlink
 
 2004-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added to the spell
