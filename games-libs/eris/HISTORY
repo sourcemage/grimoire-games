@@ -1,3 +1,6 @@
+2004-07-21 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Missed a closing }
+
 2004-07-19 Eric Sandall <eric@sandall.us>
 	* DETAILS: Ummm...checkout libs/eris, not libs/skstream, for cvs
 	  BUILD_API=2
