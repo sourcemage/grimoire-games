@@ -1,3 +1,7 @@
+2005-01-17 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updates for Build API 2
+	* Version bump
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Removed SDL as sdl_mixer depends on sdl

@@ -8,7 +8,7 @@
           UPDATED=20020110
            MD5[0]=9488a5132177848d60b2f7ef349e77e4
        LICENSE[0]=GPL
-       MAINTAINER=v.merkatz@gmx.net
+        BUILD_API=2
             SHORT="An enhanced port of the scrolling video game XKobo."
 cat << EOF
 Kobo Deluxe is a 3'rd person  scrolling 2d shooter with a simple
