@@ -1,0 +1,3 @@
+depends ClanLib  &&
+depends Hermes  &&
+depends zlib
