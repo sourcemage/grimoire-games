@@ -1,14 +1,12 @@
            SPELL=Hermes
-       # Version 1.3.2 will not cast, has bugs.
-       # VERSION=1.3.2
-         VERSION=1.3.1
+         VERSION=1.3.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://dark.x.dtu.dk/~mbn/clanlib/download/$SOURCE
         WEB_SITE=http://clanlib.org/hermes
          ENTERED=20011105
-         UPDATED=20011105
-      MAINTAINER=pradierdavid@yahoo.fr
+         UPDATED=20020614
+      MAINTAINER=jerome.zago@insalien.org
            SHORT="Graphics library"
 cat << EOF
 Hermes is a graphics library for ClanLib
