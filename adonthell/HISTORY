@@ -1,3 +1,7 @@
+2002-08-27  Gareth Clay <g.clay@warwick.ac.uk>
+
+		Added MD5 and license, changed maintainer
+
 2002-06-04  Jerome Zago <jerome.zago@insalien.org>
 
 		Prepended LDFLAGS="-L /usr/X11/lib" to ./configure in BUILD
