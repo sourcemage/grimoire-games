@@ -1,3 +1,7 @@
+2002-08-26  Eric Sandall <eric@sandall.us>
+		Updated to 0.2.7
+		Added MD5 and LICENSE
+
 2002-06-19  Jerome Zago <jerome.zago@insalien.org>
 
 		Worked on FHS compliance (binary into /usr/games, man page 
