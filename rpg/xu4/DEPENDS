@@ -1,3 +1,5 @@
+depends  xfree86    &&
 depends  SDL        &&
-depends  SDL_mixer  
+depends  SDL_mixer  &&
+depends  libpng     
 #depends  TiMidity++
