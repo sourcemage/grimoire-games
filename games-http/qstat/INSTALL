@@ -1,1 +1,0 @@
-install  -m  755  -g  games  qstat  /usr/bin
