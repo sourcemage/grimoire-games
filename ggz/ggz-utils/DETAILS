@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
       LICENSE[0]=LGPL
         WEB_SITE=http://ggz.sourceforge.net
          ENTERED=20021129
-         UPDATED=20021129
+         UPDATED=20031119
       MAINTAINER=eric@sandall.us
            SHORT="GGZ Gaming Zone utilities"
 cat << EOF
