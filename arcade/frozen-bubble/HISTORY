@@ -1,3 +1,6 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Changes for Build API 2
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Removed SDL_image and SDL_mixer (SDL-sdlpl depends on them)
 	* HISTORY: Formatted to Guru Handbook
