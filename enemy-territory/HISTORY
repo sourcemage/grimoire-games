@@ -1,0 +1,7 @@
+2003-06-15  hgg <hgreig@bigpond.net.au> 
+
+		Created this spell. 
+
+		Custom POST_BUILD to stop CACHE
+
+		Invented new license type for id

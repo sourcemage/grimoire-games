@@ -1,0 +1,9 @@
+# KDE Config File
+[KDE Desktop Entry]
+Name=enemy-territory
+Comment=
+Exec=/usr/share/games/enemy-territory/et
+Icon=/usr/share/games/enemy-territory/ET.xpm
+Terminal=0
+Type=Application
+Categories=Application;X-Redhat-Base;
