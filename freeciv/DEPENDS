@@ -11,9 +11,11 @@ optional_depends  "zlib"         \
 optional_depends  "esound"        \
                   ""              \
                   "--disable-esd" \
-                  "for esd sound output"
+                  "for ESD sound output"
 
 optional_depends  "SDL_mixer"           \
                   ""                    \
                   "--disable-sdl-mixer" \
-                  "for sound"
+                  "for SDL sound output"
+
+( is_depends esound || is_depends SDL_mixer )  &&  depends freeciv-stdsounds

@@ -1,5 +1,10 @@
 2002-08-02  Jerome Zago <jerome.zago@insalien.org>
 
+		Modified DEPENDS file so that freeciv-stdsounds is cast if
+		needed. This partially fixes bug #441.
+
+2002-08-02  Jerome Zago <jerome.zago@insalien.org>
+
 		Added DEPENDS file. This fixes bug #498 (thanks Arwed v.
 		Merkatz <v.merkatz@gmx.net>).
 
