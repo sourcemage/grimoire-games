@@ -1,7 +1,0 @@
-mk_source_dir  $SOURCE_DIRECTORY
-
-if  [  !  -f  $SOURCE_CACHE/$SOURCE  ];  then
-  wget  $SOURCE_URL
-fi
-
-cp  $SOURCE_CACHE/$SOURCE  $SOURCE_DIRECTORY

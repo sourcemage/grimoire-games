@@ -5,7 +5,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://download.sourceforge.net/alleg/$SOURCE
         WEB_SITE=http://alleg.sourceforge.net/
          ENTERED=20020107
-         UPDATED=20020320
+         UPDATED=20020327
       MAINTAINER="jerome.zago@insalien.org"
            SHORT="allegro is a cross-platform game library."
 cat << EOF
