@@ -1,3 +1,7 @@
+2004-02-24 Eric Sandall <eric@sandall.us>
+	* freelordsrc: Removed savepatch as freelords cannot parse ${HOME}
+	* DETAILS: Updated to 0.3.2
+
 2004-01-06 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 0.3.1
 
@@ -65,3 +69,4 @@
 2002-10-13 Eric Sandall <eric@sandall.us>
 	* Created spell
 	* Added to grimoire
+
