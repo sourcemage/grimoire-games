@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\a/}
           MD5[0]=b6d6abd09e5d5f17518a3bf752c32b72
       LICENSE[0]=GPL
       MAINTAINER=v.merkatz@gmx.net
+      MAKE_NJOBS=1
            SHORT="pinball is the Emilia pinball project."
 cat << EOF
 The Emilia Pinball Project strives to fulfill your needs for a great
