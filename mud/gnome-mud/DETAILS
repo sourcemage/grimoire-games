@@ -1,12 +1,12 @@
            SPELL=gnome-mud
-         VERSION=0.10.1
+         VERSION=0.10.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/amcl/$SOURCE
-          MD5[0]=a78646a38c3f6512a639c02e52bda998
+          MD5[0]=9d8e2cdedfe5185eff553430dacde893
         WEB_SITE=http://amcl.sourceforge.net
          ENTERED=20020116
-         UPDATED=20020502
+         UPDATED=20030711
       LICENSE[0]=GPL
       MAINTAINER=v.merkatz@gmx.net
            SHORT="Multi-User Dungeon (MUD) client"
