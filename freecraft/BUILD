@@ -65,15 +65,6 @@
   prepare_install                  &&
   make  PREFIX=${INSTALL_ROOT}/usr  install       &&
   cd  /usr/share/games/freecraft   &&
-  # Now, unpack the media files...
-  # Should update the spell to optionally use
-  # the CD, similar to quake2
-  unpack  ${SOURCE2}  ${MD5[1]}    &&
-  # Now, unpack compressed media files
-  for i in `find ./ -type f|grep gz`
-  do
-    gzip -d $i
-  done                             &&
   chmod  755  *  -R                &&
   chown  root.games  *  -R
 
