@@ -1,0 +1,24 @@
+           SPELL=frotz
+         VERSION=2.43
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://www.cs.csubak.edu/~dgriffi/proj/frotz/files/${SOURCE}
+        WEB_SITE=http://www.cs.csubak.edu/~dgriffi/proj/frotz/
+         ENTERED=20021031
+         UPDATED=20021031
+          MD5[0]=c1c4871c01bb78688770eb6c83ea2354
+      LICENSE[0]=GPL
+      MAINTAINER=eric@sandall.us
+           SHORT="Infocom/Z-machine game interpreter"
+cat << EOF
+Frotz is an interpreter for Infocom games and other Z-machine games. It complies with standard 1.0 of Graham Nelson's specification. It was written by Stefan Jokisch in 1995-1997. It was ported to Unix by Galen Hazelwood. Currently the Unix port is being developed and maintained by David Griffith.
+
+Features:
+# Compiles and runs on most common flavors of Unix, both open source and not. This includes MacOS X.
+# Plays all Z-code games including V6.
+# Old-style sound support through OSS driver.
+# Config files.
+# User-configurable error-checking.
+# Optional dumb interface.
+# Default use of the Quetzal save file format. Command line option to use the old format.
+EOF
