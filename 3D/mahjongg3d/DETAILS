@@ -1,5 +1,5 @@
            SPELL=mahjongg3d
-         VERSION=0.95
+         VERSION=0.96
           SOURCE=$SPELL.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL.release
    SOURCE_URL[0]=http://www.reto-schoelly.de/mahjongg3d/$SOURCE
