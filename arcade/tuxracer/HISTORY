@@ -1,3 +1,7 @@
+2003-07-26  hgg <hgreig@bigpond.net.au>
+
+		Update BUILD to remove patch and check for NVIDIA_headers
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!

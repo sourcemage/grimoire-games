@@ -1,4 +1,5 @@
 depends  tcl     &&
 depends  glut    &&
 depends  SDL     &&
-depends  SDL_mixer
+depends  SDL_mixer &&
+optional_depends "NVIDIA_headers" "" "" "for NVIDIA specific extensions to OpenGL (suitable ONLY for NVIDIA cards)"
