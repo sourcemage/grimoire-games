@@ -1,3 +1,9 @@
+2005-01-17 Robin Cook <rcook@wyrms.net>
+	* DETAILS: changed SOURCE and SOURCE2 to bz2 instead of gz
+	  added BUILD_API=2
+	* BUILD: removed what belongs in INSTALL
+	* INSTALL: added from BUILD what belongs here
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
