@@ -1,7 +1,10 @@
+2004-04-22  David Braaten <xiticix47@hotmail.com>
+	* reaper.patch: patch to compile with gcc 3.3.
+	* PRE_BUILD: apply the patch.
+	* HISTORY: formatted.
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+	* HISTORY: New Games grimoire is born!
 
 2003-06-09  hgg <hgreig@bigpond.net.au>
-
-		Created spell 
+	* HISTORY: Created spell 
