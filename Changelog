@@ -1,21 +1,26 @@
+2005-02-23 Eric Sandall <eric@sandall.us>
+	* 3D/TORCS: Renamed to 3D/torcs
+
 2005-02-13 Neuron <vlmarek@volny.cz>
 	* rpg/ivan: Added new rogue-like game with graphics
 
 2005-01-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* 3D/reaper: deprecated, project seems dead for over two years, fails to compile
+	* 3D/reaper: deprecated, project seems dead for over two years, fails to
+	  compile
 
 2005-01-23 Neuron <vlmarek@volny.cz>
 	* arcade/blobwars: Added new spell
 
 2005-01-18 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* terminal/*: renamed section to games-terminal due to a name conflict with
-		a spell
+	  a spell
 
 2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/glaxium: deprecated, no longer supported upstream
 
 2004-12-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* edutainment/stellarium: moved to science section in normal grimoire and removed from games
+	* edutainment/stellarium: moved to science section in normal grimoire and
+	  removed from games
 
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-libs/ClanLib: Rename to games-libs/clanlib

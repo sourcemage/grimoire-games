@@ -1,0 +1,50 @@
+           SPELL=TORCS
+         VERSION=1.2.2
+          SOURCE=${SPELL}-${VERSION}-src.tgz
+         SOURCE2=${SPELL}-${VERSION}-src-robots-base.tgz
+         SOURCE3=${SPELL}-${VERSION}-data.tgz
+         SOURCE4=${SPELL}-${VERSION}-data-tracks-dirt.tgz
+         SOURCE5=${SPELL}-${VERSION}-data-tracks-oval.tgz
+         SOURCE6=${SPELL}-${VERSION}-data-tracks-road.tgz
+         SOURCE7=${SPELL}-${VERSION}-data-cars-Patwo-Design.tgz
+         SOURCE8=${SPELL}-${VERSION}-data-cars-extra.tgz
+         SOURCE9=${SPELL}-${VERSION}-data-cars-nascar.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/torcs-${VERSION/c/}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE2}
+  SOURCE3_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE3}
+  SOURCE4_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE4}
+  SOURCE5_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE5}
+  SOURCE6_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE6}
+  SOURCE7_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE7}
+  SOURCE8_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE8}
+  SOURCE9_URL[0]=${SOURCEFORGE_URL}/torcs/${SOURCE9}
+        WEB_SITE=http://torcs.sourceforge.net/
+          MD5[0]=b35d18e73427b43f512df52dd9da2905
+          MD5[1]=68230128405414557aad9606dcd12dac
+          MD5[2]=d6795845cec637c7b48f6c406220e9f2
+          MD5[3]=5857d272359620efd1400b2fb1a380b6
+          MD5[4]=6f09dee211417d70a12682cc3b269b90
+          MD5[5]=518b4e4ebc5503b5093e65cbb8fdc00a
+          MD5[6]=7bb85b684a24a7785c8447c99aa27b4f
+          MD5[7]=4a562f9f2e43eb05fa149f4e94e97642
+          MD5[8]=198f84b1dca7d03fe558e8f36b29a69c
+      LICENSE[0]=GPL
+      LICENSE[1]=GPL
+      LICENSE[2]=GPL
+      LICENSE[3]=GPL
+      LICENSE[4]=GPL
+      LICENSE[5]=GPL
+      LICENSE[6]=UNKNOWN
+      LICENSE[7]=GPL
+      LICENSE[8]=GPL
+         ENTERED=20010926
+         UPDATED=20040216
+            FUZZ="off"
+      MAKE_NJOBS=1
+           SHORT="TORCS is a 3D racing cars simulator using OpenGL."
+cat << EOF
+TORCS is a 3D racing cars simulator using OpenGL. The goal is to have 
+programmed robot drivers racing against each others. Nevertheless, a
+joystick interface is present in order to drive yourself.
+EOF

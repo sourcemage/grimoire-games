@@ -1,11 +1,3 @@
-2005-02-23 Eric Sandall <eric@sandall.us>
-	* Renamed to 3D/torcs
-	* DETAILS: Removed SOURCE information
-	  Updated UPDATED
-	* DEPENDS: Depend only on torcs
-	* BUILD,PRE_BUILD: Run only `true`
-	* TRIGGERS: dispel self when cast
-
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 1.2.2
 
