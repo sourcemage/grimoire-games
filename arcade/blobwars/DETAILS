@@ -1,0 +1,16 @@
+           SPELL=blobwars
+         VERSION=1.02-1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download.php?file=$SOURCE&type=zip"
+        NO_CACHE="-O ${SOURCE}"
+       BUILD_API=2
+          MD5[0]=0e25eb0bbfd8e5ff0d42341102af1c0b
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-1.02
+        WEB_SITE=http://www.parallelrealities.co.uk/blobWars.php
+         ENTERED=20041009
+         UPDATED=20050123
+      LICENSE[0]=GPL
+           SHORT="Cute jump'n'run'n'shoot game"
+cat << EOF
+In Blob Wars : Metal Blob Solid, you take on the role of a fearless Blob agent, Bob. Bob's mission is to     infiltrate the various enemy bases around the Blobs' homeworld and rescue as many MIAs as possible. But      standing in his way are many vicious aliens, other Blobs who have been assimilated and the evil alien        leader, Galdov.                                                                                              
+EOF

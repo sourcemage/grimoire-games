@@ -1,3 +1,6 @@
+2005-01-23 Neuron <vlmarek@volny.cz>
+	* arcade/blobwars: Added new spell
+
 2005-01-18 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* terminal/*: renamed section to games-terminal due to a name conflict with
 		a spell
