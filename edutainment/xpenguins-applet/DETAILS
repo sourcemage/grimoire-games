@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030618
          UPDATED=20030618
       LICENSE[0]=GPL
-      MAINTAINER=hgreig@bigpond.net.au
            SHORT="Control xpenguins from the gnome2 applet"
 cat << EOF
 The XPenguins GNOME2 Applet allows you to fill your screen with penguins 

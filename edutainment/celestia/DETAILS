@@ -8,8 +8,7 @@
            UPDATED=20040216
             MD5[0]=a96727cd99c94b2df8c9550a341726f6
         LICENSE[0]=GPL
- 	MAINTAINER=hgreig@bigpond.net.au
-             SHORT="Celestia is a free real-time space simulation"
+             SHORT="Real-time space simulation"
 cat << EOF
 Celestia is a free real-time space simulation that lets you experience
 our universe in three dimensions. Unlike most planetarium software,

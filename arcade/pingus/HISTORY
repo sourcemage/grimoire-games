@@ -1,3 +1,7 @@
+2004-07-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAINTAINER
+	  Cleaned up spacing
+
 2003-07-29 hgg <hgreig@bigpond.net.au>
 	* Update gcc check so it actually works :-)
 
