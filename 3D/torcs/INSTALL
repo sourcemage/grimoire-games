@@ -1,10 +1,5 @@
-default_install                           &&
-cd ${INSTALL_ROOT}/usr/share/games/torcs  &&
-unpack  ${SOURCE3}   ${MD5[2]}            &&
-unpack  ${SOURCE4}   ${MD5[3]}            &&
-unpack  ${SOURCE5}   ${MD5[4]}            &&
-unpack  ${SOURCE6}   ${MD5[5]}            &&
-unpack  ${SOURCE7}   ${MD5[6]}            &&
-unpack  ${SOURCE8}   ${MD5[7]}            &&
-unpack  ${SOURCE9}   ${MD5[8]}            &&
-chgrp  -R  games  *
+default_install                                &&
+TORCS_DIR=$INSTALL_ROOT/usr/share/games/torcs  &&
+mkdir  -p  $TORCS_DIR                          &&
+mv  spell-data/*  $TORCS_DIR                   &&
+chgrp  -R  games  $TORCS_DIR

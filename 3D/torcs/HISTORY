@@ -1,13 +1,19 @@
 2005-02-23 Eric Sandall <eric@sandall.us>
 	* Renamed from 3D/TORCS
 	* DETAILS: Renamed to torcs
+	  Updated to 1.2.3
 	  Updated UPDATED
 	  Shortened SHORT
 	  Added BUILD_API=2
+	  Changed LICENSE[6] to GPL (the entire project is GPL'd)
 	* CONFLICTS: Auto-conflict with TORCS
+	* PRE_BUILD: Unpack all sources into spell-data (all sources should be
+	  unpacked in pre_build, at least for md5sum checking)
+	  Don't unpack SOURCE twice (default_pre_build and manual unpack)
 	* BUILD: Converted to build_api 2
 	* INSTALL: Branched from BUILD
 	  Converted to build_api 2
+	  Move spell-data (no longer unpacks all the extra sources)
 
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 1.2.2
