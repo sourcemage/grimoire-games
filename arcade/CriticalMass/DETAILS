@@ -1,12 +1,12 @@
            SPELL=CriticalMass
-         VERSION=0.98
+         VERSION=0.99
           SOURCE=$SPELL-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/criticalmass/$SOURCE
         WEB_SITE=http://criticalmass.sourceforge.net
          ENTERED=20011214
-         UPDATED=20030713
-          MD5[0]=17aa115b658f54b1115e2ec7ca11a1b8
+         UPDATED=20040420
+          MD5[0]=59b13d6ec06ba7560c961113cfb6d4d3
       LICENSE[0]=GPL
       MAINTAINER=g.clay@warwick.ac.uk
            SHORT="criticalmass is a SDL/OpenGL space shoot'em up game."
