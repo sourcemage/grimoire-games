@@ -1,3 +1,10 @@
+2004-06-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.8.3
+	Removed MAINTAINER
+	BUILD_API=2
+	Made SHORT shorter
+	* BUILD: Converted to BUILD_API 2
+
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: GLUT not glut
 	* BUILD: remove -lXi if it doesn't exist
