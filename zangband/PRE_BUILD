@@ -1,0 +1,4 @@
+default_pre_build                       &&
+cd   ${SOURCE_DIRECTORY}/lib/xtra/graf  &&
+unpack  ${SOURCE2}   ${MD5[1]}          &&
+cd  ${SOURCE_DIRECTORY}

@@ -1,0 +1,7 @@
+#!/bin/sh
+# Script to correctly run ZAangband
+
+cd  /usr/share/games/zangband  &&
+if [ "$1" != "-l" ]; then
+        exec ./zangband $@
+fi

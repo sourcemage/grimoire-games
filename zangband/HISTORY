@@ -1,0 +1,14 @@
+2003-03-29  Eric Sandall <eric@sandall.us>
+
+		Added patch so that it can now compile
+
+		Added CFLAGS and LDFLAGS optimizations
+
+		Added dependency on ncurses and optional on
+		xfree86
+
+		Added to games
+
+2003-01-02  Eric Sandall <eric@sandall.us>
+
+		Created spell

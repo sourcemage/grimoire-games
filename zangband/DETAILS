@@ -1,0 +1,19 @@
+           SPELL=zangband
+         VERSION=2.6.2
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+         SOURCE2=graf.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}
+   SOURCE_URL[0]=ftp://clockwork.dementia.org/angband/Variant/ZAngband/$SOURCE
+  SOURCE2_URL[0]=http://thangorodrim.angband.org/$SOURCE2
+   SOURCE_URL[1]=ftp://ftp.sunet.se/pub/games/Angband/Variant/ZAngband/$SOURCE
+          MD5[0]=a8dce8b1e697fc7376b0edcf48bb1d5e
+          MD5[1]=3da78938da84b4425dd6ed252f0dadcb
+        WEB_SITE=http://thangorodrim.angband.org/zangband.html
+      LICENSE[0]=UNKOWN
+      LICENSE[1]=UNKOWN
+         ENTERED=20021001
+         UPDATED=20021001
+           SHORT="Single-player rogue-like game"
+cat << EOF
+ZAngband is a single-player rogue-like dungeon exploration game that runs on a wide variety of computer systems.
+EOF
