@@ -3,9 +3,11 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.oberhumer.com/opensource/pysol/download/$SOURCE
+          MD5[0]=9a3cfa401f9d14cea5b17634d9795826
         WEB_SITE=http://www.oberhumer.com/opensource/pysol
          ENTERED=20020320
          UPDATED=20020320
+      LICENSE[0]=GPL
       MAINTAINER=eric@schabell.com
            SHORT="Large collection of card games."
 cat << EOF
