@@ -5,11 +5,6 @@ depends  Hermes    &&
 depends  jpeg      &&
 depends  libpng    &&
 
-if  spell_installed  NVIDIA_driver
-then
-  depends NVIDIA_headers
-fi  &&
-
 if  spell_installed  nvidia_driver
 then
   depends nvidia_headers
