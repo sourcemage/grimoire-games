@@ -1,5 +1,7 @@
 (
- patch -p1 < $SCRIPT_DIRECTORY/black-box-fix.diff &&
+
+  sedit  's/ mixer//'  src/Makefile.in  &&
+
   ./configure  --build=${BUILD}                     \
                --prefix=${INSTALL_ROOT}/usr         \
                --bindir=${INSTALL_ROOT}/usr/games   \
