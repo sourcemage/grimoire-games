@@ -1,6 +1,6 @@
 (
 
-  LDFLAGS="-L /usr/X11/lib"              \
+  LDFLAGS="-L/usr/X11/lib"               &&
   ./configure  --build=$BUILD            \
                --prefix=/usr             \
                --bindir=/usr/games       \

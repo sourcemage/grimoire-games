@@ -1,15 +1,16 @@
            SPELL=adonthell
-         VERSION=0.3.2
+         VERSION=0.3.3
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/$SOURCE
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/src/$SOURCE
         WEB_SITE=http://adonthell.linuxgames.com
-      MAINTAINER=g.clay@warwick.ac.uk
-          MD5[0]=acb9bbd0918d7e71fc4bd9f5f3af8f8f
-      LICENSE[0]=GPL
+          MD5[0]=62767c99c3013f292d24b2cb0e7346c0
          ENTERED=20020517
          UPDATED=20020604
+      LICENSE[0]=GPL
+      MAINTAINER=g.clay@warwick.ac.uk
            SHORT="Open Source Role Playing Game Engine"
+
 cat << EOF
 Listen to the water
 that surrounds our shore -

@@ -1,9 +1,9 @@
            SPELL=wastesedge
-         VERSION=0.3.1
+         VERSION=0.3.3
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/$SOURCE
-          MD5[0]=4699c4f0c8c827f64de396d3802ce838
+   SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/src/$SOURCE
+          MD5[0]=51dde843a3142a5d605fe52ffe93fa44
         WEB_SITE=http://adonthell.linuxgames.com
          ENTERED=20020517
          UPDATED=20020517
