@@ -2,6 +2,12 @@
 
 		One make job
 
+		Installs into nethackdir  (Bug #4130)
+
+		Added dependency on nethack  (Bug #4130)
+
+		Dispels itself before nethack
+
 2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!

@@ -1,2 +1,3 @@
-depends  libpng  &&
+depends  nethack  &&
+depends  libpng   &&
 depends  SDL

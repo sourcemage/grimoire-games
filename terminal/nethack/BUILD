@@ -132,11 +132,8 @@ if [ "$X11" = "yes" ];then
   cd /usr/X11R6/lib/X11/fonts/misc                  &&
   mkfontdir
 fi
+
+  chown  root.games  /usr/share/games/nethack*  -R    &&
+  chmod  g+w         /usr/share/games/nethackdir  -R
+
 ) > $C_FIFO 2>&1
-
-
-
-
-
-
-
