@@ -1,3 +1,13 @@
+2004-10-30 Eric Sandall <eric@sandall.us>
+	* Renamed from ASC
+	* DETAILS: Removed TABs
+	  Formatted to Guru Handbook
+	  Shortened SHORT
+	  Added BUILD_API=2
+	* BUILD: Converted to build_api 2
+	  Removed TABs
+	* CONFLICTS: Conflicts with ASC
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 
