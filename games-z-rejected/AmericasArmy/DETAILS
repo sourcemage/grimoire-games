@@ -13,6 +13,7 @@
 	   MD5[0]=9ddb191395c679875e6001651af715d6
        LICENSE[0]=UNKNOWN
 	   REJECT="binary only game"
+          ARCHIVE=off
        MAINTAINER=hgreig@bigpond.net.au
  	    SHORT="America's Army the full Linux version(316M download, 900M INSTALLED)"
 cat << EOF

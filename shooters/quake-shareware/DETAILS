@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=PD
          ENTERED=20020826
          UPDATED=20020826
+         ARCHIVE=off
            SHORT="the quake shareware game data"
 cat << EOF
 The part of the quake game data distributed in the public domain.

@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
           MD5[0]=22da2ce56c40d021158d11684b54cdb8
          ENTERED=20030608
          UPDATED=20030608
+         ARCHIVE=off
       MAINTAINER=jason@flattfamily.com
            SHORT="Marathon 2 demo data file for Aleph One (spell name: alephone)."
 cat << EOF

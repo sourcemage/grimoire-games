@@ -15,6 +15,7 @@
 	   MD5[0]="71d938bbc6afddbfab73390333964e9d"
        LICENSE[0]=ID
 	   REJECT="binary only game"
+          ARCHIVE=off
        MAINTAINER=hgreig@bigpond.net.au
  	    SHORT="Wolfenstein:EnemyTerritory the full version 258MB"
 cat << EOF

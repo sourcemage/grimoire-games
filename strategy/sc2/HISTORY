@@ -1,3 +1,7 @@
+2003-09-30  hgg <hgreig@bigpond.net.au>
+
+		remove ARCHIVE-off hack from PREPARE 
+
 2003-09-08  hgg <hgreig@bigpond.net.au>
 
 		Update to 0.3

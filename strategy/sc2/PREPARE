@@ -1,12 +1,6 @@
            SPELL=sc2
          VERSION=0.3
 
-#bug 1068
-if  grep -q 'ARCHIVE="on"' $LOCAL_CONFIG ;
- then sedit "s/ARCHIVE=\"on\"/ARCHIVE=\${ARCHIVE:=on}/g" $LOCAL_CONFIG
-fi &&
-
-
 if  ! grep -q CONFIGURED $SPELL_CONFIG  ||  ! grep -q "VERSION=0.3" $SPELL_CONFIG ;
 then 
   if query "Would you like to download the voice and music packages for URQUAN MASTERS ?\n

@@ -1,7 +1,0 @@
-
-#bug 1068
-if  grep -q 'ARCHIVE="on"' $LOCAL_CONFIG ;
- then sedit "s/ARCHIVE=\"on\"/ARCHIVE=\${ARCHIVE:=on}/g" $LOCAL_CONFIG
-fi
-
-

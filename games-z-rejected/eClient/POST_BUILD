@@ -1,4 +1,0 @@
-# don't want CACHE
-ARCHIVE=off
-
-default_post_build
