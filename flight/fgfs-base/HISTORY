@@ -1,3 +1,6 @@
+2004-12-11 Adam Clark <adamsgl@dhbit.ca>
+	* DETAILS: Updated to 0.9.6, fixes #7628
+
 2004-07-23 Eric Sandall <eric@sandall.us
 	* DETAILS: Updated to 0.9.4
 	  BUILD_API=2
