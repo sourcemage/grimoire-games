@@ -14,7 +14,7 @@
   make    install                    &&
   mkdir   -p  /usr/share/crossfire   &&
   cd          /usr/share/crossfire   &&
-  unpack  $SOURCE2                   &&
+  unpack  ${SOURCE2}  ${MD5[1]}      &&
   chown   -R  root:root  /usr/share/crossfire/sounds
 
 ) > $C_FIFO 2>&1
