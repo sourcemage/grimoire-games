@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Tong wrapper script
+#
+
+TONG_DIR=/usr/share/games/tong  &&
+
+cd  $TONG_DIR  &&
+./tong
+cd  -
