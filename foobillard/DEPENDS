@@ -1,0 +1,3 @@
+depends  libpng     &&
+depends  glut       &&
+depends  freetype2
