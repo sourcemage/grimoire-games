@@ -1,3 +1,10 @@
+2003-10-05  Eric Sandall <eric@sandall.us>
+		* DEPENDS: Added dependency on libuta, even though it is only
+		optional, the only thing which depends on janus (uclient) needs
+		the libuta bindings, so...
+		* gcc-3.3.patch: Added for assert.h
+		* BUILD: Applies gcc-3.3.patch
+
 2003-10-04  Eric Sandall <eric@sandall.us>
         * DETAILS: Added mirror, main site should be back up soon
 

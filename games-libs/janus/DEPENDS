@@ -1,1 +1,2 @@
+depends  libuta  &&
 depends  gtk+
