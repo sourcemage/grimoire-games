@@ -1,0 +1,15 @@
+            SPELL=glhack
+          VERSION=0.9.0
+           SOURCE=$SPELL-$VERSION.tgz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=http://belnet.dl.sourceforge.net/sourceforge/glhack/$SOURCE
+    SOURCE_URL[1]=http://unc.dl.sourceforge.net/sourceforge/glhack/$SOURCE
+    SOURCE_URL[2]=http://telia.dl.sourceforge.net/sourceforge/glhack/$SOURCE
+         WEB_SITE=http://glhack.sourceforge.net
+       MAINTAINER=v.merkatz@gmx.net
+         ENTERED=20020518
+         UPDATED=20020518
+           SHORT="glhack is an OpenGL port of the famous nethack"
+cat << EOF
+glHack is a port of the game NetHack, using hardware acceleration via OpenGL® to render the 2D graphics.  It uses LibSDL as the video and input library. 
+EOF
