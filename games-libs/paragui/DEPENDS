@@ -1,7 +1,7 @@
 depends  sdl_image  &&
 depends  expat      &&
 depends  freetype2  &&
-depends  Python     &&
+depends  python     &&
 depends  zlib       &&
 
 optional_depends  physfs                                    \

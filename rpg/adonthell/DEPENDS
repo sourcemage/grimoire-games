@@ -1,5 +1,5 @@
 depends  sdl     &&
-depends  Python  &&
+depends  python  &&
 
 optional_depends  vorbis-tools            \
                   ""                      \

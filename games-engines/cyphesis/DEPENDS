@@ -3,7 +3,7 @@ depends  skstream                &&
 depends  atlas-c++-transitional  &&
 depends  varconf2                &&
 depends  autoconf                &&
-depends  Python                  &&
+depends  python                  &&
 depends  postgresql              &&
 
 optional_depends  howl                               \

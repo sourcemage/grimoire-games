@@ -1,2 +1,2 @@
-depends Python              &&
-depends crystalspace
+depends  python        &&
+depends  crystalspace

@@ -1,5 +1,5 @@
 depends  GLUT    &&
-depends  Python  &&
+depends  python  &&
 depends  sdl     &&
 depends  libpng  &&
 depends  jpeg    &&
