@@ -1,16 +1,9 @@
 (
 
-  # Updated OpenGL headers from// which no longer work!!!
-  # http://oss.sgi.com/projects/ogl-sample/registry/
- # if  [  !  -d  /usr/include/GL/glaxium-bak  ] ;  then
- #   cd  /usr/include/GL      &&
- #   mkdir  glaxium-bak       &&
- #   mv  glext.h glxext.h glaxium-bak
- # fi
- # install  -m  644  ${SCRIPT_DIRECTORY}/*.h  /usr/include/GL/  &&
-
+  cp -f $SCRIPT_DIRECTORY/Makefile.in .                       &&
   aclocal                                                     &&
   autoconf                                                    &&
+  CFLAGS="$CFLAGS -DGL_GLEXT_LEGACY"                          &&
   ./configure  --build=${BUILD}                               \
                --prefix=/usr                                  \
                --bindir=/usr/games                            \

@@ -1,3 +1,9 @@
+2003-05-18  hgg  <hgreig@bigpond.net.au>
+		
+		Milestone glaxium builds!!!!!
+		Added CFLAGS to Build to overcome failure with xfree86 headers
+		Many thanks to rycee for this fix
+
 2003-05-09  hgg  <hgreig@bigpond.net.au>
 
 		Update spell as current xfree86 has GL extension headers
