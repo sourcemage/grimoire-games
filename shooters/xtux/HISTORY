@@ -1,3 +1,6 @@
+2003-11-28 hgg <hgreig@bigpond.net.au>
+	* BUILD: use cp -rf instead of mv, and install_root-ify
+
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* BUILD: pm bug, needed mkdir -p /usr/games
 	* HISTORY: reformat
