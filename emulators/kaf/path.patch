@@ -1,6 +1,6 @@
-diff -urpN kaf.old/mameprocess.cpp kaf/mameprocess.cpp
---- kaf.old/mameprocess.cpp	2003-12-11 19:56:00.813706648 -0800
-+++ kaf/mameprocess.cpp	2003-12-11 19:58:13.869479096 -0800
+diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
+--- kaf.orig/mameprocess.cpp	2004-08-02 10:50:47.924577952 -0700
++++ kaf/mameprocess.cpp	2004-08-02 10:53:05.629643600 -0700
 @@ -68,7 +68,7 @@ void MameProcess::setGameArguments( Game
    clearArguments();
  
@@ -56,16 +56,16 @@ diff -urpN kaf.old/mameprocess.cpp kaf/mameprocess.cpp
      mp_options->setGroup( G_SOUND );
  
    }
-@@ -710,7 +710,7 @@ void MameProcess::setMiscArguments()
-   {
+@@ -711,7 +711,7 @@ void MameProcess::setMiscArguments()
      addArgument( "-cheat" );
      addArgument( "-cheat_file" );
+ 	mp_options->setGroup( G_MAME );
 -    addArgument( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/local/share/xmame/cheat.dat" ) );
 +    addArgument( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/share/games/xmame/cheat.dat" ) );
+ 	mp_options->setGroup( G_MISC );
    }
    else
-   {
-@@ -848,7 +848,7 @@ int MameProcess::checkVersion()
+@@ -850,7 +850,7 @@ int MameProcess::checkVersion()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -74,7 +74,7 @@ diff -urpN kaf.old/mameprocess.cpp kaf/mameprocess.cpp
  
    addArgument( "-noloadconfig" );
    addArgument( "-version" );
-@@ -951,7 +951,7 @@ void MameProcess::checkSupportedGames()
+@@ -953,7 +953,7 @@ void MameProcess::checkSupportedGames()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -83,9 +83,1035 @@ diff -urpN kaf.old/mameprocess.cpp kaf/mameprocess.cpp
  
    addArgument( "-noloadconfig" );
    addArgument( "-list" );
-diff -urpN kaf.old/options.cpp kaf/options.cpp
---- kaf.old/options.cpp	2003-12-11 19:56:00.807707560 -0800
-+++ kaf/options.cpp	2003-12-11 19:59:27.826235960 -0800
+diff -urpN kaf.orig/mameprocess.cpp~ kaf/mameprocess.cpp~
+--- kaf.orig/mameprocess.cpp~	1969-12-31 16:00:00.000000000 -0800
++++ kaf/mameprocess.cpp~	2004-06-06 05:29:24.000000000 -0700
+@@ -0,0 +1,1001 @@
++/************************************************************************
++ *                                                                      *
++ * Project: KAF - Khelben Arcade Frontend                               *
++ *                                                                      *
++ * Author: Marco Mastroddi <marco.mastroddi@libero.it>                  *
++ *                                                                      *
++ ************************************************************************
++ *                                                                      *
++ * This program is free software; you can redistribute it and/or modify *
++ * it under the terms of the GNU General Public License as published by *
++ * the Free Software Foundation; either version 2 of the License, or    *
++ * (at your option) any later version.                                  *
++ *                                                                      *
++ ************************************************************************/
++
++/*
++ *    File    : mameprocess.cpp
++ */
++
++
++
++
++#include "mameprocess.h"
++#include "game.h"
++#include "options.h"
++
++#if QT_VERSION < 0x030100
++#include <qregexp.h>
++#endif
++
++#include <unistd.h>
++
++
++
++
++MameProcess::MameProcess( Options* pOptions )
++  : QProcess()
++{
++  mp_game = 0;
++  m_render = "";
++  mp_options = pOptions;
++  m_errorFound = false;
++
++  setCommunication( QProcess::Stdout | QProcess::Stderr | QProcess::DupStderr );
++  connect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++}
++
++MameProcess::~MameProcess()
++{}
++
++void MameProcess::waitTheEnd()
++{
++  qDebug( "Wait the end of MaME process with pid %d.", (int)processIdentifier() );
++
++  while( isRunning() )
++  {
++    sleep( 1 );
++    continue;
++  }
++
++  qDebug( "Mame process exited." );
++}
++
++void MameProcess::setGameArguments( Game* pGame )
++{
++  mp_game = pGame;
++
++  clearArguments();
++
++  mp_options->setGroup( G_MAME );
++  addArgument( mp_options->getString( O_MAME_EXE, "/usr/local/bin/xmame" ) );
++  addArgument( mp_game->name() );
++
++  QString sTmp = mp_options->getString( O_MAME_CUSTOM_OPTIONS, "" ).simplifyWhiteSpace();
++  if( !sTmp.isEmpty() )
++  {
++    QStringList args = QStringList::split( " ", sTmp, false );
++    QStringList::Iterator it = args.begin();
++    while( it != args.end() )
++    {
++      addArgument( *it );
++      ++it;
++    }
++  }
++
++  if( mp_options->getBool( O_MAME_ONLY_CUSTOM_OPTIONS, false ) )
++    return;
++
++  setPathArguments();
++
++  m_render = mp_options->getString( O_MAME_RENDER, "x11" ).lower();
++  if( m_render == "x11" )
++  {
++    setX11Arguments();
++  }
++  else if( m_render == "xgl" )
++  {
++    setXGLArguments();
++  }
++  else if( m_render == "sdl" )
++  {
++    setSDLArguments();
++  }
++  else
++  {
++    qWarning( "Render options for '%s' are not available.", m_render.latin1() );
++  }
++
++  setDisplayArguments();
++  setSoundArguments();
++  setInputArguments();
++  setNetworkArguments();
++
++  if( mp_game->hasFlag( Game::Vector ) )
++    setVectorArguments();
++
++  setMiscArguments();
++}
++
++void MameProcess::setPathArguments()
++{
++  mp_options->setGroup( G_MAME );
++
++  addArgument( "-rompath" );
++  addArgument( mp_options->getString( O_MAME_ROMS_DIR, "/usr/local/share/xmame/samples" ) );
++
++  addArgument( "-snapshot_directory" );
++  addArgument( mp_options->getString( O_MAME_SNAPS_DIR, "/usr/local/share/xmame/snap" ) );
++
++  addArgument( "-inipath" );
++  addArgument( mp_options->getString( O_MAME_INI_DIR, "/usr/local/share/xmame/ini" ) );
++
++  addArgument( "-artwork_directory" );
++  addArgument( mp_options->getString( O_MAME_ARTWORK_DIR, "/usr/local/share/xmame/artwork" ) );
++
++  addArgument( "-ctrlr_directory" );
++  addArgument( mp_options->getString( O_MAME_CTRLR_DIR, "/usr/local/share/xmame/ctrlr" ) );
++
++  addArgument( "-hiscore_file" );
++  addArgument( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/local/share/xmame/hiscore.dat" ) );
++
++  addArgument( "-history_file" );
++  addArgument( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/local/share/xmame/history.dat" ) );
++
++  addArgument( "-mameinfo_file" );
++  addArgument( mp_options->getString( O_MAME_INFO_FILE, "/usr/local/share/xmame/mameinfo.dat" ) );
++
++}
++
++void MameProcess::setX11Arguments()
++{
++  QString sTmp = "";
++
++  mp_options->setGroup( G_MAME_X11 );
++
++  addArgument( "-x11" );
++
++  int iTmp =  mp_options->getNumber( O_X11_VIDEO_MODE, 2 );
++  addArgument( QString::number( iTmp ) );
++
++  if( iTmp == 0 || iTmp == 2 )  /* Normal window or Xv window */
++  {
++    addArgument( "-geo" );
++    sTmp.sprintf( "%ldx%ld+%ld+%ld", mp_options->getNumber( O_X11_GEOMETRY_WIDTH, 640 ),
++                                 mp_options->getNumber( O_X11_GEOMETRY_HEIGHT, 480 ),
++                                 mp_options->getNumber( O_X11_OFFSET_WIDTH, 0 ),
++                                 mp_options->getNumber( O_X11_OFFSET_HEIGHT, 0 ) );
++    addArgument( sTmp );
++  }
++
++  if( mp_options->getBool( O_X11_KEEP_ASPECT_RATIO, true ) )
++  {
++    addArgument( "-keepaspect" );
++    addArgument( "-displayaspectratio" );
++    addArgument( QString::number( mp_options->getDouble( O_X11_DISPLAY_ASPECT_RATIO, 1.33 ) ) );
++  }
++  else
++  {
++    addArgument( "-nokeepaspect" );
++  }
++
++  sTmp = mp_options->getString( O_X11_DISABLE_MODE, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-disablemode" );
++    addArgument( sTmp );
++  }
++
++  if( mp_options->getBool( O_X11_SHOW_CURSOR, true ) )
++    addArgument( "-cursor" );
++  else
++    addArgument( "-nocursor" );
++
++  if( mp_options->getBool( O_X11_MIT, true ) )
++    addArgument( "-mitshm" );
++  else
++    addArgument( "-nomitshm" );
++
++  if( mp_options->getBool( O_X11_FORCE_YUV, false ) )
++    addArgument( "-yuv" );
++  else
++    addArgument( "-noyuv" );
++
++  if( mp_options->getBool( O_X11_FORCE_YV12, false ) )
++    addArgument( "-yv12" );
++  else
++    addArgument( "-noyv12" );
++
++  if( mp_options->getBool( O_X11_WIDESCREEN, false ) )
++    addArgument( "-widescreen" );
++  else
++    addArgument( "-nowidescreen" );
++
++  if( mp_options->getBool( O_X11_XSYNC, false ) )
++    addArgument( "-xsync" );
++  else
++    addArgument( "-noxsync" );
++
++  if( mp_options->getBool( O_X11_PRIVATE_COLOR_MAP, false ) )
++    addArgument( "-privatecmap" );
++  else
++    addArgument( "-noprivatecmap" );
++
++  if( mp_options->getBool( O_X11_XIL, true ) )
++  {
++    addArgument( "-xil" );
++    if( mp_options->getBool( O_X11_XIL_MULTITHREAD, true ) )
++      addArgument( "-mtxil" );
++    else
++      addArgument( "-nomtxil" );
++  }
++  else
++  {
++    addArgument( "-noxil" );
++  }
++}
++
++void MameProcess::setXGLArguments()
++{
++  QString sTmp = "";
++
++  mp_options->setGroup( G_MAME_XGL );
++
++  if( mp_options->getBool( O_XGL_FULLSCREEN, false ) )
++    addArgument( "-fullscreen" );
++  else
++    addArgument( "-nofullscreen" );
++
++  if( mp_options->getBool( O_XGL_CUSTOM_RESOLUTION, false ) )
++  {
++    addArgument( "-glres" );
++    sTmp.sprintf( "%ldx%ld+%ld+%ld", mp_options->getNumber( O_XGL_GEOMETRY_WIDTH, 640 ),
++                                 mp_options->getNumber( O_XGL_GEOMETRY_HEIGHT, 480 ),
++                                 mp_options->getNumber( O_XGL_OFFSET_WIDTH, 0 ),
++                                 mp_options->getNumber( O_XGL_OFFSET_HEIGHT, 0 ) );
++    addArgument( sTmp );
++  }
++
++  if( mp_options->getBool( O_XGL_DOUBLE_BUFFERING, true ) )
++    addArgument( "-gldblbuffer" );
++  else
++    addArgument( "-nogldblbuffer" );
++
++  if( mp_options->getBool( O_XGL_USE_TEXTURE_SIZE, false ) )
++  {
++    addArgument( "-gltexture_size" );
++    addArgument( mp_options->getString( O_XGL_TEXTURE_SIZE, "0" ) );
++  }
++
++  if( mp_options->getBool( O_XGL_FORCE_BLITTER, true ) )
++    addArgument( "-glforceblitmode" );
++  else
++    addArgument( "-noglforceblitmode" );
++
++  if( mp_options->getBool( O_XGL_FORCE_EXT78, true ) )
++    addArgument( "-glext78" );
++  else
++    addArgument( "-noglext78" );
++
++  if( mp_options->getBool( O_XGL_BILINEAR_FILTER, true ) )
++    addArgument( "-glbilinear" );
++  else
++    addArgument( "-noglbilinear" );
++
++  if( mp_options->getBool( O_XGL_DRAW_BITMAP, true ) )
++    addArgument( "-gldrawbitmap" );
++  else
++    addArgument( "-nogldrawbitmap" );
++
++  if( mp_options->getBool( O_XGL_COLOR_MODULATION, true ) )
++    addArgument( "-glcolormod" );
++  else
++    addArgument( "-noglcolormod" );
++
++  if( mp_options->getBool( O_XGL_ALPHA_BLENDING, true ) )
++    addArgument( "-glalphablending" );
++  else
++    addArgument( "-noglalphablending" );
++
++  if( mp_options->getBool( O_XGL_ANTIALIAS, true ) )
++    addArgument( "-glantialias" );
++  else
++    addArgument( "-noglantialias" );
++
++  sTmp = mp_options->getString( O_XGL_OPENGL_PATH, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-gllibname" );
++    addArgument( sTmp );
++  }
++
++  sTmp = mp_options->getString( O_XGL_GLU_PATH, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-glulibname" );
++    addArgument( sTmp );
++  }
++}
++
++void MameProcess::setSDLArguments()
++{
++  mp_options->setGroup( G_MAME_SDL );
++
++  if( mp_options->getBool( O_SDL_FULLSCREEN, false ) )
++    addArgument( "-fullscreen" );
++  else
++    addArgument( "-nofullscreen" );
++
++  if( mp_options->getBool( O_SDL_CUSTOM_MODE, false ) )
++  {
++    addArgument( "-modenumber" );
++    addArgument( mp_options->getString( O_SDL_MODE, "15" ) );
++  }
++}
++
++void MameProcess::setDisplayArguments()
++{
++  mp_options->setGroup( G_DISPLAY );
++
++  int iTmp = mp_options->getNumber( O_DISPLAY_EFFECTS, 0 );
++  if( iTmp != 0 )
++  {
++    addArgument( "-effect" );
++    addArgument( QString::number( iTmp ) );
++  }
++
++  if( mp_options->getBool( O_DISPLAY_SCANLINES, false ) )
++    addArgument( "-scanlines" );
++  else
++    addArgument( "-noscanlines" );
++
++  if( mp_options->getBool( O_DISPLAY_SLEEP_IDLE, false ) )
++    addArgument( "-sleepidle" );
++  else
++    addArgument( "-nosleepidle" );
++
++  double dTmp = mp_options->getDouble( O_DISPLAY_GAMMA, 1.0 );
++
++  if( dTmp != 1 )
++  {
++    addArgument( "-gamma" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  dTmp = mp_options->getDouble( O_DISPLAY_BRIGHTNESS, 1.0 );
++
++  if( dTmp != 1 )
++  {
++    addArgument( "-brightness" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  dTmp = mp_options->getDouble( O_DISPLAY_PAUSE_BRIGHTNESS, 1.65 );
++  if( dTmp != 1.65 )
++  {
++    addArgument( "-pause_brightness" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  if( !mp_options->getBool( O_DISPLAY_DISABLE_ROTATION, false ) )
++  {
++    iTmp = mp_options->getNumber( O_DISPLAY_ROTATION, 0 );
++    if( iTmp == 0 )
++    {
++      addArgument( "-autoror" );
++      addArgument( "-autorol" );
++    }
++    else if( iTmp == 1 )
++      addArgument( "-ror" );
++    else
++      addArgument( "-rol" );
++
++    if( mp_options->getBool( O_DISPLAY_FLIP_LR, false ) )
++      addArgument( "-flipx" );
++
++    if( mp_options->getBool( O_DISPLAY_FLIP_UD, false ) )
++      addArgument( "-flipy" );
++  }
++  else
++  {
++    addArgument( "-norotate" );
++  }
++
++  iTmp = mp_options->getNumber( O_DISPLAY_X_SCALE, 1 );
++  if( iTmp != 1 )
++  {
++    addArgument( "-heightscale" );
++    addArgument( QString::number( iTmp ) );
++  }
++
++  iTmp = mp_options->getNumber( O_DISPLAY_Y_SCALE, 1 );
++  if( iTmp != 1 )
++  {
++    addArgument( "-widthscale" );
++    addArgument( QString::number( iTmp ) );
++  }
++
++  iTmp = mp_options->getNumber( O_DISPLAY_BPP, 0 );
++  if( iTmp != 0 )
++  {
++    addArgument( "-bpp" );
++    if( iTmp == 1 )
++      addArgument( "8" );
++    else
++      addArgument( "16" );
++  }
++
++  if( mp_options->getBool( O_DISPLAY_AUTO_DOUBLE, true ) )
++    addArgument( "-autodouble" );
++  else
++    addArgument( "-noautodouble" );
++
++  if( mp_options->getBool( O_DISPLAY_THROTTLE, true ) )
++    addArgument( "-throttle" );
++  else
++    addArgument( "-nothrottle" );
++
++  if( mp_options->getBool( O_DISPLAY_AUTO_FRAME_SKIP, true ) )
++  {
++    addArgument( "-autoframeskip" );
++    addArgument( "-frameskipper" );
++    addArgument( QString::number( mp_options->getNumber( O_DISPLAY_FRAME_SKIP_METHOD, 0 ) ) );
++    addArgument( "-maxautoframeskip" );
++    addArgument( QString::number( mp_options->getNumber( O_DISPLAY_MAX_NUM_FRAMES_TO_SKIP, 8 ) ) );
++  }
++  else
++  {
++    addArgument( "-noautoframeskip" );
++    addArgument( "-frameskip" );
++    addArgument( QString::number( mp_options->getNumber( O_DISPLAY_NUM_FRAMES_TO_SKIP, 8 ) ) );
++  }
++}
++
++void MameProcess::setSoundArguments()
++{
++  mp_options->setGroup( G_SOUND );
++
++  if( mp_options->getBool( O_SOUND_ENABLE, true ) )
++    addArgument( "-sound" );
++  else
++  {
++    addArgument( "-nosound" );
++    if( mp_options->getBool( O_SOUND_FAKE, false ) )
++      addArgument( "-fakesound" );
++    return;
++  }
++
++  if( mp_options->getBool( O_SOUND_SAMPLES, true ) )
++  {
++    addArgument( "-samples" );
++
++    addArgument( "-samplefreq" );
++    addArgument( mp_options->getString( O_SOUND_SAMPLERATE, "44100" ) );
++
++    addArgument( "-samplepath" );
++    mp_options->setGroup( G_MAME );
++    addArgument( mp_options->getString( O_MAME_SAMPLES_DIR, "/usr/local/share/xmame/samples" ) );
++    mp_options->setGroup( G_SOUND );
++
++  }
++  else
++    addArgument( "-nosamples" );
++
++  addArgument( "-volume" );
++  addArgument( mp_options->getString( O_SOUND_VOLUME, "-3" ) );
++
++  addArgument( "-bufsize" );
++  addArgument( mp_options->getString( O_SOUND_BUFFER, "3.0" ) );
++
++  QString sTmp = mp_options->getString( O_SOUND_AUDIO_DEVICE, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-audiodevice" );
++    addArgument( sTmp );
++  }
++
++  sTmp = mp_options->getString( O_SOUND_MIXER_DEVICE, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-mixerdevice" );
++    addArgument( sTmp );
++  }
++
++  sTmp = mp_options->getString( O_SOUND_DSP_PLUGIN, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-dsp-plugin" );
++    addArgument( sTmp );
++  }
++
++  sTmp = mp_options->getString( O_SOUND_MIXER_PLUGIN, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-sound-mixer-plugin" );
++    addArgument( sTmp );
++  }
++}
++
++void MameProcess::setNetworkArguments()
++{
++  mp_options->setGroup( G_NETWORK );
++
++  if( !mp_options->getBool( O_NETWORK_ENABLE, false ) )
++    return;
++
++  int iTmp = 0;
++
++  if( mp_options->getString( O_NETWORK_MODE, "server" ) == "server" )
++  {
++    addArgument( "-master" );
++    iTmp = mp_options->getNumber( O_NETWORK_PLAYERS, 2 );
++    addArgument( QString::number( iTmp ) );
++
++    if( mp_options->getBool( O_NETWORK_SYNC, true ) )
++      addArgument( "-parallelsync" );
++    else
++      addArgument( "-noparallelsync" );
++
++     if( mp_options->getBool( O_NETWORK_DEBUG, false ) )
++      addArgument( "-statedebug" );
++    else
++      addArgument( "-nostatedebug" );
++  }
++  else
++  {
++    addArgument( "-slave" );
++
++    QString sTmp = "";
++    sTmp.sprintf( "%s:%ld", mp_options->getString( O_NETWORK_SERVERNAME, "localhost" ).latin1(),
++      mp_options->getNumber( O_NETWORK_SERVERPORT, 9000 ) );
++
++    addArgument( sTmp );
++
++    if( mp_options->getBool( O_NETWORK_NETMAPKEY, true ) )
++      addArgument( "-netmapkey" );
++    else
++      addArgument( "-nonetmapkey" );
++  }
++
++  iTmp = mp_options->getNumber( O_NETWORK_UDP_PORT, 9000 );
++  addArgument( "-bind" );
++  addArgument( QString::number( iTmp ) );
++}
++
++void MameProcess::setInputArguments()
++{
++  mp_options->setGroup( G_INPUT );
++
++  if( m_render == "x11" )
++  {
++    if( mp_options->getBool( O_INPUT_GRAB_MOUSE, false ) )
++      addArgument( "-grabmouse" );
++    else
++      addArgument( "-nograbmouse" );
++
++    if( mp_options->getBool( O_INPUT_GRAB_KEYBOARD, false ) )
++      addArgument( "-grabkeyboard" );
++    else
++      addArgument( "-nograbkeyboard" );
++
++    if( mp_options->getBool( O_INPUT_WINKEYS, false ) )
++      addArgument( "-winkeys" );
++    else
++      addArgument( "-nowinkeys" );
++  }
++
++  QString sTmp = mp_options->getString( O_INPUT_KEYMAP, "" );
++  if( !sTmp.isEmpty() )
++  {
++    if( m_render == "sdl" )
++      addArgument( "-sdlmapkey" );
++    else
++      addArgument( "-mapkey" );
++
++    addArgument( sTmp );
++  }
++
++  if( mp_options->getBool( O_INPUT_MOUSE, true ) )
++    addArgument( "-mouse" );
++  else
++    addArgument( "-nomouse" );
++
++  if( mp_options->getBool( O_INPUT_UGCI, false ) )
++    addArgument( "-ugcicoin" );
++  else
++    addArgument( "-nougcicoin" );
++
++  int iTmp = mp_options->getNumber( O_INPUT_JOYSTICK_TYPE, 0 );
++  if( iTmp == 0 )
++    return;
++
++  addArgument( "-joytype" );
++  addArgument( QString::number( iTmp ) );
++
++  if( iTmp >= 1 && iTmp <= 4 )
++  {
++    addArgument( "-joydevname" );
++    addArgument( mp_options->getString( O_INPUT_JOYSTICK_DEVICE, "/dev/js" ) );
++  }
++
++  if( mp_options->getBool( O_INPUT_ANALOG_JOYSTICK, false ) )
++    addArgument( "-analogstick" );
++  else
++    addArgument( "-noanalogstick" );
++
++  if( mp_options->getBool( O_INPUT_USB_PAD, false ) )
++    addArgument( "-usbpspad" );
++  else
++    addArgument( "-nousbpspad" );
++
++  if( mp_options->getBool( O_INPUT_RAPID_FIRE, false ) )
++    addArgument( "-rapidfire" );
++  else
++    addArgument( "-norapidfire" );
++
++  sTmp = mp_options->getString( O_INPUT_CONTROLLER_CFG, "" );
++  if( !sTmp.isEmpty() )
++  {
++    addArgument( "-ctrlr" );
++    addArgument( sTmp );
++  }
++}
++
++void MameProcess::setVectorArguments()
++{
++  mp_options->setGroup( G_VECTOR );
++
++  if( mp_options->getBool( O_VECTOR_ANTIALIAS, true ) )
++    addArgument( "-antialias" );
++  else
++    addArgument( "-noantialias" );
++
++  if( mp_options->getBool( O_VECTOR_TRANSLUCENCY, true ) )
++    addArgument( "-translucency" );
++  else
++    addArgument( "-notranslucency" );
++
++  double dTmp = mp_options->getDouble( O_VECTOR_BEAM, 1.0 );
++  if( dTmp != 1 )
++  {
++    addArgument( "-beam" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  dTmp = mp_options->getDouble( O_VECTOR_FLICKER, 0.0 );
++  if( dTmp != 0 )
++  {
++    addArgument( "-flicker" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  dTmp = mp_options->getDouble( O_VECTOR_INTENSITY, 1.5 );
++  if( dTmp != 1.5 )
++  {
++    addArgument( "-intensity" );
++    addArgument( QString::number( dTmp ) );
++  }
++
++  if( mp_options->getBool( O_VECTOR_FIXED_RESOLUTION, false ) )
++  {
++    addArgument( "-vectorres" );
++    addArgument( mp_options->getString( O_VECTOR_RESOLUTION, "320x200" ) );
++  }
++
++  if( m_render == "xgl" )
++  {
++    if( mp_options->getBool( O_VECTOR_GL_DRAW_BITMAP, true ) )
++      addArgument( "-gldrawbitmapvec" );
++    else
++      addArgument( "-nogldrawbitmapvec" );
++
++    if( mp_options->getBool( O_VECTOR_GL_ANTIALIAS, true ) )
++      addArgument( "-glantialiasvec" );
++    else
++      addArgument( "-noglantialiasvec" );
++  }
++}
++
++void MameProcess::setMiscArguments()
++{
++  mp_options->setGroup( G_MISC );
++
++  if( mp_options->getBool( O_MISC_SKIP_DISCLAIMER, false ) )
++    addArgument( "-skip_disclaimer" );
++
++  if( mp_options->getBool( O_MISC_SKIP_GAME_INFO, false ) )
++    addArgument( "-skip_gameinfo" );
++
++  if( mp_options->getBool( O_MISC_CHEAT, false ) )
++  {
++    addArgument( "-cheat" );
++    addArgument( "-cheat_file" );
++	mp_options->setGroup( G_MAME );
++    addArgument( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/local/share/xmame/cheat.dat" ) );
++	mp_options->setGroup( G_MISC );
++  }
++  else
++  {
++    addArgument( "-nocheat" );
++  }
++
++  if( mp_options->getBool( O_MISC_ARTWORK, false ) )
++  {
++    addArgument( "-artwork" );
++
++    if( mp_options->getBool( O_MISC_BACKDROPS, false ) )
++      addArgument( "-backdrop" );
++    else
++      addArgument( "-nobackdrop" );
++
++    if( mp_options->getBool( O_MISC_OVERLAYS, false ) )
++      addArgument( "-overlay" );
++    else
++      addArgument( "-nooverlay" );
++
++    if( mp_options->getBool( O_MISC_BEZELS, false ) )
++      addArgument( "-bezel" );
++    else
++      addArgument( "-nobezel" );
++
++    if( mp_options->getBool( O_MISC_CROP_ARTWORK, false ) )
++      addArgument( "-artcrop" );
++    else
++      addArgument( "-noartcrop" );
++
++    /*
++     * TODO:  O_MISC_ARTWORK_RESOLUTION
++     *        -artres  Artwork resolution (0 for auto) <int>
++     *
++     */
++  }
++  else
++  {
++    addArgument( "-noartwork" );
++  }
++
++}
++
++void MameProcess::slotCheckLog()
++{
++  while( canReadLineStdout() )
++  {
++    QString sTmp = readLineStdout();
++
++    if( sTmp.lower().startsWith( "error:" ) )
++      m_errorFound = true;
++
++    if( sTmp.startsWith( "done" ) )
++      emit( processStarted() );
++
++    if( sTmp.contains( "unable to initialize system", false ) > 0 )
++      m_errorFound = true;
++
++    emit( logAvailable( sTmp ) );
++
++    qDebug( sTmp );
++  }
++}
++
++void MameProcess::slotStartGame()
++{
++  QString sTmp = "";
++
++  if( !mp_game )
++  {
++    m_errorFound = true;
++    sTmp = trUtf8( "Error: No game selected (internal runtime error)." );
++    emit( logAvailable( sTmp ) );
++    emit( processExited() );
++    return;
++  }
++
++  if( !mp_game->hasFlag( Game::Runnable ) )
++  {
++    m_errorFound = true;
++    sTmp = trUtf8( "Error: This game is not runnable. Maybe it is a bios rom." );
++    emit( logAvailable( sTmp ) );
++    emit( processExited() );
++    return;
++  }
++
++  sTmp = trUtf8( "Process launched by command:\n" );
++  QStringList args = arguments();
++  QStringList::Iterator it = args.begin();
++  while( it != args.end() )
++  {
++    sTmp += *it;
++    sTmp += " ";
++    ++it;
++  }
++
++  sTmp += "\n";
++
++  emit( logAvailable( sTmp ) );
++
++  qDebug( "%s", sTmp.latin1() );
++
++  if( !start() )
++  {
++    m_errorFound = true;
++    sTmp = trUtf8( "Error: Unable to start process. Please check the executable path." );
++    emit( logAvailable( sTmp ) );
++    qDebug( "%s", sTmp.latin1() );
++    emit( processExited() );
++    return;
++  }
++}
++
++static void RemoveParenthesys( QString* pString )
++{
++#if QT_VERSION >= 0x030100
++  pString->replace( "(", " " );
++  pString->replace( ")", " " );
++#else
++  pString->replace( QRegExp( "\\(" ), "" );
++  pString->replace( QRegExp( "\\)" ), "" );
++#endif
++}
++
++int MameProcess::checkVersion()
++{
++  qDebug( "Checking MaME version..." );
++
++  int iRet = -1;
++  QString sVersion = "";
++  QString sBuild = "";
++  QString sRender = "";
++  QString sTmp = "";
++
++  clearArguments();
++
++  mp_options->setGroup( G_MAME );
++  addArgument( mp_options->getString( O_MAME_EXE, "/usr/local/bin/xmame" ) );
++
++  addArgument( "-noloadconfig" );
++  addArgument( "-version" );
++
++  disconnect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++
++  if( !start() )
++  {
++    m_errorFound = true;
++    sTmp = trUtf8( "Error: Unable to start process. Please check the executable path." );
++    emit( logAvailable( sTmp ) );
++    qDebug( "%s", sTmp.latin1() );
++    emit( processExited() );
++    connect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++    mp_options->setString( O_MAME_VERSION, sVersion );
++    mp_options->setString( O_MAME_BUILD, sBuild );
++    mp_options->setString( O_MAME_RENDER, sRender );
++    return iRet;
++  }
++
++  waitTheEnd();
++
++  while( canReadLineStdout() )
++  {
++    sTmp = readLineStdout();
++    qDebug( "Read string '%s'", sTmp.latin1() );
++    if( sTmp.find( "version", 0, false ) == -1 )
++      continue;
++
++    RemoveParenthesys( &sTmp );
++    qDebug( "Parsing version '%s'.", sTmp.latin1() );
++    QStringList args = QStringList::split( " ", sTmp );
++    QStringList::Iterator it = args.begin();
++    /*  *it == 'xmame' */
++    if( it == args.end() )
++      break;
++    ++it;
++    /* render */
++    sRender = *it;
++    if( it == args.end() )
++      break;
++    ++it;
++    /* version - not useful */
++    if( it == args.end() )
++      break;
++    ++it;
++    /* version */
++    sVersion = *it;
++    if( it == args.end() )
++      break;
++    ++it;
++    /* build */
++    sBuild = *it;
++    sBuild += " ";
++    if( it == args.end() )
++      break;
++    ++it;
++    sBuild += *it;
++    sBuild += " ";
++    if( it == args.end() )
++      break;
++    ++it;
++    sBuild += *it;
++  }
++
++  qDebug( "XMaME (%s) version '%s' build '%s'.",
++    sRender.latin1(), sVersion.latin1(), sBuild.latin1() );
++
++  sTmp = "";
++  sTmp.sprintf( "%s-%s-%s", sRender.latin1(), sVersion.latin1(), sBuild.latin1() );
++  QString sTmp2 = "";
++  sTmp2.sprintf( "%s-%s-%s", mp_options->getString( O_MAME_VERSION, "" ).latin1(),
++                             mp_options->getString( O_MAME_BUILD, "" ).latin1(),
++                             mp_options->getString( O_MAME_RENDER, "" ).latin1() );
++  if( sTmp == sTmp2 )
++    iRet = 0;
++  else
++  {
++    if( sVersion == mp_options->getString( O_MAME_VERSION, "" ) )
++      iRet = 1;
++    else
++      iRet = 2;
++  }
++
++  mp_options->setString( O_MAME_VERSION, sVersion );
++  mp_options->setString( O_MAME_BUILD, sBuild );
++  mp_options->setString( O_MAME_RENDER, sRender );
++
++  connect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++
++  return iRet;
++}
++
++void MameProcess::checkSupportedGames()
++{
++  qDebug( "Checking supported games..." );
++  QString sGamesSupported = "0";
++  QString sTmp = "";
++
++  clearArguments();
++
++  mp_options->setGroup( G_MAME );
++  addArgument( mp_options->getString( O_MAME_EXE, "/usr/local/bin/xmame" ) );
++
++  addArgument( "-noloadconfig" );
++  addArgument( "-list" );
++
++  disconnect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++
++  if( !start() )
++  {
++    m_errorFound = true;
++    sTmp = trUtf8( "Error: Unable to start process. Please check the executable path." );
++    emit( logAvailable( sTmp ) );
++    qDebug( "%s", sTmp.latin1() );
++    emit( processExited() );
++    connect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++    return;
++  }
++
++  waitTheEnd();
++
++  int iIndex = 0;
++
++  while( canReadLineStdout() )
++  {
++    sTmp = readLineStdout();
++
++    //qDebug( "Parsing line: '%s'.", sTmp.latin1() );
++
++    iIndex = sTmp.find( mp_options->mameGamesSupportedTextForParsing(), 0, false );
++
++    if( iIndex == -1 )
++      continue;
++
++    iIndex += mp_options->mameGamesSupportedTextForParsing().length();
++    
++    sGamesSupported = sTmp.mid( iIndex, sTmp.length() - iIndex );
++    qDebug( "Parsed line: '%s'.", sGamesSupported.latin1() );
++
++    sGamesSupported = sGamesSupported.stripWhiteSpace();
++  }
++
++  qDebug( "'%s' games supported.", sGamesSupported.latin1() );
++  mp_options->setString( O_MAME_GAMES_SUPPORTED, sGamesSupported );
++
++  connect( this, SIGNAL( readyReadStdout() ), this, SLOT( slotCheckLog() ) );
++}
+diff -urpN kaf.orig/mameprocess.cpp.rej kaf/mameprocess.cpp.rej
+--- kaf.orig/mameprocess.cpp.rej	1969-12-31 16:00:00.000000000 -0800
++++ kaf/mameprocess.cpp.rej	2004-08-02 10:51:58.499848880 -0700
+@@ -0,0 +1,17 @@
++***************
++*** 710,716 ****
++    {
++      addArgument( "-cheat" );
++      addArgument( "-cheat_file" );
++-     addArgument( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/local/share/xmame/cheat.dat" ) );
++    }
++    else
++    {
++--- 710,716 ----
++    {
++      addArgument( "-cheat" );
++      addArgument( "-cheat_file" );
+++     addArgument( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/share/games/xmame/cheat.dat" ) );
++    }
++    else
++    {
+diff -urpN kaf.orig/options.cpp kaf/options.cpp
+--- kaf.orig/options.cpp	2004-08-02 10:50:47.913579624 -0700
++++ kaf/options.cpp	2004-08-02 10:51:58.502848424 -0700
 @@ -55,19 +55,19 @@ void Options::setDefaults()
    qDebug( "Restoring default options..." );
  
@@ -119,9 +1145,9 @@ diff -urpN kaf.old/options.cpp kaf/options.cpp
  
    setGroup( G_GENERAL );
    setString( O_CHECK_EVENT_TICK, "200" );
-diff -urpN kaf.old/wndinfo.cpp kaf/wndinfo.cpp
---- kaf.old/wndinfo.cpp	2003-12-11 19:56:00.813706648 -0800
-+++ kaf/wndinfo.cpp	2003-12-11 19:59:56.659852584 -0800
+diff -urpN kaf.orig/wndinfo.cpp kaf/wndinfo.cpp
+--- kaf.orig/wndinfo.cpp	2004-08-02 10:50:47.927577496 -0700
++++ kaf/wndinfo.cpp	2004-08-02 10:51:58.503848272 -0700
 @@ -62,7 +62,7 @@ void WndInfo::loadGameIcon( Game* pGame 
    QString sPrevGroup = mp_options->currentGroup();
    mp_options->setGroup( G_MAME );
@@ -131,9 +1157,9 @@ diff -urpN kaf.old/wndinfo.cpp kaf/wndinfo.cpp
    sFileIco += "/";
    sFileIco += pGame->name();
    sFileIco += mp_options->mameIconFileType();
-diff -urpN kaf.old/wndmainwindow.cpp kaf/wndmainwindow.cpp
---- kaf.old/wndmainwindow.cpp	2003-12-11 19:56:00.807707560 -0800
-+++ kaf/wndmainwindow.cpp	2003-12-11 20:01:17.917499544 -0800
+diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
+--- kaf.orig/wndmainwindow.cpp	2004-08-02 10:50:47.915579320 -0700
++++ kaf/wndmainwindow.cpp	2004-08-02 10:51:58.507847664 -0700
 @@ -363,7 +363,7 @@ void WndMainWindow::slotSearchForAvailab
  {
    activateProgressBar( mp_games->total() );
@@ -192,9 +1218,9 @@ diff -urpN kaf.old/wndmainwindow.cpp kaf/wndmainwindow.cpp
  
    QFile file( sExePath );
  
-diff -urpN kaf.old/wndmamepaths.cpp kaf/wndmamepaths.cpp
---- kaf.old/wndmamepaths.cpp	2003-12-11 19:56:00.807707560 -0800
-+++ kaf/wndmamepaths.cpp	2003-12-11 20:02:57.852307144 -0800
+diff -urpN kaf.orig/wndmamepaths.cpp kaf/wndmamepaths.cpp
+--- kaf.orig/wndmamepaths.cpp	2004-08-02 10:50:47.913579624 -0700
++++ kaf/wndmamepaths.cpp	2004-08-02 10:51:58.509847360 -0700
 @@ -82,19 +82,19 @@ void WndMamePaths::removeLastSlashFromPa
  void WndMamePaths::updateMenus()
  {
