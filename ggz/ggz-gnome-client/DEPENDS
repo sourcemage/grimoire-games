@@ -1,2 +1,2 @@
-depends  gnome-core          &&
+depends  libgnomeui          &&
 depends  ggz-client-libs

@@ -1,4 +1,8 @@
 2003-06-18  hgg <hgreig@bigpond.net.au>
+
+                Change DEPENDS to gtk+2 bug #3548
+
+2003-06-18  hgg <hgreig@bigpond.net.au>
 		
 		New Games grimoire is born!
 
