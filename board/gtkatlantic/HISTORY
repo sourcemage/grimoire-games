@@ -1,37 +1,32 @@
-2003-08-20  hgg <hgreig@bigpond.net.au>
+2003-10-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Update to 0.3.0
+	* HISTORY: Formatted to Guru Handbook
 
-		Update to 0.2.13
+2003-08-20 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.2.13
 
-2003-07-26  hgg <hgreig@bigpond.net.au>
+2003-07-26 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.2.12 (0.2.11 only survived a day)
 
-		Update to 0.2.12 (0.2.11 only survived a day)
+2003-07-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.2.10 and add monopd as depends for local play
 
-2003-07-05  hgg <hgreig@bigpond.net.au>
-
-		Update to 0.2.10 and add monopd as depends for local play
-
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
-		
-		Update for ${INSTALL_ROOT}
+	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-05-15  Eric Sandall <eric@sandall.us>
+2003-05-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.2.8
+	Removed erroneous descriptor from DETAILS
 
-		Updated to 0.2.8
+2003-02-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.2.7
 
-		Removed erroneous descriptor from DETAILS
+2003-01-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Fixed website  (Bug #2384, thanks to Snakebyte)
 
-2003-02-17  Eric Sandall <eric@sandall.us>
+2003-01-08 Eric Sandall <eric@sandall.us>
+	* Created spell
 
-		Updated to 0.2.7
-
-2003-01-25  Eric Sandall <eric@sandall.us>
-
-		Fixed website  (Bug #2384, thanks to Snakebyte)
-
-2003-01-08  Eric Sandall <eric@sandall.us>
-
-		Created spell
