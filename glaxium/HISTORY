@@ -1,3 +1,10 @@
+2002-04-27  Jerome Zago <jerome.zago@insalien.org>
+
+		SOURCE_URL[0] is now more generic.
+
+		libpng workaround no longer necessary since 2002-04-29 (thanks
+		Unet), therefore removed.
+
 2002-04-26  Jerome Zago <jerome.zago@insalien.org>
  
 		http://www.multimania.com/hosxe/ went 404 therefore updated
@@ -9,10 +16,3 @@
 		/usr/games is created if needed.
 
 		Man pages are now installed in /usr/share/man (FHS compliance).
-
-2002-04-27  Jerome Zago <jerome.zago@insalien.org>
-
-		SOURCE_URL[0] is now more generic.
-
-		libpng workaround no longer necessary since 2002-04-29 (thanks
-		Unet), therefore removed.

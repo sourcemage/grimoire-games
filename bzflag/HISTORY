@@ -1,10 +1,10 @@
-2002-04-10  Jerome Zago <jerome.zago@insalien.org>
-
-		/usr/games and /usr/share/man/man6 are created if needed
-		(thanks Ted Berg <tedberg@etherstorm.net>).
-
 2002-04-17  Jerome Zago <jerome.zago@insalien.org>
 
 		New version: 1.7e4 (thanks Jeremy Kolb <jkolb@brandeis.edu>).
 
 		Man pages are now installed.
+
+2002-04-10  Jerome Zago <jerome.zago@insalien.org>
+
+		/usr/games and /usr/share/man/man6 are created if needed
+		(thanks Ted Berg <tedberg@etherstorm.net>).

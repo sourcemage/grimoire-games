@@ -1,6 +1,9 @@
-2002-03-20  David Pradier <pradierdavid@yahoo.fr>
+2002-05-02  Jerome Zago <jerome.zago@insalien.org>
 
-		New spell sent by Kagan Kongar <kongar@tsrsb.org.tr>.
+		New version: 1.5.6
+
+		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
+		too slow.
 
 2002-04-17  Jerome Zago <jerome.zago@insalien.org>
 
@@ -14,9 +17,6 @@
 
 		Added POST_BUILD to avoid the unnecessary 'gather_docs' step.
 
-2002-05-02  Jerome Zago <jerome.zago@insalien.org>
+2002-03-20  David Pradier <pradierdavid@yahoo.fr>
 
-		New version: 1.5.6
-
-		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was
-		too slow.
+		New spell sent by Kagan Kongar <kongar@tsrsb.org.tr>.
