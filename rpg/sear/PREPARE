@@ -1,0 +1,1 @@
+message  "${MESSAGE_COLOR}${SPELL_COLOR}sear${MESSAGE_COLOR} needs the cvs version of ${SPELL_COLOR}eris${DEFAULT_COLOR}"

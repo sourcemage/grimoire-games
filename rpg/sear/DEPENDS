@@ -1,12 +1,8 @@
 depends  GLUT        &&
-depends  skstream    &&
-depends  atlas-c++   &&
-depends  wfmath      &&
 depends  eris        &&
+depends  mercator    &&
 depends  SDL_image   &&
 depends  SDL_mixer   &&
-depends  libsigc++2  &&
 depends  varconf2    &&
 depends  cal3d       &&
-depends  sage        &&
 depends  lib3ds

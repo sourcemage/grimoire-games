@@ -1,3 +1,13 @@
+2004-07-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.5.0
+	  Media updated to 20040719
+	  BUILD_API=2
+	* BUILD: Converted to BUILD_API 2
+	* INSTALL: Added
+	* DEPENDS: Cleaned up dependencies for new version and for implicit
+	  depends
+	* PREPARE: Add message about needing cvs version of eris
+
 2004-05-26 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
