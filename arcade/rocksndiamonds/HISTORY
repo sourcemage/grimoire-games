@@ -1,3 +1,6 @@
+2005-03-27 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: added sdl_net
+
 2005-01-19 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS, INSTALL: Updated to Build API 2
 
