@@ -1,33 +1,30 @@
-2003-10-04  Eric Sandall <eric@sandall.us>
-        * DETAILS: Added mirror, main site should be back up soon
+2003-12-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.1
+	* HISTORY: Formatted to Guru Handbook
 
-2003-09-29  Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added mirror, main site should be back up soon
 
-		Can optionally use zip and cppunit
+2003-09-29 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Can optionally use zip and cppunit
+	* DETAILS: 0.3.0 just now released
+	Tested Atlas-C++, wfmath, and eris against the update
+	eris fails, but should be updated soon
 
-		0.3.0 just now released
-		Tested Atlas-C++, wfmath, and eris against the update
-		eris fails, but should be updated soon
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
 
-2003-06-18  hgg <hgreig@bigpond.net.au>
-		
-		New Games grimoire is born!
+2003-05-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.2.5
+	* Removed old patch
 
-2003-05-09  hgg  <hgreig@bigpond.net.au>
+2003-02-09 Seth Woolley <seth@tautology.org>
+	* DETAILS: Reautomake'd so remd5'd
 
-		Update to 0.2.5
+2002-09-25 Eric Sandall <eric@sandall.us>
+	* BUILD: Removed BUILD, as was only needed on _my_ broken box.
 
-		Removed old patch
+2002-09-16 Eric Sandall <eric@sandall.us>
+	* Added spell
+	* Created spell
 
-2003-02-09  Seth Woolley <seth@tautology.org>
-
-		Reautomake'd so remd5'd
-
-2002-09-25  Eric Sandall <eric@sandall.us>
-
-		Removed BUILD, as was only needed on _my_ broken box.
-
-2002-09-16  Eric Sandall <eric@sandall.us>
-
-		Added spell
-		Created spell
