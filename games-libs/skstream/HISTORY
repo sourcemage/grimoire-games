@@ -1,3 +1,10 @@
+2004-10-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.3.2
+	  Added BUILD_API=2
+	  Use config_query response
+	* PREPARE: Converted to config_query
+	* BUILD: Use config_query response
+
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2
