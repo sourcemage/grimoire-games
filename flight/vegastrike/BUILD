@@ -42,7 +42,7 @@
   cd .. &&
   mv -f data ${INSTALL_ROOT}/usr/share/vegastrike &&
   rm -rf ~/.vegastrike.3.x 		     &&
-  mv -f ~/.vegastrike ~/.vegastrike.old	     &&
+  mv -f ~/.vegastrike ~/.vegastrike.old
   mkdir -p ~/.vegastrike                        &&
   echo "default" > ~/.vegastrike/save.4.x.txt &&
   cp ${INSTALL_ROOT}/usr/share/vegastrike/data/setup.config ~/.vegastrike/  &&

@@ -3,10 +3,8 @@ cd $SOURCE_DIRECTORY &&
 unpack $SOURCE ${MD5[0]} &&
 mv $SOURCE_DIRECTORY/$SPELL-$VERSION-installer/* . &&
 rm -r $SOURCE_DIRECTORY/$SPELL-$VERSION-installer/ &&
-#MD5[1]=21fdb8366452c17e0ebce32fdacc00c7 &&
-#MD5[2]=849d166acd7c4485b0d26a7524a32940 &&
-#MD5[3]=70ffba960c31c4f95e07d54741cf89b3 &&
 tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-source.tgz &&
 tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-setup.tgz &&
-tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-data.tgz 
-
+tar xzf $SOURCE_DIRECTORY/$SPELL-$VERSION-data.tgz &&
+cd $SOURCE_DIRECTORY &&
+patch -p1 < $SCRIPT_DIRECTORY/gl_state.cpp.diff
