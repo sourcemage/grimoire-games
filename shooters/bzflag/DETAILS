@@ -1,12 +1,13 @@
            SPELL=bzflag
-         VERSION=1.10.2
-          SOURCE=$SPELL-$VERSION.20031223.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1.10.2.20031223
+         VERSION=1.10.4
+             SFX=20040125
+          SOURCE=$SPELL-$VERSION.$SFX.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION.$SFX
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-          MD5[0]=548eaf4a7a62fedd745aad190c814e62
+          MD5[0]=34eed1e87393f6a0be4fb63a3c64d447
         WEB_SITE=http://BZFlag.org
          ENTERED=20010922
-         UPDATED=20040106
+         UPDATED=20040126
       LICENSE[0]=GPL
            SHORT="bzflag is a 3D multiplayer network tank battle game."
 cat << EOF
