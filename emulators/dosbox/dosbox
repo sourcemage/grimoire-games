@@ -1,0 +1,6 @@
+#!/bin/bash
+if  xdpyinfo >& /dev/null 
+then  exec /usr/share/games/dosbox/dosbox $*
+else echo "Sorry, Unable to access Display."
+fi
+
