@@ -1,3 +1,6 @@
+2004-11-11 Eric Sandall <eric@sandall.us>
+	* DEPENDS: CVS version can use howl for Zeroconf networking
+
 2004-10-25 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.5
 

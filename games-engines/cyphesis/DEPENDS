@@ -4,4 +4,11 @@ depends  atlas-c++-transitional  &&
 depends  varconf2                &&
 depends  autoconf                &&
 depends  Python                  &&
-depends  postgresql  
+depends  postgresql              &&
+
+if  [  "$CVS"  =  "y"  ];  then
+  optional_depends  howl                               \
+                    ""                                 \
+                    ""                                 \
+                    "for Zeroconf networking support"
+fi
