@@ -1,3 +1,11 @@
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed SOURCE_URL to use SOURCEFORGE_URL
+
+		changed MAINTAINER
+
 2002-05-02  Jerome Zago <jerome.zago@insalien.org>
 
 		Changed SOURCE_URL[0] since prdownloads.sourceforge.net was

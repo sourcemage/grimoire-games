@@ -1,3 +1,11 @@
+2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added MD5 and LICENSE fields
+
+		changed MAINTAINER
+
+		changed SOURCE_URL to use SOURCEFORGE_URL
+
 2002-05-11  David Pradier <pradierdavid@yahoo.fr>
 
 		Added this History file.
