@@ -12,7 +12,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     MENU_ITEM[0]="Falling Block Game"
     MENU_EXEC[0]=${SPELL}
     MENU_DESC[0]=${SHORT}
-           SHORT="Puzzle game similar to Tetris(R)"
+           SHORT="Puzzle game similar to Tetris(R) with OpenGL"
 cat << EOF
 Falling Block Game is a puzzle game that is similar to the Hasbro classic, Tetris. Many such games have been released for a variety of platforms, but most have passable graphics or poor gameplay/piece control.
 EOF
