@@ -1,5 +1,5 @@
 (
-
+  I_DIR="${INSTALL_ROOT}/usr/share/games/scummvm"
   case  $ALSA  in
     y|Y)  DEFINES="$DEFINES  -DUSE_ALSA"  ;
           LIBS="$LIBS  -lasound"  ;;
@@ -31,8 +31,11 @@
 
   make                        	&&
   prepare_install             	&&
-  install -m0755 scummvm /usr/games/scummvm	&&
-  install -m0644 scummvm.xpm /usr/share/icons
-
+  mkdir -p ${I_DIR}
+  install -m0755 scummvm ${I_DIR}	&&
+  install -m0644 scummvm.xpm ${I_DIR}          && 
+  install -m0644 $SCRIPT_DIRECTORY/scummvmrc ${I_DIR}     &&
+  install -m0644 $SCRIPT_DIRECTORY/scummvmrc ${INSTALL_ROOT}/etc/scummvmrc     &&
+  install -m0755 $SCRIPT_DIRECTORY/scummvm ${INSTALL_ROOT}/usr/games/scummvm
 
 ) > $C_FIFO 2>&1
