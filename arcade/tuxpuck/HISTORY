@@ -1,3 +1,7 @@
+2005-01-21 Adam Clark <adamsgl@dhbit.ca>
+	* HISTORY, INSTALL, DETAILS: Updated to Build API 2
+	* DETAILS: Removed MAINTAINER field
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	* HISTORY: Formatted to Guru Handbook
