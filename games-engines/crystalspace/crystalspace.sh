@@ -7,19 +7,19 @@
 #
 
 if  [  -z  "$CRYSTAL"  ];  then 
-  CRYSTAL=/usr/lib/crystalspace
-fi  &&
-
-if  [  -z  "$CS_CONFIGDIR"  ];  then 
-  CRYSTAL=/etc/crystalspace
-fi  &&
-
-if  [  -z  "$CS_DATADIR"  ];  then 
   CRYSTAL=/usr/share/crystalspace
 fi  &&
 
+if  [  -z  "$CS_CONFIGDIR"  ];  then 
+  CS_CONFIGDIR=/etc/crystalspace
+fi  &&
+
+if  [  -z  "$CS_DATADIR"  ];  then 
+  CS_DATADIR=/usr/share/crystalspace
+fi  &&
+
 if  [  -z  "$CS_LIBDIR"  ];  then 
-  CRYSTAL=/usr/lib/crystalspace
+  CS_LIBDIR=/usr/lib/crystalspace
 fi  &&
 
 export  CRYSTAL		&&
