@@ -1,3 +1,6 @@
+2003-12-14 Eric Sandall <eric@sandall.us>
+	* BUILD: Create some default directories
+
 2003-12-11 Eric Sandall <eric@sandall.us>
 	* BUILD: Install some configuration files to /usr/share/games/xmame
 	* DETAILS: Updated to 0.77.1
