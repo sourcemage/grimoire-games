@@ -1,3 +1,7 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* BUILD: Use spell_ok instead of spell_installed
+	  Cleaned up formatting
+
 2005-01-21 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS, INSTALL: Updated to Build API 2
 

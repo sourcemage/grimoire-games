@@ -1,3 +1,6 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* BUILD: Use spell_ok instead of spell_installed
+
 2004-12-13 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS, BUILD: build_api2
 	* BUILD: added fix for openglut

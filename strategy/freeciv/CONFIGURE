@@ -1,11 +1,11 @@
 Xaw3dInstalled=off
 GtkInstalled=off
 Gtk2Installed=off
-if  spell_installed  gtk+2; then
+if  spell_ok  gtk+2; then
   Gtk2Installed=on
-elif  spell_installed gtk+; then
+elif  spell_ok gtk+; then
   GtkInstalled=on
-elif  spell_installed Xaw3d; then
+elif  spell_ok Xaw3d; then
   Xaw3dInstalled=on
 fi
 if  !  grep  -q  "CLIENT="  $SPELL_CONFIG; then

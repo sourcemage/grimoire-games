@@ -1,3 +1,6 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* BUILD,DEPENDS: Use spell_ok instead of spell_installed
+
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
 	* Added gcc 3 patch so that it will compile properly
 	  (at least under 3.4.3, perhaps others can double-check)
@@ -7,7 +10,7 @@
 	* DEPENDS: added --disable-mikmod.
 
 2004-12-2 Arjan Bouter <abouter@sourcemage.org>
-	*DETAILS changed spellname to clanlib,
+	* DETAILS: changed spellname to clanlib,
 	 still fails to compile for me though
 
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>

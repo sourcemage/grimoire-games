@@ -8,7 +8,7 @@ sedit '25a\
 fi                                                       &&
 
 #conflicts between NVIDIA and xfree86/MesaLib headers
-if  !  spell_installed  nvidia_headers
+if  !  spell_ok  nvidia_headers
 then export CFLAGS="$CFLAGS -DGLX_GLXEXT_LEGACY"         &&
     export CXXFLAGS="$CXXFLAGS -DGLX_GLXEXT_LEGACY"  
 

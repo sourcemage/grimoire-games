@@ -1,8 +1,8 @@
 (
-  if spell_installed arts ; then
+  if spell_ok arts ; then
   sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile
   fi                                                                &&
-  if ! spell_installed aalib ; then
+  if ! spell_ok aalib ; then
   sedit "s/BUILD_AA=YES/BUILD_AA=NO/g" Makefile
   fi                                                                &&
   sedit "s/SDLDIR=\/usr\/local\/lib/SDLDIR=\/usr\/lib\//g" Makefile &&
