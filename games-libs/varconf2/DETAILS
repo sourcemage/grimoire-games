@@ -1,5 +1,5 @@
            SPELL=varconf2
-         VERSION=${VERSION:=0.6.1}
+         VERSION=${VERSION:=0.6.2}
 if [ "${CVS}" = "yes" ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -10,13 +10,14 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
 else
           SOURCE=${SPELL/2/}-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL/2/}/$SOURCE
-          MD5[0]=9e60c9ceaecf7bbd78af2e03401affd2
+          MD5[0]=d90ded6e269dfb562e53f72e8f0b2f88
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/2/}-$VERSION
 fi
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL/2/}
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="C++ utility library for editor developers"
 cat << EOF
 Varconf is a C++ utility library for all editor developers. It provides:
