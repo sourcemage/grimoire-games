@@ -1,5 +1,7 @@
 2005-01-17 Adam Clark <adamsgl@dhbit.ca>
-	* Spell renamed to maelstrom
+	* BUILD, DETAILS: Updated to Build API 2
+	* BUILD: Security + gcc 3.4 patches added
+	* Renamed spell from Maelstrom to maelstrom
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_net renamed to sdl_net
