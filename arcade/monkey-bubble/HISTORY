@@ -1,3 +1,9 @@
+2004-06-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.1.9
+	  SOURCE_URL and WEBSITE changed to http://home.gna.org/monkeybubble/
+	* BUILD: fixed formatting, moved to BUILD_API=2
+	* BUILD, gcc-3.4.patch: fix broken code
+
 2004-04-22 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: changed gst-plugins to gstreamer-0.6 (bug #5071)
 
