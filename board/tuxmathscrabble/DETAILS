@@ -1,9 +1,9 @@
            SPELL=tuxmathscrabble
-         VERSION=2.5
+         VERSION=2.6
           SOURCE=TuxMathScrabble_v${VERSION/./_}.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/TuxMathScrabble_v${VERSION/./_}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-          MD5[0]=24417885f1abed68fa9cdb1a03cab521
+          MD5[0]=d0a4c157e28e0202bce9c9f286510a5d
         WEB_SITE=http://www.asymptopia.org/
          ENTERED=20031118
          UPDATED=20031118
