@@ -1,11 +1,13 @@
            SPELL=lbreakout2
-         VERSION=2.2.2
+         VERSION=2.3.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://ftp1.sourceforge.net/lgames/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/lgames/$SOURCE
+          MD5[0]=34c76f31cfb45f6e04b4b668f73572eb
         WEB_SITE=http://lgames.sourceforge.net
          ENTERED=20020129
          UPDATED=20020224
+      LICENSE[0]=GPL
       MAINTAINER=pradierdavid@yahoo.fr
            SHORT='Successor to Lreakout with more levels'
 cat << EOF
@@ -14,4 +16,3 @@ It's got a menu to configure a lot of things and a high score chart.
 It can be played either by mouse or keyboard. New levels can also be
 created, and most other aspects of the game can be customized.
 EOF
-
