@@ -1,0 +1,15 @@
+            SPELL=xgalaga
+          VERSION=2.0
+           SOURCE=$SPELL-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+    SOURCE_URL[0]=http://www.ibiblio.org/pub/X11/contrib/games/$SOURCE
+         WEB_SITE=http://rumsey.org/xgal.html
+       MAINTAINER=v.merkatz@gmx.net
+           MD5[0]=7134a86d33bb7e9a16825cdad330c518
+       LICENSE[0]=GPL
+         ENTERED=20020916
+         UPDATED=20020916
+           SHORT="xgalaga is a clone of the famous game galaga"
+cat << EOF
+xgalaga is a clone of the famous 2d shooter galaga using the x windows system
+EOF
