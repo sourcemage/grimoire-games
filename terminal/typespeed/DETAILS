@@ -1,0 +1,19 @@
+           SPELL=typespeed
+         VERSION=0.4.1
+       BUILD_API=2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.sicom.fi/~bestis/typespeed-0.4.1.tar.gz
+        WEB_SITE=http://www.sicom.fi/~bestis/typespeed.html
+         ENTERED=20040814
+         UPDATED=20040814
+          MD5[0]=a0f979d4764edae93c789616250b241c
+      LICENSE[0]=GPL
+           SHORT="Test your typing speed, and get your fingers' CPS."
+cat << EOF
+Typespeed gives your fingers' cps (total and correct), typoratio and some
+points to compare with your friends.
+Typespeed's idea is ripped from ztspeed (a dos game made by Zorlim). Idea
+of the game should be clear to anyone, just type and type it fast, or be a
+lewser.
+EOF
