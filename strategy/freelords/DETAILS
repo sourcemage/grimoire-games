@@ -1,10 +1,10 @@
            SPELL=freelords
-         VERSION=0.2.3
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+         VERSION=0.3
+          SOURCE=${SPELL}_${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_sdl
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://download.freelords.org/sources/${SOURCE}
-          MD5[0]=bd28573b2c7a6aa7905831a59eff77d4
+          MD5[0]=19c24caf31d3b76beeb2e01af812bf4c
         WEB_SITE=http://www.freelords.org/
          ENTERED=20020826
          UPDATED=20020826
