@@ -8,25 +8,25 @@ rm  -f  $SPELL_CONFIG
 
   sedit  's:TARGET = mame:TARGET = mess:'  makefile.unix  &&
 
-  I_DIR="/usr/share/games/${SPELL}"  &&
+  I_DIR="/usr/share/games/${SPELL}"         &&
 
   # Fix permission problems accessing ${SOURCE_DIRECTORY}/doc/ on install
   chown  -R  root.root  src                 &&
   rm  doc                                   &&
   ln  -sf  src/unix/doc  doc                &&
 
-  make  PREFIX=${INSTALL_ROOT}/usr                         \
-        BINDIR=${INSTALL_ROOT}/usr/games                   \
-        CFLAGS="${CFLAGS/-O[3-9]/-O2}"	     \
+  make  PREFIX=${INSTALL_ROOT}/usr          \
+        BINDIR=${INSTALL_ROOT}/usr/games    \
+        CFLAGS="${CFLAGS/-O[3-9]/-O2}"      \
         CXXFLAGS="${CXXFLAGS/-O[3-9]/-O2}"  \
         -f  makefile.unix                   &&
   prepare_install                           &&
-  make  PREFIX=${INSTALL_ROOT}/usr                         \
-        BINDIR=${INSTALL_ROOT}/usr/games                   \
+  make  PREFIX=${INSTALL_ROOT}/usr          \
+        BINDIR=${INSTALL_ROOT}/usr/games    \
         -f  makefile.unix                   \
-        install   &&
-  mkdir  -p  ${I_DIR}  &&
-  chown  -R  root.games  ${I_DIR}  &&
+        install                             &&
+  mkdir  -p  ${I_DIR}                       &&
+  chown  -R  root.games  ${I_DIR}           &&
   cp  -r  ctrlr  ${I_DIR}
 
 

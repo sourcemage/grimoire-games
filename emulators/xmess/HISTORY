@@ -1,3 +1,9 @@
+2004-06-22 Jason Flatt <jflatt@sourcemage.org>
+	* BUILD: Cleaned up whitespace a bit.
+	* DETAILS: Updated to version 0.83.1
+	  Removed MAINTAINER.
+	  Removed MAKE_NJOBS.
+
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
 
