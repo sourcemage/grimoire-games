@@ -1,3 +1,7 @@
+2003-07-02  hgg <hgreig@bigpond.net.au>
+
+                Check for gcc3.3 before applying assert.h fixes
+
 2003-06-28  hgg <hgreig@bigpond.net.au>
 
 		Add BUILD and fix for gcc3.3
