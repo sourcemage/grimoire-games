@@ -1,3 +1,8 @@
+2003-03-29  Eric Sandall <eric@sandall.us>
+
+		Script now runs bin/freelords, since that
+		is where the binary expects to be
+
 2003-03-21  Eric Sandall <eric@sandall.us>
 
 		Updated to 0.2.1  (Bug #2853)
