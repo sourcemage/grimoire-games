@@ -1,24 +1,24 @@
            SPELL=freedroidrpg
-         VERSION=0.9.10
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=0.9.12
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 SOURCE_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE
-          MD5[0]=a3ac8668f361676c44ce194d65606ebf
+          MD5[0]=5b8b8e74e641c73645a7597ca8515707
       LICENSE[0]=GPL
         WEB_SITE=http://freedroid.sourceforge.net/
          ENTERED=20030818
-         UPDATED=20040126
+         UPDATED=20040410
          ARCHIVE="off"
            SHORT="a Diablo-like extension of freedroid (clone of  C64  Paradroid) into an RPG."
 cat << EOF
-FreedroidRPG is derived from the original classic Freedroid 
-based on the game paradroid from the commodore 64.  In this game you 
-are Tux, one of a race sentient penguins.  Humanity is in ruins due 
-to the evil MegaSoft corporation and their original plans to rule the 
-human race.  An attempt to use their omnipresent software to take 
-over all droids, upon which humanity depended, backfired when the droids 
-themselves became self-aware and decided to put forth their own plans 
-for total domination.  As Tux, it is your job to restore things to 
-their rightful place and undue the horrible, evil, and thouroughly 
-inhumane things initiated by this MS corporation. 
+FreedroidRPG is derived from the original classic Freedroid
+based on the game paradroid from the commodore 64.  In this game you
+are Tux, one of a race sentient penguins.  Humanity is in ruins due
+to the evil MegaSoft corporation and their original plans to rule the
+human race.  An attempt to use their omnipresent software to take
+over all droids, upon which humanity depended, backfired when the droids
+themselves became self-aware and decided to put forth their own plans
+for total domination.  As Tux, it is your job to restore things to
+their rightful place and undue the horrible, evil, and thouroughly
+inhumane things initiated by this MS corporation.
 EOF
