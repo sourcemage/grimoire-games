@@ -1,3 +1,6 @@
+2004-09-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: MD5 fix
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	  Formatted to Guru Handbook
