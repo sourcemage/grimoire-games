@@ -1,9 +1,9 @@
            SPELL=Atlas-C++
-         VERSION=0.4.5
+         VERSION=0.4.6
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://victor.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=dc67fc5e79fa43e036ee4d666bb3bc75
+          MD5[0]=07f36239b9ecc998697a972d4e5df76b
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20020915
          UPDATED=20020915

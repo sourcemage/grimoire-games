@@ -1,9 +1,9 @@
            SPELL=wfmath
-         VERSION=0.2.10
+         VERSION=0.2.11
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
-          MD5[0]=933d9b0fb713235744a1dae49db30d0b
+          MD5[0]=9eacd200e3d723ddf5a552a0e9e77682
         WEB_SITE=ftp://victor.worldforge.org/pub/worldforge/libs/$SPELL/
          ENTERED=20020915
          UPDATED=20020915
