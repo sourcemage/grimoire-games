@@ -1,9 +1,9 @@
            SPELL=tuxpuck
-         VERSION=0.8.1
+         VERSION=0.8.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.efd.lth.se/~d00jkr/tuxpuck/$SOURCE
-          MD5[0]=d9bc0e299324ff7e402863c4a473f813
+          MD5[0]=58b64d38868d19f0fd491ea3c7bb8eb2
         WEB_SITE=http://www.efd.lth.se/~d00jkr/tuxpuck/
          ENTERED=20011214
          UPDATED=20020324
