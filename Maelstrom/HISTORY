@@ -1,6 +1,6 @@
 2003-01-25  Eric Sandall <eric@sandall.us>
 
-		Added a BUILD to install data files into /usr/lib/games
+		Added a BUILD to install data files into /usr/share/games
 		rather than /usr/games, since I don't know configure
 		all that well, the path has to be set to /usr/bin, so 
 		I cannot install that into /usr/games, as it should be.

@@ -1,3 +1,11 @@
+2003-01-26  Eric Sandall <eric@sandall.us>
+
+		Updated to 5.5.8  (Bug #2386, thanks to Snakebyte)
+
+		Modifed BUILD to install data into /usr/lib/games,
+		can't have the binary in only /usr/games, same
+		problem as before
+
 2002-09-03  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		New version: 5.5.7

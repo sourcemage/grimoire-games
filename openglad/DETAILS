@@ -1,11 +1,11 @@
            SPELL=openglad
-         VERSION=0.95.1
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/snowstorm/$SOURCE
+         VERSION=0.97
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/snowstorm/${SOURCE}
         WEB_SITE=http://snowstorm.sourceforge.net/cgi-bin/site.cgi
       LICENSE[0]=GPL
-          MD5[0]=be068a41e65d060d6cedcf491eef181f
+          MD5[0]=e5f45ea8900cd18c1a7b813d6a2720e9
       MAINTAINER=v.merkatz@gmx.net
          ENTERED=20021211
          UPDATED=20021211

@@ -5,7 +5,7 @@
 		Had to modify DETAILS and BUILD, as there is no
 		longer a -src-all.  :(
 
-		Modified BUILD to install data into /usr/lib/games
+		Modified BUILD to install data into /usr/share/games
 
 2002-10-23  Arwed v. Merkatz <v.merkatz@gmx.net>
 

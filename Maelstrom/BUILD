@@ -1,7 +1,7 @@
 (
 
   ./configure  --build=${BUILD}            \
-               --prefix=/usr/lib           \
+               --prefix=/usr/share         \
                --bindir=/usr/bin           \
                --sysconfdir=/etc           \
                --localstatedir=/var/games  \
