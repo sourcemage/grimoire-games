@@ -1,7 +1,6 @@
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* Renamed to clanlib-devel
-	* DEPENDS: clanlib-devel added...
-	* Process of deprecation commences
+	* DETAILS, DEPENDS, BUILD: Some minor fixes
+	* Renamed spell to clanlib-devel
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* BUILD, DEPENDS: Remove check for NVIDIA_driver/NVIDIA_headers

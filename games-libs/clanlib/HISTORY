@@ -1,12 +1,11 @@
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* Renamed to clanlib-devel
-	* DEPENDS: clanlib-devel added...
-	* Process of deprecation commences
+	* Renamed to clanlib
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* BUILD, DEPENDS: Remove check for NVIDIA_driver/NVIDIA_headers
 	* BUILD: Converted to BUILD_API 2
 	* DETAILS: BUILD_API=2
+	  Removed MAINTAINER
 
 2004-07-18 Eric Sandall <eric@sandall.us>
 	* BUILD: Just in case they're on the stable grimoire with NVIDIA_headers
@@ -15,10 +14,6 @@
 	* DEPENDS: Depends on nvidia_header if nvidia_driver is installed
 	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
 	  renames make it into stable grimoire
-
-2004-05-24 Andrew "ruskie" Levstik <ruskie@email.si>
-	* Forked from the ClanLib spell... pingus and wormux still depend on 0.6.x
-	* CONFLICTS: ClanLib-unstable
 
 2004-02-20 David C. Haley <dhaley@hot.rr.com>
 	* DETAILS: Minor spelling corrections

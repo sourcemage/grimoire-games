@@ -1,3 +1,7 @@
+2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-libs/ClanLib: Rename to games-libs/clanlib
+	* games-libs/ClanLib-unstable: Rename to games-libs/clanlib-devel
+
 2004-10-30 Eric Sandall <eric@sandall.us>
 	* strategy/ASC: Renamed to strategy/asc
 
