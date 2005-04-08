@@ -1,3 +1,6 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* FUNCTIONS: Branched from devel so games has up-to-date FUNCTIONS
+
 2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/TORCS: Removed deprecated
 	* flight/SearchAndRescue: Renamed to flight/searchandrescue
