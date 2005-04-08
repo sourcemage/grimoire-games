@@ -5,4 +5,5 @@ sedit  "s:lib/games:share/games/nethackdir:"  Makefile &&
 sedit  "s:/usr/games/lib:/usr/share/games/nethackdir/:"  Makefile &&
 sedit  's:^SHELLDIR = \$(PREFIX)/bin.*$:SHELLDIR = \$(PREFIX)/games:' Makefile &&
 
+make_single  &&
 make  all

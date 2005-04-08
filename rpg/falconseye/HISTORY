@@ -1,3 +1,14 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1 and MAINTAINER
+	  Shortened SHORT
+	  Added BUILD_API=2
+	* BUILD: Run make_single before make
+	  Converted to build_api 2
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Run make_normal before installation
+	* POST_INSTALL, FINAL: POST_INSTALL renamed to FINAL
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	* HISTORY: Formatted to Guru Handbook

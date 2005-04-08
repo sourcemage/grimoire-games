@@ -1,3 +1,19 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	  Added BUILD_API=2
+	* CONFIGURE: Converted to config_query
+	  Renamed variables to NETHACK_<var>
+	* DEPENDS: Use config_query variables
+	* BUILD: Run make_single before make
+	  Converted to build_api 2
+	  Some cleanup...
+	  Renamed variables to NETHACK_<var>
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Run make_normal before installation
+	  Some cleanup...
+	  Renamed variables to NETHACK_<var>
+
 2004-07-01 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* CONFLICTS: added conflicts on gtk2hack
 
@@ -8,7 +24,8 @@
 	* BUILD: create /usr/games if it doesn't exist
 
 2003-09-02 hgg <hgreig@bigpond.net.au>
-	* DETAILS,BUILD: Update to 3.4.2 and finish qt-x11 and gnome windowing builds
+	* DETAILS,BUILD: Update to 3.4.2 and finish qt-x11 and gnome windowing
+	  builds
 
 2003-08-24 Eric Sandall <eric@sandall.us>
 	* DETAILS:One make job
@@ -19,7 +36,8 @@
 	* More work!
 
 2003-07-25 hgg <hgreig@bigpond.net.au>
-	* BUILD: Beginning of spell rewrite to use all available windowing systems
+	* BUILD: Beginning of spell rewrite to use all available windowing
+	  systems
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
@@ -32,7 +50,8 @@
 	* BUILD: Update for ${INSTALL_ROOT}
 
 2002-10-24 Eric Sandall <eric@sandall.us>
-	* POST_INSTALL: Fixed POST_INSTALL to create /usr/games if it doesn't exist
+	* POST_INSTALL: Fixed POST_INSTALL to create /usr/games if it doesn't
+	  exist
 
 2002-09-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: removed dependency on xfree86 (fixes bug #930)

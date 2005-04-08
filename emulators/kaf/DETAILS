@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
          ENTERED=20031212
          UPDATED=20031212
       LICENSE[0]=GPL
-      MAKE_NJOBS=1
        BUILD_API=2
            SHORT="Khelben Arcade Frontend is an XMAME frontend"
 cat << EOF

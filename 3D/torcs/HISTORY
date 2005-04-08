@@ -1,3 +1,8 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	* BUILD: Run make_single before make
+	* INSTALL: Run make_normal before default_install
+
 2005-02-23 Eric Sandall <eric@sandall.us>
 	* Renamed from 3D/TORCS
 	* DETAILS: Renamed to torcs

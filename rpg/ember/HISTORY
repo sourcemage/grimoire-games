@@ -1,3 +1,7 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	* BUILD: Run make_single before make and make_normal afterwards for CVS
+
 2005-03-14 Eric Sandall <eric@sandall.us>
 	* DEPENDS: False dependency on boost fixed in CVS
 
@@ -8,7 +12,8 @@
 	  Added MAKE_NJOBS=1 and FORCE_DOWNLOAD="on"
 	  Moved media (SOURCE2) to ember-media
 	* DEPENDS: Removed freetype2 and xerces-c (cegui depends on them)
-	  Added mercator, removed wfmath and libsigc++ (mercator depends on them)
+	  Added mercator, removed wfmath and libsigc++ (mercator depends on
+	  them)
 	  Added boost (again)
 	  Ember does not work when ogre is built with GLX
 	  Added message that ember needs eris/devel and atlas-c++/devel
@@ -60,3 +65,4 @@
 
 2003-10-13 Eric Sandall <eric@sandall.us>
 	* Created wfmath
+

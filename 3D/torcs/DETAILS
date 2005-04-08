@@ -41,7 +41,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$SPELL-${VERSION/c/}
          ENTERED=20010926
          UPDATED=20050223
             FUZZ="off"
-      MAKE_NJOBS=1
        BUILD_API=2
            SHORT="3D racing cars simulator using OpenGL"
 cat << EOF

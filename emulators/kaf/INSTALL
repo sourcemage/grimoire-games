@@ -1,3 +1,5 @@
+make_normal  &&
+
 if  [  !  -d  /usr/games  ]
 then
   install  -o  root  -g  games  -m  755  -d  /usr/games

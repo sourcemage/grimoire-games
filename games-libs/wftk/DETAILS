@@ -17,7 +17,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]="LGPL,GPL"
-      MAKE_NJOBS=1
        BUILD_API=2
            SHORT="WorldForge Toolkit widget library"
 cat << EOF

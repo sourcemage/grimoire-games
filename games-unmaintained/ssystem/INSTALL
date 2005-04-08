@@ -1,0 +1,2 @@
+make_normal                                                      &&
+make  SDATADIR=${INSTALL_ROOT}/usr/share/games/ssystem  install

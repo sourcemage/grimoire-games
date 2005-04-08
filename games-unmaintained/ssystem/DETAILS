@@ -8,10 +8,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20010922
          UPDATED=20010922
           REJECT="Authors closed this project"
-      MAKE_NJOBS=1
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
-           SHORT="ssystem is an OpenGL solar system simulator."
+       BUILD_API=2
+           SHORT="OpenGL solar system simulator"
 cat << EOF
 Ssystem is an OpenGL Solar System simulator. It will let you visit the
 Sun, the nine planets and a few major satellites (catalog based

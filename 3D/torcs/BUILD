@@ -6,4 +6,5 @@
         --sysconfdir=${INSTALL_ROOT}/etc         \
      --localstatedir=${INSTALL_ROOT}/var/games   \
                      ${OPTS}                     &&
+make_single                                      &&
 make

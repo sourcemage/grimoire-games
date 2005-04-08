@@ -9,7 +9,6 @@
         BUILD_API=2
           ENTERED=20020518
           UPDATED=20020518
-       MAKE_NJOBS=1
            SHORT="OpenGL port of the famous nethack"
 cat << EOF
 glHack is a port of the game NetHack, using hardware acceleration via OpenGL® to render the 2D graphics.  It uses LibSDL as the video and input library. 

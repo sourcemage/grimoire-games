@@ -1,3 +1,4 @@
+make_normal    &&
 make  install  &&
 
 mv  /usr/share/games/nethackdir/glhack/glhack  /tmp/glhack.bin         &&

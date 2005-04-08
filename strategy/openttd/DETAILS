@@ -6,10 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.openttd.com/
          ENTERED=20040708
          UPDATED=20040708
-      MAKE_NJOBS=1
           MD5[0]=8b683d21bdc40b9c6692660a70f1e23d
        BUILD_API=2
-           SHORT="An open source clone of the Microprose game 'Transport Tycoon Deluxe'"
+           SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF
 OpenTTD is modeled after the original Transport Tycoon game by
 Chris Sawyer and enhances the game experience dramatically.

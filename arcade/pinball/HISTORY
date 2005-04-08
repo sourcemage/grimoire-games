@@ -1,3 +1,7 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	* BUILD: Run make_single before make and make_normal afterwards
+
 2005-01-17 Robin Cook <rcook@wyrms.net>
 	* DETAILS: added BUILD_API=2
 	* BUILD: removed the C_FIFO and items in install etc.

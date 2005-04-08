@@ -6,11 +6,10 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\a/}
           MD5[0]=5c26c9907e58db6a960fd866e8ee64eb
         WEB_SITE=http://pinball.sourceforge.net/
       LICENSE[0]=GPL
-      MAKE_NJOBS=1
        BUILD_API=2
          ENTERED=20020303
          UPDATED=20031212
-           SHORT="pinball is the Emilia pinball project."
+           SHORT="Emilia pinball project"
 cat << EOF
 The Emilia Pinball Project strives to fulfill your needs for a great
 pinball game in Linux.
