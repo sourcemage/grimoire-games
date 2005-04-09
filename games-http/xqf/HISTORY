@@ -1,3 +1,6 @@
+2005-04-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0.3
+
 2005-01-08 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0.2
 	* DEPENDS: Optionally depends on geoip
