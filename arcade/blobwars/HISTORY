@@ -1,3 +1,7 @@
+2005-04-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.03-2
+	  BUILD_DIRECTORY now should work on version updates
+
 2005-01-23 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 1.02
 	* Put into official games grimoire
@@ -24,3 +28,4 @@
 
 2004-10-09 Neuron <vlmarek@volny.cz>
 	* created this spell
+
