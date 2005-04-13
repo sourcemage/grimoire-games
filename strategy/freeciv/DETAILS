@@ -1,12 +1,12 @@
            SPELL=freeciv
 if  [  "$FREECIV_BETA"  ==  "y"  ];  then
-         VERSION=2.0.0-beta8
+         VERSION=2.0.0-rc1
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/beta/freeciv-2.0.0-beta8.tar.bz2
+   SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/beta/$SOURCE
    SOURCE_URL[1]=ftp://ftp.netc.pt/pub/freeciv/beta/$SOURCE
    SOURCE_URL[2]=ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.freeciv.org/beta/$SOURCE
-          MD5[0]=10e32a98c92ab7503def84e4bd852da5
+          MD5[0]=370da2ec243d50e1691fe89ddf3ae67d
 else
          VERSION=1.14.2
           SOURCE=${SPELL}-${VERSION}.tar.bz2

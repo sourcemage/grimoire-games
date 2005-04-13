@@ -1,3 +1,7 @@
+2005-04-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated beta to 2.0.0-rc1
+	  Use $SOURCE for SOURCE_URL[0]
+
 2005-03-15 Eric Sandall <eric@sandall.us>
 	* PREPARE,DETAILS: Added option for beta version
 
