@@ -1,3 +1,9 @@
+2005-04-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated stable to 2.0.0
+	  Removed beta option
+	  SOURCE_URL now uses /stable
+	* PREPARE: Removed (2.0.0 is now stable)
+
 2005-04-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated beta to 2.0.0-rc1
 	  Use $SOURCE for SOURCE_URL[0]
