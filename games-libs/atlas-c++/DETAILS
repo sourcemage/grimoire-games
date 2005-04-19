@@ -8,10 +8,10 @@ if    [  "$ATLAS_CPP_BRANCH"  =  "cvs"  ];  then
   FORCE_DOWNLOAD=1
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 elif  [  "$ATLAS_CPP_BRANCH"  =  "devel"  ];  then
-         VERSION=0.5.92
+         VERSION=0.5.94
           SOURCE=Atlas-C++-$VERSION.tar.bz2
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-          MD5[0]=8431d1f71463cb8b83bc0960eb0bec4c
+          MD5[0]=034712043635f8cb30cf4d59e12f2de3
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
 else
           SOURCE=Atlas-C++-$VERSION.tar.bz2
