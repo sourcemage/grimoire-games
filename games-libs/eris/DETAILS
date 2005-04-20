@@ -7,20 +7,20 @@ if    [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
 elif  [  "$ERIS_BRANCH"  ==  "devel"  ];  then
-         VERSION=1.3.3
-          SOURCE=${SPELL}-${VERSION}.tar.gz
+         VERSION=1.3.4
+          SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
-   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=7de5fd09662bb767c0278de26dc471a0
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
+          MD5[0]=3b9ce3008141eb3284640224b0e114f1
 else
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
-   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
+          SOURCE=$SPELL-$VERSION.tar.bz2
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
           MD5[0]=639b47e22b10f3a991131dca19eb841f
 fi
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
