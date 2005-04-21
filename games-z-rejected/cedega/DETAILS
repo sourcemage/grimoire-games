@@ -1,6 +1,6 @@
            SPELL=cedega
-         VERSION=4.3.1-1.i386
-          SOURCE=${SPELL}_$VERSION.tgz
+         VERSION=4.3.1-1
+          SOURCE=${SPELL}_$VERSION.i386.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
           MD5[0]=48aa6fa6af170ebe09bd75d0933e3122
         WEB_SITE=http://www.transgaming.com/
