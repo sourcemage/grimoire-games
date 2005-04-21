@@ -1,0 +1,2 @@
+chown  root.games  *  -R  &&
+cp  -a  *  $INSTALL_ROOT/
