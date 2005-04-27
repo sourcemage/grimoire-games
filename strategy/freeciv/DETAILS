@@ -1,5 +1,5 @@
            SPELL=freeciv
-         VERSION=2.0.0
+         VERSION=2.0.1
           SOURCE=$SPELL-$VERSION.tar.bz2
          SOURCE2=stdsounds2.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[2]=ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.freeciv.org/stable/$SOURCE
   SOURCE2_URL[0]=http://www.freeciv.org/ftp/contrib/sounds/sets/${SOURCE2}
           MD5[0]=f990dbd15dc9268f2dc9e52a31e01e33
-          MD5[1]=448e81657e28e50a10aba8f36e31ee03
+          MD5[1]=9dfeaab9452c45d2649cff7334dd0093
         WEB_SITE=http://www.freeciv.org/
          ENTERED=20010922
          UPDATED=20010922
