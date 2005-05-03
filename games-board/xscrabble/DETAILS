@@ -1,0 +1,19 @@
+           SPELL=xscrabble
+         VERSION=2.10
+          SOURCE=${SPELL}-${VERSION}.tgz
+         SOURCE2=${SPELL}_en.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.ac-grenoble.fr/ge/educational_games/${SOURCE}
+  SOURCE2_URL[0]=ftp://ftp.ac-grenoble.fr/ge/educational_games/${SOURCE2}
+          MD5[0]=8b9d9e8332ce6041e41d446c2a0a955d
+          MD5[1]=e7161dbf2a8b7ca9171e7ec00d4dc852
+        WEB_SITE=http://freshmeat.net/projects/xscrabble/
+         ENTERED=20031118
+         UPDATED=20031118
+      LICENSE[0]=GPL
+      LICENSE[1]=GPL
+            DOCS="CHANGES LICENSE README"
+           SHORT="Xscrabble is a networked, international implementation of Scrabble(TM)"
+cat << EOF
+Xscrabble is an enhancement of Matt Chapman's original Xscrabble program, which is a networked scrabble implementation for the X Window System. Among other things, version 2 adds internationalization features. English and French are currently supported (the corresponding dictionary files should be downloaded separately from the main package).
+EOF

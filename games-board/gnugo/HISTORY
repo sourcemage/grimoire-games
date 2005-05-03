@@ -1,0 +1,32 @@
+2004-05-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Bump added to the games grimoire
+
+2004-05-15 Lejarton <lejatorn@linuxmail.org>
+        * DETAILS: Update to 3.5.6 and change of url.
+
+2003-10-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 3.4
+	* POST_BUILD: removed now that bug #1068 is fixed
+	* HISTORY: convert to new format
+
+2003-07-03 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Added optional_depends cgoban, to play with a gui front end
+
+2003-06-28 hgg <hgreig@bigpond.net.au>
+	* BUILD: Fix for gcc3.3
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* ALL: New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: added MD5 and LICENSE fields
+	  changed MAINTAINER
+
+2002-04-26 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 3.2
+	* BUILD: Man and info pages now go into /usr/share/{info|man} (FHS compliance).
+	* POST_BUILD: Added to avoid the unnecessary 'gather_docs' step.
+
