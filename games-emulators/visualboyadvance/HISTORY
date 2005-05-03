@@ -1,7 +1,3 @@
-2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* BUILD,DEPENDS,PRE_BUILD,TRIGGERS: deprecation protocls in effect
-	* Lo-case rename to visualboyadvance
-
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
