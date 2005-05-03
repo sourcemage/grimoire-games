@@ -1,1 +1,23 @@
-depends OPENGL
+depends  OPENGL   &&
+
+if  [  "$BZFLAG_CLIENT"  ==  "--enable-client"  ];  then
+  depends  sdl  '--with-sdl'
+fi  &&
+
+if  [  "$BZFLAG_CURL"  ==  "--enable-curl"  ];  then
+  depends  curl  &&
+  #
+  # The curl test uses bc for calculations
+  #
+  depends  bc
+fi  &&
+
+optional_depends  krb5                                   \
+                  "--with-kerberos"                      \
+                  "--without-kerberos"                   \
+                  "for Kerberos authentication support"  &&
+
+optional_depends  adns                  \
+                  "--with-adns"         \
+                  "--without-adns"      \
+                  "hostmask based bans"

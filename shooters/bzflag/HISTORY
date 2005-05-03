@@ -1,3 +1,11 @@
+2005-05-02 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Added options for threading, client, server, robots
+	  and snapping
+	  Query for curl and sdl usage
+	* DEPENDS: Added optional dependencies on sdl (if building client),
+	  curl (if wanted in CONFIGURE), adns, and kerberos
+	* BUILD: Add CONFIGURE options to OPTS
+
 2005-03-18 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.0.2.20050318
 	  Moved SFX to part of VERSION
