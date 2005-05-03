@@ -1,0 +1,11 @@
+#config_query  PYSOL_CARDSETS  "Do you want additional cardsets (~17Mb)?"  y  &&
+#config_query  PYSOL_SOUND     "Do you want sound (~149Kb)?"               y  #&&
+#config_query  PYSOL_MUSIC     "Do you want music (~1.7Mb)?"               y
+
+persistent_add  PYSOL_CARDSETS  \
+                PYSOL_SOUND     \
+                PYSOL_MUSIC     &&
+
+PYSOL_CARDSETS="n"  &&
+   PYSOL_SOUND="n"  &&
+   PYSOL_MUSIC="n"

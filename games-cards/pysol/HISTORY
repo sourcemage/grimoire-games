@@ -1,0 +1,79 @@
+2005-03-29 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Needs tk and python built against tk
+
+2005-03-04 Eric Sandall <eric@sandall.us>
+	* Thought process that lead to this thanks to Ben Ford :)
+	* PREPARE: Don't use persistent_add for versions ;)
+	  Default to 'y' for cardsets, sound, and music
+	  Disable all of them as only sound-server can be downloaded :(
+	  If someone has a copy of these we can put them on our mirror
+	* DETAILS: Moved the setting of extra SOURCE information from PREPARE
+	  Updated pysol-sound-server to 3.0.1
+	* PRE_BUILD: Don't patch Makefile.patch
+	* BUILD: No longer try to compile pysol (it's a script after all...)
+	  Modify src/pysolaudio.py to make soundserver optional (copied from	
+	  the pysol-compile.sh script)
+	* INSTALL: Install scripts and data
+	* Makefile,Makefile.patch,pysol-compile.sh: Removed
+	* pysol: Added wrapper script
+
+2005-01-19 Eric Sandall <eric@sandall.us>
+	* Thanks to
+	  http://www.fedoraforum.org/forum/archive/index.php/t-2543.html
+	  I've found the pysol source files (Markus no longer distributes, or
+	  even works on, PySol) in pysol-devel from http://www.btree.org/linux/packages/fedora/core/2/i386/pysol-devel-4.82-2.noarch.rpm
+	* pysol-compile.sh: Grabbed and modified from 
+	  http://www.gophernet.org/projects/pysol-compile.sh
+	* DETAILS: Added BUILD_API=2
+	  Removed MAINTAINER
+	  Download the -src as well, duh!
+	  SOURCE2 is now for the data files (binaries, old SOURCE)
+	* PREPARE: Converted to config_query
+	* DEPENDS: Moved sound dependencies from PREPARE to DEPENDS
+	* PRE_BUILD: Unpack SOURCE2 as well and increment other SOURCEs and MD5s
+	  Apply Makefile.patch
+	* BUILD: Converted to build_api 2
+	  Build the source code
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Use $VERSION instead of hardcoding
+	* Makefile: Removed
+	* Makefile.patch: Added (smaller than copying the whole Makefile)
+	* Makefile.sound: Updated python version to 2.4
+
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Python renamed to python in stable
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* PREPARE: SDL renamed to sdl
+	  Added "&&" for depends
+
+2003-11-26 hgg <hgreig@bigpond.net.au>
+	* BUILD: needs to make a dir if it doesn't exist
+
+2003-09-03 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 4.82
+	  Removed extra SOURCE_URL[0], not sure how this ever worked
+	  with two of them listed
+	  Changed remaining SOURCE_URL[0] to use new site
+	* PREPARE: Added optional sound, music, and cardset
+	* BUILD: Installs into /usr/share/games instead of /usr/share and
+	  /usr/games instead of /usr/bin
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: temporarily changed to SOURCE_URL as authors server not
+	  uptodate
+
+2002-08-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated version to 4.81
+	  Added MD5 and LICENSE
+
+2002-03-20 Kyle Sallee <anonymous@sourcemage.org>
+	* Spell was accepted by <pradierdavid@yahoo.fr>
+
+2002-03-08 Kyle Sallee <anonymous@sourcemage.org>
+	* Spell was submitted by eric@schabell.com
+
