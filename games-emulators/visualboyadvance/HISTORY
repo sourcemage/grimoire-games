@@ -1,3 +1,6 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: lo-casing of spell... also fixes bug #8797
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 

@@ -9,4 +9,4 @@ sedit   "s/-O2 -fomit-frame-pointer/$CFLAGS/"     \
 
 sh    sys/unix/setup.sh                           &&
 make_single                                       &&
-make  all                                         &&
+make  all

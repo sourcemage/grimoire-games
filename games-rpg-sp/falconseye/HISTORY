@@ -1,3 +1,6 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD:fixes bug #8797 was an extra &&
+
 2005-04-07 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAKE_NJOBS=1 and MAINTAINER
 	  Shortened SHORT

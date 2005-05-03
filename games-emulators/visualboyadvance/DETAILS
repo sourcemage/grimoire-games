@@ -1,4 +1,4 @@
-           SPELL=VisualBoyAdvance
+           SPELL=visualboyadvance
          VERSION=1.7.2
           SOURCE=${SPELL}-src-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
