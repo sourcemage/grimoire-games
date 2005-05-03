@@ -1,0 +1,20 @@
+default_install  &&
+
+chown  -R  games.games              \
+       /usr/games/crossedit         \
+       /usr/games/crossfire         \
+       /usr/games/crossfire-config  \
+       /usr/games/crossloop         \
+       /usr/games/crossloop.pl      \
+       /usr/games/crossloop.web     \
+       /usr/games/player_dl.pl      \
+       /etc/crossfire               \
+       /var/games/crossfire         &&
+
+chmod  u+s  /usr/games/crossedit         \
+            /usr/games/crossfire         \
+            /usr/games/crossfire-config  \
+            /usr/games/crossloop         \
+            /usr/games/crossloop.pl      \
+            /usr/games/crossloop.web     \
+            /usr/games/player_dl.pl

@@ -1,0 +1,41 @@
+2004-11-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed data sources, moved to crossfire-data  (Bug #7605)
+	  Shortened SHORT
+	* INSTALL: Modified to set correct permissions
+	* DEPENDS: Added dependency on crossfire-data
+	* BUILD: Added to install binaries to /usr/games  (Bug #7605)
+	  Install state data to /var/games/crossfire
+	* HISTORY: Formatted to Guru Handbook
+
+2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Update to 1.6.0 bug #7261
+	* DETAILS: Build api 2
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Upodated to 1.5.0
+	  Added big maps for server
+	  Allowed bz2 files if available (many megs saved)
+
+2002-10-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.4.0 (and changed to .gz as they don't use .bz2
+	  anymore :()
+
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Added missing md5sum
+	  Changed maintainer
+	* HISTORY: Fixed for standard compliance :)
+
+2002-08-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.3.0
+	  Modified to use $SOURCEFORGE_URL
+	  Added MD5 and LICENSE
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this file
+

@@ -1,0 +1,5 @@
+local  I_DIR                                     &&
+I_DIR=${INSTALL_ROOT}/usr/share/games/crossfire  &&
+mkdir  -p  $I_DIR                                &&
+chown  games:games  -R  *                        &&
+cp  -a  .  $I_DIR

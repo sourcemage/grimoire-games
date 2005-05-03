@@ -1,0 +1,8 @@
+2005-03-31 Andrew Stitt <astitt@sourcemage.org>
+	* DETAILS: fix syntax error
+
+2005-03-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: fixed some minor quill bugs... bug #8374
+
+2005-02-12 Neuron <vlmarek@volny.cz>
+	* DETAILS, DEPENDS, BUILD, HISTORY: created spell by quill

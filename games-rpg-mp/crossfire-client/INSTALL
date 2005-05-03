@@ -1,0 +1,6 @@
+default_install  &&
+
+chown  -R  games.games       \
+       /usr/games/cfclient   \
+       /usr/games/cfsndserv  \
+       /usr/games/gcfclient

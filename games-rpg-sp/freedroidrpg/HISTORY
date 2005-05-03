@@ -1,0 +1,19 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image and SDL_net renamed to sdl*
+	  Removed SDL as the above depend on sdl
+	  Formatted to Guru Handbook
+	* HISTORY: Formatted to Guru Handbook
+
+2004-04-10 Andrew Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 0.9.12
+	  source changed from .tar.gz to .tar.bz2
+
+2004-01-26 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.9.10
+
+2003-10-26 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.9.9-1
+
+2003-08-18 hgg <hgreig@bigpond.net.au>
+	* Add Spell to grimoire bug #4001(thanks Avin)
+

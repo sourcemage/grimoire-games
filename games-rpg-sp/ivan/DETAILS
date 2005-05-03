@@ -1,0 +1,24 @@
+           SPELL=ivan
+         VERSION=0.50
+          SOURCE=$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+          MD5[0]=9efcaf24f1e8ae205478d9850d090f87
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://ivan.sourceforge.net
+         ENTERED=20050212
+         UPDATED=20050212
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Iter Vehemens ad Necem (IVAN) is a graphical roguelike game - sort of nethack"
+cat << EOF
+Iter Vehemens ad Necem (IVAN) is a graphical roguelike game, which currently
+runs in Windows, DOS and Linux. It features advanced bodypart and material
+handling, multi-colored lighting and, above all, deep gameplay.
+IVAN works pretty much in the same way as other roguelikes. The player
+controls a character, which moves and attacks from the direction keys.
+All other commands can be found by pressing ?-key in the game.
+
+Q: What does "Iter Vehemens ad Necem" mean?
+A: It's latin and means a "Violent Road to Death". For most players, that's
+   a perfect description of the typical game.
+EOF

@@ -1,0 +1,47 @@
+2004-11-08 Eric Sandall <eric@sandall.us>
+	* Moved data files to crossfire-client-data
+	* DETAILS: Added BUILD_API=2  (Bug #7608)
+	* INSTALL: Setup proper permissions for binaries in /usr/games
+	* BUILD: Use /usr/share/games/crossfire
+	  Removed --disable-alsa
+	* DEPENDS: Added dependency on crossfire-client-data
+
+2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version update 1.7.0 bug #7261
+	* DETAILS: Build api 2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image renamed to sdl_image
+	  Formatted to Guru Handbook
+	* HISTORY: Formatted to Guru Handbook
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 1.5.0
+	* BUILD: Fixed linking error due to errno.h which allows the gtk client
+	  to compile
+	* Sounds unchanged since 1.4.0
+
+2002-10-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.4.0
+	* Sounds now are at the same version as the rest
+
+2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Umm... *really* added the MD5 and LICENSE :)
+	  Changed maintainer
+	* HISTORY: Fixed HISTORY file standards compliance
+
+2002-08-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated version to 1.3.0
+	  Added MD5 and LICENSE
+	  Added -images source as SOURCE3
+	  Changed all SOURCE_URLs to use $SOURCEFORGE_URL
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added this History file.
+
