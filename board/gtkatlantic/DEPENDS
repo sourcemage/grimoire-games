@@ -1,6 +1,0 @@
-depends  libpng   &&
-depends  gtk+     &&
-depends  libxml2  &&
-
-optional_depends  "monopd" "" "" "For local play"
-
