@@ -1,4 +1,0 @@
-chown  -R  root.games  *       &&
-cp  -ar  *  /                  &&
-sedit  's:\$SHELL:/bin/bash:'  \
-       /usr/bin/Point2Play
