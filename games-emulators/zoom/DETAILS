@@ -1,0 +1,14 @@
+           SPELL=zoom
+         VERSION=1.0.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.logicalshift.demon.co.uk/unix/zoom/$SOURCE
+        WEB_SITE=http://www.logicalshift.demon.co.uk/unix/zoom/
+         ENTERED=20040420
+          MD5[0]=a4b549570bfe53e362f4f0b991d40b9d
+      LICENSE[0]=GPL
+           SHORT="A fast, antialiased Z-machine interpreter"
+cat << EOF
+Zoom is a Z-Machine, which means that it plays text adventure
+games written in ZCode. I.E., the old Infocom games and the modern Inform ones. 
+EOF

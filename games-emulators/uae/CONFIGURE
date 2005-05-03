@@ -1,0 +1,38 @@
+if ! grep -q 'able-jit' $SPELL_CONFIG; then
+  if  query 'Enable JIT compilation support?' y
+    then echo 'OPTS="$OPTS --enable-jit"'  >> $SPELL_CONFIG
+    else echo 'OPTS="$OPTS --disable-jit"' >> $SPELL_CONFIG
+  fi
+fi &&
+
+if ! grep -q 'able-bsdsock' $SPELL_CONFIG; then
+  if  query 'Enable BSD Socket support?' y
+    then echo 'OPTS="$OPTS --enable-bsdsock"'  >> $SPELL_CONFIG
+    else echo 'OPTS="$OPTS --disable-bsdsock"' >> $SPELL_CONFIG
+  fi
+fi &&
+
+if ! grep -q 'sdl\"' $SPELL_CONFIG; then
+  if  query 'Enable SDL for low-level functions?' y
+    then echo 'OPTS="$OPTS --with-sdl"'  >> $SPELL_CONFIG
+    else echo 'OPTS="$OPTS --without-sdl"' >> $SPELL_CONFIG
+  fi
+fi &&
+
+if ! grep -q 'sdl-sound' $SPELL_CONFIG; then
+  if  query 'Enable SDL for sound?' n
+    then echo 'OPTS="$OPTS --with-sdl-sound"'  >> $SPELL_CONFIG
+    else echo 'OPTS="$OPTS --without-sdl-sound"' >> $SPELL_CONFIG
+  fi
+fi &&
+
+if ! grep -q 'sdl-gfx' $SPELL_CONFIG; then
+#
+# Disable question until I can verify the X11 graphics are working again
+#
+#  if  query 'Enable SDL for graphics?' y
+#    then
+ echo 'OPTS="$OPTS --with-sdl-gfx"'  >> $SPELL_CONFIG
+#    else echo 'OPTS="$OPTS --without-sdl-gfx"' >> $SPELL_CONFIG
+#  fi
+fi

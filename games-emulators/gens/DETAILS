@@ -1,0 +1,26 @@
+           SPELL=gens
+         VERSION=rc3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/GensForLinux
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+        WEB_SITE=http://gens.consolemul.com/
+          MD5[0]=dde7ba45b56d7bd96eb57e1922ae1ee4
+      LICENSE[0]=GPL
+         ENTERED=20040302
+         UPDATED=20040302
+           SHORT="gens is a SEGA Genesis/MegaDrive emulator"
+cat << EOF
+gens is a SEGA Genesis/MegaDrive emulator.
+It has the following features:
+- Windowed / Fullscreen mode with scanline and severals graphics engines
+- Joystick support
+- Netplay
+- Save / Load State support (10 slots at the same format as genecyst / Dgen)
+- SRAM support (saved in .srm file)
+- BRAM support (saved in .brm file)
+- Complete sound support (YM2612, PCM, PGS 76489, DAC) in 16 bits stereo at
+  11025 / 22050 / 44100 Hz
+- Configurations files support
+- ZIP support
+- And a lot of others nice features...
+EOF

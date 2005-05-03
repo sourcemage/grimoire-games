@@ -1,0 +1,48 @@
+2005-03-16 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.42
+
+2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Minor bugfix of SOURCE_DIRECTORY bug #7963
+
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.40
+	  SOURCE_DIRECTORY changed
+	  Removed MAINTAINER
+	  Added BUILD_API=2
+	* BUILD: Converted to build_api 2
+	  Run ./autogen.sh instead of ./configure now
+	  Removed TABS
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Removed TABS
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	  Removed zlib as libpng depends on it
+	  Formatted to Guru Handbook
+	* HISTORY: Formatted to Guru Handbook
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
+	  Added SOURCEFORGE_URL
+
+2002-08-02 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.36 (thanks Jeremy Kolb <jkolb@brandeis.edu>)
+
+2002-06-30 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.35 (thanks Jeremy Kolb <jkolb@brandeis.edu>)
+	* BUILD: Binary now goes into /usr/games and man page into
+	  /usr/share/man/man6 (FHS compliance) : a patch was needed.
+	  /usr/games and /usr/share/man/man6 are now created if needed.
+	* Note: I considered that spell as a game for the FHS, I hope I
+	  was right.
+
+2002-03-12 Jeremy Kolb <jkolb@brandeis.edu>
+	* New spell.
+

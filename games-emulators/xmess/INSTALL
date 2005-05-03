@@ -1,0 +1,10 @@
+I_DIR="/usr/share/games/${SPELL}"         &&
+
+make  PREFIX=${INSTALL_ROOT}/usr          \
+      BINDIR=${INSTALL_ROOT}/usr/games    \
+      -f  makefile.unix                   \
+      install                             &&
+
+mkdir  -p  ${I_DIR}                       &&
+chown  -R  root.games  ${I_DIR}           &&
+cp  -r  ctrlr  ${I_DIR}
