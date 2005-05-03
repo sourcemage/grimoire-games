@@ -1,0 +1,33 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.7
+	* BUILD: Autoconfized (uses ./configure now)
+	* INSTALL: Removed
+
+2004-08-20 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.6
+	  SOURCE name changed
+	  SOURCE_DIRECTORY name changed
+	  BUILD_API=2
+	  SOURCE_URL moved to SourceForge
+	* BUILD: Converted to BUILD_API 2
+	* INSTALL: Added
+	* HISTORY: Formatted to Guru Handbook
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2002-11-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v2.5c
+	* BUILD: Modified to use optimizations and use 'install'
+
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated/added MAINTAINER
+
+2002-08-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated version to 2.5b
+	  Added MD5 and LICENSE
+
+2002-03-14 Kyle Sallee <anonymous@sourcemage.org>
+	* Spell was accepted by <pradierdavid@yahoo.fr>
+	* Spell was proposed by nhudson@hiwaay.net
+

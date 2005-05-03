@@ -1,0 +1,15 @@
+           SPELL=xqf
+         VERSION=1.0.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=6ab2b58d2d5b01cc25d1787e025f252d
+        WEB_SITE=http://www.linuxgames.com/xqf
+         ENTERED=20020320
+         UPDATED=20031128
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="GameSpy-like app for GNU/Linux"
+cat << EOF
+XQF is a Quake, Quake World, Quake2, Quake3, Doom3, Jedi Academy (wine), America's Army 2.1, Half-Life, Half-Life STEAM, Half-Life 2, Unreal, Unreal Tournament 2003, Uunreal Tournament 2004, Hexen II, HexenWorld, Kingpin, Jedi Knight: Jedi Academy, Shogo: Mobile Armor Division, Sin, Starsiege: Tribes, Tribes 2, Soldier of Fortune, Soldier of Fortune 2, BFRIS, Return to Castle Wolfestein, Descent 3, Star Trek: Elite Force, All Seeing Eye, Savage, FarCry, Rune, Medal of Honor: Allied Assault, Call of Duty, Postal 2, Battlefield 1942, and Ghost Recon server browser and launcher for UNIX/X11 which supports the GameSpy2 protocol.  Its a front end to QStat.
+EOF

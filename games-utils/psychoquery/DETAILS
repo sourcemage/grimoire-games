@@ -1,0 +1,19 @@
+           SPELL=psychoquery
+         VERSION=1.2
+          SOURCE=${SPELL}${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
+   SOURCE_URL[0]=http://www.psychostats.com/download/${SPELL}/${SOURCE}
+          MD5[0]=c5e4106e27f1e027541d90ede1ea23e9
+        WEB_SITE=http://www.psychostats.com/pquery.php
+      LICENSE[0]=UNKNOWN
+         ENTERED=20030226
+         UPDATED=20030226
+      MAINTAINER=eric@sandall.us
+           SHORT="PsychoQuery is a server query tool for the game Half-Life"
+cat << EOF
+PsychoQuery is a server query tool for the game Half-Life.
+
+It allows you to query any remote Half-Life server on the internet, or internal LAN to view the current status of the server. Information such as current players connected, their frag counts and online time is returned. Basic information on the server itself is also returned like what type of game MOD is being hosted and what map is currently loaded, or all of the server CVARS.
+
+The current version of PsychoQuery also has limited support for QUAKE3 type servers. These features are mostly undocumented at this time, but the support and mechanisms are in place in the PQ code to allow it to work.
+EOF
