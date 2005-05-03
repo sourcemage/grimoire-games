@@ -1,7 +1,0 @@
-default_pre_build &&
-cd ${SOURCE_DIRECTORY} &&
-
-if ! [ "$AOUTPUT"="default" ] ; then
-  sedit "s/\/dev\/dsp/$(echo $AOUTPUT | sed 's/\//\\\//g')/" osssound.c
-fi
-

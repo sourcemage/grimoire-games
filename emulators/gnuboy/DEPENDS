@@ -1,4 +1,0 @@
-optional_depends  sdl                     \
-                  ""                      \
-                  ""                      \
-                  "for an SDL interface"

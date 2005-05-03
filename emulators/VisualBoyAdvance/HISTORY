@@ -1,6 +1,0 @@
-2004-08-03 Eric Sandall <eric@sandall.us>
-	* DEPENDS: SDL renamed to sdl
-
-2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: updated to 1.7.2
-	* HISTORY: Messed up clean slate from here...
