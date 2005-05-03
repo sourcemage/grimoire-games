@@ -1,9 +1,0 @@
-INSTALL_PREFIX=/usr
-DATA_PREFIX=/usr/local/share/gemdropx
-
-cp $SOURCE_DIRECTORY/gemdropx $INSTALL_PREFIX/bin	&&
-chmod 755 $INSTALL_PREFIX/bin/gemdropx			&&
-mkdir -p ${DATA_PREFIX}					&&
-chmod 755 ${DATA_PREFIX}				&&
-cp -R $SOURCE_DIRECTORY/data/* ${DATA_PREFIX}		&&
-chmod -R a+rX ${DATA_PREFIX}/*

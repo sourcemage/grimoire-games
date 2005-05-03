@@ -1,7 +1,0 @@
-depends	sdl		&&
-depends sdl_image	&&
-
-if [ "$SOUND" == "y" ]; then 
-	depends sdl_mixer		
-fi
-
