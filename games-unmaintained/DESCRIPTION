@@ -1,0 +1,3 @@
+If a game is no longer supported upstream it should be put here.
+If it also does not build properly try to find patches and if that
+fails as well it should be droped from the grimoire.
