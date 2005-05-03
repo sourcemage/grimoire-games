@@ -1,3 +1,11 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-z-rejected: moved to z-rejected/z-games
+	* games-http/pstreamer: moved to games-utils/pstreamer
+	* games-http/psychoquery: moved to games-utils/psychoquery
+	* games-http/psychostats: moved to games-utils/psychostats
+	* games-http/qstat: moved to games-utils/qstat
+	* games-http/xqf: moved to games-utils/xqf
+
 2005-04-08 Eric Sandall <eric@sandall.us>
 	* libaccount, accounts, groups: Branched from devel
 
