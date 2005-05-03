@@ -5,6 +5,19 @@
 	* games-http/psychostats: moved to games-utils/psychostats
 	* games-http/qstat: moved to games-utils/qstat
 	* games-http/xqf: moved to games-utils/xqf
+	* rpg/crossfire-client-data: moved to games-rpg-mp/crossfire-client-data
+	* rpg/crossfire-client: moved to games-rpg-mp/crossfire-client
+	* rpg/crossfire-data: moved to games-rpg-mp/crossfire-data
+	* rpg/crossfire: moved to games-rpg-mp/crossfire
+	* rpg/falconseye: moved to games-rpg-sp/falconseye
+	* rpg/gtk2hack: moved to games-rpg-sp/gtk2hack
+	* rpg/freedroidrpg: moved to games-rpg-sp/freedroidrpg
+	* rpg/ivan: moved to games-rpg-sp/ivan
+	* puzzle/*: moved to games-puzzles/*
+	* emulators/*: moved to games-emulators/*
+	* cards/*: moved to games-cards/*
+	* board/*: moved to games-board/*
+	* go/*: moved to games-board/*
 
 2005-04-08 Eric Sandall <eric@sandall.us>
 	* libaccount, accounts, groups: Branched from devel
