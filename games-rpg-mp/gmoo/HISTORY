@@ -1,3 +1,7 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Spell moved from mud/gMOO
+	* BUILD, DETAILS: switching to build api 2
+
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
