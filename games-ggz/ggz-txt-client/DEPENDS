@@ -1,0 +1,2 @@
+depends  ggz-client-libs    &&
+depends  expat

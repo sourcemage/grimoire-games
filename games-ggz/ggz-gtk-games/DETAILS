@@ -1,0 +1,15 @@
+           SPELL=ggz-gtk-games
+         VERSION=0.0.8
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
+          MD5[0]=f6dc3357a19d11b99a5ad15f4c96f60f
+      LICENSE[0]=LGPL
+        WEB_SITE=http://ggzgamingzone.org
+         ENTERED=20021129
+         UPDATED=20040216
+           SHORT="GGZ Gaming Zone GTK+ game modules"
+cat << EOF
+GGZ Gaming Zone server libraries provides the common procedures and
+utilities required to run the GGZ game servers.
+EOF

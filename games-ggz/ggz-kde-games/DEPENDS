@@ -1,0 +1,2 @@
+depends  kdebase          &&
+depends  ggz-client-libs
