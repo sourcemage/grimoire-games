@@ -1,0 +1,10 @@
+depends  sear-media         &&
+depends  GLUT               &&
+depends  eris-transitional  &&
+depends  mercator           &&
+depends  sdl_image          &&
+depends  sdl_mixer          &&
+depends  varconf2           &&
+depends  cal3d              &&
+depends  sage               &&
+depends  lib3ds

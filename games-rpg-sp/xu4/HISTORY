@@ -1,0 +1,35 @@
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer renamed to sdl_mixer
+	  SDL removed as sdl_mixer depends on sdl
+
+2004-02-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.9, and actually submit, previous version segfaulted on startup
+
+2003-10-26 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.8 and ultima4-1.01
+
+2003-08-02 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.7
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-21 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update BUILD so libs are found at start
+	* POST_INSTALL: Integrated POST_INSTALL into BUILD so files are properly 
+	  tracked(left PRE_REMOVE to handle old installs)
+
+2003-05-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS:Update to 0.6 
+	* BUILD: Sedit Makefile so binaries don't end up in /usr/local
+	  POST_INSTALL,PRE_REMOVE: Change POST_INSTALL and added PRE_REMOVE so 
+	  Ultima4.zip is tracked
+
+2003-01-27 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.09 (Bug #2392, thanks to Snakebyte)
+	* BUILD: Made binary install into /usr/games
+	  and data into /usr/share/games, not /usr/lib
+
+2002-11-20 Eric Sandall <eric@sandall.us>
+	* Spell created
+
