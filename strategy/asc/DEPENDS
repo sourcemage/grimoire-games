@@ -1,6 +1,0 @@
-depends  libtool     && # the included version is broken ?
-depends  libsigc++2  &&
-depends  SDLmm       &&
-depends  sdl_image   &&
-depends  sdl_mixer   &&
-depends  paragui  "--disable-paraguitest"
