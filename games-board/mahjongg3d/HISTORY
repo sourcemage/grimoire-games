@@ -1,0 +1,16 @@
+2005-01-15 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updated for BUILD API 2
+
+2004-07-19 Terry K. Ross <terry@aliboom.com>
+	* DETAILS: updated to 0.96
+
+2004-06-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, DETAILS, Makefiles.patch: updated to 0.95
+
+2004-05-19 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS, Makefiles.patch: updated to 0.92
+
+2004-05-15 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, DEPENDS, DETAILS, HISTORY, Makefiles.patch, mahjongg3d:
+	  created the spell
+

@@ -1,0 +1,12 @@
+default_pre_build                     &&
+unpack  ${SOURCE}    ${MD5[0]}        &&
+unpack  ${SOURCE2}   ${MD5[1]}        &&
+mkdir   $SOURCE_DIRECTORY/spell-data  &&
+cd      $SOURCE_DIRECTORY/spell-data  &&
+unpack  ${SOURCE3}   ${MD5[2]}        &&
+unpack  ${SOURCE4}   ${MD5[3]}        &&
+unpack  ${SOURCE5}   ${MD5[4]}        &&
+unpack  ${SOURCE6}   ${MD5[5]}        &&
+unpack  ${SOURCE7}   ${MD5[6]}        &&
+unpack  ${SOURCE8}   ${MD5[7]}        &&
+unpack  ${SOURCE9}   ${MD5[8]}

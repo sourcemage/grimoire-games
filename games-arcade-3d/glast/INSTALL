@@ -1,0 +1,10 @@
+  install  -d  -m  755  -g  games  ${N_DIR}               &&
+  install  -d  -m  755  -g  games  ${N_DIR}/sounds        &&
+  install  -d  -m  755  -g  games  ${N_DIR}/textures      &&
+  install  -m  644  -g  games  sounds/*.wav               \
+           ${N_DIR}/sounds                                &&
+  install  -m  644  -g  games  textures/*.png             \
+           textures/*.jpg  ${N_DIR}/textures              &&
+  install  -m  755  -g  games  glast  ${N_DIR}            &&
+  install  -m  755  -g  games  ${SCRIPT_DIRECTORY}/glast  \
+           /usr/games

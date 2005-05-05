@@ -1,0 +1,6 @@
+make_normal                                    &&
+default_install                                &&
+TORCS_DIR=$INSTALL_ROOT/usr/share/games/torcs  &&
+mkdir  -p  $TORCS_DIR                          &&
+mv  spell-data/*  $TORCS_DIR                   &&
+chgrp  -R  games  $TORCS_DIR

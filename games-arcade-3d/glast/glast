@@ -1,0 +1,5 @@
+#!/bin/sh
+# Script to run program
+
+cd  /usr/share/games/glast
+./glast

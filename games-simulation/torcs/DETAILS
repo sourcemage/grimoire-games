@@ -1,0 +1,50 @@
+           SPELL=torcs
+         VERSION=1.2.3
+          SOURCE=TORCS-${VERSION}-src.tgz
+         SOURCE2=TORCS-${VERSION}-src-robots-base.tgz
+         SOURCE3=TORCS-${VERSION}-data.tgz
+         SOURCE4=TORCS-${VERSION}-data-tracks-dirt.tgz
+         SOURCE5=TORCS-${VERSION}-data-tracks-oval.tgz
+         SOURCE6=TORCS-${VERSION}-data-tracks-road.tgz
+         SOURCE7=TORCS-${VERSION}-data-cars-Patwo-Design.tgz
+         SOURCE8=TORCS-${VERSION}-data-cars-extra.tgz
+         SOURCE9=TORCS-${VERSION}-data-cars-nascar.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$SPELL-${VERSION/c/}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE2}
+  SOURCE3_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE3}
+  SOURCE4_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE4}
+  SOURCE5_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE5}
+  SOURCE6_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE6}
+  SOURCE7_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE7}
+  SOURCE8_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE8}
+  SOURCE9_URL[0]=${SOURCEFORGE_URL}/$SPELL/${SOURCE9}
+        WEB_SITE=http://torcs.sourceforge.net/
+          MD5[0]=1b6b4291600de5a6424e0fdf9e5ef8ea
+          MD5[1]=470b90777414548adf7ecb7e9c43e303
+          MD5[2]=0f4e51637515eb0c89d662d8ef33afe0
+          MD5[3]=1bc7a577fa97a7d8a37fd400a13d7dff
+          MD5[4]=32c9264ff5e1e15d63fc77fade0b230e
+          MD5[5]=83fd46340152357d1b0445d97e067393
+          MD5[6]=3d80fdcbcd9c6f96adfa51b1064af885
+          MD5[7]=c3cc7746b21a466cadfcdf4b12969588
+          MD5[8]=1fc8dc22fe0c0103948e4e872bcd7619
+      LICENSE[0]=GPL
+      LICENSE[1]=GPL
+      LICENSE[2]=GPL
+      LICENSE[3]=GPL
+      LICENSE[4]=GPL
+      LICENSE[5]=GPL
+      LICENSE[6]=GPL
+      LICENSE[7]=GPL
+      LICENSE[8]=GPL
+         ENTERED=20010926
+         UPDATED=20050223
+            FUZZ="off"
+       BUILD_API=2
+           SHORT="3D racing cars simulator using OpenGL"
+cat << EOF
+TORCS is a 3D racing cars simulator using OpenGL. The goal is to have 
+programmed robot drivers racing against each others. Nevertheless, a
+joystick interface is present in order to drive yourself.
+EOF

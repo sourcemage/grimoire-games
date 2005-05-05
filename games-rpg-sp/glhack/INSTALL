@@ -1,0 +1,9 @@
+make_normal    &&
+make  install  &&
+
+mv  /usr/share/games/nethackdir/glhack/glhack  /tmp/glhack.bin         &&
+mv  /usr/share/games/nethackdir/glhack/*  /usr/share/games/nethackdir  &&
+rmdir  /usr/share/games/nethackdir/glhack/                             &&
+mv  /tmp/glhack.bin  /usr/share/games/nethackdir/glhack                &&
+chmod  g+w  *  -R                                                      &&
+sedit  's:games/lib/:share/games/:'  /usr/games/glhack

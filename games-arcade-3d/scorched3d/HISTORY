@@ -1,0 +1,37 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* BUILD, DETAILS: Updated to BUILD API 2
+	* Changes made to rename spell from Scorched3D to scorched3d
+	* Updated to version 38
+	* Fixed WEB_SITE
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_net and SDL_mixer renamed to sdl*
+	  Formatted to Guru Handbook
+
+2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 37.2
+
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added freetype2 dependencie
+
+2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 37.1
+	* BUILD: droped sedit
+	* BUILD: change the mv dir from to
+
+2004-01-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 36.2 (thanks to Rycee)
+	  Removed MAINTAINER
+	* BUILD, *.patch: Removed gcc-3.3 patch
+	* BUILD: Change ./autogen to ./configure
+
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
+
+2003-08-02 hgg <hgreig@bigond.net.au>
+	* Add to games grimoire
+
+2003-08-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* created the spell
+

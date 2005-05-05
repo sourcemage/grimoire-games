@@ -1,0 +1,69 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* BUILD: Use spell_ok instead of spell_installed
+
+2004-12-13 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS, BUILD: build_api2
+	* BUILD: added fix for openglut
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 3.0a
+
+2004-07-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: NVIDIA_headers renamed to nvidia_headers
+
+2004-02-25 hgg <hgreig@bigpond.net.au>
+	* DETAILS: emove maintainer and one of the two short lines bug 6124
+
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+
+2003-07-10 hgg <hgreig@bigpond.net.au>
+	* Fix bug #3707
+
+2003-07-09 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 2.8 and remove patch
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-05-09 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update ./configure as bumpref features are NVIDIA_GLX header specific
+
+2003-05-08 hgg <hgreig@bigpond.net.au>
+	* Changed patch as current xfree86 has extra gl extensions included
+
+2003-05-05 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Updated to 2.6
+
+2003-01-24 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 2.4
+
+2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 2.0
+
+2002-12-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 1.9
+	* added patch for newer glext.h
+	* added myself as maintainer
+
+2002-12-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: added dependency on libpng, glut and freetype2
+	  (why was there an empty depends file???)
+
+2002-10-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: Added MD5 and LICENSE fields
+
+2002-06-29 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.5 (thanks Gareth Clay <g.clay@warwick.ac.uk>)
+	* BUILD: Binary now goes into /usr/games and static data into
+	  /usr/share/games (FHS compliance).
+
+2002-05-16 Gareth Clay <g.clay@warwick.ac.uk>
+	* New spell.
+

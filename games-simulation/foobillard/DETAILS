@@ -1,0 +1,32 @@
+           SPELL=foobillard
+         VERSION=3.0a
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://foobillard.sunsite.dk/dnl/$SOURCE
+        WEB_SITE=http://foobillard.sunsite.dk/
+           SHORT="A free OpenGl billiard game for linux"
+          MD5[0]=9e7673f4bae82a5de32921ed5b41b714
+      LICENSE[0]=GPL
+       BUILD_API=2
+         ENTERED=20020516
+         UPDATED=20041213
+
+cat << EOF
+An OpenGL billiard game for Linux. Features:
+
+    * wood paneled table with gold covers and gold diamonds
+    * reflections on balls
+    * shadow pixmaps
+    * detail switching of balls according to distance
+    * zoom in/out - hold right mousebutton
+    * FOV +/- - hold right mousebutton + CTRL
+    * rotate - hold left mousebutton
+    * animated queue
+    * 8ball, 9ball, snooker, carambol
+    * simple AI-Player
+    * strength adjustment
+    * eccentic hit adjustment (button2-Shift)
+    * red/green 3D stereo view !!!
+    * sound (using SDL)
+    * network play 
+EOF

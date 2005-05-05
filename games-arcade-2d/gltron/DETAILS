@@ -1,0 +1,15 @@
+           SPELL=gltron
+         VERSION=0.70
+          SOURCE=${SPELL}-${VERSION}-source.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+        WEB_SITE=http://www.gltron.org/
+          MD5[0]=dcda1cf9996708d8af60a54fd0a73f74
+      LICENSE[0]=GPL
+         ENTERED=20010922
+         UPDATED=20040107
+           SHORT="gltron is a tron-like lightcycle game with a nice 3D perspective."
+cat << EOF
+glTron is a tron-like lightcycle game with a nice 3D perspective. 3D
+acceleration is recommended.
+EOF
