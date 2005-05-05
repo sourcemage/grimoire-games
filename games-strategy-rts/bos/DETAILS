@@ -1,0 +1,15 @@
+           SPELL=bos
+         VERSION=1.1
+          SOURCE=${SPELL}_1_1.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_1_1
+   SOURCE_URL[0]=http://bos.seul.org/files/bos_1_1.tar.gz
+        WEB_SITE=http://bos.seul.org
+         ENTERED=20040719
+         UPDATED=20040719
+          MD5[0]=c92482a75ce8e3982ee642715cff57d9
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT='A game for the stratagus engine'
+cat << EOF
+No description found yet so just consult the website
+EOF

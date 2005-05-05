@@ -1,0 +1,3 @@
+#!/bin/bash
+
+stratagus -d /usr/share/games/stratagus/bos/data

@@ -1,0 +1,17 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	  Shortened SHORT
+	* BUILD: Run make_single before make
+	* INSTALL: make_normal afterwards
+	* POST_INSTALL,FINAL: POST_INSTALL renamed to FINAL
+	  Use only one call to message
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	  Removed zlib as libpng depends on it
+	  Formatted to Guru Handbook
+
+2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 0.3.3
+	* HISTORY: Seems it got lost so I had to create it
+	* INSTALL: One dir less to copy

@@ -1,0 +1,2 @@
+config_query_list  FREECIV_CLIENT  "Use which graphical client?"  \
+                   "gtk2"  "gtk"  "xaw3d"
