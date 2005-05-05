@@ -1,0 +1,5 @@
+depends  libsigc++2  &&
+depends  expat       &&
+depends  cppsocket   &&
+depends  sdl_image   &&
+depends  paragui     "--disable-paraguitest"

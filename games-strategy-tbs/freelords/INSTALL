@@ -1,0 +1,6 @@
+make  install                                         &&
+
+#install config file globally
+cp  ${SCRIPT_DIRECTORY}/freelordsrc  /etc             &&
+chown  root.games  /etc/freelordsrc                   &&
+chmod 664  /etc/freelordsrc

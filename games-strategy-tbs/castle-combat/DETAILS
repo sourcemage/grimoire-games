@@ -1,0 +1,18 @@
+           SPELL=castle-combat
+         VERSION=0.7.4
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
+        WEB_SITE=http://www.linux-games.com/castle-combat/
+          MD5[0]=4f05ec24619879716d995153c02d8e52
+      LICENSE[0]=GPL
+         ENTERED=20010922
+         UPDATED=20020308
+           SHORT="castle-combat is a clone of the old DOS game rampart."
+cat << EOF
+It's a clone of the old DOS game Rampart. Up to four players (or more in
+future versions) build castle walls, place cannons inside these walls,
+and shoot at the walls of their enemy(s). If a player can't build a
+complete wall around one of his castles, he loses. The last surviving
+player wins.
+EOF

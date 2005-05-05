@@ -1,0 +1,2 @@
+config_query  TEG_SERVER  "Install server as well?"  n  &&
+config_query  TEG_ROBOT   "Install robot (AI)?"      y

@@ -1,0 +1,29 @@
+2005-01-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added BUILD_API=2
+	* CONFIGURE: Converted to config_query
+	* DEPENDS: Added dependency on ggz-client-libs
+	  Formatted to Guru Handbook
+	* BUILD: Converted to build_api 2
+	  Use config_query responses
+
+2004-12-02 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: changed source from bz2 to gz 
+
+2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: Commented out some cping as it breakes the cast seems to run proper
+
+2004-02-16 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 0.11.1
+
+2004-01-06 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: add glib2
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* Update for ${INSTALL_ROOT}
+
+2002-10-31 Eric Sandall <eric@sandall.us>
+	* Created spell
+
