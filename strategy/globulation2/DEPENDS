@@ -1,7 +1,0 @@
-depends  sdl        &&
-depends  sdl_net    &&
-depends  sdl_image  &&
-depends  sdl_ttf    &&
-depends  freetype2  &&
-depends  libvorbis  &&
-depends  speex

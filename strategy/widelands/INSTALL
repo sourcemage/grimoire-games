@@ -1,4 +1,0 @@
-local  INSTDIR=${INSTALL_ROOT}/usr/lib/games/widelands  &&
-mkdir  -p  $INSTDIR  &&
-cp     -R  fonts maps pics tribes worlds widelands  $INSTDIR  &&
-cp     ${SCRIPT_DIRECTORY}/widelands  /usr/games
