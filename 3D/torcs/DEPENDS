@@ -1,3 +1,0 @@
-depends  GLUT    &&
-depends  plib    &&
-depends  libpng
