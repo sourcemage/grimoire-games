@@ -1,0 +1,5 @@
+depends X11-LIBS
+depends zlib
+depends cvs
+optional_depends "sdl" "--with-sdl" "--without-sdl" "sdl support"
+optional_depends "libggi" "--with-ggi" "--without-ggi" "ggi support"

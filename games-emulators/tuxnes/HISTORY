@@ -1,3 +1,8 @@
+2005-05-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: CVS only
+	* DEPENDS: proper DEPENDS file
+	* PRE_BUILD: added due to cvs
+
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
