@@ -1,0 +1,15 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Spell moved to games-rpg-mp/gmoo ready for deprecation protocol
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* Update for ${INSTALL_ROOT}
+
+2002-10-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Added MD5 and LICENSE fields
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* Added this History file.
+
