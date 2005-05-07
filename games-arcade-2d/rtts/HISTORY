@@ -1,0 +1,22 @@
+2005-01-17 Robin Cook <rcook@wyrms.net>
+	* DETAILS: changed SOURCE and SOURCE2 to bz2 instead of gz
+	  added BUILD_API=2
+	* BUILD: removed what belongs in INSTALL
+	* INSTALL: added from BUILD what belongs here
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
+
+2003-12-01 hgg <hgreig@bigpond.net.au>
+	* BUILD: pm bug 4944, adding mkdir -p /usr/games
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-06-10 hgg <hgreig@bigpond.net.au>
+	* Added spell to grimoire afte updating to 1.1.0
+

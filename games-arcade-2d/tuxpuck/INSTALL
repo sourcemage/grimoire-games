@@ -1,0 +1,2 @@
+make_normal                            &&
+install  -m  755  tuxpuck  /usr/games

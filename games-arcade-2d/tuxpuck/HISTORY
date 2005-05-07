@@ -1,0 +1,38 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed MAKE_NJOBS=1
+	  Shortened SHORT
+	* BUILD: Run make_single before make
+	* INSTALL: Run make_normal before installation
+
+2005-01-21 Adam Clark <adamsgl@dhbit.ca>
+	* HISTORY, INSTALL, DETAILS: Updated to Build API 2
+	* DETAILS: Removed MAINTAINER field
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	* HISTORY: Formatted to Guru Handbook
+
+2003-07-23 Eric Sandall <eric@sandall.us>
+	* DETAILS: Fails with multiple jobs
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-01-02 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.8.2 (Bug #2076)
+
+2002-10-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.8.1
+
+2002-10-07 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.8.0
+
+2002-09-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v0.7.118
+
+2002-08-26 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
+
+2002-05-11 David Pradier <pradierdavid@yahoo.fr>
+	* HISTORY: Added
+

@@ -1,0 +1,12 @@
+2004-08-25 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.1.2
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_mixer and SDL_image renamed to sdl*
+
+2004-06-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added CVS support, switched to BUILD_API2
+
+2004-05-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, DEPENDS, DETAILS, HISTORY: created this spell
+

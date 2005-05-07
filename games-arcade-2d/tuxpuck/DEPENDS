@@ -1,0 +1,3 @@
+depends  sdl        &&
+depends  libpng     &&
+depends  libvorbis

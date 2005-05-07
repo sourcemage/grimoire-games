@@ -1,0 +1,28 @@
+           SPELL=rtts
+         VERSION=1.1.1
+          SOURCE=$SPELL-$VERSION.tar.bz2
+         SOURCE2=$SPELL-$VERSION-src.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.rtts.org/files/$SOURCE
+   SOURCE_URL[1]=http://www.leprau.de/rtts/$SOURCE
+  SOURCE2_URL[0]=http://www.rtts.org/files/$SOURCE2
+  SOURCE2_URL[1]=http://www.leprau.de/rtts/$SOURCE2
+        WEB_SITE=http://www.rtts.org/
+          MD5[0]=feabdf38a16cbe6dafd11ed6b88c7dfc
+          MD5[1]=1ff33e5b00ad560b1c3c50c3edf04bdc
+         ENTERED=20030610
+         UPDATED=20030610
+      LICENSE[0]=GPL
+      LICENSE[1]=UNKNOWN
+       BUILD_API=2
+           SHORT="Return to the Shadows - Vertical scroller, originally written as a 'Raptor' clone"
+cat << EOF
+Return to the Shadows is a vertical scroller, greatly inspired by Raptor by Cygnus Studios/Apogee. It is fully supported on Windows and Linux/x86, but it should be easy to compile it on any other platform that supports SDL and OpenGL.
+
+If you have never heard the term vertical scroller, don't worry: it's really easy to get into the game. You're flying a small fighter plane through levels with increasing difficulty. All kinds of enemies are coming down on you, and you shoot them down for money. Using that money, you can buy additional weapons, shields and more gadgets between the levels.
+
+RTTS was originally created in a 72 hours session by Nicolai 'Prefect' Haehnle (Programming) and Florian 'Spike' Neuerburg (Graphics).
+Due to the overwhelming response to this original version, the project has been and will be continued. Much has changed since then - for the better, of course ;) Most of the improvements were only possible because people with real graphics skills contributed better graphics. This contribution is still necessary to make RTTS an even better game, so if you think you can create kick-ass graphics, have a look at the Editing page.
+
+We still have a long way to go before Return to the Shadows could be considered a finished game. The only reason that version numbers are above 1.0 is that the original 72h hours version was released as 1.0...
+EOF
