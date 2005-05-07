@@ -1,0 +1,11 @@
+2005-01-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Python renamed to python in stable
+	  Formatted to Guru Handbook
+
+2004-09-28 Sebastian Sareyko <sebi@smoon.homelinux.org>
+	* DEPENDS: Added freefont-ttf dependency
+	* BUILD: Added a patch to fix compiling with nvidia_headers installed
+
+2004-09-26 Sebastian Sareyko <sebi@smoon.homelinux.org>
+	* Created this.
+

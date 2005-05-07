@@ -1,0 +1,29 @@
+           SPELL=ultimatestunts
+         VERSION=0531
+          SOURCE=${SPELL}-srcdata-${VERSION}.tar.gz
+   SOURCE_URL[1]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+          MD5[0]=c0211ccfdc0ef255d28f5bb4e6bf0f4c
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-srcdata-${VERSION}
+        WEB_SITE=http://www.ultimatestunts.nl/
+         ENTERED=20050226
+         UPDATED=20050226
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="UltimateStunts will be a remake of the famous DOS-game stunts."
+cat << EOF
+UltimateStunts will be a remake of the famous DOS-game "stunts". This
+DOS-game, which was released in the early 1990's, can be downloaded on
+several abandonware sites, e.g. the XTC site. It is a 3D racing game,
+with simple CGA/EGA/VGA graphics and no texture or smooth shading,
+but because of the spectacular stunts (loopings, bridges to jump over,
+etc.) it was really fun to play. One of the best aspects of this game
+is that it had a track editor. Because of the tile-based tracks, every
+gamer was able to make it's own tracks.
+
+The remake won't become a DOS game: it will work on UNIX-compatible
+systems (lik e Linux), and on windows. It will also provide more modern
+features, like openGL graphics, 3D sound and internet multiplaying.
+The current version is still in a pre-alpha fase, so you shouldn't expect
+much of it, but the screenshots give a nice impression of how the game
+will look.
+EOF

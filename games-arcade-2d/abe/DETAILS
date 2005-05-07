@@ -1,0 +1,16 @@
+           SPELL=abe
+         VERSION=1.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=59a320071f46e2b848a89866a98a606e
+        WEB_SITE=http://abe.sourceforge.net/
+         ENTERED=20030612
+         UPDATED=2003-612
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Abe's Amazing Adventure is an awesome game"
+cat << EOF
+A scrolling, platform-jumping, key-collecting, ancient pyramid exploring game, vaguely in the style of 
+similar games for the Commodore+4. The game is intended to show young people all the cool games they missed.
+EOF

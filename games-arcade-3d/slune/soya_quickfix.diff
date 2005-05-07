@@ -1,0 +1,41 @@
+diff -Nru Soya-0.7.old/soyaopengl.c Soya-0.7/soyaopengl.c
+--- Soya-0.7.old/soyaopengl.c	2004-09-26 23:47:32.012353368 +0200
++++ Soya-0.7/soyaopengl.c	2004-09-26 23:47:54.467939600 +0200
+@@ -583,7 +583,6 @@
+ static PyObject *__pyx_n_GL_RGBA16;
+ static PyObject *__pyx_n_GL_CLIENT_PIXEL_STORE_BIT;
+ static PyObject *__pyx_n_GL_CLIENT_VERTEX_ARRAY_BIT;
+-static PyObject *__pyx_n_GL_ALL_CLIENT_ATTRIB_BITS;
+ static PyObject *__pyx_n_GL_CLIENT_ALL_ATTRIB_BITS;
+ static PyObject *__pyx_n_GL_RESCALE_NORMAL;
+ static PyObject *__pyx_n_GL_CLAMP_TO_EDGE;
+@@ -1260,7 +1259,6 @@
+   {&__pyx_n_GL_ALIASED_LINE_WIDTH_RANGE, "GL_ALIASED_LINE_WIDTH_RANGE"},
+   {&__pyx_n_GL_ALIASED_POINT_SIZE_RANGE, "GL_ALIASED_POINT_SIZE_RANGE"},
+   {&__pyx_n_GL_ALL_ATTRIB_BITS, "GL_ALL_ATTRIB_BITS"},
+-  {&__pyx_n_GL_ALL_CLIENT_ATTRIB_BITS, "GL_ALL_CLIENT_ATTRIB_BITS"},
+   {&__pyx_n_GL_ALPHA, "GL_ALPHA"},
+   {&__pyx_n_GL_ALPHA12, "GL_ALPHA12"},
+   {&__pyx_n_GL_ALPHA16, "GL_ALPHA16"},
+@@ -4695,10 +4693,6 @@
+   if (PyObject_SetAttr(__pyx_m, __pyx_n_GL_CLIENT_VERTEX_ARRAY_BIT, __pyx_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 560; goto __pyx_L1;}
+   Py_DECREF(__pyx_1); __pyx_1 = 0;
+ 
+-  /* "/home/jiba/src/soya/soyaopengl.pyx":561 */
+-  __pyx_1 = PyInt_FromLong(GL_ALL_CLIENT_ATTRIB_BITS); if (!__pyx_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 561; goto __pyx_L1;}
+-  if (PyObject_SetAttr(__pyx_m, __pyx_n_GL_ALL_CLIENT_ATTRIB_BITS, __pyx_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 561; goto __pyx_L1;}
+-  Py_DECREF(__pyx_1); __pyx_1 = 0;
+ 
+   /* "/home/jiba/src/soya/soyaopengl.pyx":562 */
+   __pyx_1 = PyInt_FromLong(GL_CLIENT_ALL_ATTRIB_BITS); if (!__pyx_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 562; goto __pyx_L1;}
+diff -Nru Soya-0.7.old/soyaopengl.pyx Soya-0.7/soyaopengl.pyx
+--- Soya-0.7.old/soyaopengl.pyx	2004-09-26 23:47:32.013353216 +0200
++++ Soya-0.7/soyaopengl.pyx	2004-09-26 23:48:02.414731504 +0200
+@@ -558,7 +558,6 @@
+ GL_RGBA16 = opengl.GL_RGBA16
+ GL_CLIENT_PIXEL_STORE_BIT = opengl.GL_CLIENT_PIXEL_STORE_BIT
+ GL_CLIENT_VERTEX_ARRAY_BIT = opengl.GL_CLIENT_VERTEX_ARRAY_BIT
+-GL_ALL_CLIENT_ATTRIB_BITS = opengl.GL_ALL_CLIENT_ATTRIB_BITS
+ GL_CLIENT_ALL_ATTRIB_BITS = opengl.GL_CLIENT_ALL_ATTRIB_BITS
+ GL_RESCALE_NORMAL = opengl.GL_RESCALE_NORMAL
+ GL_CLAMP_TO_EDGE = opengl.GL_CLAMP_TO_EDGE
