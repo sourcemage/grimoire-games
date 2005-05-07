@@ -1,2 +1,0 @@
-make_single  &&
-make

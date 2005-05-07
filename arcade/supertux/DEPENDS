@@ -1,3 +1,0 @@
-depends  X11-LIBS   &&
-depends  sdl_mixer  &&
-depends  sdl_image
