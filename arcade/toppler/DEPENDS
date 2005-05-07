@@ -1,7 +1,0 @@
-depends  sdl_image  &&
-depends  sdl_mixer  &&
-
-optional_depends  gettext                        \
-                  "--enable-nls"                 \
-                  "--disable-nls"                \
-                  "for Native Language support"
