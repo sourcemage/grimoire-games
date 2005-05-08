@@ -1,8 +1,0 @@
-if [ ! -s $SPELL_CONFIG ] ; then 
-message "${SPELL_COLOR} alephone can use either OPENGL or SDL for graphics rendering, \
-next you can choose which to build in${DEFAULT_COLOR}"
-	if query "Use OPENGL for graphics rendering? ("no" automatically selects SDL) " n
-	then  echo "OPENGL=yes" >> $SPELL_CONFIG
-	else  echo "SDL=yes" >> $SPELL_CONFIG
-	fi
-fi
