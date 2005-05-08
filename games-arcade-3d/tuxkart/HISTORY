@@ -1,0 +1,17 @@
+2004-06-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.4.0
+	Removed MAINTAINER
+	BUILD_API=2
+	Reworded SHORT to be shorter and more descriptive
+	* DEPENDS: Removed dependency on GLUT as plib already has that
+
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+	* HISTORY: Formatted to Guru Handbook
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* Created this spell
+

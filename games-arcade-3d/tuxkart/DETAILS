@@ -1,0 +1,15 @@
+           SPELL=tuxkart
+         VERSION=0.4.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://tuxkart.sourceforge.net/dist/$SOURCE
+          MD5[0]=e942ea55b238214b9fd499bd4f5bf61c
+        WEB_SITE=http://tuxkart.sourceforge.net
+         ENTERED=20021211
+         UPDATED=20021211
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Tux, the Linux Penguin, races around tracks"
+cat << EOF
+A kart game starring Tux.
+EOF
