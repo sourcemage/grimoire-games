@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Cube server binary loader
+#
+# Written for Source Mage GNU/Linux by Eric Sandall <eric@sandall.us>
+# Copyright (C) Source mage GNU/Linux 2004
+# Licensed under the GPL
+#
+
+cd  /usr/share/games/cube  &&
+./bin/cube_server_bin  $*

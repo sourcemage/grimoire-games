@@ -1,0 +1,6 @@
+2004-09-06 Eric Sandall <eric@sandall.us>
+	* INSTALL: Install docs to /usr/share/doc not /usr/share/docs
+
+2004-08-28 Eric Sandall <eric@sandall.us>
+	* Created spell (with some hints from Gentoo's ebuild)
+

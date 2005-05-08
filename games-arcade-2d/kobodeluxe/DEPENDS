@@ -1,0 +1,4 @@
+depends  sdl_image  &&
+if  [  -n  "$KOBO_OGL"  ];  then
+  depends  GLUT
+fi

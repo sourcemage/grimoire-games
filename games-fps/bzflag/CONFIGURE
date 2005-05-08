@@ -1,0 +1,27 @@
+config_query_option  BZFLAG_THREADS   "Enable threading support?"  n  \
+                     "--enable-threads"  "--disable-threads"          &&
+
+config_query_option  BZFLAG_ADMIN     "Build text admin client?"   y  \
+                     "--enable-bzadmin"  "--disable-bzadmin"          &&
+
+if  spell_ok  sdl;  then
+  config_query_option  BZFLAG_CLIENT    "Build client (needs sdl)?"  y  \
+                       "--enable-client"  "--disable-client"
+else
+  config_query_option  BZFLAG_CLIENT    "Build client (needs sdl)?"  n  \
+                       "--enable-client"  "--disable-client"
+fi  &&
+
+if  spell_ok  curl;  then
+  config_query_option  BZFLAG_CURL  "Use curl for downloading?"  y  \
+                       "--enable-curl"  "--disable-curl"
+else
+  config_query_option  BZFLAG_CURL  "Use curl for downloading?"  n  \
+                       "--enable-curl"  "--disable-curl"
+fi  &&
+
+config_query_option  BZFLAG_ROBOTS    "Build robots?"              y  \
+                     "--enable-robots"  "--disable-robots"            &&
+
+config_query_option  BZFLAG_SNAPPING  "Enable snapping?"           y  \
+                     "--enable-snapping"  "--disable-snapping"

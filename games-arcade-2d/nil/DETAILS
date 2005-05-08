@@ -1,0 +1,17 @@
+           SPELL=nil
+         VERSION=20040123
+          SOURCE=$SPELL-cvs-backup-$VERSION-1600.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]=2cefc1890024770d40c5e1cbacc23954
+        WEB_SITE=http://nil.sf.net
+         ENTERED=20040529
+         UPDATED=20040529
+      LICENSE[0]=GPL
+           SHORT="NiL isn't Liero"
+cat << EOF
+The game itself can be described either as >Quake in 2D< or >Worms done right<  (i.e. it is not turn
+based). The basic game play is to eliminate or to get eliminated. Currently there are more than 10
+high effective weapons and the game has multiplayer support (several players at one PC or over a
+TCP/IP link).
+EOF

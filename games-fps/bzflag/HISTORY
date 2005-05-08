@@ -1,0 +1,66 @@
+2005-05-02 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Added options for threading, client, server, robots
+	  and snapping
+	  Query for curl and sdl usage
+	* DEPENDS: Added optional dependencies on sdl (if building client),
+	  curl (if wanted in CONFIGURE), adns, and kerberos
+	* BUILD: Add CONFIGURE options to OPTS
+
+2005-03-18 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.0.2.20050318
+	  Moved SFX to part of VERSION
+	  Removed SFX from SOURCE and SOURCE_DIRECTORY
+	  Shortened SHORT
+	* BUILD: Pass game options to OPTS and then call default_build
+
+2005-01-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Missing .$SFX in it...
+
+2005-01-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version bump to 2.0.0, BUILD_API=2
+	* BUILD: converted to buildapi 2
+
+2004-10-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: md5fix
+
+2004-10-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Updated to 1.10.8
+
+2004-05-16 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.10.6
+
+2004-01-26 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 1.10.4
+
+2004-01-24 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Now depends on any provisor of GLUT
+
+2004-01-06 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 1.10.2
+
+2003-12-12 hgg <hgreig@bigpond.net.au>
+	* DETAILS: update to 1.10
+	* HISTORY: reformat
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* DETAILS,BUILD: Update to 1.7g2 including BUILD as package now supports ./configure 
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2002-12-09 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to v1.7g0
+
+2002-07-27 Gareth Clay <g.clay@warwick.ac.uk>
+	* DETAILS: Bumped version to 1.7e6
+	  Added md5 and license fields
+	  Changed maintainer
+
+2002-04-17 Jerome Zago <jerome.zago@insalien.org>
+	* DETAILS: New version: 1.7e4 (thanks Jeremy Kolb <jkolb@brandeis.edu>).
+	  Man pages are now installed.
+
+2002-04-10 Jerome Zago <jerome.zago@insalien.org>
+	* BUILD: /usr/games and /usr/share/man/man6 are created if needed
+	  (thanks Ted Berg <tedberg@etherstorm.net>).
+
