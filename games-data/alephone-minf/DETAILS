@@ -1,0 +1,24 @@
+           SPELL=alephone-minf
+             PKG=AlephOne-minf
+         VERSION=demo
+          SOURCE=${PKG}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
+        WEB_SITE=http://sourceforge.net/projects/marathon/
+      LICENSE[0]=UNKNOWN
+          MD5[0]=919272dd85f57d3af895f230aadda433
+         ENTERED=20030608
+         UPDATED=20030608
+         ARCHIVE=off
+      MAINTAINER=jason@flattfamily.com
+           SHORT="Marathon Infinity demo data file for Aleph One (spell name: alephone)."
+cat << EOF
+
+Aleph One is an Open Source 3D first-person shooter game, based on the game
+Marathon 2 by Bungie Software.  It supports, but doesn't require, OpenGL for
+rendering.  Aleph One was originally a MacOS-only game, but I'm working on a
+cross-platform version based on the Simple DirectMedia Layer (SDL) library,
+that should eventually run on all systems supported by SDL (Linux, BeOS,
+Windows, MacOS, Solaris, IRIX, *BSD, and others).
+
+EOF

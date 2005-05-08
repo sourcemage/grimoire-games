@@ -1,6 +1,0 @@
-depends  sdl  &&
-
-optional_depends  aalib                  \
-                  ""                     \
-                  ""                     \
-                  "for an ascii client"

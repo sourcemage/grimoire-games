@@ -1,0 +1,28 @@
+           SPELL=alephone
+         VERSION=20030530
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/aleph
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
+        WEB_SITE=http://sourceforge.net/projects/marathon/
+      LICENSE[0]=GPL
+          MD5[0]=e0a0aaa0ee97924efe2b718b88ab7e8a
+         ENTERED=20030606
+         UPDATED=20030606
+      MAINTAINER=jason@flattfamily.com
+           SHORT="Aleph One is an Open Source 3D first-person shooter game."
+cat << EOF
+
+Aleph One is an Open Source 3D first-person shooter game, based on the game
+Marathon 2 by Bungie Software.  It supports, but doesn't require, OpenGL for
+rendering.  Aleph One was originally a MacOS-only game, but I'm working on a
+cross-platform version based on the Simple DirectMedia Layer (SDL) library,
+that should eventually run on all systems supported by SDL (Linux, BeOS,
+Windows, MacOS, Solaris, IRIX, *BSD, and others).
+
+This spell does not include the game data files, and requires them to
+play.  You can cast one of the two spells that are in the grimoire which
+provide playable demo data:  AlephOne-m2 (the demo data for Marathon 2), or
+AlephOne-minf (the demo data for Marathon Infinity), or you can provide your
+own from a purchased CD of the game (http://www.bungie.com).
+
+EOF
