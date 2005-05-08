@@ -1,3 +1,6 @@
+2005-05-08 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: update SOURCE to .tar.bz2 rather than .tar.gz
+
 2005-05-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: CVS only
 	* DEPENDS: proper DEPENDS file

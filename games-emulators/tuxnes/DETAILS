@@ -1,6 +1,6 @@
            SPELL=tuxnes
          VERSION=0.75
-          SOURCE=$SPELL-$VERSION.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/tuxnes:tuxnes
   FORCE_DOWNLOAD=on
