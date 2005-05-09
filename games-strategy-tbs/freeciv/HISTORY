@@ -1,5 +1,6 @@
 2005-05-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: Bugfixes... sandalle you goofed the md5s
+	* DETAILS: Bugfixes... the tarball changed and the version
+	  didn't
 
 2005-04-26 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.0.1
