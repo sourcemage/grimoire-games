@@ -1,0 +1,18 @@
+	   SPELL=fortune-it
+         VERSION=1.51
+          SOURCE=fortune.it-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune.it-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/$SOURCE
+   SOURCE_URL[1]=http://www.giovannelli.it/~gmarco/files/$SOURCE
+        WEB_SITE=http://www.void.irq.org/
+          MD5[0]=37b72db06818b9306235031eed91934f
+      LICENSE[0]=BSD
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="A fortune file in Italian."
+cat << EOF
+This package contains a very funny fortune file in Italian.
+EOF
+
+	

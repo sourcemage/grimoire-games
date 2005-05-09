@@ -1,0 +1,18 @@
+	   SPELL=fortune-hitchhiker
+         VERSION=1.0
+          SOURCE=$SPELL.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/hitchhiker/$SOURCE
+        WEB_SITE=http://www.splitbrain.org/Fortunes/hitchhiker/index.php
+          MD5[0]=ab6d5664a7a2ffee51edf5c28bfc7a59
+      LICENSE[0]=UNKNOWN
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="Hitchhiker's Guide to the Galaxy fortunes"
+cat << EOF
+This is a collection of quotes from Douglas Adams' famous "Hitchhikers
+Guide to the Galaxy".
+EOF
+
+	

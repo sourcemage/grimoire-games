@@ -1,0 +1,17 @@
+	   SPELL=fortune-bofh
+         VERSION=2.0
+          SOURCE=bofh-fortune-mod${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/bofh-fortune-mod${VERSION}
+   SOURCE_URL[0]=http://www.void.irq.org/$SOURCE
+        WEB_SITE=http://www.void.irq.org/
+          MD5[0]=ccd9a28fc9c33d026c74e6e22ce61616
+      LICENSE[0]=BSD
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="Bastard Operator From Hell Fortune-Mod"
+cat << EOF
+Bastard Operator From Hell Fortune-Mod
+EOF
+
+	

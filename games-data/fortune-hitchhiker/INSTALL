@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 hitchhiker /usr/share/games/fortunes/
+install -m 644 hitchhiker.dat /usr/share/games/fortunes/
+

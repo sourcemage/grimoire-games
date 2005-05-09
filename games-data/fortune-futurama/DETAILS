@@ -1,0 +1,18 @@
+	   SPELL=fortune-futurama
+         VERSION=0.2
+          SOURCE=fortune-mod-futurama-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-futurama-$VERSION
+   SOURCE_URL[0]=http://www.netmeister.org/apps/$SOURCE
+        WEB_SITE=http://www.netmeister.org/misc/
+          MD5[0]=50aa0af23099f7d42c01bdcbc3b6cbfc
+      LICENSE[0]=BSD
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="Futurama Fortune Cookie-Files"
+cat << EOF
+Futurama Fortune Cookie-Files - a compilation of quotes from
+the TV-Series "Futurama" by Matt Groeining.
+EOF
+
+	

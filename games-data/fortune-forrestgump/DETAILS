@@ -1,0 +1,18 @@
+	   SPELL=fortune-forrestgump
+         VERSION=1.0
+          SOURCE=fortune-fgump.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-fgump
+   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/fgump/$SOURCE
+        WEB_SITE=http://www.splitbrain.org/Fortunes/fgump/index.php
+          MD5[0]=902d155d17ee303c0e4dc9634836017a
+      LICENSE[0]=UNKNOWN
+         ENTERED=20050502
+         UPDATED=20050502
+       BUILD_API=2
+           SHORT="Forrest Gump fortunes"
+cat << EOF
+fortune-fgump is a collection of quotes from the movie
+"Forrest Gump" for use with the fortune program.
+EOF
+
+	

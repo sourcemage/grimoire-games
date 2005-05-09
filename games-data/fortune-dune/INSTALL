@@ -1,0 +1,18 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 chapterhouse-dune /usr/share/games/fortunes/
+install -m 644 children-of-dune /usr/share/games/fortunes/
+install -m 644 dune-messiah /usr/share/games/fortunes/
+install -m 644 dune /usr/share/games/fortunes/
+install -m 644 god-emperor /usr/share/games/fortunes/
+install -m 644 house-atreides /usr/share/games/fortunes/
+install -m 644 house-harkonnen /usr/share/games/fortunes/
+install -m 644 heretics-of-dune /usr/share/games/fortunes/
+install -m 644 chapterhouse-dune.dat /usr/share/games/fortunes/
+install -m 644 children-of-dune.dat /usr/share/games/fortunes/
+install -m 644 dune.dat /usr/share/games/fortunes/
+install -m 644 dune-messiah.dat /usr/share/games/fortunes/
+install -m 644 god-emperor.dat /usr/share/games/fortunes/
+install -m 644 heretics-of-dune.dat /usr/share/games/fortunes/
+install -m 644 house-atreides.dat /usr/share/games/fortunes/
+install -m 644 house-harkonnen.dat /usr/share/games/fortunes/
+

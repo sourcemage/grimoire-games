@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 starwars /usr/share/games/fortunes/
+install -m 644 starwars.dat /usr/share/games/fortunes/
+

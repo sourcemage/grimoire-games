@@ -1,0 +1,18 @@
+	   SPELL=fortune-discworld
+         VERSION=1.0
+          SOURCE=$SPELL.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/discworld/$SOURCE
+        WEB_SITE=http://www.splitbrain.org/Fortunes/discworld/index.php
+          MD5[0]=f89740512acd090ac31f8462f7711fcf
+      LICENSE[0]=UNKNOWN
+         ENTERED=20050502
+         UPDATED=20050502
+       BUILD_API=2
+           SHORT="DiscWorld fortunes"
+cat << EOF
+fortune-discworld is a collection of quotes from the "Discworld" novels
+by Terry Pratchett.
+EOF
+
+	

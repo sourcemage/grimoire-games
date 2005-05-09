@@ -1,0 +1,3 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 futurama /usr/share/games/fortunes/
+install -m 644 futurama.dat /usr/share/games/fortunes/

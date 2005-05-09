@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 discworld /usr/share/games/fortunes/
+install -m 644 discworld.dat /usr/share/games/fortunes/
+

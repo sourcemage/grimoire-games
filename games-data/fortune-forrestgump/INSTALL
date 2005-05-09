@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 fgump /usr/share/games/fortunes/
+install -m 644 fgump.dat /usr/share/games/fortunes/
+

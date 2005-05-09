@@ -1,0 +1,31 @@
+	   SPELL=fortune-dune
+         VERSION=2.0.1
+          SOURCE=fortune-mod-dune-quotes.$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-dune-quotes.$VERSION
+   SOURCE_URL[0]=http://dune.s31.pl/$SOURCE
+        WEB_SITE=http://dune.s31.pl/
+          MD5[0]=b77ae7e84c891b44b879a9eaa79baa0e
+      LICENSE[0]=BSD
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="Dune Chronicles fortunes"
+cat << EOF
+The purpose of this page is to provide the sysadmins with
+the ultimate set of Dune Chronicles pre-chapter quotes.
+Currently the following novels are supported:
+
+    * Dune: House Atreides
+    * Dune: House Harkonnen
+    * Dune
+    * Dune Messiah
+    * Children of Dune
+    * God Emperor
+    * Heretics of Dune
+    * Chapterhouse Dune
+
+The first two are the pre-Dune stories written by Frank Herbert's
+son, Brian Herbert together with Kevin J. Anderson.
+EOF
+
+	

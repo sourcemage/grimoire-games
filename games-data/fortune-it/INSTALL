@@ -1,0 +1,5 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 italia /usr/share/games/fortunes/
+install -m 644 zozzital /usr/share/games/fortunes/
+install -m 644 italia.dat /usr/share/games/fortunes/
+install -m 644 zozzital.dat /usr/share/games/fortunes/
