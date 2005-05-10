@@ -1,0 +1,14 @@
+           SPELL=gmult
+         VERSION=4.2
+       BUILD_API=2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://mterry.name/gmult/$SOURCE
+          MD5[0]=448c7943cd89c179048e799998966ce8
+        WEB_SITE=http://mterry.name/gmult
+         ENTERED=20050509
+           SHORT="Multiplication Puzzle"
+cat << EOF
+Multiplication Puzzle is a simple GTK+ 2 game that emulates the multiplication 
+game found in Emacs.
+EOF
