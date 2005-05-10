@@ -1,5 +1,5 @@
            SPELL=mercator
-         VERSION=${VERSION:=0.2.1}
+         VERSION=${VERSION:=0.2.2}
 if  [  "$CVS"  ==  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -11,7 +11,7 @@ else
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=62782949512f475eda68bda59a270e69
+          MD5[0]=0a810770d5bee4ad7528385997e1b682
 fi
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
