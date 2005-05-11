@@ -1,3 +1,6 @@
+2005-05-11 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* arcade/CritticalMass: deprecated
+
 2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-z-rejected: moved to z-rejected/z-games
 	* games-http/pstreamer: moved to games-utils/pstreamer

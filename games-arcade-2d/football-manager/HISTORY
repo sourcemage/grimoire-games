@@ -1,0 +1,26 @@
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* DETAILS, BUILD: Updated for Build API 2
+	* Removed MAINTAINER field
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	* HISTORY: Formatted to Guru Handbook
+
+2003-07-17 hgg <hgreig@bigpond.net.au>
+	* DETAILS: change name due to conflict with another in shell-term
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-05-20 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Reorder file to declare WEBSITE before SOURCE_URL
+
+2003-05-19 hgg <hgreig@bigpond.net.au>
+	* BUILD: Update for ${INSTALL_ROOT}
+
+2003-04-15 Eric Sandall <eric@sandall.us>
+	* Added to games
+
+2003-04-15 Eric Schabell <eschabell@sourcemage.org>
+	* Created spell.
+
