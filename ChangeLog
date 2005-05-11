@@ -1,0 +1,92 @@
+2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-z-rejected: moved to z-rejected/z-games
+	* games-http/pstreamer: moved to games-utils/pstreamer
+	* games-http/psychoquery: moved to games-utils/psychoquery
+	* games-http/psychostats: moved to games-utils/psychostats
+	* games-http/qstat: moved to games-utils/qstat
+	* games-http/xqf: moved to games-utils/xqf
+	* rpg/crossfire-client-data: moved to games-rpg-mp/crossfire-client-data
+	* rpg/crossfire-client: moved to games-rpg-mp/crossfire-client
+	* rpg/crossfire-data: moved to games-rpg-mp/crossfire-data
+	* rpg/crossfire: moved to games-rpg-mp/crossfire
+	* rpg/falconseye: moved to games-rpg-sp/falconseye
+	* rpg/gtk2hack: moved to games-rpg-sp/gtk2hack
+	* rpg/freedroidrpg: moved to games-rpg-sp/freedroidrpg
+	* rpg/ivan: moved to games-rpg-sp/ivan
+	* puzzle/*: moved to games-puzzles/*
+	* emulators/*: moved to games-emulators/*
+	* cards/*: moved to games-cards/*
+	* board/*: moved to games-board/*
+	* go/*: moved to games-board/*
+
+2005-04-08 Eric Sandall <eric@sandall.us>
+	* libaccount, accounts, groups: Branched from devel
+
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* FUNCTIONS: Branched from devel so games has up-to-date FUNCTIONS
+
+2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* 3D/TORCS: Removed deprecated
+	* flight/SearchAndRescue: Renamed to flight/searchandrescue
+	* games-libs/SDLmm: Renamed to games-libs/sdlmm
+	* games-z-rejected/AmericasArmy: Renamed to games-z-rejected/americasarmy
+	* games-z-rejected/eClient: Rendamed to games-z-rejected/eclient
+	* shooters/AlephOne-m2: Renamed to shooters/alephone-m2
+	* shooters/AlephOne-minf: Renamed to shooters/alephone-minf
+	* strategy/ASC: Removed deprecated
+
+2005-03-16 Eric Sandall <eric@sandall.us>
+	* arcade/CriticalMass: Renamed to arcade/criticalmass
+	* arcade/Maelstrom: Removed deprecated spell
+
+2005-02-23 Eric Sandall <eric@sandall.us>
+	* 3D/TORCS: Renamed to 3D/torcs
+
+2005-02-13 Neuron <vlmarek@volny.cz>
+	* rpg/ivan: Added new rogue-like game with graphics
+
+2005-01-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* 3D/reaper: deprecated, project seems dead for over two years, fails to
+	  compile
+
+2005-01-23 Neuron <vlmarek@volny.cz>
+	* arcade/blobwars: Added new spell
+
+2005-01-18 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* terminal/*: renamed section to games-terminal due to a name conflict with
+	  a spell
+
+2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* 3D/glaxium: deprecated, no longer supported upstream
+
+2004-12-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* edutainment/stellarium: moved to science section in normal grimoire and
+	  removed from games
+
+2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-libs/ClanLib: Rename to games-libs/clanlib
+	* games-libs/ClanLib-unstable: Rename to games-libs/clanlib-devel
+
+2004-10-30 Eric Sandall <eric@sandall.us>
+	* strategy/ASC: Renamed to strategy/asc
+
+2004-07-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* updates and fixes:
+	* 3D:neverball, Scorched3D, foobillard, glhack, mahjongg3d
+	* For an exact ChangeLog see the mailing list SM-Discuss where I'm sending
+	  the info...
+
+2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* updates and fixes:
+	* arcade: jumpnbump, lbreakout2, netris, rocksndiamonds, rtts
+	* strategy: ASC, castle-combat, openttd, xfrisk
+	* deprecated: crafted
+	* For an exact ChangeLog see the mailing list SM-Discuss where I'm sending
+	  the info...
+
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* scummvm-cvs,scummvm_tools-cvs: These two -cvs spells have been merged into
+	  the regular scummvm or scummvm_tools spell. dispel scummvm-cvs and
+	  scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, then just say yes
+	  to cvs version.
+

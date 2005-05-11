@@ -1,5 +1,0 @@
-depends X11-SERVER 			&&
-optional_depends  "sdl"			\
-		  "--with-sdl"		\
-		  ""			\
-		  "Enable sdl support?" 			
