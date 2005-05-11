@@ -1,0 +1,3 @@
+depends GLUT
+depends sdl
+depends sdl_mixer

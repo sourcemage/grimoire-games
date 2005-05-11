@@ -1,0 +1,7 @@
+depends  GLUT    &&
+depends  python  &&
+depends  sdl     &&
+depends  libpng  &&
+depends  jpeg    &&
+depends  perl    &&
+depends  openal

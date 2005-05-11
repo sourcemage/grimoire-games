@@ -1,0 +1,24 @@
+           SPELL=flightgear
+         VERSION=0.9.6
+          SOURCE=FlightGear-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Source/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Source/${SOURCE}
+   SOURCE_URL[2]=ftp://ftp.de.flightgear.org/pub/fgfs/Source/${SOURCE}
+   SOURCE_URL[3]=ftp://ftp.sunsite.org.uk/sites/ftp.flightgear.org/flightgear-ftp/Source/${SOURCE}
+          MD5[0]=06f6300d966e7898bf379a571916cf4a
+        WEB_SITE=http://www.flightgear.org
+         ENTERED=20010922
+         UPDATED=20040107
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Flight simulator."
+cat << EOF
+The Flight Gear Flight Simulator project is a free, open-source,
+multi-platform, cooperative flight sim development project. Source code
+for the entire project is available and licensed under the GPL. The
+Flight Gear project is working to create a sophisticated flight
+simulator framework for the development and pursuit of interesting
+flight simulator ideas. We are developing a good basic sim that can be
+expanded and improved upon by anyone interested in contributing.
+EOF

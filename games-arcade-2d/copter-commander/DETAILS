@@ -1,0 +1,20 @@
+           SPELL=copter-commander
+         VERSION=1.8
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/coco/$SOURCE
+          MD5[0]=9d7330e8c19be495a605ecaea117ba57
+        WEB_SITE=http://coco.sourceforge.net/
+         ENTERED=20020128
+         UPDATED=20020212
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Arcade game like Armor Alley."
+cat << EOF
+A unique blend of arcade action and real time strategy, Copter
+Commander is fun for novices but surprisingly deep. It supports one
+to four players via Internet play and is based on the game design of
+Rescue Raiders/Armor Alley.
+
+Sound probably will not work in this game, even if you have esd running.
+EOF

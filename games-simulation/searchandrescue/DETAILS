@@ -1,0 +1,20 @@
+           SPELL=searchandrescue
+             PKG=SearchAndRescue
+         VERSION=0.8.1
+          SOURCE=${PKG}-${VERSION}.tar.bz2
+         SOURCE2=${PKG}-data-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
+   SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
+  SOURCE2_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE2}
+          MD5[0]=5bfb6a54625fa95b4d9cabdf5e998eb1
+          MD5[1]=ea08530e832a00768258275b97e349b3
+        WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
+         ENTERED=20010922
+         UPDATED=20020426
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="3D helicopter game."
+cat << EOF
+Search And Rescue is a game in which the player pilots rescue
+helicopters to rescue victims in various situations of distress.
+EOF

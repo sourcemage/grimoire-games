@@ -1,0 +1,16 @@
+#!/bin/sh
+
+mkdir -p ${HOME}/.vegastrike
+cd ${HOME}/.vegastrike
+if [ -e save.4.x.txt ] ; then
+	touch save.4.x.txt;
+else
+	echo "default"> save.4.x.txt ;
+	mkdir -p ${HOME}/.vegastrike/save
+	cp save.4.x.txt save/
+fi
+cp /usr/share/games/vegastrike/data/setup.config .
+cp /usr/share/games/vegastrike/data/.vegastrike/*.m3u .
+cp /usr/share/games/vegastrike/data/vegastrike.config .
+/usr/games/vssetup
+
