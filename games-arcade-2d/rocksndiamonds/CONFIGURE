@@ -1,0 +1,8 @@
+if  !  grep  -q  "SDL="  $SPELL_CONFIG; then
+  if  query  "Enable SDL support (needed for fullscreen mode)?"  y
+    then  SDL=y
+    else  SDL=n
+  fi
+
+  echo  "SDL=$SDL"  >>  $SPELL_CONFIG
+fi

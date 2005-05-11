@@ -1,10 +1,14 @@
 2005-03-16 Eric Sandall <eric@sandall.us>
-	* Renamed to criticalmass
-	* DETAILS: Removed SOURCE information
+	* Renamed from CriticalMass
+	* DETAILS: Renamed to criticalmass
+	  Updated to 0.9.10
 	  Updated UPDATED
-	* DEPENDS: Depend only on criticalmass
-	* PRE_BUILD,BUILD: Run only `true`
-	* TRIGGERS: On cast, dispel self
+	  Added BUILD_API=2
+	  Removed MAINTAINER
+	  Shortened SHORT
+	* CONFLICTS: Auto-conflict with CriticalMass
+	* BUILD: Converted to build_api 2
+	  Use OPTS for game options and default_build
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
