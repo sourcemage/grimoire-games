@@ -1,0 +1,6 @@
+dopewars -C /usr/share/dopewars/dopewars.sco
+chown root:games -R /usr/share/dopewars
+chmod g+w -R /usr/share/dopewars
+message "
+Do not forget to add the players in the 'games' group
+"
