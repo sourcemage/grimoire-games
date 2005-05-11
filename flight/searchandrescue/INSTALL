@@ -1,4 +1,0 @@
-default_install                                    &&
-mkdir  -p  ${INSTALL_ROOT}/usr/share/games/$SPELL  &&
-cd   ${INSTALL_ROOT}/usr/share/games/$SPELL        &&
-unpack  ${SOURCE2}  ${MD5[1]}
