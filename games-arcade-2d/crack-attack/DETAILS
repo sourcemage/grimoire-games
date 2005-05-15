@@ -1,12 +1,12 @@
            SPELL=crack-attack
-         VERSION=1.1.11
+         VERSION=1.1.14
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://savannah.nongnu.org/download/crack-attack/$SOURCE
         WEB_SITE=http://savannah.nongnu.org/projects/crack-attack/
          ENTERED=20020131
-         UPDATED=20050119
-          MD5[0]=6f5362512f253d965ea3cd95017a0f74
+         UPDATED=20050515
+          MD5[0]=a917ba108436549e32fb870ef312b7c7
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="crack-attack is a network multi-player variation of tetris"
