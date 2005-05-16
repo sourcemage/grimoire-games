@@ -1,3 +1,7 @@
+2005-05-15 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.91
+	* DEPENDS: added dependency on sdl_ttf
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_mixer and SDL_image renamed to sdl*
 	  Removed SDL as the above depend on sdl
