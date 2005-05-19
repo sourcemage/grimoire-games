@@ -1,13 +1,13 @@
            SPELL=gnome-mud
-         VERSION=0.10.6
+         VERSION=0.10.7
           BRANCH=`echo $VERSION|cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
-          MD5[0]='841c024f03cd157f6cb3d4912439b9c4'
+          MD5[0]='c9220ac42df109ef37ff5f32bb0f78ec'
         WEB_SITE=http://amcl.sourceforge.net
          ENTERED=20020116
-         UPDATED=20050514
+         UPDATED=20050517
      GATHER_DOCS="off"
       LICENSE[0]=GPL
            SHORT="Multi-User Dungeon (MUD) client"
