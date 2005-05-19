@@ -53,7 +53,7 @@
 	* DETAILS: Downgrade to 0.6.5 as pingus broke on newer version
 	* DEPENDS: Update file
 	* BUILD: RE-Added BUILD to disable-debug in configure(halves 
-compile time)
+	  compile time)
 
 2003-06-12 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update to 0.7.2-1
