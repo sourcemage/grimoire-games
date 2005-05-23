@@ -1,1 +1,6 @@
-cp src/game/fillets /usr/games
+if [ -d /usr/games ]; then
+    cp src/game/fillets /usr/games
+else 
+    mkdir /usr/games
+    cp src/game/fillets /usr/games
+fi
