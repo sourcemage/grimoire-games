@@ -1,3 +1,7 @@
+2005-06-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: make_single added also used default_build
+	  fixes bug #9054 invalid infodir location
+
 2004-11-08 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 4.1.16  (Bug #7593)
 	  Added BUILD_API=2
