@@ -3,4 +3,5 @@ cd ${INSTALL_ROOT}/usr/share/games &&
 unpack ${SOURCE2} ${MD5[1]}  &&
 mkdir -p Chromium-0.9/bin    &&
 cd $SOURCE_DIRECTORY  &&
-install -m755 bin/chromium ${INSTALL_ROOT}/usr/games/
+install -m755 bin/chromium ${INSTALL_ROOT}/usr/games/ &&
+profile_install

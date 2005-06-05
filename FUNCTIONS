@@ -197,7 +197,8 @@ function default_games_build() {
 function profile_install() {
   if [ -f ${SCRIPT_DIRECTORY}/profile/${SPELL}.sh ] ; then
     if ! [ -e ${INSTALL_ROOT}/etc/profile.d/${SPELL}.sh ] ; then
-      install  -m  755  ${SCRIPT_DIRECTORY}/profile/{SPELL}.sh ${INSTALL_ROOT}/etc/profile.d
+      install  -m  755  ${SCRIPT_DIRECTORY}/profile/${SPELL}.sh \
+                        ${INSTALL_ROOT}/etc/profile.d/${SPELL}.sh
     fi
   fi
    

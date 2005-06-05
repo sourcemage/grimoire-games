@@ -12,6 +12,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/C${SPELL/\c/}-${VERSION/\.12/}
          UPDATED=20030614
       LICENSE[0]=ART
       LICENSE[1]=ART
+       BUILD_API=2
            SHORT="Fast paced, arcade-style, OpenGL, top-scrolling space shooter"
 cat << EOF
 t  h  e    s  t  o  r  y 
