@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY &&
+install -m 644 chalkboard /usr/share/games/fortunes/
+install -m 644 chalkboard.dat /usr/share/games/fortunes/
+

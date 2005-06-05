@@ -1,0 +1,20 @@
+	   SPELL=fortune-simpsons
+         VERSION=1.0
+          SOURCE=${SPELL}-chalkboard.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-chalkboard
+   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/simpsons/$SOURCE
+        WEB_SITE=http://www.splitbrain.org/Fortunes/simpsons/index.php
+          MD5[0]=94e2bd7038a60ebf4caeb50b34f25178
+      LICENSE[0]=GPL
+         ENTERED=20050502
+         UPDATED=20050502
+       BUILD_API=2
+           SHORT="Simpsons fortunes"
+cat << EOF
+fortune-simpsons-chalkboard is a collection of Bart Simpson's
+chalkboard-writings from the opening credits of episodes of
+the television show "The Simpsons", packaged up for use with
+the fortune program.
+EOF
+
+	
