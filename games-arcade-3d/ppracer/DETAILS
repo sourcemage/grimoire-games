@@ -1,0 +1,18 @@
+           SPELL=ppracer
+         VERSION=0.3.1
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://download.berlios.de/$SPELL/$SOURCE
+        WEB_SITE=http://racer.planetpenguin.de
+         ENTERED=20050425
+         UPDATED=20050425
+          MD5[0]=59d60f8be013e84fdf1322c7416333b3
+      LICENSE[0]=GPL
+           SHORT="Updated Tuxracer Clone"
+cat << EOF
+PlanetPenguin Racer is an OpenGL racing game 
+featuring Tux, the Linux mascot. The goal of the
+game is to slide down a snow- and ice-covered 
+mountain as quickly as possible. It is based on
+the GPL version of TuxRacer.
+EOF
