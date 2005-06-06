@@ -1,0 +1,6 @@
+2005-02-13 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS,BUILD,INSTALL: Minor fixes
+
+2005-02-13 Ingo Arndt <scachi@gmx.de>
+	* BUILD,DEPENDS,DETAILS,HISTORY,INSTALL:Created the spell
+	

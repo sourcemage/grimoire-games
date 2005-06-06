@@ -1,0 +1,6 @@
+cd ${SOURCE_DIRECTORY}/docs &&
+sedit 's/.*serverhowto.xml.*//g' Jamfile &&
+cd ${SOURCE_DIRECTORY} &&
+jam install &&
+cd ${INSTALL_ROOT}/usr/share/games/netpanzer &&
+chgrp  -R  games  *
