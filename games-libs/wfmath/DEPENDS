@@ -1,2 +1,6 @@
 message  "${MESSAGE_COLOR}Depends on atlas-c++/devel${DEFAULT_COLOR}"  &&
-depends  atlas-c++
+depends  atlas-c++  &&
+
+if  [  "$WFMATH_CVS"  ==  "y"  ];  then
+  depends  CVS
+fi
