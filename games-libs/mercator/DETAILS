@@ -1,20 +1,20 @@
            SPELL=mercator
-         VERSION=${VERSION:=0.2.2}
+         VERSION=${VERSION:=0.2.3}
 if  [  "$CVS"  ==  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
-   SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/${SPELL}
+   SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/$SPELL
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
 else
-          SOURCE=${SPELL}-${VERSION}.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
-   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=0a810770d5bee4ad7528385997e1b682
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
+          MD5[0]=04aad4f5509cb8ae9a967dedfbeece7d
 fi
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]=GPL
