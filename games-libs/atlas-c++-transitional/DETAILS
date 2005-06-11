@@ -1,11 +1,11 @@
            SPELL=atlas-c++-transitional
-         VERSION=0.4.95
-          SOURCE=Atlas-C++-$VERSION.tar.gz
+         VERSION=0.5.0
+          SOURCE=Atlas-C++-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/transitional/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/Atlas-C++/transitional/${SOURCE}
-          MD5[0]=d6ea3b8897a1b1cbf47e72d4649ad510
+          MD5[0]=0b330287d0e9b714aa2394173b2852c8
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20040409
          UPDATED=20040409
