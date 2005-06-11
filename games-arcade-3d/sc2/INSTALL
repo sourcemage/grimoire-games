@@ -1,0 +1,4 @@
+sh  build.sh  uqm  install      &&
+pushd  $INSTALL_ROOT/usr/games  &&
+ln  -sfn  uqm  sc2              &&
+popd

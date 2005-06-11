@@ -1,3 +1,17 @@
+2005-06-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.4.0
+	  SOURCE is .tar.gz instead of .tgz
+	  SOURCE2 is now a .uqm instead of .zip
+	  Removed ARCHIVE=off
+	  Added BUILD_API=2
+	* PREPARE: Sources are now .uqm instead of .zip
+	  Converted to config_query and lump music and voice into one query
+	* PRE_BUILD: Only unpack voice and music if wanted
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Install_rootify symlink
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 	  Removed SDL as the above depend on sdl
