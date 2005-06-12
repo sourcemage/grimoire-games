@@ -1,5 +1,5 @@
            SPELL=cyphesis
-         VERSION=${VERSION:=0.3.10}
+         VERSION=${VERSION:=0.3.11}
 if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -11,7 +11,7 @@ else
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/servers/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/servers/$SPELL/$SOURCE
-          MD5[0]=924f3a1c705f1c444af7871796be67c6
+          MD5[0]=822b2e4b2577090e84b1ff0b77abd60c
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/dev/eng/servers/$SPELL
