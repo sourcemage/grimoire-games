@@ -1,4 +1,4 @@
-./autogen.sh  &&
+NOCONFIGURE="NO"  ./autogen.sh  &&
 
 OPTS="          $OPTS                             \
        --bindir=${INSTALL_ROOT}/usr/games         \

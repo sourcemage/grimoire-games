@@ -1,9 +1,9 @@
            SPELL=criticalmass
-         VERSION=0.9.10
+         VERSION=0.9.11
           SOURCE=CriticalMass-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CriticalMass-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/criticalmass/$SOURCE
-          MD5[0]=0f590d25e1e74257e1a93dea02ca2867
+          MD5[0]=0ccdf0549efc8d8f54ceec39d3fb77e5
         WEB_SITE=http://criticalmass.sourceforge.net
          ENTERED=20011214
          UPDATED=20050316
