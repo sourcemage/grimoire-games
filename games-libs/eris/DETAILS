@@ -7,12 +7,12 @@ if    [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
           MD5[0]="IGNORE"
   FORCE_DOWNLOAD=1
 elif  [  "$ERIS_BRANCH"  ==  "devel"  ];  then
-         VERSION=1.3.5
+         VERSION=1.3.6
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
-          MD5[0]=616bd0e9ac1adf00009154a0a74e8068
+          MD5[0]=83c904eaed9fa45b120de2893a731fda
 else
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
