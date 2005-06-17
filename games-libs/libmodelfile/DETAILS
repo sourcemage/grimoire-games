@@ -1,9 +1,9 @@
            SPELL=libmodelfile
-         VERSION=0.1.91
+         VERSION=0.1.92
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-          MD5[0]=070902c308a2535196f34c822af3e1bb
+          MD5[0]=320dd2b93acaafedccebd1602f59970c
         WEB_SITE=http://sourceforge.net/projects/worldforge/
          ENTERED=20041021
          UPDATED=20041021
