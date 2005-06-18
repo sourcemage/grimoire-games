@@ -1,9 +1,9 @@
            SPELL=cal3d
-         VERSION=0.9.1
-          SOURCE=$SPELL-$VERSION.tar.bz2
+         VERSION=0.10.0
+          SOURCE=$SPELL-full-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
-          MD5[0]=7b05ea811da68e145bb4a57b8df87e52
+          MD5[0]=28bc8bf279b41cde1827bbda68953a67
         WEB_SITE=http://sourceforge.net/projects/cal3d/
          ENTERED=20020915
          UPDATED=20020915
