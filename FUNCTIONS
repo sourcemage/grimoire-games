@@ -203,3 +203,14 @@ function profile_install() {
   fi
    
 }
+
+
+#-------------------------------------------------------------------------
+## Compatibility code for gracefully failing if the user uses an older
+## version of sorcery with a spell that calls unpack_file.
+#-------------------------------------------------------------------------
+declare -f unpack_file &> /dev/null ||
+function unpack_file() {
+  message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
+  return 1
+}
