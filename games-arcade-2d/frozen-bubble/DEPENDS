@@ -1,2 +1,1 @@
-depends  perl       &&
-depends  SDL-sdlpl
+depends  sdl-sdlpl
