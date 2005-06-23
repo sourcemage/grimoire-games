@@ -1,12 +1,12 @@
            SPELL=enigma2
-         VERSION=0.91
+         VERSION=0.92
           SOURCE=enigma-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/enigma-$VERSION
    SOURCE_URL[0]=http://savannah.nongnu.org/download/enigma/$SOURCE
         WEB_SITE=http://savannah.nongnu.org/download/enigma/
          ENTERED=20040728
          UPDATED=20040728
-          MD5[0]=536432b3f99c4e190f0ee2e684e130e9
+          MD5[0]=d72cc5de045be38943194352b4c68b55
       LICENSE[0]=GPL
            SHORT="A puzzle game involving pushing stuff around."
 cat << EOF

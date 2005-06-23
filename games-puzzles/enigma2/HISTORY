@@ -1,3 +1,6 @@
+2005-06-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.92
+
 2005-05-15 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: updated to 0.91
 	* DEPENDS: added dependency on sdl_ttf
