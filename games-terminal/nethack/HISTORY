@@ -1,6 +1,7 @@
 2005-06-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: Bug #9141 a space between a * and .
-	* BUILD: Typo in the BUILD file Bug #9169
+	* BUILD: Typo in the BUILD file Bug #9169.
+	* BUILD: Another typo...
 
 2005-04-07 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAKE_NJOBS=1

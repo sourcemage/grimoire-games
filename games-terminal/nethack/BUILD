@@ -4,10 +4,12 @@
 #hgg(20030902)
 # make makefiles unix
 sh  sys/unix/setup.sh  &&
+
 # make corrections
 if  [  "$NETHACK_GUI"  ==  "tty"  ];  then
   echo "BUILDING for TTY console" 
-elif  [  "NETHACK_GUI"  ==  "x11"  ];  then
+
+elif  [  "$NETHACK_GUI"  ==  "x11"  ];  then
   echo  "BUILDING for X11"  &&
   # just X11 graphics, if you want others, define them here.
   sedit  "s/\/\* #define X11_GRAPHICS \*\//#define X11_GRAPHICS/"   \
@@ -21,6 +23,7 @@ elif  [  "NETHACK_GUI"  ==  "x11"  ];  then
   sedit  "s/^WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11/& -L\/usr\/X11R6\/lib\/ -lXpm /"  src/Makefile  &&
   sedit  "s/^VARDATND =/& x11tiles NetHack.ad pet_mark.xbm rip.xpm/g"        \
          Makefile
+
 elif  [  "$NETHACK_GUI"  ==  "qt-x11"  ];  then 
   echo "BUILDING for QT"                                         &&
   sedit  "s/\/\* #define QT_GRAPHICS \*\//#define QT_GRAPHICS/"  \
@@ -35,6 +38,7 @@ elif  [  "$NETHACK_GUI"  ==  "qt-x11"  ];  then
   export QTDIR=/usr                                                         &&
   sedit "s/-I\$(QTDIR)\/include/-I\$(QTDIR)\/include\/qt/g" src/Makefile    &&
   sedit "s/^VARDATND =/& x11tiles NetHack.ad pet_mark.xbm rip.xpm nhsplash.xpm/" Makefile 
+
 elif  [  "$NETHACK_GUI"  ==  "gnome"  ];  then
   echo "BUILDING for GNOME"                                                  &&
   sedit  "s/\/\* #define GNOME_GRAPHICS \*\//#define GNOME_GRAPHICS/"        \
@@ -66,8 +70,10 @@ sedit  "s/^CFLAGS = -O -I\.\.\/include$/# &/"  src/Makefile  &&
 sedit  "s/^LFLAGS =$/# &/"  src/Makefile                       &&
 sedit  "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = $CFLAGS -fomit-frame-pointer -I..\/include/"  src/Makefile &&
 sedit  "s/# LFLAGS = -L\/usr\/X11R6\/lib/LFLAGS = -L\/usr\/X11R6\/lib/" src/Makefile  &&
+
 # linux uses ncurses
 sedit  "s/WINTTYLIB = -ltermlib/WINTTYLIB = -lncurses/"  src/Makefile  &&
+
 # we probably don't need to assign the shell again.
 sedit  "s/# SHELL = \/bin\/sh/SHELL = \/bin\/sh/"  util/Makefile       &&
 sedit  "s/# CFLAGS = -O2 -fomit-frame-pointer -I\.\.\/include/CFLAGS = $CFLAGS -fomit-frame-pointer -I..\/include/"  util/Makefile &&
