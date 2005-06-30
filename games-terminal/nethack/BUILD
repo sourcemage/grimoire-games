@@ -7,7 +7,7 @@ sh  sys/unix/setup.sh  &&
 # make corrections
 if  [  "$NETHACK_GUI"  ==  "tty"  ];  then
   echo "BUILDING for TTY console" 
-elif  [  "NETHACK_GUI1"  ==  "x11"  ];  then
+elif  [  "NETHACK_GUI"  ==  "x11"  ];  then
   echo  "BUILDING for X11"  &&
   # just X11 graphics, if you want others, define them here.
   sedit  "s/\/\* #define X11_GRAPHICS \*\//#define X11_GRAPHICS/"   \
