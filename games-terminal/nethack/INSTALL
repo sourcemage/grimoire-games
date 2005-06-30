@@ -6,7 +6,7 @@ make install                        &&
 # check POST_REMOVE? (was POST_INSTALL, doesn't exist) for more info. 
 cd  doc                                 &&
 make  distrib                           &&
-cp * .txt  /usr/share/games/nethackdir  &&
+cp *.txt  /usr/share/games/nethackdir   &&
 make  manpages                          &&
 
 if  [  !  -d  /usr/games  ] && [ "$BUILT" = "yes" ]
