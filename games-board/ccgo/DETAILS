@@ -1,0 +1,16 @@
+           SPELL=ccgo
+         VERSION=0.3.6.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://ccdw.org/~cjj/prog/ccgo/src/$SOURCE
+        WEB_SITE=http://ccdw.org/~cjj/prog/ccgo/
+          MD5[0]=7c604cf2fbeb3efaeeaaeda075a83754
+      LICENSE[0]=GPL
+         ENTERED=20050701
+         UPDATED=20050701
+       BUILD_API=2
+           SHORT="a frontend to gnugo or internet IGS go games"
+cat << EOF
+ccGo is a program allows you to play go with gnugo on your computer or with
+other players on the IGS on the internet.
+EOF

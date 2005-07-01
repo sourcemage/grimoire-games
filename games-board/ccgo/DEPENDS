@@ -1,0 +1,3 @@
+depends  gtkmm2   &&
+depends  gconfmm  &&
+optional_depends  gnugo  ""  ""  "to play against the computer"
