@@ -1,3 +1,8 @@
+2005-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: Added options from configure
+	* CONFIGURE: Options to tweak allegro
+	* DEPENDS: Depends on a few audio libs and graphics libs
+
 2005-06-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: make_single added also used default_build
 	  fixes bug #9054 invalid infodir location

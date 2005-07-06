@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://alleg.sourceforge.net/
          ENTERED=20020107
          UPDATED=20021025
-      LICENSE[0]=PD
+      LICENSE[0]=http://alleg.sourceforge.net/license.html
        BUILD_API=2
            SHORT="Allegro is a cross-platform game library."
 cat << EOF
