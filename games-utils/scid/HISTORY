@@ -1,0 +1,9 @@
+2005-07-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: added file to respect home cooked configure script
+	* Added spell into games grimoire, bug #8593
+
+2005-04-12 Harry Broeken <harry.broeken@home.nl>
+	* Minor cleanups
+
+2004-08-12 Harry Broeken <harry.broeken@home.nl>
+	* DEPENDS, DETAILS, HISTORY: created this spell
