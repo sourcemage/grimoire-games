@@ -1,0 +1,15 @@
+           SPELL=warzone2100-data
+         VERSION=0.1
+          SOURCE=warzone2100-data-0.1.tar.bz2
+   SOURCE_URL[1]=http://download.berlios.de/warzone/${SOURCE}
+          MD5[0]=48204c38e6c187e7444267b9a4fa86d3
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://www.realtimestrategies.net/forums/index.php
+         ENTERED=20050709
+         UPDATED=20050709
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="data files for warzone2100"
+cat << EOF
+data files for warzone2100
+EOF

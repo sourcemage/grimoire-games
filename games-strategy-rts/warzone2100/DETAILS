@@ -1,0 +1,19 @@
+           SPELL=warzone2100
+         VERSION=0.2
+          SOURCE=warzone2100-0.2.tar.bz2
+   SOURCE_URL[0]=http://download.berlios.de/warzone/{$SOURCE}
+          MD5[0]=d9e8c5a1a28bb332f5e56691d7ab54e9
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://www.realtimestrategies.net/forums/index.php
+         ENTERED=20050709
+         UPDATED=20050709
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="3D realtime strategy from future Earth."
+cat << EOF
+3D realtime strategy from future Earth.
+
+The Warzone 2100 ReDev Project aims to continue the vision of Pumpkin studios
+started in 1999 with the game Warzone 2100, Which was closed source until Dec
+6, 2004 when it was let out the doors for the first time under a GPL license.
+EOF

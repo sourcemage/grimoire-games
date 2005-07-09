@@ -1,0 +1,3 @@
+depends sdl_net
+depends openal
+depends warzone2100-data
