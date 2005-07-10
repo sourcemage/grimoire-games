@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.realtimestrategies.net/forums/index.php
          ENTERED=20050709
          UPDATED=20050709
+     GCC_VERSION=3.4
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="3D realtime strategy from future Earth."

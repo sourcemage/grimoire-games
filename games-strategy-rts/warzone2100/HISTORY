@@ -1,5 +1,6 @@
 2005-07-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: Goofed up source url
+	* DETAILS: Goofed up source url, needs gcc3.4
+	* BUILD: added invoke_gcc
 
 2005-07-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, HISTORY: created spell
