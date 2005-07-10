@@ -1,4 +1,5 @@
 . $GRIMOIRE/libaccount
+. $GRIMOIRE/libgcc
 
 #---------------------------------------------------------------------
 ## @return 0 if glibc was compiled with NPTL
