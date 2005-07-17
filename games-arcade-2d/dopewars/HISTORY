@@ -1,3 +1,8 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS,POST_INSTALL,BUILD: build api 2 conversion
+	* POST_INSTALL,FINAL: build api 2 conversion
+	* DETAILS: removed GATHER_DOCS=off no sane reason given why off
+
 2003-10-09 hgg <hgreig@bigpond.net.au>
 	* DETAILS,POST_BUILD: add GATHER_DOCS="off" and remove POST_BUILD
 

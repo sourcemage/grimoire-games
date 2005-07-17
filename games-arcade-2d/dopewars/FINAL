@@ -1,0 +1,6 @@
+cd ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+find_and_scam &&
+cd ${INSTALL_ROOT}/var/games/${SPELL} &&
+find_and_scam &&
+chmod g+w -R ${INSTALL_ROOT}/var/games/${SPELL} &&
+message "Do not forget to add the players in the 'games' group"
