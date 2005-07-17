@@ -185,7 +185,9 @@ function config_query_long_string() {
 #---
 
 function default_games_build() {
-  OPTS="$OPTS --bindir=/usr/games --datadir=${INSTALL_ROOT}/usr/share/games"  &&
+  OPTS="$OPTS --bindir=${INSTALL_ROOT}/usr/games \
+  --datadir=${INSTALL_ROOT}/usr/share/games \
+  --localstatedir=${INSTALL_ROOT}/var/games"  &&
   default_build
 }
 
@@ -214,4 +216,62 @@ declare -f unpack_file &> /dev/null ||
 function unpack_file() {
   message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
   return 1
+}
+
+#---
+## @Synopsis A function to find all dirs and files and set them to
+## @Synopsis proper permissions.
+#---
+
+function find_and_scam() {
+  find ./ -type d | xargs chmod 0750
+  find ./ -type d | xargs chown root.games
+  find ./ -type f | xargs chmod 0640
+  find ./ -type f | xargs chown root.games
+}
+
+#---
+## @Synopsis games_create_base_dirs function to replace
+## @Synopsis all the duplication of the same stuff in games-grimoire
+## @Synopsis and to provide some basics for all spells
+#---
+
+function games_create_base_dirs() {
+  mkdir -vp ${INSTALL_ROOT}/usr/share/games/${SPELL}
+  mkdir -vp ${INSTALL_ROOT}/usr/games
+  mkdir -vp ${INSTALL_ROOT}/var/games
+}
+
+#---
+## @Synopsis games_make_proper_binary function to make all
+## @Synopsis binaries in /usr/games chown root.games and
+## @Synopsis chmod 0750.
+#---
+
+function games_make_proper_binary() {
+  cat $IW_LOG | cut -f 3 | uniq | sort | grep "usr/games/" | xargs chmod 0750
+  cat $IW_LOG | cut -f 3 | uniq | sort | grep "usr/games/" | xargs chown root.games
+}
+
+#---
+## @Synopsis default_post_install function to
+## @Synopsis clean out any empty share/games/SPELL dirs
+## @Synopsis and run the real_default_post_install afterwards
+#---
+
+function default_post_install() {
+  games_make_proper_binary &&
+  rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+  real_default_post_install
+}
+
+#---
+## @Synopsis default_pre_install function to
+## @Synopsis create some base dirs for spells
+## @Synopsis after running real_default_pre_install
+#---
+
+function default_pre_install() {
+  real_default_pre_install &&
+  games_create_base_dirs
 }
