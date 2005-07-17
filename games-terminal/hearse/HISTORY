@@ -1,3 +1,8 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, POST_INSTALL, DETAILS: build api 2 conversion
+	* POST_INSTALL, FINAL: build api 2 conversion
+	* DEPENDS: lo-casing of perl spells
+
 2004-04-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Minor bugfixes
 	* Dumped patch for sedit

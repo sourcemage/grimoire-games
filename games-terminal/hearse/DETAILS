@@ -7,7 +7,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040420
           MD5[0]=fc142af503cb250bf1584d44b29b39c8
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Trade nethack bones files with other people on the net"
 cat << EOF
- With Hearse, you can automatically exchange bones files with other Nethack players. When run it uploads any new bones files it finds on your system, then downloads any bones files the server feels like giving it.
+With Hearse, you can automatically exchange bones files with other
+Nethack players. When run it uploads any new bones files it finds
+on your system, then downloads any bones files the server feels
+like giving it.
 EOF
