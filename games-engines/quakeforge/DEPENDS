@@ -2,20 +2,17 @@ depends  autoconf  &&
 depends  automake  &&
 depends  ncurses   &&
 depends  libtool   &&
-
-#optional_depends "alsa-lib" "" "--disable-alsa" "for alsa sound support"
-
-optional_depends  sdl                                   \
-                  ""                                    \
-                  ""                                    \
+optional_depends  sdl               \
+                  "--enable-sdl"    \
+                  "--disable-sdl"   \
                   "for SDL video/audio output support"  &&
 
-optional_depends  zlib                               \
-                  ""                                 \
-                  ""                                 \
+optional_depends  zlib              \
+                  "--enable-zlib"   \
+                  "--disable-zlib"  \
                   "for compressed pak-file support"  &&
 
-optional_depends  libvorbis                            \
-                  ""                                   \
-                  ""                                   \
+optional_depends  libvorbis          \
+                  "--enable-vorbis"  \
+                  "--disable-vorbis" \
                   "for ogg-vorbis sound file support"

@@ -1,3 +1,9 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS,BUILD,INSTALL,POST_INSTALL:build api 2 conversion
+	* POST_INSTALL,FINAL: build api 2 conversion
+	* PRE_BUILD: let's keep all the unpacking in PRE_BUILD
+	* DEPENDS: added enable and disable options...
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	  Formatted to Guru Handbook
