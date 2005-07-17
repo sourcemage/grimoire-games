@@ -1,3 +1,7 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS, BUILD, INSTALL, POST_INSTALL: build api 2 ocnversion
+	* POST_INSTALL,FINAL: moved to FINAL
+
 2005-01-08 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Python renamed to python in stable
 
