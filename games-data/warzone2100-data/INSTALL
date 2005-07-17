@@ -1,3 +1,4 @@
-mkdir -p ${INSTALL_ROOT}/usr/share/games/warzone2100 &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/warzone2100 &&
 cd ${SOURCE_DIRECTORY} &&
-cp -r data/* ${INSTALL_ROOT}/usr/share/games/warzone2100
+find_and_scam &&
+cp -aR data/* ${INSTALL_ROOT}/usr/share/games/warzone2100

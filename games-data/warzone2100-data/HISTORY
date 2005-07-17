@@ -1,2 +1,5 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: find_and_scam added to set proper permissions bug #9205
+
 2005-07-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, PRE_BUILD, BUILD, INSTALL, HISTORY: created spell

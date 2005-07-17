@@ -1,3 +1,6 @@
+2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: lo-casing bug #9223
+
 2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: lo-casing of spell... also fixes bug #8797
 

@@ -1,7 +1,7 @@
            SPELL=visualboyadvance
          VERSION=1.7.2
-          SOURCE=${SPELL}-src-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+          SOURCE=VisualBoyAdvance-src-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/VisualBoyAdvance-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/vba/${SOURCE}
           MD5[0]=6ebc613acfe958b82416a704830759fc
         WEB_SITE=http://vba.ngemu.com
