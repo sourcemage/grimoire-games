@@ -249,8 +249,15 @@ function games_create_base_dirs() {
 #---
 
 function games_make_proper_binary() {
-  cat $IW_LOG | cut -f 3 | uniq | sort | grep "usr/games/" | xargs chmod 0750
-  cat $IW_LOG | cut -f 3 | uniq | sort | grep "usr/games/" | xargs chown root.games
+if ( grep -q "usr/games/" $IW_LOG )
+then
+  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chmod 0750
+  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chown root.games
+else
+  message "${QUERY_COLOR}If you see this message and you're not \n \
+installing a data spell then report this at the following url: \n \
+http://bugs.sourcemage.org/enter_bug.cgi?product=Codex&bug_status=NEW&version=games%20grimoire&comp$
+fi
 }
 
 #---
