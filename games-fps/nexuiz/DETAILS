@@ -1,0 +1,24 @@
+           SPELL=nexuiz
+         VERSION=11
+          SOURCE=${SPELL}${VERSION}.zip
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+          MD5[0]='cbeed956d88073681b8f3cd06486bba0'
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Nexuiz
+        WEB_SITE=http://www.nexuiz.com
+         ENTERED=20050724
+         UPDATED=20050724
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Nexuiz is a fast-paced, chaotic, and intense
+multiplayer first person shooter, focused on providing basic, old style
+deathmatch."
+cat << EOF
+Nexuiz is a 3d deathmatch game made entirely over the internet. The
+purpose of the game is to bring deathmatch back to the basics, with
+perfect weapon balancing and fast paced action, keeping itself away from
+the current trend of realistic shooters. It uses HFX textures by Evil Lair,
+and currently has 17 maps to frag in. With an advanced UI, the user can
+select between 15 different player models to use, with an average of two
+skins for each, and can connect to our master server to play people from
+all over the world.
+EOF

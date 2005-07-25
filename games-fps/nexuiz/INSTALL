@@ -1,0 +1,26 @@
+cd ../..                                            &&
+mkdir -p ${INSTALL_ROOT}/usr/share/games/nexuiz     &&
+
+cp -ar data ${INSTALL_ROOT}/usr/share/games/nexuiz  &&
+
+install -m 755 sources/darkplaces/nexuiz-glx        \
+${INSTALL_ROOT}/usr/share/games/nexuiz              &&
+install -m 755 sources/darkplaces/nexuiz-sdl        \
+${INSTALL_ROOT}/usr/share/games/nexuiz              &&
+install -m 755 sources/darkplaces/nexuiz-dedicated  \
+${INSTALL_ROOT}/usr/share/games/nexuiz              &&
+
+mkdir -p ${INSTALL_ROOT}/usr/games                  &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-sdl       \
+${INSTALL_ROOT}/usr/games                           &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-glx       \
+${INSTALL_ROOT}/usr/games                           &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-dedicated \
+${INSTALL_ROOT}/usr/games                           &&
+
+mkdir -p ${INSTALL_ROOT}/usr/share/doc/nexuiz       &&
+install -m 755 Readme.htm                           \
+${INSTALL_ROOT}/usr/share/doc/nexuiz                &&
+install -m 755 sources/darkplaces/darkplaces.txt    \
+${INSTALL_ROOT}/usr/share/doc/nexuiz 
+

@@ -1,0 +1,4 @@
+2005-07-24 Mathieu Lonjaret <lejatorn@sourcemage.org>
+	* BUILD, DEPENDS, DETAILS, INSTALL, nexuiz-sdl, nexuiz-glx,
+	* nexuiz-dedicated : created this spell.
+
