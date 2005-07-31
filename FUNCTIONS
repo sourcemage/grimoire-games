@@ -256,7 +256,8 @@ then
 else
   message "${QUERY_COLOR}If you see this message and you're not \n \
 installing a data spell then report this at the following url: \n \
-http://bugs.sourcemage.org/enter_bug.cgi?product=Codex&bug_status=NEW&version=games%20grimoire&comp$
+http://bugs.sourcemage.org/enter_bug.cgi?product=Codex&bug_status=NEW&version=games%20grimoire&component=games%20grimoire&rep_platform=Other&op_sys=other&priority=P2&bug_severity=minor&assigned_to=games%40sourcemage.org&cc=&bug_file_loc=http%3A%2F%2F&short_desc=%24SPELL%20not%20installing%20binaries%20properly&comment=&dependson=&blocked=9312&maketemplate=Remember%20values%20as%20bookmarkable%20template&form_name=enter_bug \
+${DEFAULT_COLOR}"
 fi
 }
 
