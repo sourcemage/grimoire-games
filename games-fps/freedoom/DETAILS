@@ -1,0 +1,15 @@
+           SPELL=freedoom
+         VERSION=0.3
+       BUILD_API=2
+          SOURCE=$SPELL-iwad-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-iwad-$VERSION
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+        WEB_SITE=http://$SPELL.sf.net
+          MD5[0]=9a26ec9743e45915e296e3e3ba9fe489
+      LICENSE[0]=BSD
+         ENTERED=20050115
+         UPDATED=20050115
+           SHORT=" This is a complete IWAD file which can be used to play freedoom"
+cat << EOF
+As free replacements have not yet been found for all the material in doom yet, some of the material in here is "dummy" material to fill the gap until a replacement is found.
+EOF

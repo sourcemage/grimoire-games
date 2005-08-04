@@ -1,0 +1,6 @@
+default_install                            &&
+mv  /usr/games/prboom  ${I_DIR}            &&
+cp  doom1.wad  ${I_DIR}                    &&
+${INSTBIN}  ${SCRIPT_DIRECTORY}/prboom     \
+            /usr/games                     &&
+chown  -R  root.games  ${I_DIR}

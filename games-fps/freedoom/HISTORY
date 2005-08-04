@@ -1,0 +1,6 @@
+2005-08-04 Pieter Lenaerts <e-type@cwazy.co.uk>
+	* added HISTORY and corrected spell
+	* integrated spell
+
+2005-01-15 Harry Broeken <harry.broeken@home.nl>
+	* BUILD, DEPENDS, DETAILS, INSTALL: created spell

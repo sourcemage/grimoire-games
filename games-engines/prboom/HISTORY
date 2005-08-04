@@ -1,3 +1,9 @@
+2005-08-04 Pieter Lenaerts <e-type@cwazy.co.uk>
+	* DETAILS: updated to 2.3.1, GCC_VERSION=3.4, BUILD_API=2
+	* BUILD: split up, using default_build now
+	* added INSTALL
+	* DEPENDS: added gcc34
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_mixer and SDL_net renamed to sdl*
 	* HISTORY: Formatted to Guru Handbook
