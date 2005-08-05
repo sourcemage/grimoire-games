@@ -3,17 +3,13 @@
        BUILD_API=2
      GCC_VERSION=3.4
           SOURCE=$SPELL-$VERSION.tar.gz
-         SOURCE2=doom-1.8.wad.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/prboom/$SOURCE
-  SOURCE2_URL[0]=ftp://ftp.idsoftware.com/idstuff/doom/$SOURCE2
           MD5[0]=f2492d1d82c34b42fcc0260fc1250c02
-          MD5[1]=5f4eb849b1af12887dec04a2a12e5e62
         WEB_SITE=http://prboom.sourceforge.net/
          ENTERED=20011123
          UPDATED=20011228
       LICENSE[0]=GPL
-      LICENSE[1]=PD
       MAINTAINER=eric@sandall.us
            SHORT="a portable POSIX Doom port"
 cat << EOF
