@@ -1,5 +1,6 @@
 2005-08-05 Pieter Lenaerts <e-type@cwazy.co.uk>
 	* added PROVIDES: provides DOOM-DATA
+	* deleted DEPENDS
 
 2005-08-04 Pieter Lenaerts <e-type@cwazy.co.uk>
 	* added HISTORY and corrected spell
