@@ -224,10 +224,10 @@ function unpack_file() {
 #---
 
 function find_and_scam() {
-  find ./ -type d | xargs -n 1 chmod 0750
-  find ./ -type d | xargs -n 1 chown root.games
-  find ./ -type f | xargs -n 1 chmod 0640
-  find ./ -type f | xargs -n 1 chown root.games
+  find ./ -type d -print0 | xargs -0 -n 1 chmod 0750
+  find ./ -type d -print0 | xargs -0 -n 1 chown root.games
+  find ./ -type f -print0 | xargs -0 -n 1 chmod 0640
+  find ./ -type f -print0 | xargs -0 -n 1 chown root.games
 }
 
 #---
