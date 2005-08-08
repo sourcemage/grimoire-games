@@ -1,3 +1,6 @@
+2005-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* volatiles: added file: /var/lbreakout2.hscr as per bug #8997(REOP)
+
 2005-06-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: infodir and man dir paths
 	* configs: added file: /var/lbreakout2.hscr as per bug #8997
