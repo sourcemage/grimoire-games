@@ -1,3 +1,7 @@
+2005-08-05 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 1.7.0
+	  added BIG_VERSION and SMALL_VERSION
+
 2004-11-08 Eric Sandall <eric@sandall.us>
 	* Moved binaries from crossfire to crossfire-data  (Bug #7605)
 	* DETAILS: Set ARCHIVE to "off"
