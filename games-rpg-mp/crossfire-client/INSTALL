@@ -1,6 +1,6 @@
 default_install  &&
 
-chown  -R  games.games       \
-       /usr/games/cfclient   \
-       /usr/games/cfsndserv  \
-       /usr/games/gcfclient
+chown  -R  games.games /usr/games/cfclient /usr/games/cfsndserv
+if echo $OPTS | grep -q  -- "--enable-gtk" ; then
+   chown -R games.games /usr/games/gcfclient
+fi 

@@ -1,12 +1,12 @@
-depends  libpng                 &&
-depends  crossfire-client-data  &&
+depends  libpng                     &&
+depends  crossfire-client-data      &&
 
-optional_depends  gtk+             \
-                  ""               \
-                  ""               \
-                  "for gcfclient"  &&
+optional_depends  gtk+              \
+                  "--enable-gtk"    \
+                  "--disable-gtk"   \
+                  "for gcfclient"   &&
 
-optional_depends  sdl_image          \
-                  ""                 \
-                  ""                 \
+optional_depends  sdl_image         \
+                  "--enable-sdl"    \
+                  "--disable-sdl"   \
                   "for SDL support"
