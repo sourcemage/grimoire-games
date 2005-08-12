@@ -1,15 +1,14 @@
            SPELL=crossfire-client
-         VERSION=1.7.1
+         VERSION=1.8.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20020124
-          MD5[0]='d70a1b8ee90312c8d265d7e3dc7d03dd'
-      LICENSE[0]=GPL
        BUILD_API=2
-     GCC_VERSION=3.4
            SHORT="crossfire-client is a multi-player graphical MUD."
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made

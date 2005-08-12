@@ -1,0 +1,27 @@
+#chown games:games /usr/games/cfclient          &&
+#chown games:games /usr/games/cfsndserv         &&
+#chown games:games /usr/games/cfsndserv-alsa9   &&
+#chown games:games /usr/games/gcfclient         &&
+#chown games:games /usr/games/gcfclient2
+
+if [[ -e "/usr/games/cfsndserv" ]]; then
+   chown games:games /usr/games/cfclient         
+fi                                               &&
+
+if [[ -e "/usr/games/cfsndserv" ]]; then
+   chown games:games /usr/games/cfsndserv        
+fi                                               &&
+
+if [[ -e "/usr/games/cfsndserv-alsa9" ]]; then
+   chown games:games /usr/games/cfsndserv-alsa9  
+fi                                               &&
+
+if [[ -e "/usr/games/gcfclient" ]]; then
+   chown games:games /usr/games/gcfclient        
+fi                                               &&
+
+if [[ -e "/usr/games/gcfclient2" ]]; then
+   chown games:games /usr/games/gcfclient2
+fi
+
+
