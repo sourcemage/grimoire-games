@@ -1,3 +1,7 @@
+2005-08-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: converted from MD5 to GPG
+	* PRE_BUILD: converted to use unpack_file
+
 2005-08-05 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 1.7.1
 	  added SOUND_VERSION

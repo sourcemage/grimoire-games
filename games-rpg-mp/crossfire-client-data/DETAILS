@@ -6,11 +6,11 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
   SOURCE2_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE2
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE2_GPG="gurus.gpg:${SOURCE2}.sig"
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
          UPDATED=20020124
-          MD5[0]='c17d96c4630c4a10ce1befec3852f2f8'
-          MD5[1]='c2fb0e3bf5d2daf03b630cd7fcc3fcd6'
       LICENSE[0]=GPL
        BUILD_API=2
          ARCHIVE="off"
