@@ -1,5 +1,6 @@
 # FORMAT: <group>:<GID>:
 
+games:60:
 firebird:84:
 bind:101:
 gnats:102:

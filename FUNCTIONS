@@ -280,6 +280,7 @@ function default_post_install() {
 #---
 
 function default_pre_install() {
+  create_group games &&
   real_default_pre_install &&
   games_create_base_dirs
 }
