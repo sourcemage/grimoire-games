@@ -1,3 +1,9 @@
+2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFLICTS: removed as I've made it non-conflicting
+	* BUILD: Cleaned up and modified a few bits here and there
+	* INSTALL: Cleaned up and modified a few bits here and there
+	* nethack: added our own launcher script(basicaly their copy)
+
 2005-06-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: Bug #9141 a space between a * and .
 	* BUILD: Typo in the BUILD file Bug #9169.

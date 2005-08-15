@@ -1,5 +1,2 @@
 config_query_list  NETHACK_GUI  "Use which GUI for nethack?"  \
-                   tty  qt-x11  gnome  x11                    &&
-
-config_query       NETHACK_COPY                                            \
-                   "Copy nethackrc and Xdefaults to home directories?"  n
+                   tty  qt-x11  gnome  x11
