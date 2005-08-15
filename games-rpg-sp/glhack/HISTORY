@@ -1,3 +1,7 @@
+2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL,BUILD: Cleanup and make it install to share/games/glhack
+	* DEPENDS: this seems to not depend on nethack anymore
+
 2005-04-07 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAKE_NJOBS=1
 	* BUILD: Run make_single before make

@@ -1,2 +1,6 @@
+2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, INSTALL: Cleaning out and making proper perms
+	* CONFLICTS: removed as it no longer conflicts with nethack nor falconseye
+
 2004-07-01 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, CONFLICTS, DEPENDS, DETAILS, HISTORY: created this spell
