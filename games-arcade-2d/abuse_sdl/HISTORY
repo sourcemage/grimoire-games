@@ -1,3 +1,6 @@
+2005-08-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: minor fix to get it running with the proper path
+
 2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD, INSTALL: BUILD API 2 conversion
 	* DEPENDS: added depends on abuse_sdl-data

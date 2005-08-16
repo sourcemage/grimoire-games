@@ -1,6 +1,7 @@
 mkdir -p ${INSTALL_ROOT}/usr/share/games/abuse/ &&
 cd ${SOURCE_DIRECTORY} &&
 find_and_scam &&
+patch -p0 < ${SCRIPT_DIRECTORY}/stupid-fix.gentoo.patch &&
 cp -a * ${INSTALL_ROOT}/usr/share/games/abuse/ &&
 cp ${SCRIPT_DIRECTORY}/gamma.lsp ${INSTALL_ROOT}/usr/share/games/abuse/
 

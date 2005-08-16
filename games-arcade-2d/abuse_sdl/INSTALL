@@ -6,7 +6,7 @@ if ! [ -f ~/.abuse/gamma.lsp ]; \
 then mkdir -p ~/.abuse && \
 cp \ ${INSTALL_ROOT}/usr/share/games/abuse/gamma.lsp ~/.abuse/gamma.lsp \
 fi \n \
-exec ${INSTALL_ROOT}/usr/share/games/abuse/abuse.sdl -datadir \
+exec ${INSTALL_ROOT}/usr/games/abuse.sdl -datadir \
 ${INSTALL_ROOT}/usr/share/games/abuse \$*" > .abuse &&
 
 cp .abuse ${INSTALL_ROOT}/usr/games/abuse
