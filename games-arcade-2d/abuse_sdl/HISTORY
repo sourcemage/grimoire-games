@@ -1,3 +1,9 @@
+2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, INSTALL: BUILD API 2 conversion
+	* DEPENDS: added depends on abuse_sdl-data
+	* BUILD: removed unpack resolves bug #9442
+	* BUILD: Made it to install into proper locations
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 

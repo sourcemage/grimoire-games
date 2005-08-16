@@ -1,1 +1,7 @@
-depends  sdl
+depends sdl &&
+depends g++ &&
+depends imlib &&
+depends autoconf &&
+depends libtool &&
+depends OPENGL &&
+depends abuse_sdl-data

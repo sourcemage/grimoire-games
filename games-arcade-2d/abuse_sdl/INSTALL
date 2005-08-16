@@ -1,0 +1,12 @@
+default_install &&
+cd ${SOURCE_DIRECTORY} &&
+
+echo -e "#! /bin/bash \n \
+if ! [ -f ~/.abuse/gamma.lsp ]; \
+then mkdir -p ~/.abuse && \
+cp \ ${INSTALL_ROOT}/usr/share/games/abuse/gamma.lsp ~/.abuse/gamma.lsp \
+fi \n \
+exec ${INSTALL_ROOT}/usr/share/games/abuse/abuse.sdl -datadir \
+${INSTALL_ROOT}/usr/share/games/abuse \$*" > .abuse &&
+
+cp .abuse ${INSTALL_ROOT}/usr/games/abuse
