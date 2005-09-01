@@ -1,3 +1,6 @@
+2005-08-31 Robin Cook <rcook@wyrms.net>
+	* DETAILS: update to 2.17
+
 2004-03-27 Jason Flatt <jflatt@sourcemage.org>
 	* BUILD: Modified chown settings per Clément MATHIEU and bug # 6478.
 
