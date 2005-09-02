@@ -1,13 +1,14 @@
            SPELL=monopd
-         VERSION=0.9.0
+         VERSION=0.9.3
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://unixcode.org/downloads/$SPELL/${SOURCE}
-          MD5[0]=fd7ea36e8b7ed50284039f75a96d61ac
-        WEB_SITE=http://unixcode.org/monopd/
+   SOURCE_URL[0]=http://www.robertjohnkaper.com/downloads/atlantik/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
+       BUILD_API=2
+        WEB_SITE=http://www.robertjohnkaper.com/software/atlantik/
          ENTERED=20030108
          UPDATED=20040228
-      LICENSE[0]=GPL
            SHORT="Monopoly board game server"
 cat << EOF
 Monopoly board game server

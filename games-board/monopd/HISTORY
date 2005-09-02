@@ -1,3 +1,11 @@
+2005-09-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.9.3
+	  converted MD5 to GPG
+	  added BUILD_API
+	  updated SOURCE_URL
+	  updated WEB_SITE
+	* BUILD: converted to build api 2
+
 2004-02-28 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.9.0
 
