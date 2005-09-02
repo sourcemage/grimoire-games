@@ -1,3 +1,12 @@
+2005-09-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.4.1
+	  converted MD5 to GPG
+	  updated SOURCE_URL
+	  updates WEB_SITE
+	  added BUILD_API
+	* DEPENDS: changed gtk+ to gtk+2
+	* BUILD: converted to build api 2
+
 2004-01-05 Eric Sandall <eric@sandall.us>
 	* DETAILS: Update to 0.3.2
 

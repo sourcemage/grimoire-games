@@ -1,14 +1,14 @@
            SPELL=gtkatlantic
-         VERSION=0.3.2
+         VERSION=0.4.1
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=f2eaa1821698007154888a79562a72ec
-        WEB_SITE=http://gtkatlantic.sourceforge.net/
+   SOURCE_URL[0]=http://gtkatlantic.gradator.net/downloads/v0.4/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
+       BUILD_API=2
+        WEB_SITE=http://gtkatlantic.gradator.net/
          ENTERED=20030108
          UPDATED=20030820
-      LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
            SHORT="GTK-based Monopoly (monopd) game"
 cat << EOF
 GtkAtlantic is a Monopoly-like game that runs as a network client with the monopd server.
