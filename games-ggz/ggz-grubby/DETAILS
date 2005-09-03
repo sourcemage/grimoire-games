@@ -1,15 +1,22 @@
            SPELL=ggz-grubby
-         VERSION=0.0.8
+         VERSION=0.0.11
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
-          MD5[0]=7114802f8402fb54c80d27ae8f2404a6
+   SOURCE_URL[0]=http://mirrors.ibiblio.org/pub/mirrors/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+   SOURCE_URL[1]=http://ftp.belnet.be/packages/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=LGPL
+       BUILD_API=2
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
          UPDATED=20040216
            SHORT="GGZ Gaming Zone chatbot"
 cat << EOF
-GGZ Gaming Zone server libraries provides the common procedures and
-utilities required to run the GGZ game servers.
+This package contains grubby, the almighty chatbot. It's a single binary, but
+it is very flexible and extensible by plugins and scripts.
+
+Grubby is intended to be used on servers so it doesn't miss players, but it is
+in fact a client program. It reads all necessary startup information from
+~/.ggz/grubby.rc and runs as long as it isn't shut down by its owner. See the
+Setup file to view a common setup, or generate one using grubby-config.
 EOF
