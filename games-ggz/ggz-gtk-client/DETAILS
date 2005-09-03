@@ -1,10 +1,14 @@
            SPELL=ggz-gtk-client
-         VERSION=0.0.8
+         VERSION=0.0.11
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
-          MD5[0]=729748b3ca72e573eee0c386c2424334
+   SOURCE_URL[0]=http://mirrors.ibiblio.org/pub/mirrors/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+   SOURCE_URL[1]=http://ftp.belnet.be/packages/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+   SOURCE_URL[2]=http://mirrors.dotsrc.org/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+   SOURCE_URL[3]=http://ftp2.kgt.org/pub/ggzgamingzone.org/ggz/${VERSION}/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=LGPL
+       BUILD_API=2
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
          UPDATED=20040216
