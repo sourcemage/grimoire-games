@@ -1,3 +1,10 @@
+2005-09-03 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.0.11
+	  converted MD5 to GPG
+	  added BUILD_API
+	  corrected and added SOURCE_URLs
+	* BUILD: added to call default_games_build
+
 2004-02-16 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.0.8, update WEBSITE, SOURCE_URL, remove maintainer
 
