@@ -1,3 +1,9 @@
+2005-09-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.9.6
+	  converted MD5 to GPG
+	  added BUILD_API
+	* BUILD: added to call default_games_build
+
 2005-05-07 Neuron <vlmarek@volny.cz>
 	* DETAILS: updated to 0.9.1
 
