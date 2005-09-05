@@ -1,12 +1,12 @@
             SPELL=kobodeluxe
-          VERSION=0.4pre8
+          VERSION=0.4pre10
            SOURCE=KoboDeluxe-${VERSION}.tar.gz
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/KoboDeluxe-${VERSION}
     SOURCE_URL[0]=http://olofson.net/kobodl/download/${SOURCE}
          WEB_SITE=http://olofson.net/kobodl/
           ENTERED=20011219
           UPDATED=20020110
-           MD5[0]=9488a5132177848d60b2f7ef349e77e4
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
        LICENSE[0]=GPL
         BUILD_API=2
             SHORT="An enhanced port of the scrolling video game XKobo."

@@ -1,0 +1,18 @@
+           SPELL=pioneers
+         VERSION=0.9.23
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/pio/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
+       BUILD_API=2
+        WEB_SITE=http://pio.sourceforge.net/
+         ENTERED=20020527
+         UPDATED=20031016
+            DOCS="COPYING README NEWS"
+           SHORT="Gnome game based on The Settlers of Catan"
+cat << EOF
+Pioneers is an Internet playable implementation of the Settlers of
+Catan board game.  The aim is to remain as faithful to the board game
+as is possible.
+EOF
