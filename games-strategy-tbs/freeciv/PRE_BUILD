@@ -1,4 +1,4 @@
 default_pre_build                       &&
 mkdir  $SOURCE_DIRECTORY/freeciv-media  &&
 cd  $SOURCE_DIRECTORY/freeciv-media     &&
-unpack  ${SOURCE2}  ${MD5[1]}
+unpack_file  2
