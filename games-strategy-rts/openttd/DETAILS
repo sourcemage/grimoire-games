@@ -1,12 +1,12 @@
            SPELL=openttd
-         VERSION=0.3.3
-          SOURCE=$SPELL-$VERSION.tar.bz2
+         VERSION=0.4.0.1
+          SOURCE=$SPELL-$VERSION-source.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://www.openttd.com/
          ENTERED=20040708
          UPDATED=20040708
-          MD5[0]=8b683d21bdc40b9c6692660a70f1e23d
+          MD5[0]=95f5d60671113b9c03b894daf2701649
        BUILD_API=2
            SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF

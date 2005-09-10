@@ -1,11 +1,12 @@
-  message "${PROBLEM_COLOR}Warning:${DEFAULT_COLOR}"
-  message "  This game is dependant on non-free game data"
-  message "  Please get the following files from your original Transporter Tycoon Deluxe medium(as stated in their readme file"
-  message "  "
-  message "  Put these files into  ${MESSAGE_COLOR}/usr/lib/openttd/data${DEFAULT_COLOR} directory or ${MESSAGE_COLOR}~/.openttd/data${DEFAULT_COLOR}"
-  message "  sample.cat"
-  message "  *.grf"
-  message "  "
-  message "  If you would also like the original music"
-  message "  put the files from the gm/ dir into your"
-  message "  ${MESSAGE_COLOR}/usr/lib/openttd${DEFAULT_COLOR} or ${MESSAGE_COLOR}~/.openttd${DEFAULT_COLOR} directory(not the data directory)"
+  message "${PROBLEM_COLOR}Warning:${DEFAULT_COLOR}\n" \
+          "  This game is dependant on non-free game data.\n" \
+          "\n" \
+          "  Please get the following files from your original Transporter Tycoon Deluxe\n" \
+          "  medium(as stated in the openttd readme file):\n" \
+          "    ${MESSAGE_COLOR}sample.cat${DEFAULT_COLOR}\n" \
+          "    ${MESSAGE_COLOR}*.grf${DEFAULT_COLOR}" \
+          "\n" \
+          "  Put these files into the ${MESSAGE_COLOR}/usr/share/games/openttd/data${DEFAULT_COLOR} directory.\n" \
+          "\n" \
+          "  If you would also like the original music, put the files from the ${MESSAGE_COLOR}gm/${DEFAULT_COLOR} dir\n" \
+          "  into the ${MESSAGE_COLOR}/usr/share/games/openttd/gm${DEFAULT_COLOR} directory."

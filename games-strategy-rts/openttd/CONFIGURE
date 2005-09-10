@@ -1,0 +1,1 @@
+config_query  OPENTTD_NETWORK  "Enable network support?"  y

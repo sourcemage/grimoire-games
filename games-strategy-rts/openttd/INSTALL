@@ -1,7 +1,14 @@
-make_normal  &&
-mkdir -pv  ${INSTALL_ROOT}/usr/lib/$SPELL       &&
-install -v  ttd ${INSTALL_ROOT}/usr/lib/$SPELL/         &&
-cp -rv  data lang ${INSTALL_ROOT}/usr/lib/$SPELL/         &&
-install -v  $SCRIPT_DIRECTORY/$SPELL ${INSTALL_ROOT}/usr/games/              &&
-mkdir -pv  ${INSTALL_ROOT}/usr/share/doc/$SPELL  &&
-install -v  docs/* COPYING readme.txt ${INSTALL_ROOT}/usr/share/doc/$SPELL
+install -v openttd  ${INSTALL_ROOT}/usr/libexec                      &&
+install -v ${SCRIPT_DIRECTORY}/${SPELL}  ${INSTALL_ROOT}/usr/games/  &&
+SHARE_OPENTTD="${INSTALL_ROOT}/usr/share/games/${SPELL}"             &&
+mkdir -pv  ${SHARE_OPENTTD}                                          &&
+cp -rv  data scenario  ${SHARE_OPENTTD}/                             &&
+mkdir -pv  ${SHARE_OPENTTD}/lang                                     &&
+cp -v   lang/*.lng  ${SHARE_OPENTTD}/lang/                           &&
+mkdir -pv  ${SHARE_OPENTTD}/scripts                                  &&
+cp -v   scripts/*.example  ${SHARE_OPENTTD}/scripts/                 &&
+mkdir -pv  ${SHARE_OPENTTD}/media                                    &&
+cp -v   media/*.png media/*.xpm  ${SHARE_OPENTTD}/media/             &&
+mkdir -pv  ${SHARE_OPENTTD}/gm                                       &&
+mkdir -pv  ${INSTALL_ROOT}/usr/share/doc/${SPELL}                    &&
+install -v  docs/* COPYING readme.txt ${INSTALL_ROOT}/usr/share/doc/${SPELL}

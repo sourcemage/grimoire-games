@@ -1,3 +1,27 @@
+2005-08-12 Mads Laursen <smgl@dossen.dk>
+	* BUILD, DEPENDS: made zlib, libpng, alsa and sdl optional
+	* BUILD, CONFIGURE: made building with network support optional
+	* FINAL, PREPARE: fixed the message to fit in 80 cols,
+	  removed passages about data in ~/.openttd, since it won't work
+	* INSTALL: put binary in /usr/libexec and script in /usr/games,
+	  install images
+	* openttd: the script is still needed, as openttd expects scenarios
+	  in ~/.openttd/scenario and there doesn't seem to be a way to fix that,
+	  also creates autosave directory,
+	  removed the check for data, since openttd does that already, and in this
+	  setup the user cannot provide his own
+	* openttd.desktop: add the game to the menu in GNOME and other 
+	  freedesktop.org compliant environments
+
+2005-06-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD: set configuration variables in make invocation, changed
+	  directory for shared data to /usr/share/games/openttd
+	* DEPENDS: added dependency on alsa-utils
+	* DETAILS: updated to 0.4.0.1
+	* FINAL, PREPARE: changed directory for shared data to /usr/share/games/openttd
+	* INSTALL: removed make_normal, changed directory for shared 
+	  data to /usr/share/games/openttd
+
 2005-04-07 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAKE_NJOBS=1
 	  Shortened SHORT
