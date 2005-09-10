@@ -1,0 +1,4 @@
+default_pre_build &&
+cd ${SOURCE_DIRECTORY} &&
+sedit "s:prefix=/usr/local\n:prefix=${INSTALL_ROOT}/usr\n:" mkfiles.pl
+sedit "s:mandir=\$(prefix)/man\n:mandir=${INSTALL_ROOT}/usr/share/man\n:" mkfiles.pl

@@ -1,0 +1,32 @@
+           SPELL=puzzles
+         VERSION=r6272
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha1:2264c5547b17b761f4b892dc9af9d46b893f0426
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
+         ENTERED=20050910
+         UPDATED=20050910
+      LICENSE[0]=MIT
+       BUILD_API=2
+           SHORT="Various puzzle games implemented in gtk2."
+cat << EOF
+Black Box Find the hidden balls in the box by bouncing laser beams off them.
+Cube Pick up all the blue squares by rolling the cube over them.  Dominosa Tile
+the rectangle with a full set of dominoes.  Fifteen Slide the tiles around
+to arrange them into order.  Flip Flip groups of squares to light them all up
+at once.  Guess Guess the hidden combination of colours.  Light Up Place bulbs
+to light up all the squares.  Loopy Draw a single closed loop in accordance
+with the clues.  Map Colour the map so that adjacent regions are never the
+same colour.  Mines Find all the mines without treading on any of them.
+Net Rotate each tile to reassemble the network.  Netslide Slide a row at a
+time to reassemble the network.  Pattern Fill in the pattern in the grid, given
+only the lengths of runs of black squares.  Pegs Jump pegs over each other to
+remove all but one.  Rectangles Divide the grid into rectangles with areas
+equal to the numbers.  Same Game Clear the grid by removing touching groups
+of the same colour squares.  Sixteen Slide a row at a time to arrange the
+tiles into order.  Slant Draw a maze of slanting lines that matches the clues.
+Solo Fill in the grid so that each row, column and square block contains one
+of every digit.  Twiddle Rotate the tiles around themselves to arrange them
+into order.  Untangle Reposition the points so that the lines do not cross.
+EOF

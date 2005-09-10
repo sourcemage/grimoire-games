@@ -1,0 +1,9 @@
+PUZZLES_GAMES="blackbox cube dominosa fifteen flip guess inertia 
+lightup lightupsolver loopy map mapsolver mineobfusc mines net 
+netslide nullgame pattern pegs patternsolver rect samegame 
+sixteen slant slantsolver solo solosolver twiddle untangle"
+
+for i in ${PUZZLES_GAMES}
+do
+  cp -v $i /usr/games/$i
+done
