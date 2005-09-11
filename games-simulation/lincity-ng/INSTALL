@@ -1,0 +1,4 @@
+jam install &&
+cd /usr/share/games/lincity-ng &&
+cp /usr/share/games/applications/lincity-ng.desktop /usr/share/applications/ &&
+find_and_scam
