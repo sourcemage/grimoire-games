@@ -1,3 +1,18 @@
-depends sdl_net
-depends openal
-depends warzone2100-data
+depends sdl &&
+depends sdl_net &&
+if [ "$WZ21R" == "opengl" ]
+then
+   depends OPENGL
+   WZ2100OPTS="--with-opengl ${WZ2100OPTS}"
+else
+   WZ2100OPTS="--without-opengl ${WZ2100OPTS}"
+fi &&
+depends openal &&
+optional_depends libmad \
+                 "--with-mp3" \
+                 "--without-mp3" \
+                 "For mp3 audio support" &&
+optional_depends libvorbis \
+                 "--with-ogg" \
+                 "--without-ogg" \
+                 "For ogg/vorbis audio support"

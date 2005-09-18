@@ -1,0 +1,22 @@
+           SPELL=ltris
+         VERSION=1.0.10
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
+     SOURCE_HASH=sha1:03fe62315521505fb240d33e7bb5832311b4e030
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://lgames.sourceforge.net/index.php?project=LTris
+         ENTERED=20050918
+         UPDATED=20050918
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="LTris as a tetris clone"
+cat << EOF
+LTris as a tetris clone which means you have a bowl with blocks falling
+down. By rotating and moving the blocks you try to assemble whole lines which
+then disappear. LTris has three modes for this: Classic is the classical one
+where you play until the bowl becomes filled, Figures resets the bowl contents
+to a new figure for each level and adds suddenly appearing tiles and lines
+later on and Multiplayer where up to three players either controlled by human
+or CPU(!) compete and send completed lines to each other.  Even if you don't
+like Tetris you can download it, just to see your CPU in action in mode Demo.
+EOF

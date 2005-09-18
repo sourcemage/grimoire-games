@@ -1,3 +1,10 @@
+2005-09-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: removed duplication and added default_games_build
+	* volatiles, configs: added /var/games/lbreakout2.hscr
+	* FINAL: warning about the hiscore file being moved
+	* DETAILS: version update, moved to SOURCE_HASH
+	* DEPENDS: sdl_mixer and sdl_net optional
+
 2005-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* volatiles: added file: /var/lbreakout2.hscr as per bug #8997(REOP)
 

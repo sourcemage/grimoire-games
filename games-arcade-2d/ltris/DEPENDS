@@ -1,0 +1,2 @@
+depends sdl &&
+optional_depends sdl_mixer "--enable-sound" "--disable-sound" "Enable sound"

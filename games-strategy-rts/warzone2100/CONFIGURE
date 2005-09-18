@@ -1,0 +1,2 @@
+config_query_list WZ21R "Which renderer do you wish to use" \
+                                             opengl software

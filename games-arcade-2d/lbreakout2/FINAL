@@ -1,0 +1,3 @@
+message "${PROBLEM_COLOR}The location of the hi-score file has been changed \
+if you want the old score file you should copy /var/lbreakout2.hscr to \
+/var/games/lbreakout2.hscr${DEFAULT_COLOR}"

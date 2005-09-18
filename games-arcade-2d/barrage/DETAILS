@@ -1,0 +1,25 @@
+           SPELL=barrage
+         VERSION=1.0.2
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
+     SOURCE_HASH=sha1:9a9014002ea7f0b09f47258f10ebc0dac039a1ba
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://lgames.sourceforge.net/index.php?project=Barrage
+         ENTERED=20050918
+         UPDATED=20050918
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Barrage is a rather violent action game."
+cat << EOF
+Barrage is a rather violent action game with the objective to kill and
+destroy as many targets as possible within 3 minutes. You control a gun that
+may either fire small or large grenades at soldiers, jeeps and tanks. Targets
+are fast paced and require careful aiming as it takes half a second to reload
+the gun. Additionally you have to keep an eye on your ammo and reload in
+time. Useful to kill some minutes of idle time. :) And yes, the graphics
+look similiar to Command&Conquer but they are self-pixeled. I just used
+a screenshot of C&C as sketch. And no, none of the sounds are taken from
+C&C. (I don't even know how they sound as the German version has silent
+bots. I never managed to find a Bloodpatch. :-/) I created all by myself
+except for the fonts which come from Karl Bartel.
+EOF
