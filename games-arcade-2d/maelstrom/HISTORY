@@ -1,3 +1,10 @@
+2005-09-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: moved to using SOURCE_HASH
+	* BUILD: updated
+	* INSTALL: added to fix bug #9517
+	* POST_INSTALL: added default post install.. it can't use
+	  the one from the games grimoire.
+
 2005-03-16 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Removed as Maelstrom was removed
 
