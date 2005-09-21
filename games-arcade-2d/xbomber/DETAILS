@@ -1,0 +1,20 @@
+           SPELL="xbomber"
+         VERSION="0.8"
+          SOURCE="$SPELL.$VERSION.tar.gz"
+   SOURCE_URL[1]="ftp://ftp.billsgames.com/unix/x/$SPELL/$SOURCE"
+          MD5[0]="00452f33e6f99f9c5ef14b198c32756f"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL"
+        WEB_SITE="http://www.newbreedsoftware.com/$SPELL/"
+         ENTERED="20050921"
+         UPDATED="20050921"
+      LICENSE[0]="Freeware"
+       BUILD_API=2
+           SHORT="Bomberman clone"
+            DOCS="*.txt"
+cat << EOF
+X-Bomber is multi-player maze-style game where players collect and 
+drop bombs, in an attempt to blow each other up. Last player standing 
+wins!
+X-Bomber is vaguely based on "Atomic Bomberman" by InterPlay and 
+"Bomberman" by Hudsonsoft.
+EOF

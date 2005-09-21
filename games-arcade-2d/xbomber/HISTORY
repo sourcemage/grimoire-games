@@ -1,0 +1,3 @@
+2005-09-21  <abouter@sourcemage.org>
+	* DETAILS, DEPENDS, INSTALL, HISTORY, BUILD, PRE_BUILD,
+	  desktop/xbomber.desktop, xbomber: created spell
