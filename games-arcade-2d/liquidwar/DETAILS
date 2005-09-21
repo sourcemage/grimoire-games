@@ -6,8 +6,9 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
           MD5[0]=4bde4c014e9cd000ea38ce918e960432
         WEB_SITE=http://www.ufoot.org/liquidwar/
          ENTERED=20020210
-         UPDATED=20040216
+         UPDATED=20050920
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Liquid War is a unique multiplayer wargame."
 cat << EOF
 Liquid War is a truly original multiplayer wargame. You control an

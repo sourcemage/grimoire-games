@@ -1,5 +1,4 @@
 depends  allegro  &&
-
 optional_depends  tetex                                 \
                   ""                                    \
                   "--disable-doc-ps --disable-doc-pdf"  \

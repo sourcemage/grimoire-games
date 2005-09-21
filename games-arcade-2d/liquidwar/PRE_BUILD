@@ -1,0 +1,3 @@
+default_pre_build &&
+cd ${SOURCE_DIRECTORY} &&
+sedit 's#^DESKTOPDIR .*#DESKTOPDIR = ${INSTALL_ROOT}/usr/share/applications#' Makefile.in
