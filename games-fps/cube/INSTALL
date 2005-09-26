@@ -2,7 +2,7 @@ install  -o  root  -g  games  -m  755  -d  $I_DIR                          &&
 install  -o  root  -g  games  -m  755  cube_client  /usr/games             &&
 install  -o  root  -g  games  -m  755  cube_server  /usr/games             &&
 cd  $SOURCE_DIRECTORY                                                      &&
-if  [  "$BINARY"  ==  "y"  ];  then
+if  [  "$CUBE_BINARY"  ==  "y"  ];  then
   install  -o  root  -g  games  -m  755  -d  $I_DIR/bin                    &&
   install  -o  root  -g  games  -m  755  $SCRIPT_DIRECTORY/cube_*_bin      \
                                          /usr/games                        &&
@@ -27,8 +27,8 @@ fi                                                                         &&
 cp  -r  *.cfg  data  packages  $I_DIR                                      &&
 chown  -R  root.games  $I_DIR                                              &&
 mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                           &&
-mv  source/readme.txt    source/readme.source.txt                          &&
+mv  cube_source/readme.txt    cube_source/readme.source.txt                &&
 install  -o  root  -g  games  -d  -m  644  /usr/share/doc/$SPELL           &&
 install  -o  root  -g  games  readme.html  bin_unix/readme.bin.txt         \
-         source/readme.source.txt  source/src/CUBE_TODO.txt                \
+         cube_source/readme.source.txt  cube_source/src/CUBE_TODO.txt      \
          /usr/share/doc/$SPELL

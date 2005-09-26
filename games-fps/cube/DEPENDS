@@ -1,3 +1,4 @@
+depends  gcc33      &&
 depends  OPENGL     &&
 depends  g++        &&
 depends  sdl_mixer  &&
@@ -5,4 +6,4 @@ depends  sdl_image  &&
 depends  libpng     &&
 depends  zlib       &&
 depends  unzip      &&  # To uncompress the real source
-depends  hd2u           # To remove Windows formatting
+depends  dos2unix       # To remove Windows formatting

@@ -1,3 +1,26 @@
+2005-09-25 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2005_08_29
+	  Using GPG verification (Level 1)
+	  SOURCEs now split into data (unix) and source
+	  Added GCC_VERSION=3.3
+	  WEB_SITE changed to http://www.cubeengine.com/
+	* CONFIGURE: Renamed BINARY to CUBE_BINARY
+	* DEPENDS: hd2u deprecated for dos2unix
+	  Added dependency on gcc33
+	* PRE_BUILD: Use unpack_file '2' for SOURCE2
+	  Source now extracts to cube_source
+	  Don't apply old 20040522 patches
+	  Have to patch before converting to UNIX(TM) format ;/
+	  Apply 20050829 patch for paths from Gentoo
+	  Remove unneeded #include fixes
+	* BUILD: Source now extracts to cube_source
+	  invoke_gcc before building
+	* INSTALL: Source now extracts to cube_source
+	  Renamed BINARY to CUBE_BINARY
+	* 20040522-compile-fixes.patch,20040522-gentoo-paths.patch: Removed
+	* 20050829-gentoo-paths.patch: Added from
+	  http://bugs.gentoo.org/show_bug.cgi?id=104292
+
 2004-09-06 Eric Sandall <eric@sandall.us>
 	* INSTALL: Install docs to /usr/share/doc not /usr/share/docs
 
