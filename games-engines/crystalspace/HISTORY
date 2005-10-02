@@ -1,3 +1,9 @@
+2005-10-02 David C. Haley <dhaley@hot.rr.com>
+	* DETAILS: changed cvs version 0.99 -> cvs
+	  added DISTCC_HOSTS=; CCACHE=on; FORCE_DOWNLOAD=1 (cvs); SOURCE_IGNORE=volatile (cvs)
+	  updated the cvs source url to point to sourceforge cvs repo
+	  bumped stable version from 0.98r004 -> 0.99r2005-09-03
+
 2005-04-06 David C. HAley <dhaley@hot.rr.com>
 	* crystalspace.sh: update variable names
 
