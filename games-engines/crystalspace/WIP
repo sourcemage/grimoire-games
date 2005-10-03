@@ -1,3 +1,10 @@
-2005-10-03 David C. HAley <dhaley@hot.rr.com>
+2005-10-01 David C. HAley <dhaley@hot.rr.com>
 	Just a bit of a marker really. I am doing updating to the spell to try and get it updated and make finally ckecks to insure that it is installed 
-correctly so that CEL, and hopefully planeshift will be able to cast without any problems in the future.
+	correctly so that CEL, and hopefully planeshift will be able to cast without any problems in the future.
+
+2005-10-02 David C. Haley <dhaley@hot.rr.com>
+	I looked inot the crystalspace engine today. It seems that pulling files directly from teh CVS repo caused more problems than it solved. Because 
+ofthat I am reverting the change made to the DETAILS file in regards to teh SOURCE_URL and setting it back to teh way that it was. Also, in looking at 
+the online documentation the DEPENDS file needed to be updated. Three programs where removed, and six were added. These files have been noted in teh 
+HISTORY filein more detail, please view that file for more details. I will be updating the devel grimoire on p4 shortly and will continue to test the 
+spell locally on my machine. When I am confident that all teh bugs have been worked out that I can find I will remove this WIP.

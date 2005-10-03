@@ -1,12 +1,12 @@
            SPELL=crystalspace
 if  [  "$CS_CVS"  ==  "y"  ];  then
          VERSION=cvs
-          SOURCE=crystal-cvs.tar.bz2
-   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/crystal:crystal
+          SOURCE=cs-current-snapshot.tar.bz2
+   SOURCE_URL[0]=http://crystalspace3d.org/cvs-snapshots/bzip2/$SOURCE
   FORCE_DOWNLOAD=1
    SOURCE_IGNORE=volatile
 else
-         VERSION=0.99r2005-09-03
+         VERSION=0.99-2005-09-03
           SOURCE=cs-pseudo-stable-2005-09-03.tar.bz2
    SOURCE_URL[0]=$SOURCEFORGE_URL/crystal/$SOURCE
           MD5[0]=f2aa7986bf4a843b8725db40598181ff

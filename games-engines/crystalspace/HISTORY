@@ -1,10 +1,18 @@
 2005-10-02 David C. Haley <dhaley@hot.rr.com>
+	* DETAILS: pointed SOURCE_URL back to teh http snapshot of teh CVS files.
+	  (had problems using the CVS in getting it to work properly)
+	* DEPENDS: removed perl, GLUT, openal
+	  added freetype2, ode, cal3d, lib3ds, mikmod, cegui
+	* WIP: Updated
+
+2005-10-02 David C. Haley <dhaley@hot.rr.com>
 	* DETAILS: changed cvs version 0.99 -> cvs
 	  added DISTCC_HOSTS=; CCACHE=on; FORCE_DOWNLOAD=1 (cvs); SOURCE_IGNORE=volatile (cvs)
 	  updated the cvs source url to point to sourceforge cvs repo
 	  bumped stable version from 0.98r004 -> 0.99r2005-09-03
+	* WIP: Created
 
-2005-04-06 David C. HAley <dhaley@hot.rr.com>
+2005-04-06 David C. Haley <dhaley@hot.rr.com>
 	* crystalspace.sh: update variable names
 
 2005-03-31 David C. Haley <dhaley@hot.rr.com>

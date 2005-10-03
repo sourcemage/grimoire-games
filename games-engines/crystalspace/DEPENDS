@@ -1,35 +1,55 @@
 depends  jam     &&
-depends  perl    &&
 depends  zlib    &&
 depends  libpng  &&
 depends  jpeg    &&
 
-optional_depends  GLUT                               \
-                  ""                                 \
-                  ""                                 \
-                  "For glut windowing enhancements"  &&
-
-optional_depends  openal                      \
-                  ""                          \
-                  ""                          \
-                  "For openal sound support"  &&
-
-optional_depends  libvorbis                   \
-                  ""                          \
-                  ""                          \
-                  "For vorbis sound support"  &&
-
 optional_depends  python                                                    \
-                  "--with-Python"                                           \
-                  "--without-Python"                                        \
-                  "support for Python (REQUIRED for Crystal Entity Layer)"  &&
+                  ""                                                        \
+                  ""                                                        \
+                  "Support for Python (REQUIRED for Crystal Entity Layer)"  &&
 
-optional_depends  libmng                                       \
-                  "--with-libmng"                              \
-                  "--without-libmng"                           \
-                  "support for reading MNG/JNG graphic files"  &&
+optional_depends  ode                               \
+                  ""                                \
+                  ""                                \
+                  "Support for ODE physics engine"  &&
 
-optional_depends  nasm                                      \
-                  "--with-nasm"                             \
-                  "--without-nasm"                          \
-                  "support for assembly language routines"
+optional_depends  libvorbis                       \
+                  ""                              \
+                  ""                              \
+                  "Support for Ogg/Vorbis sound"  &&
+
+optional_depends  libmng                               \
+                  "--with-libmng"                      \
+                  "--without-libmng"                   \
+                  "Support for MNG/JNG graphic files"  &&
+
+optional_depends  nasm                                \
+                  "--with-nasm"                       \
+                  "--without-nasm"                    \
+                  "Support assembly language routines"
+
+optional_depends  freetype2                       \
+                  ""                              \
+                  ""                              \
+                  "Support for FreeType 2 fonts"  &&
+
+optional_depends  cal3d                            \
+                  ""                               \
+                  ""                               \
+                  "Support for the Cal3d library"  &&
+
+optional_depends  lib3ds                   \
+                  ""                       \
+                  ""                       \
+                  "Support for 3DS files"  &&
+
+optional_depends  mikmod                       \
+                  ""                           \
+                  ""                           \
+                  "Support for Mikmod player"  &&
+
+optional_depends  cegui                           \
+                  ""                              \
+                  ""                              \
+                  "Support for the Cegui library"
+
