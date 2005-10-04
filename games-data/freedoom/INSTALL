@@ -1,1 +1,2 @@
-cp ${SOURCE_DIRECTORY}/doom2.wad ${INSTALL_ROOT}/usr/share/games/doom
+install  -d  -m 0755  -o root  -g games  $INSTALL_ROOT/usr/share/games/doom  &&
+cp  $SOURCE_DIRECTORY/doom2.wad  $INSTALL_ROOT/usr/share/games/doom
