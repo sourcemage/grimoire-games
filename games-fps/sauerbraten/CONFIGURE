@@ -1,0 +1,2 @@
+config_query  SAUERBRATEN_BINARY                                    \
+              "Install binaries (needed for official servers)?"  y

@@ -1,0 +1,6 @@
+2005-10-03 Eric Sandall <eric@sandall.us>
+	* DETAILS,CONFIGURE,DEPENDS,PRE_BUILD,BUILD,INSTALL,
+	  20050815-addfullpath-rendergl.cpp.patch,
+	  20050815-addfullpath-tools.cpp.patch,
+	  20050815-addfullpath-tools.h.patch: Created spell
+

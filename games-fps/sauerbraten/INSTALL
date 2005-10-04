@@ -1,0 +1,22 @@
+install  -o  root  -g  games  -m  755  $SOURCE_DIRECTORY/src/sauer_client  \
+         $INSTALL_ROOT/usr/games/sauerbraten_client                        &&
+install  -o  root  -g  games  -m  755  $SOURCE_DIRECTORY/src/sauer_server  \
+         $INSTALL_ROOT/usr/games/sauerbraten_server                        &&
+
+cd  $SOURCE_DIRECTORY/$SPELL                                               &&
+if  [  "$SAUERBRATEN_BINARY"  ==  "y"  ];  then
+  install  -o  root  -g  games  -m  755  -d  $I_DIR/bin                    &&
+  install  -o  root  -g  games  -m  755  $SCRIPT_DIRECTORY/$SPELL_*_bin    \
+           $INSTALL_ROOT/usr/games                                         &&
+  message  "${MESSAGE_COLOR}Installing x86 binaries...${DEFAULT_COLOR}"    &&
+  install  -o  root  -g  games  -m  755  bin_unix/linux_client             \
+           $I_DIR/bin/sauerbraten_client_bin                               &&
+  install  -o  root  -g  games  -m  755  bin_unix/linux_server             \
+           $I_DIR/bin/sauerbraten_server_bin
+fi                                                                         &&
+cp  -r  *.cfg  data  packages  $I_DIR                                      &&
+chown  -R  root.games  $I_DIR                                              &&
+mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                           &&
+install  -o  root  -g  games  -d  -m  644  /usr/share/doc/$SPELL           &&
+install  -o  root  -g  games  bin_unix/readme.bin.txt  ../readme_*.txt     \
+                              ../src/CUBE_TODO.txt  /usr/share/doc/$SPELL
