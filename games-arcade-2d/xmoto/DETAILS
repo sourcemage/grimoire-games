@@ -1,0 +1,20 @@
+           SPELL=xmoto
+         VERSION=0.1.6
+          SOURCE=$SPELL-$VERSION-src.tar.gz
+   SOURCE_URL[1]=http://unc.dl.sourceforge.net/sourceforge/$SPELL/$SOURCE
+          MD5[0]=93870e3efd6beb4941f7567508e75356
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://xmoto.sourceforge.net/
+         ENTERED=20051006
+         UPDATED=20051006
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="X-Moto is a challenging 2D motocross platform game"
+cat << EOF
+X-Moto is a challenging 2D motocross platform game, where physics play
+an all important role in the gameplay. You need to control your bike to
+its limit, if you want to have a chance finishing the more difficult of
+the challenges.
+First you'll try just to complete the levels, while later you'll compete
+with yourself and others, racing against the clock.
+EOF

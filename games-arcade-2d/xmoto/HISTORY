@@ -1,0 +1,6 @@
+2005-10-11 Pol Vinogradov <vin.public@gmail.com>
+       * DETAILS: Updated to 0.1.6
+       * BUILD: added for passing LDFLAGS
+
+2005-10-06 Pol Vinogradov <vin.public@gmail.com>
+       * DETAILS, DEPENDS, HISTORY: created spell
