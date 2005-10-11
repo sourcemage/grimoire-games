@@ -1,0 +1,8 @@
+config_query WESNOTH_STATIC   "Enable static building of wesnoth?" n                               &&
+config_query WESNOTH_LITE     "Enable lite version of wesnoth (without music or large images)?" n  &&
+config_query WESNOTH_SERVER   "Enable compilation of server?" n                                    &&
+config_query WESNOTH_CAMPAIGN "Enable compilation of campaign server?" n                           &&
+config_query WESNOTH_EDITOR   "Enable compilation of map editor?" n                                &&
+config_query WESNOTH_TOOLS    "Enable compilation of tools for translators and artists?" n         &&
+config_query WESNOTH_GNOME    "Enable installation of icon and GNOME menu entry?" n                &&
+config_query WESNOTH_KDE      "Enable installation of icon and KDE menu entry?" n                  
