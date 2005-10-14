@@ -1,3 +1,9 @@
+2005-10-12 Robin Cook <rcook@wyrms.net>
+	* CONFIGURE: removed gnome & kde queries
+	* BUILD: removed gnome & kde OPTS
+	* POST_INSTALL: added to manually install icon
+	* wesnoth.desktop: added translations and icon
+
 2005-10-10 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 1.0
 	* CONFIGURE: added to ask config_query questions

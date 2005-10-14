@@ -1,0 +1,4 @@
+message "Trying to install icon"                                                                   &&
+/bin/install -d -v /usr/share/games/icons/wesnoth-icon.png                                         &&
+/bin/install -v $SOURCE_DIRECTORY/images/wesnoth-icon.png /usr/share/games/icons/wesnoth-icon.png  &&
+message "End of installing icon"                                                                   

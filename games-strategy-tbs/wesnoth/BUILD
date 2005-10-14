@@ -22,12 +22,4 @@ if [ "$WESNOTH_TOOLS" == "y" ]; then
    OPTS="$OPTS --enable-tools"
 fi                                       &&
 
-if [ "$WESNOTH_GNOME" == "y" ]; then
-   OPTS="$OPTS --with-gnome"
-fi                                       &&
-
-if [ "$WESNOTH_KDE" == "y" ]; then
-   OPTS="$OPTS --with-kde"
-fi                                       &&
-
 default_games_build
