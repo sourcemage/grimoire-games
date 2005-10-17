@@ -1,13 +1,13 @@
            SPELL=advancemame
        BUILD_API=2
-         VERSION=0.89.0
+         VERSION=0.101.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:8005d2feb0445fa2849295c585ebf11ae6d347bb6217dee1a4fea0575ea6f2f46d14d99d08305ec8bfe929699c99fd890298e03a0a8424764a2a23d95114300a
         WEB_SITE=http://advancemame.sourceforge.net
          ENTERED=20041216
          UPDATED=20041216
-          MD5[0]=a514753df0a0a6d5c78ae3eec4dc1b64
       LICENSE[0]=GPL
            SHORT="AdvanceMAME is an unofficial MAME version for GNU/Linux"
 cat << EOF

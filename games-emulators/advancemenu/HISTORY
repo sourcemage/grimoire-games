@@ -1,3 +1,7 @@
+2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version update, source_hash usage
+	* BUILD: added default_games_build
+
 2004-12-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: fix SOURCE_URL
 

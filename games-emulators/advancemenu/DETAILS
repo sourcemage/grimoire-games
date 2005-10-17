@@ -1,13 +1,13 @@
            SPELL=advancemenu
        BUILD_API=2
-         VERSION=2.4.4
+         VERSION=2.4.11
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/advancemame/$SOURCE
+     SOURCE_HASH=sha512:b75e2eff66098ecfa0f870c608b02c43b6c59890236a2bf96f1818fa63b6274dcef9a3af3fd52e830046c6fbead19869287a925c32829bf240038a17a0ee53af
         WEB_SITE=http://advancemame.sourceforge.net
          ENTERED=20041216
          UPDATED=20041216
-          MD5[0]=6526128269a27c9270d06f07872ae411
       LICENSE[0]=GPL
            SHORT="AdvanceMENU is a frontend for AdvanceMAME, MAME, MESS, RAINE and any other emulator."
 cat << EOF
