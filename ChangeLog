@@ -1,5 +1,7 @@
 2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-emulators/VisualBoyAdvanced: lo-case deprecation after 5 months
+	* games-rpg-mp/gMOO: lo-case deprecation
+	* games-arcade-2d/asteroids3D: lo-case deprecation
 
 2005-08-17 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Integrated from test grimoire (forced integrate)
