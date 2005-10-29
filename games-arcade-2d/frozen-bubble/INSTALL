@@ -1,3 +1,1 @@
-  make  install  PREFIX=${INSTALL_ROOT}/usr             &&
-  mkdir -p /usr/games			 &&
-  mv  /usr/bin/frozen-bubble   /usr/games
+make install PREFIX=${INSTALL_ROOT}/usr
