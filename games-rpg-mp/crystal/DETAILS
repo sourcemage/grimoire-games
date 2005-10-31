@@ -1,0 +1,17 @@
+           SPELL=crystal
+         VERSION=0.2.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://evilmagic.org/dist/$SOURCE
+        WEB_SITE=http://evilmagic.org/crystal/
+     SOURCE_HASH=sha512:c11d0898bfb71e4cbcd3b8823528d1a839e189d8ecef94c6aaa2578089830e8a47d7752c5fd4db8960db8eb87f3fb58f983250198a5a2894d9721078fd5fe708
+         ENTERED=20051031
+         UPDATED=20051031
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Crystal is a Unix mud client"
+cat << EOF
+Crystal is a unix mud client, released under the GNU GPL.  It's philosophy
+is to provide an interface as unclutterd as unix telnet's but with more
+features, such as line editing and split-screen scrollback.
+EOF

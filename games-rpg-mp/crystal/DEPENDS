@@ -1,0 +1,6 @@
+depends  openssl                               &&
+#Currently broken afaict
+#optional_depends   lua                          \
+#                        "--enable-scripting"    \
+#                        "--disable-scripting"   \
+#                        "Enable lua scripting?"                         
