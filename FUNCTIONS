@@ -2,6 +2,15 @@
 . $GRIMOIRE/libgcc
 
 #---------------------------------------------------------------------
+## Replaces sorcerys default_build with a custom version using
+## the invoke_gcc function from libgcc
+#---------------------------------------------------------------------
+function default_build () {
+  invoke_gcc  &&
+  real_default_build
+}
+
+#---------------------------------------------------------------------
 ## @return 0 if glibc was compiled with NPTL
 ## @return 1 otherwise
 ##
