@@ -16,7 +16,7 @@
 	  GNOME front-ends build and run.
 	* BUILD: Pass CONFIGURE flags to OPTS
 	  Use default_build
-    * NOTE: GNOME and GTK still have an issue with gtkglext (pango reference)
+	* NOTE: GNOME and GTK still have an issue with gtkglext (pango reference)
 	  and KDE hasn't been tested (requires arts)
 
 2004-10-10 Ladislav Hagara <hgr@vabo.cz>
