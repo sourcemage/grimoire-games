@@ -1,3 +1,18 @@
+2005-10-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Changed to GPG verification
+	  Added GCC_VERSION=3.3 (fails with 3.4.4)
+	* CONFIGURE: Added query for Xinerama support
+	  Must choose one of: GLUT, KDE, or GTK+ for UI
+	  Added option for GNOME 2 (replacing GNOME1 option)
+	  Added option for gtk+2 (replacing gtk+ option)
+	* DEPENDS: Formatted to Guru Handbook
+	  Added optional dependency on lua
+	  Added dependency on gcc33
+	  The --without- flags for kde and gnome still flag them to be built...
+	  Set dependencies based on CONFIGURE
+	* BUILD: Pass CONFIGURE flags to OPTS
+	  Use default_build
+
 2004-10-10 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.3.2
 	* DETAILS, BUILD: BUILD_API=2

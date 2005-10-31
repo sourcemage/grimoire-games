@@ -1,7 +1,27 @@
-depends jpeg	&&
-depends libpng	&&
-depends "GLUT" "--with-glut" 	&&
-optional_depends "kdelibs" "--with-kde" "--without-kde" "Use KDE for an enhanced GUI (choices are glut, kde or gtk1)" &&
-optional_depends "gnome-libs" "--with-gtk" "--without-gtk" "Use GTK+ for an enhanced GUI"
+depends  gcc33                  &&
+depends  jpeg                   &&
+depends  libpng                 &&
 
+if    [  "$CELESTIA_UI"  ==  "glut"  ];  then
+  depends  GLUT  '--with-glut'
+elif  [  "$CELESTIA_UI"  ==  "kde"  ];  then
+  depends  arts                   &&
+  depends  kdelibs  '--with-kde'
+elif  [  "$CELESTIA_UI"  ==  "gtk+2"  ];  then
+  depends  gtk+2  '--with-gtk'  &&
+  depends  gtkglext
+elif  [  "$CELESTIA_UI"  ==  "gnome2"  ];  then
+  depends  libgnomeui  '--with-gnome'  &&
+  depends  gtk+2                       &&
+  depends  gtkglext
+else
+  #
+  # If we somehow get here, use GLUT
+  #
+  depends  GLUT  '--with-glut'
+fi
 
+optional_depends  lua                               \
+                  '--with-lua'                      \
+                  '--without-lua'                   \
+                  'for Extension Language support'

@@ -1,5 +1,6 @@
-./configure --build=${BUILD}             \
-            --prefix=${INSTALL_ROOT}/usr \
-            --disable-debug  $OPTS       &&
+OPTS="$CELESTIA_XINERAMA                                            \
+      --with-gconf-schema-file-dir=$INSTALL_ROOT/etc/gconf/schemas  \
+      --disable-debug                                               \
+      $OPTS"                                                        &&
 
-make
+default_build
