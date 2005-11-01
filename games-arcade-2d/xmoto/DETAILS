@@ -1,8 +1,9 @@
            SPELL=xmoto
-         VERSION=0.1.6
+         VERSION=0.1.7
           SOURCE=$SPELL-$VERSION-src.tar.gz
-   SOURCE_URL[1]=http://unc.dl.sourceforge.net/sourceforge/$SPELL/$SOURCE
-          MD5[0]=93870e3efd6beb4941f7567508e75356
+   SOURCE_URL[0]=http://unc.dl.sourceforge.net/sourceforge/$SPELL/$SOURCE
+   SOURCE_URL[1]=http://aleron.dl.sourceforge.net/sourceforge/$SPELL/$SOURCE
+          MD5[0]=aa4c299a1b7a24b41d315828bd5d92b9
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://xmoto.sourceforge.net/
          ENTERED=20051006

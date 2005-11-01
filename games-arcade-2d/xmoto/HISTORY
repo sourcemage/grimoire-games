@@ -1,6 +1,14 @@
+2005-11-02 Pol Vinogradov <vin.public@gmail.com>
+        * DETAILS: Updated to 0.1.7, fixed permissions
+        * PRE_BUILD, lua_detection_fix.patch: added
+        * BUILD: fully rewritten in hope that optimization flags
+                 will work ;) , permissions were fixed too
+        * HISTORY: reformatted
+
 2005-10-11 Pol Vinogradov <vin.public@gmail.com>
-       * DETAILS: Updated to 0.1.6
-       * BUILD: added for passing LDFLAGS
+        * DETAILS: Updated to 0.1.6
+        * BUILD: added for passing LDFLAGS
 
 2005-10-06 Pol Vinogradov <vin.public@gmail.com>
-       * DETAILS, DEPENDS, HISTORY: created spell
+        * DETAILS, DEPENDS, HISTORY: created spell
+
