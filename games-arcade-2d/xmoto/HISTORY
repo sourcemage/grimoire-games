@@ -1,3 +1,6 @@
+2005-11-02 Pol Vinogradov <vin.public@gmail.com>
+        * DETAILS: SOURCE_UR[0] changed to SOURCEFORGE_URL/..., SOURCE_HASH replaced MD5[0]
+
 2005-11-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: removed everything and replaced it with default_games_build
 	* PRE_BUILD: added sedits for AM_CFLAGS and AM_CXXFLAGS
