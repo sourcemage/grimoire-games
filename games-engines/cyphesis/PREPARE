@@ -1,1 +1,6 @@
-config_query  CYPHESIS_CVS  "Would you like to build the latest cvs version?"  n
+config_query  CYPHESIS_CVS  'Build the latest cvs version?'  n  &&
+
+if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
+  config_query  CYPHESIS_CVS_AUTOUPDATE  \
+                'Automatically update on every system update?'  n
+fi

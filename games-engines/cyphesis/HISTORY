@@ -1,3 +1,12 @@
+2005-11-02 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.5.2
+	  Changed to GPG verification
+	  Added check for autoupdate of CVS
+	  Formatted long description to <80 columns
+	* PREPARE: Add query for autoupdate of CVS
+	* DEPENDS: Depends on devel branch of atlas-c++ now
+	* BUILD,PRE_BUILD: Move ./autogen.sh code into PRE_BUILD
+
 2005-07-03 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.3.12
 

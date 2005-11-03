@@ -1,10 +1,14 @@
-depends  mercator                &&
-depends  skstream                &&
-depends  atlas-c++-transitional  &&
-depends  varconf2                &&
-depends  autoconf                &&
-depends  python                  &&
-depends  postgresql              &&
+depends  mercator    &&
+depends  skstream    &&
+
+message  "${MESSAGE_COLOR}Depends on devel branch of ${DEFAULT_COLOR}"  \
+         "${SPELL_COLOR}atlas-c++${DEFAULT_COLOR}."                     &&
+
+depends  atlas-c++   &&
+depends  varconf2    &&
+depends  autoconf    &&
+depends  python      &&
+depends  postgresql  &&
 
 optional_depends  howl                               \
                   ""                                 \

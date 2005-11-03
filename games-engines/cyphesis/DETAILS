@@ -1,25 +1,34 @@
            SPELL=cyphesis
-         VERSION=${VERSION:=0.3.12}
+         VERSION=${VERSION:=0.5.2}
 if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
+  if  [  "$CYPHESIS_CVS_AUTOUPDATE"  ==  "y"  ];  then
+         VERSION=$(date +%Y%m%d)
+  else
          VERSION=cvs
-          SOURCE=$SPELL-$VERSION.tar.bz2
+  fi
+          SOURCE=$SPELL-cvs.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/servers/$SPELL
-          MD5[0]="IGNORE"
+   SOURCE_IGNORE=volatile
   FORCE_DOWNLOAD=1
 else
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/servers/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/servers/$SPELL/$SOURCE
-          MD5[0]=d34861df5421b9919fa555befd928902
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      LICENSE[0]=GPL
+       BUILD_API=2
         WEB_SITE=http://www.worldforge.org/dev/eng/servers/$SPELL
          ENTERED=20020915
          UPDATED=20020915
-      LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="WorldForge NPC engine using AI/A-Life techniques"
 cat << EOF
-Cyphesis is an NPC engine using AI/A-Life techniques. It is the Artificial Intelligence and Artificial Life server used by STAGE and also is filling in as its first fully functional game server, featured in Acorn. Cyphesis is a prototype server designed to explore the possibilities of complex NPC interaction and scripting. Efficiency and support for large numbers of players are foregone in the quest for a more realistic and dynamic world framework.
+Cyphesis is an NPC engine using AI/A-Life techniques. It is the Artificial
+Intelligence and Artificial Life server used by STAGE and also is filling in as
+its first fully functional game server, featured in Acorn. Cyphesis is a
+prototype server designed to explore the possibilities of complex NPC
+interaction and scripting. Efficiency and support for large numbers of players
+are foregone in the quest for a more realistic and dynamic world framework.
 EOF
