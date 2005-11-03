@@ -1,3 +1,11 @@
+2005-11-02 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated devel branch to 0.5.98
+	  Changed to GPG verification
+	  Added check for autoupdate of CVS
+	  Formatted long description to <80 columns
+	* PREPARE: Added query for autoupdate of CVS
+	* BUILD,PRE_BUILD: Move autogen.sh code into PRE_BUILD
+
 2005-06-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated devel to 0.5.96
 

@@ -1,2 +1,7 @@
-config_query_list  ATLAS_CPP_BRANCH  "Which branch of $SPELL do you want?"  \
-                   stable  devel  cvs
+config_query_list  ATLAS_CPP_BRANCH  "Which branch do you want?"  \
+                   stable  devel  cvs                             &&
+
+if  [  "$ATLAS_CPP_BRANCH"  ==  "cvs"  ];  then
+  config_query  ATLAS_CPP_AUTOUPDATE                               \
+                'Automatically update on every system-update?'  n
+fi
