@@ -1,7 +1,5 @@
-if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
-  ./autogen.sh   &&
-  default_build
-else
-  export  CPPFLAGS="$CPPFLAGS -I/usr/include/Atlas-C++-0.4/"  &&
-  default_build
-fi
+if  [  "$ERIS_BRANCH"  !=  "cvs"  ];  then
+  export  CPPFLAGS="$CPPFLAGS -I/usr/include/Atlas-C++-0.4/"
+fi  &&
+
+default_build

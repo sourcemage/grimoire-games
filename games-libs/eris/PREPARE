@@ -1,2 +1,7 @@
-config_query_list  ERIS_BRANCH  "Which branch of $SPELL do you want?"  \
-                   stable  devel  cvs
+config_query_list  ERIS_BRANCH  "Which branch do you want?"  \
+                   stable  devel  cvs                        &&
+
+if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
+  config_query  ERIS_AUTOUPDATE                                    \
+                'Automatically update on every system-update?'  n
+fi

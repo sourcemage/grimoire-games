@@ -1,0 +1,6 @@
+default_pre_build  &&
+
+if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
+  cd  $SOURCE_DIRECTORY           &&
+  NOCONFIGURE="on"  ./autogen.sh
+fi
