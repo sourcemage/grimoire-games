@@ -1,3 +1,15 @@
+2005-11-03 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.1.2
+	  Added GPG verification of source
+	  Renamed CVS to SAGE_CVS
+	  Added code for CVS autoupdating
+	  Added BUILD_API=2
+	  Formatted long description to <80 columns
+	* PREPARE: Renamed CVS to SAGE_CVS
+	  Converted to config_query
+	  Added query for autoupdating CVS
+	* BUILD,PRE_BUILD: Moved ./autogen.sh code into PRE_BUILD
+
 2004-10-13 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added SourceForge mirror first
 	* DEPENDS: Pass --disable-sdltest to OPTS

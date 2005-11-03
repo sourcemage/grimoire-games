@@ -1,24 +1,30 @@
            SPELL=sage
-         VERSION=${VERSION:=0.1.1}
-if [ "${CVS}" = "yes" ];  then
+         VERSION=${VERSION:=0.1.2}
+if  [  "$SAGE_CVS"  ==  "y"  ];  then
+  if  [  "$SAGE_CVS_AUTOUPDATE"  ==  "y"  ];  then
+         VERSION=$(date +%Y%m%d)
+  else
          VERSION=cvs
-          SOURCE=$SPELL-$VERSION.tar.bz2
+  fi
+          SOURCE=$SPELL-cvs.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/sage
-          MD5[0]="IGNORE"
+   SOURCE_IGNORE=volatile
   FORCE_DOWNLOAD=1
 else
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=9dffd28c43f896caf661400ec333678a
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      LICENSE[0]=GPL
+       BUILD_API=2
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20031004
          UPDATED=20031122
-      LICENSE[0]=GPL
            SHORT="OpenGL extensions library for SDL"
 cat << EOF
-Sage is an OpenGL extensions library that uses SDL to obtain its function pointers in a cross-platform manner.
+Sage is an OpenGL extensions library that uses SDL to obtain its function
+pointers in a cross-platform manner.
 EOF

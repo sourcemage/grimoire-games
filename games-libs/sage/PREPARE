@@ -1,9 +1,6 @@
-if  !  grep  -q  "CVS"  ${SPELL_CONFIG};  then
-  CVS=no  &&
+config_query  SAGE_CVS  'Build latest CVS version?'  n
 
-  if    query  "Would you like to build the latest cvs version of $SPELL ?" n
-  then  CVS=yes
-  fi  &&
-
-  echo  CVS=${CVS}  >>  ${SPELL_CONFIG}
+if  [  "$SAGE_CVS"  ==  "y"  ];  then
+  config_query  SAGE_CVS_AUTOUPDATE                                \
+                'Automatically update on every system-update?'  n
 fi
