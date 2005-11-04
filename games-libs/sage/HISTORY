@@ -1,3 +1,6 @@
+2005-11-04 Eric Sandall <eric@sandall.us>
+	* PREPARE: Use prior choice of old CVS variable, if set
+
 2005-11-03 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 0.1.2
 	  Added GPG verification of source
