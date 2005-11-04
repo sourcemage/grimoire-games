@@ -1,3 +1,9 @@
+2005-11-04 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: removed the mirror as it doesn't seem to work
+	  updated version to 2.0.4.20050930, switched to sha512
+	* BUILD: removed some redundant stuff and replaced default_build
+	  with default_games_build
+
 2005-05-02 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Added options for threading, client, server, robots
 	  and snapping
