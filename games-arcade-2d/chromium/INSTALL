@@ -1,8 +1,7 @@
-mkdir -p ${INSTALL_ROOT}/usr/games &&
-cd ${INSTALL_ROOT}/usr/share/games &&
-unpack ${SOURCE2} ${MD5[1]}  &&
-mkdir -p Chromium-0.9/bin    &&
 cd $SOURCE_DIRECTORY  &&
-install -m755 bin/chromium ${INSTALL_ROOT}/usr/share/games/Chromium-0.9/bin/chromium &&    
+install -m755 bin/chromium ${INSTALL_ROOT}/usr/share/games/chromium/bin/chromium &&    
+cd ${INSTALL_ROOT}/usr/share/games/chromium/ &&
+find_and_scam &&
 cp ${SCRIPT_DIRECTORY}/chromium ${INSTALL_ROOT}/usr/games/chromium &&
-chmod +x ${INSTALL_ROOT}/usr/games/chromium
+chmod +x ${INSTALL_ROOT}/usr/games/chromium &&
+chown root:games ${INSTALL_ROOT}/usr/games/chromium
