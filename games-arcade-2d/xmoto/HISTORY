@@ -1,3 +1,8 @@
+2005-11-07 Pol Vinogradov <vin.public@gmail.com>
+        * DETAILS: updated to 0.1.8
+        * PRE_BUILD: removed patch line
+        * lua_detection_fix.patch: removed because new ./configure works well
+
 2005-11-03 Pol Vinogradov <vin.public@gmail.com>
         * DETAILS: SOURCE_HASH fixed
 
