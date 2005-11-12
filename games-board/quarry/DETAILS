@@ -1,0 +1,20 @@
+           SPELL=quarry
+         VERSION=0.1.16
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://download.gna.org/quarry/$SOURCE
+        WEB_SITE=http://home.gna.org/quarry/index.html
+     SOURCE_HASH=sha512:363cb89daf4638ce6101635eb002725310fbc2d5b035d301d02db3c81e228efc14aef046ae72123845f83584ba2036bbadac8663b5d1c55940dfd68ad6154184
+      LICENSE[0]=GPL
+         ENTERED=20051112
+         UPDATED=20051112
+       BUILD_API=2
+           SHORT="a multi-purpose GUI for several board games, at present Go, Amazons and Reversi"
+cat << EOF
+Quarry is a multi-purpose GUI for several board games, at present Go, Amazons
+and Reversi (a.k.a. Othello.) It allows users to play against computer players
+(third-party programs, e.g. GNU Go or GRhino) or other humans, view and edit
+game records. Future versions will also support Internet game servers and
+provide certain features for developers of board game-playing engines for
+enhancing their programs.
+EOF
