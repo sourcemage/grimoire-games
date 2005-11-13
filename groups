@@ -37,4 +37,8 @@ amavis:132:
 mailman:133:
 ntp:134:
 firewire:135:
+plugdev:136:
+ups:137:
+jabber:138:
+quasar:139:
 nogroup:65534:
