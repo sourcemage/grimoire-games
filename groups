@@ -1,5 +1,8 @@
 # FORMAT: <group>:<GID>:
 
+disk:6:
+cdrom:24:
+floppy:25:
 games:60:
 firebird:84:
 bind:101:

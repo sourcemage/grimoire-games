@@ -1,5 +1,7 @@
 2005-11-13 Eric Sandall <eric@sandall.us>
-	* accounts,groups: Sync with test
+	* accounts: Sync with test
+	* groups: Sync with test
+	  Added disk:6:, cdrom:24:, and floppy:25:
 
 2005-11-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* games-board/quarry: new spell
