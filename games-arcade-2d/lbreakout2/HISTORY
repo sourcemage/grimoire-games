@@ -1,3 +1,8 @@
+2005-11-14 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added missing '&&'
+	  Removed trailing '&&'
+	  Cleaned up formatting
+
 2005-09-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: removed duplication and added default_games_build
 	* volatiles, configs: added /var/games/lbreakout2.hscr
