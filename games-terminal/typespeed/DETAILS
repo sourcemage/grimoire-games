@@ -1,0 +1,19 @@
+           SPELL=typespeed
+         VERSION=0.4.4
+       BUILD_API=2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://ls.purkki.org/$SPELL/$SOURCE
+        WEB_SITE=http://ls.purkki.org/$SPELL
+         ENTERED=20040814
+         UPDATED=20040814
+     SOURCE_HASH=sha512:8f3814e75d8cd6d32bf7dbd5742957bf420d8ca094a00d3fb5b54bef155a2c4a89f65cf572916393483846dd58dd99d45c864efcb3246681c2719be696799ef6
+      LICENSE[0]=GPL
+           SHORT="Test your typing speed, and get your fingers' CPS."
+cat << EOF
+Typespeed gives your fingers' cps (total and correct), typoratio and some
+points to compare with your friends.
+Typespeed's idea is ripped from ztspeed (a dos game made by Zorlim). Idea
+of the game should be clear to anyone, just type and type it fast, or be a
+lewser.
+EOF
