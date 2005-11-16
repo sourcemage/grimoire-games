@@ -1,4 +1,5 @@
 depends  freetype2  &&
 depends  sdl_image  &&
 depends  sdl_mixer  &&
+depends  sdl_ttf    &&
 depends  sdl_net

@@ -1,3 +1,9 @@
+2005-11-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update, switched to sha512
+	* POST_INSTALL: removed
+	* INSTALL: added stuff from POST_INSTALL
+	* DEPENDS: all above 0.8.5 depend on sdl_ttf
+
 2005-10-12 Robin Cook <rcook@wyrms.net>
 	* CONFIGURE: removed gnome & kde queries
 	* BUILD: removed gnome & kde OPTS

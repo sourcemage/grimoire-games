@@ -1,9 +1,9 @@
            SPELL=wesnoth
-         VERSION=1.0
+         VERSION=1.0.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.wesnoth.org/files/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:13e858960dbae1112d00ce32bfcc8c9656548f9b6c2db9e61a80529a3b7df3bbeb3e93247b4b7406c5d338748d15fcc03819328ed782dc8f61f09cad8eb4c633
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
