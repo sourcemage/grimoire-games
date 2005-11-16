@@ -1,8 +1,7 @@
 # FORMAT: <group>:<GID>:
 
-disk:6:
+daemon:1:1
 cdrom:24:
-floppy:25:
 games:60:
 firebird:84:
 bind:101:
@@ -44,4 +43,5 @@ plugdev:136:
 ups:137:
 jabber:138:
 quasar:139:
+distcc:140:
 nogroup:65534:
