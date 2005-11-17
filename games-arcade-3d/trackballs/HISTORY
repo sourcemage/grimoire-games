@@ -1,3 +1,7 @@
+2005-11-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: now only needs default_games_build
+	* DETAILS: updated to 1.1.1 and sha512
+
 2005-01-20 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updated to Build API 2
 

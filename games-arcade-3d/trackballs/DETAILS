@@ -1,9 +1,9 @@
            SPELL=trackballs
-         VERSION=1.0.0
+         VERSION=1.1.1
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=f16012d60e3bb2d0000a0ff108fdafb9
+     SOURCE_HASH=sha512:5f0411ba82dd3083e965c90bd6edf3683869b51b247337781f8a925c2e1b9a71c0ba093dd84bf8357b77b76ac0340c96b4a69ad54c77ad8779b1512f63b20fd1
       LICENSE[0]=GPL
         WEB_SITE=http://trackballs.sourceforge.net/
          ENTERED=20030221
