@@ -1,14 +1,14 @@
            SPELL=freedroidrpg
-         VERSION=0.9.12
+         VERSION=0.9.13
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-SOURCE_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE
-          MD5[0]=f2291ff6d292cde08d096ba8999f1683
+   SOURCE_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE
+     SOURCE_HASH=sha512:5c0dda8d6450e6c9613beae153382e852a94905065a8fcc8dd57a7b8e25b357c8f170342670bbfc6c8dab6e3c206cfe5d5b000de2cf6aa2318cff2f338a2830b
       LICENSE[0]=GPL
+       BUILD_API=2
         WEB_SITE=http://freedroid.sourceforge.net/
          ENTERED=20030818
          UPDATED=20040410
-         ARCHIVE="off"
            SHORT="a Diablo-like extension of freedroid (clone of  C64  Paradroid) into an RPG."
 cat << EOF
 FreedroidRPG is derived from the original classic Freedroid

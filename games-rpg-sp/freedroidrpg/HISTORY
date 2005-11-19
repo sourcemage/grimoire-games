@@ -1,10 +1,16 @@
+2005-11-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Version 0.9.13 and BUILD API 2 update
+	* BUILD: build api 2 conversion now also uses default_games_build
+	* DEPENDS: explicitcly depends on sdl since that's how we want it iirc
+	* HISTORY: had to fix a history entry for proper name... :)
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_net renamed to sdl*
 	  Removed SDL as the above depend on sdl
 	  Formatted to Guru Handbook
 	* HISTORY: Formatted to Guru Handbook
 
-2004-04-10 Andrew Levstik <ruskie@mages.ath.cx>
+2004-04-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 0.9.12
 	  source changed from .tar.gz to .tar.bz2
 
