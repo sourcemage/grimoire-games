@@ -1,6 +1,5 @@
 default_pre_build     &&
 cd $SOURCE_DIRECTORY  &&
-patch -p0 < $SCRIPT_DIRECTORY/lua_detection_fix.patch &&
 sedit "s:CXXFLAGS:AM_CXXFLAGS:" Makefile.am &&
 sedit "s:CFLAGS:AM_CFLAGS:" Makefile.am &&
 autoreconf
