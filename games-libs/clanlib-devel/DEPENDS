@@ -1,15 +1,49 @@
 depends  zlib      &&
 depends  autoconf  &&
 depends  automake  &&
-depends  Hermes    &&
+
+#this is all for clanDisplay
 depends  jpeg      &&
 depends  libpng    &&
-
+optional_depends  X11-LIBS                                                \
+                  "--with-x"                                              \
+                  "--without-x"                                           \
+                  "use the X Window System"                               &&
+optional_depends  sdl                                                     \
+                  "--enable-clanSDL --enable-sdltest"                     \
+                  "--disable-clanSDL --disable-sdltest"                   \
+                  "To enable clanSDL support"                             &&
+optional_depends  sdl_gfx                                                 \
+                  "--with-sdl-gfx"                                        \
+                  "--without-sdl-gfx"                                     \
+                  "To enable sdl_gfx support. This is needed for wormux." &&
+#to here----
 if  spell_ok  nvidia_driver;  then
   depends nvidia_headers
 fi  &&
+#clanGL
+optional_depends  OPENGL                                                  \
+                  "--enable-clanGL"                                       \
+                  "--disable-clanGL"                                      \
+                  "Build clanGL module"                                   &&
+#to here---
+#clanSound
+if [[ "${CLANLIB_SOUND}" == "--enable-clanSound" ]]
+then
 
-optional_depends  mikmod "--enable-clanMikMod" "--disable-clanMikMod" "To enable clanMikMod support"  &&
-optional_depends  libvorbis "--enable-vorbis" "--disable-clanVorbis" "To enable clanVorbis support" &&
-optional_depends  sdl_gfx "--enable-clanSDL" "--disable-clanSDL" "To enable sdl_gfx support. This is needed for wormux."
+  optional_depends  mikmod                                                  \
+                    "--enable-clanMikMod"                                   \
+                    "--disable-clanMikMod"                                  \
+                    "To enable clanMikMod support"                          &&
+  optional_depends  libvorbis                                               \
+                    "--enable-clanVorbis"                                   \
+                    "--disable-clanVorbis"                                  \
+                    "To enable clanVorbis support"
 
+fi                                                                          &&
+#to here---
+if [[ "${CLANLIB_DOCS}" == "--enable-docs" ]]
+then
+  depends  perl     &&
+  depends  libxslt
+fi

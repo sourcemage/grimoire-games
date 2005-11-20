@@ -1,3 +1,9 @@
+2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-data/FUNCTIONS: synced from FUNCTIONS,
+	  removed games_make_proper_binary code
+	* games-libs/FUNCTIONS: synced from FUNCTIONS,
+	  removed games_make_proper_binary code
+
 2005-11-15 Eric Sandall <eric@sandall.us>
 	* accounts, groups: Sync with test
 

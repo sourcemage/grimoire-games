@@ -1,3 +1,9 @@
+2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update and switched to sha512
+	* BUILD: added CLANLIB_OPTS
+	* CONFIGURE: plenty of configure options
+	* DEPENDS: some go some come in :)
+
 2005-01-23 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Use spell_ok instead of spell_installed
 

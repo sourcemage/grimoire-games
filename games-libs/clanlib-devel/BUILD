@@ -1,2 +1,2 @@
-OPTS="$OPTS --enable-png --enable-debug=no --enable-dyn" &&
+OPTS="${CLANLIB_OPTS} ${OPTS}" &&
 default_build
