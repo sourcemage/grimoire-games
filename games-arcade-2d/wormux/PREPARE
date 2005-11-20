@@ -1,0 +1,2 @@
+config_query WORMUX_SVN_AUTOUPDATE \
+      "Do you wish to automaticaly update on sorcery --queue/system-update" "n"

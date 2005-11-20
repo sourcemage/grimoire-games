@@ -1,3 +1,11 @@
+2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version switched to svn and only uses svn
+	  for now...
+	* DOWNLOAD: r_svn:// download handler
+	* PREPARE: added AUTOUPDATE options
+	* PRE_BUILD: autogen.sh
+	* BUILD: added, default_games_build
+
 2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
         * DETAILS: VERSION updated to v060beta1, sha512
 	* DEPENDS: now uses clanlib
