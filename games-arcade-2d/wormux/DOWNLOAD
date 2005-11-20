@@ -37,6 +37,6 @@ message "${MESSAGE_COLOR}Generating tarball...${DEFAULT_COLOR}"                 
 tar -jcf                                                                                 \
     ${SOURCE}                                                                            \
     ${R_SVN_MODULE}                                                                      &&
-cp  ${SOURCE} $SOURCE_CACHE                                                              &&
+cp  ${SOURCE} ${SOURCE_CACHE}/${SOURCE}                                                  &&
 rm  ${SOURCE}                                                                            &&
 message "${MESSAGE_COLOR}SVN Checkout complete...${DEFAULT_COLOR}"
