@@ -9,7 +9,6 @@ function url_r_svn_crack() {
 
 }
 url_r_svn_crack ${SOURCE_URL}                                                            &&
-echo $R_SVN_ROOT $R_SVN_MODULE $R_SVN_TAG                                                &&
 message "${MESSAGE_COLOR}Starting SVN checkout of"                                       \
         "${FILE_COLOR}${SOURCE}${MESSAGE_COLOR}...${DEFAULT_COLOR}"                      &&
 if [[ -f $SOURCE_CACHE/${SOURCE} ]]
@@ -36,8 +35,8 @@ fi                                                                              
 cd ..                                                                                    &&
 message "${MESSAGE_COLOR}Generating tarball...${DEFAULT_COLOR}"                          &&
 tar -jcf                                                                                 \
-    ${SPELL}-${VERSION}.tar.bz2                                                          \
-    ${SPELL}-${VERSION}                                                                  &&
-cp  ${SPELL}-${VERSION}.tar.bz2 $SOURCE_CACHE                                            &&
-rm  ${SPELL}-${VERSION}.tar.bz2                                                          &&
+    ${SOURCE}                                                                            \
+    ${R_SVN_MODULE}                                                                      &&
+cp  ${SOURCE} $SOURCE_CACHE                                                              &&
+rm  ${SOURCE}                                                                            &&
 message "${MESSAGE_COLOR}SVN Checkout complete...${DEFAULT_COLOR}"
