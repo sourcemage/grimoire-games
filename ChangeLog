@@ -3,6 +3,10 @@
 	  removed games_make_proper_binary code
 	* games-libs/FUNCTIONS: synced from FUNCTIONS,
 	  removed games_make_proper_binary code
+	* games-libs/clanlib: to clanlib6
+	* games-libs/clanlib6: branched from clanlib
+	* games-libs/clanlib-devel: to clanlib
+	* games-libs/clanlib: branched from clanlib
 
 2005-11-15 Eric Sandall <eric@sandall.us>
 	* accounts, groups: Sync with test

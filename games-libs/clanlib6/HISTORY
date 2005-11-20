@@ -1,27 +1,31 @@
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: deprecation protocol online
-	* BUILD, INSTALL, PRE_BUILD: true only
-	* CONFIGURE: removed
-	* DEPENDS: only clanlib
-	* deprecation protocol online...
-
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: version update and switched to sha512
-	* BUILD: added CLANLIB_OPTS
-	* CONFIGURE: plenty of configure options
-	* DEPENDS: some go some come in :)
+2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Renamed to clanlib6
+	* DETAILS: SPELL=clanlib6, sha512
+	* DEPENDS: Hermes to libhermes
 
 2005-01-23 Eric Sandall <eric@sandall.us>
-	* DEPENDS: Use spell_ok instead of spell_installed
+	* BUILD,DEPENDS: Use spell_ok instead of spell_installed
+
+2005-01-16 Adam Clark <adamsgl@dhbit.ca>
+	* Added gcc 3 patch so that it will compile properly
+	  (at least under 3.4.3, perhaps others can double-check)
+
+2005-01-16 Jason Flatt <jflatt@sourcemage.org>
+	* BUILD: fixed sed by removing extra "\"s.
+	* DEPENDS: added --disable-mikmod.
+
+2004-12-2 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: changed spellname to clanlib,
+	 still fails to compile for me though
 
 2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS, DEPENDS, BUILD: Some minor fixes
-	* Renamed spell to clanlib-devel
+	* Renamed to clanlib
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* BUILD, DEPENDS: Remove check for NVIDIA_driver/NVIDIA_headers
 	* BUILD: Converted to BUILD_API 2
 	* DETAILS: BUILD_API=2
+	  Removed MAINTAINER
 
 2004-07-18 Eric Sandall <eric@sandall.us>
 	* BUILD: Just in case they're on the stable grimoire with NVIDIA_headers
@@ -30,10 +34,6 @@
 	* DEPENDS: Depends on nvidia_header if nvidia_driver is installed
 	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
 	  renames make it into stable grimoire
-
-2004-05-24 Andrew "ruskie" Levstik <ruskie@email.si>
-	* Forked from the ClanLib spell... pingus and wormux still depend on 0.6.x
-	* CONFLICTS: ClanLib-unstable
 
 2004-02-20 David C. Haley <dhaley@hot.rr.com>
 	* DETAILS: Minor spelling corrections

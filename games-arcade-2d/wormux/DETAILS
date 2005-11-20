@@ -1,12 +1,13 @@
            SPELL=wormux
-         VERSION=0.5.1
-          SOURCE=$SPELL-src-$VERSION.tar.bz2
+         VERSION=v060beta1
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.gna.org/wormux/$SOURCE
+#   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.gna.org:/cvs/wormux:wormux:${VERSION}
+   SOURCE_URL[0]=http://download.sourcemage.org/mirror/${SOURCE}
         WEB_SITE=http://www.wormux.org
          ENTERED=20040524
          UPDATED=20040524
-          MD5[0]=598538e885e9bcff23dd8ec81c55c642
+     SOURCE_HASH=sha512:fb669265dd1dee2a97a509cd555ebc979378edf12c185e29b1f89024fab4b816f8bbd2ba381a38c7a858525a197f41a21fab94ad39ff14568f68b079bf2a077e
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="A free Worms clone"

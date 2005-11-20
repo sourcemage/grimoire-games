@@ -1,3 +1,7 @@
+2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
+        * DETAILS: VERSION updated to v060beta1, sha512
+	* DEPENDS: now uses clanlib
+
 2005-05-07 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
         * DETAILS: VERSION updated to 0.5.1
 
