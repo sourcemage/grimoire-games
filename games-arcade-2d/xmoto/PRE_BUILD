@@ -1,6 +1,0 @@
-default_pre_build     &&
-cd $SOURCE_DIRECTORY  &&
-sedit "s:CXXFLAGS:AM_CXXFLAGS:" Makefile.am &&
-sedit "s:CFLAGS:AM_CFLAGS:" Makefile.am &&
-autoreconf
-
