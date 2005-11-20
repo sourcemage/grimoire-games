@@ -1,13 +1,13 @@
            SPELL=typespeed
-         VERSION=0.4.1
+         VERSION=0.4.4
        BUILD_API=2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.sicom.fi/~bestis/typespeed-0.4.1.tar.gz
-        WEB_SITE=http://www.sicom.fi/~bestis/typespeed.html
+   SOURCE_URL[0]=http://ls.purkki.org/$SPELL/$SOURCE
+        WEB_SITE=http://ls.purkki.org/$SPELL
          ENTERED=20040814
          UPDATED=20040814
-          MD5[0]=a0f979d4764edae93c789616250b241c
+     SOURCE_HASH=sha512:8f3814e75d8cd6d32bf7dbd5742957bf420d8ca094a00d3fb5b54bef155a2c4a89f65cf572916393483846dd58dd99d45c864efcb3246681c2719be696799ef6
       LICENSE[0]=GPL
            SHORT="Test your typing speed, and get your fingers' CPS."
 cat << EOF

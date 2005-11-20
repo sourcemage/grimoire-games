@@ -1,2 +1,5 @@
+2005-11-17 Alex S. Tsamutali <astsmtl@gmail.com>
+	* DETAILS: updated to 0.4.4 , md5 replaced with sha512
+
 2004-08-14 Mathieu Lonjaret <lejatorn@linuxmail.org>
 	* DEPENDS, DETAILS, HISTORY: created this spell
