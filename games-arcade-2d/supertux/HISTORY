@@ -3,7 +3,9 @@
 	* DOWNLOAD: Added for r_svn
 	* DEPENDS: added sdl and subversion
 	* PRE_BUILD: added NOCONFIGURE autogen.sh fix
-	* BUILD: normal supertux tarball still uses make
+	* BUILD: normal supertux tarball still uses make,
+	  had to add a hack cause something is rotten in the
+	  land of jamming it togheter...
 	* INSTALL: normal supertux tarball still uses make
 
 2005-11-16 Jaka Kranjc <sorbusaria@lynxlynx.info>
