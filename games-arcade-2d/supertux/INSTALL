@@ -1,0 +1,6 @@
+if [[ "${SUPERTUX_SVN}" == "y" ]]
+then
+  jam install
+else
+  default_install
+fi

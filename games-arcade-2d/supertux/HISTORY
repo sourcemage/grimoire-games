@@ -1,3 +1,16 @@
+2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Minor bugfixes in the files
+	* DOWNLOAD: Added for r_svn
+	* DEPENDS: added sdl and subversion
+	* PRE_BUILD: added NOCONFIGURE autogen.sh fix
+	* BUILD: normal supertux tarball still uses make
+	* INSTALL: normal supertux tarball still uses make
+
+2005-11-16 Jaka Kranjc <sorbusaria@lynxlynx.info>
+        * DETAILS: version bump
+	* INSTALL,DEPENDS,BUILD: uses jam for building
+	* PREPARE,PRE_BUILD: svn support cvs deprecated
+
 2004-08-25 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: updated to 0.1.2
 

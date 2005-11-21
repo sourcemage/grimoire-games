@@ -1,19 +1,24 @@
            SPELL=supertux
-if [ "$CVS" == "yes" ]; then
+if [ "$SUPERTUX_SVN" == "y" ]; then
+  if [ "${SUPERTUX_SVN_AUTOUPDATE}" == "y" ]
+  then
          VERSION=$(date +%Y%m%d)
-          SOURCE=$SPELL.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/super-tux:supertux
-          MD5[0]=IGNORE
+  else
+         VERSION=svn
+  fi
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION}
+   SOURCE_URL[0]=r_svn://svn.berlios.de/supertux/trunk/supertux:supertux-svn
+   SOURCE_IGNORE='volatile'
   FORCE_DOWNLOAD=on
 else
-         VERSION=0.1.2
+         VERSION=0.1.3
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/super-tux/$SOURCE
-          MD5[0]=0963dff1f5618fdf98ca35f4eb6b4d16
+   SOURCE_URL[0]=http://download.berlios.de/supertux/$SOURCE
+     SOURCE_HASH=sha512:75848583f9f9b9d0f36fec77812501875420fde8befe1ff9ac4ea7613f4d9464b2eb460c2ed89b4dc31e697fbb449a5431c72675e2820d13f5c42653dc07ad98
 fi
-        WEB_SITE=http://super-tux.sourceforge.net
+        WEB_SITE=http://supertux.berlios.de/
        BUILD_API=2
       LICENSE[0]=GPL
          ENTERED=20040512

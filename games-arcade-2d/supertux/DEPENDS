@@ -1,3 +1,15 @@
-depends  X11-LIBS   &&
-depends  sdl_mixer  &&
-depends  sdl_image
+depends  X11-LIBS     &&
+depends  sdl          &&
+depends  sdl_image    &&
+if [[ "${SUPERTUX_SVN}" == "y" ]]
+then
+  depends  jam        &&
+  depends  physfs     &&
+  depends  OPENGL     &&
+  depends  openal     &&
+  depends  libvorbis  &&
+  depends  libogg     &&
+  depends  subversion
+else
+  depends  sdl_mixer
+fi

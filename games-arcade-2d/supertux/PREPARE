@@ -1,9 +1,7 @@
-SPELL=supertux
-if ! grep -q CVS $SPELL_CONFIG; then
-  if    query "Build CVS version?" n
-  then  CVS=yes
-  else  CVS=no
-  fi
-  echo  "CVS=$CVS"  >>  $SPELL_CONFIG
+SUPERTUX_CVS="$(cut -c1 <<< $CVS)" &&
+config_query SUPERTUX_SVN "Build SVN version?" "${SUPERTUX_CVS:-n}" &&
+if [ "$SUPERTUX_SVN" == "y" ]
+then
+    config_query SUPERTUX_SVN_AUTOUPDATE \
+    "Automaticaly update the spell on sorcery queue/system-update?" "n"
 fi
-. $SPELL_CONFIG
