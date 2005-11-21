@@ -21,6 +21,7 @@ then
       --non-interactive                                                                  \
       update                                                                             \
       -r${R_SVN_TAG}                                                                     &&
+  cd ..                                                                                  &&
   message "${MESSAGE_COLOR}Done...${DEFAULT_COLOR}"
 else
   message "${MESSAGE_COLOR}Running initial SVN checkout...${DEFAULT_COLOR}"              &&
@@ -32,7 +33,6 @@ else
       ${R_SVN_MODULE}                                                                    &&
   message "${MESSAGE_COLOR}Done...${DEFAULT_COLOR}"
 fi                                                                                       &&
-cd ..                                                                                    &&
 message "${MESSAGE_COLOR}Generating tarball...${DEFAULT_COLOR}"                          &&
 tar -jcf                                                                                 \
     ${SOURCE}                                                                            \
