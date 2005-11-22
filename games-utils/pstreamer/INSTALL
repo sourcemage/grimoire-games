@@ -1,0 +1,5 @@
+mkdir  -p  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}  &&
+cd  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}         &&
+cp -v -r ${SOURCE_DIRECTORY}/* \
+         ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}/ 
+

@@ -1,3 +1,12 @@
+2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: sha512, version update, build api2
+	* BUILD: build_api2, now only true
+	* INSTALL: added, build_api2
+	* PRE_BUILD: removed
+	* DEPENDS: added, needs perl and term-readkey,
+	  possibly others but I don't have a clean system to try it on...
+	* Changes also resolve bug #9441
+
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
