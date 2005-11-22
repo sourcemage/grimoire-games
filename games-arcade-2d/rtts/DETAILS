@@ -8,21 +8,37 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
   SOURCE2_URL[0]=http://www.rtts.org/files/$SOURCE2
   SOURCE2_URL[1]=http://www.leprau.de/rtts/$SOURCE2
         WEB_SITE=http://www.rtts.org/
-          MD5[0]=feabdf38a16cbe6dafd11ed6b88c7dfc
-          MD5[1]=1ff33e5b00ad560b1c3c50c3edf04bdc
+     SOURCE_HASH=sha512:fd5dd302de8de79459d659b9ecb18248823ab4257e948cc7f4401fec312e7ef8d3386d4d30873c9ef816d9baac2c01287ce805e51754f4af4f3b62069937cb35
+    SOURCE2_HASH=sha512:fad348622b89c14611bfe5a8334c984966a7650e6a5f22f331fe80ac3bd893405405eb380cd5a72be7dca3673a7fb591f3f19f8054a57eb1eb0025d71bbaca4d
          ENTERED=20030610
          UPDATED=20030610
-      LICENSE[0]=GPL
-      LICENSE[1]=UNKNOWN
+      LICENSE[0]=http://www.rtts.org/source/license.txt
+      LICENSE[1]=http://www.rtts.org/source/license.txt
+      LICENSE[2]=GPL
        BUILD_API=2
            SHORT="Return to the Shadows - Vertical scroller, originally written as a 'Raptor' clone"
 cat << EOF
-Return to the Shadows is a vertical scroller, greatly inspired by Raptor by Cygnus Studios/Apogee. It is fully supported on Windows and Linux/x86, but it should be easy to compile it on any other platform that supports SDL and OpenGL.
+Return to the Shadows is a vertical scroller, greatly inspired by Raptor
+by Cygnus Studios/Apogee. It is fully supported on Windows and Linux/x86,
+but it should be easy to compile it on any other platform that supports SDL
+and OpenGL.
 
-If you have never heard the term vertical scroller, don't worry: it's really easy to get into the game. You're flying a small fighter plane through levels with increasing difficulty. All kinds of enemies are coming down on you, and you shoot them down for money. Using that money, you can buy additional weapons, shields and more gadgets between the levels.
+If you have never heard the term vertical scroller, don't worry: it's really
+easy to get into the game. You're flying a small fighter plane through levels
+with increasing difficulty. All kinds of enemies are coming down on you, and
+you shoot them down for money. Using that money, you can buy additional weapons,
+shields and more gadgets between the levels.
 
-RTTS was originally created in a 72 hours session by Nicolai 'Prefect' Haehnle (Programming) and Florian 'Spike' Neuerburg (Graphics).
-Due to the overwhelming response to this original version, the project has been and will be continued. Much has changed since then - for the better, of course ;) Most of the improvements were only possible because people with real graphics skills contributed better graphics. This contribution is still necessary to make RTTS an even better game, so if you think you can create kick-ass graphics, have a look at the Editing page.
+RTTS was originally created in a 72 hours session by Nicolai 'Prefect' Haehnle
+(Programming) and Florian 'Spike' Neuerburg (Graphics).
+Due to the overwhelming response to this original version, the project has been
+and will be continued. Much has changed since then - for the better, of course ;)
+Most of the improvements were only possible because people with real graphics
+skills contributed better graphics. This contribution is still necessary to make
+RTTS an even better game, so if you think you can create kick-ass graphics, have
+a look at the Editing page.
 
-We still have a long way to go before Return to the Shadows could be considered a finished game. The only reason that version numbers are above 1.0 is that the original 72h hours version was released as 1.0...
+We still have a long way to go before Return to the Shadows could be considered
+a finished game. The only reason that version numbers are above 1.0 is that the
+original 72h hours version was released as 1.0...
 EOF
