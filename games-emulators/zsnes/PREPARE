@@ -1,0 +1,6 @@
+config_query ZSNES_CVS "Do you want to use the CVS version?" n &&
+if [[ "${ZSNES_CVS}" == "y" ]]
+then
+   config_query ZSNES_CVS_AUTOUPDATE \
+                 "Do you want to autoupdate on system-update/queue?" n
+fi

@@ -1,0 +1,10 @@
+default_pre_build                                                &&
+cd ${SOURCE_DIRECTORY}/src                                       &&
+if [[ "${ZSNES_CVS}" == "y" ]]
+then
+patch -p0 < ${SCRIPT_DIRECTORY}/Makefile.in.FIX.BROKENESS.patch
+else
+patch -p0 < ${SCRIPT_DIRECTORY}/Makefile.in.FIX.BROKENESS-plain.patch
+fi                                                               &&
+sedit "s:./configure.*:#:" autogen.sh                            &&
+./autogen.sh

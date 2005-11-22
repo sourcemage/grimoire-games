@@ -1,9 +1,23 @@
            SPELL=zsnes
+if [[ "${ZSNES_CVS}" == "y" ]]
+then
+   if "${ZSNES_CVS_AUTOUPDATE}" == "y" ]]
+   then
+         VERSION=$(date +%Y%m%d)
+   else
+         VERSION=cvs
+   fi
+          SOURCE=${SPELL}-cvs.tar.bz2
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/zsnes:zsnes
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-cvs
+else
          VERSION=1.42
           SOURCE=${SPELL}${VERSION/./}src.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION/\./_}
-   SOURCE_URL[0]=$SOURCEFORGE_URL/zsnes/$SOURCE
-          MD5[0]=cc05322a81016c386766534b8b7ef870
+     SOURCE_HASH=sha512:59651d44cfd85eacf6165642bb8a680e631e274ea9acdb8546b7fecac93c7926973faa2480426260ad8cb938afc2126f83880171426474008ff83dcfb5e5d381
+fi
         WEB_SITE=http://zsnes.com/
          ENTERED=20020312
          UPDATED=20021018

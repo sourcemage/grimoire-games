@@ -1,3 +1,14 @@
-depends	 libpng  &&
-depends  nasm    &&
-depends  sdl
+depends  nasm                                   &&
+depends  sdl                                    &&
+if [[ "${ZSNES_CVS}" == "y" ]]
+then
+depends cvs
+fi                                              &&
+optional_depends  OPENGL                        \
+                  "--enable-opengl"             \
+                  "--disable-opengl"            \
+                  "Do you want opengl support?" &&
+optional_depends  libpng                        \
+                  "--enable-libpng"             \
+                  "--disable-libpng"            \
+                  "Do you want libpng support?"

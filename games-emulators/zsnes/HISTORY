@@ -1,3 +1,14 @@
+2005-11-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PREPARE: added CVS option
+	* DETAILS: added CVS option
+	* DEPENDS: added CVS option nad OPENGL and libpng
+	  seem to be optional
+	* PRE_BUILD: added, CVS option, some patching
+	* BUILD: modified to use default_games_build
+	* INSTALL: removed
+	* Makefile.in.FIX.BROKENESS.patch: added
+	* Makefile.in.FIX.BROKENESS-plain.patch: added
+
 2005-03-16 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.42
 

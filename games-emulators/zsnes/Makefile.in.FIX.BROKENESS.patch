@@ -1,0 +1,17 @@
+--- Makefile.in.orig	2005-11-22 19:55:50.000000000 +0100
++++ Makefile.in	2005-11-22 19:58:36.000000000 +0100
+@@ -280,10 +280,10 @@
+ ${ZIPDIR}/zpng.o: ${ZIPDIR}/zpng.c gblhdr.h ${ZIPDIR}/zpng.h
+ 
+ install:
+-	@INSTALL@ -d -m 0755 ${DESTDIR}/@prefix@/bin
+-	@INSTALL@ -m 0755 @ZSNESEXE@ ${DESTDIR}/@prefix@/bin
+-	@INSTALL@ -d -m 0755 ${DESTDIR}/@prefix@/man/man1
+-	@INSTALL@ -m 0644 linux/zsnes.1 ${DESTDIR}/@prefix@/man/man1
++	@INSTALL@ -d -m 0755 ${DESTDIR}/@bindir@
++	@INSTALL@ -m 0755 @ZSNESEXE@ ${DESTDIR}/@bindir@
++	@INSTALL@ -d -m 0755 ${DESTDIR}/@mandir@/man1
++	@INSTALL@ -m 0644 linux/zsnes.1 ${DESTDIR}/@mandir@/man1
+ 
+ uninstall:
+ 	rm -f @prefix@/bin/$(notdir @ZSNESEXE@) @prefix@/man/man5/zsnes.5
