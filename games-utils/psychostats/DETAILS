@@ -4,12 +4,11 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
    SOURCE_URL[0]=http://www.psychostats.com/download/${SPELL}/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.thaiguy.net/${SOURCE}
-          MD5[0]=bce3ad9f96d4b44ce769093f8a3084ea
+     SOURCE_HASH=sha512:5549a1ad9f2d4d05cf3bd830a1fb129085b4e387f54e272e38bf03ebd1c807568e32517b795b9262b0ca531cf71a4aaeb9e4dfa61e39f5c165856721e27decc1
         WEB_SITE=http://www.psychostats.com
-      LICENSE[0]=UNKNOWN
+      LICENSE[0]=GPL
          ENTERED=20030226
          UPDATED=20030226
-      MAINTAINER=eric@sandall.us
            SHORT="PsychoStats is a statistics generator for the game Half-Life"
 cat << EOF
 PsychoStats is a statistics generator for the game Half-Life.

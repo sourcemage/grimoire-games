@@ -3,12 +3,11 @@
           SOURCE=${SPELL}${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
    SOURCE_URL[0]=http://www.psychostats.com/download/${SPELL}/${SOURCE}
-          MD5[0]=c5e4106e27f1e027541d90ede1ea23e9
+     SOURCE_HASH=sha512:aa87e301fe8643f1f2c9109af2655a2902afeb90ab734597539d2815a048b06f705753849aa2b44632c63499606f9ee3c2e82a553f66103d8fd4be389a05763d
         WEB_SITE=http://www.psychostats.com/pquery.php
-      LICENSE[0]=UNKNOWN
+      LICENSE[0]=GPL
          ENTERED=20030226
          UPDATED=20030226
-      MAINTAINER=eric@sandall.us
            SHORT="PsychoQuery is a server query tool for the game Half-Life"
 cat << EOF
 PsychoQuery is a server query tool for the game Half-Life.

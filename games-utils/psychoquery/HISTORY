@@ -1,3 +1,6 @@
+2005-11-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: license is GPL and added sha512
+
 2003-11-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Changed requires to depends, uppercase provides
 	* HISTORY: Formatted to Guru Handbook
