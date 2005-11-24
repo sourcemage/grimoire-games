@@ -1,3 +1,7 @@
+2005-11-24 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 1.0.2
+	  converted SOURCEHASH to SOURCE_GPG
+
 2005-11-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update, switched to sha512
 	* POST_INSTALL: removed
