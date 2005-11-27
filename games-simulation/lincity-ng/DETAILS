@@ -1,8 +1,8 @@
            SPELL=lincity-ng
-         VERSION=1.0.1
-          SOURCE=lincity-ng-1.0.1.tar.bz2
-   SOURCE_URL[0]=http://download.berlios.de/lincity-ng/lincity-ng-1.0.1.tar.bz2
-     SOURCE_HASH=sha1:b955d6f3d2506bc8692782c47563c4bf4b7155d4
+         VERSION=1.0.2
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+   SOURCE_URL[0]=http://download.berlios.de/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:3da2a535fef4a141226d7e85e322846d720fb0bafcfa0bf39aae9d8468c71ddbea7c669edd3a6eca91c81db259baad7bdfa3cafb4e040ceb6ac4d41fb0559870
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://lincity-ng.berlios.de/
          ENTERED=20050911
