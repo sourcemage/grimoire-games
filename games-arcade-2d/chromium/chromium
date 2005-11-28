@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /usr/share/games/Chromium-0.9/bin
+cd /usr/share/games/chromium/bin
 ./chromium

@@ -5,8 +5,8 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/C${SPELL/\c/}-${VERSION/\.12/}
    SOURCE_URL[0]=http://www.reptilelabour.com/software/files/$SPELL/$SOURCE
   SOURCE2_URL[0]=http://www.reptilelabour.com/software/files/$SPELL/$SOURCE2
-          MD5[0]=e88336df31e2bec892fb0eb70b3fdb23
-          MD5[1]=e12d00fcbfcadcd72b949542e8751486
+     SOURCE_HASH=sha512:78784759e29c9ba31d5871d4ff4dddd75949ea0ac55ae41f28ba0f59dcd67db800184e59c5b984d46123f03196892b5288b2adb22facb473a184fbf4bfff7988
+    SOURCE2_HASH=sha512:0436a6fdc2781ee4ad4b802c5d67097d254092b9cf4737b763cf3de4f2b94c4a593263b252ec4cfa73d0579781a92e7f966393ef56f3c368249b27776d888560
         WEB_SITE=http://www.reptilelabour.com/software/chromium/
          ENTERED=20030614
          UPDATED=20030614

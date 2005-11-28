@@ -1,4 +1,8 @@
-//sgl/grimoires/games/games-arcade-2d/chromium/HISTORY#2 - edit change 62461 (text)
+2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* chromium: modified a bit
+	* INSTALL: modified removed unpack as per bug #9443
+	* PRE_BUILD: calling unpack_file '2'
+
 2005-07-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* chromium: added launcher script bug #9161
 	* INSTALL: installs the launcher script

@@ -1,9 +1,12 @@
-//sgl/grimoires/games/games-arcade-2d/chromium/INSTALL#3 - edit change 62461 (xtext)
-mkdir -p ${INSTALL_ROOT}/usr/games &&
-cd ${INSTALL_ROOT}/usr/share/games &&
-unpack ${SOURCE2} ${MD5[1]}  &&
-mkdir -p Chromium-0.9/bin    &&
-cd $SOURCE_DIRECTORY  &&
-install -m755 bin/chromium ${INSTALL_ROOT}/usr/share/games/Chromium-0.9/bin/chromium &&    
-cp ${SCRIPT_DIRECTORY}/chromium ${INSTALL_ROOT}/usr/games/chromium &&
-chmod +x ${INSTALL_ROOT}/usr/games/chromium
+cd ${SOURCE_DIRECTORY}  &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/chromium/bin&&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/chromium/data&&
+cp -vr ${SOURCE_DIRECTORY}/data/* ${INSTALL_ROOT}/usr/share/games/chromium/data&&
+cp -v ${SOURCE_DIRECTORY}/bin/chromium \
+      ${INSTALL_ROOT}/usr/share/games/chromium/bin/chromium &&    
+chmod 0750 ${INSTALL_ROOT}/usr/share/games/chromium/bin/chromium &&
+cp -v ${SCRIPT_DIRECTORY}/chromium \
+      ${INSTALL_ROOT}/usr/games/chromium &&
+chmod 0750 ${INSTALL_ROOT}/usr/games/chromium &&
+cd ${INSTALL_ROOT}/usr/share/games/chromium/ &&
+find_and_scam
