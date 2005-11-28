@@ -1,3 +1,7 @@
+2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-libs/FUNCTIONS: modified to use normal post/pre install
+	* games-utils/FUNCTIONS: modified to use normal post/pre install
+
 2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/FUNCTIONS: synced from FUNCTIONS,
 	  removed games_make_proper_binary code
