@@ -2,9 +2,9 @@ default_pre_build            &&
 cd  $SOURCE_DIRECTORY        &&
 mkdir -p content             &&
 cd   content                 &&
-unpack  $SOURCE2  ${MD5[1]}  &&
+unpack_file 2  &&
 
 if  [  "$SC2_AUDIO"  ==  "y"  ];  then
-  unpack  $SOURCE3  ${MD5[2]}  &&
-  unpack  $SOURCE4  ${MD5[3]}
+  unpack_file 3  &&
+  unpack_file 4
 fi

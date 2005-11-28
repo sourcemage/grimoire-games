@@ -1,3 +1,6 @@
+2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PRE_BUILD: unpack api update
+
 2005-03-07 Arjan Bouter <abouter@sourcemage.org>
 	* DEPENDS: changed xfree into X11-LIBS
 	* desktop/zangband.desktop: added

@@ -1,10 +1,10 @@
 mk_source_dir $SOURCE_DIRECTORY     &&
 cd $SOURCE_DIRECTORY                &&
-unpack $SOURCE ${MD5[0]}            &&
+unpack_file             &&
 mv $SPELL-$VERSION $SPELL           &&
-unpack $SOURCE2 ${MD5[1]}           &&
+unpack_file 2           &&
 mv $SPELL-$VERSION-data data        &&
-unpack $SOURCE3 ${MD5[2]}           &&
+unpack_file 3           &&
 mv $SPELL-$VERSION-vssetup vssetup  &&
-unpack $SOURCE4 ${MD5[3]}           &&
+unpack_file 4           &&
 mv $SPELL-$VERSION-music data/music 
