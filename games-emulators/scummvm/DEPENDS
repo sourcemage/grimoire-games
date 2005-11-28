@@ -1,19 +1,30 @@
 depends  sdl  &&
 
-optional_depends  alsa-lib                     \
-                  "with-alsa"                  \
-                  ""                           \
-                  "Enable alsa sound support"  &&
+optional_depends  alsa-lib                         \
+                  "--enable-alsa"                  \
+                  "--disable-alsa"                 \
+                  "Enable alsa sound support"      &&
+
+optional_depends  mpeg2dec                         \
+                  ""                               \
+                  "--disable-mpeg2"                \
+                  "Enable mpeg2 decoding - for example Broken Sword needs it for cutscenes" &&
+
+optional_depends  libvorbis                        \
+                  "--enable-vorbis"                \
+                  "--disable-vorbis"               \
+                  "Enable Vorbis audio support - also needed by some games for cutscenes" &&
 
 optional_depends  libmad                           \
-                  "with-mad"                       \
-                  ""                               \
-                  "Enable MAD mpeg audio support"  &&
+                  "--enable-mad"                   \
+                  "--disable-mad"                  \
+                  "Enable MAD mpeg audio support - for storing game cd-audio to mp3 file" &&
 
-optional_depends  libvorbis                      \
-                  "with-vorbis"                  \
-                  ""                             \
-                  "Enable Vorbis audio support"  &&
+optional_depends  flac                             \
+                  "--enable-flac"                  \
+                  "--disable-flac"                 \
+                  "Enable FLAC audio decoding - for storing game cd-audio to flac file" &&
+
 
 if  [  "$SCUMMVM_CVS"  ==  "y"  ];  then
   depends  CVS

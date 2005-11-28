@@ -1,13 +1,14 @@
 I_DIR="${INSTALL_ROOT}/usr/share/games/scummvm"     &&
 
-mkdir  -p  ${I_DIR}                                 &&
+mkdir  -p  ${I_DIR}/tools                           &&
 mkdir  -p  ${INSTALL_ROOT}/usr/games                &&
 
-install  -m0755  scummvm      ${I_DIR}              &&
-install  -m0644  scummvm.xpm  ${I_DIR}              &&
-install  -m0644  $SCRIPT_DIRECTORY/scummvmrc        \
-                 ${I_DIR}                           &&
-install  -m0644  $SCRIPT_DIRECTORY/scummvmrc        \
-                 ${INSTALL_ROOT}/etc/scummvmrc      &&
-install  -m0755  $SCRIPT_DIRECTORY/scummvm          \
-                 ${INSTALL_ROOT}/usr/games/scummvm
+cp -f scummvm         ${INSTALL_ROOT}/usr/games  &&
+cp -f tools/convbdf   ${I_DIR}/tools     &&
+cp -f tools/md5table  ${I_DIR}/tools     &&
+cp -f scummvm.xpm     ${I_DIR}           &&
+
+chmod 0755 ${INSTALL_ROOT}/usr/games/scummvm  &&
+chmod 0755 ${I_DIR}/tools/convbdf             &&
+chmod 0755 ${I_DIR}/tools/md5table            &&
+chmod 0644 ${I_DIR}/scummvm.xpm
