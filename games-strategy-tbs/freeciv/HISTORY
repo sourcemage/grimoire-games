@@ -1,3 +1,7 @@
+2005-11-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.0.7
+	  SOURCE2_GPG was using SOURCE instead of SOURCE2
+
 2005-09-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed all SOURCE_URL[0]'s as they are no longer kept
 	  up-to-date. Replaced with one URL to SourceForge

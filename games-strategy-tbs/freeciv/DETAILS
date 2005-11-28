@@ -1,12 +1,12 @@
            SPELL=freeciv
-         VERSION=2.0.5
+         VERSION=2.0.7
           SOURCE=$SPELL-$VERSION.tar.bz2
          SOURCE2=stdsounds3.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
   SOURCE2_URL[0]=http://www.freeciv.org/ftp/contrib/sounds/sets/$SOURCE2
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-     SOURCE2_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE2_GPG="gurus.gpg:${SOURCE2}.sig"
         WEB_SITE=http://www.freeciv.org/
          ENTERED=20010922
          UPDATED=20010922
