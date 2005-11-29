@@ -1,3 +1,8 @@
+2005-11-29 Neuron <vlmarek@volny.cz>
+	* DETAILS: update to 3.1.1; sha1 SOURCE_HASH
+	* CONFIGURE: use persistent variables; game is really not compiled with
+	  sdl when user does not want to
+
 2005-03-27 Arjan Bouter <abouter@sourcemage.org>
 	* DEPENDS: added sdl_net
 

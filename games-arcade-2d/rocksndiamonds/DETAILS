@@ -1,13 +1,14 @@
            SPELL=rocksndiamonds
-         VERSION=3.1.0
+         VERSION=3.1.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.artsoft.org/RELEASES/unix/$SPELL/$SOURCE
         WEB_SITE=http://www.artsoft.org/rocksndiamonds/
       LICENSE[0]=GPL
-          MD5[0]=53aeae6c00f128017ba119960e788483
+          MD5[0]=53b049c4bc222edd8930ebe8c21b4a8c
+     SOURCE_HASH=sha1:c350316f74f036404352bd3925c73c1c10260a2c:1
          ENTERED=20021211
-         UPDATED=20031009
+         UPDATED=20051129
        BUILD_API=2
            SHORT="ROCKS'N'DIAMONDS is a 'Boulderdash'(Commodore C64) or 'Emerald Mine'(Amiga) clone."
 cat << EOF
