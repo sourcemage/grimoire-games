@@ -1,5 +1,9 @@
-case  $MAKE_TARGET  in
-  sdl)  depends  sdl_image  &&
-        depends  sdl_mixer  &&
-        depends  sdl_net    ;;
-esac
+depends X11-LIBS      &&
+if [[ "$MAKE_TARGET" == "sdl" ]]
+then
+  depends  sdl        &&
+  depends  sdl_image  &&
+  depends  sdl_mixer  &&
+  depends  sdl_net      
+fi
+

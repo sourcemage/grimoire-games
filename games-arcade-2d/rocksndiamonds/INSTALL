@@ -1,8 +1,8 @@
-    mkdir  -p  /usr/games
-    cp  rocksndiamonds  /usr/games
-    cp  rocksndiamonds.1  /usr/man/man1
-    mkdir  -p  /usr/share/games/rocksndiamonds
-    cp  -R  graphics levels music sounds  /usr/share/games/rocksndiamonds
-    mkdir  -p  /var/games/rocksndiamonds/scores
-    chgrp  -R  games  /var/games/rocksndiamonds
-    chmod  -R  g+w    /var/games/rocksndiamonds
+mkdir  -p  ${INSTALL_ROOT}/usr/games  &&
+cp  rocksndiamonds  ${INSTALL_ROOT}/usr/games &&
+cp  rocksndiamonds.1  ${INSTALL_ROOT}/usr/share/man/man1 &&
+mkdir  -p  ${INSTALL_ROOT}/usr/share/games/rocksndiamonds &&
+cp  -R  graphics levels music sounds  ${INSTALL_ROOT}/usr/share/games/rocksndiamonds &&
+mkdir  -p  ${INSTALL_ROOT}/var/games/rocksndiamonds/scores &&
+chgrp  -R  games  ${INSTALL_ROOT}/var/games/rocksndiamonds &&
+chmod  -R  g+w    ${INSTALL_ROOT}/var/games/rocksndiamonds
