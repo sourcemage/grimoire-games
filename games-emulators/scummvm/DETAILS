@@ -6,12 +6,11 @@ if  [  "$SCUMMVM_CVS"  ==  "y"  ] ; then
           SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scummvm:scummvm 
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src 
-   SOURCE_IGNORE=unversioned
+   SOURCE_IGNORE=volatile
 else
           SOURCE=${SPELL}-${VERSION}.tar.bz2  
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE 
-          MD5[0]=e7580bcf5e7e1c3fc4e825286a9f2bbd
-     SOURCE_HASH=sha1:e0567ad0cbb701ce914c1eb6838110e3b95c874d:1
+     SOURCE_HASH=sha512:d1273f9bb82f24e4439a4d211808b91bc3fc09f7b379d0301d66e534fcc39f5ed522d6ed93aaaa864b946187d267e68e1f99a34c3073d2626054ac011a3ca8da
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/\b/} 
 fi
         WEB_SITE=http://www.scummvm.org/

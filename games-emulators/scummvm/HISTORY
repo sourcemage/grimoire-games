@@ -1,5 +1,8 @@
+2005-12-02 Seth Woolley <seth@tautology.org>
+	* DETAILS: removed MD5, used sha512
+
 2005-12-01 Seth Woolley <seth@tautology.org>
-	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+	* DETAILS: MD5 IGNORE to SOURCE_HASH volatile
 
 2005-11-27 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 0.8.0, sha1 check, md5sum
