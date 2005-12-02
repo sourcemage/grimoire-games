@@ -32,7 +32,7 @@
   cp -pa * ${installdir}/                                &&
 
   # Copy the opengl maxpak
-  unpack $SOURCE2 ${MD5[1]}                              &&
+  unpack_file 2                              &&
   cp -pa $SOURCE_CACHE/${SOURCE2} ${installdir}/baseq2/  &&
 
   # Copy the player models

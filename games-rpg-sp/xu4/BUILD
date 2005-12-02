@@ -10,7 +10,7 @@
   prepare_install  &&
   make  install    
 cd ${INSTALL_ROOT}/usr/share/games/u4               	 &&
-  unpack  ${SOURCE2}  ${MD5[1]}                  	 &&
+  unpack_file 2                  	 &&
   ln  -sf  ULTIMA4  ultima4                              &&
   ln  -sf  MOSLO    moslo
 
