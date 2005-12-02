@@ -1,10 +1,10 @@
            SPELL=gmult
-         VERSION=4.2
+         VERSION=5.1
        BUILD_API=2
-          SOURCE=$SPELL-$VERSION.tar.gz
+          SOURCE=$SPELL-$VERSION.tar.gz.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://mterry.name/gmult/$SOURCE
-          MD5[0]=448c7943cd89c179048e799998966ce8
+     SOURCE_HASH=sha512:62e083e2a71ab654f5ce989dbb353c71ec0e6b0ba9977a9bb2f5823345d1a3d64c506a6680807cf0bc30214a2ef3611005ae0cfb175b94f8129a78d76a5e430c
         WEB_SITE=http://mterry.name/gmult
          ENTERED=20050509
            SHORT="Multiplication Puzzle"
