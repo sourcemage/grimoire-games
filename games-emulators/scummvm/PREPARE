@@ -1,1 +1,5 @@
-config_query  SCUMMVM_CVS  "Would you like to build the latest cvs version?"  n
+config_query SCUMMVM_CVS "Would you like to build the latest cvs version?" n &&
+if [ "$SCUMMVM_CVS" == "y" ]; then
+  config_query SCUMMVM_CVS_AUTOUPDATE \
+          "Automaticaly update the spell on sorcery queue/system-update?" "n"
+fi

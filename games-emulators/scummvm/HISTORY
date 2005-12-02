@@ -1,3 +1,7 @@
+2005-12-02 Neuron <vlmarek@volny.cz>
+	* DETAILS, PREPARE: 'Multiversioned' the spell
+	* desktop: Added desktop file
+
 2005-12-02 Seth Woolley <seth@tautology.org>
 	* DETAILS: removed MD5, used sha512
 

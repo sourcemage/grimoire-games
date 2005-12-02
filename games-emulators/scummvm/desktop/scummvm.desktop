@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ScummVM
+Exec=scummvm
+Icon=/usr/share/games/scummvm/scummvm.xpm
+Terminal=false
+Type=Application
+Categories=Application;Games;
