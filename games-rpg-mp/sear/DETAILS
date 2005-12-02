@@ -4,7 +4,7 @@ if  [  "$SEAR_CVS"  ==  "y"  ];  then
           SOURCE=$SPELL-cvs.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-cvs
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/clients/$SPELL
-          MD5[0]=IGNORE
+   SOURCE_IGNORE=unversioned
   FORCE_DOWNLOAD="on"
 else
          VERSION=0.5.0

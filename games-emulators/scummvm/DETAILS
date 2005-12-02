@@ -6,7 +6,7 @@ if  [  "$SCUMMVM_CVS"  ==  "y"  ] ; then
           SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scummvm:scummvm 
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src 
-          MD5[0]="IGNORE" 
+   SOURCE_IGNORE=unversioned
 else
           SOURCE=${SPELL}-${VERSION}.tar.bz2  
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE 

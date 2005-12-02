@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/tuxnes:tuxnes
   FORCE_DOWNLOAD=on
-          MD5[0]=IGNORE
+   SOURCE_IGNORE=unversioned
         WEB_SITE=http://tuxnes.sourceforge.net/
          ENTERED=20020115
          UPDATED=20020115

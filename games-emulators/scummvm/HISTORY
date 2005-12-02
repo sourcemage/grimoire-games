@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
 2005-11-27 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 0.8.0, sha1 check, md5sum
 	* INSTALL: Not installing wrapper, making spell work with games grimoire

@@ -1,3 +1,15 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
 2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 

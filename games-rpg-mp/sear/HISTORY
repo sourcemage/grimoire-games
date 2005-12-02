@@ -1,4 +1,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
+2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
 2005-06-17 Eric Sandall <eric@sandall.us>

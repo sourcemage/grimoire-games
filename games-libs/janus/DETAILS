@@ -4,7 +4,7 @@ if [ "${CVS}" = "yes" ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/janus
-          MD5[0]="IGNORE"
+   SOURCE_IGNORE=unversioned
   FORCE_DOWNLOAD=1
 else
           SOURCE=${SPELL}-${VERSION}.tar.gz

@@ -5,7 +5,7 @@ if [ "$SCUMMVM_TOOLS_CVS" = "y" ] ; then
   FORCE_DOWNLOAD=1 
           SOURCE=${SPELL}-${VERSION}_cvs-src.tar.bz2 
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scummvm:tools 
-          MD5[0]="IGNORE" 
+   SOURCE_IGNORE=unversioned
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src 
 else
           SOURCE=scummvm-tools-${VERSION}.tar.bz2 
