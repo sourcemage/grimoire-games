@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://user.cs.tu-berlin.de/~karlb/$SPELL/$SOURCE
         WEB_SITE=http://www.linux-games.com/castle-combat/
-          MD5[0]=4f05ec24619879716d995153c02d8e52
+     SOURCE_HASH=sha512:828ba039f53c068a991317420a637fa9fe134bcc0333eba23db47d9e6b339cce7dfae2651360b9cfc51c8bfe877fcbaf7e45deff06819a31f76f87df17ed866b
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20020308

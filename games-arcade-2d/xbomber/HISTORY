@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-09-21  <abouter@sourcemage.org>
 	* DETAILS, DEPENDS, INSTALL, HISTORY, BUILD, PRE_BUILD,
 	  desktop/xbomber.desktop, xbomber: created spell

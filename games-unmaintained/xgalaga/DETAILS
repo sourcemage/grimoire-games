@@ -5,7 +5,7 @@
     SOURCE_URL[0]=http://ftp.debian.org/debian/pool/main/x/xgalaga/$SOURCE
          WEB_SITE=http://unmaintained.sourceforge.net/showproject.php?id=304
        MAINTAINER=v.merkatz@gmx.net
-           MD5[0]=d4f9c576343b67172f5fd81ab4141146
+      SOURCE_HASH=sha512:90cdc8a911e7de1d15af65ab100273d39c26a15761e7c3bc977eb3d55920f1a5b962a69d0a494d5c29ea28b724f8c69856955431de420f205fc638e88c3d62b0
        LICENSE[0]=GPL
          ENTERED=20020916
          UPDATED=20020916

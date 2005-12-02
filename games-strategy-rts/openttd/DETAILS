@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.openttd.com/
          ENTERED=20040708
          UPDATED=20040708
-          MD5[0]=95f5d60671113b9c03b894daf2701649
+     SOURCE_HASH=sha512:1c8f6991389acd1ed4086837568633d571eb2b41447ff18fbddbbafba3cadfb57748df78ab1bda918c215b360b3d2aa05c43103c2cffb46da7cefbbcb4db9c9f
        BUILD_API=2
            SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF

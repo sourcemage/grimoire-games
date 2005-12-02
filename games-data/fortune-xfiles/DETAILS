@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/xfiles/$SOURCE
         WEB_SITE=http://www.splitbrain.org/Fortunes/xfiles/index.php
-          MD5[0]=ad0e99a9868ecfefba1d0db9c6808450
+     SOURCE_HASH=sha512:3a6c81f3cb47a40b9717032f7eade2ded4eba4670cd76311187f64eaa9764eefac439f01217ad34feda48609c1dfc1a04cab7871d80c848bd1d5d157232f099b
       LICENSE[0]=GPL
          ENTERED=20050502
          UPDATED=20050502

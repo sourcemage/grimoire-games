@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://www.nongnu.org/tong/$SOURCE
-          MD5[0]=3a4bfebd9a890b8f80b4a609b38d4b5e
+     SOURCE_HASH=sha512:56b6f329a0dd11db7dcc58b8c232e8568debcc32a3986152b65cb7a174bd599b56cff04565a38a0e4207f2e3381792b01a7c9d25bb4bc915e287d5db6af98a81
         WEB_SITE=http://www.nongnu.org/tong/
          ENTERED=20050106
          UPDATED=20050106

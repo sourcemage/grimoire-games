@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040501
          UPDATED=20040501
       LICENSE[0]=GPL
-	  MD5[0]=40d10ec355331ae4f078f354e12f05b9
+     SOURCE_HASH=sha512:bb7538a34aed87bbdc7c1e9134027ef28bd9db79db7a7b21a4e50bfdd78a67fecd2607099ebef9a70cf15835bc7ae5a5a23a74ea86985e9e3ab35a84f569c7dc
        BUILD_API=2
            SHORT="Gweled - Bejeweled/Diamond Mine clone for Gnome"
 cat << EOF

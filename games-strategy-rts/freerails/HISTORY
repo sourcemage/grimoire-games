@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Renamed SDL_ttf to sdl_ttf
 	  Removed SDL as sdl_ttf depends on sdl

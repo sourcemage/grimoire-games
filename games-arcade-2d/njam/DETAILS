@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
         WEB_SITE=http://$SPELL.sourceforge.net/
          ENTERED=20040424
       LICENSE[0]=GPL
-          MD5[0]=5b0f77b2687905ea314cd2d37a9e1766
+     SOURCE_HASH=sha512:5e5f992779040e80dc8be94b1f496a830b7b76f533ea500997b3c6271385b4705cb6bbbedaed95d50303f0e2c013eb0b34a366d5bd76925b6b5edce7bdeccf49
        BUILD_API=2
            SHORT="Njam is a full-featured cross-platform pacman-like game"
 cat << EOF

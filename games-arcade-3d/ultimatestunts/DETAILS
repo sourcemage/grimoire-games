@@ -2,7 +2,7 @@
          VERSION=0531
           SOURCE=${SPELL}-srcdata-${VERSION}.tar.gz
    SOURCE_URL[1]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-          MD5[0]=c0211ccfdc0ef255d28f5bb4e6bf0f4c
+     SOURCE_HASH=sha512:529e90daf555fbfe2ecc5b5cc503fd1083bea4196dbfb126a7514da62e0cf8be1fcee6263aadd75cdbf09de9aafcbb7b09a32f30ee47bf91398666d65a4c6ad4
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-srcdata-${VERSION}
         WEB_SITE=http://www.ultimatestunts.nl/
          ENTERED=20050226

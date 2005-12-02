@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-08-05 Pieter Lenaerts <e-type@cwazy.co.uk>
 	* DETAILS, INSTALL, deleted PRE_BUILD: removed shareware doom1 wad file
 	* DEPENDS: now optional_depends DOOM-DATA

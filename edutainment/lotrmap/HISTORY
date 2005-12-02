@@ -1,2 +1,5 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-07-14 Jason Flatt <jflatt@sourcemage.org>
 	* Created this spell.

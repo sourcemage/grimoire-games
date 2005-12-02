@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/wfmath-$VERSION
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/wfmath/$SOURCE
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/wfmath/${SOURCE}
-          MD5[0]=068a53d12012e09a91ca09e6ec2b6722
+     SOURCE_HASH=sha512:1c5ea5f5024e4d61a141e02a0bf26faa208dfd3ba501d96c22828fd0443047c423bbad67b99147c4ccfb477524ea25f873cf1fbb806ff7a2b8ac0a57496bfc50
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wfmath/
          ENTERED=20020915
          UPDATED=20020915

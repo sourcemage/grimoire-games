@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://home.gna.org/monkeybubble/downloads/$SOURCE
         WEB_SITE=http://home.gna.org/monkeybubble/
-          MD5[0]=7c47404282ddf00a2b269ee5eb4b0626
+     SOURCE_HASH=sha512:513a72b743ae8bfad2ddfa225ce570bbb7a9a000974497c365bcb8b17137bb003373df33e1e141dadd85f21e2c085e869f25fadfd8830e79bdeab23a8053f648
       LICENSE[0]=GPL
          ENTERED=20031001
          UPDATED=20031001

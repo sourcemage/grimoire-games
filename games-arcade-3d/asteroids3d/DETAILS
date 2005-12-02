@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/asteroids3D
         WEB_SITE=http://www.psc.edu/~smp/a3d
          ENTERED=20010922
          UPDATED=20010922
-          MD5[0]=22ff1dbd67894954dffd294ebda49ea4
+     SOURCE_HASH=sha512:85809b1a972d10371994cc5319eb56bb7edb8cb1f6950a6d27468a3245d4332ca15a3fa3f5c06d96fb6f0063b78e44022368d00a116423c6c4db8ccf8072893d
       LICENSE[0]=GPL
            SHORT="Asteroids3D is a 3D, first-person game of blowing up asteroids."
 cat << EOF

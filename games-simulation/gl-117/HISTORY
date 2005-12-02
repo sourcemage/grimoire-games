@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-12-12 Adam Clark <adamsgl@dhbit.ca>
 	* DETAILS: version bump, squishes #7756
 

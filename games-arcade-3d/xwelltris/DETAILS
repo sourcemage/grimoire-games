@@ -4,7 +4,7 @@
           SOURCE=$SPELL-$VERSION.src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://xnc.dubna.su/$SPELL/src/$SOURCE
-          MD5[0]=f4573fca9857a3f11acbe3f592eec864
+     SOURCE_HASH=sha512:6b1080c6e6d1b579c441d1f42bb6454dafed62a63790d5798e83cf137db7ff2ddc07db7e89b34402a5249770697cc3f8ad5e6222266142c7b43f6936828f2536
         WEB_SITE=http://xnc.dubna.su/xwelltris/index.html
          ENTERED=20050518
            SHORT="Tetris like popular game"

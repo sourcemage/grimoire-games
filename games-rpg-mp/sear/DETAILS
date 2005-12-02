@@ -13,7 +13,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/clients/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/clients/${SPELL}/${SOURCE}
-          MD5[0]=a81fd8a76c77a22049dcc1b8bac365cb
+     SOURCE_HASH=sha512:5db3fecef6d6ba681cd12a001f23ddd5554ce31c6bbaf3543bf37cf5c0d9f52fd2817dcaa0b6b035e0eff23e4c3358d16c41850e4e276ce0efe59e31a4484228
 fi
         WEB_SITE=http://www.worldforge.org/dev/eng/clients/$SPELL
          ENTERED=20020915

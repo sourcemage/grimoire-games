@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.cis.uab.edu/pub/hyatt/v19/$SOURCE
         WEB_SITE=ftp://ftp.cis.uab.edu/pub/hyatt/doc/readme.txt
-	  MD5[0]=13a38ecb8ffb53f6c541772fd45ccb94
+     SOURCE_HASH=sha512:11080553f26e13d880bba907915c5176aa0d7106e6dba3965c13b0ebaec34cabd54ddc301f0cbc6eecb8ee57b30e5c3172dc8aa540e9a82e7a6a7e084e1a4e1b
       LICENSE[0]="Seems to be open source"
 	 ENTERED=20030412
          UPDATED=20030412

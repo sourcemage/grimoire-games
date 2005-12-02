@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://people.mandrakesoft.com/~gc/fb/${SOURCE}
    SOURCE_URL[1]=http://guillaume.cottenceau.free.fr/fb/${SOURCE}
-          MD5[0]=8053b11f2fa825edcc94694943f27ac9
+     SOURCE_HASH=sha512:c18928f33348b23d7c9846ddf2a9bb732176d321daa3d5429a9d6d38f29bdff026d1ec154ae7990ecf58b7faf86570d0c592ef0d5f581b6ab55ed6c81b478f11
         WEB_SITE=http://www.frozen-bubble.org/
       LICENSE[0]=GPL
          ENTERED=20020209

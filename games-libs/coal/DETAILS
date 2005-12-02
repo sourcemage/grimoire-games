@@ -10,7 +10,7 @@ else
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/COAL/$SOURCE
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=29b9f9faa6b3b2aca09a4f4350156006
+     SOURCE_HASH=sha512:0d5c34fbd9d51fc284b92c531534efca1ce34d4c9e879cd342da8151e42912526e5006d8437d84774cb62827a620b960cea3c5d0eca5cc2dc4b1b4e28d9c9485
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL

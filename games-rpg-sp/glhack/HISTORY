@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL,BUILD: Cleanup and make it install to share/games/glhack
 	* DEPENDS: this seems to not depend on nethack anymore

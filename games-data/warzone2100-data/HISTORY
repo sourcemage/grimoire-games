@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: find_and_scam added to set proper permissions bug #9205
 

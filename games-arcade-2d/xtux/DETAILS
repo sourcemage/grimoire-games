@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-src-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
    SOURCE_URL[0]=http://ftp2.sourceforge.net/xtux/${SOURCE}
-          MD5[0]=ccb8d1e79701a17772ef692f2ba3f144
+     SOURCE_HASH=sha512:edb137b4d6b0fe7d673e8eedffbd9c521800a8e51aff0a36e5aa02d46a157d42142326b334b9c7358cfb5debf4b78a2a9951f82121dd538cfe288cf292a269d4
         WEB_SITE=http://xtux.sourceforge.net
          ENTERED=20011106
          UPDATED=20020320

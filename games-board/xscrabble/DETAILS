@@ -5,8 +5,8 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://ftp.ac-grenoble.fr/ge/educational_games/${SOURCE}
   SOURCE2_URL[0]=ftp://ftp.ac-grenoble.fr/ge/educational_games/${SOURCE2}
-          MD5[0]=8b9d9e8332ce6041e41d446c2a0a955d
-          MD5[1]=e7161dbf2a8b7ca9171e7ec00d4dc852
+     SOURCE_HASH=sha512:38137b3dfd3156c3748719136a30fbc7f04910538bdbdec3e9d50e3efe326ab7119a45171e0fa2cd95cd81f0642070e2e011c165284766eb7a14bd7d2aa660db
+    SOURCE2_HASH=sha512:05e4bca6ec2a9b7698f5c266bf5cede574cbef87883d7cac6dc35084fa2976dcd23f3a2215b674b9f36d7c170e6af021c3ec0884f06c9803cd67ec300651ac41
         WEB_SITE=http://freshmeat.net/projects/xscrabble/
          ENTERED=20031118
          UPDATED=20031118

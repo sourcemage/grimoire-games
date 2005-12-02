@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.efd.lth.se/~d00jkr/tuxpuck/$SOURCE
-          MD5[0]=58b64d38868d19f0fd491ea3c7bb8eb2
+     SOURCE_HASH=sha512:875680f7fd9d4257884c58d8a5529082aac4dc10f1a9c9d08acd4e67ddb5e9c66dd84a4fbcc27e3673e329d845b0966ea683412ffe61f0a403d195eac0f32a46
         WEB_SITE=http://www.efd.lth.se/~d00jkr/tuxpuck/
          ENTERED=20011214
          UPDATED=20020324

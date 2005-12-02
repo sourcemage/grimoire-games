@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/starwars/$SOURCE
         WEB_SITE=http://www.splitbrain.org/Fortunes/starwars/index.php
-          MD5[0]=e660732743e64e35f3abd4ae98de7eb2
+     SOURCE_HASH=sha512:7c829f367b71a56f442045e63ece9b5bf774447de2535e41d6d43ace4c88a0c6e907546bcdef388110998d069b77c24bde39a97a86c89a2693bb089e65b89627
       LICENSE[0]=GPL
          ENTERED=20050324
          UPDATED=20050324

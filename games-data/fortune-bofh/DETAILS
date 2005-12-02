@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/bofh-fortune-mod${VERSION}
    SOURCE_URL[0]=http://www.void.irq.org/$SOURCE
         WEB_SITE=http://www.void.irq.org/
-          MD5[0]=ccd9a28fc9c33d026c74e6e22ce61616
+     SOURCE_HASH=sha512:e300994fd5d71af228cc76b62541e7e1086f42e002fb9f0a5bd69025f23489c96abe40b843eb35162c92eca8a941b2edacfd34194e52269bf1be338407b6ddaf
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324

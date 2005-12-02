@@ -11,7 +11,7 @@ else
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-          MD5[0]=16befa8a49598eb3dd932acdc7a5db19
+     SOURCE_HASH=sha512:244a8b0d69e3ed61eba75021597f298842caba183abbf1c8584770c6582a6c6a82443146afd2318a975418e18ca487dfb7552cca8f6beb871d9120d0238a1d15
 fi
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/clients/ember
          ENTERED=20031013

@@ -1,2 +1,5 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-09-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, DEPENDS, DETAILS, HISTORY: created this spell

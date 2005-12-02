@@ -6,7 +6,7 @@
          WEB_SITE=http://www.linux-games.com
           ENTERED=20010922
           UPDATED=20010922
-           MD5[0]=e49db46ede2020f38f952f5ec6e96cd1
+      SOURCE_HASH=sha512:0415bcd2498ecf9af92545ab93f9a3f71c8c7c6ae8e4705fa592b2e03c6a0ca0cc126abbf440c5d5c217a939c71710e4d48d02d2738a1146a4d3924cbbede51d
        LICENSE[0]=GPL
         BUILD_API=2
        MAINTAINER=g.clay@warwick.ac.uk

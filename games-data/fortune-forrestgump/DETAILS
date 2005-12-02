@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-fgump
    SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/fgump/$SOURCE
         WEB_SITE=http://www.splitbrain.org/Fortunes/fgump/index.php
-          MD5[0]=902d155d17ee303c0e4dc9634836017a
+     SOURCE_HASH=sha512:0bc34581164045c0486dc126a43b16fedcb2393fd3a6ae9784364a7c5334828c7fa888048e81be3e5a740e3a7514c44d34563d2273f197f93e9cc2fd941d1799
       LICENSE[0]=GPL
          ENTERED=20050502
          UPDATED=20050502

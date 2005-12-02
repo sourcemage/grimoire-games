@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://ccdw.org/~cjj/prog/ccgo/src/$SOURCE
         WEB_SITE=http://ccdw.org/~cjj/prog/ccgo/
-          MD5[0]=7c604cf2fbeb3efaeeaaeda075a83754
+     SOURCE_HASH=sha512:6c1301fb090069dca295b9e6645cd2aa411aecf7cfa1c7a29a574a0211b1d1151f88c1cce8427cf685d0d77394d22813fc3fceb7b00be9bb2c6e32f0da99fbc9
       LICENSE[0]=GPL
          ENTERED=20050701
          UPDATED=20050701

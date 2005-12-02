@@ -5,7 +5,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
 #temporary while savannah is down
    SOURCE_URL[0]=${SOURCEFORGE_URL}/freelords/${SOURCE}
 #   SOURCE_URL[0]=http://savannah.gnu.org/download/${SPELL}/stable.pkg/${VERSION}/${SOURCE}
-          MD5[0]=e93268e7365f40421d6a121151902a6a
+     SOURCE_HASH=sha512:947950460c77e9aa7dc2e38f5d829e63f80266b0ac6d22caa6361f74a00441d2fb7abc88c6db61ca81ff4e17a19ba20dc2d688cf66f8252e22da8f825f275446
         WEB_SITE=http://www.paragui.org/
          ENTERED=20020826
          UPDATED=20040106

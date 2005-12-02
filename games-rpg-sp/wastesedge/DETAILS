@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/src/$SOURCE
-          MD5[0]=51dde843a3142a5d605fe52ffe93fa44
+     SOURCE_HASH=sha512:c49164dbf975ac44ace90e7dfdbf5ca733836655fc376b99306f30edccb272576458a2585693d45f6918c03204809ddafde6f160ea7015380675221b0424570c
         WEB_SITE=http://adonthell.linuxgames.com
          ENTERED=20020517
          UPDATED=20020517

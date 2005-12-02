@@ -11,7 +11,7 @@ else
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-          MD5[0]=312a38e05a1214caa87171a7f5f42639
+     SOURCE_HASH=sha512:cb56eeb7ece7e263ea82fbd8f11322bf3a43cd28033deb8f312b459fd0f89ce9c13f73df8ddbf2eb9aa0b66b5fc4b5d7ed4e7a79b267fe121592609ceeb28b54
 fi
         WEB_SITE=http://www.worldforge.org/dev/eng/tools/${SPELL}
          ENTERED=20031012

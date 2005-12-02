@@ -5,7 +5,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.logicalshift.demon.co.uk/unix/zoom/$SOURCE
         WEB_SITE=http://www.logicalshift.demon.co.uk/unix/zoom/
          ENTERED=20040420
-          MD5[0]=a4b549570bfe53e362f4f0b991d40b9d
+     SOURCE_HASH=sha512:257efd6f9827a69f9bf3aa48942a3d4ad4cca2450473583b760fcc890440736c1f6d0e32166c9aae7e0922929e10154c7de193bb73bd1e1754206a38450fa4c9
       LICENSE[0]=GPL
            SHORT="A fast, antialiased Z-machine interpreter"
 cat << EOF

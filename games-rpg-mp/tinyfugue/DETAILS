@@ -3,7 +3,7 @@
           SOURCE=tf-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
    SOURCE_URL[0]=http://ftp.tcp.com/pub/mud/Clients/$SPELL/$SOURCE
-          MD5[0]=50e6d5ed71aadea1343bde851369055f
+     SOURCE_HASH=sha512:cd51bdf60989891dd3f0f3a0e9f2fb92e6260a2dda120269713b29e58ba619abeebe9cb47a6381e26539a895071e02f34a23d914896fc5e089c5c801337b8581
         WEB_SITE=http://tf.tcp.com/~hawkeye/tf/
          ENTERED=20020131
          UPDATED=20020131

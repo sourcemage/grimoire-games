@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://linuxberg.matrix.com.br/files/x11/scientific/$SOURCE
-          MD5[0]=ba7e8043b33b3a173f754f2abf03bdf3
+     SOURCE_HASH=sha512:a4e70f2580b055477530a665a0263d1af67ebf953556156b2a3acfa07b15d5fb96987547b13603d9f6bbd2c3d6ed9a0984c8eb2d3151db6a93add4baf05a756a
         WEB_SITE=http://www1.las.es/~amil/ssystem
          ENTERED=20010922
          UPDATED=20010922

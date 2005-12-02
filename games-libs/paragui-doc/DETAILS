@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://savannah.gnu.org/download/${SPELL/-doc/}/stable.pkg/${VERSION}/${SOURCE}
-          MD5[0]=bc7aafbf93a820ac602e00015cb7bbad
+     SOURCE_HASH=sha512:5a966c0a3885666ed22f5909ebe3a6cb5cd60506cd6b758f9980ef1723e3754ee69a7cd18533d69e29e27ed4f3bc30323cbe090107bac48280adf9c0213ba63d
         WEB_SITE=http://www.paragui.org/
          ENTERED=20020826
          UPDATED=20021018

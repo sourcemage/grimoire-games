@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.rcdrummond.net/uae/
          ENTERED=20040522
          UPDATED=20040522
-          MD5[0]=7d159b7be6bfcdf68d4f8a958992610e
+     SOURCE_HASH=sha512:79991c2a9929da386a57fd537ce59fce4e2cf875a68dad8b15a1ec66b8e3e798f0a8e4a79ca93d28a2ce90404b6d5faaa087aee3f5d73bc6d70e707e6aefc87b
       LICENSE[0]=GPL
            SHORT="the Ubiquitous Amiga Emulator"
 cat << EOF

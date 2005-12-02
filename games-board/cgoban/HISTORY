@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2003-07-03 hgg <hgreig@bigpond.net.au>
 	* Add optional_depends for gnugo,to play as a stand-alone (solitare) client
 

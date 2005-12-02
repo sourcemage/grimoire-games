@@ -1,2 +1,5 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-03-24 Geoffrey Derber <gderber@sourcemage.org>
 	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL: created

@@ -3,7 +3,7 @@
           SOURCE=glob2-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-$VERSION
    SOURCE_URL[0]=http://epfl.ysagoon.com/~glob2/data/$SOURCE
-          MD5[0]=4dfc9c8653a730f3d4ae240dfcf65d35
+     SOURCE_HASH=sha512:ad6c0f4a61d0b5147a4dc1a0ecef91ad3e8d8037e66ac19e66966c0628af317fa7037d8a67f229e88ca41929fe2097b3a07d8f757dd01b8d1ab4bdd22e2894a5
         WEB_SITE=http://glob2.ysagoon.com/
          ENTERED=20040814
          UPDATED=20040814

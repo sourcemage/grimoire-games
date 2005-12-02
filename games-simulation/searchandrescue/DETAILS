@@ -6,8 +6,8 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
    SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
   SOURCE2_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE2}
-          MD5[0]=5bfb6a54625fa95b4d9cabdf5e998eb1
-          MD5[1]=ea08530e832a00768258275b97e349b3
+     SOURCE_HASH=sha512:63e74831b9ac7afa2824a87a778f0e8c7ce0f9ec8bfe6ca3b17d80e3d3d252415ee2169ca29c3f27795359c93a583abcc05ae286f321f30a2edda0e08f642a13
+    SOURCE2_HASH=sha512:ed5dd35671e4c0b3e39fb3aaceec6cf9ab0c385e351f85824f7c7f3b4a4ccdb40a249f7e9c953ad0e9faa03dc84e8d84f9ac9d0d8077c52812ea819b3b88fdfd
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
          ENTERED=20010922
          UPDATED=20020426

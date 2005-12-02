@@ -10,7 +10,7 @@ else
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=776a98e02a007469c063b7746bb458c7
+     SOURCE_HASH=sha512:e5387d271c96af427432de83bb9d4085868e76e52146f591befae5ffa8bd206f1ff0a05d1ac1b1dea7c5561f41a18ebcc78c1ce336f8ac689f793d9ef9ad4c21
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/wftk/

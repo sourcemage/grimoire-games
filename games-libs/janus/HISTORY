@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2

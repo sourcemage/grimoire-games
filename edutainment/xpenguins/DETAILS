@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
-          MD5[0]=7df2049a52d058a216ed8989ae84572a
+     SOURCE_HASH=sha512:cb24e17a5a19df0de162b2214dec2fbfc07396cdea9d138b8426d8fc38e248b1faba65ebfb8ba74a5cf515063ba8f4032c4588586b23b5be6aa0a208cfcfebf1
         WEB_SITE=http://xpenguins.seul.org/
          ENTERED=20020411
          UPDATED=20020608

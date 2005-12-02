@@ -2,7 +2,7 @@
          VERSION="0.8"
           SOURCE="$SPELL.$VERSION.tar.gz"
    SOURCE_URL[1]="ftp://ftp.billsgames.com/unix/x/$SPELL/$SOURCE"
-          MD5[0]="00452f33e6f99f9c5ef14b198c32756f"
+     SOURCE_HASH=sha512:0461bdc1a5d833c193d0eb620738e9b4298e99c4ad48b7a48dd5ca16689aa56c5283b64817fedd7d24765550fc15d3eab31c2028fd0d75a35d5e884079366489
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL"
         WEB_SITE="http://www.newbreedsoftware.com/$SPELL/"
          ENTERED="20050921"

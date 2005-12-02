@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.sonic.net/pub/users/nbs/unix/x/vectoroids/$SOURCE
-          MD5[0]=0b485744794600fbde2a0984e1962697
+     SOURCE_HASH=sha512:29f1f0b63456fb6329291f6caf01398d5be12179f320d3025a26816b7e5349e9e37aec9c8ab81a8094d5c47d87a0bf6e91964ec2c786a1e65d901f8720c03e32
         WEB_SITE=http://www.newbreedsoftware.com/vectoroids
          ENTERED=20011214
          UPDATED=20020426

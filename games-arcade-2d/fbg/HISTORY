@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updated for Build API 2
 

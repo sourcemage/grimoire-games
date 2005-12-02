@@ -1,4 +1,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-12-01 Seth Woolley <seth@tautology.org>
 	* PRE_BUILD: unpack api update
 
 2004-08-03 Eric Sandall <eric@sandall.us>

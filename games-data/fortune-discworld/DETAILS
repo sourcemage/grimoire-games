@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/discworld/$SOURCE
         WEB_SITE=http://www.splitbrain.org/Fortunes/discworld/index.php
-          MD5[0]=f89740512acd090ac31f8462f7711fcf
+     SOURCE_HASH=sha512:62a8995cc197557942e69cb4a31ef05de7b37130194753333715f476f0da9db455482dfe31803018e4d2febaf7ecf3a5785f616203354388dbc7bc9cfbb8ab95
       LICENSE[0]=GPL
          ENTERED=20050502
          UPDATED=20050502

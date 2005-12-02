@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/enigma-$VERSION
         WEB_SITE=http://savannah.nongnu.org/download/enigma/
          ENTERED=20040728
          UPDATED=20040728
-          MD5[0]=d72cc5de045be38943194352b4c68b55
+     SOURCE_HASH=sha512:c15cccc93cfd8940b8d6145d39ceca4718ed4770005d387b65adc8073e6eb8d834c0823baaffcc7a8a355a88841246196e7cf37aea2a0b58f66c483fcda76b16
       LICENSE[0]=GPL
            SHORT="A puzzle game involving pushing stuff around."
 cat << EOF

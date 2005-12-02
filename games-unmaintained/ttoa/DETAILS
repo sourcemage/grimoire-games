@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tgz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/newland
    SOURCE_URL[0]=http://www.anemaet.nl/ttoa/download/${SOURCE}
-          MD5[0]=5b62ef4cc93c38ccf889d763b9a46181
+     SOURCE_HASH=sha512:b7f6a06bf8eb2bda9da637e0751964bd586038faea75ee65c5466982c849b86cfaafb663e470db2a21eb890bc74027cd3e69a12821242911e398552fc184ca51
         WEB_SITE=http://ttoa.fadingdream.com/
       LICENSE[0]=GPL
           REJECT="Author closed this project"

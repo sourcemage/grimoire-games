@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040419
          UPDATED=20040419
        BUILD_API=2
-          MD5[0]=17abacea7b74e8fe7ee65e7f54e93c6b
+     SOURCE_HASH=sha512:7ca8b6fb77c10face61f9ceb345ebeb6f8e9b790be7a33c86e79e4b6f04902f17a3e7650dcb6c84b0380eeebf49fe92781446974e931f05b9c832df3a6afde1d
       LICENSE[0]=GPL
            SHORT="Roll through an obstacle course or play miniature golf"
 cat << EOF

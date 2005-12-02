@@ -5,7 +5,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.kmuddy.org/files/$SOURCE
         WEB_SITE=http://www.kmuddy.org
          ENTERED=20040422
-          MD5[0]=936b8be97a6e29ee62ef9ff8668e8ca0
+     SOURCE_HASH=sha512:9b1a7f8c03eaff45118b29d010137c13881688818c811dbb2bdbb59756c390e75561677f1d6f5e3ba3eef4cb75482bfd6c6128242db615cc46ade1c26f74da2d
            SHORT="KMuddy is a mud client designed for KDE"
 cat << EOF
 KMuddy is a mud client designed for KDE. It's features include ANSI Color,

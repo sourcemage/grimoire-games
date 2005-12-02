@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.seasip.demon.co.uk/Unix/LibDsk/
          ENTERED=20040425
       LICENSE[0]=GPL
-          MD5[0]=43ff1ac41ac41c91a8335901834ebb9d
+     SOURCE_HASH=sha512:3a1e51547a888928aac092a04e6f888a85300acea30f86633b4b98c68c0fe8524779106a721ca08267033bc3e7ec71ac3b12087d0f4fd73d796b93a88f336438
            SHORT="Lib765 is the floppy controller emulation"
 cat << EOF
 Lib765 is the floppy controller emulation from JOYCE,

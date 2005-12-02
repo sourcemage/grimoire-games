@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-10-14 Neuron <vlmarek@volny.cz>
 	* Updated to version 0.6.0
 

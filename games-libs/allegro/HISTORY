@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Added options from configure
 	* CONFIGURE: Options to tweak allegro

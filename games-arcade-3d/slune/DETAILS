@@ -3,7 +3,7 @@
           SOURCE=Slune-with-deps-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Slune-with-deps-$VERSION
    SOURCE_URL[0]=http://download.gna.org/slune/$SOURCE
-          MD5[0]=a394bd996bf3b74898dbc4db8cfa5c9b
+     SOURCE_HASH=sha512:f2e7ada67c1bf0d7f044e8dbc55b37df4e76cfaccf44c0a5d9104646acd24c67c1e6303b31e048cf25fc60ce53b390fc6574c6e8f12ded4330483a906edf3984
         WEB_SITE=http://home.gna.org/oomadness/en/slune/index.html
       LICENSE[0]=GPL
          ENTERED=20040926

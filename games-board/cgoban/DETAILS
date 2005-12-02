@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.igoweb.org/~wms/comp/cgoban/$SOURCE
         WEB_SITE=http://www.igoweb.org/~wms/comp/cgoban
-          MD5[0]=267618eed650deacf083b8bbd70e7da7
+     SOURCE_HASH=sha512:3abbad0a8768672d17ac0d21248c078145f7a09b4472d70964a162cb18fd47d8b5b6439247891055dac9c9a27c8f5428bd7857c792f0a959371a69de8934beb4
       LICENSE[0]=GPL
          ENTERED=20020219
          UPDATED=20020410

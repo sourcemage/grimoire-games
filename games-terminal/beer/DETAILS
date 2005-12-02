@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://qfm.dyndns.org/~richard/beer/$SOURCE
    SOURCE_URL[1]=http://www-users.rwth-aachen.de/richard.brauer/beer/$SOURCE
-          MD5[0]=55d40ef9eaa9223f59eb38dadd8ecb4a
+     SOURCE_HASH=sha512:97818b1209d00a806a50de02366129959e87bba639e9bb70089a6d999b51a0f950a86a49b3c0a2edeab9041840007c834991dfd896197582d968dd83e86a23b0
         WEB_SITE=http://qfm.dyndns.org/~richard/
          ENTERED=20020420
          UPDATED=20020420

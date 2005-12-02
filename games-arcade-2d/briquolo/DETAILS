@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://briquolo.free.fr/download/$SOURCE
-          MD5[0]=eff5d849b205d8d460ab75663fb0f13e
+     SOURCE_HASH=sha512:3e8c5e8603c3c6e7af42df8f896c39782c6d9d9a57261d02e18d82b7e81ab698b40241f8731f2fa2e86d55decd3059f42d576042fdf12a5381010e5be78eea1c
         WEB_SITE=http://briquolo.free.fr/
          ENTERED=20050202
          UPDATED=20050202

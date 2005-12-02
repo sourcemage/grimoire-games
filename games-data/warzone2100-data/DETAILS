@@ -2,7 +2,7 @@
          VERSION=0.1
           SOURCE=warzone2100-data-0.1.tar.bz2
    SOURCE_URL[1]=http://download.berlios.de/warzone/${SOURCE}
-          MD5[0]=48204c38e6c187e7444267b9a4fa86d3
+     SOURCE_HASH=sha512:0cbedfd52a611d6cf2698fa6b4fb4fd425f0ac0650d3b3d733c5afac7b61a6643a56f973f62a9691be5f78be2deb2678334f2c7452e56b2e8bd548e794e066fe
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.realtimestrategies.net/forums/index.php
          ENTERED=20050709

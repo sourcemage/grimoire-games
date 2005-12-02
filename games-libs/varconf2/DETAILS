@@ -11,7 +11,7 @@ else
           SOURCE=${SPELL/2/}-$VERSION.tar.bz2
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL/2/}/$SOURCE
-          MD5[0]=2f287165141f9391e6c4ea1ace1993c5
+     SOURCE_HASH=sha512:d7807631f118890013589433f6850a4a63d5dbfffc8f88fe0e54f59db76f8690721291fe4711df77a333583791486bc8c1e77c2863e25e8d5f1ddbd7e4a6634e
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/2/}-$VERSION
 fi
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL/2/}

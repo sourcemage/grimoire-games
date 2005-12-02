@@ -3,7 +3,7 @@
           SOURCE=$SPELL-KXL-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-KXL-$VERSION
    SOURCE_URL[0]=http://kxl.hn.org/download/${SOURCE}
-          MD5[0]="b45f5ace6e5a8611f78a122eccf00b3b"
+     SOURCE_HASH=sha512:23433c40bb800fa6da132a87dc89ed18c156dba44f3479be39b00ac48942cbf9e3ae7318149d3184f4ba8c340c937fa44e334dad5c8e800b9906bd26cdd34fd7
       LICENCE[0]=GPL
         WEB_SITE=http://kxl.hn.org/
          ENTERED=20040420

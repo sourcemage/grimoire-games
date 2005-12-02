@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://gatekeeper.dec.com/pub/GNU/xboard/$SOURCE
-          MD5[0]=551644bf49a4be48c42e87640cf1b5eb
+     SOURCE_HASH=sha512:e4f411590c6c55d50233f1cd51ea4e4ccfd8506c5ac0d6e313bfe985c8d1929ce22003b263c7044057dc1608f1b3daf1b34ebf27068b70b6dd13601cfc83f9b9
         WEB_SITE=http://www.tim-mann.org/xboard.html
          ENTERED=20020425
          UPDATED=20031009

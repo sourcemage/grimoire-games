@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1.50
    SOURCE_URL[0]=http://www.jumpbump.mine.nu/port/$SOURCE
-          MD5[0]=8432099688d36d997e2b0fd64d825e25
+     SOURCE_HASH=sha512:24631e22ab4ac4a3df4d8c6c268d13820a7e0b0ebbbec90d2b82995b5a4b53218dff552465eff2df94273abc3f34b8bd9ec449217100fbc2a35b84a28e322a9f
         WEB_SITE=http://www.jumpbump.mine.nu/
          ENTERED=20040522
          UPDATED=20040522

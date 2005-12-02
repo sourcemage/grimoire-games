@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-futurama-$VERSION
    SOURCE_URL[0]=http://www.netmeister.org/apps/$SOURCE
         WEB_SITE=http://www.netmeister.org/misc/
-          MD5[0]=50aa0af23099f7d42c01bdcbc3b6cbfc
+     SOURCE_HASH=sha512:e557281350272c6731824e06144dfe96c93104e92b61fbb3e7cd016d9ef14ef8ae2151aa2a9695f610af3662b1abcf9f1574e44955042a5bb6763a45ca3216f8
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324

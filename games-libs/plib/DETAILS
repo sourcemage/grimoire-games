@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://plib.sourceforge.net/dist/$SOURCE
-          MD5[0]=cc8b8c36dd801d6d9eec83fb0b29afee
+     SOURCE_HASH=sha512:8c8c91fd1686f1bdd3a73aaf4957af0e51db8250de482a8896b694483bbb7f9676c51b927a89317b2c769c5e767d89e4b6b313a62cbfbb2ab94f28c42f84fb30
         WEB_SITE=http://plib.sourceforge.net
          ENTERED=20010922
          UPDATED=20050123

@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://tuxkart.sourceforge.net/dist/$SOURCE
-          MD5[0]=e942ea55b238214b9fd499bd4f5bf61c
+     SOURCE_HASH=sha512:5c49b417a1e582d0151a79c0ee5f746ff22c118ce7ed6d243ae43c9d465cb23891736afd10db771cd1f133414f34fce7747e63dafbbe8ebe4f3997ab77ec31a9
         WEB_SITE=http://tuxkart.sourceforge.net
          ENTERED=20021211
          UPDATED=20021211

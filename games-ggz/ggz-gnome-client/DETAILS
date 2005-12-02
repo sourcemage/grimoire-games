@@ -3,7 +3,7 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
-          MD5[0]=0c5bbc5cdf7c8367c2c66834d75d0329
+     SOURCE_HASH=sha512:15aaeb3f63e16596345b28d3dc1c9a884f35a5280a498d52041704f6ae4e8940b86fffe8b0ac135c48a57219966244e8447eac2531ac23ada45a20a2ed79cab1
       LICENSE[0]=LGPL
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20030606

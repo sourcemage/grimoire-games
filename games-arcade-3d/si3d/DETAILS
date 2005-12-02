@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://ftp.linux.hr/pub/si3d/$SOURCE
-          MD5[0]=5a4f168cdbc50675b70ba193e7c2a5a7
+     SOURCE_HASH=sha512:cfc3b9dbae9f8faf46bd115627587491ad0ec478b6b32a7de9eba09c9e1696341f0a28b00b4cfe0fc9b7fb1ff1b6983c6e9220124baa781d382cf264f4eb4342
         WEB_SITE=http://cvs.linux.hr/si3d/
          ENTERED=20020107
          UPDATED=20020107

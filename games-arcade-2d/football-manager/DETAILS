@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/fm-${VERSION}
         WEB_SITE=http://www.autismuk.freeserve.co.uk
    SOURCE_URL[0]=${WEB_SITE}/${SOURCE}
-          MD5[0]="447de9196b9441f5bd4dadf9a0a75f95"
+     SOURCE_HASH=sha512:db67cb91b6cbff63db49253806222cd2e5a710515564269996fe5ced406213a3eab32eae5c2baed051b8856be01aa92aae1c157ddd0b3eeb47a7da0214223ed0
          ENTERED=20030415
          UPDATED=20030415
       LICENSE[0]=GPL

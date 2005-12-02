@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-10-02 David C. Haley <dhaley@hot.rr.com>
 	* DETAILS: pointed SOURCE_URL back to teh http snapshot of teh CVS files.
 	  (had problems using the CVS in getting it to work properly)

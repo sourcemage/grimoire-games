@@ -6,7 +6,7 @@
          WEB_SITE=http://www.linux-games.com/$SPELL/index.html
          ENTERED=20010922
          UPDATED=20011011
-          MD5[0]=25fa1e614ef69abce80c1777ab77719c
+     SOURCE_HASH=sha512:7059ab5d3cf438012538c8fae1a2fc9871b9f051a10932f54a84c3b6965ef7ca6647c845616ed89c8593271d36c6769ffce05a339f5ae6223034f94a92e72fdf
       LICENSE[0]=GPL
        BUILD_API=2 
            SHORT="penguin-command is a missile command clone."

@@ -10,7 +10,7 @@ else
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/${SPELL}/${SOURCE}
    SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-          MD5[0]=04da68e4f4365731f5f75460769f0392
+     SOURCE_HASH=sha512:9105b690cb4c1086895bf384b8af02e7ba04ee478c7e4f789f741dc853294d53553a3908f2025662628db61e66c52fb921b1d23d1a13d2b3fe2a4fb94b08c567
 fi
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/${SPELL}

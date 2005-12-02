@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
         WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
          ENTERED=20040425
-          MD5[0]=56147f6df9db4a89ea89cc017bc7dc83
+     SOURCE_HASH=sha512:64225784e9eeb3e80f639ba1d6d828bb9500ba8445ea38a79bb0c64599ec96f32a6f149a1a4a07f8740d7b6bcd0b0fcfecfc169d9fdf50592f8e230362021850
       LICENSE[0]=GPL
            SHORT="Fuse (the Free Unix Spectrum Emulator)"
 cat << EOF

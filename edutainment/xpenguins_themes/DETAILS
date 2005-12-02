@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/themes
    SOURCE_URL[0]=http://xpenguins.seul.org/$SOURCE
-          MD5[0]=1719f0e87be3566c3bffe2fbb32442fe
+     SOURCE_HASH=sha512:577dedccfff8f4581c9285deb809d43a09631e15461783bfb5f00d2bf0e687d54f04ad3bcf1051113777d74f57c94c278b99749265a3efe8ebc6aabb1501eaf8
         WEB_SITE=http://xpenguins.seul.org/
          ENTERED=20020411
          UPDATED=20020608

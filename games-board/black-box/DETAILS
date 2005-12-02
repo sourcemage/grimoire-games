@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.linux-games.com/black-box/
          ENTERED=20010922
          UPDATED=20030817
-          MD5[0]=979ff8202f669e44ae1ab47b7cf8d382
+     SOURCE_HASH=sha512:23a361ec9843fc6c8a423a5b96f750c98adb2fea673eba98c7ba35eed0d03c5834ee1093b942bd42a2e31cb7ded67d34c9cebe5a173185a72934ae13954d7e8d
       LICENSE[0]=GPL
            SHORT="blackbox is game where one guesses where crystals are hidden."
 cat << EOF

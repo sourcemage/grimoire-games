@@ -7,7 +7,7 @@
          WEB_SITE=http://netpanzer.berlios.de/
           ENTERED=20050209
           UPDATED=20050209
-	   MD5[0]=819678dcb5face8f5ebfa9655024f296
+      SOURCE_HASH=sha512:9120d8d3a190069206ed327f1d7d2b2d36f40feefa823956cf6db66e8d0622959449b9385d81b08fdfc59b3b44b7e4d6f6ca2c7362f1a857e1110d61e7c08ce6
        LICENSE[0]=GPL
             SHORT="This is the data for the netpanzer game"
 cat << EOF

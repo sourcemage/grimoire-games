@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/$SOURCE
-          MD5[0]=c016e3549942cbb8e86a3a343f865504
+     SOURCE_HASH=sha512:80c5b71d84eeb3092b2dfe483f0dad8ed42e2efeaa1f8791c26fb2ae80fbd7775777ac5252b1d8270e2e176ad14ce98940bee6d8e71fdbb9ac3323dc7188c4d0
         WEB_SITE=http://www.ibiblio.org/pub/Linux/games/amusements/$SPELL/
          ENTERED=20011116
          UPDATED=20040617

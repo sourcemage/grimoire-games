@@ -4,7 +4,7 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://m.peponas.free.fr/$SPELL/download/$SOURCE
-          MD5[0]=76e04440e1ac59b10d8eaafea58bf1c6
+     SOURCE_HASH=sha512:21d544b583cacf0cdafc3f3c6d67d6153f36c885cbab966277f10b32496de18cbec645cd563867e6b99b6aa8d916b8e0d0f07d32958c212d3a8b7b0e4347041e
         WEB_SITE=http://m.peponas.free.fr/gngeo
          ENTERED=20050518
            SHORT="Neo Geo emulator"

@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Spell moved from mud/gMOO
 	* BUILD, DETAILS: switching to build api 2

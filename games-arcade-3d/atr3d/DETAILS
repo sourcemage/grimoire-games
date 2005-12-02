@@ -3,7 +3,7 @@
           SOURCE=$SPELL\_source\_$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.avoidtheroid.com/pub/atr3d/$SOURCE
-          MD5[0]=3454ad22ef41fddc4c8ff6ca78a63287
+     SOURCE_HASH=sha512:ea69db7e98be362565376f96dd445bdf95445cb17fc9786fe897ea4be84263ff65fd6610c5281112a73e5030209e07c40801f8d82fdf7acaf478878032814aba
         WEB_SITE=http://www.avoidtheroid.com
          ENTERED=20030612
          UPDATED=20030612

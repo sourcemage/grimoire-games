@@ -3,7 +3,7 @@
           SOURCE=abuse_datafiles.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.labyrinth.net.au/~trandor/abuse/files/$SOURCE
-          MD5[0]=d3beec01b1e48ddf2b4e600ee184b89e
+     SOURCE_HASH=sha512:58839e4220dd5a20a204cee37160030fb42becd9bb5f6fdac77278e03cefcaec501a657c695bf5aafd6e7b1689b894541960818c2f743c8855aaaafd67f5bdd6
         WEB_SITE=http://www.labyrinth.net.au/~trandor/abuse/
          ENTERED=20050815
          UPDATED=20050815

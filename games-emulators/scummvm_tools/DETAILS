@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}_cvs-src
 else
           SOURCE=scummvm-tools-${VERSION}.tar.bz2 
    SOURCE_URL[0]=$SOURCEFORGE_URL/scummvm/$SOURCE 
-          MD5[0]=acccb4575f9aaf2adeae655dd2aefa82
+     SOURCE_HASH=sha512:c724ba774df6eebc957a52ebc3bc670aef0ccdeb42ecc6b86c8e92b6b988dc75ada0056f21305a3f4aecf4b0e44b436098c802c5808a7ebd58282b5aa4831fc0
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/scummvm-tools-${VERSION}
 fi
         WEB_SITE=http://www.scummvm.org/
