@@ -1,3 +1,6 @@
+2005-12-02 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: source uses .bz2 instead of .gz
+
 2004-12-11 Adam Clark <adamsgl@dhbit.ca>
 	* DETAILS: Updated to 0.9.6, fixes #7628
 
