@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Shared/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Shared/${SOURCE}
-          MD5[0]=9e15cc06b703870d4a3ff88c947f87ba
+     SOURCE_HASH=sha512:cc7e9c999c8c83adc216f475f5cf14c24fa623ebf148041ffb96843938147cc3205d9b89b066085cac2803dbc1ec93ee7195f6aa8c72825dd39d2a567984b214
         WEB_SITE=http://flightgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20040107
