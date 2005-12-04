@@ -1,3 +1,8 @@
+2005-12-04 Neuron <vlmarek@volny.cz>
+	* DETAILS: updated to 0.1.10
+	* PRE_BUILD: removed, not neccessary anymore
+	* BUILD: switched to default_games_build
+
 2005-11-07 Pol Vinogradov <vin.public@gmail.com>
         * DETAILS: updated to 0.1.8
         * PRE_BUILD: removed patch line
