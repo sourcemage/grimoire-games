@@ -1,0 +1,16 @@
+           SPELL=qstat
+         VERSION=2.7
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:e463bca1686647ea427b8a56e9a169e4616152ab423ffdbc310b14a4be2ae73b9f0321f80f15cb5a664ff227c5b1833b4cdbdf1f9ef3ce5fef79e47c6b842dea
+        WEB_SITE=http://www.qstat.org
+         ENTERED=20020320
+         UPDATED=20020320
+      LICENSE[0]=ART
+       BUILD_API=2
+           SHORT="Command line utility to disply Quake servers"
+cat << EOF
+Qstat is a command line utility that displays the status of internet
+game servers including Quake and many recient shooters
+EOF
