@@ -1,9 +1,9 @@
            SPELL=ggz-gnome-client
-         VERSION=0.0.8
+         VERSION=0.0.12
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:15aaeb3f63e16596345b28d3dc1c9a884f35a5280a498d52041704f6ae4e8940b86fffe8b0ac135c48a57219966244e8447eac2531ac23ada45a20a2ed79cab1
+   SOURCE_URL[0]=http://mirrors.dotsrc.org/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=LGPL
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20030606

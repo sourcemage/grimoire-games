@@ -1,4 +1,3 @@
-depends  libggz    &&
-depends  ggz-client-libs &&
-depends  expat     &&
-depends  gnome-libs
+depends  libggz           &&
+depends  ggz-client-libs  &&
+depends  expat     

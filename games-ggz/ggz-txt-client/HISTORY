@@ -1,3 +1,7 @@
+2005-12-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.0.12
+	* DEPENDS: added optional on readline
+
 2005-09-03 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 0.0.11
 	  converted MD5 to GPG

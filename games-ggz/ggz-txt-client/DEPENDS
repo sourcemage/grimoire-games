@@ -1,2 +1,4 @@
 depends  ggz-client-libs    &&
-depends  expat
+depends  expat              &&
+
+optional_depends  readline "" "" "Enable readline support?"

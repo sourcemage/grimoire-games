@@ -1,9 +1,9 @@
            SPELL=ggz-utils
-         VERSION=0.0.8
+         VERSION=0.0.12
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://mirror.noreply.org/pub/ggz/ggz-${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:fbdc9edbd24e871032f0961e8c76a5b311a0f9329ed7c738d3196c35d79b0b9581b6034cc5a9498a69d9398bde1af1d0ae6289b1a65b14fada509a8bc033b8a5
+   SOURCE_URL[0]=http://mirrors.dotsrc.org/ggzgamingzone/ggz/${VERSION}/${SOURCE}
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=LGPL
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20021129
