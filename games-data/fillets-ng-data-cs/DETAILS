@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20040822
      SOURCE_HASH=sha512:3bb5a1c475f0fd9ef188477508de880f901fd5e35627c20d71b75c4c5882972662a46fce0b5c78602f62e484109451629c929e09cf1a5b1130c179afda2644ed
       LICENSE[0]=GPL
-         ARCHIVE=off
            SHORT='Czech speech for fillets-ng game'
 cat << EOF
 Fish Fillets is strictly a puzzle game. The goal in every of the seventy levels is always the same:  find a safe way out. The fish utter witty remarks about their surroundings, the various inhabitants of their underwater realm quarrel among themselves or comment on the efforts of your fish. Theese are czech speech data for the game.

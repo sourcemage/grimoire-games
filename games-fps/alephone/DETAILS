@@ -1,14 +1,13 @@
            SPELL=alephone
-         VERSION=20030530
+         VERSION=20051119
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/aleph
    SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
         WEB_SITE=http://sourceforge.net/projects/marathon/
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:d912f80f823bdad3dcd18f4ac0e082916647c081811d7dd4b263374bad6a4e0bba078866c749b1c58ef4c85349126bf070f8ea59bb40db749c4949edcc231d7a
+     SOURCE_HASH=sha512:6e514598f1d997a1c2243ff77c35cb2d37212eae332ee09e07a5a9275a9439cc747e027635d6b7b8d1f1dfb6e9f5ca7abba6b014561e00fc00a1e46d45e527ce
          ENTERED=20030606
          UPDATED=20030606
-      MAINTAINER=jason@flattfamily.com
            SHORT="Aleph One is an Open Source 3D first-person shooter game."
 cat << EOF
 

@@ -1,3 +1,10 @@
+2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: minor fixes
+	* BUILD: removed
+	* INSTALL: added
+	* CONFLICTS: removed
+	* PRE_BUILD: added a param to unpack_file
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

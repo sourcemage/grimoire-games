@@ -1,3 +1,9 @@
+2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: uses default_games_build
+
+2005-12-06 Benjamin "Asaru" Dirks <asaru@wtnet.de>
+	* DETAILS: updated qstat from 2.7 to 2.10
+	
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

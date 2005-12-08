@@ -1,3 +1,9 @@
+2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update
+	* BUILD: fixup
+	* DEPENDS: speex and lua
+	* CONFIGURE: removed
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

@@ -1,2 +1,9 @@
-depends  sdl_image  &&
-depends  sdl_net
+depends  sdl                                                  &&
+depends  sdl_image                                            &&
+depends  sdl_net                                              &&
+depends  lua                                                  &&
+depends  speex                                                &&
+optional_depends  OPENGL                                      \
+                  "--enable-opengl"                           \
+                  "--disable-opengl"                          \
+                  "Do you want to use OpenGL for rendering?"

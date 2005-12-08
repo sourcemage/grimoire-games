@@ -1,3 +1,8 @@
+2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-data/FUNCTIONS: default_build is true
+	* games-utils/FUCTIONS: default_build uses default_build
+	* games-libs/FUCTIONS: default_build uses default_build
+
 2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-libs/FUNCTIONS: modified to use normal post/pre install
 	* games-utils/FUNCTIONS: modified to use normal post/pre install

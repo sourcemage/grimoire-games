@@ -4,12 +4,10 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.quakeforge.net/files/$SOURCE
         WEB_SITE=http://www.quakeforge.net
-      MAINTAINER=v.merkatz@gmx.net
      SOURCE_HASH=sha512:7fb8905b8b17296527583677b2e8a76b3ec6cda957ef34d77c285c6fdabb54af095ff0b133fe279c13b26931958efd00e8b4fe67c9918c6b57f6fc953bf4151e
       LICENSE[0]=PD
          ENTERED=20020826
          UPDATED=20020826
-         ARCHIVE=off
            SHORT="the quake shareware game data"
 cat << EOF
 The part of the quake game data distributed in the public domain.

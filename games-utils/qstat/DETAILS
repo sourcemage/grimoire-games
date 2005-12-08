@@ -1,12 +1,12 @@
            SPELL=qstat
-         VERSION=2.7
+         VERSION=2.10
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:e463bca1686647ea427b8a56e9a169e4616152ab423ffdbc310b14a4be2ae73b9f0321f80f15cb5a664ff227c5b1833b4cdbdf1f9ef3ce5fef79e47c6b842dea
+     SOURCE_HASH=sha512:fa61fe33356dba582f1938cc2402f8a071d91b0e0afe25ef41b619a99bcd63552a3789383781036c9272a36a6215aa92beb6cee1c17777f14c48c867f7eb8362
         WEB_SITE=http://www.qstat.org
          ENTERED=20020320
-         UPDATED=20020320
+         UPDATED=20051206
       LICENSE[0]=ART
        BUILD_API=2
            SHORT="Command line utility to disply Quake servers"

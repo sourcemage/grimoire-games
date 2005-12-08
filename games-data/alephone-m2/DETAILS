@@ -5,19 +5,16 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/marathon/${SOURCE}
         WEB_SITE=http://sourceforge.net/projects/marathon/
-      LICENSE[0]=UNKNOWN
+      LICENSE[0]=FreelyDistributable
      SOURCE_HASH=sha512:8e38f5674788edaf3adec7c53700fc6d1aba41b05ae8b901ee17a389ed97c7defd2e4415581297fdddd5fb8939e6a82677d177f323c1ad51d1542fe304bbfbbe
          ENTERED=20030608
          UPDATED=20030608
-         ARCHIVE=off
            SHORT="Marathon 2 demo data file for Aleph One (spell name: alephone)."
 cat << EOF
-
 Aleph One is an Open Source 3D first-person shooter game, based on the game
 Marathon 2 by Bungie Software.  It supports, but doesn't require, OpenGL for
 rendering.  Aleph One was originally a MacOS-only game, but I'm working on a
 cross-platform version based on the Simple DirectMedia Layer (SDL) library,
 that should eventually run on all systems supported by SDL (Linux, BeOS,
 Windows, MacOS, Solaris, IRIX, *BSD, and others).
-
 EOF

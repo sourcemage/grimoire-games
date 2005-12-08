@@ -1,3 +1,7 @@
+2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: removed
+	* INSTALL: added
+
 2005-11-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: license is GPL and added sha512
 
