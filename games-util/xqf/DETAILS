@@ -11,5 +11,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
        BUILD_API=2
            SHORT="GameSpy-like app for GNU/Linux"
 cat << EOF
-XQF is a Quake, Quake World, Quake2, Quake3, Quake4, Doom3, Nexuiz, Jedi Academy (wine), America's Army 2.1, Half-Life, Half-Life STEAM, Half-Life 2, Unreal, Unreal Tournament 2003, Unreal Tournament 2004, Hexen II, HexenWorld, Kingpin, Jedi Knight: Jedi Academy, Shogo: Mobile Armor Division, Sin, Starsiege: Tribes, Tribes 2, Soldier of Fortune, Soldier of Fortune 2, BFRIS, Return to Castle Wolfestein, Descent 3, Star Trek: Elite Force, All Seeing Eye, Savage, FarCry, Rune, Medal of Honor: Allied Assault, Call of Duty, Postal 2, Battlefield 1942, and Ghost Recon server browser and launcher for UNIX/X11 which supports the GameSpy2 protocol.  Its a front end to QStat.
+XQF is a Quake, Quake World, Quake2, Quake3, Quake4, Doom3, Nexuiz, Jedi
+Academy (wine), America's Army 2.1, Half-Life, Half-Life STEAM, Half-Life 2,
+Unreal, Unreal Tournament 2003, Unreal Tournament 2004, Hexen II, HexenWorld,
+Kingpin, Jedi Knight: Jedi Academy, Shogo: Mobile Armor Division, Sin,
+Starsiege: Tribes, Tribes 2, Soldier of Fortune, Soldier of Fortune 2, BFRIS,
+Return to Castle Wolfestein, Descent 3, Star Trek: Elite Force, All Seeing Eye,
+Savage, FarCry, Rune, Medal of Honor: Allied Assault, Call of Duty, Postal 2,
+Battlefield 1942, and Ghost Recon server browser and launcher for UNIX/X11
+which supports the GameSpy2 protocol.  Its a front end to QStat.
 EOF
