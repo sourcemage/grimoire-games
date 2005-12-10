@@ -1,12 +1,12 @@
            SPELL=globulation2
-         VERSION=0.8.15
+         VERSION=0.8.16
           SOURCE=glob2-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-$VERSION
    SOURCE_URL[0]=http://epfl.ysagoon.com/~glob2/data/$SOURCE
-     SOURCE_HASH=sha512:ad6c0f4a61d0b5147a4dc1a0ecef91ad3e8d8037e66ac19e66966c0628af317fa7037d8a67f229e88ca41929fe2097b3a07d8f757dd01b8d1ab4bdd22e2894a5
+     SOURCE_HASH=sha512:cae2f11832537e7003a10ffa202b57347b28460862e0374293de7e42c7e6533a7e88d2866087f34f1d381bff98bbb3aec499a99aa174e5031acf90e65bd82c31:1
         WEB_SITE=http://glob2.ysagoon.com/
          ENTERED=20040814
-         UPDATED=20040814
+         UPDATED=20051210
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="Innovative high quality Real-Time Strategy"
