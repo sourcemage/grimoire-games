@@ -1,15 +1,15 @@
 local  INSTDIR=${INSTALL_ROOT}/usr/lib/games/widelands  &&
 mkdir -p ${INSTDIR}                                     &&
-cp -Rv campaigns ${INSTDIR}/campaigns                   &&
-cp -Rv fonts ${INSTDIR}/fonts                           &&
-cp -Rv game_server ${INSTDIR}/game_server               &&
-cp -Rv locale ${INSTDIR}/locale                         &&
-cp -Rv maps ${INSTDIR}/maps                             &&
-cp -Rv music ${INSTDIR}/music                           &&
-cp -Rv pics ${INSTDIR}/pics                             &&
-cp -Rv sound ${INSTDIR}/sound                           &&
-cp -Rv utils ${INSTDIR}/utils                           &&
-cp -Rv tribes ${INSTDIR}/tribes                         &&
-cp -Rv worlds ${INSTDIR}/worlds                         &&
+cp -Rv campaigns ${INSTDIR}                             &&
+cp -Rv fonts ${INSTDIR}                                 &&
+cp -Rv game_server ${INSTDIR}                           &&
+cp -Rv locale ${INSTDIR}                                &&
+cp -Rv maps ${INSTDIR}                                  &&
+cp -Rv music ${INSTDIR}                                 &&
+cp -Rv pics ${INSTDIR}                                  &&
+cp -Rv sound ${INSTDIR}                                 &&
+cp -Rv utils ${INSTDIR}                                 &&
+cp -Rv tribes ${INSTDIR}                                &&
+cp -Rv worlds ${INSTDIR}                                &&
 cp -Rv widelands ${INSTDIR}                             &&
 cp -v ${SCRIPT_DIRECTORY}/widelands /usr/games

@@ -1,5 +1,6 @@
 2005-12-10 Robin Cook <rcook@wyrms.net>
 	* DETAILS: added release b9half and cvs
+	  corrected WEB_SITE
 	* PREPARE: added to ask cvs query
 	* CONFIGURE: added to query build type and ggz support
 	* DEPENDS: set depends CVS only if using cvs
