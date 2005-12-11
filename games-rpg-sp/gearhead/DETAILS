@@ -1,0 +1,26 @@
+           SPELL=gearhead
+         VERSION=1.000
+          SOURCE=gh-1000-src.zip
+   SOURCE_URL[0]=http://gearhead.roguelikedevelopment.org/gh-1000-src.zip
+     SOURCE_HASH=sha512:493e6ab6839ee4b2cdc20a4e15b1dcfc147dd00c3e6b8e3215419ab2cf864aafa3c72a0242f580b88eef9a4e70e3903fcd33bf95df278c6d8c2d4cd31fe73734
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/GearHead
+        WEB_SITE=http://www.geocities.com/pyrrho12/programming/gearhead/index.html
+         ENTERED=20051211
+         UPDATED=20051211
+      LICENSE[0]=LGPL
+       BUILD_API=2
+           SHORT="Mech style combat RPG in a similar to nethack or ivan"
+cat << EOF
+A century and a half ago the Earth was nearly destroyed by nuclear war. Now,
+a federation of free city-states has begun to restore civilization. However,
+there are forces operating in the darkness which will unleash the horrors
+of the past age in a bid to determine the future of the human race.
+
+Features of the game include random storyline generation, richly detailed
+character generation, complex NPC interaction, and of course over 150 different
+mechanical designs ranging from jet fighters to giant robots to city-smashing
+tanks. GearHead is written in FreePascal and is open source. It compiles
+for both Windows and Linux, and may be played in either ASCII or SDL modes.
+
+Only ASCII version supported unless someone tells me how to compile SDL in pascal.
+EOF

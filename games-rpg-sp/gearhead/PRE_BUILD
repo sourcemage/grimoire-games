@@ -1,0 +1,5 @@
+mk_source_dir $SOURCE_DIRECTORY             &&
+unpack_file                                 &&
+cd $SOURCE_DIRECTORY                        &&
+patch  -p0  <  $SCRIPT_DIRECTORY/fhs.diff   &&
+sedit "s,INSTALL_DIRECTORY,${INSTALL_ROOT}/usr/share/games/gearhead," gears.pp

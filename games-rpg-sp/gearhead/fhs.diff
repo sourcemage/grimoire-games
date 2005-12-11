@@ -1,0 +1,89 @@
+--- gears.pp	2005-11-10 16:54:59.000000000 +0100
++++ gears.pp	2005-12-11 11:07:46.000000000 +0100
+@@ -121,21 +121,21 @@
+ 	OS_Search_Separator = PathSeparator;
+ 	OS_Current_Directory = '.';
+ 
++	{ This will be replaced by the spell, so that geargead find's it's data }
++	OS_Install_Directory = 'INSTALL_DIRECTORY' + OS_Dir_Separator;
++
+ 	{ All of the following file names have been checked for }
+ 	{ correct capitalization. Hopefully, everything should run }
+ 	{ fine. }
+ 	Default_File_Ending = '.txt';
+ 	Default_Search_Pattern = '*.txt';
+-	Save_Game_DirName = 'SaveGame';
+-	Save_Game_Directory = Save_Game_DirName + OS_Dir_Separator;
+-	Save_Character_Base = Save_Game_Directory + 'CHA';
+-	Save_Unit_Base = Save_Game_Directory + 'GHU';
+-	Save_Campaign_Base = Save_Game_Directory + 'RPG';
+-	Design_DirName = 'Design';
++	{ Look for data in OS_Install_Directory }
++	Design_DirName = OS_Install_Directory + 'Design';
+ 	Design_Directory = Design_DirName + OS_Dir_Separator;
+ 	PC_Equipment_File = Design_Directory + 'PC_Equipment.txt';
+ 	Mek_Equipment_File = Design_Directory + 'Mek_Equipment.txt';
+-	Series_DirName = 'Series';
++	{ Look for data in OS_Install_Directory }
++	Series_DirName = OS_Install_Directory + 'Series';
+ 	Series_Directory = Series_DirName + OS_Dir_Separator;
+ 	Archetypes_File = Series_Directory + 'ANPCdefault.txt';
+ 	Adventure_File_Base = Series_Directory + 'ADV_';
+@@ -143,7 +143,8 @@
+ 	Plot_Seacrh_Pattern = Series_Directory + 'PLOT' + Default_Search_Pattern;
+ 	Jobs_File = Series_Directory + 'RCJobs.txt';
+ 	Monsters_File = Series_Directory + 'WMONdefault.txt';
+-	Data_DirName = 'GameData';
++	{ Look for data in OS_Install_Directory }
++	Data_DirName = OS_Install_Directory + 'GameData';
+ 	Data_Directory = Data_DirName + OS_Dir_Separator;
+ 	MetaTerrain_File_Base = Data_Directory + 'meta';
+ 	Trait_Chatter_Base = Data_Directory + 'TC_';
+@@ -211,6 +212,14 @@
+ 		parent: GearPtr;	{Parent of the current Gear.}
+ 	end;
+ 
++Var
++	Save_Game_DirName:string;
++	Save_Game_Directory:string;
++	Save_Character_Base:string;
++	Save_Unit_Base:string;
++	Save_Campaign_Base:string;
++
++
+ 
+ Function CreateSAtt(var LList: SAttPtr): SAttPtr;
+ Procedure DisposeSAtt(var LList: SAttPtr);
+@@ -1205,10 +1214,16 @@
+ var
+ 	S: String;
+ begin
++	{ Check that ~/.gearhead exists }
+ 	if not DirectoryExists( Save_Game_DirName ) then begin
+ 		MkDir( Save_Game_DirName );
+ 	end;
+ 
++	{ Check that ~/.gearhead/SaveGame exists }
++	if not DirectoryExists( Save_Game_Directory ) then begin
++		MkDir( Save_Game_Directory );
++	end;
++
+ 	{ Check to make sure all the other directories can be found. }
+ 	Startup_OK := DirectoryExists( Design_DirName );
+ 	Startup_OK := Startup_OK and DirectoryExists( Series_DirName );
+@@ -1237,6 +1252,15 @@
+ end;
+ 
+ initialization
++	{ Be a nice game, save game data into ~/.geargead/SaveGame }
++	Save_Game_DirName   := GetEnvironmentVariable('HOME');
++	Save_Game_DirName   := Save_Game_DirName   + OS_Dir_Separator;
++	Save_Game_DirName   := Save_Game_DirName   + '.gearhead' + OS_Dir_Separator;
++	Save_Game_Directory := Save_Game_DirName   + 'SaveGame';
++	Save_Game_Directory := Save_Game_Directory + OS_Dir_Separator;
++	Save_Character_Base := Save_Game_Directory + 'CHA';
++	Save_Unit_Base      := Save_Game_Directory + 'GHU';
++	Save_Campaign_Base  := Save_Game_Directory + 'RPG';
+ 	{ Make sure we have the required data directories. }
+ {$IFNDEF go32v2}
+ 	CheckDirectoryPresent;

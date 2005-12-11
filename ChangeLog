@@ -1,3 +1,6 @@
+2005-12-11 Neuron <vlmarek@volny.cz>
+	* games-rpg-sp/gearhead: new spell
+
 2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/FUNCTIONS: default_build is true
 	* games-utils/FUCTIONS: default_build uses default_build

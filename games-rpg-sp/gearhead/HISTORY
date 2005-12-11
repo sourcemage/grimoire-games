@@ -1,0 +1,2 @@
+2005-12-11 Neuron <vlmarek@volny.cz>
+	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY, fhs.diff: created spell
