@@ -1,0 +1,7 @@
+config_query WIDELANDS_CVS "Download latest cvs code?" n  &&
+
+if [ "$WIDELANDS_CVS" == "y" ]; then
+   config_query WIDELANDS_CVS_AUTOUPDATE \
+                "Update to the latest CVS on every cast?" n  
+fi
+

@@ -1,4 +1,20 @@
-depends  CVS        &&
-depends  g++        &&
-depends  sdl_image  &&
-depends  sdl_ttf
+depends  g++                &&
+depends  python             &&
+depends  gettext            &&
+depends  libpng             &&
+depends  zlib               &&
+depends  sdl                &&
+depends  sdl_image          &&
+depends  sdl_ttf            &&
+depends  sdl_net            &&
+depends  doxygen            &&
+
+if  [ "$WIDELANDS_GGZ" == "y" ];  then
+   depends libggz           &&
+   depends ggz-server       &&
+   depends ggz-client-libs
+fi                          &&
+
+if  [ "$WIDELANDS_CVS" == "y" ];  then
+   depends  CVS     
+fi

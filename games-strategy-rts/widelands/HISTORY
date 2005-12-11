@@ -1,3 +1,14 @@
+2005-12-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: added release b9half and cvs
+	* PREPARE: added to ask cvs query
+	* CONFIGURE: added to query build type and ggz support
+	* DEPENDS: set depends CVS only if using cvs
+	  added depends on sds_net, python, gettext, libpng, zlib, doxygenC
+	  set ggz depends depending on the query
+	* PRE_BUILD: remove CVS directories
+	* INSTALL: add additional directories
+	  Add lines to Makefile.local depending on queries
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
 
