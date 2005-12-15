@@ -6,8 +6,7 @@
 ## the invoke_gcc function from libgcc
 #---------------------------------------------------------------------
 function default_build () {
-  invoke_gcc  &&
-  real_default_build
+   true
 }
 
 #---------------------------------------------------------------------
