@@ -1,3 +1,6 @@
+2005-12-16 Neuron <vlmarek@volny.cz>
+	* Fixed wrong SOURCE_HASH line
+
 2005-12-10 Neuron <vlmarek@volny.cz>
 	* DETAILS: version update - 0.8.16
 
