@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=xlincity
+Icon=lincity.png
+Comment=City Simulation Game
+Name=Lincity
+Terminal=false
+Categories=Game;StrategyGame;
+Encoding=UTF-8

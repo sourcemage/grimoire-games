@@ -1,0 +1,3 @@
+default_install                                                           &&
+cp -v ${SCRIPT_DIRECTORY}/lincity.png ${INSTALL_ROOT}/usr/share/pixmaps/  &&
+cp -v ${SOURCE_DIRECTORY}/xlincity ${INSTALL_ROOT}/usr/games/
