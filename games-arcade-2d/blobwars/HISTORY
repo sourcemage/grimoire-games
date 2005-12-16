@@ -1,3 +1,6 @@
+2005-12-16 Neuron <vlmarek@volny.cz>
+	* DETAILS: Fixed wrong SOURCE_HASH
+
 2005-12-02 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 1.04-1, sha512
 	* DEPENDS: added missing &&
