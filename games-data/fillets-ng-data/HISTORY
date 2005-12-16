@@ -1,3 +1,7 @@
+2005-12-16 Neuron <vlmarek@volny.cz>
+	* DETAILS: Update to 0.7.1
+	* INSTALL: Respect INSTALL_ROOT
+
 2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: removed ARCHIVE=off
 

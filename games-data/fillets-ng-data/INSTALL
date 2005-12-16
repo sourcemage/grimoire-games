@@ -1,2 +1,2 @@
-mkdir -p /usr/share/games/fillets-ng
-cp -vr * /usr/share/games/fillets-ng
+mkdir -p ${INSTALL_ROOT}/usr/share/games/fillets-ng &&
+cp -vr * ${INSTALL_ROOT}/usr/share/games/fillets-ng
