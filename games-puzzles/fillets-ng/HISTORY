@@ -1,4 +1,7 @@
 2005-12-16 Neuron <vlmarek@volny.cz>
+	* DETAILS: Fixed wrong SOURCE_HASH
+
+2005-12-16 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to version 0.7.3
 	* INSTALL: Creating directory left to default PRE_INSTALL, respect
 	  INSTALL_ROOT
