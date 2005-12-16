@@ -1,3 +1,7 @@
+2005-12-16 Neuron <vlmarek@volny.cz>
+	* Spell deprecated, since fillets-ng-data allready contains
+	  the czech speech files
+
 2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: removed ARCHIVE=off
 
