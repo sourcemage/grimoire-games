@@ -1,3 +1,7 @@
+2005-12-17 Neuron <vlmarek@volny.cz>
+	* DETAILS: Updated to 1.6.10
+	* BUILD: fixed bad install path by using default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
