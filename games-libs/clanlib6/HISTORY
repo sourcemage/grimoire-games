@@ -1,4 +1,7 @@
-2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: fixed source url
+
+2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Renamed to clanlib6
 	* DETAILS: SPELL=clanlib6, sha512
 	* DEPENDS: Hermes to libhermes

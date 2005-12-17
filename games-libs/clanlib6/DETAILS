@@ -2,7 +2,7 @@
          VERSION=0.6.5-1
           SOURCE=ClanLib-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/ClanLib-${VERSION/\-1/}
-   SOURCE_URL[0]=http://clanlib.org/download/files/${SOURCE}
+   SOURCE_URL[0]=http://clanlib.org/download/legacy/${SOURCE}
      SOURCE_HASH=sha512:d4b5e236d812d72fc42b2cb48681dcc863b5b0750dd81b701296c2a1481518edfd05222af7115be3060ed9344055f056a98319ace90a16ef9ace5060467a1c16
         WEB_SITE=http://clanlib.org
          ENTERED=20011105
