@@ -1,0 +1,11 @@
+#
+# There will be no /usr/share/games/luola-nostalgia to remove
+# No binaries to make
+#
+
+function default_post_install() {
+  rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/games/luola  &&
+  real_default_post_install
+}
+
+default_post_install

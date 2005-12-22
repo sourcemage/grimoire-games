@@ -1,0 +1,11 @@
+#
+# Override, we don't want to make /usr/share/games/luola-nostalgia
+#
+function games_create_base_dirs() {
+  if  [  !  -d  ${INSTALL_ROOT}/usr/share/games/luola  ];  then
+    mkdir -vp ${INSTALL_ROOT}/usr/share/games/luola
+    chown  root:games  ${INSTALL_ROOT}/usr/share/games/luola
+  fi
+}
+
+default_pre_install

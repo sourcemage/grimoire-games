@@ -1,0 +1,19 @@
+           SPELL=luola-nostalgia
+         VERSION=1.1
+          SOURCE=nostalgia-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.luolamies.org/software/luola/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=CC
+       BUILD_API=2
+        WEB_SITE=http://www.luolamies.org/software/luola/
+         ENTERED=20011214
+         UPDATED=20031227
+           SHORT='Extra levels for Luola'
+cat << EOF
+These levels are (unofficial) remakes of the old V-Wing levels. They are not
+exact copies, but are made to look almost exactly like the originals (though I
+have taken some artistic liberties in some places). The largest differences are
+in the collisionmaps, some areas of flowing water, explosives, burning terrain
+and of course hidden features might be quite different
+EOF

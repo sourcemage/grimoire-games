@@ -1,0 +1,11 @@
+I_DIR="$INSTALL_ROOT/usr/share/games/luola"  &&
+
+if  [  !  -d  ${I_DIR}  ];  then
+  mkdir  -p  ${I_DIR}  &&
+  chown  root:games  ${I_DIR}
+fi  &&
+
+mkdir  -p  ${I_DIR}/levels                                    &&
+chown  root:games  ${I_DIR}/levels                            &&
+install  -m 0644  -o root  -g games  $SOURCE_DIRECTORY/*.lev  \
+                                     ${I_DIR}/levels
