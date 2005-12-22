@@ -1,3 +1,6 @@
+2005-12-22 Eric Sandall <eric@sandall.us>
+	* games-libs/sear-media: Moved to games-data/sear-media
+
 2005-12-21 Eric Sandall <eric@sandall.us>
 	* games-data/luola-{stdlevels,nostalgia}: Added level packs for luola
 
