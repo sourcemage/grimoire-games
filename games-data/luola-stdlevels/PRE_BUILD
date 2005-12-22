@@ -1,0 +1,4 @@
+mk_source_dir  $SOURCE_DIRECTORY  &&
+pushd  $SOURCE_DIRECTORY          &&
+unpack_file  ''                   &&
+popd

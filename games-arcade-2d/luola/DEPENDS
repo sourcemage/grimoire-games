@@ -1,11 +1,23 @@
-depends  sdl_image  &&
+depends  sdl              &&
+depends  sdl_image        &&
+depends  luola-stdlevels  &&
+
+optional_depends  luola-nostalgia                                 \
+                  ''                                              \
+                  ''                                              \
+                  'for three extra levels reminiscent of V-Wing'  &&
+
+optional_depends  sdl_ttf               \
+                  ''                    \
+                  '--disable-truetype'  \
+                  'for TrueType fonts'  &&
 
 optional_depends  sdl_mixer            \
-                  "--enable-sound"     \
-                  "--disable-sound"    \
-                  "for sound support"  &&
+                  '--enable-sound'     \
+                  '--disable-sound'    \
+                  'for sound support'  &&
 
 optional_depends  sdl_gfx                    \
-                  "--enable-sdl-gfx"         \
-                  "--disable-sdl-gfx"        \
-                  "to draw better graphics"
+                  '--enable-sdl-gfx'         \
+                  '--disable-sdl-gfx'        \
+                  'to draw better graphics'

@@ -1,0 +1,4 @@
+2005-12-21 Eric Sandall <eric@sandall.us>
+	* DETAILS,PRE_BUILD,BUILD,PRE_INSTALL,INSTALL,POST_INSTALL:
+	  Created version 5.2
+

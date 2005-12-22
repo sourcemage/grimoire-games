@@ -1,4 +1,0 @@
-default_pre_build                    &&
-cd  ${SOURCE_DIRECTORY}/data/levels  &&
-unpack_file 2        &&
-cd  ${SOURCE_DIRECTORY}

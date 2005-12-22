@@ -1,3 +1,15 @@
+2005-12-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.3.1
+	  Use GPG checking
+	  New website: http://www.luolamies.org/software/luola/
+	  Removed SOURCE2 (levels are now in separate package)
+	* DEPENDS: Added optional dependency on sdl_ttf and luola-nostalgia
+	  Depend on luola-stdlevels
+	  Added explicit dependency on sdl
+	* PRE_BUILD: Removed
+	* BUILD: Use default_games_build
+	* INSTALL: Removed
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
