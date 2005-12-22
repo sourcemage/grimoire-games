@@ -11,6 +11,11 @@ depends  python      &&
 depends  postgresql  &&
 
 optional_depends  howl                               \
-                  ""                                 \
-                  ""                                 \
-                  "for Zeroconf networking support"
+                  ''                                 \
+                  ''                                 \
+                  'for Zeroconf networking support'  &&
+
+optional_depends  adns                                \
+                  ''                                  \
+                  ''                                  \
+                  'for Avahi MDNS service discovery'

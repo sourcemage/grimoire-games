@@ -1,2 +1,2 @@
 export  OPTS="$OPTS  --disable-psqltest"  &&
-default_build
+default_games_build

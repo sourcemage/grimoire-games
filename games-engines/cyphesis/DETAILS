@@ -1,5 +1,5 @@
            SPELL=cyphesis
-         VERSION=${VERSION:=0.5.2}
+         VERSION=${VERSION:=0.5.5}
 if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
   if  [  "$CYPHESIS_CVS_AUTOUPDATE"  ==  "y"  ];  then
          VERSION=$(date +%Y%m%d)
