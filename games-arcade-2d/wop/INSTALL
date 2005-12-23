@@ -1,0 +1,3 @@
+cp bin/wop ${INSTALL_ROOT}/usr/games/wop                                  &&
+sedit "s:data.*:data = ${INSTALL_ROOT}/usr/share/games/wopdata:g"  woprc  &&
+install_config_file woprc ${INSTALL_ROOT}/etc/woprc

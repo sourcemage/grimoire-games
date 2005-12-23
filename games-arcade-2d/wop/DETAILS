@@ -1,0 +1,17 @@
+           SPELL=wop
+         VERSION=0.4
+          SOURCE=${SPELL}-${VERSION}-src.tar.bz2
+   SOURCE_URL[0]=http://wormsofprey.org/download/${SOURCE}
+     SOURCE_HASH=sha512:7f8867cef32ea414afefbecec30fe4c138c0e14cda8040b2a81c793c051cd7edbe85c385851fe69c4e8a4fc06561ac47e670ac61c22008cc942323b7e98b8199
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://wormsofprey.org/
+         ENTERED=20051223
+         UPDATED=20051223
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="A multi-player, real-time Worms clone similar to Liero or NiL."
+cat << EOF
+W&amp;ouml;rms of Prey is a multi-player, real-time Worms clone for Linux and
+Windows similar to Liero, NiL, or Wurmz. You control a little worm and try
+to score as many frags as possible by shooting other worms or scoring goals.
+EOF

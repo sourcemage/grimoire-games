@@ -1,0 +1,14 @@
+           SPELL=wopdata
+         VERSION=2005-12-21
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+   SOURCE_URL[0]=http://wormsofprey.org/download/${SOURCE}
+     SOURCE_HASH=sha512:6ebc264d1811091550d664a77aeae68184a058c666db486e4ae411e0849abbd02dd2037a3a1a9a31a73774e5f616c21840b0c1de58636dde0e59bd0e952cb505
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://wormsofprey.org/
+         ENTERED=20051223
+         UPDATED=20051223
+      LICENSE[0]=GPL
+           SHORT="Data files for WOP"
+cat << EOF
+Data files for WOP.
+EOF
