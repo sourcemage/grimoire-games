@@ -1,3 +1,14 @@
+2005-12-29 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated VERSION to 39.1
+	  Shortened SHORT
+	* DEPENDS: Added dependencies based on the FAQ (sdl, autoconf, openal):
+	  http://www.scorched3d.co.uk/phpBB2/viewtopic.php?t=387
+	  Depends on wxgtk-no-unicode. See:
+	  http://www.scorched3d.co.uk/phpBB2/viewtopic.php?t=684
+	  (wxgtk-no-unicode only exists in test grimoire...)
+	* BUILD: Use default_games_build
+	* INSTALL: Removed (default_install for games works for us)
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

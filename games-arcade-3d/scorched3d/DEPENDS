@@ -1,6 +1,9 @@
-depends  freetype2  &&
-depends  GLUT       &&
-depends  sdl_net    &&
-depends  sdl_mixer  &&
-depends  wxgtk      &&
-depends  automake
+depends  automake                          &&
+depends  autoconf                          &&
+depends  freetype2                         &&
+depends  GLUT                              &&
+depends  openal                            &&
+depends  sdl                               &&
+depends  sdl_net                           &&
+depends  sdl_mixer                         &&
+depends  wxgtk-no-unicode  ''  ''  'test'
