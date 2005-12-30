@@ -1,3 +1,6 @@
+2005-12-30 Eric Sandall <eric@sandall.us>
+	* games-rpg-mp/crossfire{,-client}-data: Moved to games-data
+
 2005-12-22 Eric Sandall <eric@sandall.us>
 	* games-libs/sear-media: Moved to games-data/sear-media
 
