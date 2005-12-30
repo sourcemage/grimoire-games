@@ -1,20 +1,20 @@
 default_install  &&
 
-chown  -R  games.games              \
-       /usr/games/crossedit         \
-       /usr/games/crossfire         \
-       /usr/games/crossfire-config  \
-       /usr/games/crossloop         \
-       /usr/games/crossloop.pl      \
-       /usr/games/crossloop.web     \
-       /usr/games/player_dl.pl      \
-       /etc/crossfire               \
-       /var/games/crossfire         &&
+chown  -R  root.games                            \
+       $INSTALL_ROOT/usr/games/crossedit         \
+       $INSTALL_ROOT/usr/games/crossfire         \
+       $INSTALL_ROOT/usr/games/crossfire-config  \
+       $INSTALL_ROOT/usr/games/crossloop         \
+       $INSTALL_ROOT/usr/games/crossloop.pl      \
+       $INSTALL_ROOT/usr/games/crossloop.web     \
+       $INSTALL_ROOT/usr/games/player_dl.pl      \
+       $INSTALL_ROOT/etc/crossfire               \
+       $INSTALL_ROOT/var/games/crossfire         &&
 
-chmod  u+s  /usr/games/crossedit         \
-            /usr/games/crossfire         \
-            /usr/games/crossfire-config  \
-            /usr/games/crossloop         \
-            /usr/games/crossloop.pl      \
-            /usr/games/crossloop.web     \
-            /usr/games/player_dl.pl
+chmod  g+s  $INSTALL_ROOT/usr/games/crossedit         \
+            $INSTALL_ROOT/usr/games/crossfire         \
+            $INSTALL_ROOT/usr/games/crossfire-config  \
+            $INSTALL_ROOT/usr/games/crossloop         \
+            $INSTALL_ROOT/usr/games/crossloop.pl      \
+            $INSTALL_ROOT/usr/games/crossloop.web     \
+            $INSTALL_ROOT/usr/games/player_dl.pl
