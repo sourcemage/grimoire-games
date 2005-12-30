@@ -1,9 +1,14 @@
+2005-12-30 Eric Sandall <eric@sandsall.us>
+	* BUILD: Use default_games_build
+	* FINAL: Cannot chown games:games (no games user)
+	  Files are installed to INSTALL_ROOT, modify those
+
 2005-08-11 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 1.8.0
 	  removed GCC_VERSION to 3.4
 	* BUILD: removed invoke_gcc
 	* INSTALL: deleted
-	* FINAL: moved from INSTALL to here as chown doesn't seem to 
+	* FINAL: moved from INSTALL to here as chown doesn't seem to
 	  work in INSTALL
 	  modified to check each file exists before chowning
 	  added gtk2 client check and chowning
@@ -14,7 +19,7 @@
 	* BUILD: added invoke_gcc
 	* INSTALL: fix to check for building gtk-client
 	* DEPENDS: actually use the configure flags for optional depends
-	
+
 2004-11-08 Eric Sandall <eric@sandall.us>
 	* Moved data files to crossfire-client-data
 	* DETAILS: Added BUILD_API=2  (Bug #7608)
