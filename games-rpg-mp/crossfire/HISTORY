@@ -2,6 +2,7 @@
 	* BUILD: Use default_games_build
 	* INSTALL: Cannot chown games:games (no games user)
 	  Files are installed to INSTALL_ROOT, modify those
+	  Do not do setgid (so sayeth Andrew Levstik ;))
 	* INSTALL,FINAL: Rename INSTALL to FINAL as chmod g+s doesn't
 	  seem to work in INSTALL (as Robin found out in crossfire-client)
 
