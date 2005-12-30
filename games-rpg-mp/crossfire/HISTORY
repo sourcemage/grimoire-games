@@ -2,6 +2,8 @@
 	* BUILD: Use default_games_build
 	* INSTALL: Cannot chown games:games (no games user)
 	  Files are installed to INSTALL_ROOT, modify those
+	* INSTALL,FINAL: Rename INSTALL to FINAL as chmod g+s doesn't
+	  seem to work in INSTALL (as Robin found out in crossfire-client)
 
 2005-08-11 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 1.8.0
