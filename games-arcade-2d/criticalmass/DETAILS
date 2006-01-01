@@ -1,9 +1,9 @@
            SPELL=criticalmass
-         VERSION=0.9.11
+         VERSION=1.0.0
           SOURCE=CriticalMass-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CriticalMass-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/criticalmass/$SOURCE
-     SOURCE_HASH=sha512:bee3477f56530ab74e4aa07abf831c11b5da9453fd3d241322ed04f482714aefdeeb08824a933a810da4730be9778704780a3f3edf0021717e415d20c53d41c3
+     SOURCE_HASH=sha512:ceff52c14601de65c466e617b5e3dc85cfaf5b6b1199e503265c15c936b6ad0ec2ae3ec39817cdd9d49d29ce44d61299f16392001fd38cef647cccf6be8a3048
         WEB_SITE=http://criticalmass.sourceforge.net
          ENTERED=20011214
          UPDATED=20050316

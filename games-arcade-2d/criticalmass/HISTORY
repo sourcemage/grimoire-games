@@ -1,3 +1,10 @@
+2006-01-01 Neuron <vlmarek@volny.cz>
+	* DETAILS: Updated to 1.0.0
+	* BUILD: Uses only default_games_build now
+	* DEPENDS: Removed xdelta dependency, it's not needed
+	* DEPENDS: Added OPENGL dependency
+	* CONFLICTS: Removed completely, CriticalMass no longer exists
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
