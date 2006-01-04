@@ -11,7 +11,7 @@ if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
    SOURCE_IGNORE=volatile
   FORCE_DOWNLOAD=1
 elif  [  "$ERIS_BRANCH"  ==  "devel"  ];  then
-         VERSION=1.3.9
+         VERSION=1.3.10
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
