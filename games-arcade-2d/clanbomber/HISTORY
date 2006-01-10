@@ -1,3 +1,6 @@
+2006-01-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: use default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
