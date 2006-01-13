@@ -1,3 +1,6 @@
+2005-01-14 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added depends on sdl_mixer
+
 2005-12-16 Neuron <vlmarek@volny.cz>
 	* DETAILS: Fixed wrong SOURCE_HASH
 
