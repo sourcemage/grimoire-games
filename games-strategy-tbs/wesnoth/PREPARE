@@ -1,0 +1,1 @@
+config_query WESNOTH_DEVEL "Use development branch?" n

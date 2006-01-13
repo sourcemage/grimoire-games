@@ -1,3 +1,9 @@
+2006-01-14 Pol Vinogradov <vin.public@gmail.com>
+	* PREPARE: added to ask for development version
+	* DETAILS: if statement added to determine version 1.1,
+			SOURCE_HASH added for development version
+			(thanks to lynxlynxlynx for patch)
+
 2005-11-24 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 1.0.2
 	  converted SOURCEHASH to SOURCE_GPG

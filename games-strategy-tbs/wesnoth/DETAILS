@@ -1,9 +1,14 @@
            SPELL=wesnoth
+  if [[ $WESNOTH_DEVEL == n ]]; then
          VERSION=1.0.2
+       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+  else
+         VERSION=1.1
+     SOURCE_HASH=sha512:8c69bca27d7e91a1f055b460867529d1586e4b724a5323034947ceba17b18ef30707de7257e7bb38cbfef43327e96cdfa0e9393c20aea764de7a55869e397921
+  fi
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.wesnoth.org/files/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
