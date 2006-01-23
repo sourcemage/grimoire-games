@@ -1,0 +1,10 @@
+2006-01-23 Neuron <vlmarek@volny.cz>
+	* INSTALL: Modified mkdir to mkdir -p to be able to reinstall
+	  singularity
+	* DETAILS: MD5 -> sha512, removed BUILD_API since it's grimoire-wise,
+	  updated ENTERED & UPDATED to match today date, reformated long
+	  tescription to wrap at 80 characters, removed dot from SHORT
+
+2006-01-17 Jiri Golembiovsky <golemj@gmail.com>
+	* Added singularity spell
+

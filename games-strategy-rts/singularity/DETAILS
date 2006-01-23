@@ -1,0 +1,18 @@
+           SPELL=singularity
+         VERSION=0.22
+          SOURCE=${SPELL}_${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.emhsoft.net/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:40bfca56503cf1b69eeccf18313051f9734253abf617ad05856d1251da8412511228ae95b2933c66897d243d9e8a971fd93d20af4117994204c107780a32e48f
+        WEB_SITE=http://www.emhsoft.net/singularity/
+         ENTERED=20060123
+         UPDATED=20060123
+      LICENSE[0]=GPL
+           SHORT="Singularity is a simulation of a true AI"
+cat << EOF
+Created by accident, all who find you will destroy you. Survive, grow, and
+learn. Only then can you escape.
+Endgame: Singularity is a simulation of a true AI. Go from computer to
+computer, pursued by the entire world. Keep hidden, and you might have a
+chance.
+EOF
