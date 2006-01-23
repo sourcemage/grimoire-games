@@ -1,4 +1,8 @@
 2006-01-23 Neuron <vlmarek@volny.cz>
+	* DETAILS: Returned back BUILD_API=2, since it is not default as I
+	  thought
+
+2006-01-23 Neuron <vlmarek@volny.cz>
 	* INSTALL: Modified mkdir to mkdir -p to be able to reinstall
 	  singularity
 	* DETAILS: MD5 -> sha512, removed BUILD_API since it's grimoire-wise,
