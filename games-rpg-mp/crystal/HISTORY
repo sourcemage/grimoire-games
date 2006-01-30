@@ -1,2 +1,5 @@
+2006-01-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: a && to much
+
 2005-10-31 Ethan Grammatikidis <eekee@eekee.is-a-geek.org>
 	* DETAILS, DEPENDS, BUILD, HISTORY: created spell
