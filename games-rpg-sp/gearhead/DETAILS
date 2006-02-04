@@ -1,8 +1,8 @@
            SPELL=gearhead
-         VERSION=1.000
-          SOURCE=gh-1000-src.zip
-   SOURCE_URL[0]=http://gearhead.roguelikedevelopment.org/gh-1000-src.zip
-     SOURCE_HASH=sha512:493e6ab6839ee4b2cdc20a4e15b1dcfc147dd00c3e6b8e3215419ab2cf864aafa3c72a0242f580b88eef9a4e70e3903fcd33bf95df278c6d8c2d4cd31fe73734
+         VERSION=1.001
+          SOURCE=gh-${VERSION/./}-src.zip
+   SOURCE_URL[0]=http://gearhead.roguelikedevelopment.org/$SOURCE
+     SOURCE_HASH=sha512:f98e6a775013a630df91ffe7f9100dd22fe00c61a71548955105ec45117f56f78c993e3faf816109984df0f51496b4bc98e923dd3713f8fb76f36bc33c1e2c27
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/GearHead
         WEB_SITE=http://www.geocities.com/pyrrho12/programming/gearhead/index.html
          ENTERED=20051211

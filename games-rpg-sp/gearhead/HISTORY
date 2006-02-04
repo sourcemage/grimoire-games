@@ -1,2 +1,8 @@
+2006-02-04 Neuron <vlmarek@volny.cz>
+	* DETAILS: Updated to 1.001, simplified so that version number is only
+	  on one place
+	* HISTORY: Re-aligned to 80 characters
+
 2005-12-11 Neuron <vlmarek@volny.cz>
-	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY, fhs.diff: created spell
+	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY, fhs.diff:
+	  created spell
