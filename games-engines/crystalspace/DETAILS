@@ -1,16 +1,8 @@
            SPELL=crystalspace
-if  [  "$CS_CVS"  ==  "y"  ];  then
-         VERSION=cvs
-          SOURCE=cs-current-snapshot.tar.bz2
-   SOURCE_URL[0]=http://crystalspace3d.org/cvs-snapshots/bzip2/$SOURCE
-  FORCE_DOWNLOAD=1
-   SOURCE_IGNORE=volatile
-else
-         VERSION=0.99-2005-09-03
-          SOURCE=cs-pseudo-stable-2005-09-03.tar.bz2
+         VERSION=0.99-2006-01-27
+          SOURCE=cs-pseudo-stable-2006-01-27.tar.bz2
    SOURCE_URL[0]=$SOURCEFORGE_URL/crystal/$SOURCE
-     SOURCE_HASH=sha512:bb7ef75c1f8b5cbb3d4482bca33f9819bf0af126c6c7a74512885badb48113cb46cb4a08a38e0614621f39e18aeed72abef3c3ae460a001f8de79a9b91966919
-fi
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
         WEB_SITE=http://crystal.sourceforge.net
     DISTCC_HOSTS=

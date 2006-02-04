@@ -1,9 +1,9 @@
            SPELL=allegro
-         VERSION=4.1.16
+         VERSION=4.2.0
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/alleg/${SOURCE}
-     SOURCE_HASH=sha512:e4fcb9316bce24aa1eb3f9c7a40ef73e44bba1285b5539abe7d561bf3c536d3f349055868fc8275d6a08bc4675ffdf6d8e24b4e9fa7a7f1b6fd099e2855415ac
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://alleg.sourceforge.net/
          ENTERED=20020107
          UPDATED=20021025
