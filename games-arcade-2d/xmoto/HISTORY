@@ -1,3 +1,6 @@
+2006-02-07 Neuron <vlmarek@volny.cz>
+	* DETAILS: updated to 0.1.11
+
 2005-01-14 Pol Vinogradov <vin.public@gmail.com>
 	* DEPENDS: added depends on sdl_mixer
 
