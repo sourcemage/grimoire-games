@@ -1,3 +1,6 @@
+2006-02-09 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: removed depends on libogg and libvorbis
+
 2006-02-07 Neuron <vlmarek@volny.cz>
 	* DETAILS: updated to 0.1.11
 

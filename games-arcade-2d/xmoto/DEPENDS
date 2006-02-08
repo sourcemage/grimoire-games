@@ -6,6 +6,4 @@ depends lua        &&
 depends ode        &&
 depends jpeg       &&
 depends libpng     &&
-depends libogg     &&
-depends libvorbis  &&
 depends zlib
