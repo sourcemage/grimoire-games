@@ -1,3 +1,10 @@
+2006-02-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PREPARE: svn or no svn taht is the question
+	* DETAILS: 0.7beta3 option
+	* PRE_BUILD: svn/no svn
+	* DOWNLOAD: svn/no svn
+	* DEPENDS: added svn depedns
+
 2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DOWNLOAD: minor fixes
 
