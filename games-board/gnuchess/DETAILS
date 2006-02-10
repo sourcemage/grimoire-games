@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020415
          UPDATED=20031009
      GATHER_DOCS="off"
+       BUILD_API=2
            SHORT="GNU Chess is the GNU chess program"
 cat << EOF
 GNU Chess lets most modern computers play a full game of chess. It has a plain

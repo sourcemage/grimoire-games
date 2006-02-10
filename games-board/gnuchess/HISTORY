@@ -1,3 +1,7 @@
+2006-02-11 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: switched to build_api 2
+	* BUILD: replaced all to default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
