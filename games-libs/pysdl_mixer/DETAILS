@@ -1,0 +1,17 @@
+           SPELL=pysdl_mixer
+         VERSION=0.0.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://download.gna.org/pysdlmixer/$SOURCE
+     SOURCE_HASH=sha512:4ecfebc8a27193dcd24d40e94394bfbaf37af0879212bea4943fca019f89a9c908b94942cf52066081df9584c072f198fbe77a75de318eea9b36cdc3894b3e2d
+        WEB_SITE=http://gna.org/projects/pysdlmixer
+         ENTERED=20060212
+         UPDATED=20060212
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Python wrapper for sdl_mixer"
+cat << EOF
+pysdl_mixer is a python interface to SDL's sdl_mixer. This is usefull for
+multichannel sample and music playback from python. This project is currently
+being used by soya (https://gna.org/projects/soya/).
+EOF
