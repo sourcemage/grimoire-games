@@ -1,0 +1,16 @@
+           SPELL=py2play
+         VERSION=0.1.8
+          SOURCE=Py2Play-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Py2Play-$VERSION
+   SOURCE_URL[0]=http://download.gna.org/slune/$SOURCE
+     SOURCE_HASH=sha512:328e1618ebb395ee463c9def0915baadf66a8e8b235f8e052e48c4ec4aff70309eebc127b0e4681207d00792369915ea3a354b532abd9cc87495bc0add09c819
+        WEB_SITE=http://home.gna.org/oomadness/fr/slune/index.html
+         ENTERED=20060211
+         UPDATED=20060211
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="A peer-to-peer network game engine in Python"
+cat << EOF
+A peer-to-peer network game engine in Python. It does not require any server to
+run. A small demo is included in the source.
+EOF
