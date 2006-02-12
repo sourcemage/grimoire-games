@@ -1,3 +1,7 @@
+2006-02-12 Neuron <vlmarek@volny.cz>
+	* DETAILS: version update - 0.8.18
+	* DEPENDS: added boost dependency
+
 2005-12-27 Neuron <vlmarek@volny.cz>
 	* DETAILS: version update - 0.8.17
 

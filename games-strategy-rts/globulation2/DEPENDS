@@ -1,3 +1,4 @@
+depends  boost      &&
 depends  sdl        &&
 depends  sdl_net    &&
 depends  sdl_image  &&
