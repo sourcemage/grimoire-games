@@ -1,0 +1,15 @@
+depends  python        &&
+depends  cal3d         &&
+depends  OPENGL        &&
+depends  sdl           &&
+depends  openal        &&
+depends  freefont-ttf  &&
+depends  freetype2     &&
+depends  pil           &&
+depends  glew
+
+if [ -n "$SOYA_USE_SOUND" ]; then
+	depends pyogg       &&
+	depends pyvorbis    &&
+	depends pysdl_mixer
+fi
