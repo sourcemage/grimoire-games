@@ -1,11 +1,12 @@
            SPELL=slune
-         VERSION=0.7
-          SOURCE=Slune-with-deps-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/Slune-with-deps-$VERSION
+         VERSION=1.0.10
+          SOURCE=Slune-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Slune-$VERSION
    SOURCE_URL[0]=http://download.gna.org/slune/$SOURCE
-     SOURCE_HASH=sha512:f2e7ada67c1bf0d7f044e8dbc55b37df4e76cfaccf44c0a5d9104646acd24c67c1e6303b31e048cf25fc60ce53b390fc6574c6e8f12ded4330483a906edf3984
+     SOURCE_HASH=sha512:3eb89ca0c21bd70e669b1a34c24194264936f53cebfb9a76cfdd0dba5855897fc3d921c6565cb6c77024bf37d523dc4d34ff78e1b71084506190d3a8456aeb24
         WEB_SITE=http://home.gna.org/oomadness/en/slune/index.html
       LICENSE[0]=GPL
+       BUILD_API=2
          ENTERED=20040926
          UPDATED=20040926
            SHORT="Slune is a 3D racing game."
