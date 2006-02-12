@@ -1,0 +1,3 @@
+default_pre_build        &&
+cd "$SOURCE_DIRECTORY"   &&
+sedit '/^all_libraries/d' src/cal3d/Makefile.am
