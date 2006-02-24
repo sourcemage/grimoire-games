@@ -1,3 +1,6 @@
+2006-02-25 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated devel version to 1.1.1 (thanks to lynxlynxlynx)
+
 2006-01-14 Pol Vinogradov <vin.public@gmail.com>
 	* PREPARE: added to ask for development version
 	* DETAILS: if statement added to determine version 1.1,
