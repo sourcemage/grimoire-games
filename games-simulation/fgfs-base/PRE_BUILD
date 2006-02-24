@@ -1,0 +1,4 @@
+cd  ${BUILD_DIRECTORY}   &&
+mkdir -p ${SOURCE_DIRECTORY}  &&
+cd ${SOURCE_DIRECTORY}  &&
+unpack_file ''
