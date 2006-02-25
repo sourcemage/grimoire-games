@@ -1,3 +1,7 @@
+2006-02-25 George Sherwood <george@beernabeer.com>
+	* games-simulation/simgear: Moved to games-libs
+	* games-simulation/fgfs-base: Moved to games-data
+
 2006-02-12 Neuron <vlmarek@volny.cz>
 	* games-libs/soya: new spell
 
