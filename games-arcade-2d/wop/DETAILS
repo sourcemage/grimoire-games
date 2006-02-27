@@ -1,8 +1,8 @@
            SPELL=wop
-         VERSION=0.4
+         VERSION=0.4.2
           SOURCE=${SPELL}-${VERSION}-src.tar.bz2
    SOURCE_URL[0]=http://wormsofprey.org/download/${SOURCE}
-     SOURCE_HASH=sha512:7f8867cef32ea414afefbecec30fe4c138c0e14cda8040b2a81c793c051cd7edbe85c385851fe69c4e8a4fc06561ac47e670ac61c22008cc942323b7e98b8199
+     SOURCE_HASH=sha512:946df942a133386c8dda6722b6a08739c9433905ca8a46cbf0391c6483449ef16c37ae0dc2228d68d1330294a17fe68b3ae42f7826e307a4de6cf2edae204077
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://wormsofprey.org/
          ENTERED=20051223
