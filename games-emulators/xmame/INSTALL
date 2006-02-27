@@ -4,7 +4,8 @@ make  PREFIX=${INSTALL_ROOT}/usr        \
       BINDIR=${INSTALL_ROOT}/usr/games  \
       -f  makefile.unix                 \
       install                           &&
-mkdir -p  ${I_DIR}                      &&
+
+mkdir -p ${I_DIR}                      &&
 mkdir -p ${I_DIR}/artwork               &&
 mkdir -p ${I_DIR}/cabinets              &&
 mkdir -p ${I_DIR}/cfg                   &&
@@ -19,9 +20,5 @@ mkdir -p ${I_DIR}/roms                  &&
 mkdir -p ${I_DIR}/samples               &&
 mkdir -p ${I_DIR}/snap                  &&
 cp  -r  ctrlr  ${I_DIR}                 &&
-chown  -R  root.games  ${I_DIR}         &&
-
-if  [  "$SDL_VIDEO"  =  "y"  ];  then
-  ln  -sf  /usr/games/xmame.SDL  \
-           /usr/games/xmame
-fi
+cd ${I_DIR}                             &&
+find_and_scam

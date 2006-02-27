@@ -1,15 +1,38 @@
-if  [  "$SDL_SOUND"  =  "y"  -o  \
-       "$SDL_VIDEO"  =  "y"      ];  then
-  depends  sdl
-fi  &&
+depends X11-LIBS                                                         &&
+if [[  "$XMAME_EFFECT_MMX_ASM"  ==  "y" ]];  then
+  depends nasm
+fi                                                                       &&
 
-optional_depends  alsa-lib                                     \
-                  "use_alsa"                                   \
-                  ""                                           \
-                  "Do you want to utilize alsa sound output?"  &&
+if [[  "$XMAME_JOY_SDL"  ==  "y" ]] || \
+   [[  "$XMAME_SDL_SOUND"  ==  "y" ]] || \
+   [[  "$XMAME_DISPLAY_METHOD"  == "SDL" ]];  then
+  depends sdl
+fi                                                                       &&
 
+if [[  "$XMAME_LIRC"  ==  "y" ]];  then
+  depends lirc
+fi                                                                       &&
 
-optional_depends  esound                                         \
-                  "use_esound"                                   \
-                  ""                                             \
-                  "Do you want to utilize esound sound output?"
+if [[  "$XMAME_ARTS"  ==  "y" ]];  then
+  depends arts
+fi                                                                       &&
+
+if [[  "$XMAME_SOUND_ESOUND"  ==  "y" ]];  then
+  depends esound
+fi                                                                       &&
+
+if [[  "$XMAME_SOUND_ALSA"  ==  "y" ]];  then
+  depends alsa-lib
+fi                                                                       &&
+
+if [[  "$XMAME_DISPLAY_METHOD"  == "ggi" ]]; then
+  depends libggi
+fi                                                                       &&
+
+if [[  "$XMAME_DISPLAY_METHOD"  == "svgalib" ]]; then
+  depends svgalib
+fi                                                                       &&
+
+if [[  "$XMAME_X11_OPENGL"  ==  "y" ]];  then
+  depends OPENGL
+fi
