@@ -1,3 +1,7 @@
+2006-02-28 Mathieu Lonjaret <lejatorn@sourcemagecom>
+	* games-arcade-3d: added new spells xshipwars-client and
+	xshipwars-server
+
 2006-02-25 George Sherwood <george@beernabeer.com>
 	* games-simulation/simgear: Moved to games-libs
 	* games-simulation/fgfs-base: Moved to games-data
