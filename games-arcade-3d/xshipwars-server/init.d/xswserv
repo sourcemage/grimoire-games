@@ -1,0 +1,37 @@
+#!/bin/bash
+
+PROGRAM=/bin/false
+RUNLEVEL=3
+
+. /etc/init.d/smgl_init
+
+required_executable  /usr/share/games/swserv/bin/swserv
+
+start() 
+{
+	echo "Starting XShipwars Server"
+	/usr/share/games/swserv/bin/swserv /usr/share/games/swserv/etc/default.ini 2>&1 > /dev/null
+	evaluate_retval
+}
+
+stop() 
+{
+	echo "Shutting down XShipwars"
+	killproc swserv 2>&1 > /dev/null
+}
+
+restart() 
+{
+	run_func  stop
+	run_func  start
+}
+
+status()
+{
+	statusproc  swserv
+}
+
+usage()
+{
+	echo "$0 {start|stop|restart|status}"
+}

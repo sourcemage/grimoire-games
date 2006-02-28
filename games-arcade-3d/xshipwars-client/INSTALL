@@ -1,0 +1,4 @@
+make  -f Makefile.client  install  &&
+cp  -a  ${SOURCE_DIRECTORY}/etc     /usr/share/games/xshipwars  &&
+cp  -a  ${SOURCE_DIRECTORY}/images  /usr/share/games/xshipwars  &&
+cp  -a  ${SOURCE_DIRECTORY}/sounds  /usr/share/games/xshipwars

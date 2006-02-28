@@ -1,0 +1,4 @@
+# overwrite current universe
+persistent_add  XSW_OU &&
+config_query  XSW_OU  "Overwite current XSW server configuration"  n
+

@@ -1,0 +1,9 @@
+default_pre_build        &&
+
+cd  ${SOURCE_DIRECTORY}  &&
+
+unpack_file  1  &&
+unpack_file  2  &&
+unpack_file  3  &&
+
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  client/xsw.h

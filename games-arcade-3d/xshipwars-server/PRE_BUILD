@@ -1,0 +1,12 @@
+default_pre_build  &&
+
+patch  -d ${SOURCE_DIRECTORY} -p0 < ${SCRIPT_DIRECTORY}/printdlg.cpp.diff  &&
+
+cd  ${SOURCE_DIRECTORY}  &&
+
+sedit  "s:= /home:= /usr/share/games:"            server/platforms.ini             &&
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  monitor/config.h                 &&
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  server/default.ini               &&
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  server/swserv.h                  &&
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  server-plugins/samples/Makefile  &&
+sedit  "s:/home/swserv:/usr/share/games/swserv:"  unvedit/config.h

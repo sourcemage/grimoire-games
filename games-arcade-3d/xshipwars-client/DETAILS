@@ -1,0 +1,25 @@
+           SPELL=xshipwars-client
+         VERSION=2.5.2
+          SOURCE=xsw-${VERSION}.tar.bz2
+         SOURCE1=xsw-data-2.5.2.tar.bz2
+         SOURCE2=stimages-1.9.7.tar.bz2
+         SOURCE3=stsounds-1.6.2.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/xsw-${VERSION}
+   SOURCE_URL[0]=http://wolfpack.twu.net/users/wolfpack/${SOURCE}
+  SOURCE1_URL[0]=http://wolfpack.twu.net/users/wolfpack/${SOURCE1}
+  SOURCE2_URL[0]=http://wolfpack.twu.net/users/wolfpack/${SOURCE2}
+  SOURCE3_URL[0]=http://wolfpack.twu.net/users/wolfpack/${SOURCE3}
+     SOURCE_HASH=sha512:bde64247cb8d94565e21da308c539c123d898cf84c9e344f31e424e8f5d899c6a6a8ba0064c80b8fa9458f9a015b093c48824f1d12eae93948bc25bb5d512992
+    SOURCE1_HASH=sha512:029223ca4272b4df4f30fcd24677ee5c4e4b57449a52a9de5153f13c32dd8c5590c1446dbfdae22873711d202b31fb7a873f1b4398d0a35b5a7be3b9d097fb53
+    SOURCE2_HASH=sha512:f70cf3021a2ba83bb124cd4f12b24923146c06883344a80dc71b6621e99d40301d52b627c1d342791da3e61cc8cc1db8279666e116fbae3cb5f950dd743c6afd
+    SOURCE3_HASH=sha512:27944b0891f43ad7f7761608ca1094f55e61381a979dc75cff8eb2be315546b304d64f55209aca5a537aac07d26c3f2e36f70801c654452dd4f4f885d28a877c
+        WEB_SITE=http://wolfpack.twu.net/ShipWars/XShipWars/
+         ENTERED=20050109
+      LICENSE[0]=GPL2
+       BUILD_API=2
+           SHORT="multi-player, ultra graphical, space-oriented gaming system"
+cat << EOF
+XShipWars is a massively multi-player, ultra graphical, space-oriented gaming system
+designed exclusively for network play. You create your own universes, build your own
+vessels and form your own empires.
+EOF
