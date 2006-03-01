@@ -1,1 +1,18 @@
-depends  sdl
+depends  sdl                                &&
+depends  g++                                &&
+optional_depends  alsa-lib                  \
+                  ""                        \
+                  ""                        \
+                  "Enable alsa support."    &&
+optional_depends  sdl_net                   \
+                  ""                        \
+                  ""                        \
+                  "SDL Networking support"  &&
+optional_depends  sdl_sound                 \
+                  ""                        \
+                  ""                        \
+                  "SDL Sound support"       &&
+optional_depends  OPENGL                    \
+                  "--enable-opengl"         \
+                  "--disable-opengl"        \
+                  "OpenGL Support"

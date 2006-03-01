@@ -1,2 +1,5 @@
-OPTS="$OPTS --bindir=${INSTALL_ROOT}/usr/games"  &&
-default_build
+CFLAGS="${CFLAGS/-fPIC}"      &&
+CFLAGS="${CFLAGS/-DPIC}"      &&
+CXXFLAGS="${CXXFLAGS/-fPIC}"  &&
+CXXFLAGS="${CXXFLAGS/-DPIC}"  &&
+default_games_build

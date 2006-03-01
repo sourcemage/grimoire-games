@@ -9,8 +9,10 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20031012
          UPDATED=20040206
        BUILD_API=2
+      PATCHLEVEL=1
            SHORT="Dosbox is a DOS emulator developed mainly for games."
 cat << EOF
-DOSBox emulates a full x86 pc with sound and dos. It's main use is to run old dosgames on platforms 
+DOSBox emulates a full x86 pc with sound and dos.
+It's main use is to run old dosgames on platforms 
 which don't have dos(win2K/XP/linux/FreeBSD)
 EOF

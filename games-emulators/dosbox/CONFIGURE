@@ -1,0 +1,15 @@
+config_query_option  DOSBOX_CORE_INLINE                            \
+                     "Enable inlined memory handling in CPU Core"  \
+                     "n"                                           \
+                     "--enable-core-inline"                        \
+                     "--disable-core-inline"                       &&
+config_query_option  DOSBOX_X86_DYNAMIC                            \
+                     "Enable x86 dynamic cpu core"                 \
+                     "y"                                           \
+                     "--enable-dynamic-x86"                        \
+                     "--disable-dynamic-x86"                       &&
+config_query_option  DOSBOX_FPU                                    \
+                     "Enable FPU support"                          \
+                     "y"                                           \
+                     "--enable-fpu"                                \
+                     "--disable-fpu"
