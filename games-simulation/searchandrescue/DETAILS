@@ -1,13 +1,13 @@
            SPELL=searchandrescue
              PKG=SearchAndRescue
-         VERSION=0.8.1
+         VERSION=0.8.2
           SOURCE=${PKG}-${VERSION}.tar.bz2
          SOURCE2=${PKG}-data-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
    SOURCE_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE}
   SOURCE2_URL[0]=ftp://wolfpack.twu.net/users/wolfpack/${SOURCE2}
-     SOURCE_HASH=sha512:63e74831b9ac7afa2824a87a778f0e8c7ce0f9ec8bfe6ca3b17d80e3d3d252415ee2169ca29c3f27795359c93a583abcc05ae286f321f30a2edda0e08f642a13
-    SOURCE2_HASH=sha512:ed5dd35671e4c0b3e39fb3aaceec6cf9ab0c385e351f85824f7c7f3b4a4ccdb40a249f7e9c953ad0e9faa03dc84e8d84f9ac9d0d8077c52812ea819b3b88fdfd
+     SOURCE_HASH=sha512:d89f895f7f5a668b3c8820063b46bd56cc011a80ec3ab9fad23f7e4b20912c2d3834f78f1ff4ff3c0ca877b63c11611b2009481d88ac05a5f9b6ae4bcbcf0d71
+    SOURCE2_HASH=sha512:1e4f3287955e4cbec236d81180d592b77ba9cad70d3a840f4ce28ebe6f65eb83c30de5afe1e4615b4212c502a3e83a9d2faae944c288ee0304f8a6b436230bc2
         WEB_SITE=http://wolfpack.twu.net/SearchAndRescue
          ENTERED=20010922
          UPDATED=20020426

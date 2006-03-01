@@ -260,8 +260,8 @@ function games_create_base_dirs() {
 function games_make_proper_binary() {
 if ( grep -q "usr/games/" $IW_LOG )
 then
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chmod 0750
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chown root.games
+  grimoire_parse_iw $IW_LOG | grimoire_exists | sort | grep "usr/games/" | xargs -n 1 chmod -f 0750
+  grimoire_parse_iw $IW_LOG | grimoire_exists | sort | grep "usr/games/" | xargs -n 1 chown -f root.games
 else
   message "${QUERY_COLOR}If you see this message and you're not \n \
 installing a data spell then report this at the following url: \n \
@@ -293,3 +293,28 @@ function default_pre_install() {
   real_default_pre_install &&
   games_create_base_dirs
 }
+
+#---
+## @Synopsis a parse_iw clone function
+#---
+
+function grimoire_parse_iw()  {
+  local INPUT=$1
+  
+  # it is EXTREMELY IMPORTANT that this variable contains an actual
+  # tab character and not some number of spaces. Otherwise BAD THINGS
+  # will happen.
+  local TAB="   "
+  OMIT_IN="${TAB}rename\|${TAB}symlink\|${TAB}unlink"
+  
+  grep -v "$OMIT_IN" $INPUT | cut -f3 | grep "^/"
+  cat                $INPUT | cut -f4 | grep "^/"
+}
+
+#---
+## @Synopsis an exists clone function
+#---
+function grimoire_exists()  {
+  while  read  ITEM;  do  [  -e  "$ITEM"  ]  &&  echo  "$ITEM";  done;
+}
+

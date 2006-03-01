@@ -1,4 +1,5 @@
-default_install                                    &&
-mkdir  -p  ${INSTALL_ROOT}/usr/share/games/$SPELL  &&
-cd   ${INSTALL_ROOT}/usr/share/games/$SPELL        &&
-unpack_file 2
+default_install                                      &&
+cd ${SOURCE_DIRECTORY}/sandr-data                    &&
+find_and_scam                                        &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/${PKG}/    &&
+cp -var * ${INSTALL_ROOT}/usr/share/games/${PKG}/

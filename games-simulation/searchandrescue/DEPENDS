@@ -1,1 +1,9 @@
-depends  GLUT
+depends  GLUT                         &&
+optional_depends yiff                 \
+                 ""                   \
+                 ""                   \
+                 "Sound support."     &&
+optional_depends libjsw               \
+                 ""                   \
+                 ""                   \
+                 "Joystick support."
