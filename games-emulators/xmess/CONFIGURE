@@ -1,1 +1,76 @@
-config_query  XMESS_CUSTOM  "Would you like to edit the makefile?"  n
+config_query XMESS_CUSTOM                                                                       \
+  "Would you like to edit the makefile? (for special tweaks only)"                              \
+              n                                                                                 &&
+
+config_query XMESS_X86_MIPS3_DRC                                                                \
+  "use DRC MIPS3 engine faster emulation, but only works on x86"                                \
+             n                                                                                  &&
+config_query XMESS_X86_PPC_DRC                                                                  \
+  "use DRC PowerPC engine faster emulation, but only works on x86"                              \
+             n                                                                                  &&
+config_query XMESS_X86_VOODOO_DRC                                                               \
+  "use DRC Voodoo rasterizers faster emulation, but only works on x86"                          \
+             n                                                                                  &&
+config_query XMESS_DISABLE_EFFECTS                                                              \
+  "disable effects.  This can considerably speed up compilation of the blit files."             \
+             n                                                                                  &&
+config_query XMESS_EFFECT_MMX_ASM                                                               \
+  "MMX assembly-language optimized routines for the light scanlines and 6-tap filter effects."  \
+             n                                                                                  &&
+
+config_query XMESS_JOY_STANDARD                                                                 \
+  "Enable the standard joystick driver."                                                        \
+             n                                                                                  &&
+config_query XMESS_JOY_PAD                                                                      \
+  "Linux FM-TOWNS game pad joystick emulation support."                                         \
+             n                                                                                  &&
+config_query XMESS_JOY_SDL                                                                      \
+  "SDL joystick support."                                                                       \
+             n                                                                                  &&
+config_query XMESS_LIGHTGUN_ABS_EVENT                                                           \
+  "Enables use of Linux input devices that support ABS (absolute) X/Y axis."                    \
+             n                                                                                  &&
+config_query XMESS_LIRC                                                                         \
+  "add LIRC support to xmame."                                                                  \
+             n                                                                                  &&
+
+config_query XMESS_ARTS                                                                         \
+  "ArTs Support"                                                                                \
+             n                                                                                  &&
+config_query XMESS_SOUND_ESOUND                                                                 \
+  "ESound Support"                                                                              \
+             n                                                                                  &&
+config_query XMESS_SOUND_ALSA                                                                   \
+  "ALSA Support"                                                                                \
+             n                                                                                  &&
+config_query XMESS_SDL_SOUND                                                                    \
+  "SDL Sound support"                                                                           \
+             n                                                                                  &&
+
+config_query_list XMESS_DISPLAY_METHOD                                                          \
+  "Select your display method(x11 provides OpenGL mode)"                                        \
+             x11 SDL svgalib ggi                                                                &&
+
+if [[ "$XMESS_DISPLAY_METHOD" == "x11" ]]; then
+config_query XMESS_X11_MITSHM                                                                   \
+  "MIT-Shared Memory X Extensions"                                                              \
+             y                                                                                  &&
+config_query XMESS_X11_XV                                                                       \
+  "Use Xv extension for hardware scaling."                                                      \
+             y                                                                                  &&
+config_query XMESS_X11_DGA                                                                      \
+  "Enable XFree86 DGA."                                                                         \
+             n                                                                                  &&
+config_query XMESS_X11_OPENGL                                                                   \
+  "support for OpenGL"                                                                          \
+             n                                                                                  &&
+config_query XMESS_X11_GLIDE                                                                    \
+  "support for rendering through Glide"                                                         \
+             n                                                                                  &&
+config_query XMESS_XINPUT_DEVICES                                                               \
+  "use XInput devices, e.g. additional mice"                                                    \
+             n                                                                                  &&
+config_query XMESS_X11_XINERAMA                                                                 \
+  "Enable Xinerama support"                                                                     \
+             n
+fi

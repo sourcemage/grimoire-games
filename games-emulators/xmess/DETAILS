@@ -1,7 +1,8 @@
            SPELL=xmess
-         VERSION=0.94
-          SOURCE=xmame-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/xmame-$VERSION
+         VERSION=0.104
+             PKG=xmame
+          SOURCE=$PKG-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
    SOURCE_URL[0]=http://x.mame.net/download/$SOURCE
      SOURCE_HASH=sha512:584f90c485a63b05a39777c5ecdb8decd26db482deb0d474277c190bc38f6c0572acd1386d87d85c67f0d5ab0098c9dd8e42809bdf6e511c777d307633024816
         WEB_SITE=http://x.mame.net

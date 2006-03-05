@@ -1,0 +1,125 @@
+default_pre_build                                                        &&
+cd $SOURCE_DIRECTORY                                                     &&
+#################################Basics#################################
+sedit "s/CFLAGS =.*/# CFLAGS =/g" makefile.unix                          &&
+sedit "s/INSTALL_GROUP =.*/INSTALL_GROUP = games/g" makefile.unix        &&
+sedit "s:PREFIX =.*:PREFIX = $INSTALL_ROOT/usr:g" makefile.unix          &&
+sedit "s:BINDIR =.*:BINDIR = \$(PREFIX)/games:g" makefile.unix           &&
+sedit "s:MANDIR =.*:MANDIR = \$(PREFIX)/share/man/man6:g" makefile.unix  &&
+sedit "s:ARCH =.*:ARCH = linux:g" makefile.unix                          &&
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]; then
+XMESS_CPU=i386
+fi                                                                       &&
+if [[ "${SMGL_COMPAT_ARCHS[3]}" == "k8" ]]; then
+XMESS_CPU=amd64
+fi                                                                       &&
+if [[ "${SMGL_COMPAT_ARCHS[3]}" == "em64t"  ]]; then
+XMESS_CPU=em64t
+fi                                                                       &&
+sedit "s:MY_CPU =.*:MY_CPU = $XMESS_CPU:g" makefile.unix                 &&
+##############Various optimizations###############################
+if [[  "$XMESS_X86_MIPS3_DRC"  ==  "y" ]];  then
+  sedit "s/# X86_MIPS3_DRC = 1/X86_MIPS3_DRC = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X86_PPC_DRC"  ==  "y" ]];  then
+  sedit "s/# X86_PPC_DRC = 1/X86_PPC_DRC = 1/" makefile.unix
+fi                                                                       &&
+if [[  "$XMESS_X86_VOODOO_DRC"  ==  "y" ]];  then
+  sedit "s/# X86_VOODOO_DRC = 1/X86_VOODOO_DRC = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_DISABLE_EFFECTS"  ==  "y" ]];  then
+  sedit "s/# DISABLE_EFFECTS = 1/DISABLE_EFFECTS = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_EFFECT_MMX_ASM"  ==  "y" ]];  then
+  sedit "s/# EFFECT_MMX_ASM = 1/EFFECT_MMX_ASM = 1/" makefile.unix
+fi                                                                       &&
+
+
+######################Input devices###################################
+if [[  "$XMESS_JOY_STANDARD"  ==  "y" ]];  then
+  sedit "s/# JOY_STANDARD = 1/JOY_STANDARD = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_JOY_PAD"  ==  "y" ]];  then
+  sedit "s/# JOY_PAD = 1/JOY_PAD = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_JOY_SDL"  ==  "y" ]];  then
+  sedit "s/# JOY_SDL = 1/JOY_SDL = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_LIGHTGUN_ABS_EVENT"  ==  "y" ]];  then
+  sedit "s/# LIGHTGUN_ABS_EVENT = 1/LIGHTGUN_ABS_EVENT = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_LIRC"  ==  "y" ]];  then
+  sedit "s/# LIRC = 1/LIRC = 1/" makefile.unix
+fi                                                                       &&
+
+##################Sound output###############################
+if [[  "$XMESS_ARTS"  ==  "y" ]];  then
+  sedit "s/# SOUND_ARTS_TEIRA = 1/SOUND_ARTS_TEIRA = 1/" makefile.unix
+  sedit "s/# SOUND_ARTS_SMOTEK = 1/SOUND_ARTS_SMOTEK = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_SOUND_ESOUND"  ==  "y" ]];  then
+  sedit "s/# SOUND_ESOUND = 1/SOUND_ESOUND = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_SOUND_ALSA"  ==  "y" ]];  then
+  sedit "s/# SOUND_ALSA = 1/SOUND_ALSA = 1/" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_SDL_SOUND"  ==  "y" ]];  then
+  sedit "s/# SOUND_SDL = 1/SOUND_SDL = 1/" makefile.unix
+fi                                                                       &&
+
+#############Display methods###################
+sedit "s/DISPLAY_METHOD =.*/DISPLAY_METHOD=$XMESS_DISPLAY_METHOD/" makefile.unix  &&
+
+#############X options########################################
+if [[  "$XMESS_X11_MITSHM"  ==  "n" ]];  then
+  sedit "s:X11_MITSHM = 1:# X11_MITSHM = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X11_XV"  ==  "n" ]];  then
+  sedit "s:X11_XV = 1:# X11_XV = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X11_DGA"  ==  "y" ]];  then
+  sedit "s:# X11_DGA = 1:X11_DGA = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X11_OPENGL"  ==  "y" ]];  then
+  sedit "s:# X11_OPENGL = 1:X11_OPENGL = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X11_GLIDE"  ==  "y" ]];  then
+  sedit "s:# X11_GLIDE = 1:X11_GLIDE = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_XINPUT_DEVICES"  ==  "y" ]];  then
+  sedit "s:# XINPUT_DEVICES = 1:XINPUT_DEVICES = 1:" makefile.unix
+fi                                                                       &&
+
+if [[  "$XMESS_X11_XINERAMA"  ==  "y" ]];  then
+  sedit "s:# X11_XINERAMA = 1:X11_XINERAMA = 1:" makefile.unix
+fi                                                                       &&
+
+if [[ "$(get_spell_provider $SPELL X11-LIBS)" == "xorg-server" ]];  then
+  sedit "s:X11INC.*:X11INC = -I/usr/include/X11:" makefile.unix          &&
+  sedit "s:X11LIB.*:X11LIB = -L/usr/lib/X11:" makefile.unix
+fi                                                                       &&
+
+sedit  's:TARGET = mame:TARGET = mess:'  makefile.unix                   &&
+
+if  [[  "$XMESS_CUSTOM"  =  "y" ]];  then
+  ${EDITOR:-nano}  makefile.unix
+fi                                                                       &&
+# Fix permission problems accessing ${SOURCE_DIRECTORY}/doc/ on install
+chown  -R  root:root  src                                                &&
+rm  doc                                                                  &&
+ln  -sf  src/unix/doc doc

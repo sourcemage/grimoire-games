@@ -1,3 +1,11 @@
+2006-03-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFIGURE: Major overhaul.
+	* BUILD: Major overhaul.
+	* PRE_BUILD: added; Major overhaul.
+	* DEPENDS: Major overhaul.
+	* DETAILS: Version update.
+	* INSTALL: minor fixes
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
