@@ -11,5 +11,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_1_1
        BUILD_API=2
            SHORT='A game for the stratagus engine'
 cat << EOF
-No description found yet so just consult the website
+Invasion - Battle of Survival is a real-time strategy game using the Stratagus
+game engine. 
 EOF
