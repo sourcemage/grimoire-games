@@ -1,3 +1,7 @@
+2006-03-09 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added for gcc34 depends
+	* DETAILS: GCC_VERSION=3.4 added
+
 2006-02-11 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: switched to build_api 2
 	* BUILD: replaced all to default_games_build
