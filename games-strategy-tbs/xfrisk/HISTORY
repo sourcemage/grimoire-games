@@ -1,3 +1,7 @@
+2006-03-08 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Xaw3d renamed to xaw3d
+	  Formatted to Guru Handbook
+
 2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Minor fix, was missing a version.h file
 	* Makefile.xorg.fix.diff: A fix for X.Org based systems

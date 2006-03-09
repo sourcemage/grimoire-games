@@ -1,2 +1,6 @@
 depends  X11-LIBS  &&
-optional_depends  "Xaw3d" "" "--without-Xaw3d" "To use the 3D Xaw toolkit, instead of the standard xfree Xaw"
+
+optional_depends  xaw3d                                                    \
+                  ''                                                       \
+                  '--without-Xaw3d'                                        \
+                  'Use the 3D Xaw toolkit, instead of the standard X Xaw'
