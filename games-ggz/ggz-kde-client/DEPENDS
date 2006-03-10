@@ -1,3 +1,8 @@
 depends  kdebase          &&
 depends  ggz-kde-games    &&
-depends  ggz-client-libs
+depends  ggz-client-libs  &&
+
+optional_depends  arts                             \
+                  '--with-arts'                    \
+                  '--without-arts'                 \
+                  'for aRts sound daemon support'
