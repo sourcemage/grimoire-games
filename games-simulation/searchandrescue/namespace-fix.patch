@@ -1,0 +1,9 @@
+diff -Naur SearchAndRescue-0.8.2.orig/sar/gctl.c SearchAndRescue-0.8.2/sar/gctl.c
+--- SearchAndRescue-0.8.2.orig/sar/gctl.c	2006-03-10 10:38:52.715099336 -0800
++++ SearchAndRescue-0.8.2/sar/gctl.c	2006-03-10 10:44:12.440493688 -0800
+@@ -1,4 +1,5 @@
+ #include <stdlib.h>
++#include <stdio.h>
+ #include <sys/types.h>
+ #ifdef JS_SUPPORT
+ # include <jsw.h>

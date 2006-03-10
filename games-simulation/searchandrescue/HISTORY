@@ -1,5 +1,7 @@
 2006-03-10 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD: Make the directory before `cd`ing to it
+	  Apply namespace-fix.patch
+	* namespace-fix.patch: Fix namespace issues (e.g. stderr -> std::stderr)
 
 2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update

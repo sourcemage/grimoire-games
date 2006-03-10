@@ -1,4 +1,6 @@
-default_pre_build                    &&
-mkdir  $SOURCE_DIRECTORY/sandr-data  &&
-cd  $SOURCE_DIRECTORY/sandr-data     &&
-unpack_file  '2'
+default_pre_build                            &&
+mkdir  $SOURCE_DIRECTORY/sandr-data          &&
+cd  $SOURCE_DIRECTORY/sandr-data             &&
+unpack_file  '2'                             &&
+patch $SOURCE_DIRECTORY/sar/gctl.c           \
+      $SCRIPT_DIRECTORY/namespace-fix.patch
