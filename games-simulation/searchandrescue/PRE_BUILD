@@ -1,3 +1,2 @@
 default_pre_build                  &&
-cd ${SOURCE_DIRECTORY}/sandr-data  &&
 unpack_file 2
