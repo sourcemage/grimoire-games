@@ -1,5 +1,5 @@
 2006-03-10 Eric Sandall <eric@sandall.us>
-	* PRE_BUILD: Remove cd to sandr-data (doesn't exist yet)
+	* PRE_BUILD: Make the directory before `cd`ing to it
 
 2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
