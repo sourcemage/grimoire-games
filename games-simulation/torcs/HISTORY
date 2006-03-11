@@ -1,3 +1,15 @@
+2006-03-10 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.2.4
+	  Removed deprecated FUZZ variable
+	  Use single .tar.bz2 package
+	* CONFLICTS: Removed unnecessary conflicts with TORCS
+	* PRE_BUILD: Removed, unneeded
+	* BUILD: Moved make_normal from INSTALL to here
+	* INSTALL: Set ownership of all files to root:games before installing
+	  Remove world write permission from all files
+	  Only needs default_install now for installation
+	  Removed make_normal (moved to BUILD)
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
