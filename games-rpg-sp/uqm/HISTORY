@@ -1,0 +1,38 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PRE_BUILD: unpack api update
+
+2005-06-11 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.4.0
+	  SOURCE is .tar.gz instead of .tgz
+	  SOURCE2 is now a .uqm instead of .zip
+	  Removed ARCHIVE=off
+	  Added BUILD_API=2
+	* PREPARE: Sources are now .uqm instead of .zip
+	  Converted to config_query and lump music and voice into one query
+	* PRE_BUILD: Only unpack voice and music if wanted
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+	  Converted to build_api 2
+	  Install_rootify symlink
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
+	  Removed SDL as the above depend on sdl
+	  Removed libogg as libvorbis depends on it
+	* HISTORY: Formatted to Guru Handbook
+
+2003-09-30 hgg <hgreig@bigpond.net.au>
+	* PREPARE: remove ARCHIVE-off hack
+
+2003-09-08 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 0.3
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-01-07 Eric Sandall <eric@sandall.us>
+	* Created spell
+

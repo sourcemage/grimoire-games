@@ -1,0 +1,10 @@
+default_pre_build            &&
+cd  $SOURCE_DIRECTORY        &&
+mkdir -p content             &&
+cd   content                 &&
+unpack_file 2  &&
+
+if  [  "$SC2_AUDIO"  ==  "y"  ];  then
+  unpack_file 3  &&
+  unpack_file 4
+fi
