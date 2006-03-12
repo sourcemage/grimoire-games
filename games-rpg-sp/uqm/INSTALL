@@ -1,4 +1,5 @@
-sh  build.sh  uqm  install      &&
-pushd  $INSTALL_ROOT/usr/games  &&
-ln  -sfn  uqm  sc2              &&
-popd
+sh  build.sh  uqm  install                        &&
+chown -R root:games ${INSTALL_ROOT}/usr/lib/uqm   &&
+chmod -R 0770 ${INSTALL_ROOT}/usr/lib/uqm         &&
+cd ${INSTALL_ROOT}/usr/share/games/uqm            &&
+find_and_scam

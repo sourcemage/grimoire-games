@@ -1,0 +1,16 @@
+config_query_list UQM_ACCEL                                      \
+                   "What type of code optimisation do you want?"  \
+                   asm plainc                                     &&
+#We don't have tremor yet
+#config_query_list UQM_OVCODEC                                    \
+#                   "What output video codec do you want?"         \
+#                   standard tremor                                &&
+config_query_list UQM_SOUND                                      \
+                   "What sound system do you want to use?"        \
+                   mixsdl openal                                  &&
+config_query_list UQM_GRAPHICS                                   \
+                   "What graphics system do you want to use?"     \
+                   opengl pure                                    &&
+config_query_list UQM_DEBUG                                      \
+                   "Do you want debuging code built?"             \
+                   nodebug debug strictdebug

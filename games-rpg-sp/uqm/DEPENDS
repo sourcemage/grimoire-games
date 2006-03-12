@@ -1,3 +1,21 @@
+depends  sdl        &&
 depends  sdl_image  &&
-depends  sdl_mixer  &&
-depends  libvorbis
+depends  libvorbis  &&
+depends  libogg     &&
+depends  zlib       &&
+if [[ "$UQM_ACCEL" == "asm" ]]
+then
+depends  nasm
+fi                  &&
+if [[ "$UQM_SOUND" == "openal" ]]
+then
+depends  openal
+fi                  &&
+if [[ "$UQM_SOUND" == "mixsdl" ]]
+then
+depends  sdl_mixer
+fi                  &&
+if [[ "$UQM_GRAPHICS" == "opengl" ]]
+then
+depends  OPENGL
+fi

@@ -1,31 +1,13 @@
            SPELL=sc2
-         VERSION=0.4.0
-          SOURCE=uqm-$VERSION-source.tar.gz
-         SOURCE2=uqm-$VERSION-content.uqm
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/uqm-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-  SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
+         VERSION=0.5.0
         WEB_SITE=http://sc2.sourceforge.net
          ENTERED=20030107
          UPDATED=20030908
-     SOURCE_HASH=sha512:ff1981632decbec1608205d1be5b68dee7f27ea3d64c3cedce697235097837dac727a727ef66b94ba2fb1da812e62ff4cda7006463da43bc9bd854b192dc2407
-    SOURCE2_HASH=sha512:54cfa181596bbc99332370ad0540be2211a1e45cafee6b5dd7da1648c59ca959d950169b50287c3ef736f9be7144270f5bb56425e6f87ca09b9107d6fc3a2df4
-if  [  "$SC2_AUDIO"  ==  "y"  ];  then
-         SOURCE3=uqm-$VERSION-voice.uqm
-         SOURCE4=uqm-$VERSION-3domusic.uqm
-  SOURCE3_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE3
-  SOURCE4_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE4
-          MD5[2]=52a084cfaa0bc7fcc63a295feb8cbd28
-          MD5[3]=9073251b0d96393441f0b40016010576
-      LICENSE[2]=UNKNOWN
-      LICENSE[3]=UNKNOWN
-fi
       LICENSE[0]=GPL
-      LICENSE[1]=UNKNOWN
        BUILD_API=2
            SHORT="Port of Star Control II: The Ur-Quan Masters"
 cat << EOF
- The project started in August 2002, when Toys For Bob  released the sources of Star Control 2 3DO 
+The project started in August 2002, when Toys For Bob  released the sources of Star Control 2 3DO 
 version to the fan community. Our goal is to port this wonderful game to current personal computers 
 and operating systems. It is and will remain 100% free of charge, and anyone can contribute to the 
 project and thus help make it even better.

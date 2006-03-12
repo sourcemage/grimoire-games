@@ -1,3 +1,12 @@
+2006-03-12 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: spell renamed to uqm as per source files, update to 0.5.0
+	* DEPENDS: added a few
+	* CONFIGURE: added, has quite some options
+	* PRE_BUILD: added generation of config.state file
+	* BUILD: cleaned up doesn't need much
+	* INSTALL: yup install target does the job
+	* CONFLICTS: added to conflict with sc2
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
