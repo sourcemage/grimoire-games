@@ -11,4 +11,4 @@ sedit "s:VARDIRPERM  = 02775:VARDIRPERM  = 02770:" Makefile &&
 sedit "s:GAMEDIR  = \$(PREFIX)/lib/games/\$(GAME):GAMEDIR = \$(PREFIX)/share/games/glhack:" Makefile &&
 
 make_single  &&
-make  all
+make  LEX=flex all

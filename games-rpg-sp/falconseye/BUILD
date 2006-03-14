@@ -33,4 +33,4 @@ sedit "s:\-\$(CHOWN) \$(GAMEUID) \$(SHELLDIR)/\$(GAME):\-\$(CHOWN) \$(GAMEUID) \
 sedit "s:\$(CHGRP) \$(GAMEGRP) \$(SHELLDIR)/\$(GAME):\$(CHGRP) \$(GAMEGRP) \$(SHELLDIR)/falconseye:" Makefile &&
 sedit "s:chmod \$(EXEPERM) \$(SHELLDIR)/\$(GAME):chmod \$(EXEPERM) \$(SHELLDIR)/falconseye:" Makefile &&
 make_single                                       &&
-make  all
+make  LEX=flex all

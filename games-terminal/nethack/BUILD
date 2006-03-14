@@ -93,4 +93,4 @@ sedit "s:DIRPERM  = 0755:DIRPERM = 0750:" Makefile &&
 sedit "s:HACKDIR=/usr/games/lib/nethackdir:HACKDIR=/usr/share/games/nethack:" sys/unix/nethack.sh &&
 
 make_single  &&
-make  all
+make LEX=flex all
