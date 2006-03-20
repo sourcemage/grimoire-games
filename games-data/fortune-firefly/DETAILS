@@ -1,0 +1,18 @@
+	   SPELL=fortune-firefly
+         VERSION=2.0
+          SOURCE=fortune-firefly-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-firefly
+   SOURCE_URL[0]=http://www.daughtersoftiresias.org/progs/firefly/$SOURCE
+        WEB_SITE=http://www.daughtersoftiresias.org/progs/firefly/
+     SOURCE_HASH=sha512:d6ff072a7f76c8647e039954d334e6d7b90cebe40ef25e37a00fffa8dcd4b5336510a1b1860c5d88d59e33d58f1a47b57259a61837809697323a10e2bfdf3e06
+      LICENSE[0]=GPL
+         ENTERED=20050324
+         UPDATED=20050324
+       BUILD_API=2
+           SHORT="Firefly fortunes"
+cat << EOF
+Provides a set of quotes from the popular television series "Firefly", and
+its movie "Serenity", by Joss Whedon
+EOF
+
+	

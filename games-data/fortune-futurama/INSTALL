@@ -1,3 +1,9 @@
-cd $SOURCE_DIRECTORY &&
-install -m 644 futurama /usr/share/games/fortunes/
-install -m 644 futurama.dat /usr/share/games/fortunes/
+cd $SOURCE_DIRECTORY                                            &&
+for cookie in *.dat
+do
+cp -v $cookie ${INSTALL_ROOT}/usr/share/games/fortunes/         &&
+cp -v ${cookie/.dat} ${INSTALL_ROOT}/usr/share/games/fortunes/    
+done                                                            &&
+cd ${INSTALL_ROOT}/usr/share/games/fortunes/                    &&
+find_and_scam
+

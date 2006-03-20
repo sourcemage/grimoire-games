@@ -1,0 +1,5 @@
+2006-03-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+        * INSTALL: made it better
+
+2005-12-02 Geoffrey Derber <gderber@sourcemage.org>
+	* BUILD, PRE_BUILD, DEPENDS, DETAILS, HISTORY, INSTALL: created
