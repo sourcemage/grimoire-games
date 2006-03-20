@@ -1,6 +1,7 @@
 2006-03-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-terminal/zangband: moved to z-rejected/z-games non-Free
 	* games-data/fortune-firefly: new spell
+	* games-fps/quake2: moved to games-engines/quake2, it no longer bothers with the data
 
 2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: adding some fixes
