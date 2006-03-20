@@ -1,6 +1,0 @@
-depends  ncurses  &&
-
-optional_depends  "X11-LIBS"              \
-                  "--with-x"              \
-                  "--without-x"           \
-                  "for XWindows support"
