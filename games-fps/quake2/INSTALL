@@ -1,0 +1,11 @@
+# Install the binaries
+mkdir -vp ${INSTALL_ROOT}/usr/lib/quake2/baseq2                                &&
+mkdir -vp ${INSTALL_ROOT}/usr/lib/quake2/baseq2/players                        &&
+mkdir -vp ${INSTALL_ROOT}/usr/lib/quake2/baseq2/video                          &&
+cp -vpa * ${INSTALL_ROOT}/usr/lib/quake2/                                      &&
+
+# Copy the opengl maxpak
+cp -vpa $SOURCE_CACHE/${SOURCE2} ${INSTALL_ROOT}/usr/lib/quake2/baseq2/        &&
+
+# Finally put an executable in ${INSTALL_ROOT}/usr/games
+cp  -pav  ${SCRIPT_DIRECTORY}/quake2  ${INSTALL_ROOT}/usr/games

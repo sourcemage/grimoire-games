@@ -1,6 +1,26 @@
-depends  sdl  &&
-
-optional_depends  aalib                  \
-                  ""                     \
-                  ""                     \
-                  "for an ascii client"
+if [[  "$Q2_SDLQUAKE2"  ==  "y" ]] || \
+   [[  "$Q2_SDL"  ==  "y" ]] || \
+   [[  "$Q2_SDLGL"  == "y" ]]
+then
+depends sdl
+fi                                      &&
+if [[ "$Q2_SVGA" == "y" ]]
+then
+depends  svgalib
+fi                                      &&
+if [[ "$Q2_X11" == "y" ]]
+then
+depends  X11-LIBS
+fi                                      &&
+if [[ "$Q2_GLX" == "y" ]]
+then
+depends  OPENGL
+fi                                      &&
+if [[ "$Q2_ARTS" == "y" ]]
+then
+depends  arts
+fi                                      &&
+if [[ "$Q2_AALIB" == "y" ]]
+then
+depends aalib
+fi

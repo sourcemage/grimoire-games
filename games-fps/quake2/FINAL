@@ -1,0 +1,3 @@
+message "${WARNING_COLOR}We do not install the non-Free data of quake2${DEFAULT_COLOR}"  &&
+message "${WARNING_COLOR}The user should install the data himself in${DEFAULT_COLOR}"    &&
+message "${WARNING_COLOR}$INSTALL_ROOT/usr/lib/quake2${DEFAULT_COLOR}"

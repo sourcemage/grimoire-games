@@ -1,0 +1,43 @@
+default_pre_build                                                           &&
+unpack_hash  $SOURCE2  $SOURCE2_HASH                                        &&
+cd $SOURCE_DIRECTORY                                                        &&
+if [[  "$Q2_SDLQUAKE2"  ==  "n" ]]
+then
+sedit "s/BUILD_SDLQUAKE2=YES/BUILD_SDLQUAKE2=NO/g" Makefile
+fi                                                                          &&
+if [[  "$Q2_SDL"  ==  "n" ]]
+then
+sedit "s/BUILD_SDL=YES/BUILD_SDL=NO/g" Makefile
+fi                                                                          &&
+if [[  "$Q2_SDLGL"  == "n" ]]
+then
+sedit "s/BUILD_SDLGL=YES/BUILD_SDLGL=NO/g" Makefile
+fi                                                                          &&
+if [[ "$Q2_SVGA" == "y" ]]
+then
+sedit "s/BUILD_SVGA=NO/BUILD_SVGA=YES/g" Makefile
+fi                                                                          &&
+if [[ "$Q2_X11" == "n" ]]
+then
+sedit "s/BUILD_X11=YES/BUILD_X11=NO/g" Makefile
+fi                                                                          &&
+if [[ "$Q2_GLX" == "n" ]]
+then
+sedit "s/BUILD_GLX=YES/BUILD_GLX=NO/g" Makefile
+fi                                                                          &&
+if [[ "$Q2_ARTS" == "y" ]]
+then
+sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile
+fi                                                                          &&
+if [[ "$Q2_AALIB" == "n" ]]
+then
+sedit "s/BUILD_AA=YES/BUILD_AA=NO/g" Makefile
+fi                                                                          &&
+sedit "s:SDLDIR=/usr/local/lib:SDLDIR=${INSTALL_ROOT}/usr/lib/:g" Makefile  &&
+#change to new compiler opts to stop the warnings
+sedit "s/malign-loops/falign-loops/g" Makefile                              &&
+sedit "s/malign-jumps/falign-jumps/g" Makefile                              &&
+sedit "s/malign-functions/falign-functions/g" Makefile                      &&
+# Change compiler CFLAGS
+sedit "s/-O2/$CFLAGS/g" Makefile
+

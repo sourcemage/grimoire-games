@@ -11,10 +11,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020408
          UPDATED=20020408
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+      LICENSE[1]=GPL
+       BUILD_API=2
            SHORT="The sequel to the mother of all games."
 cat << EOF
-Shortly after landing on an ALIEN surface you learn that HUNDREDS of your men have been reduced to just a few. 
-Now you must FIGHT your way through heavily fortified MILITARY installations, lower the city's defences and 
-shut down the enemy's WAR machine. Only then will the fate of HUMANITY be known.
+Shortly after landing on an ALIEN surface you learn that HUNDREDS of your
+men have been reduced to just a few. Now you must FIGHT your way through
+heavily fortified MILITARY installations, lower the city's defences and 
+shut down the enemy's WAR machine. Only then will the fate of HUMANITY be
+known.
 EOF
