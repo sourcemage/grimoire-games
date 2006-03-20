@@ -1,3 +1,12 @@
+2006-03-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: new version, added REJECTED reason
+	  fixed LICENSE field, one less source to worry about
+	  bugfix:#10723, BUILD_API\2
+	* PRE_BUILD: one less source to worry about bugfix:#10723
+	* BUILD: build api 2 switch
+	* INSTALL: build api 2 switch
+	* PREPARE: source REJECTED message
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

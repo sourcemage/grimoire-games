@@ -1,24 +1,22 @@
            SPELL=zangband
-         VERSION=2.7.3
+         VERSION=2.7.4c
           SOURCE=${SPELL}-${VERSION}.tar.gz
          SOURCE2=graf-32x32-302.zip
-         SOURCE3=angband-graf.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}
    SOURCE_URL[0]=ftp://clockwork.dementia.org/angband/Variant/ZAngband/$SOURCE
-  SOURCE2_URL[0]=ftp://clockwork.dementia.org/angband/Extra/$SOURCE2
-   SOURC3_URL[0]=ftp://clockwork.dementia.org/angband/Extra/$SOURCE3
    SOURCE_URL[1]=ftp://ftp.sunet.se/pub/games/Angband/Variant/ZAngband/$SOURCE
+  SOURCE2_URL[0]=ftp://clockwork.dementia.org/angband/Extra/$SOURCE2
   SOURCE2_URL[1]=ftp://ftp.sunet.se/pub/games/Angband/Extra/$SOURCE2
-  SOURCE3_URL[0]=ftp://ftp.sunet.se/pub/games/Angband/Extra/$SOURCE3
      SOURCE_HASH=sha512:4bb9695da750c6a68d3fa0ffacf9444076cee5dfa3d81347a8104f44bb13f2a1d83bab70b665ffe01cc601664f6a48e4063cad4687fab3d6b361caa72e3a01da
     SOURCE2_HASH=sha512:1a2b285e0f0f36d6ec7d7778de83b9effb49fc77dfb167ed44c1f3525bd2979c8810a6bdd4ad676ec358bd903626a17e0f64976cddfa68eed475cecae0164ae4
-    SOURCE3_HASH=sha512:5a7a1850c82bdc78a50d1344bfe2b8af350d21185597d5ac45b3e96c5d95dd00e1ec88634fcae5d3c2bc3382044f615d8ea4c86f6be6e8458e7bb4941bb48507
-        WEB_SITE=http://thangorodrim.angband.org/zangband.html
-      LICENSE[0]=UNKOWN
-      LICENSE[1]=UNKOWN
+        WEB_SITE=http://www.zangband.org/
+      LICENSE[0]=http://www.zangband.org/Technical.aspx
+      LICENSE[1]=http://www.zangband.org/Technical.aspx
          ENTERED=20021001
          UPDATED=20021001
+          REJECT="Licensing issue"
            SHORT="Single-player rogue-like game"
 cat << EOF
-ZAngband is a single-player rogue-like dungeon exploration game that runs on a wide variety of computer systems.
+ZAngband is a single-player rogue-like dungeon exploration game that
+runs on a wide variety of computer systems.
 EOF
