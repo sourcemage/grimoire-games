@@ -1,3 +1,7 @@
+2006-03-21 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* DETAILS: version update - 0.8.19
+	  updatet source and website url
+
 2006-02-12 Neuron <vlmarek@volny.cz>
 	* DETAILS: version update - 0.8.18
 	* DEPENDS: added boost dependency
