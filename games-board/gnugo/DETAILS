@@ -1,15 +1,15 @@
            SPELL=gnugo
-         VERSION=3.5.6
+         VERSION=3.6
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$GNU_URL/$SPELL/$SOURCE
    SOURCE_URL[1]=ftp://sporadic.stanford.edu/pub/$SOURCE
         WEB_SITE=http://www.gnu.org/software/gnugo/gnugo.html
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:7af8a3ff68c1abd22c352cbd2cc34e0c3bee4c7eaf2d1e3a7c5485f73c5d69a846f2d3402b0fd685d44b1c8d92080945a22d3bbabde6d3f11f976ba820881881
+     SOURCE_HASH=sha512:0ef07d97d307ba5763efd166ef5bf7740697a7005ef1dd3099e003a929d0b2f80d9caac1f282d0b111a3cc443c8a1c37b4d2da8cfef068233e3ea96bd32cb627
          ENTERED=20020219
          UPDATED=20031009
-     GATHER_DOCS="off"
+       BUILD_API=2
            SHORT="gnugo is the game of Go."
 cat << EOF
 This sofware is a program that plays the game of Go.  GNU Go has played
