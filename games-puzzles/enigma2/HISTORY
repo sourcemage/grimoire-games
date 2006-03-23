@@ -13,6 +13,6 @@
 	  Removed SDL as the above depend on sdl
 	  Formatted to Guru Handbook
 
-2004-07-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: Created spell
 

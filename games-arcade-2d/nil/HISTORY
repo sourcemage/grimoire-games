@@ -6,12 +6,12 @@
 	  Removed SDL as the above depend on sdl
 	  Removed zlib as SDL_image depends on libpng which depends on zlib
 
-2004-05-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-05-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, PREPARE: Removed cvs support... it's borked... :(
 
-2004-05-30 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-05-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, PREPARE: Added for cvs-daily snapshots
 
-2004-05-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-05-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD, DETAILS, DEPENDS, HISTORY: Spell created
 

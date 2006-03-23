@@ -1,4 +1,4 @@
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update and switched to sha512
 	* BUILD: added CLANLIB_OPTS
 	* CONFIGURE: plenty of configure options
@@ -8,7 +8,7 @@
 2005-01-23 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Use spell_ok instead of spell_installed
 
-2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, BUILD: Some minor fixes
 	* Renamed spell to clanlib-devel
 
@@ -25,7 +25,7 @@
 	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
 	  renames make it into stable grimoire
 
-2004-05-24 Andrew "ruskie" Levstik <ruskie@email.si>
+2004-05-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Forked from the ClanLib spell... pingus and wormux still depend on 0.6.x
 	* CONFLICTS: ClanLib-unstable
 

@@ -1,7 +1,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-02-13 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-02-13 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS,BUILD,INSTALL: Minor fixes
 
 2005-02-13 Ingo Arndt <scachi@gmx.de>

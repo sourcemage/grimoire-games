@@ -7,10 +7,10 @@
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
-2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 0.7.0
 
-2004-04-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to games/emulators
 
 2004-04-04 Vladimir Navrat <vn158@seznam.cz>

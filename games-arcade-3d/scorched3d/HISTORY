@@ -12,7 +12,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-05-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-05-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: whoever lo-cased wxGTK did a lousy job of
 	  checking if all spells had the fix by the time the
 	  spell was removed. Fixed no #8814
@@ -27,13 +27,13 @@
 	* DEPENDS: SDL_net and SDL_mixer renamed to sdl*
 	  Formatted to Guru Handbook
 
-2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 37.2
 
-2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added freetype2 dependencie
 
-2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Updated to 37.1
 	* BUILD: droped sedit
 	* BUILD: change the mv dir from to

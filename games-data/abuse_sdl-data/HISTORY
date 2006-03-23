@@ -1,8 +1,8 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-08-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-08-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* stupid-fix.gentoo.patch: added patch to solve some probs
 
-2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-08-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * BUILD, INSTALL, PRE_BUILD, HISTORY, DETAILS, gamma.lsp: created spell

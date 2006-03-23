@@ -3,17 +3,17 @@
 	  Removed trailing '&&'
 	  Cleaned up formatting
 
-2005-09-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-09-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: removed duplication and added default_games_build
 	* volatiles, configs: added /var/games/lbreakout2.hscr
 	* FINAL: warning about the hiscore file being moved
 	* DETAILS: version update, moved to SOURCE_HASH
 	* DEPENDS: sdl_mixer and sdl_net optional
 
-2005-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-08-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* volatiles: added file: /var/lbreakout2.hscr as per bug #8997(REOP)
 
-2005-06-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-06-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: infodir and man dir paths
 	* configs: added file: /var/lbreakout2.hscr as per bug #8997
 
@@ -30,7 +30,7 @@
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Removed SDL as sdl_mixer depends on sdl
 
-2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated to 2.5beta-8
 
 2004-05-16 Arwed v. Merkatz <v.merkatz@gmx.net>

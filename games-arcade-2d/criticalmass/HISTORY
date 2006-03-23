@@ -29,10 +29,10 @@
 	  Removed SDL as the above depend on sdl
 	* HISTORY: Formatted to Guru Handbook
 
-2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* HISTORY: History file format updated
 
-2004-04-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version bump from 0.98 to 0.99
 
 2003-07-13 hgg <hgreig@bigpond.net.au>

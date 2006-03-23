@@ -1,4 +1,4 @@
-2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: minor fixes
 	* BUILD: removed
 	* INSTALL: added
@@ -8,10 +8,10 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
-2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Lo-casing AlephOne-minf
 
 2003-09-30 hgg <hgreig@bigpond.net.au>

@@ -6,7 +6,7 @@
 	  Removed SDL as sdl_image depends on sdl
 	  Formatted to Guru Handbook
 
-3004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+3004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: removed maintainer line
 
 2003-12-06 : David Braaten <xiticix47@hotmail.com>

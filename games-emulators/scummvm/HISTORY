@@ -42,7 +42,7 @@
 	  Converted to build_api 2
 	  Removed TABs
 
-2004-09-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-09-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: MD5 fix
 
 2004-08-03 Eric Sandall <eric@sandall.us>
@@ -53,10 +53,10 @@
 	* DETAILS: Use config_query response
 	* PREPARE: Converted to config_query
 
-2004-07-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version bump 0.6.1
 
-2004-04-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version bump from 0.5.1 to 0.6.0
 	* BUILD: removed patching, it failed to patch
 	* removed patch

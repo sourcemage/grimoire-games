@@ -1,15 +1,15 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: lo-casing bug #9223
 
-2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-05-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: lo-casing of spell... also fixes bug #8797
 
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 
-2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated to 1.7.2
 	* HISTORY: Messed up clean slate from here...

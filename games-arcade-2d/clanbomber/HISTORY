@@ -1,10 +1,10 @@
-2006-01-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-01-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: Hermes -> libhermes, clanlib -> clanlib6
 
 2005-04-07 Eric Sandall <eric@sandall.us>
@@ -18,6 +18,6 @@
 	* BUILD: Added patch for gcc 3.4
 	  (please test to ensure backwards compatability)
 
-2004-07-13 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-13 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: Created spell
 

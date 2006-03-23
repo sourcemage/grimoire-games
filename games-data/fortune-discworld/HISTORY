@@ -1,10 +1,10 @@
-2006-03-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * INSTALL: made it better
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-06-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: LICENSE fix to GPL
 
 2005-05-02 Geoffrey Derber <gderber@sourcemage.org>

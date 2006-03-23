@@ -12,13 +12,13 @@
 2005-05-23 Rafael George <george.rafael@gmail.com>
     * INSTALL: fix /usr/games creation
 
-2004-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-11-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* lua_fix.diff: removed
 
 2004-10-14 Neuron <vlmarek@volny.cz>
 	* Updated to version 0.6.0
 
-2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to the grimoire
 
 2004-08-22 Vladim�r Marek <vlmarke@volny.cz>

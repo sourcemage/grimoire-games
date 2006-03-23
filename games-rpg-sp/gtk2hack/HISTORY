@@ -1,10 +1,10 @@
-2006-03-14 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-14 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * BUILD: added fix for LEX=flex
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-08-15 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-08-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD, INSTALL: Cleaning out and making proper perms
 	* CONFLICTS: removed as it no longer conflicts with nethack nor falconseye
 

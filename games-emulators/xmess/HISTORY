@@ -1,4 +1,4 @@
-2006-03-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* CONFIGURE: Major overhaul.
 	* BUILD: Major overhaul.
 	* PRE_BUILD: added; Major overhaul.
@@ -21,7 +21,7 @@
 	* INSTALL: Branched from BUILD
 	  Converted to build_api 2
 
-2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 0.84.1
 
 2004-06-22 Jason Flatt <jflatt@sourcemage.org>

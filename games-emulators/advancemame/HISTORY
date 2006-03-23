@@ -1,12 +1,12 @@
-2006-03-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
 	* BUILD: doesn't like -fPIC and -DPIC
 
-2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-10-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: Version update, source_hash usage
         * BUILD: added default_games_build
 
-2004-12-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-12-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, HISTORY: Minor fixes
 
 2004-12-16 Stan Carney <stan.smgl@moohoffa.com>

@@ -1,4 +1,4 @@
-2006-02-27 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-02-27 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
 	* CONFIGURE: MAJOR overhaul
 	* DEPENDS: MAJOR overhaul
@@ -29,14 +29,14 @@
 	  Converted to build_api 2
 	  If using SDL, binary is called xmame.SDL: Create xmame symlink
 
-2004-08-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added to the spell
 	* CONFIGURE, BUILD: modified to use persistant functions
 
-2004-08-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 0.84.1
 
-2004-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Bug 7045 replaced mkdir's with mkdir's -p
 
 2004-06-22 Jason Flatt <jflatt@sourcemage.org>

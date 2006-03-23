@@ -10,6 +10,6 @@
 	  Removed zlib as libpng depends on it
 	  Formatted to Guru Handbook
 
-2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, BUILD, HISTORY: Created spell
 

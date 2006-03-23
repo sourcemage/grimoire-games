@@ -1,13 +1,13 @@
-2005-09-02 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-09-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 0.2.2, moved to SOURCE_HASH
 	* CONFIGURE,CONFLICTS: added
 	* BUILD, INSTALL: modified to install data now included in the release
 	  Minor modifications to allow selection of opengl/software renderer
 
-2005-07-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-07-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Goofed up source url, needs gcc3.4
 	* BUILD: added invoke_gcc
 
-2005-07-09 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-07-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, HISTORY: created spell
 	* warzone: game launcher

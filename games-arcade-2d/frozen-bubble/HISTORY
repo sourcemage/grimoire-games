@@ -1,7 +1,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-10-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-10-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD, INSTALL: minor fixes
 	* PRE_BUILD: added a sedit on Makefile to fix install path
 

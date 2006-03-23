@@ -18,7 +18,7 @@
 	* PRE_BUILD: Added to unpack SOURCEs
 	* INSTALL: Installs to /usr/share/games/crossfire and sets permissions
 
-2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 1.7.0 bug #7261
 	* DETAILS: Build api 2
 

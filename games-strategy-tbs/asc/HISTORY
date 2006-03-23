@@ -27,7 +27,7 @@
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 
-2004-07-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 1.15.0.0
 
 2004-02-16 hgg <hgreig@bigpond.net.au>

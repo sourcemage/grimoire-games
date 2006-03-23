@@ -4,6 +4,6 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, BUILD, HISTORY: Created spell
 

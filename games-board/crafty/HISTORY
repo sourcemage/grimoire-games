@@ -1,13 +1,13 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
 2004-11-21 Andrew Stitt <astitt@sourcemage.org>
 	* DETAILS: fix syntax error
 
-2004-07-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version bump
 
 2003-06-18 hgg <hgreig@bigpond.net.au>

@@ -1,4 +1,4 @@
-2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: Updated per bug #10552
 	* CONFIGURE: added; some options
 	* BUILD: default_games_build, doesn't like
@@ -16,7 +16,7 @@
 	* BUILD: use default_build and converted to BUILD_API 2
 	* dosbox: removed, unnecessary
 
-2004-10-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-10-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 0.62
 
 2004-08-03 Eric Sandall <eric@sandall.us>

@@ -1,4 +1,4 @@
-2005-11-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: now only needs default_games_build
 	* DETAILS: updated to 1.1.1 and sha512
 
@@ -10,7 +10,7 @@
 	  Removed SDL as the above depend on sdl
 	* HISTORY: Formatted to Guru Handbook
 
-2004-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Updated to 1.0.0
 
 2003-07-14 hgg <hgreig@bigpond.net.au>

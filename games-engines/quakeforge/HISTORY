@@ -1,7 +1,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-07-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS,BUILD,INSTALL,POST_INSTALL:build api 2 conversion
 	* POST_INSTALL,FINAL: build api 2 conversion
 	* PRE_BUILD: let's keep all the unpacking in PRE_BUILD

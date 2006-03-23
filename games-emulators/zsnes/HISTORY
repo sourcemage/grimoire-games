@@ -1,4 +1,4 @@
-2005-11-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PREPARE: added CVS option
 	* DETAILS: added CVS option
 	* DEPENDS: added CVS option nad OPENGL and libpng
@@ -12,7 +12,7 @@
 2005-03-16 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.42
 
-2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-01-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Minor bugfix of SOURCE_DIRECTORY bug #7963
 
 2005-01-08 Eric Sandall <eric@sandall.us>

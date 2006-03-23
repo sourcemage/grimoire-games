@@ -1,12 +1,12 @@
-2006-03-14 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-14 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: added fix for LEX=flex
 
-2005-08-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-08-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Permissions fix and proper dirs and so on
 	* INSTALL: doesn't need much of anything
 	* CONFLICTS: removed it installs it's own launcher script
 
-2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-05-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD:fixes bug #8797 was an extra &&
 
 2005-04-07 Eric Sandall <eric@sandall.us>

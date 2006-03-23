@@ -1,7 +1,7 @@
-2005-11-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: finnaly got confirmation that it's GPL
 
-2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: sha512, version update, build api2
 	* BUILD: build_api2, now only true
 	* INSTALL: added, build_api2

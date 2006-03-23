@@ -1,4 +1,4 @@
-2005-11-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version 0.9.13 and BUILD API 2 update
 	* BUILD: build api 2 conversion now also uses default_games_build
 	* DEPENDS: explicitcly depends on sdl since that's how we want it iirc
@@ -10,7 +10,7 @@
 	  Formatted to Guru Handbook
 	* HISTORY: Formatted to Guru Handbook
 
-2004-04-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 0.9.12
 	  source changed from .tar.gz to .tar.bz2
 

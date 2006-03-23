@@ -1,9 +1,9 @@
-2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: only default_games_build
 	* PRE_BUILD: patching and autogen.sh
 	* DETAILS: switched to sha512
 
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: clanlib -> clanlib6
 
 2005-01-19 Adam Clark <adamsgl@dhbit.ca>

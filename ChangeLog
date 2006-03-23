@@ -1,9 +1,9 @@
-2006-03-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-terminal/zangband: moved to z-rejected/z-games non-Free
 	* games-data/fortune-firefly: new spell
 	* games-fps/quake2: moved to games-engines/quake2, it no longer bothers with the data
 
-2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: adding some fixes
 
 2006-02-28 Mathieu Lonjaret <lejatorn@sourcemagecom>
@@ -44,16 +44,16 @@
 2005-12-11 Neuron <vlmarek@volny.cz>
 	* games-rpg-sp/gearhead: new spell
 
-2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/FUNCTIONS: default_build is true
 	* games-utils/FUCTIONS: default_build uses default_build
 	* games-libs/FUCTIONS: default_build uses default_build
 
-2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-libs/FUNCTIONS: modified to use normal post/pre install
 	* games-utils/FUNCTIONS: modified to use normal post/pre install
 
-2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-10-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/FUNCTIONS: synced from FUNCTIONS,
 	  removed games_make_proper_binary code
 	* games-libs/FUNCTIONS: synced from FUNCTIONS,
@@ -80,7 +80,7 @@
 2005-10-30 Eric Sandall <eric@sandall.us>
 	* FUNCTIONS: Added invoke_gcc() from test/FUNCTIONS
 
-2005-10-17 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-10-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-emulators/VisualBoyAdvanced: lo-case deprecation after 5 months
 	* games-rpg-mp/gMOO: lo-case deprecation
 	* games-arcade-2d/asteroids3D: lo-case deprecation
@@ -95,10 +95,10 @@
 2005-06-12 Eric Sandall <eric@sandall.us>
 	* games-rpg-sp/{ember,sear}: Moved to games-rpg-mp
 
-2005-05-11 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-05-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* arcade/CritticalMass: deprecated
 
-2005-05-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-05-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-z-rejected: moved to z-rejected/z-games
 	* games-http/pstreamer: moved to games-utils/pstreamer
 	* games-http/psychoquery: moved to games-utils/psychoquery
@@ -125,7 +125,7 @@
 2005-04-07 Eric Sandall <eric@sandall.us>
 	* FUNCTIONS: Branched from devel so games has up-to-date FUNCTIONS
 
-2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/TORCS: Removed deprecated
 	* flight/SearchAndRescue: Renamed to flight/searchandrescue
 	* games-libs/SDLmm: Renamed to games-libs/sdlmm
@@ -145,7 +145,7 @@
 2005-02-13 Neuron <vlmarek@volny.cz>
 	* rpg/ivan: Added new rogue-like game with graphics
 
-2005-01-25 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-01-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/reaper: deprecated, project seems dead for over two years, fails to
 	  compile
 
@@ -156,27 +156,27 @@
 	* terminal/*: renamed section to games-terminal due to a name conflict with
 	  a spell
 
-2005-01-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-01-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* 3D/glaxium: deprecated, no longer supported upstream
 
-2004-12-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-12-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* edutainment/stellarium: moved to science section in normal grimoire and
 	  removed from games
 
-2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-libs/ClanLib: Rename to games-libs/clanlib
 	* games-libs/ClanLib-unstable: Rename to games-libs/clanlib-devel
 
 2004-10-30 Eric Sandall <eric@sandall.us>
 	* strategy/ASC: Renamed to strategy/asc
 
-2004-07-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* updates and fixes:
 	* 3D:neverball, Scorched3D, foobillard, glhack, mahjongg3d
 	* For an exact ChangeLog see the mailing list SM-Discuss where I'm sending
 	  the info...
 
-2004-07-19 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* updates and fixes:
 	* arcade: jumpnbump, lbreakout2, netris, rocksndiamonds, rtts
 	* strategy: ASC, castle-combat, openttd, xfrisk

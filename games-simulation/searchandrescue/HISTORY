@@ -3,7 +3,7 @@
 	  Apply namespace-fix.patch
 	* namespace-fix.patch: Fix namespace issues (e.g. stderr -> std::stderr)
 
-2006-03-01 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
 	* DEPENDS: updated
 	* PRE_BUILD: added; fixes bug #9444
@@ -16,7 +16,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* PRE_BUILD: unpack api update
 
-2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* CONFLICTS: added
 	* Lo-case rename of SearchAndRescue
 

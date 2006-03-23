@@ -26,7 +26,7 @@
 	  Install state data to /var/games/crossfire
 	* HISTORY: Formatted to Guru Handbook
 
-2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Update to 1.6.0 bug #7261
 	* DETAILS: Build api 2
 

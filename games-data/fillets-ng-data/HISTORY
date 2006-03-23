@@ -5,7 +5,7 @@
 	* DETAILS: Update to 0.7.1
 	* INSTALL: Respect INSTALL_ROOT
 
-2005-12-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: removed ARCHIVE=off
 
 2005-12-01 Seth Woolley <seth@tautology.org>
@@ -14,7 +14,7 @@
 2004-10-14 Neuron <vlmarek@volny.cz>
 	* Updated to version 0.6.1
 
-2004-08-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to the grimoire
 
 2004-08-22 Vladim�r Marek <vlmarke@volny.cz>

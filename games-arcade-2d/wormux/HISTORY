@@ -1,14 +1,14 @@
-2006-02-08 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PREPARE: svn or no svn taht is the question
 	* DETAILS: 0.7beta3 option
 	* PRE_BUILD: svn/no svn
 	* DOWNLOAD: svn/no svn
 	* DEPENDS: added svn depedns
 
-2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DOWNLOAD: minor fixes
 
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version switched to svn and only uses svn
 	  for now...
 	* DOWNLOAD: r_svn:// download handler
@@ -16,30 +16,30 @@
 	* PRE_BUILD: autogen.sh
 	* BUILD: added, default_games_build
 
-2005-11-20 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
+2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: VERSION updated to v060beta1, sha512
 	* DEPENDS: now uses clanlib
 
-2005-05-07 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
+2005-05-07 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: VERSION updated to 0.5.1
 
-2004-12-14 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
+2004-12-14 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * DETAILS: VERSION updated to 0.5.0
 
-2004-12-12 Andrew "ruskie" Levstik <ruskie@mages.at.cx>
+2004-12-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: SOURCE_DIRECTORY mismatch
 
 2004-12-05 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: updated MD5
 
-2004-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update to 0.5beta4
 	* BUILD: removed from spell
 
-2004-07-05 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-07-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update to 0.4.0
 
-2004-05-24 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-05-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to the grimoire
 
 2004-05-24 Cl�ment MATHIEU <cykl@mAdchAt.org>

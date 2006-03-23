@@ -1,7 +1,7 @@
-2005-11-24 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DOWNLOAD: if SVN co else acquire normaly...
 
-2005-11-21 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Minor bugfixes in the files
 	* DOWNLOAD: Added for r_svn
 	* DEPENDS: added sdl and subversion
@@ -22,7 +22,7 @@
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL_mixer and SDL_image renamed to sdl*
 
-2004-06-10 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-06-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added CVS support, switched to BUILD_API2
 
 2004-05-12 Arwed v. Merkatz <v.merkatz@gmx.net>

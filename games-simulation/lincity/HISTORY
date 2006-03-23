@@ -1,4 +1,4 @@
-2005-12-16 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: removed svgalib, it breaks
 	* BUILD: now uses default_games_build and a force
 	  disable for svgalib
@@ -9,7 +9,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-12-03 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-12-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: minor fix
 2004-09-25 Sebastian Sareyko <sebi@smoon.homelinux.org>
 	* DETAILS,HISTORY,BUILD: Created spell.

@@ -1,4 +1,4 @@
-2005-12-02 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-12-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: it's default_games_build not default_game_build
 	* DETAILS: updated version and switched to sha512, uses .bz2
 	* DEPENDS: it needs gtkmm2 not gtkmm, BAD tabs
