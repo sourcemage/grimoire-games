@@ -1,3 +1,7 @@
+2006-03-24 Flavien Bridault <vlaaad@sourcemage.org>
+        * games-libs/glew: moved to test/graphics-libs
+	* games-libs/soya: moved to test/python-devel
+
 2006-03-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-terminal/zangband: moved to z-rejected/z-games non-Free
 	* games-data/fortune-firefly: new spell
