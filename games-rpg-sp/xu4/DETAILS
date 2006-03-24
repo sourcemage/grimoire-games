@@ -1,17 +1,18 @@
            SPELL=xu4
-         VERSION=0.9
+         VERSION=1.0beta3
           SOURCE=${SPELL}-${VERSION}.tar.gz
          SOURCE2=ultima4-1.01.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/u4
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
   SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
-     SOURCE_HASH=sha512:6c0b27472074d96a5f76e024c800bed89c57c29dbd760278c819ad8b024362480bda5f1584eb9fe64fd6f6cae0b3b8d8571c8cf533f25b842471803acd7cea8d
+     SOURCE_HASH=sha512:b62f7d737f31f5cc25dc8c7bb8821f6360dbfec05fe4ba671ae9561cd9bc9fba1f28d35ac3eab9e7c40afbfded25229083a7383c5d6f102f2265b2bca763cd76
     SOURCE2_HASH=sha512:c86c29d51e21b93992316552fbaaec948e7e8048fea484f003f43ac82211f82fa587fb15db991cddf744f2c3ff0fc4d411cd51cc7650e13a5b520c4dc620518c
         WEB_SITE=http://xu4.sourceforge.net/
       LICENSE[0]=GPL
-      LICENSE[1]=UNKNOWN
+      LICENSE[1]=Freely Distributable
          ENTERED=20021120
          UPDATED=20040225
+       BUILD_API=2
            SHORT="XU4 is a recreation of Ultima(TM) IV"
 cat << EOF
 XU4 is a recreation of the classic computer game Ultima IV. The

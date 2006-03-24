@@ -1,0 +1,7 @@
+make  install                                                     &&
+cp -v $SOURCE_CACHE/$SOURCE2 ${INSTALL_ROOT}/usr/share/games/u4/  &&
+cd ${INSTALL_ROOT}/usr/share/games/u4/                            &&
+find_and_scam                                                     &&
+chmod 0770 ${INSTALL_ROOT}/usr/share/games/u4/u4dec               &&
+chmod 0770 ${INSTALL_ROOT}/usr/share/games/u4/u4enc               &&
+chmod 0770 ${INSTALL_ROOT}/usr/share/games/u4/dumpsavegame

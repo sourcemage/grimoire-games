@@ -1,4 +1,0 @@
-#Remove untracked files in /usr/lib
-if [ -d ${INSTALL_ROOT}/usr/lib/u4 ] ;
-then rm -rf ${INSTALL_ROOT}/usr/lib/u4
-fi

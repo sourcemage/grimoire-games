@@ -1,0 +1,13 @@
+default_pre_build                                                                         &&
+unpack_hash $SOURCE2 $SOURCE2_HASH                                                        &&
+cd  ${SOURCE_DIRECTORY}/src                                                               &&
+sedit  "s:CFLAGS=\(.*\):CFLAGS=\1 ${CFLAGS} -I..:"  Makefile                              &&
+sedit  "s:CXXFLAGS=\(.*\):CXXFLAGS=${CXXFLAGS} -I.. \1:"  Makefile                        &&
+sedit  "s:/usr/local:${INSTALL_ROOT}/usr/:"  Makefile                                     &&
+sedit  's:/bin:/games:'  Makefile                                                         &&
+sedit  's:/lib:/share/games:'  Makefile                                                   &&
+sedit  "s:-lpng:-lpng -lm:g"  Makefile.common                                             &&
+sedit  "s:/usr/lib/u4/ultima4/:$INSTALL_ROOT/usr/share/games/u4/ultima4/:g"  u4file.cpp   &&
+sedit  "s:/usr/lib/u4/:$INSTALL_ROOT/usr/share/games/u4/:g"  u4file.cpp                   &&
+sedit  "105s/ImageMgr:://"  imagemgr.h
+
