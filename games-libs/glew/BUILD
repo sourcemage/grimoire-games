@@ -1,1 +1,0 @@
-GLEW_DEST=${INSTALL_ROOT}/usr make
