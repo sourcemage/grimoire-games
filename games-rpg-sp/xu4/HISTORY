@@ -1,3 +1,6 @@
+2006-03-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PRE_BUILD: using verify_file instead of unpack_hash
+
 2006-03-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update, BUILD API 2 switch
 	* INSTALL: BUILD API 2

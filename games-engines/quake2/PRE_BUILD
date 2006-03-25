@@ -1,5 +1,5 @@
 default_pre_build                                                           &&
-unpack_hash  $SOURCE2  $SOURCE2_HASH                                        &&
+verify_file  2                                                              &&
 cd $SOURCE_DIRECTORY                                                        &&
 if [[  "$Q2_SDLQUAKE2"  ==  "n" ]]
 then

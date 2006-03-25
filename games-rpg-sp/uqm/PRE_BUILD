@@ -1,12 +1,12 @@
 default_pre_build                                                           &&
 cd  $SOURCE_DIRECTORY                                                       &&
-unpack_hash  $SOURCE2  $SOURCE2_HASH                                        &&
+verify_file 2                                                               &&
 mkdir -vp content/packages                                                  &&
 cp -v $SOURCE_CACHE/$SOURCE2  content/packages/                             &&
 if [[ "$UQM_AUDIO" == "y" ]]
 then
-unpack_hash  $SOURCE3  $SOURCE3_HASH                                        &&
-unpack_hash  $SOURCE4  $SOURCE4_HASH                                        &&
+verify_file 3                                                               &&
+verify_file 4                                                               &&
 cp -v $SOURCE_CACHE/$SOURCE3  content/packages/                             &&
 cp -v $SOURCE_CACHE/$SOURCE4  content/packages/
 fi                                                                          &&

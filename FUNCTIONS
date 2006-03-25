@@ -318,3 +318,13 @@ function grimoire_exists()  {
   while  read  ITEM;  do  [  -e  "$ITEM"  ]  &&  echo  "$ITEM";  done;
 }
 
+#---
+## @Synopsis verify_file function until it's in stable sorcery
+#---
+declare -f verify_file ||
+function verify_file() {
+  local SVAR="SOURCE${FILENUM}"
+  local AVAR="SOURCE${FILENUM}_HASH"
+  unpack_hash ${!SVAR} ${!AVAR}
+}
+

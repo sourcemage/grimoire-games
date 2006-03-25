@@ -1,3 +1,6 @@
+2006-03-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: added verify_file
+
 2006-03-24 Flavien Bridault <vlaaad@sourcemage.org>
         * games-libs/glew: moved to test/graphics-libs
 	* games-libs/soya: moved to test/python-devel

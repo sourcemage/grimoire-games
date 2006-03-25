@@ -1,3 +1,6 @@
+2006-03-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PRE_BUILD: using verify_file instead of unpack_hash
+
 2006-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: spell renamed to uqm as per source files, update to 0.5.0
 	* DEPENDS: added a few
