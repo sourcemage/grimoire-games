@@ -321,7 +321,7 @@ function grimoire_exists()  {
 #---
 ## @Synopsis verify_file function until it's in stable sorcery
 #---
-declare -f verify_file ||
+declare -f verify_file &>/dev/null ||
 function verify_file() {
   local SVAR="SOURCE${FILENUM}"
   local AVAR="SOURCE${FILENUM}_HASH"
