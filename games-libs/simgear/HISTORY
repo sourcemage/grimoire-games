@@ -1,3 +1,6 @@
+2006-03-27 John Harding <johnh@kuberaconsulting.com>
+	* DEPENDS: Added depends openal
+
 2006-02-24 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 0.3.9
 
