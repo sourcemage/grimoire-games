@@ -1,2 +1,3 @@
-depends  metakit  &&
-depends  plib
+depends  metakit	&&
+depends  plib		&&
+depends  openal
