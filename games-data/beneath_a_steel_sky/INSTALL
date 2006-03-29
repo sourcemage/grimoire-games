@@ -5,8 +5,8 @@ cp -v sky.dnr ${GAMES}                                            &&
 cp -v sky.dsk ${GAMES}                                            &&
 cp -v $SOURCE_CACHE/$SOURCE2 ${GAMES}                             &&
 cp -v ${SCRIPT_DIRECTORY}/bass-icon.png ${GAMES}                  &&
-cd ${GAMES}                                                       &&
-find_and_scam                                                     &&
 mkdir -vp   ${DOC}                                                &&
 cp -v readme.txt ${DOC}                                           &&
+cd ${GAMES}                                                       &&
+find_and_scam                                                     &&
 cp -v ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games
