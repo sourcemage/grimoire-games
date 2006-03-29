@@ -1,0 +1,7 @@
+GAMES="${INSTALL_ROOT}/usr/share/games/flight_of_the_amazon_queen"
+
+cp -v queen.1c ${GAMES}                                      &&
+cp -v ${SCRIPT_DIRECTORY}/fotaq-icon.png ${GAMES}            &&
+cd ${GAMES}                                                  &&
+find_and_scam                                                &&
+cp -v ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games

@@ -1,0 +1,25 @@
+           SPELL=flight_of_the_amazon_queen
+         VERSION=CD
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/FOTAQ
+          SOURCE=queen.1c.bz2
+   SOURCE_URL[0]=ftp://ftp.suse.com/pub/suse/i386/supplementary/X/FOTAQ/$SOURCE
+	WEB_SITE="http://www.scummvm.org/downloads.php#extras"
+         ENTERED=20050911
+         UPDATED=20050911
+     SOURCE_HASH=sha512:ab6e62fff133cb1d2fb3490bbb566c9736e02ea41cb59d6923e15b7a9c11b6da1504033740e24f499eaa6bd8e451affc657ba73a66d28ac1f077802c08c3c0fa
+       BUILD_API=2
+      LICENSE[0]=ftp://ftp.suse.com/pub/suse/i386/supplementary/X/FOTAQ/readme.txt
+           SHORT="Flight of the Amazon Queen, CD Talkie - Released to the ScummVM Team"
+
+cat << EOF
+Flight of the Amazon Queen (often just called FOTAQ) was created by Brisbane-
+based Interactive Binary Illusions (IBI) (now defunct) in the early nineties.
+After four years of development it was finally released in 1995 with the Amiga
+version being developed first and then the game being ported to MS-DOS.
+
+The gameplay follows the style of much-acclaimed LucasArts classics like Monkey
+Island or the Indiana Jones games. Just like in most LucasArts games it is not
+actually possible to die nor to get stuck. Moreover, well written dialogues
+with lots of puns and sarcastic remarks as well as beautifully hand-drawn
+graphics shape this game.
+EOF

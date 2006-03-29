@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SCREEN_OPT=no-fullscreen
+GFX_MODE=hq3x
+OTHER_OPTS="$@"
+
+CONFFILE="$HOME/.scummvm/bassrc.sh"
+
+[ -r "$CONFFILE" ] && . "$CONFFILE"
+
+scummvm --$SCREEN_OPT --gfx-mode=$GFX_MODE $OTHER_OPTS --path=/usr/share/games/beneath_a_steel_sky/ sky

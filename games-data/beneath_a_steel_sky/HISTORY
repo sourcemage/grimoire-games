@@ -1,0 +1,6 @@
+2005-09-11 Mads Laursen <smgl@dossen.dk>
+	* DETAILS, PRE_BUILD, INSTALL: Add the SKY.CPT file
+
+2005-09-04 Mads Laursen <smgl@dossen.dk>
+	* BUILD, DETAILS, HISTORY, INSTALL: Spell created
+

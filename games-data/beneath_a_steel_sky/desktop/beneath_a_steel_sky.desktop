@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Beneath a Steel Sky
+Exec=beneath_a_steel_sky
+Icon=/usr/share/games/beneath_a_steel_sky/bass-icon.png
+Terminal=false
+Type=Application
+Categories=Application;Game;
