@@ -2,13 +2,8 @@ depends  simgear	&&
 depends  fgfs-base	&&
 
 if [[ "${GRAPHIC_LIB}" == "sdl" ]]
- then
- depends sdl "--enable-sdl"
- else
-  if [[ "${GRAPHIC_LIB}" == "openglut" ]]
-   then
-   depends openglut
-   else
-   depends glut
-  fi
+then
+depends sdl "--enable-sdl"
+else
+depends ${GRAPHIC_LIB}
 fi
