@@ -1,5 +1,13 @@
+2006-03-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-data/flight_of_the_amazon_queen: new spell
+	* games-data/beneath_a_steel_sky: new spell
+	* FUNCTIONS: put invoke_gcc from default_build to
+	  default_pre_build as per #10641
+	* games-data/FUNCTIONS: cleanup
+	* games-libs/FUNCTIONS: cleanup
+
 2006-03-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* FUNCTIONS: minnor fix
+	* FUNCTIONS: minor fix
 
 2006-03-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added verify_file
@@ -199,4 +207,3 @@
 	  the regular scummvm or scummvm_tools spell. dispel scummvm-cvs and
 	  scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, then just say yes
 	  to cvs version.
-

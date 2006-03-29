@@ -2,33 +2,6 @@
 . $GRIMOIRE/libgcc
 
 #---------------------------------------------------------------------
-## Replaces sorcerys default_build with a custom version using
-## the invoke_gcc function from libgcc
-#---------------------------------------------------------------------
-function default_build () {
-  invoke_gcc  &&
-  real_default_build
-}
-
-#---------------------------------------------------------------------
-## @return 0 if glibc was compiled with NPTL
-## @return 1 otherwise
-##
-## Detects if the current glibc includes NPTL support.
-##
-#---------------------------------------------------------------------
-function glibc_is_nptl ()
-{
-  if /lib/libc.so.6 | grep -q NPTL; then
-    return 0
-  fi
-  if /lib/libc.so.6 | grep -q "Native POSIX Threads Library"; then
-    return 0
-  fi
-  return 1
-}
-
-#---------------------------------------------------------------------
 # Runs update-desktop-database if it is installed
 #---------------------------------------------------------------------
 function update_desktop_database ()
@@ -36,48 +9,6 @@ function update_desktop_database ()
   if test -x /usr/bin/update-desktop-database; then
     message "${MESSAGE_COLOR}Updating application mime type database.${DEFAULT_COLOR}"
     /usr/bin/update-desktop-database
-  fi
-}
-
-#---------------------------------------------------------------------
-## this function installs the *.desktop, start* files and qingy links
-## this function is intended to be used by spells for windowmanagers
-#---------------------------------------------------------------------
-function install_wmfiles ()
-{
-  local wm_desktopfile_dir="${INSTALL_ROOT}/usr/share/xsessions"
-  local wm_startwm_dir="${INSTALL_ROOT}/usr/bin"
-
-  # install the start* file for the windowmanager if it's not
-  # installed already
-  if [ -f ${SCRIPT_DIRECTORY}/start${SPELL} ] ; then
-    if ! [ -e ${wm_startwm}/start${SPELL} ] ; then
-      install  -m  755  ${SCRIPT_DIRECTORY}/start${SPELL}     \
-                        ${wm_startwm_dir}
-    fi
-  fi
-
-  # making sure the destination directory exists
-  if ! [ -d  ${wm_desktopfile_dir} ] ; then
-      mkdir  ${wm_desktopfile_dir}
-  fi                                                        &&
-
-  # install the windowmanagers desktop file
-  if [ -f ${SCRIPT_DIRECTORY}/${SPELL}.desktop ] ; then
-    if ! [ -e ${wm_desktopfile_dir}/${SPELL}.desktop ]; then
-      install  -m  755  ${SCRIPT_DIRECTORY}/${SPELL}.desktop   \
-                        ${wm_desktopfile_dir}
-    fi
-  fi
-
-  if ( spell_ok qingy ); then
-    if [ -x ${wm_startwm_dir}/start${SPELL} ] ; then
-      if  [  !  -d  ${INSTALL_ROOT}/etc/qingy/xsessions  ];  then
-        install  -d  -m  755  ${INSTALL_ROOT}/etc/qingy/xsessions
-      fi                                                 &&
-      ln -s ${wm_startwm_dir}/start${SPELL}              \
-            ${INSTALL_ROOT}/etc/qingy/xsessions/${SPELL}
-    fi
   fi
 }
 
@@ -99,72 +30,6 @@ function make_normal ()
 {
   source $COMPILE_CONFIG
 }
-
-#---------------------------------------------------------------------
-## @param shellname
-## @param full path to shell
-##
-## Adds a shell to /etc/shells and optionally to qingy's sessions
-#---------------------------------------------------------------------
-function install_shell ()
-{
-  local qingy_session_dir="${INSTALL_ROOT}/etc/qingy/sessions"
-
-  if [ -z "$1" ] ; then
-    message "${PROBLEM_COLOR}no shell name specified, aborting${DEFAULT_COLOR}"
-    return 1
-  fi &&
-  if [ ! -e "$2" ] ; then
-    message "${PROBLEM_COLOR} $2 isn't executable, no use adding it as a shell${DEFAULT_COLOR}"
-    return 1
-  fi &&
-
-  #installing shell into /etc/shells
-  message "installing $1 into /etc/shells"
-  if ! ( grep -q "${2}" ${INSTALL_ROOT}/etc/shells ) ; then
-    echo "$2" >> ${INSTALL_ROOT}/etc/shells
-  fi || return 1
-
-  #installing shell into qingy's session dir if it's installed
-  if ( spell_ok qingy ) && ! [ -f ${qingy_session_dir}/$1 ] ; then
-    message "installing $1 into $qingy_session_dir"
-    echo "$2" > ${qingy_session_dir}/$1 &&
-    chmod 0755 ${qingy_session_dir}/$1
-  fi
-}
-
-#---------------------------------------------------------------------
-## @param shellname
-## @param full path to shell
-##
-## Removes a shell from /etc/shells and optionally from qingy's sessions
-#---------------------------------------------------------------------
-function remove_shell ()
-{
-  local qingy_session_dir="${INSTALL_ROOT}/etc/qingy/sessions"
-
-  if [ -z "$1" ] ; then
-    message "${PROBLEM_COLOR}no shell name specified, aborting${DEFAULT_COLOR}"
-    return 1
-  fi &&
-  if [ -z "$2" ] ; then
-    message "${PROBLEM_COLOR}no shell path specified, aborting${DEFAULT_COLOR}"
-    return 1
-  fi &&
-
-  #removing shell from /etc/shells
-  if  [  -f  /etc/shells  ]  ;  then
-    cat /etc/shells|grep -v "$2" > /etc/shells.tmp &&
-    mv /etc/shells.tmp /etc/shells
-  fi
-
-  # and optionally from qingy's session dir
-  if [ -f ${qingy_session_dir}/$1 ] ; then
-    message "removing $1 from $qingy_session_dir"
-    rm -f ${qingy_session_dir}/$1
-  fi
-}
-
 
 #---------------------------------------------------------------------
 ## replacement for config_query_string to work around a short timeout
@@ -222,49 +87,6 @@ declare -f unpack_file &> /dev/null ||
 function unpack_file() {
   message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
   return 1
-}
-
-#---
-## @Synopsis A function to find all dirs and files and set them to
-## @Synopsis proper permissions.
-#---
-
-function find_and_scam() {
-  find ./ -type d -print0 | xargs -0 -n 1 chmod 0750
-  find ./ -type d -print0 | xargs -0 -n 1 chown root.games
-  find ./ -type f -print0 | xargs -0 -n 1 chmod 0640
-  find ./ -type f -print0 | xargs -0 -n 1 chown root.games
-}
-
-#---
-## @Synopsis games_create_base_dirs function to replace
-## @Synopsis all the duplication of the same stuff in games-grimoire
-## @Synopsis and to provide some basics for all spells
-#---
-
-function games_create_base_dirs() {
-  mkdir -vp ${INSTALL_ROOT}/usr/share/games/${SPELL}
-  mkdir -vp ${INSTALL_ROOT}/usr/games
-  mkdir -vp ${INSTALL_ROOT}/var/games
-}
-
-#---
-## @Synopsis games_make_proper_binary function to make all
-## @Synopsis binaries in /usr/games chown root.games and
-## @Synopsis chmod 0750.
-#---
-
-function games_make_proper_binary() {
-if ( grep -q "usr/games/" $IW_LOG )
-then
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chmod 0750
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chown root.games
-else
-  message "${QUERY_COLOR}If you see this message and you're not \n \
-installing a data spell then report this at the following url: \n \
-http://bugs.sourcemage.org/enter_bug.cgi?product=Codex&bug_status=NEW&version=games%20grimoire&component=games%20grimoire&rep_platform=Other&op_sys=other&priority=P2&bug_severity=minor&assigned_to=games%40sourcemage.org&cc=&bug_file_loc=http%3A%2F%2F&short_desc=%24SPELL%20not%20installing%20binaries%20properly&comment=&dependson=&blocked=9312&maketemplate=Remember%20values%20as%20bookmarkable%20template&form_name=enter_bug \
-${DEFAULT_COLOR}"
-fi
 }
 
 #---

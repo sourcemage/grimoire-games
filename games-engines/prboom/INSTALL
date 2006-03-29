@@ -1,5 +1,3 @@
-default_install                            &&
-mv  /usr/games/prboom  ${I_DIR}            &&
-${INSTBIN}  ${SCRIPT_DIRECTORY}/prboom     \
-            /usr/games                     &&
-chown  -R  root.games  ${I_DIR}
+default_install                                                   &&
+cd $INSTALL_ROOT/usr/share/games/doom/                            &&
+find_and_scam

@@ -1,3 +1,6 @@
+2006-03-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: add some verbosity to it...
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
