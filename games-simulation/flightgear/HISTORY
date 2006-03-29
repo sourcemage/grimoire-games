@@ -1,3 +1,9 @@
+2006-03-29 John Harding <johnh@kuberaconsulting.com>
+	* CONFIGURE: Added config_query_list to choose
+	  between sdl, glut, and openglut. Current version
+	  no longer works with freeglut 2.4
+	* DEPENDS: uses the config_query_list above
+
 2006-02-24 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 0.9.9
 

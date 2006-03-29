@@ -1,0 +1,2 @@
+config_query_list GRAPHIC_LIB "Which graphics system do you wish to use"        \
+                                "sdl"   "openglut" "glut"
