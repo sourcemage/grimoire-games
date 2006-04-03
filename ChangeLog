@@ -2,6 +2,7 @@
 	* games-emulators/e-uae: branched from uae transmutation
 	* games-emulators/uae: transmutation to e-uae
 	* games-emulators/snes9x: moved to z-games
+	* games-strategy-rts/freerails: obliterated
 
 2006-03-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/flight_of_the_amazon_queen: new spell
