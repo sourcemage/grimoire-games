@@ -1,5 +1,4 @@
-default_pre_build 	    				 &&
-cd ${SOURCE_DIRECTORY}      				 &&
-rm *.exe *.ico               				 &&
-tar -xzf ${SPELL}-${VERSION}-src.tar.gz 	         &&
-cd ${BUILD_DIRECTORY}
+default_pre_build                        &&
+cd ${SOURCE_DIRECTORY}                   &&
+rm *.exe *.ico                           &&
+tar -xzf ${SPELL}-${VERSION}-src.tar.gz 	         

@@ -1,5 +1,3 @@
-local INSTDIR=${INSTDIR}/usr/share/games/tremulous &&
-cd ${SOURCE_DIRECTORY}				&&
-mkdir -p ${INSTDIR}				&&
-cp -Rv * ${INSTDIR}	 			&&
-cp -v ${SCRIPT_DIRECTORY}/tremulous /usr/games
+cd ${SOURCE_DIRECTORY}                            &&
+cp -Rv * ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+cp -v ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games
