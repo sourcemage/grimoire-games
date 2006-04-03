@@ -1,0 +1,29 @@
+depends  X11-LIBS  "--with-x"                                   &&
+depends  zlib  "--with-zlib"                                    &&
+optional_depends sdl                                            \
+                 "--with-sdl"                                   \
+                 "--without-sdl"                                \
+                 "Enable SDL for low-level functions?"          &&
+optional_depends sdl_sound                                      \
+                 "--with-sdl-sound"                             \
+                 "--without-sdl-sound"                          \
+                 "Enable SDL for sound?"                        &&
+if [[ "$EUAE_VIDEO" == "ncurses" ]]
+then
+depends  ncurses "--with-curses --without-sdl-gfx"
+elif [[ "$EUAE_VIDEO" == "sdl_gfx" ]]
+then
+depends  sdl_gfx "--without-curses --with-sdl-gfx"
+fi                                                              &&
+optional_depends  gtk+2                                         \
+                  "--enable-ui"                                 \
+                  "--disable-ui"                                \
+                  "for gtk+2 interface"                         &&
+optional_depends  alsa-lib                                      \
+                  "--with-alsa"                                 \
+                  "--without-alsa"                              \
+                  "Use ALSA library for sound?"                 &&
+optional_depends  caps                                          \
+                  "--with-caps"                                 \
+                  "--without-caps"                              \
+                  "for caps images"

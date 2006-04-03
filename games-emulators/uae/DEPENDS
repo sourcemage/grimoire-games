@@ -1,12 +1,1 @@
-depends  X11-LIBS  &&
-depends  sdl       &&
-
-optional_depends  gtk+2                  \
-                  ""                     \
-                  ""                     \
-                  "for gtk+2 interface"  &&
-
-optional_depends  caps               \
-                  ""                 \
-                  ""                 \
-                  "for caps images"
+depends e-uae

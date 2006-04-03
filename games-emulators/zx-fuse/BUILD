@@ -1,10 +1,4 @@
-OPTS="$OPTS $VOUTPUT" &&
-
-if  grep  -q  "USEJOYSTICK=y"  $SPELL_CONFIG
-    then  OPTS="$OPTS --with-joystick"
-    else  OPTS="$OPTS --without-joystick"
-fi &&
-
-default_build
-
-
+OPTS="$USEJOYSTICK $OPTS"                 &&
+make_single                               &&
+default_games_build                       &&
+make_normal

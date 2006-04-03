@@ -1,8 +1,12 @@
-           SPELL=uae
+           SPELL=e-uae
          VERSION=0.8.28
+          SOURCE=${SPELL}-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.rcdrummond.net/uae/${SOURCE/.tar.bz2}/$SOURCE
         WEB_SITE=http://www.rcdrummond.net/uae/index.html
          ENTERED=20040522
          UPDATED=20040522
+     SOURCE_HASH=sha512:fb23ca82629f976b6db7fb196d85d709ed23a87732280eb2546021964e02b0030f7065bb7f5d58f6e1baa17213687f2d571902f555b15a26b164b72f821babaa
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="the Ubiquitous Amiga Emulator"
@@ -10,7 +14,4 @@ cat << EOF
 UAE can emulate any Commodore Amiga from the original 1000 to the A4000.
 A Kickstart rom is required, and a tool is provided to extract the image
 from a real Amiga.
-
-This is Richard Drummond's experimental version of UAE, based on the
-0.8.25 sources.
 EOF

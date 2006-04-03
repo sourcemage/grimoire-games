@@ -1,3 +1,10 @@
+2006-04-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFIGURE: cleanup
+	* DEPENDS: cleanup
+	* BUILD: cleanup
+	* PRE_BUILD: added, cleanup
+	* INSTALL: added, don't like WORLD writable dirs
+
 2005-09-03 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 0.4pre10
 	  converted MD5 to GPG

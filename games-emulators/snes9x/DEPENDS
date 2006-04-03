@@ -1,2 +1,14 @@
-depends  X11-LIBS  &&
-depends  zlib
+optional_depends OPENGL                              \
+                 "--with-opengl"                     \
+                 "--without-opengl"                  \
+                 "Use OpenGL for smoother scaling?"  &&
+optional_depends libpng                              \
+                 "--with-newblend"                   \
+                 "--without-newblend"                \
+                 "New colour blender?"               &&
+optional_depends nasm                                \
+                 "--with-assembler"                  \
+                 "--without-assembler"               \
+                 "Use assembler cores?"              &&
+depends  X11-LIBS "--with-x"                         &&
+depends  zlib "--with-zlib"

@@ -1,0 +1,13 @@
+default_pre_build                                                          &&
+cd ${SOURCE_DIRECTORY}                                                     &&
+sedit "s:OPTS =.*:${CFLAGS}:"  Makefile                                    &&
+sedit "s:PREFIX =.*:PREFIX = ${INSTALL_ROOT}/usr:"  Makefile               &&
+sedit "s:MAN_PREFIX =.*:MAN_PREFIX = ${INSTALL_ROOT}/usr/share:" Makefile  &&
+sedit "s:CONFIG_DIR =.*:CONFIG_DIR = ${INSTALL_ROOT}/etc:g"  Makefile      &&
+sedit "s:CURSES =.*:CURSES = -lncurses:"  Makefile                         &&
+sedit 's:\$(PREFIX)/bin:\$(PREFIX)/games:g'  Makefile                      &&
+if [[ "${FROTZ_OSS}" == "y" ]]
+then
+sedit  's:\#SOUND_DEFS = -DOSS_SOUND:SOUND_DEFS = -DOSS_SOUND:'  Makefile  &&
+sedit  's:\#SOUND_DEV = /dev/dsp:SOUND_DEV = /dev/dsp:'  Makefile
+fi

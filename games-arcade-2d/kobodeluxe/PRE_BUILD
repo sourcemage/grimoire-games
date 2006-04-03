@@ -1,0 +1,4 @@
+default_pre_build                                                                            &&
+cd $SOURCE_DIRECTORY                                                                         &&
+sedit  '26iclass gamestatemanager_t;' gamestate.h                                            &&
+sedit  "s:SCOREDIR=.*:SCOREDIR='${INSTALL_ROOT}/var/games/kobo-deluxe/scores':"  configure

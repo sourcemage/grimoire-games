@@ -1,3 +1,10 @@
+2006-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: cleanup
+	* PREPARE: added
+	* DEPENDS: cleanup
+	* BUILD: cleanup
+	* PRE_BUILD: cleanup
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
 

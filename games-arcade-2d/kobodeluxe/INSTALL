@@ -1,0 +1,7 @@
+default_install                                            &&
+cd  ${INSTALL_ROOT}/usr/share/games/kobo-deluxe/           &&
+find_and_scam                                              &&
+chmod 0770 ${INSTALL_ROOT}/var/games/kobo-deluxe           &&
+chown root:games ${INSTALL_ROOT}/var/games/kobo-deluxe     &&
+chmod 0770 ${INSTALL_ROOT}/var/games/kobo-deluxe/scores    &&
+chown root:games ${INSTALL_ROOT}/var/games/kobo-deluxe/scores

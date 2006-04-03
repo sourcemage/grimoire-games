@@ -1,7 +1,16 @@
-if  !  grep  -q  "OPTS"  $SPELL_CONFIG;  then
-  if    query  "Use OpenGL for smoother scaling?"  y
-  then  OPTS="--with-opengl"
-  else  OPTS="--without-opengl"
-  fi
-  echo  "OPTS=\"\$OPTS $OPTS\""  >>  $SPELL_CONFIG
-fi
+config_query_option SNES_OPTS "Do you want sound support?" y            \
+                    "--with-sound" "--without-sound"                    &&
+config_query_option SNES_OPTS "Do you want glide support?" n            \
+                    "--with-glide" "--without-glide"                    &&
+config_query_option SNES_OPTS "Do you want X11 extensions support?" y   \
+                    "--with-extensions" "--without-extensions"          &&
+config_query_option SNES_OPTS "Do you want jma decompression?" n        \
+                    "--with-jma" "--without-jma"                        &&
+config_query_option SNES_OPTS "Use SDD1 decompression?" y               \
+                    "--with-sdd1" "--without-sdd1"                      &&
+config_query_option SNES_OPTS "Build for Dreamcast?" n                  \
+                    "--with-dreamcast" "--without-dreamcast"            &&
+config_query_option SNES_OPTS "Enable joystick support?" n              \
+                    "--with-joystick" "--without-joystick"              &&
+config_query_option SNES_OPTS "Use a shared memory area for output?" n  \
+                    "--with-aido" "--without-aido"

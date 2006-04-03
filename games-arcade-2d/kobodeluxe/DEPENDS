@@ -1,4 +1,13 @@
-depends  sdl_image  &&
-if  [  -n  "$KOBO_OGL"  ];  then
-  depends  GLUT
-fi
+#this is broken... does NOT support alsa 0.9 API
+#optional_depends alsa-lib                \
+#                 "--enable-alsa"         \
+#                 "--disable-alsa"        \
+#                 "Enable ALSA support?(broken)"  &&
+depends  libtool                         &&
+depends  autoconf                        &&
+depends  automake                        &&
+depends  sdl_image                       &&
+optional_depends OPENGL                  \
+                 "--enable-opengl"       \
+                 "--disable-opengl"      \
+                 "Enable OpenGL rendering layer support (experimental)?"

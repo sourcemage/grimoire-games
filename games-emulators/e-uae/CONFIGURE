@@ -1,0 +1,37 @@
+config_query_option EUAE_OPTS "Enable some generally useful thread support?"    \
+                    y  "--enable-threads"  "--disable-threads"                  &&
+config_query_option EUAE_OPTS "Enable JIT compiler (currently x86 only)?"       \
+                    y  "--enable-jit"  "--disable-jit"                          &&
+if list_find "$EUAE_OPTS" "--enable-jit"
+then
+config_query_option EUAE_OPTS "Enable JIT direct memory support?"               \
+                    y  "--enable-natmem"  "--disable-natmem"                    &&
+config_query_option EUAE_OPTS "Enable noflags support in JIT?"                  \
+                    n  "--enable-noflags"  "--disable-noflags"
+fi                                                                              &&
+config_query_option EUAE_OPTS "Enable emulaton of autoconfig devices?"          \
+                    y  "--enable-autoconfig"  "--disable-autoconfig"            &&
+config_query_option EUAE_OPTS "Enable the uaescsi.device?"                      \
+                    n  "--enable-scsi-device"  "--disable-scsi-device"          &&
+config_query_option EUAE_OPTS "Enable AGA chipset emulation?"                   \
+                    y  "--enable-aga"  "--disable-aga"                          &&
+config_query_option EUAE_OPTS "Enable CDTV emulation?"                          \
+                    n  "--enable-cdtv"  "--disable-cdtv"                        &&
+config_query_option EUAE_OPTS "Enable CD32 emulation?"                          \
+                    n  "--enable-cd32"  "--disable-cd32"                        &&
+config_query_option EUAE_OPTS "Enable cycle-exact CPU emulation?"               \
+                    y  "--enable-cycle-exact-cpu"  "--disable-cycle-exact-cpu"  &&
+config_query_option EUAE_OPTS "Enable compatible CPU emulation?"                \
+                    y  "--enable-compatible-cpu"  "--disable-compatible-cpu"    &&
+config_query_option EUAE_OPTS "Enable new bsdsocket.library emulation?"         \
+                    y  "--enable-bsdsock-new"  "--disable-bsdsock-new"          &&
+config_query_option EUAE_OPTS "Enable ersatz Enforcer support?"                 \
+                    y  "--enable-enforcer"  "--disable-enforcer"                &&
+config_query_option EUAE_OPTS "Enable audio output?"                            \
+                    y  "--enable-audio"  "--disable-audio"                      &&
+config_query_option EUAE_OPTS "Enable FDI support?"                             \
+                    y  "--enable-fdi"  "--disable-fdi"                          &&
+config_query_option EUAE_OPTS "Enable Action Replay cartridge emulation?"       \
+                    y  "--enable-action-replay"  "--disable-action-replay"      &&
+config_query_list  EUAE_VIDEO  "Select your video system?"                      \
+                   sdl_gfx ncurses

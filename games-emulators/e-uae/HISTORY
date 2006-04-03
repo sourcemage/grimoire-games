@@ -1,11 +1,10 @@
 2006-04-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* BUILD: transmutation
-	* PRE_BUILD: transmutation
-	* INSTALL: transmutation
-	* CONFIGURE: removed transmutation
-	* DETAILS: transmutation
-	* DEPENDS: transmutation
-	* renamed to e-uae
+	* BUILD: cleanup and API 2
+	* CONFIGURE: cleanup
+	* DETAILS: cleanup and API2, version update
+	* DEPENDS: cleanup
+	* CONFLICTS: transmutation
+	* transmutated from uae
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512

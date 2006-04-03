@@ -1,0 +1,3 @@
+default_install                          &&
+cd ${INSTALL_ROOT}/usr/share/games/fuse  &&
+find_and_scam
