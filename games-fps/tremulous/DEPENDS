@@ -1,0 +1,4 @@
+depends sdl      &&
+depends glibc    &&
+depends X11-LIBS &&
+depends openal

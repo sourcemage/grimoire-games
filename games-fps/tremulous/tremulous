@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd  /usr/share/games/tremulous
+exec ./tremulous.x86* "$@"
