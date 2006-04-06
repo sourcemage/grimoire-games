@@ -1,3 +1,6 @@
+2006-04-06 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Version update
+
 2005-10-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update, source_hash usage
 	* BUILD: added default_games_build
