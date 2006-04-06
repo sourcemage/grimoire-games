@@ -1,26 +1,27 @@
-cd ../..                                            &&
-mkdir -p ${INSTALL_ROOT}/usr/share/games/nexuiz     &&
+cd ${SOURCE_DIRECTORY}                               &&
+mkdir -p ${INSTALL_ROOT}/usr/share/games/${SPELL}    &&
+chown -R root:games data/                            &&
+chmod 755 data/                                      &&
+chmod -R 744 data/*                                  &&
+cp -ar data ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
 
-cp -ar data ${INSTALL_ROOT}/usr/share/games/nexuiz  &&
+install -m 755 darkplaces/nexuiz-glx                 \
+${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
+install -m 755 darkplaces/nexuiz-sdl                 \
+${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
+install -m 755 darkplaces/nexuiz-dedicated           \
+${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
 
-install -m 755 sources/darkplaces/nexuiz-glx        \
-${INSTALL_ROOT}/usr/share/games/nexuiz              &&
-install -m 755 sources/darkplaces/nexuiz-sdl        \
-${INSTALL_ROOT}/usr/share/games/nexuiz              &&
-install -m 755 sources/darkplaces/nexuiz-dedicated  \
-${INSTALL_ROOT}/usr/share/games/nexuiz              &&
+mkdir -p ${INSTALL_ROOT}/usr/games                   &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-sdl        \
+${INSTALL_ROOT}/usr/games                            &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-glx        \
+${INSTALL_ROOT}/usr/games                            &&
+install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-dedicated  \
+${INSTALL_ROOT}/usr/games                            &&
 
-mkdir -p ${INSTALL_ROOT}/usr/games                  &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-sdl       \
-${INSTALL_ROOT}/usr/games                           &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-glx       \
-${INSTALL_ROOT}/usr/games                           &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-dedicated \
-${INSTALL_ROOT}/usr/games                           &&
-
-mkdir -p ${INSTALL_ROOT}/usr/share/doc/nexuiz       &&
-install -m 755 Readme.htm                           \
-${INSTALL_ROOT}/usr/share/doc/nexuiz                &&
-install -m 755 sources/darkplaces/darkplaces.txt    \
-${INSTALL_ROOT}/usr/share/doc/nexuiz 
-
+mkdir -p ${INSTALL_ROOT}/usr/share/doc/${SPELL}      &&
+install -m 755 Docs/*                                \
+${INSTALL_ROOT}/usr/share/doc/${SPELL}               &&
+install -m 755 darkplaces/darkplaces.txt             \
+${INSTALL_ROOT}/usr/share/doc/${SPELL} 

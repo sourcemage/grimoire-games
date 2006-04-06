@@ -1,7 +1,12 @@
+2006-04-06 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* BUILD, DEPENDS, DETAILS, INSTALL: 
+	  updated version to 1.5
+	  added dependencies for sdl,libvorbis,libpng,jpeg,unzip
+	  added keywords
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
 2005-07-24 Mathieu Lonjaret <lejatorn@sourcemage.org>
 	* BUILD, DEPENDS, DETAILS, INSTALL, nexuiz-sdl, nexuiz-glx,
 	* nexuiz-dedicated : created this spell.
-

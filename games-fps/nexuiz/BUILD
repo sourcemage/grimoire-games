@@ -1,2 +1,3 @@
-cd sources/darkplaces &&
+unzip nexuizenginesource* &&
+cd darkplaces             &&
 make release
