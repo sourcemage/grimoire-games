@@ -1,3 +1,7 @@
+2006-04-07 John Harding <johnh@kuberaconsulting.com>
+	* CONFIGURE: Added sound system question
+	* DEPENDS: sound system and libmxp processing
+
 2006-04-06 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: Version update and BUILD_API=2
 
