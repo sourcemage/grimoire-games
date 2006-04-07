@@ -1,0 +1,2 @@
+config_query_list SOUND "Which sound system do you wish to use"        \
+                                "sdl"   "arts"
