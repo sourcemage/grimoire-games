@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Nexuiz
          UPDATED=20050724
       LICENSE[0]=GPL
        BUILD_API=2
-        KEYWORDS="fps game shooter deathmatch"
            SHORT="Nexuiz is a fast-paced, chaotic, and intense
 multiplayer first person shooter, focused on providing basic, old style
 deathmatch."

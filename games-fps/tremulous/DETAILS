@@ -11,7 +11,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
      SOURCE_HASH=sha512:bcbd0ddc876bdf8dcff2e01b212ef4a56cb73b58b6a4ea17d9ca778be9fe63c9984aaaf893d235a7fc3b2ed3a8b58632defa7d66fc4daaa84231b62a1f0d9cbc
       LICENSE[0]=GPL
        BUILD_API=2
-      KEYWORDS="Game RTS FPS Tremulous"
            SHORT="Tremulous is a free, open source game that blends a team based FPS with elements of an RTS."
 cat << EOF
 Tremulous is a free, open source game that blends a team based FPS with elements of an RTS. 

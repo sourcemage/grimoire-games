@@ -1,3 +1,6 @@
+2006-04-07 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* DETAILS: deleted keywords
+
 2006-04-06 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* BUILD, DEPENDS, DETAILS, INSTALL: 
 	  updated version to 1.5
