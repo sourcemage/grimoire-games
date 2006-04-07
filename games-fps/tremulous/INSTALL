@@ -1,3 +1,5 @@
-cd ${SOURCE_DIRECTORY}                            &&
-cp -Rv * ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
-cp -v ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games
+cd ${SOURCE_DIRECTORY}                                        &&
+cp -Rv * ${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
+cp -pv ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games &&
+chmod 750 ${INSTALL_ROOT}/usr/games/${SPELL}                  &&
+chown root:games ${INSTALL_ROOT}/usr/games/${SPELL}

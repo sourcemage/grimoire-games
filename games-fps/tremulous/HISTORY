@@ -1,4 +1,7 @@
 2006-04-07 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* INSTALL: fixed permissions on /usr/games/tremulous
+
+2006-04-07 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* DETAILS: deleted keywords
 
 2006-04-03 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
