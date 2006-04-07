@@ -1,11 +1,12 @@
            SPELL=kmuddy
-         VERSION=0.6.1
+         VERSION=0.7.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.kmuddy.org/files/$SOURCE
         WEB_SITE=http://www.kmuddy.org
          ENTERED=20040422
-     SOURCE_HASH=sha512:9b1a7f8c03eaff45118b29d010137c13881688818c811dbb2bdbb59756c390e75561677f1d6f5e3ba3eef4cb75482bfd6c6128242db615cc46ade1c26f74da2d
+     SOURCE_HASH=sha512:10d4d61fa43e99f4726c8a0cec45b00797757c277985ded4529372d43cd2410c15346bfe136f4e62699e990faea07af4e04682db6b8a966594883c57813f3225
+       BUILD_API=2
            SHORT="KMuddy is a mud client designed for KDE"
 cat << EOF
 KMuddy is a mud client designed for KDE. It's features include ANSI Color,

@@ -1,3 +1,6 @@
+2006-04-06 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Version update and BUILD_API=2
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
