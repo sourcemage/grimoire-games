@@ -1,2 +1,5 @@
-2006-04-04: Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+2006-04-07 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* INSTALL: fixed permissions on /usr/games/viruskiller
+
+2006-04-04 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* ALL: created the spell
