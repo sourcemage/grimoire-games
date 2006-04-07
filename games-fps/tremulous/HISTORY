@@ -5,4 +5,5 @@
 	* DETAILS: deleted keywords
 
 2006-04-03 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
-	* ALL: created the spell
+	* BUILD, DEPENDS, DETAILS, INSTALL, PRE_BUILD,
+	  tremulous: created the spell
