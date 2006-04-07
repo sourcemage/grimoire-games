@@ -1,2 +1,0 @@
-default_install                              &&
-chmod 750 ${INSTALL_ROOT}/usr/games/${SPELL}
