@@ -1,3 +1,8 @@
+2006-04-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFIGURE: expaned
+	* BUILD: changed a tad
+	* DEPENDS: expanded
+
 2006-02-11 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 0.8.2
 

@@ -1,0 +1,32 @@
+config_query_list  SCUMMVM_BACKEND "What backend do you want?"                             \
+                   sdl  x11                                                                &&
+config_query_option SCUMMVM_OPTS                                                           \
+                    "build engines as loadable modules instead of static linking them"  n  \
+                    "--enable-plugins" "--disable-plugins"                                 &&
+config_query_option SCUMMVM_OPTS  "build the SCUMM engine" y                               \
+                    "--enable-scumm" "--disable-scumm"                                     &&
+config_query_option SCUMMVM_OPTS                                                           \
+                    "include v7 and v8 game in SCUMM engine (ft, dig, comi and demos)"  y  \
+                    "--enable-scumm-7-8" "--disable-scumm-7-8"                             &&
+config_query_option SCUMMVM_OPTS  "build the simon engine" y                               \
+                    "--enable-simon" "--disable-simon"                                     &&
+config_query_option SCUMMVM_OPTS  "build the Beneath a Steel Sky engine" y                 \
+                    "--enable-sky" "--disable-sky"                                         &&
+config_query_option SCUMMVM_OPTS  "build the Broken Sword 1 engine" y                      \
+                    "--enable-sword1" "--disable-sword1"                                   &&
+config_query_option SCUMMVM_OPTS  "build the Broken Sword 2 engine" y                      \
+                    "--enable-sword2" "--disable-sword2"                                   &&
+config_query_option SCUMMVM_OPTS  "build the Flight of the Amazon Queen engine" y          \
+                    "--enable-queen" "--disable-queen"                                     &&
+config_query_option SCUMMVM_OPTS  "build the SAGA engine" y                                \
+                    "--enable-saga" "--disable-saga"                                       &&
+config_query_option SCUMMVM_OPTS  "build the Gobli*ns engine" y                            \
+                    "--enable-gob" "--disable-gob"                                         &&
+config_query_option SCUMMVM_OPTS  "build the Legend of Kyrandia engine" y                  \
+                    "--enable-kyra" "--disable-kyra"                                       &&
+config_query_option SCUMMVM_OPTS  "enable the integrated MT-32 emulator" y                 \
+                    "--enable-mt32emu" "--disable-mt32emu"                                 &&
+config_query_option SCUMMVM_OPTS  "include HQ2x and HQ3x scalers" y                        \
+                    "--enable-hq-scalers" "--disable-hq-scalers"                           &&
+config_query_option SCUMMVM_OPTS  "include HE70+ games in SCUMM engine" y                  \
+                    "--enable-he" "--disable-he"

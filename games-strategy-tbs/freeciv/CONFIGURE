@@ -1,2 +1,7 @@
-config_query_list  FREECIV_CLIENT  "Use which graphical client?"  \
-                   "gtk2"  "gtk"  "xaw3d"
+config_query_list  FREECIV_CLIENT                                       \
+                   "Use which graphical client(if no don't build it)?"  \
+                   gtk2  gtk  xaw3d  xaw  no                            &&
+config_query_option  FREECIV_OPTS  "Build server?" y                    \
+                     "--enable-server" "--disable-server"               &&
+config_query_option  FREECIV_OPTS  "Compile in authentication?" n       \
+                     "--enable-auth" "--disable-auth"

@@ -1,7 +1,7 @@
-OPTS="   --bindir=$INSTALL_ROOT/usr/games        \
-        --datadir=$INSTALL_ROOT/usr/share/games  \
-  --localstatedir=$INSTALL_ROOT/var/games        \
-  --enable-client=$FREECIV_CLIENT                \
-                  $OPTS"                          &&
-
-default_build
+if   [[  $FREECIV_CLIENT  ==  "xaw" ]]; then
+OPTS="--with-xaw3d $OPTS"
+fi                                     &&
+OPTS="--enable-client=$FREECIV_CLIENT  \
+      $FREECIV_OPTS                    \
+      $OPTS"                           &&
+default_games_build
