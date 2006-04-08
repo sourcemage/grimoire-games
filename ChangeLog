@@ -1,8 +1,11 @@
+2006-04-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: the url should use $SPELL variable to generate the URL
+
 2006-04-04 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
-    * games-arcade-2d/viruskiller: new spell
+	* games-arcade-2d/viruskiller: new spell
 
 2006-04-03 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
-    * games-fps/tremulous: new spell
+	* games-fps/tremulous: new spell
 
 2006-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-emulators/e-uae: branched from uae transmutation
