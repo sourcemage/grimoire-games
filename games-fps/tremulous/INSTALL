@@ -1,3 +1,8 @@
-cd ${SOURCE_DIRECTORY}                                        &&
-cp -Rv * ${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
+cd ${SOURCE_DIRECTORY}                                              &&
+mkdir -p ${INSTALL_ROOT}/usr/share/games/${SPELL}/base              &&
+cp -Rv base/* ${INSTALL_ROOT}/usr/share/games/${SPELL}/base         &&
+cp *.x86 ${INSTALL_ROOT}/usr/share/games/${SPELL}                   &&
+cp ${SPELL}.xpm ${INSTALL_ROOT}/usr/share/pixmaps/                  &&
+mkdir -p ${INSTALL_ROOT}/usr/share/doc/${SPELL}                     &&
+cp CC COPYING GPL manual.pdf ${INSTALL_ROOT}/usr/share/doc/${SPELL} &&
 cp -pv ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games
