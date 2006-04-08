@@ -1,4 +1,9 @@
 2006-04-08 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* INSTALL, singularity: 
+	  i dont need to set permissions myself
+	  seperated startup file from INSTALL
+
+2006-04-08 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* DETAILS, INSTALL: version update, 
 	  fixed install for new version
 

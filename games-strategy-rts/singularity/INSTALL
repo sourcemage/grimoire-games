@@ -2,8 +2,4 @@ cd ${SOURCE_DIRECTORY}                                                &&
 cp -r code data Endgame_Linux /usr/share/games/${SPELL} &&
 mkdir -p /usr/share/doc/${SPELL}                                      &&
 cp AUTHORS Changelog GPL.txt README.txt TODO /usr/share/doc/${SPELL}  &&
-cd /usr/games                                                         &&
-echo "#!/bin/sh" > ${SPELL}                                           &&
-echo "/usr/share/games/${SPELL}/Endgame_Linux \"\$@\"" >> ${SPELL}    &&
-chown root:games ${SPELL}                                             &&
-chmod 0750 ${SPELL}
+cp ${SCRIPT_DIRECTORY}/singularity /usr/games
