@@ -1,17 +1,9 @@
-mkdir -p /usr/share/games/singularity &&
-cd $SOURCE_DIRECTORY &&
-cp -r * /usr/share/games/singularity &&
-cd /usr/share/games &&
-chown -R root:games singularity &&
-chmod -R g+rX singularity &&
-chmod -R o-rwx singularity &&
-mkdir -p /var/games/singularity &&
-chown root:games /var/games/singularity &&
-chmod 0770 /var/games/singularity &&
-rmdir singularity/saves &&
-ln -s /var/games/singularity singularity/saves &&
-cd /usr/games &&
-echo '#!/bin/sh' >singularity &&
-echo '/usr/share/games/singularity/Endgame_Linux $@' >>singularity &&
-chown root:games singularity &&
-chmod 0750 singularity
+cd ${SOURCE_DIRECTORY}                                                &&
+cp -r code data Endgame_Linux /usr/share/games/${SPELL} &&
+mkdir -p /usr/share/doc/${SPELL}                                      &&
+cp AUTHORS Changelog GPL.txt README.txt TODO /usr/share/doc/${SPELL}  &&
+cd /usr/games                                                         &&
+echo "#!/bin/sh" > ${SPELL}                                           &&
+echo "/usr/share/games/${SPELL}/Endgame_Linux \"\$@\"" >> ${SPELL}    &&
+chown root:games ${SPELL}                                             &&
+chmod 0750 ${SPELL}

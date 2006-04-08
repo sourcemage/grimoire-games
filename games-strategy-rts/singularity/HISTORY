@@ -1,3 +1,7 @@
+2006-04-08 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
+	* DETAILS, INSTALL: version update, 
+	  fixed install for new version
+
 2006-01-23 Neuron <vlmarek@volny.cz>
 	* DETAILS: Returned back BUILD_API=2, since it is not default as I
 	  thought
