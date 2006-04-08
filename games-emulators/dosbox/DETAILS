@@ -1,15 +1,14 @@
            SPELL=dosbox
-         VERSION=0.63
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+         VERSION=0.65
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:75754d851f1f71f61df5f2d625753a7f4f606d1e41c28cea1841ce342789decbf23d9378df83e27b7c491795ef70b57a4c4ff71fa04b28997d43f49f568c1f0a
+     SOURCE_HASH=sha512:3337605c20a9b8e6009ed26563fb171fddbd18f913166b4557688423e7fe841785df4cf842f5a50c95c1ad8bca712d802b034be347ea84f8fcab91a865c11edc
         WEB_SITE=http://dosbox.sourceforge.net
          ENTERED=20031012
          UPDATED=20040206
        BUILD_API=2
-      PATCHLEVEL=1
            SHORT="Dosbox is a DOS emulator developed mainly for games."
 cat << EOF
 DOSBox emulates a full x86 pc with sound and dos.
