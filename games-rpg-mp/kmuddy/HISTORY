@@ -1,3 +1,6 @@
+2006-04-08 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Fixed bad url
+
 2006-04-07 John Harding <johnh@kuberaconsulting.com>
 	* CONFIGURE: Added sound system question
 	* DEPENDS: sound system and libmxp processing
