@@ -1,11 +1,12 @@
            SPELL=kmuddy
-         VERSION=0.7.1
+         VERSION=0.8pre4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.kmuddy.net/files/$SOURCE
         WEB_SITE=http://www.kmuddy.net
          ENTERED=20040422
-     SOURCE_HASH=sha512:10d4d61fa43e99f4726c8a0cec45b00797757c277985ded4529372d43cd2410c15346bfe136f4e62699e990faea07af4e04682db6b8a966594883c57813f3225
+     SOURCE_HASH=sha512:5fafdf8dd3c13ec27ebb8fdcdf5d3e84dfe54e188846de4256527a0279feb49cbe1c75488591777c790ee1a367347912e0601e21ea9c66d8fa2f674ab8f594c4
+         LICENSE=GPL
        BUILD_API=2
            SHORT="KMuddy is a mud client designed for KDE"
 cat << EOF

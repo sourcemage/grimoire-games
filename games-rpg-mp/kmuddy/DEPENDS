@@ -1,8 +1,11 @@
 depends  kdelibs	&&
-if [[ "${SOUND}" == "sdl" ]]
+if [[ "${SOUND}" == "none" ]]
 then
-depends sdl "--with-sdl --without-arts"
+"--disable-sound"
+elif [[ "${SOUND}" == "sdl" ]]
+then
+depends sdl "--enable-sound --with-sdl --without-arts"
 else
-depends ${SOUND} "--with-arts --without-sdl"
+depends ${SOUND} "--enable-sound --with-arts --without-sdl"
 fi                      &&
 optional_depends libmxp "--with-libmxp" "--without-libmxp" "Improves mud playing experience"

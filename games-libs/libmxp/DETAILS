@@ -2,10 +2,11 @@
          VERSION=0.2.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-      SOURCE_URL="http://www.kmuddy.net/libmxp/#download"
+      SOURCE_URL=http://www.kmuddy.net/libmxp/files/$SOURCE
         WEB_SITE=http://www.kmuddy.net/libmxp
          ENTERED=20060407
      SOURCE_HASH=sha512:9855f1ff93ec00945b7946db32dcaafa95777b81b6dccb5926a985127a5af14dc3869f5c53d768c431bf17c1e5a1777584cf9d7a5229c10d35a00184572a4007
+         LICENSE=UNKNOWN
        BUILD_API=2
            SHORT="libmxp enhances mud play for several games"
 cat << EOF
