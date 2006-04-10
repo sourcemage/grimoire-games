@@ -1,14 +1,14 @@
            SPELL=tinyfugue
-         VERSION=40s1
+         VERSION=50b7
           SOURCE=tf-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
    SOURCE_URL[0]=http://ftp.tcp.com/pub/mud/Clients/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:cd51bdf60989891dd3f0f3a0e9f2fb92e6260a2dda120269713b29e58ba619abeebe9cb47a6381e26539a895071e02f34a23d914896fc5e089c5c801337b8581
+     SOURCE_HASH=sha512:f5a37af27ad08c6b6af640904614ecb6e15a6ef52114a32eac061c2b642702c0720a5fdf701f2f1c718aca620467b4b94ee34ff330071a13968e6b454d3d8333
         WEB_SITE=http://tf.tcp.com/~hawkeye/tf/
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="TinyFugue is a flexible, screen-oriented MUD client, for use with any type of MUD."
 cat << EOF
 TinyFugue is a power screen-oriented MUD client that can talk to any type of
