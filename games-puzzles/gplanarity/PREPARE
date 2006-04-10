@@ -1,0 +1,1 @@
+config_query  GPLANARITY_SVN_AUTOUPDATE  "Update to latest SVN on system-update?"  n

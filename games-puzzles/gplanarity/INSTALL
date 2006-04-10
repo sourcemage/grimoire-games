@@ -1,0 +1,1 @@
+install -v -m 750 -o root -g games gPlanarity $INSTALL_ROOT/usr/games
