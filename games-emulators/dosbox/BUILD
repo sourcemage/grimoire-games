@@ -1,5 +1,2 @@
-CFLAGS="${CFLAGS/-fPIC}"      &&
-CFLAGS="${CFLAGS/-DPIC}"      &&
-CXXFLAGS="${CXXFLAGS/-fPIC}"  &&
-CXXFLAGS="${CXXFLAGS/-DPIC}"  &&
+disable_pic  &&
 default_games_build

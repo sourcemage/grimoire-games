@@ -1,3 +1,6 @@
+2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: replaced fPIC and DPIC removal code with disable_pic()
+
 2006-02-27 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
 	* CONFIGURE: MAJOR overhaul
