@@ -1,3 +1,7 @@
+2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: added a new function: disable_pic()
+	  should be used when needing to get rid of -fPIC and -DPIC flags
+
 2006-04-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* games-puzzles/gplanarity: new spell
 
@@ -44,7 +48,7 @@
 
 2006-02-28 Mathieu Lonjaret <lejatorn@sourcemagecom>
 	* games-arcade-3d: added new spells xshipwars-client and
-	xshipwars-server
+	  xshipwars-server
 
 2006-02-25 George Sherwood <george@beernabeer.com>
 	* games-simulation/simgear: Moved to games-libs
