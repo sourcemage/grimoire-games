@@ -1,10 +1,6 @@
-#  sedit  's:\# TF="/usr/local:TF="/usr:'             unix/Config  &&
-#  sedit  's:\# LIBDIR="/usr/local:LIBDIR="/usr:'     unix/Config  &&
-#  sedit  's:\# SYMLINK="/usr/local:SYMLINK="/usr:'   unix/Config  &&
-#  sedit  's:\# MANPAGE="/usr/local:MANPAGE="/usr:'   unix/Config  &&
-#  sedit  "s:\# CCFLAGS=\"-g\":CCFLAGS=\"$CFLAGS\":"  unix/Config  &&
-#  chmod +x unix/Config       &&
-#  echo y | ./unixmake files  &&
-#  prepare_install            &&
-#  ./unixmake install
-default_games_build
+if  [[ "${TFVER}" == "Stable-40s1" ]]
+then
+  true
+else
+  default_games_build
+fi
