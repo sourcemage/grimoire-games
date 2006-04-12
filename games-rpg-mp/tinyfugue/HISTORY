@@ -1,3 +1,11 @@
+2006-04-12 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Allow for installing either Stable or Experimental
+	* DEPENDS: gcc34 for stable
+	* PRE_BUILD: Placed sedits in here for Stable api2
+	* BUILD: Modified to support Stable and Experimental
+	* INSTALL: Added to handle Stable
+	* CONFIGURE: Added to allow choice between Stable and Experimental
+
 2005-04-09 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: Version bump to 50b7 and BUILD_API=2
 	* BUILD: Changed to default_games_build
