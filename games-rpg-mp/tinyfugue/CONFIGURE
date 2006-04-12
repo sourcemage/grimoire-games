@@ -1,0 +1,4 @@
+config_query_list TFVER "Do you wish to install the stable verion (recommended) or the experimental version"  \
+                                    "Stable-40s1"       "Experimental-50b7"
+
+

@@ -1,0 +1,7 @@
+true                    &&
+if  [[ "${TFVER}" == "Stable-40s1" ]]
+then
+  ./unixmake install
+else
+  default_install
+fi

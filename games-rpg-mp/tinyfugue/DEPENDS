@@ -1,0 +1,4 @@
+if  [[ "${TFVER}" == "Stable-40s1" ]]
+then
+depends gcc34
+fi
