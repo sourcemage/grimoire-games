@@ -6,9 +6,9 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://snowstorm.sourceforge.net/cgi-bin/site.cgi
       LICENSE[0]=GPL
      SOURCE_HASH=sha512:3f9165fbf8fff081a862bfe81401a3b2ac227da58b84409beee8b0441f88b1a6deb3d24a1af6e71bd3a3484fc90de5574950fd54be82d837021a07f06302f0e1
-      MAINTAINER=v.merkatz@gmx.net
          ENTERED=20021211
          UPDATED=20021211
+       BUILD_API=2
            SHORT="Openglad is an SDL port of an old DOS game called Gladiator"
 cat << EOF
 Openglad is an SDL port of an old DOS game called Gladiator, which was developed by FSGames in the mid 90's. FSGames donated the original source (made for DOS, of course) under the GPL when one of them found our earlier project (now abandoned in favor of this one) to make a full Gladiator clone.
