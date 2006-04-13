@@ -1,13 +1,15 @@
            SPELL=xfrisk
-         VERSION=1.3beta
+         VERSION=1.3beta20031125
+             VER=1.3beta
           SOURCE=${SPELL}-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-$VERSION
-   SOURCE_URL[0]=http://morphy.iki.fi/xfrisk/files/${SOURCE}
-        WEB_SITE=http://morphy.iki.fi/xfrisk/index.html
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VER}
+   SOURCE_URL[0]=http://tuxick.net/xfrisk/files/${SOURCE}
+        WEB_SITE=http://tuxick.net/xfrisk/
          ENTERED=20021031
          UPDATED=20021031
-          MD5[0]=42b384c7939e44ab9019ceda8de44837
+     SOURCE_HASH=sha512:6101cd9e177c870775aa589999b52be198c56a7dbd10ebab83038a75df10330e4e928747260fc9fc1827a72f4a93871446edcefbeadc1ed978995cbcd923cc31
       LICENSE[0]=GPL
+       BUILD_API=2
            SHORT="Computer version of Risk(R), with networked multiplayer"
 cat << EOF
 XFrisk is a computer version of the classic Risk  board game. It is a multiplayer game played on a TCP/IP network, uses the X11 window system for graphics and runs on most UNIX and UNIX-like platforms.
