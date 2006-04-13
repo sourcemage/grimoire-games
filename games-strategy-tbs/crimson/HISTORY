@@ -1,3 +1,7 @@
+2006-04-13 John Harding <john@kuberaconsulting.com>
+	* DETAILS: Version bump, removed maintainer, converted to api2
+	* BUILD: Changed to default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
