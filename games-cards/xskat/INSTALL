@@ -1,0 +1,2 @@
+true  &&
+make install install.man BINDIR=/usr/games DOCHTMLDIR=/usr/share/doc/xskat/html MANPATH=/usr/share/man

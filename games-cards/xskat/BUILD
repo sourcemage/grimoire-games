@@ -1,2 +1,1 @@
-default_build    &&
-make install.man
+default_games_build
