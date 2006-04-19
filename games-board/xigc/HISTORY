@@ -1,3 +1,8 @@
+2006-04-18 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Convert to api2, removed maintainer
+	* BUILD: Convert to api2
+	* INSTALL: Added to get everthing to install to the right place
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

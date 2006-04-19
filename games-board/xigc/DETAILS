@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL\_v$VERSION
          ENTERED=20020320
          UPDATED=20020320
       LICENSE[0]=PD
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="xigc: a client for internet go servers."
 cat << EOF
 xigc provides an X Window System interface to the Internet

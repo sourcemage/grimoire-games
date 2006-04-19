@@ -1,0 +1,4 @@
+true      &&
+make install BINDIR=/usr/games DOCHTMLDIR=/usr/share/doc/xskat/html MANPATH=/usr/share/man &&
+install xigc.man /usr/share/man/man1/xigc.1x
+
