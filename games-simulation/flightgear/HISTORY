@@ -1,3 +1,8 @@
+2006-04-20 John Harding <johnh@kuberaconsulting.com>
+	* CONFIGURE: Deleted and moved config_query to PREPARE
+	* PREPARE: Created and populated per above
+	* DETAILS: Version bump to 0.9.10
+
 2006-03-29 John Harding <johnh@kuberaconsulting.com>
 	* CONFIGURE: Added config_query_list to choose
 	  between sdl, glut, and openglut. Current version

@@ -1,12 +1,12 @@
            SPELL=flightgear
-         VERSION=0.9.9
+         VERSION=0.9.10
           SOURCE=FlightGear-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Source/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Source/${SOURCE}
    SOURCE_URL[2]=ftp://ftp.de.flightgear.org/pub/fgfs/Source/${SOURCE}
    SOURCE_URL[3]=ftp://ftp.sunsite.org.uk/sites/ftp.flightgear.org/flightgear-ftp/Source/${SOURCE}
-     SOURCE_HASH=sha512:b0bbeeb78b1fd7a298eb9134a82379b33709f994ff83383d8e540344afa9b55c15458dc7db6111c32fb98f1fd278522d71e1676706d62b2d128e956d613262af
+     SOURCE_HASH=sha512:7d2684b683e18cec478e822a0e1228e2ad3c3e0bfa98ccbd93498842fb07411d2be39844230337ff29343bb3df7092dbb8382dd287f4011f752165858d50e458
         WEB_SITE=http://www.flightgear.org
          ENTERED=20010922
          UPDATED=20040107
