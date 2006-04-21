@@ -1,3 +1,6 @@
+2006-04-20 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Version bump to 0.9.10
+
 2006-02-24 George Sherwood <george@beernabeer.com>
 	* PRE_BUILD: Added decompress into proper directory
 	* DETAILS: Updated to version 0.9.9
