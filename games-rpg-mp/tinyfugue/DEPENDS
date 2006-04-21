@@ -1,4 +1,4 @@
-if  [[ "${TFVER}" == "devel" ]]
+if  [[ "${TFVER}" != "devel" ]]
 then
   depends gcc34
 fi
