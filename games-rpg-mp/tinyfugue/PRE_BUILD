@@ -1,5 +1,5 @@
 default_pre_build                      &&
-if  [[ "${TFVER}" == "Stable-40s1" ]]
+if  [[ "${TFVER}" != "devel" ]]
 then
   cd $SOURCE_DIRECTORY                 &&
   sedit  's:\# TF="/usr/local/bin:TF="/usr/games:'           unix/Config  &&

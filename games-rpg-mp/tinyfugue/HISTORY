@@ -1,3 +1,13 @@
+2006-04-20 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Reversed the if statement and changed variable names
+	* PREPARE: Added, at emrys suggestion, to ask the stable/devel question.
+	            Changed from Stable-40s1/Experimental-50b7 to stable/devel
+	* CONFIGURE: Deleted after removing the stable/devel question
+	* DEPENDS: Changed order of if statement and variable names
+	* PRE_BUILD: Changed order of if statement and variable names
+	* BUILD: Changed order of if statement and variable names
+	* INSTALL: Changed order of if statement and variable names
+
 2006-04-12 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: Allow for installing either Stable or Experimental
 	* DEPENDS: gcc34 for stable

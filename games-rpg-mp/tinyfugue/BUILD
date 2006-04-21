@@ -1,6 +1,6 @@
-if  [[ "${TFVER}" == "Stable-40s1" ]]
+if  [[ "${TFVER}" == "devel" ]]
 then
-  true
-else
   default_games_build
+else
+  true
 fi

@@ -1,7 +1,7 @@
 true                    &&
-if  [[ "${TFVER}" == "Stable-40s1" ]]
+if  [[ "${TFVER}" == "devel" ]]
 then
-  ./unixmake install
-else
   default_install
+else
+  ./unixmake install
 fi
