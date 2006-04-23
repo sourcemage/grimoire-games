@@ -1,14 +1,14 @@
            SPELL=wastesedge
-         VERSION=0.3.3
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=0.3.4
+          SOURCE=$SPELL-src-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/adonthell/src/$SOURCE
-     SOURCE_HASH=sha512:c49164dbf975ac44ace90e7dfdbf5ca733836655fc376b99306f30edccb272576458a2585693d45f6918c03204809ddafde6f160ea7015380675221b0424570c
+   SOURCE_URL[0]=http://savannah.nongnu.org/download/adonthell/$SOURCE
+     SOURCE_HASH=sha512:e9c350beb2933c146612120dd1894540f923bf451880eaaf77a12aa6bac8e32501fedf7732b6d3957dd42ec597a67b4151daa0e6d147e62b26751f71ab18955a
         WEB_SITE=http://adonthell.linuxgames.com
          ENTERED=20020517
          UPDATED=20020517
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="Open Source Role Playing Game"
 cat << EOF
 Listen to the water
