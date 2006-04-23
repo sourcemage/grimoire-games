@@ -1,3 +1,9 @@
+2006-04-23 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: convert to api2 and fixed source url
+	* PRE_BUILD: added, moved sedits here and fixed sedits
+	* INSTALL: added and moved stuff from BUILD here
+	* BUILD: convert to api2
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

@@ -2,13 +2,13 @@
          VERSION=1.1.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.sonic.net/pub/users/nbs/unix/x/vectoroids/$SOURCE
+   SOURCE_URL[0]=ftp://ftp.billsgames.com/unix/x/vectoroids/src/$SOURCE
      SOURCE_HASH=sha512:29f1f0b63456fb6329291f6caf01398d5be12179f320d3025a26816b7e5349e9e37aec9c8ab81a8094d5c47d87a0bf6e91964ec2c786a1e65d901f8720c03e32
         WEB_SITE=http://www.newbreedsoftware.com/vectoroids
          ENTERED=20011214
          UPDATED=20020426
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="Vectoroids is based on the X-Window PDA game Agendaroids"
 cat << EOF
 Vectoroids is based on the X-Window PDA game 'Agendaroids,' but uses

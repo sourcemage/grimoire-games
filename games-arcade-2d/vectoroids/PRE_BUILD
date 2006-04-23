@@ -1,0 +1,6 @@
+default_pre_build                                                            &&
+cd ${SOURCE_DIRECTORY}                                                       &&
+  sedit  's:PREFIX=/usr/local:PREFIX=/usr:'                        Makefile  &&
+  sedit  's:BIN_PREFIX=$(PREFIX)/bin:BIN_PREFIX=$(PREFIX)/games:'  Makefile  &&
+  sedit  's:MAN_PREFIX=$(PREFIX):MAN_PREFIX=$(PREFIX)/share:'      Makefile  &&  # FHS
+  sedit  's:$(PREFIX)/bin:$(PREFIX)/games:'                        Makefile
