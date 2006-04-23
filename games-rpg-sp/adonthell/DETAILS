@@ -1,14 +1,15 @@
            SPELL=adonthell
-         VERSION=0.3.3
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/$SPELL/src/$SOURCE
+         VERSION=0.3.4a
+             VER=0.3.4
+          SOURCE=$SPELL-src-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VER
+   SOURCE_URL[0]=http://savannah.nongnu.org/download/$SPELL/$SOURCE
         WEB_SITE=http://adonthell.linuxgames.com
-     SOURCE_HASH=sha512:1edcfb3c2abfe493f524a09032722e2b989bc864591f2531ea6225789939cbf1fe60898e66dbe277a43972b12d39fe7754a260668150d7473847ecede3d3db5e
+     SOURCE_HASH=sha512:cad641791c1085fe5d32199f6244f008dc0d7038858e8c2cf53cace615eca752be1d1edc01166ddde8ff8ab2012817d4bb7789fc2968f8cdbe5b7dd9ec71e273
          ENTERED=20020517
          UPDATED=20020604
       LICENSE[0]=GPL
-      MAINTAINER=g.clay@warwick.ac.uk
+       BUILD_API=2
            SHORT="Open Source Role Playing Game Engine"
 
 cat << EOF
