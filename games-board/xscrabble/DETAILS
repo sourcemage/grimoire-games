@@ -13,6 +13,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
       LICENSE[0]=GPL
       LICENSE[1]=GPL
             DOCS="CHANGES LICENSE README"
+       BUILD_API=2
            SHORT="Xscrabble is a networked, international implementation of Scrabble(TM)"
 cat << EOF
 Xscrabble is an enhancement of Matt Chapman's original Xscrabble program, which is a networked scrabble implementation for the X Window System. Among other things, version 2 adds internationalization features. English and French are currently supported (the corresponding dictionary files should be downloaded separately from the main package).

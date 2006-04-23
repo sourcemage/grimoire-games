@@ -1,3 +1,9 @@
+2006-04-23 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: converted to api2
+	* PRE_BUILD: moved most sedits from BUILD to PRE_BUILD
+	* BUILD: moved stuff from BUILD to PRE_BUILD and INSTALL
+	* INSTALL: moved stuff from BUILD to INSTALL
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
