@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020415
          UPDATED=20020415
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="xrick is a clone of the clasic game Rick Dangerous"
 cat << EOF
 Way before Lara Croft, back in the 1980's and early 1990's, Rick Dangerous was

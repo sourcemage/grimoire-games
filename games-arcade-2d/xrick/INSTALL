@@ -1,0 +1,11 @@
+  install  -d  -o  root -g  games  -m  775  /usr/games    &&
+  install  -d  -o  root -g  games  -m  755                \
+     /usr/share/games/${SPELL}                            &&
+  install  -o  root -g  games  -m  755   xrick            \
+     /usr/share/games/${SPELL}                            &&
+  install  -o  root -g  games  -m  755                    \
+    ${SCRIPT_DIRECTORY}/${SPELL}  /usr/games              &&
+  install  -m  644  xrick.6.gz  /usr/share/man/man6       &&
+  install  -m  644  data.zip                              \
+     /usr/share/games/${SPELL}
+

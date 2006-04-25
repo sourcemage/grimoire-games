@@ -1,1 +1,2 @@
-depends  sdl
+depends  sdl   &&
+depends  zlib
