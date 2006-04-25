@@ -1,3 +1,7 @@
+2006-04-24 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: convert to api2
+	* BUILD: convert to api2 default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
