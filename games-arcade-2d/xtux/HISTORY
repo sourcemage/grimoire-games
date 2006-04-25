@@ -1,3 +1,9 @@
+2006-04-24 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: convert to api2, remove MAINTAINER
+	* BUILD: api2 conversion
+	* INSTALL: added, moved stuff from BUILD to here
+	* DEPENDS: added depends X11-LIBS
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
