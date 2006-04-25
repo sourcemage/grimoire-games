@@ -1,3 +1,8 @@
+2006-04-25 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: api2 conversion, removed MAINTAINER
+	* BUILD: added with default_games_build
+	* DEPENDS: added depends on X11-LIBS
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

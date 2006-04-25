@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011116
          UPDATED=20011116
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
+       BUILD_API=2
            SHORT="xbill is a game that tests your reflexes"
 cat << EOF
 Xbill is a game that tests you reflexes as you seek and destroy all
