@@ -1,12 +1,9 @@
 2006-04-25 John Harding <johnh@kuberaconsulting.com>
-	* DETAILS: spell is deprecated, old spell abandoned and has
-      a known, serious security hole. Changed according to 
-	   deprecated spell instructions. Use armagetronad.
-	* INSTALL: added for deprecated spell
-	* PRE_BUILD: added for deprecated spell
-	* TRIGGERS: added for deprecated spell
-	* BUILD: changed to true
-	* DEPENDS: made depends on new spell armagetronad
+	* DETAILS: renamed spell from armagetron to armagetronad, 
+	   old spell abandoned, converted api2
+	* BUILD: converted to api2 default_games_build
+	* CONFLICTS: added for deprecated armagetron
+	* PRE_BUILD: added to sedit Makefile.paths
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
