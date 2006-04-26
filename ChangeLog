@@ -1,3 +1,7 @@
+2006-04-25 John Harding <johnh@kuberaconsulting.com>
+	* games-arcade-2d/armagetron: deprecated
+	* games-arcade-2d/armagetronad: added at recommendation of author's site
+
 2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added a new function: disable_pic()
 	  should be used when needing to get rid of -fPIC and -DPIC flags,
