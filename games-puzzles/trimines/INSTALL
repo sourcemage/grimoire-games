@@ -1,0 +1,5 @@
+TRIMINES_DIR=/usr/lib/trimines
+mkdir $TRIMINES_DIR
+cp trimines $TRIMINES_DIR/trimines-bin
+cp -R data $TRIMINES_DIR
+cp $SPELL_DIRECTORY/trimines /usr/games
