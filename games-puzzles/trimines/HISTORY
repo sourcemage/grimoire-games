@@ -1,2 +1,6 @@
+2006-04-30 Alex S. Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 1.2.1
+	* INSTALL: Corrected group and permissions of installed executables
+
 2006-04-29 Alex S. Tsamutali <astsmtl@gmail.com>
 	* Created this spell

@@ -1,10 +1,10 @@
            SPELL=trimines
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.freewebs.com/trimines/$SOURCE
         WEB_SITE=http://www.freewebs.com/trimines/
-  SOURCE_HASH[0]=sha512:8c4778e6b1e3fc2aa0e6be13ef82bf6e8bf874e87528264302eb6999daa2199d945abb0f5dbc83b78f8745a053a65504a9dd8633522a0b9ef6606539ebeb1b82
+  SOURCE_HASH[0]=sha512:b13c3f161ee1ad932bc6ccfb88816497cc629dc66cefa1653c8bec3fab58377fe85435f1fada5fc74f1b6e66c75c22297a86dd14d05aba5c1dcc0f228b6a76b1
          ENTERED=20060429
       LICENSE[0]=GPL
            SHORT="TriMines is a mine sweeper game that uses triangles instead of squares."

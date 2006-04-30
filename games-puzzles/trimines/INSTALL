@@ -1,5 +1,5 @@
 TRIMINES_DIR=/usr/lib/trimines
-mkdir $TRIMINES_DIR
-cp trimines $TRIMINES_DIR/trimines-bin
-cp -R data $TRIMINES_DIR
-cp $SPELL_DIRECTORY/trimines /usr/games
+mkdir -v $TRIMINES_DIR
+cp -v -R data $TRIMINES_DIR
+install -v -g games -m 750 trimines $TRIMINES_DIR/trimines-bin
+install -v -g games -m 750 $SPELL_DIRECTORY/trimines /usr/games/
