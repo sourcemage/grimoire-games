@@ -1,0 +1,32 @@
+           SPELL=starfighter
+         VERSION=1.1-1
+             VER=1.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VER}
+   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download.php?file=$SOURCE&type=zip"
+     SOURCE_HASH=sha512:1a9ea0bdce30199b36ca86484043b4f66e5abf693fb4de20f0132530d28cd87b47ca491e2a90d32a933c3a9de71bdd41b00c596faef86949b3cd59b1dba6ba61
+        WEB_SITE=http://www.parallelrealities.co.uk/starfighter.php
+         ENTERED=20060331
+         UPDATED=20060331
+      LICENSE[0]=GPL
+        NO_CACHE="-O ${SOURCE}"
+       BUILD_API=2
+           SHORT="Starfighter is a space based shootem up game"
+cat << EOF
+After decades of war one company, who had gained powerful supplying 
+both sides with weaponary, steps forwards and crushes both warring 
+factions in one swift movement. Using far superior weaponary and 
+AI craft, the company was completely unstoppable and now no one can stand 
+in their way. Thousands began to perish under the iron fist of the company. 
+The people cried out for a saviour, for someone to light this 
+dark hour... and someone did.
+
+    * 26 missions over 4 star systems
+    * Primary and Secondary Weapons (including a laser cannon and a charge weapon)
+    * A weapon powerup system
+    * Wingmates
+    * Missions with Primary and Secondary Objectives
+    * A Variety of Missions (Protect, Destroy, etc)
+    * 13 different music tracks
+    * Boss battles
+EOF
