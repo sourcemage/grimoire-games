@@ -1,0 +1,35 @@
+I've tried doing a version bump to 1.2 for exult and no matter which gcc I use I get the following error during cast:
+
+
+Making all in shapes
+make[2]: Entering directory `/usr/src/exult-1.2/shapes'
+source='bodies.cc' object='bodies.lo' libtool=yes \
+        depfile='.deps/bodies.Plo' tmpdepfile='.deps/bodies.TPlo' \
+        depmode=gcc3 /bin/sh ../depcomp \
+        /bin/sh ../libtool --mode=compile g++ -DHAVE_CONFIG_H -I. -I. -I.. -I./../headers -I./.. -I./../files -I./../imagewin -I/usr/include/SDL -D_REENTRANT -I/usr/include/freetype2  
+-DXWIN -O2 -Wno-long-long     -march=pentium3 -mmmx -mfpmath=sse -msse -pipe -O3 -c -o bodies.lo `test -f bodies.cc || echo './'`bodies.cc
+g++ -DHAVE_CONFIG_H -I. -I. -I.. -I./../headers -I./.. -I./../files -I./../imagewin -I/usr/include/SDL -D_REENTRANT -I/usr/include/freetype2 -DXWIN -O2 -Wno-long-long -march=pentium3 
+-mmmx -mfpmath=sse -msse -pipe -O3 -c bodies.cc -MT bodies.lo -MD -MP -MF .deps/bodies.TPlo -o bodies.o
+../hash_utils.h:32: error: 'std::hash_map' has not been declared
+../hash_utils.h:50: error: 'std::hash_set' has not been declared
+../game.h:60: error: ISO C++ forbids declaration of 'hash_map' with no type
+../game.h:60: error: expected ';' before '<' token
+../game.h:61: error: ISO C++ forbids declaration of 'hash_map' with no type
+../game.h:61: error: expected ';' before '<' token
+bodies.cc: In static member function 'static int Body_lookup::find(int, int&, int&)':
+bodies.cc:424: error: expected initializer before '<' token
+bodies.cc:429: error: 'htable' was not declared in this scope
+bodies.cc:432: error: expected type-specifier before 'hash_set'
+bodies.cc:432: error: expected `;' before 'hash_set'
+bodies.cc:456: error: 'hash_set' was not declared in this scope
+bodies.cc:456: error: expected primary-expression before 'short'
+bodies.cc:456: error: expected `;' before 'short'
+bodies.cc:461: error: 'it' was not declared in this scope
+bodies.cc:461: error: 'htable' was not declared in this scope
+make[2]: *** [bodies.lo] Error 1
+make[2]: Leaving directory `/usr/src/exult-1.2/shapes'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/usr/src/exult-1.2'
+make: *** [all] Error 2
+ ! Problem Detected ! 
+

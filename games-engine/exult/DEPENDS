@@ -1,0 +1,5 @@
+depends  sdl_mixer  &&
+optional_depends  timidity                    \
+                  ""                          \
+                  ""                          \
+                  "For sound mixing support"

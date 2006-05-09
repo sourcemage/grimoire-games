@@ -1,0 +1,17 @@
+           SPELL=exult
+         VERSION=1.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+        WEB_SITE=http://exult.sourceforge.net/
+         ENTERED=20011217
+         UPDATED=20021018
+     SOURCE_HASH=sha512:88211e7bf216180f025ad4d7318a49166364f5acb1ddaad3ae634c25bf0801eddb09aaf0a4989b5346145d0c743983007bde37ce0344faf586c2b070956b9f08
+      LICENSE[0]=GPL
+       BUILD_API=2
+           SHORT="Exult is an open-source game engine for playing Ultima7"
+cat << EOF
+Exult is an open-source game engine for playing Ultima7 on modern
+operating systems, using the game's original data files.
+If you don't own Ultima 7 this engine will be of no use to you.
+EOF
