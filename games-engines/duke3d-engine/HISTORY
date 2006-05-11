@@ -1,4 +1,7 @@
-2006-05-10 John Harding <johnh@kuberaconsulting.com>
+2006-05-11 John Harding <johnh@kuberaconsulting.com>
+	* BUILD: removed strip per ruskie
+
+2006-05-11 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: converted to api2 and added GCC_VERSION=3.3
 	* DEPENDS: added dependencies on nasm and gcc33
 	* BUILD: split out stuff to INSTALL per api2 and cleaned
