@@ -12,6 +12,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 	SOURCE2_IGNORE=unversioned
       LICENSE[0]=GPL
   FORCE_DOWNLOAD=on
+     GCC_VERSION=3.3
+       BUILD_API=2
            SHORT="Duke Nukem 3D - the classic action game (engine only)"
 cat << EOF
 Duke Nukem 3D - the classic action game (engine only)

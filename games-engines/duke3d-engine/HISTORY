@@ -1,3 +1,10 @@
+2006-05-10 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: converted to api2 and added GCC_VERSION=3.3
+	* DEPENDS: added dependencies on nasm and gcc33
+	* BUILD: split out stuff to INSTALL per api2 and cleaned
+	   up formatting
+	* INSTALL: Created for api2 per above
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
 
