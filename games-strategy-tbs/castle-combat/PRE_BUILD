@@ -1,0 +1,3 @@
+default_pre_build           &&
+#Current Makefile.in fails due to man???
+cp $SCRIPT_DIRECTORY/Makefile.in .

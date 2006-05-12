@@ -1,7 +1,5 @@
-(
-#Current Makefile.in fails due to man???
-cp $SCRIPT_DIRECTORY/Makefile.in . &&
-
+true  &&
+cd $SOURCE_DIRECTORY  &&
 #to use the more update SDL_net headers
 #sedit "s/\"SDL_net\/SDL_net.h\"/\<SDL\/SDL_net.h\>/g" src/net.c &&
 #sedit "s/\"SDL_net\/SDL_net.h\"/\<SDL\/SDL_net.h\>/g" src/main.c &&
@@ -19,8 +17,5 @@ cp $SCRIPT_DIRECTORY/Makefile.in . &&
                ${OPTS}               &&
 #Makefile magic to stop installation of SDL_net.h 
 sedit "s/SDL_net.h/ /g" src/SDL_net/Makefile &&
-  make                               &&
-  prepare_install                    &&
-  make    install
 
-) > ${C_FIFO} 2>&1
+make
