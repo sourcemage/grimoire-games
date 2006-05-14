@@ -1,14 +1,15 @@
            SPELL=tuxmathscrabble
-         VERSION=2.7
-          SOURCE=${SPELL}-${VERSION}.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/TuxMathScrabble
+         VERSION=2.9-r1
+          SOURCE=TuxMathScrabble-${VERSION}.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/TuxMathScrabble-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:4f5392a1edd4f6e8bfa84838d001df0ec4e590d716968cead8b0c8ee5fd1f2b90bc274897d3c61cb4d35b85e00fbbbeccccac7e6a22d302d7913f651322d2298
+     SOURCE_HASH=sha512:26bfec5380121f69ae328ff0d24e365201d4968903d86d8b99ca57a0db7fc270bb42492c28817ea7bbce0a2a8f4ae876a42b80b917654f0089484f5ed2db322a
         WEB_SITE=http://www.asymptopia.org/
          ENTERED=20031118
          UPDATED=20031118
       LICENSE[0]=GPL
             DOCS="COPYING README NEWS"
+       BUILD_API=2
            SHORT="Math version of the popular board game Scrabble(TM)"
 cat << EOF
 Tux Math Scrabble is a math version of the popular board game for ages 4-40, which is highly entertaining as well as great educational value. The game challenges young people to construct compound equations and consider multiple abstract possibilities. There are three skill-levels for practice from basic addition and subtraction through to multiplication and division.

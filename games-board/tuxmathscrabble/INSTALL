@@ -1,0 +1,4 @@
+mkdir -p {INSTALL_ROOT}/usr/games                         &&
+chmod +x ./setup_xpress.py                                &&
+./setup_xpress.py                                         &&
+sedit  's:/usr/local:/usr:' /usr/games/tuxmathscrabble
