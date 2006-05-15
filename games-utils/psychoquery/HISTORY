@@ -1,3 +1,7 @@
+2006-05-15 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: api2 conversion
+	* BUILD: added with true
+
 2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: removed
 	* INSTALL: added
