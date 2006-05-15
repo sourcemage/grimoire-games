@@ -1,6 +1,8 @@
 echo  "Yes
-Yes"  |  ./install.pl                             &&
+Yes"  |  ./install.pl                                          &&
+mkdir -p ${INSTALL_ROOT}/usr/share/${SPELL}                    &&
+mkdir -p ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}         &&
 cp  -r  themes  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}  &&
 cp  *.cfg  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}       &&
 cp  *.txt  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}       &&
-cp  changelog  cronexample  stats.pl  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}
+cp  stats.pl  ${INSTALL_ROOT}/usr/share/${SPELL}/${VERSION}

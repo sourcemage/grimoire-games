@@ -1,1 +1,7 @@
-depends  WEBSERVER
+depends  WEBSERVER  &&
+depends  dbi        &&
+depends  dbd-mysql  &&
+optional_depends  term-readkey  \
+                  "y"           \
+                  ""            \
+                  "makes configuration easier"

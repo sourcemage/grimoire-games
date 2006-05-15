@@ -1,6 +1,11 @@
+2006-05-15 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: api2 and version bump to 2.3.3
+	* DEPENDS: added several perl modules
+	* INSTALL: changed per new version
+
 2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-        * BUILD: modified
-        * INSTALL: added
+	* BUILD: modified
+	* INSTALL: added
 
 2005-11-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: license is GPL and added sha512
