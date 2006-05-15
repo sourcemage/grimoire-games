@@ -1,3 +1,8 @@
+2006-05-15 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: api2 conversion, version bump and remove MAINTAINER
+	* DEPENDS: it was empty, added ncurses
+	* BUILD: api2 conversion - default_games_build and appropriate opts
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
