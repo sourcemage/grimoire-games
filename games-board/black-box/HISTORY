@@ -1,3 +1,8 @@
+2006-05-14 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: convert to api2 and version bump to 1.4.7
+	* DEPENDS: added depends on sdl_image
+	* BUILD: convert to api2 and remove sedits
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
