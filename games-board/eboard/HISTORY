@@ -1,3 +1,6 @@
+2006-05-15 John Harding <johnh@kuberaconsulting.com>
+	* BUILD: added ${INSTALL_ROOT} to sedit lines per sandalle
+
 2006-05-14 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: convert to api2
 	* DEPENDS: added g++
