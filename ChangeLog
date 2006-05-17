@@ -1,3 +1,7 @@
+2006-05-16 Daniel Goller <dgoller@satx.rr.com>
+	* edutainment/celestia: moved to devel/science/celestia, it's more
+	appropriate there.
+
 2006-04-29 Alex S. Tsamutali <astsmtl@gmail.com>
 	* games-puzzles/trimines: new spell, a mine sweeper game that uses triangles
 
