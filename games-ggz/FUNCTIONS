@@ -1,0 +1,110 @@
+. $GRIMOIRE/libaccount
+. $GRIMOIRE/libgcc
+
+#---------------------------------------------------------------------
+# Runs update-desktop-database if it is installed
+#---------------------------------------------------------------------
+function update_desktop_database ()
+{
+  if test -x /usr/bin/update-desktop-database; then
+    message "${MESSAGE_COLOR}Updating application mime type database.${DEFAULT_COLOR}"
+    /usr/bin/update-desktop-database
+  fi
+}
+
+#---------------------------------------------------------------------
+## Sets the current script to run only one make job
+#---------------------------------------------------------------------
+
+function make_single ()
+{
+  JOBS_PER_HOST=0  &&
+     MAKE_NJOBS=1
+}
+
+#---------------------------------------------------------------------
+## Re-enables the normal Sorcery make (cancels single_make)
+#---------------------------------------------------------------------
+
+function make_normal ()
+{
+  source $COMPILE_CONFIG
+}
+
+#---------------------------------------------------------------------
+## replacement for config_query_string to work around a short timeout
+## when entering long strings (hostnames, organisation names)
+#---------------------------------------------------------------------
+function config_query_long_string() {
+    local ANSWER
+    local DELAY=5 
+    if config_get_option "$1" ANSWER; then
+        # option allready answered in config
+        echo -e "[[ ${QUERY_COLOR}$2${DEFAULT} -> '${QUERY_COLOR}$ANSWER${DEFAULT}' ]]"
+    else
+        query_string ANSWER "$2" "$3"
+        read -t $DELAY -n 1 ANSWER_first
+        if [[ $ANSWER_first ]] ; then 
+          read ANSWER_rest
+        fi
+        ANSWER="${ANSWER_first}${ANSWER_rest}"
+        config_set_option "$1" "$ANSWER"
+    fi
+    return 0
+}
+
+#---
+## @Synopsis default_games_build function to replace
+## @Synopsis all the duplication of the same stuff in games-grimoire
+#---
+
+function default_games_build() {
+  default_build
+}
+
+
+#---
+## @Synopsis profile_install function to make installing
+## @Synopsis of /etc/profile.d/$spell.sh easier...
+#---
+
+function profile_install() {
+  if [ -f ${SCRIPT_DIRECTORY}/profile/${SPELL}.sh ] ; then
+    if ! [ -e ${INSTALL_ROOT}/etc/profile.d/${SPELL}.sh ] ; then
+      install  -m  755  ${SCRIPT_DIRECTORY}/profile/${SPELL}.sh \
+                        ${INSTALL_ROOT}/etc/profile.d/${SPELL}.sh
+    fi
+  fi
+   
+}
+
+
+#-------------------------------------------------------------------------
+## Compatibility code for gracefully failing if the user uses an older
+## version of sorcery with a spell that calls unpack_file.
+#-------------------------------------------------------------------------
+declare -f unpack_file &> /dev/null ||
+function unpack_file() {
+  message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
+  return 1
+}
+
+#---
+## @Synopsis default_post_install function to
+## @Synopsis clean out any empty share/games/SPELL dirs
+## @Synopsis and run the real_default_post_install afterwards
+#---
+
+function default_post_install() {
+  real_default_post_install
+}
+
+#---
+## @Synopsis default_pre_install function to
+## @Synopsis create some base dirs for spells
+## @Synopsis after running real_default_pre_install
+#---
+
+function default_pre_install() {
+  real_default_pre_install
+}

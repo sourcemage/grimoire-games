@@ -1,3 +1,6 @@
+2006-05-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-ggz: use the same FUNCTIONS file as games-libs
+
 2006-05-16 Daniel Goller <dgoller@satx.rr.com>
 	* edutainment/celestia: moved to devel/science/celestia, it's more
 	appropriate there.
