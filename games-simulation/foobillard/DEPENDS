@@ -2,6 +2,10 @@ depends  libpng     &&
 depends  sdl        &&
 depends  freetype2  &&
 
+if  [  "$(get_spell_provider  sdl  X11-LIBS)"  ==  "xorg-server"  ];  then
+  depends  libxi
+fi                  &&
+
 optional_depends  GLUT                                        \
                   "--enable-glut"                             \
                   ""                                          \
