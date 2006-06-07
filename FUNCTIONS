@@ -219,3 +219,28 @@ CXXFLAGS=${CXXFLAGS/-fPIC}                &&
 CXXFLAGS=${CXXFLAGS/-DPIC}
 fi
 }
+#
+## Function to check if we're using xorg-modular libs or not
+#
+function check_if_xorg_modular_libs()
+{
+  if  [[  "$(get_spell_provider  ${1:-$SPELL}  X11-LIBS)"  ==  "xorg-server"  ]] ||
+      [[  "$(get_spell_provider  ${1:-$SPELL}  X11-LIBS)"  ==  "xorg-libs"  ]]     
+  then
+     return 0
+  fi
+  return 1
+}
+
+#
+## Function to check if we're using xorg-modular server or not
+#
+
+function check_if_xorg_modular_server()
+{
+   if  [[  "$(get_spell_provider  ${1:-$SPELL}  X11-LIBS)"  ==  "xorg-server"  ]] ||
+   then
+      return 0
+   fi
+   return 1
+}
