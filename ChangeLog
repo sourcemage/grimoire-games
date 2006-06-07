@@ -1,5 +1,5 @@
 2006-06-07 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* FUNCTIONS: added functions to check for xorg-modular stuff
+	* FUNCTIONS: added functions to check for xorg-modular stuff, minor fix
 
 2006-05-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-ggz: use the same FUNCTIONS file as games-libs
