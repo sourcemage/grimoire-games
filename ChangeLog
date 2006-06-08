@@ -1,3 +1,6 @@
+2006-06-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: use X11-SERVER nod X11-LIBS for the server check
+
 2006-06-07 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added functions to check for xorg-modular stuff, minor fix
 

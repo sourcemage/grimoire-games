@@ -238,7 +238,7 @@ function check_if_xorg_modular_libs()
 
 function check_if_xorg_modular_server()
 {
-   if  [[  "$(get_spell_provider  ${1:-$SPELL}  X11-LIBS)"  ==  "xorg-server"  ]]
+   if  [[  "$(get_spell_provider  ${1:-$SPELL}  X11-SERVER)"  ==  "xorg-server"  ]]
    then
       return 0
    fi
