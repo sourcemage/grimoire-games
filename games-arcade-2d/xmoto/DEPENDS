@@ -6,4 +6,5 @@ depends lua        &&
 depends ode        &&
 depends jpeg       &&
 depends libpng     &&
-depends zlib
+depends zlib       &&
+optional_depends  curl  ""  ""  "for online highscore system"

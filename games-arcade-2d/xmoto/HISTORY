@@ -1,3 +1,6 @@
+2006-06-09 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added curl as optional depends
+
 2006-06-08 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: version 0.1.14
 
