@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/KXL-$VERSION
       LICENCE[0]=GPL
         WEB_SITE=http://kxl.hn.org/
          ENTERED=20040220
-       BUILD_API=1
            SHORT='KXL is a library for developing games on X Window'
 cat << EOF
 KXL is the library developed for the purpose of the ability to develop

@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020915
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
-       BUILD_API=1
            SHORT="C++ utility library for editor developers"
 cat << EOF
 Varconf is a C++ utility library for all editor developers. It provides:

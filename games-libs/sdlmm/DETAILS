@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
          ENTERED=20030902
          UPDATED=20030902
       LICENSE[0]=GPL
-       BUILD_API=1
            SHORT="C++ glue for SDL"
 cat << EOF
 SDLmm is a C++ glue for SDL, or the Simple DirectMedia Layer, which is a generic API that provides 

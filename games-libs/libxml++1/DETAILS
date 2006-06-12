@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/libxml++-$VERSION
         WEB_SITE=http://libxmlplusplus.sf.net
          ENTERED=20010922
          UPDATED=20020129
-       BUILD_API=1
            SHORT="libxml++ is a C++ interface for working with XML files"
 cat << EOF
 libxml++ is a C++ interface for working with XML files, using libxml
