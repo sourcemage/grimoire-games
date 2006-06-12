@@ -1,0 +1,50 @@
+--- data.h~     2006-06-12 21:03:36.000000000 +0200
++++ data.h      2006-06-12 21:03:46.000000000 +0200
+@@ -54,4 +54,16 @@
+ 
+ extern int gotlemon;
+ 
++struct alien {
++    int x, y;
++    int dir;
++    int steer;
++    int alive;
++    int dying;
++    int path, path_pos;
++    int escorting;
++    int entering, enterdelay;
++    W_Image *shape;
++};
++
+ extern struct alien aliens[];
+--- struct.h~   1998-04-12 08:03:21.000000000 +0200
++++ struct.h    2006-06-12 21:04:15.000000000 +0200
+@@ -13,18 +13,6 @@
+     W_Color color;
+ };
+ 
+-struct alien {
+-    int x, y;
+-    int dir;
+-    int steer;
+-    int alive;
+-    int dying;
+-    int path, path_pos;
+-    int escorting;
+-    int entering, enterdelay;
+-    W_Image *shape;
+-};
+-
+ struct explosion {
+     struct explosion *next, *prev;
+     int x, y;
+--- libsprite/data.h~   1998-04-12 08:03:22.000000000 +0200
++++ libsprite/data.h    2006-06-12 20:58:04.000000000 +0200
+@@ -20,6 +20,7 @@
+ 
+ #include "Wlib.h"
+ #include "defs.h"
++#include "struct.h"
+ 
+ extern int     nplanes;
+ extern int     xpmORplanes ;
