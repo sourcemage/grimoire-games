@@ -4,13 +4,11 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_URL[0]=http://www.pknet.com/~joe/$SOURCE
          WEB_SITE=http://www.pknet.com/~joe/dgen-sdl.html
-         ENTERED=20020208
-         UPDATED=20020208
-     SOURCE_HASH=sha512:71a35a4e5ba2e1a5e06e0f6ebb2316383937ce6693d8cdad5b8b4e5480812db0ba30d19cac08c47e606796100973773c6522944a3498c9d5343d718ca8a5f0b6
-      LICENSE[0]=BSD
-      MAINTAINER=g.clay@warwick.ac.uk
-       BUILD_API=1
-           SHORT="dgen-sdl is an emulator of the SEGA Genesis/MegaDrive"
+          ENTERED=20020208
+          UPDATED=20020208
+      SOURCE_HASH=sha512:71a35a4e5ba2e1a5e06e0f6ebb2316383937ce6693d8cdad5b8b4e5480812db0ba30d19cac08c47e606796100973773c6522944a3498c9d5343d718ca8a5f0b6
+       LICENSE[0]=BSD
+            SHORT="dgen-sdl is an emulator of the SEGA Genesis/MegaDrive"
 cat << EOF
 DGen/SDL is a free, open source emulator for Sega Genesis/MegaDrive
 systems. The latest version supports save states, interlace mode,

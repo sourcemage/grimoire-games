@@ -1,5 +1,6 @@
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
-	* DETAILS: inserted BUILD_API=1 line
+	* BUILD, PRE_BUILD, dgen-fixes.patch: moved compile fix to PRE_BUILD
+	* BUILD: use default_games_build
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
