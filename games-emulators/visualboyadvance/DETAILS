@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/VisualBoyAdvance-${VERSION}
         WEB_SITE=http://vba.ngemu.com
          ENTERED=20040410
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="VisualBoyAdvance is a GBA emulator"
 cat << EOF
 An emulator for Gameboy and GameboyAdvance systems.

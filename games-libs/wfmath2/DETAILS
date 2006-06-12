@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/wfmath-$VERSION
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="This is the Worldforge math library"
 cat << EOF
 This is the Worldforge math library.

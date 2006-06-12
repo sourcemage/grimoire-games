@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020115
          UPDATED=20020115
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="TuxNES is an emulator for the 8-bit Nintendo Entertainment System."
 cat << EOF
 TuxNES is based on Nestra, a great public-domain NES emulator by

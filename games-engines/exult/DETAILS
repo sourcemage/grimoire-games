@@ -13,6 +13,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
       LICENSE[1]=UNKNOWN
       MAINTAINER=g.clay@warwick.ac.uk
+       BUILD_API=1
            SHORT="Exult is an open-source game engine for playing Ultima7"
 cat << EOF
 Exult is an open-source game engine for playing Ultima7 on modern

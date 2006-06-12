@@ -11,6 +11,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/media
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
          ARCHIVE="off"
+       BUILD_API=1
            SHORT="Music files required for the WorldForge Acorn game"
 cat << EOF
 This contains the music files required for the WorldForge Acorn game.

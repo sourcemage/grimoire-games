@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://ggzgamingzone.org
          ENTERED=20030606
          UPDATED=20040216
+       BUILD_API=1
            SHORT="GGZ Gaming Zone GNOME client"
 cat << EOF
 GGZ Gaming Zone server libraries provides the common procedures and

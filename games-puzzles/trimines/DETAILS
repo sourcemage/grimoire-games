@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
   SOURCE_HASH[0]=sha512:b13c3f161ee1ad932bc6ccfb88816497cc629dc66cefa1653c8bec3fab58377fe85435f1fada5fc74f1b6e66c75c22297a86dd14d05aba5c1dcc0f228b6a76b1
          ENTERED=20060429
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="TriMines is a mine sweeper game that uses triangles instead of squares."
 cat << EOF
 TriMines is a mine sweeper game that uses triangles instead of squares.

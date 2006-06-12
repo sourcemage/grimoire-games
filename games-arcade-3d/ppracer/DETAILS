@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20050425
      SOURCE_HASH=sha512:5d2b540f28ac5140e53850cde6deb5cb83395a60874c1ab9e713f63762acd1e79947844f671e4928fc8d8f5e5d90877c7f158deac18a9e1e0f0009fb9664c511
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="Updated Tuxracer Clone"
 cat << EOF
 PlanetPenguin Racer is an OpenGL racing game 

@@ -1,3 +1,6 @@
+2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: inserted BUILD_API=1 line
+
 2006-04-30 Alex S. Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 1.2.1
 	* INSTALL: Corrected group and permissions of installed executables

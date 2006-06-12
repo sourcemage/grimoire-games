@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20040529
          UPDATED=20040529
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="NiL isn't Liero"
 cat << EOF
 The game itself can be described either as >Quake in 2D< or >Worms done right<  (i.e. it is not turn

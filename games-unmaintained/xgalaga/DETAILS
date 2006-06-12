@@ -10,6 +10,7 @@
          ENTERED=20020916
          UPDATED=20020916
           REJECT="Author MIA for over two years"
+       BUILD_API=1
            SHORT="xgalaga is a clone of the famous game galaga"
 cat << EOF
 xgalaga is a clone of the famous 2d shooter galaga using the x windows system

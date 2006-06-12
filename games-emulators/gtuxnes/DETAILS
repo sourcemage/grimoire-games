@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 	MAINTAINER=pradierdavid@yahoo.fr
          ENTERED=20020320
          UPDATED=20020320
+       BUILD_API=1
            SHORT="GTuxNES is a graphical launcher for the Nintendo Emulator TuxNES."
 cat << EOF
 GTuxNES is a graphical launcher for the Nintendo Emulator TuxNES.  TuxNES

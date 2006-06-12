@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20031206
 #     SOURCE_HASH=sha512:b3c708e49ed1a2ad2bdfcb77bf6963e7838c410f2cf5b0a9ff28e9904690f13ecd342540adb86968567ededfa92b99e1b9c9208b1097c4561b8887a9b97f487c
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="In this game, you ride a lightcycle around the game grid."
 cat << EOF
 (Pronunciation: just like Armageddon, just with a "tr" instead of the "dd".) 

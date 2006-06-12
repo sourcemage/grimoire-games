@@ -11,6 +11,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/media
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
          ARCHIVE="off"
+       BUILD_API=1
            SHORT="Media files required for the WorldForge Mason game"
 cat << EOF
 This contains the media files required for the WorldForge Mason game.

@@ -1,3 +1,6 @@
+2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: inserted BUILD_API=1 line
+
 2005-12-07 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 0.0.12
 	  changed SOURCE_URL

@@ -24,6 +24,7 @@ fi
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="C++ utility library for WorldForge developers"
 cat << EOF
 COAL is a C++ utility library for client and editor developers. It provides:

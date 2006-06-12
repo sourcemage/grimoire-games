@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030123
          UPDATED=20040106
       LICENSE[0]=BSD
+       BUILD_API=1
            SHORT="bsd-games are games and fun programs from BSD."
 cat << EOF
 caesar: rot13 generalized.

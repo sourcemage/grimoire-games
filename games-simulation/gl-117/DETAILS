@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-src
          UPDATED=20040917
      SOURCE_HASH=sha512:b30dea0e59cd554b2c1dc532300898c04b1de9b40a142a2dc0e37827845ed520aa6586ab4d5f2b11bd99aff68b4003e7c8fe0a079cf324af06510541bf9480fb
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="GL-117 is an action flight simulator for Linux/Unix and MSWindows"
 cat << EOF
 GL-117 is an action flight simulator for Linux/Unix and MSWindows.

@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/themes
          UPDATED=20020608
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
+       BUILD_API=1
            SHORT="More themes for xpenguins (e.g. Winnieh the Pooh"
 cat << EOF
 xpenguins_themes supplies even more themes vor the xpenguins package.

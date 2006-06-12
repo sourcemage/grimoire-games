@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=LGPL
       MAINTAINER=eric@sandall.us
             DOCS="COPYING README"
+       BUILD_API=1
            SHORT="Convert cal3d to/from XML"
 cat << EOF
 Cal3d-Converter is a simple tool that convert binary cal3d file formats to xml (text) file formats (or the inverse).

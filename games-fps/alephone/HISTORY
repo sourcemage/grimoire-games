@@ -1,3 +1,6 @@
+2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: inserted BUILD_API=1 line
+
 2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update
 	* BUILD: fixup

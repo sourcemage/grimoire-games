@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
          ENTERED=20020826
          UPDATED=20020826
+       BUILD_API=1
            SHORT="gnuboy (all lowercase) is a portable program for emulating the Nintendo GameBoy Color software platform."
 cat << EOF
 gnuboy (all lowercase) is a portable program for emulating the Nintendo GameBoy Color software platform. gnuboy is Free Software, distributed under the terms of the GNU General Public License. Our goal is to provide a great emulator that runs on many platforms and is accessible for everyone's enjoyment.

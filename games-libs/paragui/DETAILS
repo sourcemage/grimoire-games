@@ -11,6 +11,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20040106
       LICENSE[0]=LGPL
       MAINTAINER=eric@sandall.us
+       BUILD_API=1
            SHORT='Cross-platform high-level application framework and GUI library'
 cat << EOF
 ParaGUI is a cross-platform high-level application framework and GUI (graphical user interface) library. 

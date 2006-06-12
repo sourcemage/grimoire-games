@@ -17,6 +17,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="UI interface encoded into a tree"
 cat << EOF
 Janus provides an interface to pass UI descriptions encoded in a tree structure, to change widget attributes at runtime, and to call widget methods. Methods inside the application can be bound to UI events. The API is completely independent of the UI library used, so it also provides universal methods to initialize the underlying widget toolkit.

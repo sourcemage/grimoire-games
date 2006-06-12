@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020131
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
+       BUILD_API=1
            SHORT="tuxtype is a typing tutorial game starting Tux"
 cat << EOF
 TuxTyping is an educational typing tutorial game starring Tux, the

@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040425
      SOURCE_HASH=sha512:28c7fff48624b73452a4e00b3b529ec1019a86feed07f7ff70206a961f019a3f3e3ed84f709f435c507c956d252744fbebe2f6d426db019f5486284934c5339e
       LICENSE[0]=GPL
+       BUILD_API=1
            SHORT="libspectrum - file i/o for ZX Spectrum emulator"
 cat << EOF
 libspectrum is a library designed to make the input and output

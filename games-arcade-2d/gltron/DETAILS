@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20040107
+       BUILD_API=1
            SHORT="gltron is a tron-like lightcycle game with a nice 3D perspective."
 cat << EOF
 glTron is a tron-like lightcycle game with a nice 3D perspective. 3D

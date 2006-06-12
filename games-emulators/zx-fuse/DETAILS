@@ -12,6 +12,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
          ENTERED=20040425
       LICENSE[0]=GPL
       MAKE_NJOBS=1
+       BUILD_API=1
            SHORT="Fuse (the Free Unix Spectrum Emulator)"
 cat << EOF
 Fuse (the Free Unix Spectrum Emulator) was originally,

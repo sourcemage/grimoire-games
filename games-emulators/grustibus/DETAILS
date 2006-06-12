@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:daeafee01f518bb7a2f00f20b22b4cbecdded5617481d9455d017a8070b4575b736ef39695c4db0005a417cc2d121d1bdcd7315478a82429379adcc11075efda
       LICENSE[0]=GPL
       MAINTAINER=v.merkatz@gmx.net
+       BUILD_API=1
            SHORT="gRustibus is an Xmame front-end for Gnome."
 cat << EOF
 gRustibus is a M.A.M.E. frontend for the GNOME environment. Its goal

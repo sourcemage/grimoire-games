@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
       MAINTAINER=eric@sandall.us
             DOCS="COPYING README"
+       BUILD_API=1
            SHORT="Cal3d model viewer"
 cat << EOF
 Cal3d-MiniViewer is a simple model viewer tool that renders animated models with the help of the cal3d character animation library and OpenGL/GLUT.
