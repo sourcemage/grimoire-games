@@ -7,12 +7,12 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030123
          UPDATED=20040106
       LICENSE[0]=BSD
-       BUILD_API=1
            SHORT="bsd-games are games and fun programs from BSD."
 cat << EOF
-caesar: rot13 generalized.
-snake: Run around a field picking up money and avoid being bitten.
-fish: The card game Go Fish.
-random: Drop lines at random from a text file or generate random numbers.
-etc.
+Port of most of the games from NetBSD-current.  Games
+included: adventure arithmetic atc backgammon banner battlestar
+bcd boggle caesar canfield countmail cribbage dab dm factor fish
+fortune gomoku hack hangman hunt mille monop morse number phantasia
+pig pom ppt primes quiz rain random robots sail snake tetris trek
+wargames worm worms wtf wump.
 EOF

@@ -1,0 +1,17 @@
+--- stdio.h.orig	2000-08-04 08:24:39.000000000 +0800
++++ stdio.h	2006-04-28 12:00:43.000000000 +0800
+@@ -34,6 +34,14 @@
+ #include <bsd-games.h>
+ #include_next <stdio.h>
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ #ifndef HAVE_fgetln
+ extern char *fgetln(FILE *stream, size_t *len);
+ #endif
++
++#ifdef __cplusplus
++}
++#endif

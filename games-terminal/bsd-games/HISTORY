@@ -1,3 +1,11 @@
+2006-06-19 AndraÅ¾ "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: build api 2 split
+	* INSTALL: build api 2 split, added
+	* DETAILS: build api 2 split, added a bit different description
+	* PRE_BUILD: added for patch, added
+	* stdio.h.patch: patch as per bug #11667, added
+	* DEPENDS: g++ needed for some
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
@@ -8,7 +16,7 @@
 	* DETAILS: update to 2.17
 
 2004-03-27 Jason Flatt <jflatt@sourcemage.org>
-	* BUILD: Modified chown settings per Clément MATHIEU and bug # 6478.
+	* BUILD: Modified chown settings per Cl?ment MATHIEU and bug # 6478.
 
 2004-03-27 Jason Flatt <jflatt@sourcemage.org>
 	* DETAILS: Updated to version 2.16
@@ -30,4 +38,3 @@
 
 2003-01-23 Pierre Abbat <phma@webjockey.net>
 	* Wrote this spell.
-
