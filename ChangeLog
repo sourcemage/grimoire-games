@@ -1,3 +1,6 @@
+2006-06-24 Thomas Orgis <sobukus@sourcemage.org>
+	* FUNCTIONS: added alpha as PICy arch to disable_pic
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* API_VERSION: added so the grimoire defaults to BUILD_API=2,
 	  all spells not using that yet have been switched to use API=1
