@@ -1,3 +1,6 @@
+2006-06-29 Pol Vinogradov <vin.public@gmail.com>
+	* games-simulation/billardgl: new spell, BillardGL is an OpenGL pool billiard simulation.
+
 2006-06-24 Thomas Orgis <sobukus@sourcemage.org>
 	* FUNCTIONS: added alpha as PICy arch to disable_pic
 

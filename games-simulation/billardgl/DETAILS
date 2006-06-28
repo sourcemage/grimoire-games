@@ -1,0 +1,14 @@
+           SPELL=billardgl
+         VERSION=1.75
+          SOURCE=BillardGL-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/BillardGL-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:a81d50aa44f97f06fcafd32c3436709c302f86d37f915b2d63acd9c5d48eef22259858064ff56366c7c1cdff40e4a16ad84abe1b91a0daa408cb05ba728d1e88
+      LICENSE[0]=GPL
+         ENTERED=20060629
+        WEB_SITE=http://www.${SPELL}.de/
+           SHORT="BillardGL is an OpenGL pool billiard simulation."
+cat << EOF
+BillardGL is an OpenGL pool billiard simulation. It is available for Windows
+and Linux.
+EOF
