@@ -1,6 +1,7 @@
 cd src  &&
 sedit "s:CFLAGS	=	-pipe -Wall -W -DNO_DEBUG -g:CFLAGS	=	${CFLAGS} -Wall -W -DNO_DEBUG:" Makefile  &&
 sedit "s:CXXFLAGS=	-pipe -Wall -W -DNO_DEBUG -g:CXXFLAGS=	${CXXFLAGS} -Wall -W -DNO_DEBUG:" Makefile  &&
+sedit "s:LFLAGS	=	:LFLAGS	=	${LDFLAGS}:" Makefile  &&
 sedit "s:/usr/X11R6:${INSTALL_ROOT}/usr:g" Makefile  &&
 sedit "s:-cp BillardGL /usr/bin/BillardGL:-cp BillardGL ${INSTALL_ROOT}/usr/games/BillardGL:" Makefile  &&
 sedit "s:-cp BillardGL /usr/bin/billardGL:-cp BillardGL ${INSTALL_ROOT}/usr/games/billardGL:" Makefile  &&
