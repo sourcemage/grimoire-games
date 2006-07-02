@@ -1,3 +1,7 @@
+2006-07-02 David Brown <dmlb2000@gmail.com>
+	* PRE_BUILD: added patch for autogen.sh
+	* autogen-autoconf.patch: added
+
 2006-02-12 Neuron <vlmarek@volny.cz>
 	* PRE_BUILD: Added, fixing undefined 'all_libraries' symbol
 
