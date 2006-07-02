@@ -1,3 +1,6 @@
+2006-07-02 David Brown <dmlb2000@gmail.com>
+	* FUNCTIONS: fixed default_post_install to handle stage root sorcery
+
 2006-06-30 Pol Vinogradov <vin.public@gmail.com>
 	* games-arcade-2d/openmortal: new game, Open Mortal is a parody of the once popular
 	  coin-up fighting game, Mortal Kombat
