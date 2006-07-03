@@ -4,17 +4,15 @@
           SOURCE=${SPELL}-${VERSION}.tar.gz
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
   else
-         VERSION=1.1.2
-          SOURCE=${SPELL}-${VERSION}a.tar.bz2
+         VERSION=1.1.7
+          SOURCE=${SPELL}-${VERSION}.tar.gz
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
   fi
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
       LICENSE[0]=GPL
-       BUILD_API=2
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
-         UPDATED=20050507
            SHORT="Battle for Wesnoth is a fantasy turn-based strategy game."
 cat << EOF
 Battle for Wesnoth is a fantasy turn-based strategy game.
