@@ -1,2 +1,3 @@
+depends  gcc34      &&
 depends  sdl_mixer  &&
-depends  zlib
+depends  timidity

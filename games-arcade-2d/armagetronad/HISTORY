@@ -1,3 +1,7 @@
+2006-06-30 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: version bump to 0.2.8.2
+	* PRE_BUILD: removed PRE_BUILD 
+
 2006-04-25 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: renamed spell from armagetron to armagetronad, 
 	   old spell abandoned, converted api2

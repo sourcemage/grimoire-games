@@ -1,3 +1,14 @@
+2006-07-06 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: version bump to 1.2, api2 conversion, removed MAINTAINER,
+	  added cvs snapshot, sourced gcc34
+	* DEPENDS: gcc34, removed zlib and added timidity
+	* POST_INSTALL: changed name to FINAL
+	* INSTALL: added to cp exult.cfg
+	* PREPARE: added to give choice on stable/devel question
+	* BUILD: changed to api2 and responded to stable/devel issues
+	* PRE_BUILD: added invoke_gcc 
+	* TRIGGERS: removed
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 

@@ -1,4 +1,2 @@
-default_pre_build                &&
-mkdir   ${SOURCE_DIRECTORY}/sfx  &&
-cd      ${SOURCE_DIRECTORY}/sfx  &&
-unpack_file 2
+default_pre_build            &&
+invoke_gcc

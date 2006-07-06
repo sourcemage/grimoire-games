@@ -1,19 +1,23 @@
            SPELL=exult
-         VERSION=1.00
-          SOURCE=$SPELL-$VERSION.tar.gz
-         SOURCE2=drsfx.zip
+if [[ "$EXULT_VER" == "stable" ]] 
+  then
+         VERSION=1.2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-  SOURCE2_URL[0]=http://www.unet.univie.ac.at/~a9848357/exult/$SOURCE2
+     SOURCE_HASH=sha512:88211e7bf216180f025ad4d7318a49166364f5acb1ddaad3ae634c25bf0801eddb09aaf0a4989b5346145d0c743983007bde37ce0344faf586c2b070956b9f08
+  else
+         VERSION=cvs
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.math.leidenuniv.nl/~wpalenst/cvs/exult-cvs.tar.gz
+   SOURCE_IGNORE=volatile
+fi
+          SOURCE=$SPELL-$VERSION.tar.gz
         WEB_SITE=http://exult.sourceforge.net/
          ENTERED=20011217
          UPDATED=20021018
-     SOURCE_HASH=sha512:a3eef232a42d86faafbe3dd4c2a159946541f5ebbe1a7801848ca56536bd9e9ab1fa4aec1129581ad01dad7e1ab19d75be125a935a52c27f5ce82701d3f53e3d
-    SOURCE2_HASH=sha512:7662cc3faf3539edbfb53003b94cead4aa64edc7e0dffa446354dca5e12558fedf8ea8726deda13833580f3ee3c11c9fd0c87d67c75386490117b57fa571555a
       LICENSE[0]=GPL
-      LICENSE[1]=UNKNOWN
-      MAINTAINER=g.clay@warwick.ac.uk
-       BUILD_API=1
+     GCC_VERSION=3.4
+       BUILD_API=2
            SHORT="Exult is an open-source game engine for playing Ultima7"
 cat << EOF
 Exult is an open-source game engine for playing Ultima7 on modern

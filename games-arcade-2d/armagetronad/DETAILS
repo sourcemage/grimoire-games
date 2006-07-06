@@ -1,12 +1,12 @@
            SPELL=armagetronad
-         VERSION=0.2.8.1
+         VERSION=0.2.8.2
           SOURCE=$SPELL-$VERSION.src.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://www.armagetronad.net
          ENTERED=20031206
          UPDATED=20031206
-     SOURCE_HASH=sha512:27324234ccbd6a89cdb0df73620915ea7432499e4f46208ac87916a5513a0c1a21ce9ce0153a7e4218d3a52ea2906db6f9b61151ad033a5af5d033ba8abd045c
+     SOURCE_HASH=sha512:ddcaf2f4aab625c801a582542d535d74c82b9851dcdc32be280e22bfe541509e97bd4f63ef4ee5383b7eb7319ac5a655ebb56c3b54a9ca799e405f5ec963d03e
       LICENSE[0]=GPL
        BUILD_API=2
            SHORT="In this game, you ride a lightcycle around the game grid."

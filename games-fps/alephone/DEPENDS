@@ -1,6 +1,7 @@
-depends  sdl                                                  &&
 depends  sdl_image                                            &&
 depends  sdl_net                                              &&
+depends  sdl_sound                                            &&
+depends  boost                                                &&
 depends  lua                                                  &&
 depends  speex                                                &&
 optional_depends  OPENGL                                      \

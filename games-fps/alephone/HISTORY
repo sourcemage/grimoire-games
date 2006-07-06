@@ -1,3 +1,9 @@
+2006-06-15 John Harding <johnh@kuberaconsulting.com
+	* DETAILS: Changed to BUILD_API=2 and did version
+	  bump to 20060611
+	* DEPENDS: Removed sdl because sdl_image depends on sdl,
+	  added depends on sdl_sound and boost
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
