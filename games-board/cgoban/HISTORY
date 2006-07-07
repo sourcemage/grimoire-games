@@ -1,3 +1,9 @@
+2006-07-07 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: converted to api2, removed MAINTAINER
+	* BUILD: separated out api2 stuff leaving default_games_build
+	* PRE_BUILD: added to perform sedit
+	* INSTALL: added to handle non-standard install stuff
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 

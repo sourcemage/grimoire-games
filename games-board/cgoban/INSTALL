@@ -1,0 +1,6 @@
+true  &&
+  install  --directory  /usr/games   \
+           /usr/share/man/man6       &&  # not automatic
+  make    install                    \
+          BINDIR=${INSTALL_ROOT}/usr/games          \
+          MANDIR=${INSTALL_ROOT}/usr/share/man
