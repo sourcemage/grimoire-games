@@ -1,0 +1,5 @@
+true  &&
+  if ! [ -d /pub/ ]; 
+    then mkdir /pub; 
+  fi
+  cp $SOURCE_DIRECTORY/beer /pub
