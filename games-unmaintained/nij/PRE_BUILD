@@ -1,0 +1,7 @@
+default_pre_build                                         &&
+cd $SOURCE_DIRECTORY                                      &&
+  # Setup for FHS standards, and add our optimizations.  
+  sedit  's:local/::'  Makefile                           &&
+  sedit  "s:CFLAGS = :CFLAGS = ${CFLAGS} :"  Makefile     &&
+  rm  game
+

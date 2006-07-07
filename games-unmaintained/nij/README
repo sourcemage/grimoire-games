@@ -5,5 +5,8 @@ RIGHT: Right arrow
 UP: Up arrow
 DOWN: Down arrow
 SHOOT: 'a'
+JUMP: 'space_bar'
+QUIT: 'q'
 
 README written by:  Eric Sandall <eric@sandall.us>  -- 2002-10-31  v1.0
+        edited by:  John Harding <johnh@kuberaconsulting.com>  -- 2006-07-07 v1.1

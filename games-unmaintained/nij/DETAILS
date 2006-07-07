@@ -9,8 +9,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
      SOURCE_HASH=sha512:51fbfc1547df336ecfd5e9f00d53014b9ced841fd5546d45dfda44b9f24f62412708e1b9725fc1f0f01b044cfd308c3709ff25fe6f46fa40dea07eca89ad8e78
       LICENSE[0]=GPL
           REJECT="Author closed this project"
-      MAINTAINER=eric@sandall.us
-       BUILD_API=1
+       BUILD_API=2
            SHORT="2D Action game starring a girl without a name"
 cat << EOF
 Nij is a 2d action game starring a girl without a name. 

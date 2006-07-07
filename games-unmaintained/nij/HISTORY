@@ -1,3 +1,10 @@
+2006-07-07 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: converted to api2, removed MAINTAINER
+	* PRE_BUILD: added to do sedits
+	* BUILD: converted to api2
+	* INSTALL: added for api2
+	* README: added explanation for other controls
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
