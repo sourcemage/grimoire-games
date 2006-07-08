@@ -1,3 +1,7 @@
+2006-07-08 John Harding <johnh@kuberaconsulting.com>
+	* BUILD: added BUILD with default_games_install to get things
+	  installed in the right places
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
