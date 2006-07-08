@@ -1,3 +1,7 @@
+2006-07-08 John Harding <johnh@kuberaconsulting.com>
+	* games-arcade-2d/armagetron: Removed game due to the devs no longer
+	  developing or supporting. They have released armagetronad.
+
 2006-07-02 David Brown <dmlb2000@gmail.com>
 	* FUNCTIONS: fixed default_post_install to handle stage root sorcery
 
