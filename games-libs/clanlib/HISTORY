@@ -2,6 +2,7 @@
 	* DETAILS: Updated to 0.8.0RC2
 	  Removed UPDATED and BUILD_API=2 (grimoire-wide)
 	* CONFIGURE: Added option for debug mode (default enable)
+	  Build documentation by default
 
 2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update and switched to sha512

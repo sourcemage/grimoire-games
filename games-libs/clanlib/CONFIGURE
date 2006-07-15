@@ -10,7 +10,7 @@ config_query_option CLANLIB_DYN \
                      "--disable-dyn" &&
 config_query_option CLANLIB_DOCS \
                      "Build Clanlib documentation" \
-                     n \
+                     y \
                      "--enable-docs" \
                      "--disable-docs" &&
 config_query_option CLANLIB_SOUND \
