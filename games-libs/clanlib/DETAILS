@@ -1,15 +1,14 @@
            SPELL=clanlib
-         VERSION=0.8.0-RC1
+         VERSION=0.8.0-RC2
              PKG=ClanLib
           SOURCE=${PKG}-${VERSION}.tgz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
    SOURCE_URL[0]=http://clanlib.org/download/releases-0.8/${SOURCE}
-     SOURCE_HASH=sha512:0b4e2ce82824732358c4b850c75b4ccf076377ad4601a1b802bcde3aa571794ba152a8a3dddcc13d88eb3650ec1626486f2014bbb501c03be29c470328f88fde
+     #SOURCE_HASH=sha512:0b4e2ce82824732358c4b850c75b4ccf076377ad4601a1b802bcde3aa571794ba152a8a3dddcc13d88eb3650ec1626486f2014bbb501c03be29c470328f88fde
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=LGPL
         WEB_SITE=http://clanlib.org
          ENTERED=20011105
-         UPDATED=20020827
-      LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Multi-Platform game development library"
 cat << EOF
 Clanlib is a medium level development kit.  At its lowest level it
