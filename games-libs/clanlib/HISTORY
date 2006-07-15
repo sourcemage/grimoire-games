@@ -1,3 +1,6 @@
+2006-07-14 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Added option for debug mode (default enable)
+
 2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update and switched to sha512
 	* BUILD: added CLANLIB_OPTS

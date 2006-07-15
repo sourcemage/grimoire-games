@@ -36,11 +36,18 @@ config_query_option CLANLIB_GUI \
                      y \
                      "--enable-clanGUI" \
                      "--disable-clanGUI" &&
+config_query_option CLANLIB_DEBUG       \
+                    "Build debug mode"  \
+                    y                   \
+                    "--enable-debug"    \
+                    "--disable-debug"   &&
+
 CLANLIB_OPTS="${CLANLIB_ASM386} \
 ${CLANLIB_DYN} \
 ${CLANLIB_DOCS} \
 ${CLANLIB_SOUND} \
 ${CLANLIB_NETWORK} \
 ${CLANLIB_IPV6} \
-${CLANLIB_GUI}" &&
+${CLANLIB_GUI} \
+${CLANLIB_DEBUG}"  &&
 persistent_add CLANLIB_OPTS
