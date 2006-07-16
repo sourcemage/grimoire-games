@@ -5,6 +5,7 @@ list_remove SCUMMVM_OPTS_TMP "--enable-scumm"              \
             "--enable-saga" "--enable-queen"               \
             "--enable-sword2" "--enable-sword1"            \
             "--enable-sky" "--enable-simon"                \
+            "--disable-plugins"                            \
             "--enable-scumm-7-8" "--enable-kyra"           &&
 OPTS="$SCUMMVM_OPTS_TMP --backend=$SCUMMVM_BACKEND $OPTS"  &&
 ./configure --bindir=$INSTALL_ROOT/usr/games               \
