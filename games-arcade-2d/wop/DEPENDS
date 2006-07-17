@@ -3,4 +3,10 @@ depends  sdl_image  &&
 depends  sdl_ttf    &&
 depends  sdl_mixer  &&
 depends  sdl_net    &&
-depends  wopdata
+depends  wopdata    &&
+depends  g++        &&
+depends  X11-LIBS   &&
+if check_if_xorg_modular_libs
+  then
+  depends  makedepend
+fi
