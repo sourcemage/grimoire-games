@@ -1,15 +1,15 @@
            SPELL=warzone2100
-         VERSION=0.2.2
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-   SOURCE_URL[0]=http://download.berlios.de/warzone/${SOURCE}
-     SOURCE_HASH=sha1:1037405b05b387867e99c591ad4c0e1f5a181e15
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-        WEB_SITE=http://www.realtimestrategies.net/forums/index.php
+         VERSION=2.0.3
+          SOURCE=${SPELL/2100}-${VERSION}.tar.bz2
+         SOURCE2=${SOURCE}.sig
+   SOURCE_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE}
+  SOURCE2_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE2}
+      SOURCE_GPG="C7320492.gpg:$SOURCE2:VERIFIED_UPSTREAM_KEY"
+  SOURCE2_IGNORE=signature
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/2100}-${VERSION}
+        WEB_SITE=http://home.gna.org/warzone/
          ENTERED=20050709
-         UPDATED=20050709
-     GCC_VERSION=3.4
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="3D realtime strategy from future Earth."
 cat << EOF
 3D realtime strategy from future Earth.
