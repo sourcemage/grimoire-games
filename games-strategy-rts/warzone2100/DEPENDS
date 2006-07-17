@@ -2,6 +2,10 @@ depends sdl &&
 depends sdl_net &&
 depends OPENGL  &&
 depends openal &&
+depends libpng  &&
+depends zlib    &&
+depends jpeg  &&
+depends physfs  &&
 optional_depends libmad \
                  "--with-mp3" \
                  "--without-mp3" \
