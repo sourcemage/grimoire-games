@@ -1,7 +1,7 @@
 if [ "x$OPENTTD_NETWORK" == "xy" ]; then
-	OPTS="$OPTS WITH_NETWORK=1"
+	OPTS="WITH_NETWORK=1 $OPTS"
 else
-	OPTS="$OPTS WITH_NETWORK="
+	OPTS="WITH_NETWORK= $OPTS"
 fi &&
 make -j1 MANUAL_CONFIG=1 \
 	UNIX=1 \
@@ -9,7 +9,7 @@ make -j1 MANUAL_CONFIG=1 \
 	RELEASE=${VERSION} \
 	USE_HOMEDIR=1 \
 	PERSONAL_DIR=.openttd \
-	PREFIX=/usr \
+	PREFIX=$INSTALL_ROOT/usr \
 	DATA_DIR=share/games/${SPELL} \
 	VERBOSE=1 \
 	$OPTS

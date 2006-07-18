@@ -1,7 +1,6 @@
 install -v openttd  ${INSTALL_ROOT}/usr/libexec                      &&
 install -v ${SCRIPT_DIRECTORY}/${SPELL}  ${INSTALL_ROOT}/usr/games/  &&
-SHARE_OPENTTD="${INSTALL_ROOT}/usr/share/games/${SPELL}"             &&
-mkdir -pv  ${SHARE_OPENTTD}                                          &&
+local SHARE_OPENTTD="${INSTALL_ROOT}/usr/share/games/${SPELL}"       &&
 cp -rv  data scenario  ${SHARE_OPENTTD}/                             &&
 mkdir -pv  ${SHARE_OPENTTD}/lang                                     &&
 cp -v   lang/*.lng  ${SHARE_OPENTTD}/lang/                           &&

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OpenTTD
+Exec=openttd
+Icon=/usr/share/games/openttd/media/openttd.48.png
+Terminal=false
+Type=Application
+Categories=Application;Game;
