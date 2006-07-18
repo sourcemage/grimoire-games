@@ -1,3 +1,7 @@
+2006-07-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: fixed SOURCE_DIR as per bug #12712, removed BUILD_API=2
+	  and UPDATED
+
 2005-11-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DOWNLOAD: if SVN co else acquire normaly...
 
