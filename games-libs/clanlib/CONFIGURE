@@ -1,53 +1,43 @@
-config_query_option CLANLIB_ASM386 \
-                     "Enable i386 assembly support" \
-                     n \
-                     "--enable-asm386" \
-                     "--disable-asm386" &&
-config_query_option CLANLIB_DYN \
-                     "Enable dynamic loading" \
-                     n \
-                     "--enable-dyn" \
-                     "--disable-dyn" &&
-config_query_option CLANLIB_DOCS \
-                     "Build Clanlib documentation" \
-                     y \
-                     "--enable-docs" \
-                     "--disable-docs" &&
-config_query_option CLANLIB_SOUND \
-                     "Build clanSound module" \
-                     y \
-                     "--enable-clanSound" \
-                     "--disable-clanSound" &&
-config_query_option CLANLIB_NETWORK \
-                     "Build clanNetwork module" \
-                     y \
-                     "--enable-clanNetwork" \
-                     "--disable-clanNetwork --disable-getaddr" &&
-if [[ "${CLANLIB_NETWORK}" == "--enable-clanNetwork" ]]
+config_query_option CLANLIB_OPTS                                    \
+                     "Enable i386 assembly support"                 \
+                     n                                              \
+                     "--enable-asm386"                              \
+                     "--disable-asm386"                             &&
+config_query_option CLANLIB_OPTS                                    \
+                     "Enable dynamic loading"                       \
+                     n                                              \
+                     "--enable-dyn"                                 \
+                     "--disable-dyn"                                &&
+config_query_option CLANLIB_OPTS                                    \
+                     "Build Clanlib documentation"                  \
+                     n                                              \
+                     "--enable-docs"                                \
+                     "--disable-docs"                               &&
+config_query_option CLANLIB_OPTS                                    \
+                     "Build clanSound module"                       \
+                     y                                              \
+                     "--enable-clanSound"                           \
+                     "--disable-clanSound"                          &&
+config_query_option CLANLIB_OPTS                                    \
+                     "Build clanNetwork module"                     \
+                     y                                              \
+                     "--enable-clanNetwork"                         \
+                     "--disable-clanNetwork --disable-getaddr"      &&
+if list_find "$CLANLIB_OPTS" "--enable-clanNetwork"
 then
-   config_query_option CLANLIB_IPV6 \
+   config_query_option CLANLIB_OPTS                                 \
                         "Enable getaddr(IPv6) functions in Network" \
-                         n \
-                         "--enable-getaddr" \
+                         n                                          \
+                         "--enable-getaddr"                         \
                          "--disable-getaddr"
-fi &&
-config_query_option CLANLIB_GUI \
-                     "Build clanGUI module" \
-                     y \
-                     "--enable-clanGUI" \
-                     "--disable-clanGUI" &&
-config_query_option CLANLIB_DEBUG       \
-                    "Build debug mode"  \
-                    y                   \
-                    "--enable-debug"    \
-                    "--disable-debug"   &&
-
-CLANLIB_OPTS="${CLANLIB_ASM386} \
-${CLANLIB_DYN} \
-${CLANLIB_DOCS} \
-${CLANLIB_SOUND} \
-${CLANLIB_NETWORK} \
-${CLANLIB_IPV6} \
-${CLANLIB_GUI} \
-${CLANLIB_DEBUG}"  &&
-persistent_add CLANLIB_OPTS
+fi                                                                  &&
+config_query_option CLANLIB_OPTS                                    \
+                     "Build clanGUI module"                         \
+                     y                                              \
+                     "--enable-clanGUI"                             \
+                     "--disable-clanGUI"                            &&
+config_query_option CLANLIB_OPTS                                    \
+                    "Build debug mode"                              \
+                    n                                               \
+                    "--enable-debug"                                \
+                    "--disable-debug"
