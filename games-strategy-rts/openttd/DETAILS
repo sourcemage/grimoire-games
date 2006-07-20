@@ -5,9 +5,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://www.openttd.com/
          ENTERED=20040708
-         UPDATED=20040708
      SOURCE_HASH=sha512:a02cfd42fea0fb42a5b240bb8e7035e1f3095666e042f6ac1fd735faefced9cd9e9b9830edfb7e7bdc03d3452ee9f00819c8a126c609be4147e008a0a846c640
-       BUILD_API=2
            SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF
 OpenTTD is modeled after the original Transport Tycoon game by

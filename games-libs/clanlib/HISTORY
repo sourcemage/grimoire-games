@@ -1,3 +1,16 @@
+2006-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFIGURE: don't default to debug mode, don't build documentation
+	  by default. Both of these are irrelevant to Joe Average who just
+	  needs it to play a random game(and upstream defaults are disable)
+	* DETAILS: license changed to clanli license, still Free(BSD like)
+	* DEPENDS: cleaned out nvidia_headers is derpecated
+
+2006-07-14 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 0.8.0RC2
+	  Removed UPDATED and BUILD_API=2 (grimoire-wide)
+	* CONFIGURE: Added option for debug mode (default enable)
+	  Build documentation by default
+
 2005-11-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update and switched to sha512
 	* BUILD: added CLANLIB_OPTS

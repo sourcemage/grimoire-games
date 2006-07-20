@@ -1,14 +1,12 @@
            SPELL=wop
-         VERSION=0.4.2
+         VERSION=0.4.3
           SOURCE=${SPELL}-${VERSION}-src.tar.bz2
    SOURCE_URL[0]=http://wormsofprey.org/download/${SOURCE}
-     SOURCE_HASH=sha512:946df942a133386c8dda6722b6a08739c9433905ca8a46cbf0391c6483449ef16c37ae0dc2228d68d1330294a17fe68b3ae42f7826e307a4de6cf2edae204077
+     SOURCE_HASH=sha512:259f9f455e6fbfae2ffb6e169dcf1661f1353e28a5e51b6e907f2868a50c5f54982b4d383dcfcec201c9a2d0429fb468c44c974695364c5fd28d25328e10c6b8
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://wormsofprey.org/
          ENTERED=20051223
-         UPDATED=20051223
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="A multi-player, real-time Worms clone similar to Liero or NiL."
 cat << EOF
 W&amp;ouml;rms of Prey is a multi-player, real-time Worms clone for Linux and

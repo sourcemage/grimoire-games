@@ -1,7 +1,0 @@
-default_install &&
-cp ${SCRIPT_DIRECTORY}/warzone ${INSTALL_ROOT}/usr/games/warzone &&
-chmod +x ${INSTALL_ROOT}/usr/games/warzone &&
-cd ${SOURCE_DIRECTORY} &&
-find_and_scam &&
-cp -aR data/* ${INSTALL_ROOT}/usr/share/games/warzone2100
-

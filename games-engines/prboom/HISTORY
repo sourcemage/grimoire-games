@@ -1,3 +1,7 @@
+2006-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update, doesn't need gcc 3.4 anymore
+	* BUILD: removed and could have been ages ago
+
 2006-03-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: cleanup
 	* BUILD: cleanup

@@ -1,3 +1,11 @@
+2006-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version 2.0.3, changed source urls, added gpg
+	  verified direct to udevrandom@freenode, gna member page, keyserver
+	* CONFIGURE: removed
+	* INSTALL: removed
+	* warzone: removed
+	* DEPENDS: some fixes
+
 2005-09-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version update 0.2.2, moved to SOURCE_HASH
 	* CONFIGURE,CONFLICTS: added
