@@ -1,3 +1,8 @@
+2006-07-20 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: version bump to 2.0.0
+	* DEPENDS: added depends on pango, atk, glib2 and pkgconfig
+	* BUILD: changed default_build to default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
