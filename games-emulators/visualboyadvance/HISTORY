@@ -1,5 +1,12 @@
 2006-07-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* BUILD: added disable_pic bug #12908
+	* BUILD: added disable_pic bug #12908 and aplied the cvs patch,
+	  use default_games_build
+	* DETAILS: wth is BUILD_API=1 doing in here
+	* DEPENDS: addde nasm
+
+2006-07-25 Lalo Martins <lalo.martins@gmail.com>
+	 * PREPARE: added cvs option
+	 * DETAILS: added cvs option
 
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line

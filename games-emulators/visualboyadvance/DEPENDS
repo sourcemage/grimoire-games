@@ -1,2 +1,3 @@
 depends  libpng  &&
+depends  nasm    &&
 depends  sdl
