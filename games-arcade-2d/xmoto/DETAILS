@@ -1,14 +1,13 @@
            SPELL=xmoto
-         VERSION=0.1.16
+         VERSION=0.2.0
           SOURCE=$SPELL-$VERSION-src.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
    SOURCE_URL[1]=http://aleron.dl.sourceforge.net/sourceforge/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:16a5f2f429e859e1d086e8f2823bf9de309604c8fe6b6c3aa7ea79d194462b26e67f056f3408ee3ad5126b9002026b4517b95a7f15cdb2417feadff7f73152cb
+     SOURCE_HASH=sha512:52c31abf77f3eb6d04343de8a89105ddecebdb0b1a74a70ff233b4d2aa2c7f05a01c81a618335ee5ca6b9f593a23bc67de9209634716f92b07b2ee4a9adf6f8e
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://xmoto.sourceforge.net/
          ENTERED=20051006
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="X-Moto is a challenging 2D motocross platform game"
 cat << EOF
 X-Moto is a challenging 2D motocross platform game, where physics play
