@@ -1,2 +1,6 @@
+2006-07-30 Pol Vinogradov <vin.public@gmail.com>
+	* PRE_BUILD, openmortal-0.7-gcc41.patch: added for building with
+	  gcc 4.1.x
+
 2006-06-30 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS, DEPENDS, BUILD, HISTORY: created spell
