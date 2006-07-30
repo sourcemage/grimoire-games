@@ -1,3 +1,8 @@
+2006-07-29 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: removed api1 line
+	* BUILD: removed stuff in accord with api2
+	* INSTALL: created to contain stuff from BUILD api1
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
