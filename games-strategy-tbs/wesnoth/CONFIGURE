@@ -1,36 +1,39 @@
-config_query_option WESNOTH_STATIC                                           \
+if [[ ! -z $WESNOTH_STATIC ]]; then
+  persistent_add WESNOTH_OPTS &&
+  WESNOTH_OPTS="$WESNOTH_STATIC $WESNOTH_LITE $WESNOTH_SERVER \
+    $WESNOTH_CAMPAIGN $WESNOTH_EDITOR $WESNOTH_TOOLS" &&
+  persistent_remove WESNOTH_STATIC WESNOTH_LITE WESNOTH_SERVER \
+    WESNOTH_CAMPAIGN WESNOTH_EDITOR WESNOTH_TOOLS &&
+  return 0
+fi &&
+
+config_query_option WESNOTH_OPTS                                             \
            "Enable static building of wesnoth?"                              \
              n                                                               \
              "--enable-static"                                               \
              "--disable-static"                                              &&
-config_query_option WESNOTH_LITE                                             \
+config_query_option WESNOTH_OPTS                                             \
            "Enable lite version of wesnoth (without music or large images)?" \
              n                                                               \
              "--enable-lite"                                                 \
              "--disable-lite"                                                &&
-config_query_option WESNOTH_SERVER                                           \
+config_query_option WESNOTH_OPTS                                             \
            "Enable compilation of server?"                                   \
              n                                                               \
             "--enable-server"                                                \
             "--disable-server"                                               &&
-config_query_option WESNOTH_CAMPAIGN                                         \
+config_query_option WESNOTH_OPTS                                             \
            "Enable compilation of campaign server?"                          \
              n                                                               \
              "--enable-campaign-server"                                      \
              "--disable-campaign-server"                                     &&
-config_query_option WESNOTH_EDITOR                                           \
+config_query_option WESNOTH_OPTS                                             \
           "Enable compilation of map editor?"                                \
              n                                                               \
              "--enable-editor"                                               \
              "--disable-editor"                                              &&
-config_query_option WESNOTH_TOOLS                                            \
+config_query_option WESNOTH_OPTS                                             \
           "Enable compilation of tools for translators and artists?"         \
              n                                                               \
              "--enable-tools"                                                \
-             "--disable-tools"                                               &&
-export WESNOTH_OPTS="$WESNOTH_STATIC \
-$WESNOTH_LITE \
-$WESNOTH_SERVER \
-$WESNOTH_CAMPAIGN \
-$WESNOTH_EDITOR \
-$WESNOTH_TOOLS"
+             "--disable-tools"
