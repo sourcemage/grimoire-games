@@ -1,0 +1,16 @@
+           SPELL=einstein
+         VERSION=2.0
+          SOURCE=$SPELL-$VERSION-src.tar.gz
+         SOURCE2=$SPELL-$VERSION-res.tar.gz
+     SOURCE_HASH=sha512:45599546f2f7fce32f7441cfdae88b72297f4a506d9eb98a64c3b24ec2e2fd86a63d59961a21e017df6a7a676d864ad12598d735f9049adf43cddd91d661f619
+    SOURCE2_HASH=sha512:1da985648464445b5fa783f7c4e4511158e8b11192402c63e00fdadb6d1aa47d7b0d443ce8541975a56e556d4c70c4ab49975f829ca6e91464bb43d697f3b8a6
+   SOURCE_URL[0]=http://games.flowix.com/files/$SPELL/$SOURCE
+  SOURCE2_URL[0]=http://games.flowix.com/files/$SPELL/$SOURCE2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://games.flowix.com/en/index.html
+         ENTERED=20060812
+      LICENSE[0]=GPL
+           SHORT="Einstein's famous puzzle game"
+cat << EOF
+Einstein's famous puzzle game. Only people with IQ >= 98 can solve it, he said.
+EOF

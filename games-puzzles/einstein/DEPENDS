@@ -1,0 +1,6 @@
+depends  g++        &&
+depends  freetype2  &&
+depends  sdl        &&
+depends  sdl_ttf    &&
+depends  sdl_mixer  &&
+depends  zlib

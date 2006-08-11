@@ -1,0 +1,2 @@
+default_install  &&
+cp -rv res ${INSTALL_ROOT}/usr/share/games/einstein
