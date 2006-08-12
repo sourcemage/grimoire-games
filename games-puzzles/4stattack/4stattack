@@ -1,0 +1,3 @@
+#!/bin/sh
+cd SMGL_DIR
+exec /usr/bin/env python SMGL_DIR/4stattack.py "${@}"

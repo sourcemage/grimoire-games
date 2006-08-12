@@ -1,0 +1,15 @@
+           SPELL=4stattack
+         VERSION=2.1.4
+          SOURCE=4stAttack-$VERSION.tar.gz
+     SOURCE_HASH=sha512:4819c0915bfe47bb965ea39d49fa007fb18cfa965b15e5e72a4b0ac3be8a03c616d9438c8dedd960ee257e44b48f98f75ced6bed5bfc77f3366328c797b30f3c
+   SOURCE_URL[0]=$SOURCEFORGE_URL/forcedattack/$SOURCE
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/4stAttack-${VERSION}
+        WEB_SITE=http://forcedattack.sourceforge.net/
+         ENTERED=20060813
+      LICENSE[0]=GPL
+           SHORT="Connect-4 game, single or network multiplayer"
+cat << EOF
+4st Attack is a game in which you have to try to out-smart your opponent.
+The goal of the game is to connect four of stones in a straight line. This
+can be horizontaly, vertically and even diagonnally.
+EOF
