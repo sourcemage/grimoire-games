@@ -1,5 +1,5 @@
-install ${SPELL} ${INSTALL_ROOT}/usr/share/games/${SPELL}    &&
-install ${SPELL}rc ${INSTALL_ROOT}/usr/share/games/${SPELL}  &&
+install ${SPELL} ${INSTALL_ROOT}/usr/share/games/${SPELL}                &&
+install -m 0644 ${SPELL}rc ${INSTALL_ROOT}/usr/share/games/${SPELL}      &&
 install ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games/${SPELL}  &&
 sedit "s:SMGL_DIR:${TRACK_ROOT}/usr/share/games/${SPELL}:" ${TRACK_ROOT}/usr/games/${SPELL}  &&
 if  [  "$AIRSTRIKE_SOUND"  !=  "y"  ];  then
