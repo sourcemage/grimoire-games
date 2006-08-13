@@ -1,0 +1,5 @@
+depends  sdl        &&
+depends  sdl_image  &&
+if  [  "$AIRSTRIKE_SOUND"  ==  "y"  ];  then
+  depends  sdl_mixer
+fi

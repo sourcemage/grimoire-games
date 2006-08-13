@@ -1,6 +1,7 @@
 2006-08-13 Pol Vinogradov <vin.public@gmail.com>
 	* games-puzzles/4stattack: new spell, Connect-4 game, single or
 	  network multiplayer
+	* games-arcade-2d/airstrike: Airstrike is a 2d dogfighting game
 
 2006-08-12 Pol Vinogradov <vin.public@gmail.com>
 	* games-puzzles/einstein: Einstein's famous puzzle game

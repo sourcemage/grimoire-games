@@ -1,0 +1,19 @@
+           SPELL=airstrike
+         VERSION=pre6a
+          SOURCE=$SPELL-$VERSION-src.tar.gz
+     SOURCE_HASH=sha512:976a39b9a44211ccc16d86e5ad8ca3aa98d94134b43662b64c71b47ce824ff6a875ba1a42c004444556a357ca6bee2f981f403d40ae5800caecc055d6989b5ff
+   SOURCE_URL[0]=http://icculus.org/$SPELL/$SOURCE
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-src
+        WEB_SITE=http://icculus.org/$SPELL/
+         ENTERED=20060813
+      LICENSE[0]=GPL
+           SHORT="Airstrike is a 2d dogfighting game"
+cat << EOF
+Airstrike is a 2d dogfighting game being slowly developed by various people
+around the net. It is not yet playable although there is an old version which
+may be a bit fun to try. We are developing the game using only freely available
+tools, and we try to do everything ourselves. The source code and the 3d models
+are released under the GPL licence.
+Features include alpha blended raytraced graphics and accurate physics. We are
+working on making it fun to play; all help is welcome.
+EOF
