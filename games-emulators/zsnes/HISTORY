@@ -1,3 +1,7 @@
+2006-08-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed UPDATED (deprecated in favor of 
+	  PATCHLEVEL).
+
 2006-04-18 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: PATCHLEVEL=1
 	* PRE_BUILD, zsnes-memfix.patch: fix for a bug that causes a crash
