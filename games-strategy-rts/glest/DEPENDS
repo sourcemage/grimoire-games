@@ -1,0 +1,16 @@
+depends g++                                          &&
+depends jam                                          &&
+depends libvorbis "--with-vorbis=${TRACK_ROOT}/usr"  &&
+depends libogg "--with-ogg=${TRACK_ROOT}/usr"        &&
+depends openal                                       &&
+depends OPENGL                                       &&
+depends sdl                                          &&
+depends X11-LIBS                                     &&
+depends xerces-c                                     &&
+
+source  $GRIMOIRE/FUNCTIONS                          &&
+
+if  check_if_xorg_modular_libs  ;  then
+  depends libx11                                     &&
+  depends libxt
+fi
