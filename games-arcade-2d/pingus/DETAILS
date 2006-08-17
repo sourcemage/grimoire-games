@@ -1,9 +1,21 @@
            SPELL=pingus
+if [ "$PINGUS_SVN" == "y" ]; then
+   if [ "$PINGUS_SVN_AUTOUPDATE" == "y" ]; then
+      VERSION=$(date +%Y%m%d)
+  else
+      VERSION=svn
+  fi
+          SOURCE=$SPELL-svn.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
+   SOURCE_URL[0]=svn://svn.berlios.de/pingus/trunk:${SPELL}-svn
+   SOURCE_IGNORE=volatile
+else
          VERSION=0.6.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://pingus.seul.org/files/$SOURCE
      SOURCE_HASH=sha512:d87e33443f484d79e9cd2d6ee1b40ac33c67203cf2245e73b445e32b4f8614efb8f02f1dcf8ca7b3ac47096dac8eef8533d8e3c812042bf127e78e6cd341109d
+fi
         WEB_SITE=http://pingus.seul.org/welcome.html
          ENTERED=20030612
          UPDATED=20030612

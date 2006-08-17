@@ -1,2 +1,7 @@
-depends clanlib6 &&
+if [ "$PINGUS_SVN" == "y" ]; then
+   depends clanlib
+else
+   depends clanlib6
+fi  &&
+
 depends libxml2
