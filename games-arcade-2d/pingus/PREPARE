@@ -1,0 +1,7 @@
+config_query PINGUS_SVN "Build SVN version?" ${PINGUS_CVS:-n}  &&
+
+if [ "$PINGUS_SVN" == "y" ]; then
+  config_query  PINGUS_SVN_AUTOUPDATE   \
+                "Update to the latest SVN automatically on every cast?"  ${PINGUS_CVS_AUTOUPDATE:-n}
+fi
+

@@ -1,0 +1,7 @@
+#!/bin/sh
+mkdir -p $HOME/.glest
+cd SMGL_DIR
+if [[ ! -e $HOME/.glest/glest.ini ]] ; then
+  cp glest.ini $HOME/.glest
+fi
+./glest "${@}"
