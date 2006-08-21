@@ -1,14 +1,13 @@
            SPELL=globulation2
-         VERSION=0.8.19
+         VERSION=0.8.21
           SOURCE=glob2-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-${VERSION}
    SOURCE_URL[0]=http://globulation2.org/releases/${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:719885049a6a1e4a17e660e2e9014acefd13d5ffe01ced1a30568e02a5abee01c20937318ad55b8e9c6147bcb99b60c56d198725243deb832981f1a5a60e0f49
+#     SOURCE_HASH=sha512:719885049a6a1e4a17e660e2e9014acefd13d5ffe01ced1a30568e02a5abee01c20937318ad55b8e9c6147bcb99b60c56d198725243deb832981f1a5a60e0f49
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
         WEB_SITE=http://globulation2.org/
          ENTERED=20040814
-         UPDATED=20051210
-      LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Innovative high quality Real-Time Strategy"
 cat << EOF
 Globulation 2 is an innovative high quality Real-Time Strategy [RTS],

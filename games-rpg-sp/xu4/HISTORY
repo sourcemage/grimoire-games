@@ -1,3 +1,6 @@
+2006-08-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* LICENSE: not quoted properly
+
 2006-03-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: using verify_file instead of unpack_hash
 
