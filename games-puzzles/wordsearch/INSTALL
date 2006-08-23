@@ -1,0 +1,5 @@
+mv -v wordsearch.pl $INSTALL_ROOT/usr/games/wordsearch    &&
+chmod -v 0750 $INSTALL_ROOT/usr/games/wordsearch          &&
+chown -v games:games $INSTALL_ROOT/usr/games/wordsearch   &&
+mkdir -vp $INSTALL_ROOT/usr/share/doc/wordsearch/       &&
+mv -v * $INSTALL_ROOT/usr/share/doc/wordsearch/

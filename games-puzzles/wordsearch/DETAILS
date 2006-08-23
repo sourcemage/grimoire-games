@@ -1,0 +1,15 @@
+           SPELL=wordsearch
+         VERSION=1.4
+          SOURCE="$SPELL-$VERSION.tar.gz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:9a20982e0ba70ca038ee21c7668c112eb51c7c53ae97e2ca179bda6257b39406efc5a44bb218309a6a59e036be35b0a3b484ec930f5d5972d6719e61604fe7e5
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/$SPELL-$VERSION"
+        WEB_SITE=http://decafbad.net/projects/wordsearch/
+         ENTERED=20060823
+      LICENSE[0]=GPL
+           SHORT="A Perl script that generates word search puzzles."
+cat << EOF
+WordSearch is a Perl script that generates word search puzzles. It will
+generate random word search puzzles, or you can give it a list which will
+allow it to generate your own puzzles.
+EOF
