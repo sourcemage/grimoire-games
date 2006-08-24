@@ -1,0 +1,5 @@
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+sedit "10s:^PREFIX.*:PREFIX\ =\ $INSTALL_ROOT/:" Makefile  &&
+sedit "16s:^DATADIR.*:DATADIR\ =\ $INSTALL_ROOT/usr/share/games/bloboats/data:" Makefile  &&
+sedit "19s:BINARYDIR.*:BINARYDIR\ =\ $INSTALL_ROOT/usr/games:" Makefile

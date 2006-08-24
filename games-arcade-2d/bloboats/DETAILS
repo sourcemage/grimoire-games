@@ -1,0 +1,13 @@
+           SPELL=bloboats
+         VERSION=1.0.1
+          SOURCE="$SPELL-$VERSION.tar.gz"
+   SOURCE_URL[0]=http://mirror.kapsi.fi/$SPELL.dy.fi/$SOURCE
+     SOURCE_HASH=sha512:edfbd3f6a4c914905dfc1a9885800ea35e7e8581b9253e2de95e08e9442723bd92234388e5232b6a927b3e7189e1855310cbb048f60a409f63c8d7c7223261ef
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/$SPELL-$VERSION"
+        WEB_SITE=http://bloboats.dy.fi/
+      LICENSE[0]=GPL
+           SHORT="A boat racing game in the spirit of Elasto Mania or X-Moto."
+cat << EOF
+Bloboats is a boat racing game in the spirit of Elasto Mania or X-Moto. It
+introduces a handful of elements from Super Mario Bros-like games.
+EOF
