@@ -2,4 +2,15 @@ default_pre_build     &&
 cd $SOURCE_DIRECTORY  &&
 sedit "10s:^PREFIX.*:PREFIX\ =\ $INSTALL_ROOT/:" Makefile  &&
 sedit "16s:^DATADIR.*:DATADIR\ =\ $INSTALL_ROOT/usr/share/games/bloboats/data:" Makefile  &&
-sedit "19s:BINARYDIR.*:BINARYDIR\ =\ $INSTALL_ROOT/usr/games:" Makefile
+sedit "19s:BINARYDIR.*:BINARYDIR\ =\ $INSTALL_ROOT/usr/games:" Makefile  &&
+sedit "s:LIBS_DEFAULT =:LIBS_DEFAULT = ${LDFLAGS}:" Makefile  &&
+sedit "s:LIBS_FREEBSD =:LIBS_FREEBSD = ${LDFLAGS}:" Makefile  &&
+sedit "s:LIBS_NETBSD =:LIBS_NETBSD = ${LDFLAGS}:" Makefile    &&
+sedit "s:LIBS_MACOSX =:LIBS_MACOSX = ${LDFLAGS}:" Makefile    &&
+sedit "s:LIBS_CROSS =:LIBS_CROSS = ${LDFLAGS}:" Makefile      &&
+sedit "s:CXXFLAGS_DEFAULT = -g:CXXFLAGS_DEFAULT = ${CXXFLAGS}:" Makefile  &&
+sedit "s:CXXFLAGS_FREEBSD = -g:CXXFLAGS_FREEBSD = ${CXXFLAGS}:" Makefile  &&
+sedit "s:CXXFLAGS_NETBSD = -g:CXXFLAGS_NETBSD = ${CXXFLAGS}:" Makefile    &&
+sedit "s:CXXFLAGS_MACOSX = -g:CXXFLAGS_MACOSX = ${CXXFLAGS}:" Makefile    &&
+sedit "s:CXXFLAGS_CROSS = -g:CXXFLAGS_CROSS = ${CXXFLAGS}:" Makefile      &&
+sedit "s: -O2::g" Makefile

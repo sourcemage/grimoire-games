@@ -1,2 +1,5 @@
+2006-08-24 Pol Vinogradov <vin.public@gmail.com>
+	* PRE_BUILD: added more sedit lines for optimizations
+
 2006-08-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, HISTORY: created spell
