@@ -7,10 +7,10 @@ then
    else
          VERSION=cvs
    fi
-          SOURCE=${SPELL}-cvs.tar.bz2
-   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/zsnes:zsnes
+          SOURCE=${SPELL}-sfcvs.tar.bz2
+   SOURCE_URL[0]=cvs://:pserver:anonymous@zsnes.cvs.sourceforge.net:/cvsroot/zsnes:zsnes
    SOURCE_IGNORE=volatile
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-cvs
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-sfcvs
 else
          VERSION=1.42
           SOURCE=${SPELL}${VERSION/./}src.tar.gz
