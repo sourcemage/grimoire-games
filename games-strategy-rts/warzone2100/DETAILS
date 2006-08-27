@@ -1,12 +1,12 @@
            SPELL=warzone2100
-         VERSION=2.0.3
-          SOURCE=${SPELL/2100}-${VERSION}.tar.bz2
+         VERSION=2.0.4
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
          SOURCE2=${SOURCE}.sig
    SOURCE_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE}
   SOURCE2_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE2}
       SOURCE_GPG="C7320492.gpg:$SOURCE2:VERIFIED_UPSTREAM_KEY"
   SOURCE2_IGNORE=signature
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/2100}-${VERSION}
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://home.gna.org/warzone/
          ENTERED=20050709
       LICENSE[0]=GPL
