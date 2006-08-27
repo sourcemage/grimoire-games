@@ -1,0 +1,4 @@
+config_query VISUALBOYADVANCE_CVS "Build CVS version?" n  &&
+if [[ "$VISUALBOYADVANCE_CVS" == "y" ]]; then
+config_query VISUALBOYADVANCE_CVS_AUTOUPDATE "Update on every system update?" n
+fi

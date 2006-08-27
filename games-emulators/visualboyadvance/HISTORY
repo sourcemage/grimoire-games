@@ -5,8 +5,8 @@
 	* DEPENDS: addde nasm
 
 2006-07-25 Lalo Martins <lalo.martins@gmail.com>
-	 * PREPARE: added cvs option
-	 * DETAILS: added cvs option
+	* PREPARE: added cvs option
+	* DETAILS: added cvs option
 
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
