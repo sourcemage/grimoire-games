@@ -1,3 +1,6 @@
+2006-08-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: 1.1.9 - almost there
+
 2006-08-01 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated devel to 1.1.8
 	* CONFIGURE: just use WESNOTH_OPTS, no exporting
