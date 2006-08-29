@@ -1,15 +1,12 @@
-ABE_I_DIR="${INSTALL_ROOT}/usr/share/games/abe"  &&
 #fake a make install
-install  -d  -m  0777  -g  games  /usr/share/games  &&
-install  -d  -m  0777  -g  games  /usr/games        &&
-install  -d  -m  0777             $ABE_I_DIR        &&
-install      -m  0755    src/abe  $ABE_I_DIR        &&
-
+install      -m  0750 -g games    src/abe  ${INSTALL_ROOT}/usr/share/games/abe        &&
+local i
 for  i  in  savegame  maps  images  sounds;  do
-  install  -d  -m  0777        $ABE_I_DIR/$i   &&
-  install      -m  0666  $i/*  $ABE_I_DIR/$i/
+  install  -d  -m  0770        ${INSTALL_ROOT}/usr/share/games/abe/$i   &&
+  install      -m  0660  $i/*  ${INSTALL_ROOT}/usr/share/games/abe/$i/
 done  &&
 
-chown  -R  root.games  $ABE_I_DIR  &&
-echo  -e  "#! /bin/sh \n cd $ABE_I_DIR  && \n exec ./abe \$*"  >  runabe  &&
-install  -m  0755  -g  games  runabe  ${INSTALL_ROOT}/usr/games/abe
+cd ${INSTALL_ROOT}/usr/share/games/abe  &&
+find_and_scam
+echo  -e  "#! /bin/sh \n cd ${INSTALL_ROOT}/usr/share/games/abe  && \n exec ./abe \$*"  >  runabe  &&
+install  -m  0750  -g  games  runabe  ${INSTALL_ROOT}/usr/games/abe
