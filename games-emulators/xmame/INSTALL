@@ -1,24 +1,20 @@
-I_DIR="/usr/share/games/${SPELL}"       &&
-
-make  PREFIX=${INSTALL_ROOT}/usr        \
-      BINDIR=${INSTALL_ROOT}/usr/games  \
-      -f  makefile.unix                 \
-      install                           &&
-
-mkdir -p ${I_DIR}                      &&
-mkdir -p ${I_DIR}/artwork               &&
-mkdir -p ${I_DIR}/cabinets              &&
-mkdir -p ${I_DIR}/cfg                   &&
-mkdir -p ${I_DIR}/flyers                &&
-mkdir -p ${I_DIR}/hi                    &&
-mkdir -p ${I_DIR}/icons                 &&
-mkdir -p ${I_DIR}/ini                   &&
-mkdir -p ${I_DIR}/inp                   &&
-mkdir -p ${I_DIR}/memcard               &&
-mkdir -p ${I_DIR}/nvram                 &&
-mkdir -p ${I_DIR}/roms                  &&
-mkdir -p ${I_DIR}/samples               &&
-mkdir -p ${I_DIR}/snap                  &&
-cp  -r  ctrlr  ${I_DIR}                 &&
-cd ${I_DIR}                             &&
+make  PREFIX=${INSTALL_ROOT}/usr                          \
+      BINDIR=${INSTALL_ROOT}/usr/games                    \
+      -f  makefile.unix                                   \
+      install                                             &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/artwork   &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/cabinets  &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/cfg       &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/flyers    &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/hi        &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/icons     &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/ini       &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/inp       &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/memcard   &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/nvram     &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/roms      &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/samples   &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/xmame/snap      &&
+cp  -vr  ctrlr  ${INSTALL_ROOT}/usr/share/games/xmame     &&
+cd ${INSTALL_ROOT}/usr/share/games/xmame                  &&
 find_and_scam
