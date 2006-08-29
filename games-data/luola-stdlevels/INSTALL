@@ -1,11 +1,5 @@
-I_DIR="$INSTALL_ROOT/usr/share/games/luola"  &&
-
-if  [  !  -d  ${I_DIR}  ];  then
-  mkdir  -p  ${I_DIR}  &&
-  chown  root:games  ${I_DIR}
-fi  &&
-
-mkdir  ${I_DIR}/levels                                                &&
-chown  root:games  ${I_DIR}/levels                                    &&
-install  -m 0644  -o root  -g games  $SOURCE_DIRECTORY/{*.lev,*.png}  \
-                                     ${I_DIR}/levels
+mkdir -vp $INSTALL_ROOT/usr/share/games/luola/levels                  &&
+install -v -m 0644  -o root  -g games  $SOURCE_DIRECTORY/{*.lev,*.png}  \
+                           $INSTALL_ROOT/usr/share/games/luola/levels  &&
+cd $INSTALL_ROOT/usr/share/games/luola  &&
+find_and_scam
