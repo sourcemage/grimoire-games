@@ -1,7 +1,2 @@
-I_DIR=/usr/share/opentl  &&
-mkdir  -p  ${I_DIR}      &&
-cp  -r  *  ${I_DIR}      &&
-rm  -rf  ${I_DIR}/osx    \
-         tnl.dsw         \
-         tnl.sln
-
+cp -vr * ${INSTALL_ROOT}/usr/share/games/opentnl  &&
+rm -rf ${INSTALL_ROOT}/usr/share/games/opentnl/osx tnl.dsw tnl.sln

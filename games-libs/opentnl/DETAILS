@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/tnl
          ENTERED=20040622
          UPDATED=20040622
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Torque Network Library"
 cat << EOF
 The Torque Network Library is a robust, secure, easy to use, cross-platform C++ networking API designed for high performance simulations and games. The network architecture in TNL has powered some of the best internet multiplayer action games to date. Whether you're writing a multiplayer game, developing a complex simulation, or just need a solid foundation for network apps, TNL will meet your needs.
