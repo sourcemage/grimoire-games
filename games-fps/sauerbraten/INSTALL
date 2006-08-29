@@ -1,22 +1,21 @@
-install  -o  root  -g  games  -m  755  $SOURCE_DIRECTORY/src/sauer_client  \
-         $INSTALL_ROOT/usr/games/sauerbraten_client                        &&
-install  -o  root  -g  games  -m  755  $SOURCE_DIRECTORY/src/sauer_server  \
-         $INSTALL_ROOT/usr/games/sauerbraten_server                        &&
+install -v -o root -g games -m 750 $SOURCE_DIRECTORY/src/sauer_client        \
+         $INSTALL_ROOT/usr/games/sauerbraten_client                          &&
+install -v -o root -g games -m 750 $SOURCE_DIRECTORY/src/sauer_server        \
+         $INSTALL_ROOT/usr/games/sauerbraten_server                          &&
 
-cd  $SOURCE_DIRECTORY/$SPELL                                               &&
+cd  $SOURCE_DIRECTORY/$SPELL                                                 &&
 if  [  "$SAUERBRATEN_BINARY"  ==  "y"  ];  then
-  install  -o  root  -g  games  -m  755  -d  $I_DIR/bin                    &&
-  install  -o  root  -g  games  -m  755  $SCRIPT_DIRECTORY/$SPELL_*_bin    \
-           $INSTALL_ROOT/usr/games                                         &&
-  message  "${MESSAGE_COLOR}Installing x86 binaries...${DEFAULT_COLOR}"    &&
-  install  -o  root  -g  games  -m  755  bin_unix/linux_client             \
-           $I_DIR/bin/sauerbraten_client_bin                               &&
-  install  -o  root  -g  games  -m  755  bin_unix/linux_server             \
-           $I_DIR/bin/sauerbraten_server_bin
-fi                                                                         &&
-cp  -r  *.cfg  data  packages  $I_DIR                                      &&
-chown  -R  root.games  $I_DIR                                              &&
-mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                           &&
-install  -o  root  -g  games  -d  -m  644  /usr/share/doc/$SPELL           &&
-install  -o  root  -g  games  bin_unix/readme.bin.txt  ../readme_*.txt     \
-                              ../src/CUBE_TODO.txt  /usr/share/doc/$SPELL
+  mkdir -vp $INSTALL_ROOT/usr/share/games/sauerbraten/bin                    &&
+  install -v -o  root  -g  games  -m  750  $SCRIPT_DIRECTORY/$SPELL_*_bin    \
+           $INSTALL_ROOT/usr/games                                           &&
+  install -v -o root -g games -m 750 bin_unix/linux_client                   \
+  $INSTALL_ROOT/usr/share/games/sauerbraten/bin/bin/sauerbraten_client_bin   &&
+  install -v -o root -g games -m 750 bin_unix/linux_server                   \
+  $INSTALL_ROOT/usr/share/games/sauerbraten/bin/bin/sauerbraten_server_bin
+fi                                                                           &&
+cp  -r  *.cfg  data  packages  $INSTALL_ROOT/usr/share/games/sauerbraten/    &&
+chown -vR root:games  $INSTALL_ROOT/usr/share/games/sauerbraten/             &&
+mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                             &&
+install -v -o root -g games  -d  -m  640  /usr/share/doc/sauerbraten         &&
+install -v -o root -g games  bin_unix/readme.bin.txt  ../readme_*.txt        \
+                           ../src/CUBE_TODO.txt  /usr/share/doc/sauerbraten

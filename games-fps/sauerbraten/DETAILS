@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20051003
          UPDATED=20051003
       LICENSE[0]=ZLIB
-       BUILD_API=2
            SHORT='Next generation Cube FPS'
 cat << EOF
 Experimental engine based on Cube, can be seen as "Next-Gen Cube", or "Cube 2".
