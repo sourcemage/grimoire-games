@@ -1,0 +1,5 @@
+cd  ..                                                          &&
+cp  -r  music  mkdir -vp ${INSTALL_ROOT}/usr/share/games/forge  &&
+cd ${INSTALL_ROOT}/usr/share/games/forge                        &&
+find_and_scam
+
