@@ -1,5 +1,4 @@
-local  I_DIR                                     &&
-I_DIR=${INSTALL_ROOT}/usr/share/games/crossfire  &&
-mkdir  -p  $I_DIR                                &&
-chown  root:games  -R  *                         &&
-cp  -a  .  $I_DIR
+mkdir -vp  ${INSTALL_ROOT}/usr/share/games/crossfire   &&
+cp -va  .  ${INSTALL_ROOT}/usr/share/games/crossfire   &&
+cd ${INSTALL_ROOT}/usr/share/games/crossfire           &&
+find_and_scam

@@ -1,3 +1,7 @@
+2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: removed I_DIR
+	* DETAILS: API2 converted
+
 2005-12-30 Eric Sandall <eric@sandall.us>
 	* BUILD: Removed (games-data default_build runs `true`)
 	* INSTALL: Cannot chown to games:games (no games user)

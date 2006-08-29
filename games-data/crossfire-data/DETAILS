@@ -11,8 +11,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20041108
          UPDATED=20041108
       LICENSE[0]=GPL
-       BUILD_API=2
-         ARCHIVE="off"
            SHORT="Data files for crossfire"
 cat << EOF
 Crossfire is a multi-player graphical arcade and adventure game made
