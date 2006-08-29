@@ -1,14 +1,10 @@
-I_DIR="${INSTALL_ROOT}/usr/share/games/scummvm"     &&
-
-mkdir  -p  ${I_DIR}/tools                           &&
-mkdir  -p  ${INSTALL_ROOT}/usr/games                &&
-
-cp -f scummvm         ${INSTALL_ROOT}/usr/games  &&
-cp -f tools/convbdf   ${I_DIR}/tools     &&
-cp -f tools/md5table  ${I_DIR}/tools     &&
-cp -f scummvm.xpm     ${I_DIR}           &&
-
-chmod 0755 ${INSTALL_ROOT}/usr/games/scummvm  &&
-chmod 0755 ${I_DIR}/tools/convbdf             &&
-chmod 0755 ${I_DIR}/tools/md5table            &&
-chmod 0644 ${I_DIR}/scummvm.xpm
+mkdir  -vp  ${INSTALL_ROOT}/usr/share/games/scummvm/tools               &&
+cp -v scummvm         ${INSTALL_ROOT}/usr/games                         &&
+cp -v tools/convbdf   ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
+cp -v tools/md5table  ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
+cp -v scummvm.xpm     ${INSTALL_ROOT}/usr/share/games/scummvm           &&
+cd ${INSTALL_ROOT}/usr/share/games/scummvm                              &&
+find_and_scam                                                           &&
+chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/convbdf        &&
+chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/md5table       &&
+chmod 0640 ${INSTALL_ROOT}/usr/share/games/scummvm/scummvm.xpm
