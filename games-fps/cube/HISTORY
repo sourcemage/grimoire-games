@@ -1,3 +1,8 @@
+2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: removed I_DIR
+	* PRE_BUILD: removed I_DIR
+	* DETAILS: API2 converted
+
 2005-09-25 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2005_08_29
 	  Using GPG verification (Level 1)

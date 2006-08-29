@@ -1,34 +1,33 @@
-install  -o  root  -g  games  -m  755  -d  $I_DIR                          &&
-install  -o  root  -g  games  -m  755  cube_client  /usr/games             &&
-install  -o  root  -g  games  -m  755  cube_server  /usr/games             &&
-cd  $SOURCE_DIRECTORY                                                      &&
-if  [  "$CUBE_BINARY"  ==  "y"  ];  then
-  install  -o  root  -g  games  -m  755  -d  $I_DIR/bin                    &&
-  install  -o  root  -g  games  -m  755  $SCRIPT_DIRECTORY/cube_*_bin      \
-                                         /usr/games                        &&
-  if  `uname  -m  |  grep  -q  i*86`;  then
-    message  "${MESSAGE_COLOR}Installing x86 binaries...${DEFAULT_COLOR}"  &&
-    install  -o  root  -g  games  -m  755  bin_unix/linux_client           \
-             $I_DIR/bin/cube_client_bin                                    &&
-    install  -o  root  -g  games  -m  755  bin_unix/linux_server           \
-             $I_DIR/bin/cube_server_bin
-  elif  `uname  -m  |  grep  -q  ppc`      ||
-        `uname  -m  |  grep  -q  powerpc`;  then
-    message  "${MESSAGE_COLOR}Installing PPC binaries...${DEFAULT_COLOR}"  &&
-    install  -o  root  -g  games  -m  755  bin_unix/ppc_linux_client       \
-             $I_DIR/bin/cube_client_bin                                    &&
-    install  -o  root  -g  games  -m  755  bin_unix/ppc_linux_server       \
-             $I_DIR/bin/cube_server_bin
-  fi                                                                       #&&
-  # Bad idea, creates a segfault since it changes the stack size ;)
-  #sedit  "s:data\/:$I_DIR\/data\/:g"          /usr/games/cube_*_bin        &&
-  #sedit  "s:packages\/:$I_DIR\/packages\/:g"  /usr/games/cube_*_bin
-fi                                                                         &&
-cp  -r  *.cfg  data  packages  $I_DIR                                      &&
-chown  -R  root.games  $I_DIR                                              &&
-mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                           &&
-mv  cube_source/readme.txt    cube_source/readme.source.txt                &&
-install  -o  root  -g  games  -d  -m  644  /usr/share/doc/$SPELL           &&
-install  -o  root  -g  games  readme.html  bin_unix/readme.bin.txt         \
-         cube_source/readme.source.txt  cube_source/src/CUBE_TODO.txt      \
-         /usr/share/doc/$SPELL
+install  -o  root  -g  games  -m  750  cube_client  $INSTALL_ROOT/usr/games             &&
+install  -o  root  -g  games  -m  750  cube_server  $INSTALL_ROOT/usr/games             &&
+cd  $SOURCE_DIRECTORY                                                     &&
+if  [[  "$CUBE_BINARY"  ==  "y"  ]];  then
+  mkdir -vp $INSTALL_ROOT/usr/share/games/cube/bin                        &&
+  chown root:games $INSTALL_ROOT/usr/share/games/cube/bin                 &&
+  chmod 0750 $INSTALL_ROOT/usr/share/games/cube/bin                       &&
+  install -v -o root -g games -m 750 $SCRIPT_DIRECTORY/cube_*_bin         \
+                                     $INSTALL_ROOT/usr/games              &&
+
+  if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
+  then
+    install -v -o root -g games -m 750 bin_unix/linux_client              \
+          $INSTALL_ROOT/usr/share/games/cube/bin/cube_client_bin          &&
+    install -v -o root -g games -m 750 bin_unix/linux_server              \
+          $INSTALL_ROOT/usr/share/games/cube/bin/cube_server_bin
+
+  elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "ppc" ]]
+    then
+    install -v -o root -g games -m 750 bin_unix/ppc_linux_client          \
+          $INSTALL_ROOT/usr/share/games/cube/bin/cube_client_bin          &&
+    install -v -o root -g games -m 750 bin_unix/ppc_linux_server          \
+          $INSTALL_ROOT/usr/share/games/cube/bin/cube_server_bin
+  fi
+fi                                                                        &&
+cp  -vr  *.cfg  data  packages  $INSTALL_ROOT/usr/share/games/cube        &&
+chown  -vR  root:games  $INSTALL_ROOT/usr/share/games/cube                &&
+mv -v bin_unix/readme.txt  bin_unix/readme.bin.txt                        &&
+mv -v cube_source/readme.txt    cube_source/readme.source.txt             &&
+install -v -o root -g games -d -m 640 $INSTALL_ROOT/usr/share/doc/cube    &&
+install -v -o root -g games readme.html bin_unix/readme.bin.txt           \
+         cube_source/readme.source.txt  cube_source/src/CUBE_TODO.txt     \
+         /usr/share/doc/cube

@@ -1,28 +1,28 @@
 default_pre_build                                                 &&
 cd  $SOURCE_DIRECTORY                                             &&
-persistent_add  I_DIR                                             &&
-I_DIR="/usr/share/games/$SPELL/"                                  &&
 unpack_file  '2'                                                  &&
+
 chmod  a+x  cube_source/enet/configure                            &&
 cd  cube_source/src                                               &&
+local GAME_DIR_LEN=${#INSTALL_ROOT}                               &&
+let GAME_DIR_LEN=$GAME_DIR_LEN+21
 
 # Patches from Gentoo's ebuild
 patch  -p0  <  $SCRIPT_DIRECTORY/20050829-gentoo-paths.patch      &&
-
 dos2unix  *                                                       &&
 
 # Fix from Gentoo for using a path for data directory
 sedit  "4a\
-#define  GAMES_DATADIR \"$I_DIR\""  tools.h                       &&
+#define  GAMES_DATADIR \"${INSTALL_ROOT}/usr/share/games/cube\""  tools.h                       &&
 sedit  "5a\
-#define  GAMES_DATADIR_LEN ${#I_DIR}"  tools.h                    &&
-
+#define  GAMES_DATADIR_LEN ${GAME_DIR_LEN}"  tools.h              &&
 sedit  's:-lGL -lGLU:-L/usr/X11R6/lib &:'  Makefile               &&
 
 # Fix from Gentoo
+local i
 for  i  in  renderextras.cpp rendermd2.cpp sound.cpp worldio.cpp
 do
-  sedit  "s:packages/:${I_DIR}packages/:"  $i
+  sedit  "s:packages/:${INSTALL_ROOT}/usr/share/games/cube/packages/:"  $i
 done                                                              &&
 
 # Enable our custom optimizations for Cube
@@ -33,6 +33,4 @@ sedit  "s:-O3 -fsigned-char -fomit-frame-pointer:$CXXFLAGS:"      \
 sedit  "s:-Wall:& -DHAS_SOCKLEN_T=1:"  Makefile                   &&
 
 # Gentoo fix for parallel make
-sedit  's/make -C/$(MAKE) -C/'  Makefile                          &&
-
-cd  $SOURCE_DIRECTORY
+sedit  's/make -C/$(MAKE) -C/'  Makefile
