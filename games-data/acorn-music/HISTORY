@@ -1,0 +1,15 @@
+2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: removed
+	* INSTALL: removed I_DIR
+	* DETAILS: API2 conversion
+
+2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: inserted BUILD_API=1 line
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2003-10-14 Eric Sandall <eric@sandall.us>
+	* Created spell
+	* Added to games-libs
+

@@ -1,0 +1,15 @@
+           SPELL=acorn-music
+         VERSION=0.4
+          SOURCE=${SPELL/\-/_}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/media
+   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/games/acorn/${VERSION}/media/$SOURCE
+   SOURCE_URL[1]=http://purple.worldforge.org/downloads/games/acorn/${VERSION}/media/${SOURCE}
+        WEB_SITE=http://www.worldforge.org/dev/systems/acorn/
+     SOURCE_HASH=sha512:661887b3d5a8ba0ea3951f4feefa00749082122a0b1cf118ffd0e0e85a1a9d7ffb38caa38936d3c6c473a80f45cc88cf9e7db87744edc4d32991bd240b35f163
+         ENTERED=20031014
+         UPDATED=20031014
+      LICENSE[0]=GPL
+           SHORT="Music files required for the WorldForge Acorn game"
+cat << EOF
+This contains the music files required for the WorldForge Acorn game.
+EOF
