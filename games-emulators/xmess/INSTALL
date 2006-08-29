@@ -1,10 +1,7 @@
-I_DIR="${INSTALL_DIR}/usr/share/games/${SPELL}"  &&
-
-make  PREFIX=${INSTALL_ROOT}/usr                 \
-      BINDIR=${INSTALL_ROOT}/usr/games           \
-      -f  makefile.unix                          \
-      install                                    &&
-chown  -vR  root:games  ${I_DIR}                 &&
-cp  -vr  ctrlr  ${I_DIR}                         &&
-cd ${I_DIR}                                      &&
+make  PREFIX=${INSTALL_ROOT}/usr                       \
+      BINDIR=${INSTALL_ROOT}/usr/games                 \
+      -f  makefile.unix                                \
+      install                                          &&
+cp  -vr  ctrlr  ${INSTALL_DIR}/usr/share/games/xmess   &&
+cd ${INSTALL_DIR}/usr/share/games/xmess                &&
 find_and_scam

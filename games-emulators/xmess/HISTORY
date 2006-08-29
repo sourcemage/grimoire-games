@@ -1,3 +1,7 @@
+2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: removed I_DIR
+	* DETAILS: API2 converted
+
 2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: replaced fPIC and DPIC removal code with disable_pic()
 
