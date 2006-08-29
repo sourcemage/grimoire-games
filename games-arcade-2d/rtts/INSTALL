@@ -1,18 +1,18 @@
 #fudge install
-mkdir -p ${INSTALL_ROOT}/usr/games       &&
-mkdir -p $I_DIR                          &&
-install -m0755  i386_release/rtts $I_DIR &&
+install -m0750  i386_release/rtts ${INSTALL_ROOT}/usr/share/games/rtts &&
 
 cd $SOURCE_DIRECTORY                       &&
 #hack to clean up install
 rm -rf readme.txt SDL.dll game rtts rtts.exe source old.libraries
+local i
 for i in * 
-do if [ -f $i ] 
-    then install -m0666 $i $I_DIR 
- 	else if  [ -d $i ] 
-	then mkdir $I_DIR/$i && cd $i && install -m0666 * $I_DIR/$i && cd $SOURCE_DIRECTORY
-	fi
-    fi
+  do
+      mkdir -vp ${INSTALL_ROOT}/usr/share/games/rtts/$i &&
+      cd $i &&
+      install -m 0660 * ${INSTALL_ROOT}/usr/share/games/rtts/$i &&
+      cd $SOURCE_DIRECTORY
 done                                       &&
+cd ${INSTALL_ROOT}/usr/share/games/rtts  &&
+find_and_scam  &&
 echo -e "#! /bin/bash \n cd ${INSTALL_ROOT}/usr/share/games/rtts && ./rtts \$*" > .gameplay &&
-install -m0755 .gameplay ${INSTALL_ROOT}/usr/games/rtts
+install -m0750 .gameplay ${INSTALL_ROOT}/usr/games/rtts

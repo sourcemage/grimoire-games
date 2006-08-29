@@ -15,7 +15,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
       LICENSE[0]=http://www.rtts.org/source/license.txt
       LICENSE[1]=http://www.rtts.org/source/license.txt
       LICENSE[2]=GPL
-       BUILD_API=2
            SHORT="Return to the Shadows - Vertical scroller, originally written as a 'Raptor' clone"
 cat << EOF
 Return to the Shadows is a vertical scroller, greatly inspired by Raptor
