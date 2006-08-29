@@ -1,11 +1,4 @@
-I_DIR=${INSTALL_ROOT}/usr/share/games/gearhead  &&
-BIN_NAME=${INSTALL_ROOT}/usr/games/gearhead     &&
-
-games_create_base_dirs                          &&
-cp -r Series GameData Design "$I_DIR"           &&
-cp arena $BIN_NAME                              &&
-
-games_make_proper_binary                        &&
-
-cd "$I_DIR"                                     &&
+cp -vr Series GameData Design ${INSTALL_ROOT}/usr/games/gearhead  &&
+cp -v arena ${INSTALL_ROOT}/usr/games/gearhead                    &&
+cd ${INSTALL_ROOT}/usr/share/games/gearhead                       &&
 find_and_scam

@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/GearHead
          ENTERED=20051211
          UPDATED=20051211
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Mech style combat RPG in a similar to nethack or ivan"
 cat << EOF
 A century and a half ago the Earth was nearly destroyed by nuclear war. Now,
