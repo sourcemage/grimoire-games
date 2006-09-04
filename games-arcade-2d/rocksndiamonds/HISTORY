@@ -1,3 +1,6 @@
+2006-09-05 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added smpeg
+
 2005-11-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: we're using sha512 not sha1
 	* BUILD: missing &&
