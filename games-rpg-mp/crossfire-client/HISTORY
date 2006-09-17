@@ -1,3 +1,9 @@
+2006-09-17 Lalo Martins <lalo@sourcemage.org>
+	* DETAILS: Updating spell to 1.9.1
+	* DEPENDS: Noting optional dep to GLUT (although just like gtk+2,
+	  it isn't actually possible to disable it if you do have the dep
+          installed, as of yet)
+
 2005-12-30 Eric Sandall <eric@sandsall.us>
 	* BUILD: Use default_games_build
 	* FINAL: Cannot chown games:games (no games user)

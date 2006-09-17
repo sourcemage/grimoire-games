@@ -1,9 +1,9 @@
            SPELL=crossfire-client
-         VERSION=1.8.0
+         VERSION=1.9.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:3a3d55ef6fb0e4aab181a72ea6216226cba957484178ee0da6a96fbba56dbf01fa50682f90377555284b5905ae3e98c4b690e4601fb13d991acf50c4b8e540d4
       LICENSE[0]=GPL
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
