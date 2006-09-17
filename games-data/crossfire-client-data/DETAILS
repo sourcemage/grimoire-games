@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE2_HASH=sha512:cf5a1a475554be4b7c73b8523ada40064ff570802ca0385b684981d814a18b1e6d4d618f0139be2a4fca32f2abdfc6e71846e4dadce7cfeaf9ae801f5e2eeac5
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
-         UPDATED=20020124
       LICENSE[0]=GPL
            SHORT="Data files for crossfire-client"
 cat << EOF

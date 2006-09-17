@@ -4,11 +4,8 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
      SOURCE_HASH=sha512:e14bed3929d0aadc2e39db5658ec15fd5b4e70c1bab08837bfdcfa0f7433e832fc9a423cb36713eadf801331d68e64f03988715245e5fe1e2bd429ac019ec0af
-#     SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
-         UPDATED=20060917
-       BUILD_API=2
       LICENSE[0]=GPL
            SHORT="Server for a multi-player graphical MUD."
 cat << EOF
