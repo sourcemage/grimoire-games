@@ -1,3 +1,6 @@
+2006-09-17 Alexander Tsamutali <astsmtl@gmail.com>
+	* INSTALL: fixed, added "make datainstall"
+
 2006-03-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.2.4
 	  Removed deprecated FUZZ variable
