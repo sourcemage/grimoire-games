@@ -1,0 +1,2 @@
+cp -R actions libs lnfs plugins resources servers *.jar ${SPELL} ${INSTALL_ROOT}/usr/share/games/${SPELL}  &&
+ln -s ${INSTALL_ROOT}/usr/share/games/${SPELL}/${SPELL} ${INSTALL_ROOT}/usr/games/${SPELL}

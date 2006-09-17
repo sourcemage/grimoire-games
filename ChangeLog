@@ -1,3 +1,6 @@
+2006-09-17 Pol Vinogradov <vin.public@gmail.com>
+	* games-board/jin: new spell, chess game written in Java
+
 2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-data/acorn-music: moved from games-libs
 	* games-data/mason-media: moved from games-libs

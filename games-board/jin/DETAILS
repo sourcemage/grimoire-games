@@ -1,0 +1,14 @@
+           SPELL=jin
+         VERSION=2.13.1
+          SOURCE=$SPELL-$VERSION-unix.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:23be31eef97868331c9efdf167986e587e480aee4303a74ffa13d261eac2732e35d90d51652cf1bd1881ab7ae155cec52c1b82f0f53c8c8d4f10f7472b584270
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://jinchess.com/
+         ENTERED=20060917
+            DOCS="*.txt ${DOCS}"
+      LICENSE[0]=GPL
+           SHORT="Chess game written in Java"
+cat << EOF
+Chess game written in Java.
+EOF
