@@ -1,3 +1,4 @@
 chown  -R  root:games  *  &&
 chmod  -R  o-w  *         &&
-default_install
+default_install           &&
+make datainstall

@@ -1,16 +1,14 @@
            SPELL=crossfire-client-data
-         VERSION=1.7.1
-   SOUND_VERSION=1.4.0
+         VERSION=1.9.1
           SOURCE=crossfire-client-images-${VERSION}.tar.gz
-         SOURCE2=crossfire-client-sounds-${SOUND_VERSION}.tar.gz
+         SOURCE2=crossfire-client-sounds-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
   SOURCE2_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE2
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-     SOURCE2_GPG="gurus.gpg:${SOURCE2}.sig"
+     SOURCE_HASH=sha512:7cb12aa00998689cb965987171a7d184f315bfa357a8ccbe65e6415f7969d3824131685edcb43f048babf19ef9b09411a6a33d3fb61b12a5087a956ce03511d8
+    SOURCE2_HASH=sha512:cf5a1a475554be4b7c73b8523ada40064ff570802ca0385b684981d814a18b1e6d4d618f0139be2a4fca32f2abdfc6e71846e4dadce7cfeaf9ae801f5e2eeac5
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20011104
-         UPDATED=20020124
       LICENSE[0]=GPL
            SHORT="Data files for crossfire-client"
 cat << EOF
