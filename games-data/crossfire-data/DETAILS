@@ -1,12 +1,9 @@
            SPELL=crossfire-data
-         VERSION=1.8.0
-          SOURCE=crossfire-${VERSION}.arch.tar.bz2
-         SOURCE2=crossfire-${VERSION}.maps.tar.bz2
+         VERSION=1.9.1
+          SOURCE=crossfire-${VERSION}.maps.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE
-  SOURCE2_URL[0]=$SOURCEFORGE_URL/crossfire/$SOURCE2
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-     SOURCE2_GPG="gurus.gpg:${SOURCE2}.sig"
+     SOURCE_HASH=sha512:d6e54b1e408c655ddce4ce7cb894f8fdf5765bb71b7df2b49c9212e8188718572b120e832992cf0e816e88fc248533d4721bd261a16c359afe574fb4cbce7913
         WEB_SITE=http://crossfire.real-time.com
          ENTERED=20041108
          UPDATED=20041108

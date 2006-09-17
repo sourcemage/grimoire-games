@@ -1,3 +1,8 @@
+2006-09-17 Lalo Martins <lalo@sourcemage.org>
+	* DETAILS: Updating spell to 1.9.1
+	* DETAILS, PRE_BUILD: don't download/install archetypes, they
+	  are *not* necessary (or used) on a server install
+
 2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: removed I_DIR
 	* DETAILS: API2 converted
