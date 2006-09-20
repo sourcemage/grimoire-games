@@ -1,0 +1,21 @@
+--- configure.ac.old	2006-09-19 22:03:09.000000000 -0700
++++ configure.ac	2006-09-19 22:07:33.000000000 -0700
+@@ -602,14 +602,16 @@
+ 	         # silly hack, should be a proper configure compiler option test
+ 	         if test x$host_cpu = xx86_64; then
+ 		   CPPFLAGS="$CPPFLAGS -mtune=k8";
++	         else
++                   CPPFLAGS="$CPPFLAGS -mtune=$host_cpu";
+ 		 fi		    
+-	         CPPFLAGS="$CPPFLAGS -mtune=$host_cpu";
+ 	       else
+ 	         # silly hack, should be a proper configure compiler option test
+ 	         if test x$host_cpu = xx86_64; then
+ 		   CPPFLAGS="$CPPFLAGS -mcpu=k8";
++                 else
++	           CPPFLAGS="$CPPFLAGS -mcpu=$host_cpu";
+ 		 fi		    
+-	         CPPFLAGS="$CPPFLAGS -mcpu=$host_cpu";
+ 	       fi;;
+ 	     ppc) CPPFLAGS="$CPPFLAGS -mcpu=$host_cpu";;
+ 	esac;;

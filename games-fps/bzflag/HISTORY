@@ -1,3 +1,9 @@
+2006-09-19 David Brown <dmlb2000@gmail.com>
+	* PRE_BUILD: added to apply patch
+	* configure.ac-x86_64-fix.patch: fixes adding -mtune=x86_64 gcc doesn't
+	  like it (should be -mtune=x86-64 but I think I fixed it the way they
+	  intended)
+
 2006-05-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update to 2.0.8
 
