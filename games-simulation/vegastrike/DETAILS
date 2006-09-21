@@ -17,7 +17,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040502
          UPDATED=20040502 
       LICENSE[0]=http://vegastrike.sourceforge.net/manual/33_license/index.html
-       BUILD_API=2
            SHORT="3D Space Simulator."
 cat << EOF
 Vega Strike is a 3D Space Simulator that allows you to trade and bounty hunt in a
