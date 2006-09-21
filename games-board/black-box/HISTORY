@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-05-14 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: convert to api2 and version bump to 1.4.7
 	* DEPENDS: added depends on sdl_image
