@@ -17,7 +17,6 @@ fi
          ENTERED=20030319
          UPDATED=20040108
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Tools for the SCUMM engine used in various Lucas Arts games"
 cat << EOF
 ScummVM is an implementation of the SCUMM (Script Creation Utility for Maniac Mansion) engine used in 
