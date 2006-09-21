@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20050517
      GATHER_DOCS="off"
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Multi-User Dungeon (MUD) client"
 cat << EOF
 GNOME-Mud (formerly AMCL) is a Multi-User Dungeon (MUD) client
