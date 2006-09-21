@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040422
      SOURCE_HASH=sha512:5fafdf8dd3c13ec27ebb8fdcdf5d3e84dfe54e188846de4256527a0279feb49cbe1c75488591777c790ee1a367347912e0601e21ea9c66d8fa2f674ab8f594c4
          LICENSE=GPL
-       BUILD_API=2
            SHORT="KMuddy is a mud client designed for KDE"
 cat << EOF
 KMuddy is a mud client designed for KDE. It's features include ANSI Color,
