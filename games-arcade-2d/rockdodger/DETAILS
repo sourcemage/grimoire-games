@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011009
          UPDATED=20020223
       LICENSE[0]=GPL
-       BUILD_API=2 
            SHORT="spacerocks is a spaceship arcade style game."
 
 cat << EOF
