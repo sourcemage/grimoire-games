@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-02-11 Neuron <vlmarek@volny.cz>
 	* DETAILS: Version 1.0.10, BUILD_API=2, different SOURCE name,
 	  different SOURCE_DIRECTORY

@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/Slune-$VERSION
      SOURCE_HASH=sha512:3eb89ca0c21bd70e669b1a34c24194264936f53cebfb9a76cfdd0dba5855897fc3d921c6565cb6c77024bf37d523dc4d34ff78e1b71084506190d3a8456aeb24
         WEB_SITE=http://home.gna.org/oomadness/en/slune/index.html
       LICENSE[0]=GPL
-       BUILD_API=2
          ENTERED=20040926
          UPDATED=20040926
            SHORT="Slune is a 3D racing game."
