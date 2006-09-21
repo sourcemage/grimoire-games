@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-12-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: uses default_games_build
 
