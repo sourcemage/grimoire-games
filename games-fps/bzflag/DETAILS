@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.bzflag.org/
          ENTERED=20010922
          UPDATED=20050118
-       BUILD_API=2
       LICENSE[0]=GPL
            SHORT="3D multiplayer network tank battle game"
 cat << EOF
