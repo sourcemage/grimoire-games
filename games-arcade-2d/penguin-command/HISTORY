@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-12-17 Neuron <vlmarek@volny.cz>
 	* DETAILS: Updated to 1.6.10
 	* BUILD: fixed bad install path by using default_games_build

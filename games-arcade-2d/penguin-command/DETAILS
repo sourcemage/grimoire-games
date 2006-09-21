@@ -8,7 +8,6 @@
          UPDATED=20011011
      SOURCE_HASH=sha512:1e4515fd325a8b53a094b436e67632f24d629c3f2114e305d8c9d953f1095e35541af5d20510472401967359414effa9aeaa2be09b59dd2cd89d56176ef345da
       LICENSE[0]=GPL
-       BUILD_API=2 
            SHORT="penguin-command is a missile command clone."
 cat << EOF
 This is a clone of the classic "Missile Command" Game, but it has better
