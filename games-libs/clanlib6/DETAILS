@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/ClanLib-${VERSION/\-1/}
          ENTERED=20011105
          UPDATED=20020827
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Multi-Platform game development library"
 cat << EOF
 Clanlib is a medium level development kit.  At its lowest level it
