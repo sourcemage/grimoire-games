@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020420
          UPDATED=20020420
       LICENSE[0]=UNKNOWN
-       BUILD_API=2
            SHORT="cd /pub; more beer"
 cat << EOF
 A really useful spell you have all been waiting for. After doing a 
