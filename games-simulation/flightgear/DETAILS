@@ -11,7 +11,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
          ENTERED=20010922
          UPDATED=20040107
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Flight simulator."
 cat << EOF
 The Flight Gear Flight Simulator project is a free, open-source,

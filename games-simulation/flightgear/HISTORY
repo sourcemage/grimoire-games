@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-04-20 John Harding <johnh@kuberaconsulting.com>
 	* CONFIGURE: Deleted and moved config_query to PREPARE
 	* PREPARE: Created and populated per above
