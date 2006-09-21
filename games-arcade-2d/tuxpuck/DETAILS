@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011214
          UPDATED=20020324
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Shufflepuck game, in alpha stage of development"
 cat << EOF
 TuxPuck is a shufflepuck game written in C using SDL. The player
