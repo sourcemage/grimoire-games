@@ -23,7 +23,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[1]=http://uqm.stack.nl/wiki/The_Ur-Quan_Masters_Project_FAQ#Under_what_license_is_the_game_released.3F
       LICENSE[2]=http://uqm.stack.nl/wiki/The_Ur-Quan_Masters_Project_FAQ#Under_what_license_is_the_game_released.3F
       LICENSE[3]=http://uqm.stack.nl/wiki/The_Ur-Quan_Masters_Project_FAQ#Under_what_license_is_the_game_released.3F
-       BUILD_API=2
            SHORT="Port of Star Control II: The Ur-Quan Masters"
 cat << EOF
 The project started in August 2002, when Toys For Bob  released the sources of
