@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/-*}
          ENTERED=20041009
          UPDATED=20051202
       LICENSE[0]=GPL
-       BUILD_API=2
         NO_CACHE="-O ${SOURCE}"
            SHORT="Cute jump'n'run'n'shoot game"
 cat << EOF
