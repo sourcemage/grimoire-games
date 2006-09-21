@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/CriticalMass-$VERSION
          ENTERED=20011214
          UPDATED=20050316
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="SDL/OpenGL space shoot'em up game"
 cat << EOF
 Critical Mass (Critter) is an SDL/OpenGL space shoot'em up game. 
