@@ -4,7 +4,6 @@
          ENTERED=20040522
          UPDATED=20040522
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="the Ubiquitous Amiga Emulator"
 cat << EOF
 UAE can emulate any Commodore Amiga from the original 1000 to the A4000.
