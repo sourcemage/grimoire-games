@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-1.50
          ENTERED=20040522
          UPDATED=20040522
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="A bloody game with cute bunnies."
 cat << EOF
 You're a cute little bunny and you have to avoid the other bunnies from
