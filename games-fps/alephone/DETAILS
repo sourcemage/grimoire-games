@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG}-${VERSION}
      SOURCE_HASH=sha512:ba8ae4a3e8e180ba4afdd47d30540dd0f12a0ee2c134ab87a7b7764f5f453ee63bf310baf8e57b39c6657ab7957cd8caef434fe53c0db750b8eaf22a87344c43
          ENTERED=20030606
          UPDATED=20030606
-       BUILD_API=2
            SHORT="Aleph One is an Open Source 3D first-person shooter game."
 cat << EOF
 
