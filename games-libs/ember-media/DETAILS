@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20050310
          UPDATED=20050310
       LICENSE[0]=GPL
-       BUILD_API=2
          ARCHIVE="off"
            SHORT="WorldForge media for the Ember client"
 cat << EOF
