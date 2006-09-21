@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050709
          UPDATED=20050709
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="data files for warzone2100"
 cat << EOF
 data files for warzone2100
