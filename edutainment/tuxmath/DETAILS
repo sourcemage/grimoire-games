@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
        BUILD_API=1
            SHORT="tuxmath is a game where you do math fast or watch your city get blasted."
 cat << EOF
