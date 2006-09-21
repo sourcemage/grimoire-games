@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020320
          UPDATED=20051206
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="GameSpy-like app for GNU/Linux"
 cat << EOF
 XQF is a Quake, Quake World, Quake2, Quake3, Quake4, Doom3, Nexuiz, Jedi
