@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020411
          UPDATED=20020608
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
            SHORT="Have nice penguins running across your desktop"
 cat << EOF
 Ever wanted cute little penguins walking along the tops of your windows?
