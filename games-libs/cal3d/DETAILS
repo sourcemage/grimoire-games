@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Skeletal based 3D character animation library"
 cat << EOF
 Cal3D is a skeletal based 3d character animation library written in C++ in a platform-/graphic API-independent way.
