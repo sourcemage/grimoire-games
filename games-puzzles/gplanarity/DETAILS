@@ -13,7 +13,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
         WEB_SITE=http://web.mit.edu/xiphmont/Public/gPlanarity.html
    SOURCE_IGNORE=volatile
       LICENSE[0]=GPL
-       BUILD_API=2
          ENTERED=20060410
          UPDATED=20060410
            SHORT="a simple puzzle game involving untangling planar graphs"
