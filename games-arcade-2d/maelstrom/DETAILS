@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Maelstrom-${VERSION}
          UPDATED=20011215
      SOURCE_HASH=sha1:28b273615d1c375e532d375a4a407a99af63e283
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="maelstrom is an excellet asteroids-type game"
 cat << EOF
 Maelstrom is an excellent Asteroids-type game with sound and 3D objects.
