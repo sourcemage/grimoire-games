@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-chalkboard
       LICENSE[0]=GPL
          ENTERED=20050502
          UPDATED=20050502
-       BUILD_API=2
            SHORT="Simpsons fortunes"
 cat << EOF
 fortune-simpsons-chalkboard is a collection of Bart Simpson's
