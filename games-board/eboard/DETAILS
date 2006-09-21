@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030503
          UPDATED=20031201
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="eboard is an chess interface"
 cat << EOF
 eboard is a graphical user interfaces for chess. They display a chessboard on
