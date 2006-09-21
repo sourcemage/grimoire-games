@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-fgump
       LICENSE[0]=GPL
          ENTERED=20050502
          UPDATED=20050502
-       BUILD_API=2
            SHORT="Forrest Gump fortunes"
 cat << EOF
 fortune-fgump is a collection of quotes from the movie
