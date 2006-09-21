@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20031009
          UPDATED=20031009
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
             DOCS="COPYING README"
        BUILD_API=1
            SHORT="Cal3d model viewer"
