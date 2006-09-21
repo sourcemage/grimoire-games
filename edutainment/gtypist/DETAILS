@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020502
      SOURCE_HASH=sha512:f1e12f9a07633ddb9c3c1870bb4f4f67f7cb384c297dc0d6d006915fcc75a8cc2fb87c23e270bbaad757423441ea342281f7b9d5968a1ea8e7c52b5c67095b10
       LICENSE[0]=GPL
-      MAINTAINER=v.merkatz@gmx.net
        BUILD_API=1
            SHORT="GNU Typist is a console-based typing tutor"
 cat << EOF
