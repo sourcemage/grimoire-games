@@ -17,7 +17,6 @@ fi
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Media display and manipulation tool for WorldForge"
 cat << EOF
 EntityForge is a 3D graphical media display and manipulation tool.
