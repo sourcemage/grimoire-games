@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Nexuiz
          ENTERED=20050724
          UPDATED=20050724
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Nexuiz is a fast-paced, chaotic, and intense
 multiplayer first person shooter, focused on providing basic, old style
 deathmatch."
