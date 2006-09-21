@@ -33,7 +33,6 @@ PYSOL_MUSIC_VERSION=4.40
              MD5[4]=7853f0cb0861202f2344693e15ea2f8d
          LICENSE[4]=GPL
 fi
-       BUILD_API=2
            SHORT="Large collection of card games"
 cat << EOF
 PySol is an exciting collection of Solitaire card games. Its features 
