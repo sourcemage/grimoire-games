@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=LGPL
-      MAINTAINER=eric@sandall.us
        BUILD_API=1
            SHORT="Example Cal3d model data"
 cat << EOF
