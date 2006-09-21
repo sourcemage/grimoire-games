@@ -15,7 +15,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="TinyFugue is a flexible, screen-oriented MUD client, for use with any type of MUD."
 cat << EOF
 TinyFugue is a power screen-oriented MUD client that can talk to any type of
