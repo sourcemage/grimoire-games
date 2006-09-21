@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL%-*}-$VERSION
          ENTERED=20040430
          UPDATED=20040430
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Descent2 rewrite"
 cat << EOF
 d2x is Descent2 rewrite
