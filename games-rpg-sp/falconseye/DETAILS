@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/falconseye
          ENTERED=20020105
          UPDATED=20020105
       LICENSE[0]=NETHACK
-       BUILD_API=2
            SHORT="Graphic nethack derivative"
 cat << EOF
 Falcon's Eye is a mouse-driven interface for NetHack that enhances
