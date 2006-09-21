@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20031009
      GATHER_DOCS="off"
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="xboard is a X chess program"
 cat << EOF
 XBoard is a graphical user interfaces for chess. They display a chessboard on

@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-03-03 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: BUILD_API=2, MAINTAINER removed
 	* BUILD: replaced all with default_games_build
