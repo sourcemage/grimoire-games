@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION/\a/}
      SOURCE_HASH=sha512:d54f2635f583be8a7e4bf3463c69c1ab368e1c069dd7c4edffb95df0448faf7e82ddb8f8607d22a7336e2db176134555ca65b613e9d008b38fecb8ad5a818498
         WEB_SITE=http://pinball.sourceforge.net/
       LICENSE[0]=GPL
-       BUILD_API=2
          ENTERED=20020303
          UPDATED=20031212
            SHORT="Emilia pinball project"
