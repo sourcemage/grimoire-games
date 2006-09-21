@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          UPDATED=20040107
      SOURCE_HASH=sha512:bf8bf37729ee79f0a48281afda61355925c8b72056f112b848c1fe9d3f8bcbe57ef8dc7d13f0dc4029f6fe182057c0b52a72d471678d61b798ea1b23f55c2814
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="CEL provides a notion of entities and property classes to the Cystal Space Engine."
 cat << EOF
  Crystal Entity Layer is a layer that sits on top of Crystal Space 3D Engine. It provides the notion of entities 
