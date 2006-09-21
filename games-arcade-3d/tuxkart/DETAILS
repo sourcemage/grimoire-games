@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20021211
          UPDATED=20021211
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Tux, the Linux Penguin, races around tracks"
 cat << EOF
 A kart game starring Tux.
