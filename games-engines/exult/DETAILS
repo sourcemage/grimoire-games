@@ -17,7 +17,6 @@ fi
          UPDATED=20021018
       LICENSE[0]=GPL
      GCC_VERSION=3.4
-       BUILD_API=2
            SHORT="Exult is an open-source game engine for playing Ultima7"
 cat << EOF
 Exult is an open-source game engine for playing Ultima7 on modern
