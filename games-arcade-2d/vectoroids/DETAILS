@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011214
          UPDATED=20020426
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Vectoroids is based on the X-Window PDA game Agendaroids"
 cat << EOF
 Vectoroids is based on the X-Window PDA game 'Agendaroids,' but uses
