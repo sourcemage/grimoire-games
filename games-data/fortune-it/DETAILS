@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune.it-${VERSION}
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324
-       BUILD_API=2
            SHORT="A fortune file in Italian."
 cat << EOF
 This package contains a very funny fortune file in Italian.
