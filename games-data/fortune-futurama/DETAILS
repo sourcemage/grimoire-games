@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-futurama-$VERSION
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324
-       BUILD_API=2
            SHORT="Futurama Fortune Cookie-Files"
 cat << EOF
 Futurama Fortune Cookie-Files - a compilation of quotes from
