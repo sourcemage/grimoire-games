@@ -19,7 +19,6 @@ fi
          ENTERED=20020915
          UPDATED=20050311
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="3D Client for WorldForge using SDL and OpenGL"
 cat << EOF
 Sear is a 3D client written in C++, using SDL and OpenGL for graphics. It currently runs under Linux and Windows (through cross-compiling) and there has been some limited success on Max OSX. It will connect to the Cyphesis and Stage servers.
