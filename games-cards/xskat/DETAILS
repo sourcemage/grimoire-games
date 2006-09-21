@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020414
          UPDATED=20020414
       LICENSE[0]=PD
-       BUILD_API=2
            SHORT="XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11"
 cat << EOF
 XSkat lets you play the card game Skat as defined by the official Skat Order on any Un*x machine running X11.
