@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/Py2Play-$VERSION
          ENTERED=20060211
          UPDATED=20060211
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="A peer-to-peer network game engine in Python"
 cat << EOF
 A peer-to-peer network game engine in Python. It does not require any server to

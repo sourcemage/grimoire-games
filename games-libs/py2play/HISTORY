@@ -1,2 +1,5 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-02-11 Neuron <vlmarek@volny.cz>
 	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL: Created spell
