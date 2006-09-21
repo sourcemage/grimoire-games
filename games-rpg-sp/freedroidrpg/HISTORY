@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-11-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Version 0.9.13 and BUILD API 2 update
 	* BUILD: build api 2 conversion now also uses default_games_build
