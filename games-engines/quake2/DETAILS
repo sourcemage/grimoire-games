@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020408
       LICENSE[0]=GPL
       LICENSE[1]=GPL
-       BUILD_API=2
            SHORT="The sequel to the mother of all games."
 cat << EOF
 Shortly after landing on an ALIEN surface you learn that HUNDREDS of your
