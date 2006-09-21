@@ -1,6 +1,5 @@
            SPELL=tuxpaint
          VERSION=0.9.15b
-       BUILD_API=2
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=$SPELL-stamps-2005.11.25.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
