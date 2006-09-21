@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020131
      SOURCE_HASH=sha512:292bcaad39342ad69862f1add36b11505ca5f2601637a8db6fad438c5a4b32d7801bc7e6c08b903b0fb8bf68dcb3ec8d968fb913cde65941b9b9ac64b5a5266f
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="circus linux is a clone of the Atris 2600 game Circus Atari"
 cat << EOF
 Circus Linux! is a clone of the Atari 2600 game "Circus Atari." The
