@@ -13,7 +13,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
       LICENSE[1]=GPL
   SECURITY_PATCH=1
-       BUILD_API=2
            SHORT="Reimplementation of Civilization I/II/III"
 cat << EOF
 Freeciv is a multiuser reimplementation for Unix/X of the famous Microprose
