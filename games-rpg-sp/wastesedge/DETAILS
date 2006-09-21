@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020517
          UPDATED=20020517
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Open Source Role Playing Game"
 cat << EOF
 Listen to the water
