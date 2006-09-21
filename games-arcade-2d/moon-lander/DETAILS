@@ -8,7 +8,6 @@
          UPDATED=20010922
      SOURCE_HASH=sha512:abe95aeeabbb742a6f207a444d4224479140f01060efe8c8321339d2c6135a0ade2362ae3bb863127ddf936901f9db7b688ffd3cc724fa35d6bebb4337ae573e
       LICENSE[0]=BSD
-       BUILD_API=2 
            SHORT="Land a spaceship on the moon."
 cat << EOF
 Land a spaceship on the moon, like the arcade game, but with better
