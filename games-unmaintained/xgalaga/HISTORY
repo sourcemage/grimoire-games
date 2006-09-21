@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed MAINTAINER.
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, INSTALL: converted to build_api 2
 	* POST_INSTALL, FINAL: moved score file creation to FINAL
