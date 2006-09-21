@@ -9,7 +9,6 @@
           UPDATED=20040422
       GATHER_DOCS="off"
        LICENSE[0]=ART
-        BUILD_API=2
             SHORT="Crimson Fields is a tactical war game in the tradition of Battle Isle"
 cat << EOF
 Crimson Fields is a tactical war game in the tradition of Battle Isle. Two
