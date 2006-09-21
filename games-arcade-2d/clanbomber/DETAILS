@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040713
          UPDATED=20040713
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Bomberman clone..."
 cat << EOF
 Let's blow ourselfs a clanlib bomberman clone
