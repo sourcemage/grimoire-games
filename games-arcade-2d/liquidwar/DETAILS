@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020210
          UPDATED=20050920
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Liquid War is a unique multiplayer wargame."
 cat << EOF
 Liquid War is a truly original multiplayer wargame. You control an
