@@ -1,6 +1,5 @@
            SPELL=xwelltris
          VERSION=1.0.1
-       BUILD_API=2
           SOURCE=$SPELL-$VERSION.src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://xnc.dubna.su/$SPELL/src/$SOURCE
