@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
          ENTERED=20011106
          UPDATED=20020320
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="XTux is a Quake3 like 2D game with TUX!"
 cat << EOF
 In XTux, you can play as Tux the Linux penguin, the BSD daemon, or
