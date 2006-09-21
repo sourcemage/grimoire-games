@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Game of climbing a tower while avoiding creatures"
 cat << EOF
 Tower Toppler (aka Nebulous) is the reimplementation an old 'jump and 
