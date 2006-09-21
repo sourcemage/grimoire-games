@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050212
          UPDATED=20050212
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Iter Vehemens ad Necem (IVAN) is a graphical roguelike game - sort of nethack"
 cat << EOF
 Iter Vehemens ad Necem (IVAN) is a graphical roguelike game, which currently
