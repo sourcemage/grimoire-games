@@ -17,7 +17,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]="LGPL,GPL"
-       BUILD_API=2
            SHORT="WorldForge Toolkit widget library"
 cat << EOF
 'wftk' means 'WorldForge Toolkit': a widget library, written in C++, that is designed to allow quick, easy creation and management of GUI applications.  The wftk logo, to the right, depicts a hammer and wrench in stained glass - tools used to decorate a window.
