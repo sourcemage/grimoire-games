@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
          ENTERED=20010922
          UPDATED=20020308
-       BUILD_API=2
            SHORT="castle-combat is a clone of the old DOS game rampart."
 cat << EOF
 It's a clone of the old DOS game Rampart. Up to four players (or more in
