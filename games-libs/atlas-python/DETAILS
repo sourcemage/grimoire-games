@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040721
          UPDATED=20040721
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Standard implementation of the WorldForge Atlas protocol in Python"
 cat << EOF
 Atlas C++ is the standard implementation of the WorldForge Atlas protocol in Python. It is currently being developed in parallel with a stable branch, and the development code maintained separatly.
