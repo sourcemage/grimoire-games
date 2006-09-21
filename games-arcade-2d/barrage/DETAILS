@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050918
          UPDATED=20050918
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Barrage is a rather violent action game."
 cat << EOF
 Barrage is a rather violent action game with the objective to kill and
