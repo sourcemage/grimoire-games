@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020826
          UPDATED=20021018
       LICENSE[0]=LGPL
-      MAINTAINER=eric@sandall.us
            SHORT="Documentation for paragui"
 cat << EOF
 Documentation for ParaGUI.  ParaGUI is a cross-platform high-level application framework and GUI (graphical user interface) library. It can be compiled on various platforms (Linux, Win32, BeOS, MacOS, ...)
