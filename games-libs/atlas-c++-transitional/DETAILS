@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
          ENTERED=20040409
          UPDATED=20040409
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Standard implementation of the WorldForge Atlas protocol"
 cat << EOF
 Atlas C++ is the standard implementation of the WorldForge Atlas protocol. It is currently being developed in parallel with a stable branch, and the development code maintained separatly.
