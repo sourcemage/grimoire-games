@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
          ENTERED=20031001
          UPDATED=20031001
-       BUILD_API=2
            SHORT="monkey-bubble is a bust'a'move clone"
 cat << EOF
 monkey-bubble is a bust'a'move clone for the GNOME desktop.
