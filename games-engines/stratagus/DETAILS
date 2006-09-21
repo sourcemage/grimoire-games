@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-040702
          UPDATED=20040718
      SOURCE_HASH=sha512:d2a486f9650bdfd997e3815f113483c8409e9320dd642554ac1fee8644f94da3f44da64367a2967d32f78118fbd94cc87b36c351346f182755269bc7156c21fd
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT='A real-time strategy game engine'
 cat << EOF
 Stratagus is a free cross-platform real-time strategy gaming engine. It includes support for playing 
