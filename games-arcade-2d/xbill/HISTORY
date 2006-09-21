@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-04-25 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: api2 conversion, removed MAINTAINER
 	* BUILD: added with default_games_build
