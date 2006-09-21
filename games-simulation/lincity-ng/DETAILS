@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050911
          UPDATED=20050911
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="A city simulation game."
 cat << EOF
 LinCity-NG is a city simulation game. It is a polished and improved version of
