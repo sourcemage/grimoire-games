@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VER
          ENTERED=20020517
          UPDATED=20020604
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Open Source Role Playing Game Engine"
 
 cat << EOF
