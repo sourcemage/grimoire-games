@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20021031
      SOURCE_HASH=sha512:8aede56515da472509068037bd295d7a37f365dd54ea8332c02409e84bf685b76f1733b93b90fa49ca58e9094a4506137c6459d4761a929cfa2e60bb0907a353
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Puzzle game similar to Tetris(R) with OpenGL"
 cat << EOF
 Falling Block Game is a puzzle game that is similar to the Hasbro classic, Tetris. 
