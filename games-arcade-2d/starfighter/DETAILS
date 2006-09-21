@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VER}
          UPDATED=20060331
       LICENSE[0]=GPL
         NO_CACHE="-O ${SOURCE}"
-       BUILD_API=2
            SHORT="Starfighter is a space based shootem up game"
 cat << EOF
 After decades of war one company, who had gained powerful supplying 
