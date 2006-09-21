@@ -16,7 +16,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/xsw-${VERSION}
         WEB_SITE=http://wolfpack.twu.net/ShipWars/XShipWars/
          ENTERED=20050109
       LICENSE[0]=GPL2
-       BUILD_API=2
            SHORT="multi-player, ultra graphical, space-oriented gaming system"
 cat << EOF
 XShipWars is a massively multi-player, ultra graphical, space-oriented gaming system
