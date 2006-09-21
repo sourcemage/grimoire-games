@@ -1,6 +1,5 @@
            SPELL=typespeed
          VERSION=0.4.4
-       BUILD_API=2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://ls.purkki.org/$SPELL/$SOURCE
