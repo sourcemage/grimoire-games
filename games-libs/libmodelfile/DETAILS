@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20041021
          UPDATED=20041021
       LICENSE[0]="GPL"
-       BUILD_API=2
            SHORT="WorldForge 3D model library"
 cat << EOF
 libmd3 is a 3D model library used by WorldForge.
