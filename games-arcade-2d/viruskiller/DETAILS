@@ -1,12 +1,10 @@
            SPELL=viruskiller
-       BUILD_API=2
          VERSION=1.0-1
           SOURCE="download.php?file=${SPELL}-${VERSION}.tar.gz&type=zip"
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-1.0
    SOURCE_URL="http://www.parallelrealities.co.uk/download.php?file=${SPELL}-${VERSION}.tar.gz&type=zip"
         WEB_SITE=http://paralellrealities.co.uk/virusKiller.php
      SOURCE_HASH=sha512:80b0660277f310a301551f2ee3a41b2510312b7a111d3eff989ff23808fc31e8c79e19c60bda43c1aea9e206cfb56112cc3df1e4e15abd4d9bb70e2c90af3b3d
-      MAINTAINER=asaru
          ENTERED=20060404
          UPDATED=20060404
       LICENSE[0]=GPL

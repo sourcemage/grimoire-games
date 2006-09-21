@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2 and MAINTAINER.
+
 2006-04-07 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* INSTALL: deleted, no fixes on permissions needed
 
