@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/FOTAQ
          ENTERED=20050911
          UPDATED=20050911
      SOURCE_HASH=sha512:ab6e62fff133cb1d2fb3490bbb566c9736e02ea41cb59d6923e15b7a9c11b6da1504033740e24f499eaa6bd8e451affc657ba73a66d28ac1f077802c08c3c0fa
-       BUILD_API=2
       LICENSE[0]=ftp://ftp.suse.com/pub/suse/i386/supplementary/X/FOTAQ/readme.txt
            SHORT="Flight of the Amazon Queen, CD Talkie - Released to the ScummVM Team"
 
