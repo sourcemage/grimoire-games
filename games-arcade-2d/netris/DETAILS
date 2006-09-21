@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020129
      SOURCE_HASH=sha512:842ad8602394dee929c3c4ba222f9f5ffe628e52348c3faf7c9098bbd5b0b0279fffc7927320f8ee8a5102537c995a8ed605d851f1cd32e4bd8976a7889c84e1
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Netris -- A free networked version of T*tris"
 cat << EOF
 This is an unfinished developmental version of Netris, 
