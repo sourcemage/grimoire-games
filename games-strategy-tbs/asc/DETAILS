@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030902
          UPDATED=20040216
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Turn based strategy game"
 cat << EOF
 ASC is a free, turn based strategy game. It is designed in the tradition of the Battle Isle series 
