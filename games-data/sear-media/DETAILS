@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20050311
          UPDATED=20050311
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Media for Sear WorldForge client"
 cat << EOF
 Media set used by the WorldForge game client: Sear.
