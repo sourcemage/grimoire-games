@@ -4,7 +4,6 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://gnuboy.unix-fu.org/src/$SOURCE
         WEB_SITE=http://gnuboy.unix-fu.org
-      MAINTAINER=v.merkatz@gmx.net
      SOURCE_HASH=sha512:89e8075dac5ec17b375a5739367b46c55130211fb487a052be1cca49a5d86cc1a7f1619b2b2473d744fbe3c51fdb1a11110b15836cc9cc9de588932b91d258e6
       LICENSE[0]=GPL
          ENTERED=20020826
