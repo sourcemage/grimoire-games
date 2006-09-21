@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20040522
      SOURCE_HASH=sha512:fb23ca82629f976b6db7fb196d85d709ed23a87732280eb2546021964e02b0030f7065bb7f5d58f6e1baa17213687f2d571902f555b15a26b164b72f821babaa
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="the Ubiquitous Amiga Emulator"
 cat << EOF
 UAE can emulate any Commodore Amiga from the original 1000 to the A4000.
