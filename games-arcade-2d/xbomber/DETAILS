@@ -8,7 +8,6 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL"
          ENTERED="20050921"
          UPDATED="20050921"
       LICENSE[0]="Freeware"
-       BUILD_API=2
            SHORT="Bomberman clone"
             DOCS="*.txt"
 cat << EOF
