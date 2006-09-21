@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20020828
      SOURCE_HASH=sha512:8c4786a8dcd0445e30f0943a58eade13db28895ff8b5569ea07311bf56dee5b17243e7b95dbb941a38371c807449fad0c340d0f852e19483e950a67c9a428778
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="cuyo: Tetris-like game with many surprises"
 cat << EOF
 cuyo is a Tetris-like game.  You have to try to put balls of
