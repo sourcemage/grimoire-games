@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20010922
          UPDATED=20040216
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="xscorch is a clone of the classic DOS game Scorched Earth."
 cat << EOF
 Xscorch is a clone of the classic DOS game "Scorched Earth". The basic
