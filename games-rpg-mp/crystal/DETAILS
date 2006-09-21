@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20051031
          UPDATED=20051031
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Crystal is a Unix mud client"
 cat << EOF
 Crystal is a unix mud client, released under the GNU GPL.  It's philosophy
