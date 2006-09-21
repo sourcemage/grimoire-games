@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://lincity.sourceforge.net/
          ENTERED=20040925
          UPDATED=20040925
-       BUILD_API=2
            SHORT="Lincity is a city simulation game."
 cat << EOF
 Lincity is a city simulation game. Build your city up from a primitive

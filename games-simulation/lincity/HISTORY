@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-12-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: removed svgalib, it breaks
 	* BUILD: now uses default_games_build and a force
