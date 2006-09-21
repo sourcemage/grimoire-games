@@ -18,7 +18,6 @@ fi
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="C++ utility library for editor developers"
 cat << EOF
 Varconf is a C++ utility library for all editor developers. It provides:
