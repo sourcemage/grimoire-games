@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20031009
      SOURCE_HASH=sha512:3b0309acbebcf8eddf7ed0d64067e6fbea8fef6e05b83086e479efd48620be1184e8647f77e87756d7109c9e129d03a2c65a79762870c04e286eeade78eed582
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="dopewars is a Drug dealing game set in New York"
 cat << EOF
 dopewars is a Drug dealing game set in New York.
