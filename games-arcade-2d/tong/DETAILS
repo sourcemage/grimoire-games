@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050106
          UPDATED=20050106
       LICENSE[0]=GPL
-       BUILD_API=2
             DOCS="README making-of.txt CHANGELOG CREDITS"
            SHORT="Tetris and Pong combined into one game"
 cat << EOF
