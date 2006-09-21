@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020411
       LICENSE[0]=GPL
           REJECT="Deprecated gnome1 version"
-      MAINTAINER=eric@sandall.us
            SHORT="Control xpenguins from the gnome applet"
 cat << EOF
 The XPenguins GNOME Applet allows you to fill your screen with penguins 
