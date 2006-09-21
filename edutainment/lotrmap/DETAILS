@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
         WEB_SITE=http://lotrmap.sourceforge.net/
       LICENSE[0]=GPL
      SOURCE_HASH=sha512:4efa4af7cc04fff22d9e758bf8228c15673f5332819a60d9b0b351141a91ac84e86d1954aa277ea4647f8086ce7d7e2a5bc9a49d66f45084ab7d7ac3e3748bc3
-       BUILD_API=2
          ENTERED=20040714
          UPDATED=20040714
            SHORT="An atlas of JRR Tolkien's Middle Earth."
