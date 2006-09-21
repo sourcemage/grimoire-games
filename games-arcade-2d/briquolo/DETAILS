@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20050202
          UPDATED=20050202
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="BRIQUOLO is a breakout with 3D representation based on OpenGL."
 cat << EOF
 BRIQUOLO is a breakout with 3D representation based on OpenGL.
