@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-04-23 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: converted to api2
 	* PRE_BUILD: moved most sedits from BUILD to PRE_BUILD
