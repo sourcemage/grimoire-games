@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050910
          UPDATED=20050910
       LICENSE[0]=MIT
-       BUILD_API=2
            SHORT="Various puzzle games implemented in gtk2."
 cat << EOF
 Black Box Find the hidden balls in the box by bouncing laser beams off them.
