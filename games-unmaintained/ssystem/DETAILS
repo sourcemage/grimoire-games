@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20010922
           REJECT="Authors closed this project"
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="OpenGL solar system simulator"
 cat << EOF
 Ssystem is an OpenGL Solar System simulator. It will let you visit the
