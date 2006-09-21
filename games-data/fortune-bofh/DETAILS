@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/bofh-fortune-mod${VERSION}
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324
-       BUILD_API=2
            SHORT="Bastard Operator From Hell Fortune-Mod"
 cat << EOF
 Bastard Operator From Hell Fortune-Mod
