@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.xpilot.org/
          ENTERED=20040223
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Multi-player 2D space game"
 cat << EOF
 xpilot is a multi-player 2D space game.
