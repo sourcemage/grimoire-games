@@ -6,7 +6,6 @@
        GCC_VERSION=3.3
         SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         LICENSE[0]=GPL
-         BUILD_API=2
           WEB_SITE=http://www.shatters.net/celestia/
            ENTERED=20030503
            UPDATED=20040216

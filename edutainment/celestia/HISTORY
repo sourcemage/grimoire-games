@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-10-30 Eric Sandall <eric@sandall.us>
 	* DETAILS: Changed to GPG verification
 	  Added GCC_VERSION=3.3 (fails with 3.4.4)
