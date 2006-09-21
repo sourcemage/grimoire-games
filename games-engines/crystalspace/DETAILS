@@ -6,7 +6,6 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/CS
         WEB_SITE=http://crystal.sourceforge.net
     DISTCC_HOSTS=
-       BUILD_API=2
 	  CCACHE=ON
          ENTERED=20040107
          UPDATED=20040107
