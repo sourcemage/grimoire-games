@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}${VERSION}
       LICENSE[0]=GPL
          ENTERED=20030226
          UPDATED=20030226
-       BUILD_API=2
            SHORT="PsychoQuery is a server query tool for the game Half-Life"
 cat << EOF
 PsychoQuery is a server query tool for the game Half-Life.
