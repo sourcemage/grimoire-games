@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011116
          UPDATED=20040617
       LICENSE[0]=BSD
-       BUILD_API=2
            SHORT="Random quotations from a large database."
 cat << EOF
 Fortune is a program which randomly pulls quotations from a large database
