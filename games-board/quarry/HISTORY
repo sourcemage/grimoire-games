@@ -1,2 +1,5 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-11-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, DEPENDS, DETAILS, HISTORY: created this spell
