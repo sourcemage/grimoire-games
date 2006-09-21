@@ -17,7 +17,6 @@ fi
          ENTERED=20031013
          UPDATED=20050310
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Modular WorldForge client"
 cat << EOF
 Welcome to Ember! Ember is an effort to build a modularized framework for Worldforge clients which will run easily on different platforms.
