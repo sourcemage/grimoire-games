@@ -4,7 +4,6 @@
          ENTERED=20030107
          UPDATED=20030908
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Port of Star Control II: The Ur-Quan Masters"
 cat << EOF
 The project started in August 2002, when Toys For Bob  released the sources of Star Control 2 3DO 
