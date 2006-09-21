@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-srcdata-${VERSION}
          ENTERED=20050226
          UPDATED=20050226
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="UltimateStunts will be a remake of the famous DOS-game stunts."
 cat << EOF
 UltimateStunts will be a remake of the famous DOS-game "stunts". This
