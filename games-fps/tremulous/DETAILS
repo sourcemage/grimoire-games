@@ -5,12 +5,10 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
         WEB_SITE=http://tremulous.net
-      MAINTAINER=asaru
          ENTERED=20060403
          UPDATED=20060403
      SOURCE_HASH=sha512:bcbd0ddc876bdf8dcff2e01b212ef4a56cb73b58b6a4ea17d9ca778be9fe63c9984aaaf893d235a7fc3b2ed3a8b58632defa7d66fc4daaa84231b62a1f0d9cbc
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Tremulous is a free, open source game that blends a team based FPS with elements of an RTS."
 cat << EOF
 Tremulous is a free, open source game that blends a team based FPS with elements of an RTS. 
