@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050918
          UPDATED=20050918
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="LTris as a tetris clone"
 cat << EOF
 LTris as a tetris clone which means you have a bowl with blocks falling
