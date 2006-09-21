@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-07-20 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: version bump to 2.0.0
 	* DEPENDS: added depends on pango, atk, glib2 and pkgconfig

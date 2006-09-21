@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
          ENTERED=20040910
          UPDATED=20040910
-       BUILD_API=2
            SHORT="Bygfoot is a football (a.k.a. soccer) management game"
 cat << EOF
 Bygfoot is a football (a.k.a. soccer) management game.
