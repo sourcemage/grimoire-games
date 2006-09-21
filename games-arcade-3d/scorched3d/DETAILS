@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/scorched
 #     SOURCE_HASH=sha512:7e8a0fbae8aeef4f90dec846483203eb2ef4e659053d1f08115ffe91f1d1ad95fb4568a8f27d691a1ba91d00f36d8ac2ebebc5916e7188f7ca6412a1654429fd
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
-       BUILD_API=2
         WEB_SITE=http://www.scorched3d.co.uk/
          ENTERED=20030802
          UPDATED=20030802
