@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020407
      SOURCE_HASH=sha512:ba0b7718e31c25bc241d2d819f4d38ff65db311a0dc2fa89cbb91bc7881cb8b7ca595041d1b6b546cbaad1a05cd99c4fd42fdf87f3f5db73d14ab84a8e4cc38d
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Textmode game in which you drive across the moon's surface"
 cat << EOF
 Moon Buggy is a simple game for the text mode in which you have to drive
