@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/SimGear-$VERSION
          ENTERED=20010922
          UPDATED=20040107
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Simulation construction tools used by FlightGear"
 cat << EOF
 SimGear is simulation construction tools used by FlightGear
