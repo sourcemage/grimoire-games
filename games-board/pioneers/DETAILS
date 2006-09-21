@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/pio/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
-       BUILD_API=2
         WEB_SITE=http://pio.sourceforge.net/
          ENTERED=20020527
          UPDATED=20031016
