@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[1]=GPL
          ENTERED=20020826
          UPDATED=20040107
-       BUILD_API=2
            SHORT="QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine."
 cat << EOF
 QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine. 
