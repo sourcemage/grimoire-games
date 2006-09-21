@@ -1,3 +1,6 @@
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-12-10 Robin Cook <rcook@wyrms.net>
 	* DETAILS: added release b9half and cvs
 	  corrected WEB_SITE

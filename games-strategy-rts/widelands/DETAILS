@@ -18,7 +18,6 @@ else
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
 fi 
       LICENSE[0]=GPL
-       BUILD_API=2
         WEB_SITE=http://wiki.widelands.org/tiki-index.php
          ENTERED=20040925
          UPDATED=20040925
