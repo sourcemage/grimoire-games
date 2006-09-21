@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020129
          UPDATED=20050120
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT='Successor to LBreakout with more levels'
 cat << EOF
 LBreakout is a breakout game with nice effects, graphics, and sounds. 
