@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20010922
          UPDATED=20050123
       LICENSE[0]=LGPL
-       BUILD_API=2
            SHORT="Portable game library."
 cat << EOF
 PLIB is a set of libraries to write games and other realtime interactive
