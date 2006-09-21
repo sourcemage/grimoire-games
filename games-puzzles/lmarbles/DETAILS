@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20050918
          UPDATED=20050918
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="LMarbles is an Atomix clone."
 cat << EOF
 LMarbles is an Atomix clone with a slight change in concept. Instead of
