@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020107
          UPDATED=20020107
       LICENSE[0]=GPL
-      MAINTAINER=eric@sandall.us
        BUILD_API=1
            SHORT="si3d, scorched island 3d, is a clone of Scorched Earth."
 cat << EOF
