@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20020219
          UPDATED=20040501
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="GTetrinet - the GNOME Tetrinet client"
 cat << EOF
 GTetrinet is the Gnome client for Tetrinet, a popular multiplayer
