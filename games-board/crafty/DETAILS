@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]="Seems to be open source"
          ENTERED=20030412
          UPDATED=20030412
-       BUILD_API=2
            SHORT="Crafty is a computer chess program."
 cat << EOF
 Crafty is a state-of-the-art  computer  chess  program,  and
