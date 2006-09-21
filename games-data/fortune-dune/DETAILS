@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-dune-quotes.$VERSION
       LICENSE[0]=BSD
          ENTERED=20050324
          UPDATED=20050324
-       BUILD_API=2
            SHORT="Dune Chronicles fortunes"
 cat << EOF
 The purpose of this page is to provide the sysadmins with
