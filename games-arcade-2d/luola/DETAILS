@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.luolamies.org/software/luola/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
-       BUILD_API=2
         WEB_SITE=http://www.luolamies.org/software/luola/
          ENTERED=20011214
          UPDATED=20031227
