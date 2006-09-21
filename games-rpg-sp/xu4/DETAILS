@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/u4
       LICENSE[1]="Freely Distributable"
          ENTERED=20021120
          UPDATED=20040225
-       BUILD_API=2
            SHORT="XU4 is a recreation of Ultima(TM) IV"
 cat << EOF
 XU4 is a recreation of the classic computer game Ultima IV. The
