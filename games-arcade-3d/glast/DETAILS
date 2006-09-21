@@ -8,11 +8,9 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          UPDATED=20021031
      SOURCE_HASH=sha512:60dd33b4478b385891dcde373ea40755237beef28bc02b39383397ebddf3b3f97115baff265c9525b869c717e73b5ca0b3f834a6b13e7d0a3bc462753e4d0386
       LICENSE[0]=UNKNOWN
-      MAINTAINER=eric@sandall.us
     MENU_ITEM[0]="OpenGL Asteroids"
     MENU_EXEC[0]=${SPELL}
     MENU_DESC[0]=${SHORT}
-       BUILD_API=2
            SHORT="OpenGL/SDL version of Asteroids"
 cat << EOF
 A 3D clone of the arcade classic 'Asteroids' coded in C using OpenGL and SDL. Features sound effects, menu system, highscore table, fuel drops and you can 'fly' around in outerspace blowing up chunks of spinning space rock with a high power dual plasma cannon until you get smashed to pieces, run out of fuel or save the earth from being pulverised!
