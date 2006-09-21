@@ -18,7 +18,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20020915
          UPDATED=20020915
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="This is the Worldforge math library"
 cat << EOF
 This is the Worldforge math library.
