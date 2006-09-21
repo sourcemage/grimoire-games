@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
       LICENSE[0]=GPL
          ENTERED=20050324
          UPDATED=20050324
-       BUILD_API=2
            SHORT="Star Wars fortunes"
 cat << EOF
 fortune-starwars is a collection of quotes from the movies "Star Wars",
