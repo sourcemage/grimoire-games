@@ -18,7 +18,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20031012
          UPDATED=20031012
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="WorldForge terrain engine"
 cat << EOF
 Mercator is primarily aimed at terrain for multiplayer online games and forms one of the WorldForge core libraries. It is intended to be used as a terrain library on the client, while a subset of features are useful on the server.
