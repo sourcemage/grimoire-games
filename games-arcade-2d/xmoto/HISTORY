@@ -1,3 +1,7 @@
+2006-09-27 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.2.1, SOURCE_URL[1] removed as it's one of
+	  $SOURCEFORGE_URL
+
 2006-07-29 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.2.0, BUILD_API=2 removed
 
