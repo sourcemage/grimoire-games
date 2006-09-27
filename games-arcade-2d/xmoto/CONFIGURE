@@ -1,0 +1,5 @@
+config_query_option  XMOTO_OPTS              \
+                     "Enable zoom?"          \
+                     n                       \
+                     "--with-enable-zoom=1"  \
+                     "--with-enable-zoom=0"
