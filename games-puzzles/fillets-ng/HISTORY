@@ -3,6 +3,7 @@
 	  http://sources.gentoo.org/viewcvs.py/gentoo-x86/games-puzzle/fish-fillets/files/fish-fillets-0.7.3-use-lua-pkg-config.patch?view=markup
 	* PRE_BUILD: added to apply patch
 	* DETAILS: patchlevel++
+	* INSTALL: make it verbose
 
 2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
