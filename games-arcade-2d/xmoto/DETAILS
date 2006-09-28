@@ -6,6 +6,7 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://xmoto.sourceforge.net/
          ENTERED=20051006
+      PATCHLEVEL=1
       LICENSE[0]=GPL
            SHORT="X-Moto is a challenging 2D motocross platform game"
 cat << EOF
