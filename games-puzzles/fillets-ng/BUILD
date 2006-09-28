@@ -1,3 +1,1 @@
-OPTS="$OPTS --with-lua=/usr"
-
-default_build
+default_games_build

@@ -1,3 +1,12 @@
+2006-09-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* fish-fillets-0.7.3-use-lua-pkg-config.patch: addde from:
+	  http://sources.gentoo.org/viewcvs.py/gentoo-x86/games-puzzle/fish-fillets/files/fish-fillets-0.7.3-use-lua-pkg-config.patch?view=markup
+	* PRE_BUILD: added to apply patch
+	* DETAILS: patchlevel++
+
+2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: use default_games_build
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
@@ -24,5 +33,5 @@
 2004-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to the grimoire
 
-2004-08-22 Vladim�r Marek <vlmarke@volny.cz>
+2004-08-22 Vladim?r Marek <vlmarke@volny.cz>
 	* created this spell
