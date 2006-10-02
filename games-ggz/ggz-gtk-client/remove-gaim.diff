@@ -1,0 +1,328 @@
+diff -u -r -b -B -N ggz-gtk-client-orig/acinclude.m4 ggz-gtk-client-mod/acinclude.m4
+--- ggz-gtk-client-orig/acinclude.m4	2006-03-16 12:00:55.000000000 -0600
++++ ggz-gtk-client-mod/acinclude.m4	2006-10-01 19:29:03.000000000 -0500
+@@ -1,43 +1,3 @@
+-dnl ======================================
+-dnl Gaim Configuration
+-dnl ======================================
+-dnl
+-dnl Copyright (C) 2004 Josef Spillner <josef@ggzgamingzone.org>
+-dnl
+-
+-AC_DEFUN([AC_GAIM],
+-[
+-AC_MSG_CHECKING([for Gtk+ library: libgaim])
+-
+-ac_gaim_includes=NO
+-gaim_includes=""
+-
+-AC_CACHE_VAL(ac_cv_have_gaim,
+-[
+-AC_GGZ_FIND_FILE(gaim/gaim.h, "/usr/include", gaim_incdir)
+-ac_gaim_includes="$gaim_incdir"
+-
+-if test "$ac_gaim_includes" = NO; then
+-  ac_cv_have_gaim="have_gaim=no"
+-  ac_gaim_notfound=""
+-else
+-  have_gaim="yes"
+-fi
+-])
+-
+-eval "$ac_cv_have_gaim"
+-
+-if test "$have_gaim" != yes; then
+-  AC_MSG_RESULT([$have_gaim])
+-else
+-  AC_MSG_RESULT([$have_gaim (headers $ac_gaim_includes)])
+-
+-  GAIMPLUGIN='gaim-plugin'
+-  AC_SUBST(GAIMPLUGIN)
+-fi
+-
+-])
+-
+ # Macro to add for using GNU gettext.
+ # Ulrich Drepper <drepper@cygnus.com>, 1995.
+ #
+diff -u -r -b -B -N ggz-gtk-client-orig/configure ggz-gtk-client-mod/configure
+--- ggz-gtk-client-orig/configure	2006-03-16 12:01:37.000000000 -0600
++++ ggz-gtk-client-mod/configure	2006-10-01 19:27:39.000000000 -0500
+@@ -465,7 +465,7 @@
+ # include <unistd.h>
+ #endif"
+ 
+-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE build build_cpu build_vendor build_os host host_cpu host_vendor host_os EGREP LN_S ECHO AR ac_ct_AR RANLIB ac_ct_RANLIB CPP CXX CXXFLAGS ac_ct_CXX CXXDEPMODE am__fastdepCXX_TRUE am__fastdepCXX_FALSE CXXCPP F77 FFLAGS ac_ct_F77 LIBTOOL ggzcore_libraries ggzcore_includes GGZCORE_INCLUDES GGZCORE_LDFLAGS LIB_GGZCORE ggzmod_libraries ggzmod_includes GGZMOD_INCLUDES GGZMOD_LDFLAGS LIB_GGZMOD libggz_libraries libggz_includes LIBGGZ_INCLUDES LIBGGZ_LDFLAGS LIB_GGZ GETTEXT MSGFMT MSGMERGE LIBICONV XGETTEXT GMSGFMT GAIMPLUGIN LIBOBJS USE_NLS INTLBISON BUILD_INCLUDED_LIBINTL USE_INCLUDED_LIBINTL CATALOGS CATOBJEXT GMOFILES INTLLIBS INTLOBJS POFILES POSUB DATADIRNAME INSTOBJEXT GENCAT PKG_CONFIG GTK_CFLAGS GTK_LIBS LDADD ggzdatadir LTLIBOBJS'
++ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE build build_cpu build_vendor build_os host host_cpu host_vendor host_os EGREP LN_S ECHO AR ac_ct_AR RANLIB ac_ct_RANLIB CPP CXX CXXFLAGS ac_ct_CXX CXXDEPMODE am__fastdepCXX_TRUE am__fastdepCXX_FALSE CXXCPP F77 FFLAGS ac_ct_F77 LIBTOOL ggzcore_libraries ggzcore_includes GGZCORE_INCLUDES GGZCORE_LDFLAGS LIB_GGZCORE ggzmod_libraries ggzmod_includes GGZMOD_INCLUDES GGZMOD_LDFLAGS LIB_GGZMOD libggz_libraries libggz_includes LIBGGZ_INCLUDES LIBGGZ_LDFLAGS LIB_GGZ GETTEXT MSGFMT MSGMERGE LIBICONV XGETTEXT GMSGFMT LIBOBJS USE_NLS INTLBISON BUILD_INCLUDED_LIBINTL USE_INCLUDED_LIBINTL CATALOGS CATOBJEXT GMOFILES INTLLIBS INTLOBJS POFILES POSUB DATADIRNAME INSTOBJEXT GENCAT PKG_CONFIG GTK_CFLAGS GTK_LIBS LDADD ggzdatadir LTLIBOBJS'
+ ac_subst_files=''
+ 
+ # Initialize some variables set by options.
+@@ -20585,59 +20585,6 @@
+ 
+ 
+ 
+-echo "$as_me:$LINENO: checking for Gtk+ library: libgaim" >&5
+-echo $ECHO_N "checking for Gtk+ library: libgaim... $ECHO_C" >&6
+-
+-ac_gaim_includes=NO
+-gaim_includes=""
+-
+-if test "${ac_cv_have_gaim+set}" = set; then
+-  echo $ECHO_N "(cached) $ECHO_C" >&6
+-else
+-
+-
+-gaim_incdir=NO
+-for i in "/usr/include";
+-do
+-  for j in gaim/gaim.h;
+-  do
+-    echo "configure: 20604: $i/$j" >&5
+-    if test -r "$i/$j"; then
+-      echo "taking that" >&5
+-      gaim_incdir=$i
+-      break 2
+-    fi
+-  done
+-done
+-
+-ac_gaim_includes="$gaim_incdir"
+-
+-if test "$ac_gaim_includes" = NO; then
+-  ac_cv_have_gaim="have_gaim=no"
+-  ac_gaim_notfound=""
+-else
+-  have_gaim="yes"
+-fi
+-
+-fi
+-
+-
+-eval "$ac_cv_have_gaim"
+-
+-if test "$have_gaim" != yes; then
+-  echo "$as_me:$LINENO: result: $have_gaim" >&5
+-echo "${ECHO_T}$have_gaim" >&6
+-else
+-  echo "$as_me:$LINENO: result: $have_gaim (headers $ac_gaim_includes)" >&5
+-echo "${ECHO_T}$have_gaim (headers $ac_gaim_includes)" >&6
+-
+-  GAIMPLUGIN='gaim-plugin'
+-
+-fi
+-
+-
+-
+-
+ echo "$as_me:$LINENO: checking for ANSI C header files" >&5
+ echo $ECHO_N "checking for ANSI C header files... $ECHO_C" >&6
+ if test "${ac_cv_header_stdc+set}" = set; then
+@@ -23846,7 +23793,7 @@
+ 
+ 
+ 
+-                                                            ac_config_files="$ac_config_files Makefile ggz-gtk/Makefile gaim-plugin/Makefile po/Makefile doc/Makefile man/Makefile"
++                                                            ac_config_files="$ac_config_files Makefile ggz-gtk/Makefile po/Makefile doc/Makefile man/Makefile"
+ 
+ cat >confcache <<\_ACEOF
+ # This file is a shell script that caches the results of configure
+@@ -24414,7 +24361,6 @@
+   # Handling of arguments.
+   "Makefile" ) CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+   "ggz-gtk/Makefile" ) CONFIG_FILES="$CONFIG_FILES ggz-gtk/Makefile" ;;
+-  "gaim-plugin/Makefile" ) CONFIG_FILES="$CONFIG_FILES gaim-plugin/Makefile" ;;
+   "po/Makefile" ) CONFIG_FILES="$CONFIG_FILES po/Makefile" ;;
+   "doc/Makefile" ) CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
+   "man/Makefile" ) CONFIG_FILES="$CONFIG_FILES man/Makefile" ;;
+@@ -24595,7 +24541,6 @@
+ s,@LIBICONV@,$LIBICONV,;t t
+ s,@XGETTEXT@,$XGETTEXT,;t t
+ s,@GMSGFMT@,$GMSGFMT,;t t
+-s,@GAIMPLUGIN@,$GAIMPLUGIN,;t t
+ s,@LIBOBJS@,$LIBOBJS,;t t
+ s,@USE_NLS@,$USE_NLS,;t t
+ s,@INTLBISON@,$INTLBISON,;t t
+@@ -25370,8 +25315,6 @@
+ echo "    GDB Debugging......$enable_debug_gdb"
+ echo "    Dmalloc Debugging..$enable_debug_mem"
+ echo ""
+-echo "    Gaim plugin........$have_gaim"
+-echo ""
+ echo "At the prompt type \"make\" to compile the GGZ gtk client"
+ echo ""
+ echo "When complete, su to root and type \"make install\" to"
+diff -u -r -b -B -N ggz-gtk-client-orig/configure.ac ggz-gtk-client-mod/configure.ac
+--- ggz-gtk-client-orig/configure.ac	2006-03-16 11:33:33.000000000 -0600
++++ ggz-gtk-client-mod/configure.ac	2006-10-01 19:24:42.000000000 -0500
+@@ -26,11 +26,6 @@
+ AC_GGZ_INTL
+ 
+ 
+-dnl Gaim plugin check
+-dnl =================
+-AC_GAIM
+-
+-
+ dnl Check for header files
+ dnl ======================
+ AC_HEADER_STDC
+@@ -102,7 +97,6 @@
+ 
+ AC_CONFIG_FILES([Makefile 
+ 	   ggz-gtk/Makefile
+-	   gaim-plugin/Makefile
+ 	   po/Makefile
+ 	   doc/Makefile
+ 	   man/Makefile
+@@ -118,8 +112,6 @@
+ echo "    GDB Debugging......$enable_debug_gdb"
+ echo "    Dmalloc Debugging..$enable_debug_mem"
+ echo ""
+-echo "    Gaim plugin........$have_gaim"
+-echo ""
+ echo "At the prompt type \"make\" to compile the GGZ gtk client"
+ echo ""
+ echo "When complete, su to root and type \"make install\" to"
+diff -u -r -b -B -N ggz-gtk-client-orig/doc/Makefile.in ggz-gtk-client-mod/doc/Makefile.in
+--- ggz-gtk-client-orig/doc/Makefile.in	2006-03-16 12:01:30.000000000 -0600
++++ ggz-gtk-client-mod/doc/Makefile.in	2006-10-01 19:31:00.000000000 -0500
+@@ -91,7 +91,6 @@
+ EXEEXT = @EXEEXT@
+ F77 = @F77@
+ FFLAGS = @FFLAGS@
+-GAIMPLUGIN = @GAIMPLUGIN@
+ GENCAT = @GENCAT@
+ GETTEXT = @GETTEXT@
+ GGZCORE_INCLUDES = @GGZCORE_INCLUDES@
+diff -u -r -b -B -N ggz-gtk-client-orig/ggz-gtk/Makefile.in ggz-gtk-client-mod/ggz-gtk/Makefile.in
+--- ggz-gtk-client-orig/ggz-gtk/Makefile.in	2006-03-16 12:01:32.000000000 -0600
++++ ggz-gtk-client-mod/ggz-gtk/Makefile.in	2006-10-01 19:32:44.000000000 -0500
+@@ -127,7 +127,6 @@
+ EXEEXT = @EXEEXT@
+ F77 = @F77@
+ FFLAGS = @FFLAGS@
+-GAIMPLUGIN = @GAIMPLUGIN@
+ GENCAT = @GENCAT@
+ GETTEXT = @GETTEXT@
+ GGZCORE_INCLUDES = @GGZCORE_INCLUDES@
+diff -u -r -b -B -N ggz-gtk-client-orig/m4/gaim.m4 ggz-gtk-client-mod/m4/gaim.m4
+--- ggz-gtk-client-orig/m4/gaim.m4	2006-03-16 11:33:25.000000000 -0600
++++ ggz-gtk-client-mod/m4/gaim.m4	1969-12-31 18:00:00.000000000 -0600
+@@ -1,40 +0,0 @@
+-dnl ======================================
+-dnl Gaim Configuration
+-dnl ======================================
+-dnl
+-dnl Copyright (C) 2004 Josef Spillner <josef@ggzgamingzone.org>
+-dnl
+-
+-AC_DEFUN([AC_GAIM],
+-[
+-AC_MSG_CHECKING([for Gtk+ library: libgaim])
+-
+-ac_gaim_includes=NO
+-gaim_includes=""
+-
+-AC_CACHE_VAL(ac_cv_have_gaim,
+-[
+-AC_GGZ_FIND_FILE(gaim/gaim.h, "/usr/include", gaim_incdir)
+-ac_gaim_includes="$gaim_incdir"
+-
+-if test "$ac_gaim_includes" = NO; then
+-  ac_cv_have_gaim="have_gaim=no"
+-  ac_gaim_notfound=""
+-else
+-  have_gaim="yes"
+-fi
+-])
+-
+-eval "$ac_cv_have_gaim"
+-
+-if test "$have_gaim" != yes; then
+-  AC_MSG_RESULT([$have_gaim])
+-else
+-  AC_MSG_RESULT([$have_gaim (headers $ac_gaim_includes)])
+-
+-  GAIMPLUGIN='gaim-plugin'
+-  AC_SUBST(GAIMPLUGIN)
+-fi
+-
+-])
+-
+diff -u -r -b -B -N ggz-gtk-client-orig/Makefile.am ggz-gtk-client-mod/Makefile.am
+--- ggz-gtk-client-orig/Makefile.am	2006-03-16 11:33:33.000000000 -0600
++++ ggz-gtk-client-mod/Makefile.am	2006-10-01 18:56:59.000000000 -0500
+@@ -1,7 +1,7 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = ggz-gtk $(GAIMPLUGIN) man po doc
+-DIST_SUBDIRS = ggz-gtk gaim-plugin man po doc
++SUBDIRS = ggz-gtk man po doc
++DIST_SUBDIRS = ggz-gtk man po doc
+ 
+ EXTRA_DIST = TODO README.GGZ QuickStart.GGZ ggz-gtk.desktop \
+ 		m4/gettext.m4	\
+@@ -12,8 +12,7 @@
+ 		m4/iconv.m4	\
+ 		m4/lcmessage.m4	\
+ 		m4/locale.m4	\
+-		m4/progtest.m4 \
+-		m4/gaim.m4
++		m4/progtest.m4 
+ 
+ desktopdir = $(datadir)/applications
+ desktop_DATA = ggz-gtk.desktop
+diff -u -r -b -B -N ggz-gtk-client-orig/Makefile.in ggz-gtk-client-mod/Makefile.in
+--- ggz-gtk-client-orig/Makefile.in	2006-03-16 12:01:33.000000000 -0600
++++ ggz-gtk-client-mod/Makefile.in	2006-10-01 18:56:41.000000000 -0500
+@@ -115,7 +115,6 @@
+ EXEEXT = @EXEEXT@
+ F77 = @F77@
+ FFLAGS = @FFLAGS@
+-GAIMPLUGIN = @GAIMPLUGIN@
+ GENCAT = @GENCAT@
+ GETTEXT = @GETTEXT@
+ GGZCORE_INCLUDES = @GGZCORE_INCLUDES@
+@@ -222,8 +221,8 @@
+ sharedstatedir = @sharedstatedir@
+ sysconfdir = @sysconfdir@
+ target_alias = @target_alias@
+-SUBDIRS = ggz-gtk $(GAIMPLUGIN) man po doc
+-DIST_SUBDIRS = ggz-gtk gaim-plugin man po doc
++SUBDIRS = ggz-gtk man po doc
++DIST_SUBDIRS = ggz-gtk man po doc
+ EXTRA_DIST = TODO README.GGZ QuickStart.GGZ ggz-gtk.desktop \
+ 		m4/gettext.m4	\
+ 		m4/ggz.m4	\
+@@ -233,8 +232,7 @@
+ 		m4/iconv.m4	\
+ 		m4/lcmessage.m4	\
+ 		m4/locale.m4	\
+-		m4/progtest.m4 \
+-		m4/gaim.m4
++		m4/progtest.m4 
+ 
+ desktopdir = $(datadir)/applications
+ desktop_DATA = ggz-gtk.desktop
+diff -u -r -b -B -N ggz-gtk-client-orig/man/Makefile.in ggz-gtk-client-mod/man/Makefile.in
+--- ggz-gtk-client-orig/man/Makefile.in	2006-03-16 12:01:32.000000000 -0600
++++ ggz-gtk-client-mod/man/Makefile.in	2006-10-01 19:31:23.000000000 -0500
+@@ -94,7 +94,6 @@
+ EXEEXT = @EXEEXT@
+ F77 = @F77@
+ FFLAGS = @FFLAGS@
+-GAIMPLUGIN = @GAIMPLUGIN@
+ GENCAT = @GENCAT@
+ GETTEXT = @GETTEXT@
+ GGZCORE_INCLUDES = @GGZCORE_INCLUDES@
+diff -u -r -b -B -N ggz-gtk-client-orig/po/Makefile.in ggz-gtk-client-mod/po/Makefile.in
+--- ggz-gtk-client-orig/po/Makefile.in	2006-03-16 12:01:33.000000000 -0600
++++ ggz-gtk-client-mod/po/Makefile.in	2006-10-01 19:31:46.000000000 -0500
+@@ -99,7 +99,6 @@
+ EXEEXT = @EXEEXT@
+ F77 = @F77@
+ FFLAGS = @FFLAGS@
+-GAIMPLUGIN = @GAIMPLUGIN@
+ GENCAT = @GENCAT@
+ GETTEXT = @GETTEXT@
+ GGZCORE_INCLUDES = @GGZCORE_INCLUDES@
