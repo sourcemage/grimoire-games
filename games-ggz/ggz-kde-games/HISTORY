@@ -1,3 +1,8 @@
+2006-10-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.0.13
+	  added site SOURCE_URL
+	* BUILD: removed
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
