@@ -1,3 +1,6 @@
+2006-10-05 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.2.2
+
 2006-09-28 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD: added OPTS asignment operator for adding XMOTO_OPTS, added
 	  sedit operators to fix man pages installation and avoid compile error
