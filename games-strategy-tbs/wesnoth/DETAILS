@@ -1,10 +1,10 @@
            SPELL=wesnoth
   if [[ ${WESNOTH_DEVEL} == n ]]; then
-         VERSION=1.0.2
+         VERSION=1.1.11
           SOURCE=${SPELL}-${VERSION}.tar.gz
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
   else
-         VERSION=1.1.10
+         VERSION=1.1.11
           SOURCE=${SPELL}-${VERSION}.tar.gz
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
   fi
