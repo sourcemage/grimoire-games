@@ -1,3 +1,7 @@
+2006-10-13 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-simulation/cultivation: new spell, a game about a community of
+	  gardeners growing food for themselves in a shared space.
+
 2006-09-17 Pol Vinogradov <vin.public@gmail.com>
 	* games-board/jin: new spell, chess game written in Java
 

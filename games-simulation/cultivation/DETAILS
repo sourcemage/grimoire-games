@@ -1,0 +1,27 @@
+           SPELL=cultivation
+         VERSION=4
+          SOURCE=Cultivation_${VERSION}_UnixSource.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cultivation_${VERSION}_UnixSource
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:13b9c58e58442d5857f4242486c395b2ed36af92cd393cf9a766084c5e5c100f6e8576068d2814ed60a3b46c87e41d9b22323da09709913550215990d6a00664
+        WEB_SITE=http://cultivation.sourceforge.net
+         ENTERED=20061013
+            DOCS="how_to_play.txt"
+      LICENSE[0]=PD
+           SHORT="a game about a community of gardeners growing food for themselves in a shared space."
+cat << EOF
+Cultivation is a game about a community of gardeners growing food for themselves
+in a shared space.
+
+Cultivation is quite different from most other games. It is a social simulation,
+and the primary form of conflict is over land and plant resources - there is
+no shooting, but there are plenty of angry looks. It is also an evolution
+simulation. Within the world of Cultivation, you can explore a virtually
+infinite spectrum of different plant and gardener varieties.
+
+All of the graphics, sounds, melodies,and other content in Cultivation are
+100% procedurally generated at playtime. In other words, there are no
+hand-painted texture maps - instead, each object has a uniquely "grown"
+appearance. Every time you play, Cultivation generates fresh visuals, music
+and behaviors.
+EOF
