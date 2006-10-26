@@ -1,3 +1,3 @@
 jam install							&&
 cp ${SCRIPT_DIRECTORY}/${SPELL}.sh $INSTALL_ROOT/etc/profile.d 	&&
-ln -sf /etc/crystalspace/vfs.cfg /usr/lib/crystalspace/vfs.cfg
+ln -sf $TRACK_ROOT/etc/crystalspace/vfs.cfg /usr/lib/crystalspace/vfs.cfg
