@@ -1,2 +1,1 @@
-OPTS="$OPTS --bindir=/usr/games"  &&
-default_build
+default_games_build
