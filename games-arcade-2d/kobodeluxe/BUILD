@@ -1,2 +1,2 @@
-OPTS="--bindir=/usr/games ${KOBO_OPTS} ${OPTS}"  &&
-default_build
+OPTS="${KOBO_OPTS} ${OPTS}"  &&
+default_games_build
