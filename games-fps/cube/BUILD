@@ -1,5 +1,4 @@
-invoke_gcc  &&
 cd  cube_source/enet  &&
-default_build         &&
+default_games_build   &&
 cd  ../src            &&
 make

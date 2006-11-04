@@ -1,3 +1,7 @@
+2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: use default_games_build, don't need invoke_gcc it's called
+	  in default_pre_build
+
 2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: removed I_DIR
 	* PRE_BUILD: removed I_DIR
