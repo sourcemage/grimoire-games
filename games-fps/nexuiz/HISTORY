@@ -1,3 +1,6 @@
+2006-11-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: minor fix of SOURCE_URL
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
