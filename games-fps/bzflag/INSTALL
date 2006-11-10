@@ -1,0 +1,1 @@
+make MKDIR_P="mkdir -p" DESTDIR="$INSTALL_ROOT/" install
