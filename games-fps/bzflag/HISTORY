@@ -1,3 +1,7 @@
+2006-11-09 David Brown <dmlb2000@gmail.com>
+	* PRE_BUILD: added patch to remove automake 1.10 usage
+	* autogen.sh-automake.patch: added
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

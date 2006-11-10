@@ -1,0 +1,11 @@
+--- autogen.sh.old	2006-11-09 20:58:10.000000000 -0800
++++ autogen.sh	2006-11-09 20:58:44.000000000 -0800
+@@ -203,7 +203,7 @@
+ # automake version check #
+ ##########################
+ _amfound=no
+-for AUTOMAKE in automake ; do
++for AUTOMAKE in automake-1.9 automake; do
+     $VERBOSE_ECHO "Checking automake version: $AUTOMAKE --version"
+     $AUTOMAKE --version > /dev/null 2>&1
+     if [ $? = 0 ] ; then
