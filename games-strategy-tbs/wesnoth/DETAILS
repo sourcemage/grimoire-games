@@ -1,6 +1,6 @@
            SPELL=wesnoth
   if [[ ${WESNOTH_DEVEL} == y ]]; then
-         VERSION=1.1.11
+         VERSION=1.1.12
           SOURCE=${SPELL}-${VERSION}.tar.gz
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
   else
