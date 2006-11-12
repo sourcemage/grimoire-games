@@ -1,3 +1,7 @@
+2006-11-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: patchlevel++
+	* INSTALL: minor fixups and install the numbergenerator
+
 2006-08-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: new version 1.4.1
 

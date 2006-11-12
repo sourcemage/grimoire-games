@@ -1,5 +1,8 @@
-mv -v wordsearch.pl $INSTALL_ROOT/usr/games/wordsearch    &&
-chmod -v 0750 $INSTALL_ROOT/usr/games/wordsearch          &&
-chown -v games:games $INSTALL_ROOT/usr/games/wordsearch   &&
-mkdir -vp $INSTALL_ROOT/usr/share/doc/wordsearch/       &&
+mv -v wordsearch.pl $INSTALL_ROOT/usr/games/wordsearch            &&
+mv -v numbergenerator.pl $INSTALL_ROOT/usr/games/numbergenerator  &&
+chmod -v 0750 $INSTALL_ROOT/usr/games/wordsearch                  &&
+chown -v root:games $INSTALL_ROOT/usr/games/wordsearch            &&
+chmod -v 0750 $INSTALL_ROOT/usr/games/numbergenerator             &&
+chown -v root:games $INSTALL_ROOT/usr/games/numbergenerator       &&
+mkdir -vp $INSTALL_ROOT/usr/share/doc/wordsearch/                 &&
 mv -v * $INSTALL_ROOT/usr/share/doc/wordsearch/

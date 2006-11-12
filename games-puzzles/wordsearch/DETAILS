@@ -6,6 +6,7 @@
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/$SPELL-$VERSION"
         WEB_SITE=http://decafbad.net/projects/wordsearch/
          ENTERED=20060823
+      PATCHLEVEL=1
       LICENSE[0]=GPL
            SHORT="A Perl script that generates word search puzzles."
 cat << EOF
