@@ -1,12 +1,11 @@
            SPELL=puzzles
-         VERSION=r6272
+         VERSION=r6913
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha1:2264c5547b17b761f4b892dc9af9d46b893f0426
+     SOURCE_HASH=sha512:3a538c4b52093f0d12eb7ff5367a4d5eb0e3a6567433e3073f8dfd64330714aea69c05b819b035b682d0b3a1c9fafe94ce50758e33a489328a4dd06fb5cc56b0
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
          ENTERED=20050910
-         UPDATED=20050910
       LICENSE[0]=MIT
            SHORT="Various puzzle games implemented in gtk2."
 cat << EOF
