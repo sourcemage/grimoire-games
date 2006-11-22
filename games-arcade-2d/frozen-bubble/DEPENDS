@@ -1,1 +1,18 @@
-depends  sdl-sdlpl
+depends  glib2           &&
+depends  locale-gettext  &&
+depends  perl            &&
+depends  sdl             &&
+depends  sdl_image       &&
+depends  sdl_mixer       &&
+depends  sdl_pango       &&
+depends  sdl-sdlpl       &&
+
+optional_depends  bzip2                          \
+                  ''                             \
+                  ''                             \
+                  'for compressed game records'
+
+#optional_depends  glib2                                                 \
+#                  ''                                                    \
+#                  ''                                                    \
+#                  'to build the server (for easy automatic LAN games)'
