@@ -1,0 +1,17 @@
+           SPELL=hedgewars
+         VERSION=0.8.1
+          SOURCE=$SPELL-src-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://$SPELL.org/download/$SOURCE
+     SOURCE_HASH=sha512:42ab3f31a2a307499b0afc99cdd670587acddd1877cc7a4a7517d019bd12160970f6500fac8e2f377421b14677459345308f31150c9c3526a335b11c0a3e00af
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$SPELL-$VERSION
+        WEB_SITE=http://hedgewars.org/
+      LICENSE[0]=GPL
+         ENTERED=20061125
+           SHORT="Free Worms-like turn based strategy game"
+cat << EOF
+Hedgewars, it's a Blast! This is the funniest and most addictive game you'll
+ever play - hilarious fun that you can enjoy anywhere, anytime. Hedgewars is
+a turn based strategy game but the real buzz is from watching the devastation
+caused by those pesky hedgehogs with those fantastic weapons - sneaky little
+blighters with a bad attitude!
+EOF
