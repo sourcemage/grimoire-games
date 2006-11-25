@@ -1,1 +1,1 @@
-make install DESTDIR=${INSTALL_ROOT}/usr
+make install
