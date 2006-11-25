@@ -1,0 +1,7 @@
+  message "${PROBLEM_COLOR}Warning:${DEFAULT_COLOR}\n" \
+          "  This game is dependant on non-free game data.\n" \
+          "\n" \
+          "  Please get the data files from your original Dune2 game\n" \
+          "  (as stated in the http://dunelegacy.sourceforge.net/wiki/index.php/Linux-howto)\n" \
+          "\n" \
+          "  Put these files into the ${MESSAGE_COLOR}/usr/share/games/dunelegacy/${DEFAULT_COLOR} directory.\n"

@@ -1,0 +1,4 @@
+mkdir -p ${INSTALL_ROOT}/usr/share/games/${SPELL}                                            &&
+install ${SPELL} ${INSTALL_ROOT}/usr/share/games/${SPELL}                                    &&
+install ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games/${SPELL}                      &&
+sedit "s:SMGL_DIR:${TRACK_ROOT}/usr/share/games/${SPELL}:" ${TRACK_ROOT}/usr/games/${SPELL}

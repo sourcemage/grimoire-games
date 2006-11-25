@@ -1,0 +1,8 @@
+depends  pkgconfig  &&
+depends  scons      &&
+depends  sdl_gfx    &&
+depends  sdl_image  &&
+depends  sdl_mixer  &&
+depends  sdl_net    &&
+depends  sdl_ttf    &&
+depends  zziplib

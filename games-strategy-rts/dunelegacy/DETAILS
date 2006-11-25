@@ -1,0 +1,20 @@
+           SPELL=dunelegacy
+         VERSION=0.94.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:e2cd0e088a0e248602775147a2d048c140dd9fa787b503e4fbfcc401112b1bf478cfa48672ed5f5e6d8d0880b743d987061643bc7749a33b049048d5b6096385
+      LICENSE[0]=GPL
+        WEB_SITE=http://dunelegacy.sourceforge.net
+         ENTERED=20061125
+           SHORT="Free clone of Dune2"
+cat << EOF
+Lead one of three interplanetary houses, Atreides, Harkonnen or Ordos, in an
+attempt to harvest the largest amount of spice from the sand dunes. Exchange
+your spice stockpiles for credits through refinement and build an army capable
+of thwarting attempts of the other houses to stop your harvesting!
+Dune Legacy is an effort by a handful of developers to revitalize the first-
+ever real-time strategy game. The original game was the basis for the hugely
+successful Command and Conquer series, and the gameplay has been replicated an
+extended to a wide variety of storylines and series.
+EOF
