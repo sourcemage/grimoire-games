@@ -1,3 +1,4 @@
+OPTS="$OPTS --x-libraries=/usr/lib/"
 ./configure  --build=${BUILD}                    \
             --prefix=${INSTALL_ROOT}/usr/        \
             --libdir=${INSTALL_ROOT}/usr/lib     \
