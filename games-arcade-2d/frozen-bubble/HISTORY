@@ -1,14 +1,3 @@
-2006-11-17 Eric Sandall <eric@sandall.us>
-	* DETAILS: Updated to 2.0.0
-	  Removed UPDATED
-	  Removed broken SOURCE_URLs and added http://www.frozen-bubble.org/data
-	* DEPENDS: 2.0.0 adds a dependency on sdl_pango and locale-gettext.
-	  Adding explicit dependencies on perl, sdl, sdl_image, and sdl_mixer.
-	  Depends on glib2 for server (should be optional, but it kept failing
-	  for me without it).
-	  Optionally depends on bzip2 (compressed game records).
-	* BUILD: Need to setup LIBS and CFLAGS to find glib2.
-
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
