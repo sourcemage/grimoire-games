@@ -1,3 +1,7 @@
+2006-12-04 David Brown <dmlb2000@gmail.com>
+	* FUNCTIONS: games_make_proper_binary made the proper way to check for
+	 staging and to see if its on
+
 2006-11-25 Pol Vinogradov <vin.public@gmail.com>
 	* games-strategy-rts/dunelegacy: new spell, free clone of Dune2
 	* games-strategy-tbs/hedgewars: new spell, free Worms-like turn based
