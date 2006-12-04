@@ -1,3 +1,10 @@
+2006-11-29 Eric Sandall <eric@sandall.us>
+	* INSTALL: Set BINDIR to /usr/games
+
+2006-11-24 Pieter Lenaerts <e-type@sourcemage.org>
+	* updated to 2.1.0
+	* DEPENDS: added sdl_pango and locale-gettext
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

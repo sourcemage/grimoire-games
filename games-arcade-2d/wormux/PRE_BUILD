@@ -2,5 +2,6 @@ default_pre_build &&
 cd $SOURCE_DIRECTORY &&
 if [[ "$WORMUX_SVN" == "y" ]]
 then
+  touch config.rpath &&
   NOCONFIGURE=1 ./autogen.sh
 fi

@@ -1,0 +1,6 @@
+2006-11-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* BUILD: added qt4 path
+	* INSTALL: fix install path
+
+2006-11-25 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS, DEPENDS, BUILD, INSTALL, PRE_BUILD: created spell

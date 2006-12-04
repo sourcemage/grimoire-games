@@ -1,15 +1,13 @@
            SPELL=torcs
-         VERSION=1.2.4
-      PATCHLEVEL=1
+         VERSION=1.3.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/c/}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
         WEB_SITE=http://torcs.sourceforge.net/
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
-     #SOURCE_HASH=sha512:70ecf36a9680fa918b4c19f14bdd54a13dc89e32a631c68c1ab0f3189a75497b2659990705bdd1e415e84637d72fc2ec52b8a5294a46a74bbe2775a239a22bac
+      #SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+     SOURCE_HASH=sha512:9fb6914403d936f800fe7a3fe9e8bce3df43251510e8b162e6f85fb4421d0d43515d5ede5c2c6af126ae6e40a4c35af6e2d77fbd3d9b9daa3b9b194b4a17068c
       LICENSE[0]=GPL
          ENTERED=20010926
-         UPDATED=20050223
            SHORT="3D racing cars simulator using OpenGL"
 cat << EOF
 TORCS is a 3D racing cars simulator using OpenGL. The goal is to have 

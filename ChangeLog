@@ -1,3 +1,8 @@
+2006-11-25 Pol Vinogradov <vin.public@gmail.com>
+	* games-strategy-rts/dunelegacy: new spell, free clone of Dune2
+	* games-strategy-tbs/hedgewars: new spell, free Worms-like turn based
+	  strategy game
+
 2006-11-16 David Brown <dmlb2000@gmail.com>
 	* FUNCTIONS: games_make_proper_binary removed hack to check for stage
 	root because it won't work shortly...
