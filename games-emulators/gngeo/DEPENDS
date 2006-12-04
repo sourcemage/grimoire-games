@@ -1,4 +1,3 @@
-depends OPENGL   	&&
-depends nasm		&&
-depends	sdl		&&
+depends nasm  &&
+depends sdl   &&
 depends zlib
