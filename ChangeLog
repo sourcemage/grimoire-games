@@ -1,3 +1,6 @@
+2006-12-05 David Brown <dmlb2000@gmail.com>
+	* FUNCTIONS: games make proper binary fixed variable problems
+
 2006-12-04 David Brown <dmlb2000@gmail.com>
 	* FUNCTIONS: games_make_proper_binary made the proper way to check for
 	 staging and to see if its on

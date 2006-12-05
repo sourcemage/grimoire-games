@@ -132,14 +132,15 @@ function games_create_base_dirs() {
 #---
 
 function games_make_proper_binary() {
-if ( grep -q "usr/games/" $IW_LOG )
+if grep -q "usr/games/" $IW_LOG > /dev/null 2>&1
 then
   grimoire_parse_iw $IW_LOG | grimoire_exists | sort | grep "usr/games/" | xargs -n 1 chmod -f 0750
   grimoire_parse_iw $IW_LOG | grimoire_exists | sort | grep "usr/games/" | xargs -n 1 chown -f root.games
 elif [[ $STAGED_INSTALL == on ]]
 then
-  find $STAGE_DIRECTORY/TRANSL/ | sed "s#STAGE_DIRECTORY/TRANSL/##" | grep '^usr/games' | xargs -n 1 chmod -f 0750
-  find $STAGE_DIRECTORY/TRANSL/ | sed "s#STAGE_DIRECTORY/TRANSL/##" | grep '^usr/games' | xargs -n 1 chown -f root.games
+  echo "doing the stage root thing"
+  find $STAGE_DIRECTORY/TRANSL/ | sed "s#$STAGE_DIRECTORY/##" | grep '^TRANSL/usr/games' | xargs -n 1 chmod -f 0750
+  find $STAGE_DIRECTORY/TRANSL/ | sed "s#$STAGE_DIRECTORY/##" | grep '^TRANSL/usr/games' | xargs -n 1 chown -f root.games
 else
 message "${QUERY_COLOR}If you see this message and you're not \n \
 installing a data spell then report this at the following url: \n \
