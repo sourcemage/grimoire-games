@@ -1,3 +1,7 @@
+2006-11-30 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Properly fix install patch of binaries to /usr/games
+	  (prior fix did not install hedgewars nor hwengine into /usr/games)
+
 2006-11-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* BUILD: added qt4 path
 	* INSTALL: fix install path

@@ -1,3 +1,8 @@
-default_pre_build                        &&
-cd ${SOURCE_DIRECTORY}                   &&
-sedit "s:bin:games:" bin/CMakeLists.txt
+default_pre_build                                                       &&
+cd ${SOURCE_DIRECTORY}                                                  &&
+mv bin games                                                            &&
+sedit 's:bin:games:g' CMakeLists.txt                                    &&
+sedit 's:bin:games:' hedgewars/CMakeLists.txt                           &&
+sedit 's:("bin"):("games"):' QTfrontend/main.cpp.in                     &&
+sedit 's:("bin"):("games"):' QTfrontend/main.cpp                        &&
+sedit 's:DESTINATION bin:DESTINATION games:' QTfrontend/CMakeLists.txt
