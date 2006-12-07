@@ -1,3 +1,7 @@
+2006-12-08 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: removed UPDATED
+	* DEPENDS: added X11-LIBS, libxi only if X are modular
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

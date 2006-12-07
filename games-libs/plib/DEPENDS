@@ -1,1 +1,9 @@
-depends  GLUT
+depends  GLUT                  &&
+depends  X11-LIBS  "--with-x"  &&
+
+source  $GRIMOIRE/FUNCTIONS    &&
+
+if  check_if_xorg_modular_libs  ;  then
+  depends  libxi
+fi
+     
