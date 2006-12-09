@@ -1,4 +1,4 @@
-OPTS="$OPTS --x-libraries=/usr/lib/"
+OPTS="$OPTS --x-libraries=${TRACK_ROOT}/usr/lib/"  &&
 ./configure  --build=${BUILD}                    \
             --prefix=${INSTALL_ROOT}/usr/        \
             --libdir=${INSTALL_ROOT}/usr/lib     \

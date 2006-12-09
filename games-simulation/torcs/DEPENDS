@@ -1,3 +1,4 @@
 depends  GLUT    &&
+depends  openal  &&
 depends  plib    &&
 depends  libpng
