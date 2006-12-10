@@ -1,1 +1,1 @@
-echo "Emtpy"
+true

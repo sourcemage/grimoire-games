@@ -1,15 +1,14 @@
            SPELL=bos
-         VERSION=1.1
-          SOURCE=${SPELL}_1_1.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_1_1
-   SOURCE_URL[0]=http://bos.seul.org/files/bos_1_1.tar.gz
+         VERSION=2.0
+          SOURCE=${SPELL}_${VERSION/./_}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/data.bos
+   SOURCE_URL[0]=http://bos.seul.org/files/$SOURCE
         WEB_SITE=http://bos.seul.org
          ENTERED=20040719
-         UPDATED=20040719
-     SOURCE_HASH=sha512:b8d31779866c709d72c6e357738bdac7f79ff638aca28c6eca6f5b66ba0fe93159c25f2e7809234fe477ea015a7151b8977ae58a57291e36d560fd321b8712b9
+     SOURCE_HASH=sha512:076b3c4493c5261e5fe5616e1d1bdd7db28784562d85d9806223a2a130773cd2e98a663c5c9b79520d5fbe827066b92cd5e1c2fc4af913ec7a17373206921927
       LICENSE[0]=GPL
            SHORT='A game for the stratagus engine'
 cat << EOF
 Invasion - Battle of Survival is a real-time strategy game using the Stratagus
-game engine. 
+game engine.
 EOF
