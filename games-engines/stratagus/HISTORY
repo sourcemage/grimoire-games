@@ -1,3 +1,10 @@
+2006-12-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 2.2 aka 061209
+	* DEPENDS: re-added zlib, explicit depends
+	* configure.in: added for a stupid check
+	* PRE_BUILD: added to apply the above fix
+	* widgets.h.patch: added for another fix
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

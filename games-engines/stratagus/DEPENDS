@@ -1,6 +1,7 @@
-depends  lua     &&
+depends  lua50   &&
 depends  libpng  &&
 depends  sdl     &&
+depends  zlib    &&
 
 optional_depends  OPENGL                             \
                   "--with-opengl"                    \
