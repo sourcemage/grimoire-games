@@ -5,7 +5,7 @@
     SOURCE_URL[0]=http://download.berlios.de/netpanzer/$SOURCE
          WEB_SITE=http://netpanzer.berlios.de/
           ENTERED=20050209
-          UPDATED=20050209
+       PATCHLEVEL=1
       SOURCE_HASH=sha512:a9c83557ca831aea976c6dae315dbdb3ad92cef9f92969be2e34c654d0d27333efd02254443aee7f599c6bf9571880083f78ded76fac531a22e16f1ee622956e
        LICENSE[0]=GPL
             SHORT="netPanzer is an online multiplayer tactical warfare game designed for fast action combat"
