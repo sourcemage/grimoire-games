@@ -5,6 +5,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/data.bos
    SOURCE_URL[0]=http://bos.seul.org/files/$SOURCE
         WEB_SITE=http://bos.seul.org
          ENTERED=20040719
+      PATCHLEVEL=1
      SOURCE_HASH=sha512:076b3c4493c5261e5fe5616e1d1bdd7db28784562d85d9806223a2a130773cd2e98a663c5c9b79520d5fbe827066b92cd5e1c2fc4af913ec7a17373206921927
       LICENSE[0]=GPL
            SHORT='A game for the stratagus engine'
