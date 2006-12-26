@@ -103,10 +103,10 @@ function unpack_file() {
 #---
 
 function find_and_scam() {
-  find ./ -type d -print0 | xargs -0 -n 1 chmod 0750
-  find ./ -type d -print0 | xargs -0 -n 1 chown root.games
-  find ./ -type f -print0 | xargs -0 -n 1 chmod 0640
-  find ./ -type f -print0 | xargs -0 -n 1 chown root.games
+  find ./ -type d -print0 | xargs -r -0 -n 1 chmod 0750
+  find ./ -type d -print0 | xargs -r -0 -n 1 chown root:games
+  find ./ -type f -print0 | xargs -r -0 -n 1 chmod 0640
+  find ./ -type f -print0 | xargs -r -0 -n 1 chown root:games
 }
 
 #---
@@ -123,15 +123,20 @@ function games_create_base_dirs() {
 
 #---
 ## @Synopsis games_make_proper_binary function to make all
-## @Synopsis binaries in /usr/games chown root.games and
+## @Synopsis binaries in /usr/games chown root:games and
 ## @Synopsis chmod 0750.
 #---
 
 function games_make_proper_binary() {
 if ( grep -q "usr/games/" $IW_LOG )
 then
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chmod 0750
-  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -n 1 chown root.games
+  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -r -n 1 chmod 0750
+  cat $IW_LOG | cut -f 3 | sort | grep "usr/games/" | xargs -r -n 1 chown root:games
+elif [[ $STAGED_INSTALL == on ]]
+then
+  echo "doing the stage root thing"
+  find $STAGE_DIRECTORY/TRANSL/ | sed "s#$STAGE_DIRECTORY/##" | grep '^TRANSL/usr/games' | xargs -r -n 1 chmod -f 0750
+  find $STAGE_DIRECTORY/TRANSL/ | sed "s#$STAGE_DIRECTORY/##" | grep '^TRANSL/usr/games' | xargs -r -n 1 chown -f root:games
 else
   message "${QUERY_COLOR}If you see this message and you're not \n \
 installing a data spell then report this at the following url: \n \
