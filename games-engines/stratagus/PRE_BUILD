@@ -1,7 +1,0 @@
-default_pre_build                             &&
-cd $SOURCE_DIRECTORY                          &&
-
-cp $SPELL_DIRECTORY/configure.in              \
-   $SOURCE_DIRECTORY/configure.in             &&
-patch -p0 < $SPELL_DIRECTORY/widgets.h.patch  &&
-./autogen.sh

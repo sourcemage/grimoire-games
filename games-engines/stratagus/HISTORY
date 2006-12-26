@@ -1,3 +1,9 @@
+2006-12-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 2.2.1
+	* configure.in: removed
+	* widgets.h.patch: removed
+	* PRE_BUILD: removed
+
 2006-12-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 2.2 aka 061209
 	* DEPENDS: re-added zlib, explicit depends
