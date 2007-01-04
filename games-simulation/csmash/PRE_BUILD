@@ -1,0 +1,6 @@
+default_pre_build                                           &&
+cd ${SOURCE_DIRECTORY}                                      &&
+
+patch -p0 < ${SCRIPT_DIRECTORY}/${SPELL}-x-inc.patch        &&
+patch -p0 < ${SCRIPT_DIRECTORY}/${SPELL}-sizeof-cast.patch  &&
+patch -p0 < ${SCRIPT_DIRECTORY}/${SPELL}-gcc41.patch

@@ -1,3 +1,10 @@
+2007-01-04 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: added ${OPTS} to ./configure and make
+	* DETAILS: removed UPDATED
+	* PRE_BUILD, csmash-x-inc.patch, csmash-sizeof-cast.patch,
+	  csmash-gcc41.patch: added to fix compile fails (patches are found in
+	  gentoo)
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
