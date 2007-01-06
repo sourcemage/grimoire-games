@@ -1,8 +1,9 @@
-default_pre_build &&
+default_pre_build       &&
+cd ${SOURCE_DIRECTORY}  &&
 
-sedit 's:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"/usr/share/neverball/data\":' $SOURCE_DIRECTORY/share/config.h &&
-sedit 's/#X11_PATH/X11_PATH/' $SOURCE_DIRECTORY/Makefile &&
+sedit "s:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"${TRACK_ROOT}/usr/share/neverball/data\":" share/config.h  &&
+sedit 's/#X11_PATH/X11_PATH/' Makefile  &&
 
 case  $CUSTOM in
-  y|Y)  ${EDITOR:-nano}  $SOURCE_DIRECTORY/share/config.h  ;;
+  y|Y)  ${EDITOR:-nano}  share/config.h  ;;
 esac

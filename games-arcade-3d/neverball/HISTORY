@@ -1,3 +1,9 @@
+2007-01-07 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: removed UPDATED
+	* CONFIGURE: switched to config_query
+	* INSTALL: install_rootifying, added -p to mkdir
+	* PRE_BUILD: track_rootifying, made $SOURCE_DIRECTORY working dir
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
