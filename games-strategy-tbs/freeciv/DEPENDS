@@ -13,7 +13,7 @@ optional_depends  sdl_mixer                             \
 optional_depends  alsa-lib                              \
                   ""                                    \
                   "--disable-alsa"                      \
-                  "for sound support through SDL"       &&
+                  "for sound support through ALSA"      &&
 optional_depends  readline                              \
                   "--with-readline"                     \
                   "--without-readline"                  \

@@ -1,3 +1,6 @@
+2007-01-04 Eric Sandall <eric@sandall.us>
+	* DEPENDS: alsa-lib provides sound through ALSA, not SDL
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
