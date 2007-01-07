@@ -1,3 +1,9 @@
+2007-01-08 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0631, removed UPDATED
+	* DEPENDS: removed g++, ode, made openal optional, added missing &&
+	* BUILD: added for default_games_build
+	* PRE_BUILD: added to fix datadir path
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

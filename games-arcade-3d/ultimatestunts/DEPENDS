@@ -1,4 +1,7 @@
-depends g++
-depends openal
-depends sdl
-depends ode
+depends  sdl                   &&
+depends  sdl_image             &&
+
+optional_depends  openal       \
+                  ""           \
+                  ""           \
+                  "for sound"
