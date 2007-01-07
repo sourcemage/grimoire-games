@@ -1,3 +1,4 @@
+depends  g++                   &&
 depends  sdl                   &&
 depends  sdl_image             &&
 
