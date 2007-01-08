@@ -1,3 +1,10 @@
+2007-01-08 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: added to specify wad dir and default_games_build
+	* DEPENDS: actually removed gcc34 dependency, added sdl, and
+	  description for DOOM-DATA
+	* DETAILS: PATCHLEVEL++
+	* PRE_BUILD: added for proper docs installation
+
 2006-11-25 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.4.7
 

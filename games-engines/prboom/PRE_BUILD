@@ -1,0 +1,7 @@
+default_pre_build                                                &&
+cd ${SOURCE_DIRECTORY}                                           &&
+
+sedit "s:doc/@PACKAGE@-@VERSION@:doc/${SPELL}:" Makefile.am      &&
+sedit "s:doc/@PACKAGE@-@VERSION@:doc/${SPELL}:" Makefile.in      &&
+sedit "s:doc/@PACKAGE@-@VERSION@:doc/${SPELL}:" doc/Makefile.am  &&
+sedit "s:doc/@PACKAGE@-@VERSION@:doc/${SPELL}:" doc/Makefile.in

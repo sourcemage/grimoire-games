@@ -1,4 +1,8 @@
-depends  gcc34      &&
-depends  sdl_mixer  &&
-depends  sdl_net    &&
-optional_depends  DOOM-DATA
+depends           sdl                         &&
+depends           sdl_mixer                   &&
+depends           sdl_net                     &&
+
+optional_depends  DOOM-DATA                   \
+                  ""                          \
+                  ""                          \
+                  "for additional IWAD file"
