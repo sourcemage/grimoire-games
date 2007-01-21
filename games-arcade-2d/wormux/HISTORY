@@ -1,3 +1,6 @@
+2007-01-21 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 0.7.9rc2
+
 2006-11-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* PRE_BUILD: touch config.rpath so autogen.sh doesn't fail
 
