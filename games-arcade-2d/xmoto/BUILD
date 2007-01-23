@@ -1,7 +1,5 @@
-OPTS="${XMOTO_OPTS} ${OPTS}"  &&
-
-sedit "s:USE_GETTEXT:HAVE_GETTEXT:g" src/Locales.h    &&
-sedit "s:USE_GETTEXT:HAVE_GETTEXT:g" src/Locales.cpp  &&
+OPTS="--localedir=${INSTALL_ROOT}/usr/share/locale  \
+--with-localesdir=${INSTALL_ROOT}/usr/share/locale ${XMOTO_OPTS} ${OPTS}"  &&
 
 sedit 's:mangdir = $(mandir)/mang:mangdir = $(mandir)/man6:' Makefile.in  &&
 
