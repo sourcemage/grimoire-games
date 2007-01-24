@@ -1,3 +1,6 @@
+2007-01-25 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: fixed locale problem completely
+
 2007-01-23 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD: added locale related stuff to OPTS, removed sedit lines for
 	   locale problem i'd, builds fine without them
