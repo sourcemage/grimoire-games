@@ -1,3 +1,8 @@
+2007-01-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: Changed SOURCE extension
+	  updated spell to 0.7.9
+	* DEPENDS: added new libpng and some missing others
+
 2007-01-21 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated spell to 0.7.9rc2
 
