@@ -7,4 +7,13 @@ depends ode        &&
 depends jpeg       &&
 depends libpng     &&
 depends zlib       &&
-optional_depends  curl  ""  ""  "for online highscore system"
+
+optional_depends  curl                           \
+                  "--with-enable-www=1"          \
+                  "--with-enable-www=0"          \
+                  "for online highscore system"  &&
+
+optional_depends  gettext                                    \
+                  "--enable-nls --without-included-gettext"  \
+                  "--with-included-gettext"                  \
+                  "to use system gettext"
