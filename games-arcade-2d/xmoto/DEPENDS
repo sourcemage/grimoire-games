@@ -16,4 +16,9 @@ optional_depends  curl                           \
 optional_depends  gettext                                    \
                   "--enable-nls --without-included-gettext"  \
                   "--with-included-gettext"                  \
-                  "to use system gettext"
+                  "to use system gettext"                    &&
+
+optional_depends  xmoto-edit                     \
+                  ""                             \
+                  ""                             \
+                  "for level editting"
