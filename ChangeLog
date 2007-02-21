@@ -1,5 +1,6 @@
 2007-02-21 Eric Sandall <sandalle@sourcemage.org>
 	* games-data/freeciv-freeland-normal: Added freeciv freeland tileset
+	* games-data/freeciv-freeland-big: Added freeciv big freeland tileset
 
 2007-02-14 Pol Vinogradov <vin.public@gmail.com>
 	* games-utils/xmoto-edit: new spell, level editor for X-Moto

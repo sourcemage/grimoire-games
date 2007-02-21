@@ -1,0 +1,1 @@
+cp -vr $SOURCE_DIRECTORY/* $INSTALL_ROOT/usr/share/games/freeciv
