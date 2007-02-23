@@ -1,3 +1,7 @@
+2007-02-21 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.0.9
+	  Removed UPDATED
+
 2007-01-04 Eric Sandall <eric@sandall.us>
 	* DEPENDS: alsa-lib provides sound through ALSA, not SDL
 

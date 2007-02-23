@@ -1,12 +1,11 @@
            SPELL=lincity-ng
-         VERSION=1.0.2
+         VERSION=1.1.0
           SOURCE=${SPELL}-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://download.berlios.de/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:3da2a535fef4a141226d7e85e322846d720fb0bafcfa0bf39aae9d8468c71ddbea7c669edd3a6eca91c81db259baad7bdfa3cafb4e040ceb6ac4d41fb0559870
+     SOURCE_HASH=sha512:7c07ecc7809dd825a102701a5734e619911c1f04c9cc8b395fcb55a2489b0c2a6ff4db288c8069ca58c92b6f28ac1969fc824fb5ec5a70bf432d4c0a6062c6b3
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://lincity-ng.berlios.de/
          ENTERED=20050911
-         UPDATED=20050911
       LICENSE[0]=GPL
            SHORT="A city simulation game."
 cat << EOF
