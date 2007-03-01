@@ -10,24 +10,24 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 
-2004-02-02 Eric Sandall <eric@sandall.us>
+2004-02-02 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Creates /usr/games if it doesn't exist (Bug #5634)
 	* HISTORY: Formatted to Guru Handbook
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2003-01-05 Eric Sandall <eric@sandall.us>
+2003-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v021212
 	* xrick: Added script to correctly run
 	* BUILD: Fixed to copy data files now
 	  Binaries now install as user 'games'
 	  Added SMGL optimizations to Makefile
 
-2002-08-26 Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
 
 2002-04-15 Joel Mayes <bluebird@optushome.com.au>

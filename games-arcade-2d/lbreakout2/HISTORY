@@ -1,7 +1,7 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2005-11-14 Eric Sandall <eric@sandall.us>
+2005-11-14 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Added missing '&&'
 	  Removed trailing '&&'
 	  Cleaned up formatting
@@ -29,7 +29,7 @@
 	* BUILD, DETAILS: Updates for Build API 2
 	* Version bump
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Removed SDL as sdl_mixer depends on sdl
 
@@ -57,20 +57,20 @@
 2003-04-18 Seth Woolley <seth@tautology.org>
 	* DETAILS: fix md5 for SOURCE[0].
 
-2003-03-08 Eric Sandall <eric@sandall.us>
+2003-03-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.4.1
 
-2003-01-31 Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #2443
 
-2002-12-17 Eric Sandall <eric@sandall.us>
+2002-12-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v2.4
 
 2002-10-02 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD: now uses /var/games to save the global highscores
 	  instead of /var/lib/games
 
-2002-09-21 Eric Sandall <eric@sandall.us>
+2002-09-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: New version: 2.3.5
 
 2002-09-13 Arwed v. Merkatz <v.merkatz@gmx.net>
@@ -83,7 +83,7 @@
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: changed MAINTAINER
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated version to 2.3.2
 	  Added MD5 and LICENSE
 	  Changed SOURCE_URL to use $SOURCEFORGE_URL

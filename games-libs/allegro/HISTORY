@@ -17,13 +17,13 @@
 	* BUILD: make_single added also used default_build
 	  fixes bug #9054 invalid infodir location
 
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.1.16  (Bug #7593)
 	  Added BUILD_API=2
 	* BUILD: Converted to build_api 2
 	* INSTALL: Added
 
-2004-04-27 Eric Sandall <eric@sandall.us>
+2004-04-27 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.1.14
 	  Removed MAINTAINER
 	  Removed single make job (MAKE_NJOBS=1)
@@ -38,7 +38,7 @@
 2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 4.1.9
 
-2003-01-26 Eric Sandall <eric@sandall.us>
+2003-01-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.1.8 (Bug #2380, thanks to Snakebyte)
 	* BUILD: Modified to actually install documentation,
 	  both info and man (both are compressed .gz)
@@ -47,7 +47,7 @@
 	* DETAILS: Updated to version 4.1.4
 	  Changed to use $SOURCEFORGE_URL
 
-2002-10-23 Eric Sandall <eric@sandall.us>
+2002-10-23 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Cleaned up
 	* POST_BUILD: Removed (redundant)
 
@@ -58,7 +58,7 @@
 	* DETAILS: Changed maintainer
 	* HISTORY: Fixed file standard compliance
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated version to 4.0.2
 	  Added MD5 and LICENSE
 

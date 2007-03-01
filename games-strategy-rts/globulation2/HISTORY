@@ -1,4 +1,4 @@
-2006-08-15 Eric Sandall <eric@sandall.us>
+2006-08-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.8.21
 	  Removed BUILD_API=2 (grimoire-wide) and UPDATED (deprecated)
 
@@ -29,11 +29,11 @@
 2005-02-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: SOURCE_URL fixed, version update
 
-2005-01-29 Eric Sandall <eric@sandall.us>
+2005-01-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: New WEB_SITE URL
 	  We're now listed on their Download page. ;)
 
-2005-01-28 Eric Sandall <eric@sandall.us>
+2005-01-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.8.11
 	  Added BUILD_API=2
 	  Shortened SHORT

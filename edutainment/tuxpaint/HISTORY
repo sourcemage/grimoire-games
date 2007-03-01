@@ -11,13 +11,13 @@
 2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image, SDL_mixer, and SDL_ttf renamed to sdl*
 	  Removed SDL as the above depend on sdl
 	  Removed TABs
 	  Formatted to Guru Handbook
 
-2004-07-12 Eric Sandall <eric@sandall.us>
+2004-07-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAINTAINER
 	  Cleaned up spacing
 	  Shortened SHORT

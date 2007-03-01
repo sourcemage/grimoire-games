@@ -5,7 +5,7 @@
 	* INSTALL: removed I_DIR
 	* DETAILS: API2 converted
 
-2005-12-30 Eric Sandall <eric@sandall.us>
+2005-12-30 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Removed (games-data default_build runs `true`)
 	* INSTALL: Cannot chown to games:games (no games user)
 
@@ -17,7 +17,7 @@
 	* DETAILS: updated VERSION to 1.7.1
 	  added SOUND_VERSION
 
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* Moved binary files out of crossfire-client and into here
 	* DETAILS: Set ARCHIVE to "off"
 	* BUILD: Run only `true`
@@ -29,7 +29,7 @@
 	* DETAILS: Version update 1.7.0 bug #7261
 	* DETAILS: Build api 2
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image renamed to sdl_image
 	  Formatted to Guru Handbook
 	* HISTORY: Formatted to Guru Handbook
@@ -45,7 +45,7 @@
 	* BUILD: Fixed linking error due to errno.h which allows the gtk client to compile
 	* Sounds unchanged since 1.4.0
 
-2002-10-15 Eric Sandall <eric@sandall.us>
+2002-10-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.4.0
 	* Sounds now are at the same version as the rest
 
@@ -54,7 +54,7 @@
 	  Changed maintainer
 	* HISTORY: Fixed HISTORY file standards compliance
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated version to 1.3.0
 	  Added MD5 and LICENSE
 	  Added -images source as SOURCE3

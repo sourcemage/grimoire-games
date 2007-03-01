@@ -1,10 +1,10 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2005-11-04 Eric Sandall <eric@sandall.us>
+2005-11-04 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Use prior choice of old CVS variable, if set
 
-2005-11-03 Eric Sandall <eric@sandall.us>
+2005-11-03 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.1.2
 	  Added GPG verification of source
 	  Renamed CVS to SAGE_CVS
@@ -16,21 +16,21 @@
 	  Added query for autoupdating CVS
 	* BUILD,PRE_BUILD: Moved ./autogen.sh code into PRE_BUILD
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added SourceForge mirror first
 	* DEPENDS: Pass --disable-sdltest to OPTS
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
-2004-03-22 Eric Sandall <eric@sandall.us>
+2004-03-22 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.1.1
 	  Removed MAINTAINER
 
@@ -40,6 +40,6 @@
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: big letters for x11-libs
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

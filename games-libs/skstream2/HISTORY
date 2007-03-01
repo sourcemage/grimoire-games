@@ -4,10 +4,10 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 
-2003-09-30 Eric Sandall <eric@sandall.us>
+2003-09-30 Eric Sandall <sandalle@sourcemage.org>
 	* Branched from skstream to keep as v0.2.0 for eris
 	  (and other packages which don't work with skstream
 	  0.3.0)

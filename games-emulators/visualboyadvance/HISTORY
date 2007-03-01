@@ -20,7 +20,7 @@
 2005-05-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: lo-casing of spell... also fixes bug #8797
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 
 2004-08-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>

@@ -12,13 +12,13 @@
 2005-11-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: license is GPL and added sha512
 
-2003-11-03 Eric Sandall <eric@sandall.us>
+2003-11-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Changed requires to depends, uppercase provides
 	* HISTORY: Formatted to Guru Handbook
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2003-02-26 Eric Sandall <eric@sandall.us>
+2003-02-26 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

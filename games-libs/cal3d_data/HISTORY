@@ -7,15 +7,15 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2003-09-29 Eric Sandall <eric@sandall.us>
+2003-09-29 Eric Sandall <sandalle@sourcemage.org>
 	* Update to 0.9
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* Created HISTORY file
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created cal3d_data and added to grimoire
 

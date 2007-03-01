@@ -9,7 +9,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Removed SDL as sdl_mixer depends on sdl
 	* HISTORY: Formatted to Guru Handbook
@@ -30,7 +30,7 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-01-31 Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Fixed Bug #2443
 
 2002-10-10 Arwed v. Merkatz <v.merkatz@gmx.net>

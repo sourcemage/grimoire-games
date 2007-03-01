@@ -10,22 +10,22 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer, SDL_image, and SDL_ttf renamed to sdl*
 
-2004-04-19 Eric Sandall <eric@sandall.us>
+2004-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.7
 
-2004-03-12 Eric Sandall <eric@sandall.us>
+2004-03-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.6a
 
 2003-12-02 hgg <hgreig@bigpond.net.au>
 	* BUILD: sedit setup.py to install binary to /usr/games not /usr/local/bin
 
-2003-11-30 Eric Sandall <eric@sandall.us>
+2003-11-30 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.6
 
-2003-11-18 Eric Sandall <eric@sandall.us>
+2003-11-18 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 	* Added to games/board
 

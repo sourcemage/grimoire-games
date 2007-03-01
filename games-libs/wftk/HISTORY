@@ -7,15 +7,15 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAKE_NJOBS=1
 	* BUILD: Run make_single before make and make_normal afterwards
 
-2004-10-09 Eric Sandall <eric@sandall.us>
+2004-10-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added MAKE_NJOBS=1
 	  Added BUILD_API=2
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl
 	  Removed SDL as sdl_mixer depends on sdl
 	  Removed zlib as libpng depends on it
@@ -24,7 +24,7 @@
 	* BUILD: Converted to using config_query responses
 	* DETAILS: Converted to using config_query responses
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Updated stable version to 0.7.1
 	  Store the cvs version as .bz2
@@ -32,14 +32,14 @@
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
-2004-02-17 Eric Sandall <eric@sandall.us>
+2004-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.7.0
 	  Removed MAINTAINER
 
 2003-12-07 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: libsigc++2 not yee olde versionne
 
-2003-10-12 Eric Sandall <eric@sandall.us>
+2003-10-12 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Uses freetype2, not freetype1
 	* Created wftk, added to games
 

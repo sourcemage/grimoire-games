@@ -7,7 +7,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 	  Removed SDL as the above depend on sdl
 
@@ -17,10 +17,10 @@
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2002-10-19 Eric Sandall <eric@sandall.us>
+2002-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #1417
 
-2002-08-26 Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
 
 2002-05-11 David Pradier <pradierdavid@yahoo.fr>

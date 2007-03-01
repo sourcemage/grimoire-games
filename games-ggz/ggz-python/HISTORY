@@ -35,6 +35,6 @@
 2003-05-28 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: Updated DEPENDS to reflect easysock's absorption into libggz
 
-2002-12-17 Eric Sandall <eric@sandall.us>
+2002-12-17 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

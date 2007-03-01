@@ -1,7 +1,7 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2005-11-02 Eric Sandall <eric@sandall.us>
+2005-11-02 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel branch to 0.5.98
 	  Changed to GPG verification
 	  Added check for autoupdate of CVS
@@ -9,19 +9,19 @@
 	* PREPARE: Added query for autoupdate of CVS
 	* BUILD,PRE_BUILD: Move autogen.sh code into PRE_BUILD
 
-2005-06-10 Eric Sandall <eric@sandall.us>
+2005-06-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 0.5.96
 
-2005-05-11 Eric Sandall <eric@sandall.us>
+2005-05-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 0.5.95
 
-2005-04-19 Eric Sandall <eric@sandall.us>
+2005-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 0.5.94
 
-2005-01-11 Eric Sandall <eric@sandall.us>
+2005-01-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 0.5.92
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Use config_query_list to ask for stable, devel, or cvs
 	  config_query variable renamed to ATLAS_CPP_BRANCH from CVS
 	* DETAILS: Added "devel" 0.5.91 version (uses SOURCEFORGE_URL)
@@ -30,22 +30,22 @@
 	* DEPENDS: Check ATLAS_CPP_BRANCH
 	  If "cvs" is set, depend on some CVS
 
-2004-07-21 Eric Sandall <eric@sandall.us>
+2004-07-21 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: CVS version depends on atlas-python
 
-2004-07-19 Eric Sandall <eric@sandall.us>
+2004-07-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: BUILD_API=2
 	  SOURCE_DIRECTORY is different for release and cvs
 	  Use config_query response
 	* BUILD: Use config_query response
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* Renamed from Atlas-C++
 	* DETAILS: Changed SPELL to atlas-c++
 	  SOURCEs and SOURCE_DIRECTORY use Atlas-C++
 	* CONFLICTS: Conflicts with Atlas-C++
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2
 	  Removed MAINTAINER
@@ -53,17 +53,17 @@
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
-2003-10-09 Eric Sandall <eric@sandall.us>
+2003-10-09 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Added dependency on cppsocket
 	* HISTORY: Updated to follow Guru Handbook
 
-2003-10-05 Eric Sandall <eric@sandall.us>
+2003-10-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Released under the LGPL, not GPL
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 
-2003-09-29 Eric Sandall <eric@sandall.us>
+2003-09-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Victor is no more, moved to new server
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
@@ -72,9 +72,9 @@
 2003-05-10 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 0.4.6
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* HISTORY: Created
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created Atlas-C++ and added to grimoire
 

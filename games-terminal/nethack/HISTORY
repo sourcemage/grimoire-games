@@ -18,7 +18,7 @@
 	* BUILD: Typo in the BUILD file Bug #9169.
 	* BUILD: Another typo...
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAKE_NJOBS=1
 	  Added BUILD_API=2
 	* CONFIGURE: Converted to config_query
@@ -47,7 +47,7 @@
 	* DETAILS,BUILD: Update to 3.4.2 and finish qt-x11 and gnome windowing
 	  builds
 
-2003-08-24 Eric Sandall <eric@sandall.us>
+2003-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS:One make job
 	  Now installs to appropriate locations (Bug #4131)
 	  Permissions for games
@@ -69,14 +69,14 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2002-10-24 Eric Sandall <eric@sandall.us>
+2002-10-24 Eric Sandall <sandalle@sourcemage.org>
 	* POST_INSTALL: Fixed POST_INSTALL to create /usr/games if it doesn't
 	  exist
 
 2002-09-10 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: removed dependency on xfree86 (fixes bug #930)
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* Added nethack spell from nealbirch
 	  Added MD5 and LICENSE
 

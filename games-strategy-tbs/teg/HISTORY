@@ -4,7 +4,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-01-28 Eric Sandall <eric@sandall.us>
+2005-01-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added BUILD_API=2
 	* CONFIGURE: Converted to config_query
 	* DEPENDS: Added dependency on ggz-client-libs
@@ -30,6 +30,6 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* Update for ${INSTALL_ROOT}
 
-2002-10-31 Eric Sandall <eric@sandall.us>
+2002-10-31 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

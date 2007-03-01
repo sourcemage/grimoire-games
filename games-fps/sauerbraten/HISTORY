@@ -3,7 +3,7 @@
 	* PRE_BUILD: removed I_DIR
 	* DETAILS: API2 converted
 
-2005-10-03 Eric Sandall <eric@sandall.us>
+2005-10-03 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS,CONFIGURE,DEPENDS,PRE_BUILD,BUILD,INSTALL,
 	  20050815-addfullpath-rendergl.cpp.patch,
 	  20050815-addfullpath-tools.cpp.patch,

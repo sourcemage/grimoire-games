@@ -25,13 +25,13 @@
 	* removed gl_state.cpp.diff, added vsinstall and FINAL
 	* DEPENDS: added perl
 
-2005-01-08 Eric Sandall <eric@sandall.us>
+2005-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Python renamed to python in stable
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 
-2004-07-23 Eric Sandall <eric@sandall.us>
+2004-07-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: BUILD_API=2
 	  Shortened SHORT
 	* BUILD: Converted to BUILD_API 2

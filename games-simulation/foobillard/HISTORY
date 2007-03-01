@@ -11,26 +11,26 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-01-23 Eric Sandall <eric@sandall.us>
+2005-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Use spell_ok instead of spell_installed
 
 2004-12-13 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS, BUILD: build_api2
 	* BUILD: added fix for openglut
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 
 2004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 3.0a
 
-2004-07-18 Eric Sandall <eric@sandall.us>
+2004-07-18 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: NVIDIA_headers renamed to nvidia_headers
 
 2004-02-25 hgg <hgreig@bigpond.net.au>
 	* DETAILS: emove maintainer and one of the two short lines bug 6124
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Now depends on any provisor of GLUT
 
 2003-07-10 hgg <hgreig@bigpond.net.au>

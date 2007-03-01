@@ -11,26 +11,26 @@
 	* INSTALL,BUILD: Cleanup and make it install to share/games/glhack
 	* DEPENDS: this seems to not depend on nethack anymore
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAKE_NJOBS=1
 	* BUILD: Run make_single before make
 	* INSTALL: Run make_normal before make install
 
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Fixed md5sum  (Bug #7606)
 	  Added BUILD_API=2
 	  Shortened SHORT
 	* BUILD: Converted to build_api 2
 	* INSTALL: Added
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 	* HISTORY: Formatted to Guru Handbook
 
 2004-07-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update 1.2
 
-2003-08-23 Eric Sandall <eric@sandall.us>
+2003-08-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: One make job
 	* BUILD: Installs into nethackdir (Bug #4130)
 	* DEPENDS: Added dependency on nethack (Bug #4130)
@@ -39,17 +39,17 @@
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2003-01-12 Eric Sandall <eric@sandall.us>
+2003-01-12 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Now installs data into /usr/share/games
 
-2003-01-12 Eric Sandall <eric@sandall.us>
+2003-01-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.1
 
 2002-12-08 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD: added a sedit to really make it use /var/games/glhack
 	  (fixes bug #1928)
 
-2002-10-13 Eric Sandall <eric@sandall.us>
+2002-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.0
 
 2002-10-02 Arwed v. Merkatz <v.merkatz@gmx.net>

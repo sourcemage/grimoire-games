@@ -36,27 +36,27 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-04-14 Eric Sandall <eric@sandall.us>
+2003-04-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.7.1
 
-2003-03-17 Eric Sandall <eric@sandall.us>
+2003-03-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.7.0
 
-2003-02-07 Eric Sandall <eric@sandall.us>
+2003-02-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.6.2 Changed SOURCE_URL to 
 	  use GNOME_URL, as the newer versions are being hosted by GNOME
 	* DEPENDS: Updated to GNOME 2, gtk+2, and esound
 
-2003-01-21 Eric Sandall <eric@sandall.us>
+2003-01-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v0.5.2 (Bug #2310)
 
 2002-10-28 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: Updated to 0.4.4
 
-2002-10-22 Eric Sandall <eric@sandall.us>
+2002-10-22 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.4.3
 
-2002-10-17 Eric Sandall <eric@sandall.us>
+2002-10-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.4.2
 
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>

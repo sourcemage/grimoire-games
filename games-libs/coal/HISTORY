@@ -14,7 +14,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Removed MAINTAINER
 	* PREPARE: Added to query for cvs version
@@ -24,15 +24,15 @@
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: add libxml
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* Created HISTORY file
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created coal and added to grimoire
 

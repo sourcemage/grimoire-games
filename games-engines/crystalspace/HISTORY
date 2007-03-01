@@ -49,7 +49,7 @@
 	  Handles Jam install, copying of crystalspace.sh, and creating symlink
 	* POST_INSTALL: Removed; functionality taken over by INSTALL
 
-2005-01-08 Eric Sandall <eric@sandall.us>
+2005-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Python renamed to python in stable
 	  Formatted to Guru Handbook
 

@@ -1,10 +1,10 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-01-04 Eric Sandall <eric@sandall.us>
+2006-01-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.10
 
-2005-11-02 Eric Sandall <eric@sandall.us>
+2005-11-02 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.9
 	  Added GPG checking
 	  Added code to autoupdate CVS if wanted
@@ -13,26 +13,26 @@
 	  Formatted message to <80 columns
 	* BUILD,PRE_BUILD: Moved ./autogen.sh code into PRE_BUILD
 
-2005-07-02 Eric Sandall <eric@sandall.us>
+2005-07-02 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.7
 
-2005-06-13 Eric Sandall <eric@sandall.us>
+2005-06-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.6
 
-2005-05-11 Eric Sandall <eric@sandall.us>
+2005-05-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.5
 
-2005-04-19 Eric Sandall <eric@sandall.us>
+2005-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel to 1.3.4
 
-2005-01-31 Eric Sandall <eric@sandall.us>
+2005-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated devel version to 1.3.3
 	  Added SOURCEFORGE_URL for devel version
 
-2005-01-12 Eric Sandall <eric@sandall.us>
+2005-01-12 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: devel and cvs want libsigc++3
 
-2005-01-11 Eric Sandall <eric@sandall.us>
+2005-01-11 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Query for devel, stable, or cvs version now
 	  CVS renamed to ERIS_BRANCH
 	* DETAILS: Check for devel or cvs version
@@ -42,16 +42,16 @@
 	* DEPENDS: CVS renamed to ERIS_BRANCH
 	  devel and cvs depend on atlas-c++ devel
 
-2004-10-25 Eric Sandall <eric@sandall.us>
+2004-10-25 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Missed a "$"
 
-2004-10-19 Eric Sandall <eric@sandall.us>
+2004-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Mention that CVS eris needs CVS atlas-c++
 
-2004-07-21 Eric Sandall <eric@sandall.us>
+2004-07-21 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Missed a closing }
 
-2004-07-19 Eric Sandall <eric@sandall.us>
+2004-07-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Ummm...checkout libs/eris, not libs/skstream, for cvs
 	  BUILD_API=2
 	  Use config_query response for CVS
@@ -61,10 +61,10 @@
 	  Added message saying eris-cvs needs atlas-c++-cvs
 	* PREPARE: Converted to config_query
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
-2004-04-12 Eric Sandall <eric@sandall.us>
+2004-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
@@ -77,15 +77,15 @@
 	* DEPENDS: add pkgconfig
 	* HISTORY: reformat
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 
-2003-09-30 Eric Sandall <eric@sandall.us>
+2003-09-30 Eric Sandall <sandalle@sourcemage.org>
 	* Added skstream2 (0.2.0) for eris and eris now
 	  depends on it (skstream 0.3.0 is for devel version
 	  of eris, which also require other new libraries)
 
-2003-09-29 Eric Sandall <eric@sandall.us>
+2003-09-29 Eric Sandall <sandalle@sourcemage.org>
 	* Update to 0.9.8
 	  Depends upon libsigc++2 (libsigc++ >= 1.2)
 	  Uses .bz2 compressed tarball instead of .gz
@@ -102,13 +102,13 @@
 	* BUILD: Added build as Current Atlas-C++ install to different 
 	  dir and CPPFLAGS needed to build
 
-2003-03-11 Eric Sandall <eric@sandall.us>
+2003-03-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9.6
 	* BUILD: Removed BUILD as it is no longer needed
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* HISTORY: Created HISTORY file
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created eris and added to grimoire
 

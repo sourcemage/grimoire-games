@@ -7,7 +7,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Now depends on any provisor of GLUT
 	* HISTORY: Formatted to Guru Handbook
 
@@ -17,6 +17,6 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2002-10-31 Eric Sandall <eric@sandall.us>
+2002-10-31 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

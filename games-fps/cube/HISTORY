@@ -7,7 +7,7 @@
 	* PRE_BUILD: removed I_DIR
 	* DETAILS: API2 converted
 
-2005-09-25 Eric Sandall <eric@sandall.us>
+2005-09-25 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2005_08_29
 	  Using GPG verification (Level 1)
 	  SOURCEs now split into data (unix) and source
@@ -30,9 +30,9 @@
 	* 20050829-gentoo-paths.patch: Added from
 	  http://bugs.gentoo.org/show_bug.cgi?id=104292
 
-2004-09-06 Eric Sandall <eric@sandall.us>
+2004-09-06 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Install docs to /usr/share/doc not /usr/share/docs
 
-2004-08-28 Eric Sandall <eric@sandall.us>
+2004-08-28 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell (with some hints from Gentoo's ebuild)
 

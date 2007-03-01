@@ -39,7 +39,7 @@
 	* Removed /etc/scummvmrc ( scummvm creates all necessary files on the
 	  fly )
 
-2005-01-08 Eric Sandall <eric@sandall.us>
+2005-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.7.0
 	  SOURCE no longer has -src in the name
 	  Shortened SHORT
@@ -57,7 +57,7 @@
 2004-09-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: MD5 fix
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 	  Formatted to Guru Handbook
 	  Use any provider of CVS
@@ -100,7 +100,7 @@
 2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Changed DETAILS to show current subversion
 
-2003-03-19 Eric Sandall <eric@sandall.us>
+2003-03-19 Eric Sandall <sandalle@sourcemage.org>
 	* Added to games
 
 2002-12-11 Arwed v. Merkatz <v.merkatz@gmx.net>

@@ -5,7 +5,7 @@
 	* DETAILS: Version bump, updated urls, api2 conversion
 	* BUILD: Convert to api2 default_games_build
 
-2006-03-08 Eric Sandall <eric@sandall.us>
+2006-03-08 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Xaw3d renamed to xaw3d
 	  Formatted to Guru Handbook
 
@@ -27,6 +27,6 @@
 2002-11-19 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* added DEPENDS file, depends Xaw3d (fixes bug #1725)
 
-2002-10-31 Eric Sandall <eric@sandall.us>
+2002-10-31 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

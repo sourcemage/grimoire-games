@@ -21,7 +21,7 @@
 2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Removed SDL as sdl_mixer depends on sdl
 	  Formatted to Guru Handbook
@@ -42,7 +42,7 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2002-11-07 Eric Sandall <eric@sandall.us>
+2002-11-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.00
 
 2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>

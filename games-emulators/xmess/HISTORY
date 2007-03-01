@@ -16,10 +16,10 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-03-16 Eric Sandall <eric@sandall.us>
+2005-03-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.94
 
-2005-01-11 Eric Sandall <eric@sandall.us>
+2005-01-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.89
 	  Added BUILD_API=2
 	  Shortened SHORT
@@ -40,7 +40,7 @@
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
 
-2003-12-11 Eric Sandall <eric@sandall.us>
+2003-12-11 Eric Sandall <sandalle@sourcemage.org>
 	* Forked from the xmame spell
 	* TODO: Should combine this with xmame, perhaps have it
 	  install both, or give the option for one or the other, but

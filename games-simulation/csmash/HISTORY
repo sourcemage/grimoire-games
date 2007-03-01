@@ -15,7 +15,7 @@
 	* BUILD: Changed for BUILD_API 2
 	* DETAILS: Added BUILD_API=2
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image, SDL_mixer renamed to sdl*
 	  Removed SDL as both sdl_image and sdl_mixer depend on sdl
 
@@ -35,7 +35,7 @@
 2003-05-10 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 0.6.5
 
-2002-10-19 Eric Sandall <eric@sandall.us>
+2002-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #1417
 
 2002-08-28 Gareth Clay <g.clay@warwick.ac.uk>

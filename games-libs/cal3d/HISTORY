@@ -11,11 +11,11 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-17 Eric Sandall <eric@sandall.us>
+2005-06-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.10.0
 	  SOURCE now has 'full' in its name
 
-2004-10-09 Eric Sandall <eric@sandall.us>
+2004-10-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9.1 (was released last November...)
 	  This version also now installs a cal3d.pc :)
 	  SOURCE now compressed with bzip2 instead
@@ -27,16 +27,16 @@
 	  Optionally depends on doxygen
 	* HISTORY: Formatted to Guru Handbook
 
-2003-09-29 Eric Sandall <eric@sandall.us>
+2003-09-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Update to 0.9
 	* BUILD: Needs ./autogen.sh run to generate ./configure
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* HISTORY: Created
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created cal3d and added to grimoire
 

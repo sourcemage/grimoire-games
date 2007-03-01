@@ -8,7 +8,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-03-25 Eric Sandall <eric@sandall.us>
+2004-03-25 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.0
 	  Added new site
 	  Moved old site as mirror
@@ -22,7 +22,7 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2002-08-26 Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <sandalle@sourcemage.org>
 	* Updated/added MAINTAINER, MD5, LICENSE
 
 2002-06-19 Jerome Zago <jerome.zago@insalien.org>

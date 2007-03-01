@@ -1,12 +1,12 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2005-12-22 Eric Sandall <eric@sandall.us>
+2005-12-22 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.5
 	* DEPENDS: Added optional dependency on adns
 	* BUILD: Use default_games_build
 
-2005-11-02 Eric Sandall <eric@sandall.us>
+2005-11-02 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.2
 	  Changed to GPG verification
 	  Added check for autoupdate of CVS
@@ -15,46 +15,46 @@
 	* DEPENDS: Depends on devel branch of atlas-c++ now
 	* BUILD,PRE_BUILD: Move ./autogen.sh code into PRE_BUILD
 
-2005-07-03 Eric Sandall <eric@sandall.us>
+2005-07-03 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.12
 
-2005-06-12 Eric Sandall <eric@sandall.us>
+2005-06-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.11
 
-2005-05-11 Eric Sandall <eric@sandall.us>
+2005-05-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.10
 
-2005-04-04 Eric Sandall <eric@sandall.us>
+2005-04-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.9
 
-2005-01-23 Eric Sandall <eric@sandall.us>
+2005-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.8
 
-2005-01-08 Eric Sandall <eric@sandall.us>
+2005-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Python renamed to python in stable
 
-2005-01-04 Eric Sandall <eric@sandall.us>
+2005-01-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.7
 	* PREPARE,DETAILS,BUILD: CVS renamed to CYPHESIS_CVS
 
-2004-11-19 Eric Sandall <eric@sandall.us>
+2004-11-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.6
 	* DEPENDS: Stable and CVS version now both use howl
 
-2004-11-11 Eric Sandall <eric@sandall.us>
+2004-11-11 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: CVS version can use howl for Zeroconf networking
 
-2004-10-25 Eric Sandall <eric@sandall.us>
+2004-10-25 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.5
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added SourceForge mirror first
 
-2004-10-09 Eric Sandall <eric@sandall.us>
+2004-10-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.4
 	* DEPENDS: Depends on atlas-c++-transitional now, not atlas-c++
 
-2004-07-22 Eric Sandall <eric@sandall.us>
+2004-07-22 Eric Sandall <sandalle@sourcemage.org>
 	* Added to games/games-engines
 	* DETAILS: Updated to 0.3.1
 	  BUILD_API=2
@@ -63,30 +63,30 @@
 	* BUILD: Use config_query response for CVS
 	* PREPARE: Converted to config_query
 
-2004-05-27 Eric Sandall <eric@sandall.us>
+2004-05-27 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.0
 	  Removed MAINTAINER
 	* BUILD: Disable postgresql test
 	  Remove patch application
 	* overload.patch: Removed
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 	  Depends on skstream not skstream2
 
-2004-05-19 Eric Sandall <eric@sandall.us>
+2004-05-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Now installs either cvs or stable version
 	* DEPENDS: Depends on mercator
 	* PREPARE: Added to query for cvs
 	* HISTORY: Formatted to Guru Handbook
 
-2003-10-05 Eric Sandall <eric@sandall.us>
+2003-10-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.4
 	* DEPENDS: Needs older skstream2 but newer varconf2
 	* overload.patch: Added to fix ambiguous overloading
 	* BUILD: Added to apply patch
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 	* HISTORY: Created
 

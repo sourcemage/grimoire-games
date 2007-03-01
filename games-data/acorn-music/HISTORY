@@ -9,7 +9,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2003-10-14 Eric Sandall <eric@sandall.us>
+2003-10-14 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 	* Added to games-libs
 

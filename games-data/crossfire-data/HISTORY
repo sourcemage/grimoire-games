@@ -7,7 +7,7 @@
 	* INSTALL: removed I_DIR
 	* DETAILS: API2 converted
 
-2005-12-30 Eric Sandall <eric@sandall.us>
+2005-12-30 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Removed (games-data default_build runs `true`)
 	* INSTALL: Cannot chown to games:games (no games user)
 
@@ -21,7 +21,7 @@
 	* DETAILS: updated VERSION to 1.7.0
 	  added BIG_VERSION and SMALL_VERSION
 
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* Moved binaries from crossfire to crossfire-data  (Bug #7605)
 	* DETAILS: Set ARCHIVE to "off"
 	* INSTALL: Install to /usr/share/games/crossfire  (Bug #7605)
@@ -43,7 +43,7 @@
 	  Added big maps for server
 	  Allowed bz2 files if available (many megs saved)
 
-2002-10-15 Eric Sandall <eric@sandall.us>
+2002-10-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.4.0 (and changed to .gz as they don't use .bz2
 	  anymore :()
 
@@ -52,7 +52,7 @@
 	  Changed maintainer
 	* HISTORY: Fixed for standard compliance :)
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.3.0
 	  Modified to use $SOURCEFORGE_URL
 	  Added MD5 and LICENSE

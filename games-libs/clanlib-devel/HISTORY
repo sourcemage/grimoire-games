@@ -14,22 +14,22 @@
 	* CONFIGURE: plenty of configure options
 	* DEPENDS: some go some come in :)
 
-2005-01-23 Eric Sandall <eric@sandall.us>
+2005-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Use spell_ok instead of spell_installed
 
 2004-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, BUILD: Some minor fixes
 	* Renamed spell to clanlib-devel
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD, DEPENDS: Remove check for NVIDIA_driver/NVIDIA_headers
 	* BUILD: Converted to BUILD_API 2
 	* DETAILS: BUILD_API=2
 
-2004-07-18 Eric Sandall <eric@sandall.us>
+2004-07-18 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Just in case they're on the stable grimoire with NVIDIA_headers
 
-2004-07-17 Eric Sandall <eric@sandall.us>
+2004-07-17 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on nvidia_header if nvidia_driver is installed
 	  Remove same entries for NVIDIA_header and NVIDIA_driver once the
 	  renames make it into stable grimoire
@@ -74,11 +74,11 @@
 2003-06-12 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update to 0.7.2-1
 
-2003-01-31 Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #2443
 	* BUILD: No longer required
 
-2003-01-25 Eric Sandall <eric@sandall.us>
+2003-01-25 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.6.5-1 (Bug #2376, thanks to Snakebyte)
 
 2002-08-27 Gareth Clay <g.clay@warwick.ac.uk>

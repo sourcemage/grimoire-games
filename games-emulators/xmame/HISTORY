@@ -16,10 +16,10 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-03-16 Eric Sandall <eric@sandall.us>
+2005-03-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.94
 
-2005-01-11 Eric Sandall <eric@sandall.us>
+2005-01-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.89
 	  Added BUILD_API=2
 	  Shortened SHORT
@@ -50,23 +50,23 @@
 	* DETAILS: Updated to 0.83.1
 	  Removed MAINTAINER.
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.78.1
 	  Removed MAKE_NJOBS=1
 
-2003-12-14 Eric Sandall <eric@sandall.us>
+2003-12-14 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Create some default directories
 	  ctrlr needs to have it's permissions set as well
 
-2003-12-11 Eric Sandall <eric@sandall.us>
+2003-12-11 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Install some configuration files to /usr/share/games/xmame
 	* DETAILS: Updated to 0.77.1
 
-2003-11-03 Eric Sandall <eric@sandall.us>
+2003-11-03 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.76.1, updated LICENSE
 	* HISTORY: Formatted to Guru Handbook
 
-2003-09-26 Eric Sandall <eric@sandall.us>
+2003-09-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Update to 0.74.1
 	  Added MAKE_NJOBS=1
 
@@ -76,28 +76,28 @@
 2003-06-06 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update to 0.69.1
 
-2003-05-26 Eric Sandall <eric@sandall.us>
+2003-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.68.1
 
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Update for ${INSTALL_ROOT}
 
-2003-04-14 Eric Sandall <eric@sandall.us>
+2003-04-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.67.2
 
-2003-04-05 Eric Sandall <eric@sandall.us>
+2003-04-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.66.2 (Bug #3030, thanks to Gabriel Devenyi)
 
-2003-02-17 Eric Sandall <eric@sandall.us>
+2003-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.65.1 (Bug #2569, thanks to Joel Mayes)
 	* BUILD: Fixed permission problems, again (should always
 	  work, now)
 
-2002-11-29 Eric Sandall <eric@sandall.us>
+2002-11-29 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Cleaned up
 	  Fixed permission problem on some boxes during installation
 
-2002-08-26 Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated/added MAINTAINER, MD5, LICENSE
 
 2002-08-02 Jerome Zago <jerome.zago@insalien.org>

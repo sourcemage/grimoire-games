@@ -8,7 +8,7 @@
 	* DETAILS: Updated to 1.04-1, sha512
 	* DEPENDS: added missing &&
 
-2005-04-12 Eric Sandall <eric@sandall.us>
+2005-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.03-2
 	  BUILD_DIRECTORY now should work on version updates
 

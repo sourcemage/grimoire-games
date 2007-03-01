@@ -10,7 +10,7 @@
 	* PRE_BUILD: let's keep all the unpacking in PRE_BUILD
 	* DEPENDS: added enable and disable options...
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 	  Formatted to Guru Handbook
 
@@ -31,7 +31,7 @@
 2002-10-06 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: New version: 0.5.2
 
-2002-10-02 Eric Sandall <eric@sandall.us>
+2002-10-02 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Added libtool as a dependency
 
 2002-06-20 Arwed v. Merkatz <v.merkatz@gmx.net>

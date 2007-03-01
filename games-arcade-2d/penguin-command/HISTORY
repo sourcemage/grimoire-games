@@ -11,7 +11,7 @@
 2005-01-19 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAINS: Build API 2 updates
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  SDL removed as sdl_mixer depends on sdl
 	* HISTORY: Formatted to Guru Handbook
@@ -25,7 +25,7 @@
 2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 1.6.6
 
-2003-01-31 Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #2443
 
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>

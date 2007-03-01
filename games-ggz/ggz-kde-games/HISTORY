@@ -6,7 +6,7 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-03-10 Eric Sandall <eric@sandall.us>
+2006-03-10 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Optionally depends on arts
 
 2005-12-07 Robin Cook <rcook@wyrms.net>
@@ -28,9 +28,9 @@
 2003-06-05 hgg <hgreig@bigpond.net.au>
 	* Update for 0.0.7
 
-2003-03-11 Eric Sandall <eric@sandall.us>
+2003-03-11 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #2659
 
-2002-12-17 Eric Sandall <eric@sandall.us>
+2002-12-17 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

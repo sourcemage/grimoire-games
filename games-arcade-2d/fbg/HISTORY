@@ -7,14 +7,14 @@
 2005-01-16 Adam Clark <adamsgl@dhbit.ca>
 	* BUILD, DETAILS: Updated for Build API 2
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 	  Formatted to Guru Handbook
 
 2004-02-25 hgg <hgreig@bigpond.net.au>
 	* DETAILS: website changed, removed maintainer and menu items
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Now depends on any provisor of GLUT
 	* HISTORY: Formatted to Guru Handbook
 
@@ -24,10 +24,10 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-01-02 Eric Sandall <eric@sandall.us>
+2003-01-02 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v0.9 
 	* DEPENDS: Added physfs as a dependency
 
-2002-10-31 Eric Sandall <eric@sandall.us>
+2002-10-31 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

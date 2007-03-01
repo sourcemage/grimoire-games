@@ -19,7 +19,7 @@
 	* DETAILS: updated to 1.8.4.
 	* BUILD: added flag to configure to find our GL files.
 
-2004-06-29 Eric Sandall <eric@sandall.us>
+2004-06-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.8.3
 	Removed MAINTAINER
 	BUILD_API=2

@@ -4,28 +4,28 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-11 Eric Sandall <eric@sandall.us>
+2005-06-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.0 (supposedly same as 0.4.95)
 	  SOURCE uses .bz2
 	* CONFLICTS: Removed (Atlas-C++-transitional has been gone a while)
 
-2005-05-23 Eric Sandall <eric@sandall.us>
+2005-05-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.4.95
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added SourceForge mirror first
 	  SOURCE changed to .gz
 
-2004-07-21 Eric Sandall <eric@sandall.us>
+2004-07-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.4.94
 	  BUILD_API=2
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* Renamed from Atlas-C++-transitional
 	* DETAILS: Changed SPELL to atlas-c++-transitional
 	  SOURCEs and SOURCE_DIRECTORY use Atlas-C++-transitional
 	* CONFLICTS: Conflicts with Atlas-C++-transitional
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* Created for new uclient version (0.16)
 

@@ -12,7 +12,7 @@
 2004-02-28 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 0.9.0
 
-2003-11-14 Eric Sandall <eric@sandall.us>
+2003-11-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Update to 0.8.3
 	* HISTORY: Formatted to Guru Handbook
 
@@ -38,6 +38,6 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-01-08 Eric Sandall <eric@sandall.us>
+2003-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

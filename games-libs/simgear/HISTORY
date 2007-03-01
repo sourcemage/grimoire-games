@@ -13,7 +13,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAKE_NJOBS=1
 	* BUILD: Run make_single before make and make_normal afterwards
 
@@ -21,10 +21,10 @@
 	* Migrated from SimGear
 	* DETAILS: Updated to 0.3.7, squashes #7627
 
-2004-07-23 Eric Sandall <eric@sandall.us>
+2004-07-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.5
 
-2004-07-13 Eric Sandall <eric@sandall.us>
+2004-07-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: BUILD_API=2
 	  MAKE_NJOBS=1
 	  Shortened SHORT
@@ -42,10 +42,10 @@
 2003-06-04 hgg <hgreig@gibpond.net.au>
 	* DETAILS: Update to 0.3.2, ready for FlightGear 0.9.2
 
-2002-12-05 Eric Sandall <eric@sandall.us>
+2002-12-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v0.3.1 (for FlightGear and fgfs-base v0.9.0)
 
-2002-09-21 Eric Sandall <eric@sandall.us>
+2002-09-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: New version: 0.2.0 (for FlightGear and fgfs-base v0.8.0)
 
 2002-08-29 Gareth Clay <g.clay@warwick.ac.uk>

@@ -4,14 +4,14 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-06-29 Eric Sandall <eric@sandall.us>
+2004-06-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.4.0
 	Removed MAINTAINER
 	BUILD_API=2
 	Reworded SHORT to be shorter and more descriptive
 	* DEPENDS: Removed dependency on GLUT as plib already has that
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Now depends on any provisor of GLUT
 	* HISTORY: Formatted to Guru Handbook
 

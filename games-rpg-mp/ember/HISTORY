@@ -11,14 +11,14 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed MAKE_NJOBS=1
 	* BUILD: Run make_single before make and make_normal afterwards for CVS
 
-2005-03-14 Eric Sandall <eric@sandall.us>
+2005-03-14 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: False dependency on boost fixed in CVS
 
-2005-03-10 Eric Sandall <eric@sandall.us>
+2005-03-10 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Query for CVS release (default 'y')
 	* DETAILS: Added 0.2.0 stable release
 	  Updated UPDATED
@@ -37,10 +37,10 @@
 	  Use default_build
 	* malloc.diff: Removed as it no longer is needed
 
-2004-11-19 Eric Sandall <eric@sandall.us>
+2004-11-19 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Added dependencies on openal and xerces-c
 
-2004-11-17 Eric Sandall <eric@sandall.us>
+2004-11-17 Eric Sandall <sandalle@sourcemage.org>
 	* Renamed from dime to ember
 	* DETAILS: Added BUILD_API=2
 	* BUILD: Converted to BUILD_API=2
@@ -48,26 +48,26 @@
 	* CONFLICTS: Default to 'y' for conflicting with dime
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 	  All -cvs spells were renamed
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Renamed to dime
 	  Removed MAINTAINER
 	  Entered long and short descriptions
 
-2003-10-27 Eric Sandall <eric@sandall.us>
+2003-10-27 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Doesn't need boost anymore
 
-2003-10-18 Eric Sandall <eric@sandall.us>
+2003-10-18 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on ogre fixed in CVS
 
-2003-10-15 Eric Sandall <eric@sandall.us>
+2003-10-15 Eric Sandall <sandalle@sourcemage.org>
 	* ConfigService.cpp.overload.patch,Font.cpp.assert.patch: Removed
 	  I have CVS access now to WF, so these patches are in.  :)
 
-2003-10-14 Eric Sandall <eric@sandall.us>
+2003-10-14 Eric Sandall <sandalle@sourcemage.org>
 	* ConfigService.cpp.overload.patch: Added to fix an ambiguous overload
 	* Font.cpp.assert.patch: Added to fix an ambiguous overload
 	* malloc.diff: Added to fix a mis-configuration from Sorcery
@@ -76,6 +76,6 @@
 	  ./configure has generated config.h)
 	* DEPENDS: Depends on freetype2, jpeg, wftk-cvs, boost, cal3d and openal
 
-2003-10-13 Eric Sandall <eric@sandall.us>
+2003-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* Created wfmath
 

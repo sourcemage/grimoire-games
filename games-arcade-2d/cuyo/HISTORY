@@ -21,7 +21,7 @@
 2003-05-05 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 1.7.0
 
-2003-01-26 Eric Sandall <eric@sandall.us>
+2003-01-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.6.1 (Bug #2381, thanks to Snakebyte)
 	* BUILD: Modifed BUILD to install binary into /usr/bin and
 	  data into /usr/share/games, again, the binary cannot

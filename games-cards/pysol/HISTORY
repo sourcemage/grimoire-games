@@ -7,10 +7,10 @@
 2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
-2005-03-29 Eric Sandall <eric@sandall.us>
+2005-03-29 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Needs tk and python built against tk
 
-2005-03-04 Eric Sandall <eric@sandall.us>
+2005-03-04 Eric Sandall <sandalle@sourcemage.org>
 	* Thought process that lead to this thanks to Ben Ford :)
 	* PREPARE: Don't use persistent_add for versions ;)
 	  Default to 'y' for cardsets, sound, and music
@@ -26,7 +26,7 @@
 	* Makefile,Makefile.patch,pysol-compile.sh: Removed
 	* pysol: Added wrapper script
 
-2005-01-19 Eric Sandall <eric@sandall.us>
+2005-01-19 Eric Sandall <sandalle@sourcemage.org>
 	* Thanks to
 	  http://www.fedoraforum.org/forum/archive/index.php/t-2543.html
 	  I've found the pysol source files (Markus no longer distributes, or
@@ -50,17 +50,17 @@
 	* Makefile.patch: Added (smaller than copying the whole Makefile)
 	* Makefile.sound: Updated python version to 2.4
 
-2005-01-08 Eric Sandall <eric@sandall.us>
+2005-01-08 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Python renamed to python in stable
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: SDL renamed to sdl
 	  Added "&&" for depends
 
 2003-11-26 hgg <hgreig@bigpond.net.au>
 	* BUILD: needs to make a dir if it doesn't exist
 
-2003-09-03 Eric Sandall <eric@sandall.us>
+2003-09-03 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.82
 	  Removed extra SOURCE_URL[0], not sure how this ever worked
 	  with two of them listed
@@ -76,7 +76,7 @@
 	* DETAILS: temporarily changed to SOURCE_URL as authors server not
 	  uptodate
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated version to 4.81
 	  Added MD5 and LICENSE
 

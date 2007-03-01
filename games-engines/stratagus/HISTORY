@@ -14,14 +14,14 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-03-08 Eric Sandall <eric@sandall.us>
+2006-03-08 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Fails with multiple make jobs, use make_single for BUILD
 	  default_games_build seems to do the same as default_build for this...
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL renamed to sdl
 	  Removed zlib as libpng depends on it
 	  Formatted to Guru Handbook

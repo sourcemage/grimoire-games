@@ -1,7 +1,7 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-01-03 Eric Sandall <eric@sandall.us>
+2006-01-03 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Shorten query (and fix bug of variable in literal quotes)
 
 2005-12-01 Seth Woolley <seth@tautology.org>
@@ -10,48 +10,48 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-11 Eric Sandall <eric@sandall.us>
+2005-06-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.4
 	  SOURCE uses .bz2 now
 	  Renamed CVS to WFMATH_CVS
 	* DEPENDS: Depends on CVS if using cvs version
 	* PREPARE,BUILD: Renamed CVS to WFMATH_CVS
 
-2005-03-10 Eric Sandall <eric@sandall.us>
+2005-03-10 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Added message about needing atlas-c++/devel
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Add SourceForge mirror first
 
-2004-08-01 Eric Sandall <eric@sandall.us>
+2004-08-01 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: I had the wrong md5sum for 0.3.3
 
-2004-07-19 Eric Sandall <eric@sandall.us>
+2004-07-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.3
 	  BUILD_API=2
 	  Use config_query response
 	* BUILD: Converted to config_query response
 	* PREPARE: Use config_query
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
-2004-04-09 Eric Sandall <eric@sandall.us>
+2004-04-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added conditional cvs version
 	  Store the cvs version as .bz2
 	* PREPARE: Added to query for cvs version
 	* BUILD: Added to build cvs or standard version
 	* DEPENDS: Conditionally depend upon cvs
 
-2004-02-17 Eric Sandall <eric@sandall.us>
+2004-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.3.2
 	  Removed MAINTAINER
 	* HISTORY: Formatted to Guru Handbook
 
-2003-10-04 Eric Sandall <eric@sandall.us>
+2003-10-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added mirror, main site should be back up soon
 
-2003-09-29 Eric Sandall <eric@sandall.us>
+2003-09-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Changed website to not use victor, but instead the normal website
 
 2003-06-18 hgg <hgreig@bigpond.net.au>
@@ -60,10 +60,10 @@
 2003-05-10 hgg <hgreig@bigpond.net.au>
 	* DETAILS: Updated to 0.2.11
 
-2002-10-11 Eric Sandall <eric@sandall.us>
+2002-10-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v2.10
 	* HISTORY: Added
 
-2002-09-16 Eric Sandall <eric@sandall.us>
+2002-09-16 Eric Sandall <sandalle@sourcemage.org>
 	* Created wfmath and included in grimoire
 

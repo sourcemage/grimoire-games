@@ -1,13 +1,13 @@
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-08-10 Eric Sandall <eric@sandall.us>
+2006-08-10 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Owner is root, not games, and group is games, not root
 	  (Bug #10642)
 
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-01-06 Eric Sandall <eric@sandall.us>
+2005-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* Created for SweetPotato. :)
 

@@ -14,7 +14,7 @@
 2004-10-14 Arjan Bouter <abouter@sourcemage.org>
 	* added desktop files
 
-2004-06-17 Eric Sandall <eric@sandall.us>
+2004-06-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: BUILD_API=2
 	Removed MAINTAINER
 	Made SHORT shorter

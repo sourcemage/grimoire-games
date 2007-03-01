@@ -21,7 +21,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* PRE_BUILD: unpack api update
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  SDL removed as sdl_mixer depends on sdl
 
@@ -48,11 +48,11 @@
 	  POST_INSTALL,PRE_REMOVE: Change POST_INSTALL and added PRE_REMOVE so 
 	  Ultima4.zip is tracked
 
-2003-01-27 Eric Sandall <eric@sandall.us>
+2003-01-27 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.09 (Bug #2392, thanks to Snakebyte)
 	* BUILD: Made binary install into /usr/games
 	  and data into /usr/share/games, not /usr/lib
 
-2002-11-20 Eric Sandall <eric@sandall.us>
+2002-11-20 Eric Sandall <sandalle@sourcemage.org>
 	* Spell created
 

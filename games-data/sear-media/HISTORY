@@ -4,7 +4,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-03-11 Eric Sandall <eric@sandall.us>
+2005-03-11 Eric Sandall <sandalle@sourcemage.org>
 	* Branched from sear
 	  Modified to only grab and install the media
 

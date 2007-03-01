@@ -32,23 +32,23 @@
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* ALL: New Games grimoire is born!
 
-2003-06-10 Eric Sandall <eric@sandall.us>
+2003-06-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.10.1
 
 2003-06-07 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: Update depends as developers ported to gtk+2 between releases
 
-2003-06-05 Eric Sandall <eric@sandall.us>
+2003-06-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.10.0
 	* DEPENDS: Added pygtk2 as a dependency
 
-2003-01-31 Eric Sandall <eric@sandall.us>
+2003-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Fixed Bug #2443 (Removed BUILD, no longer needed)
 
 2002-09-03 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: changed MAINTAINER, changed SOURCE_URL to use $SOURCEFORGE_URL
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Version to 0.9.1, added MD5 and LICENSE
 
 2002-05-02 Jerome Zago <jerome.zago@insalien.org>

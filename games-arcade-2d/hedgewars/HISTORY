@@ -3,7 +3,7 @@
 	* PRE_BUILD: removed sedit line for QTfrontend/main.cpp because it's
 	  not there (was removed by authors)
 
-2006-11-30 Eric Sandall <eric@sandall.us>
+2006-11-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Properly fix install patch of binaries to /usr/games
 	  (prior fix did not install hedgewars nor hwengine into /usr/games)
 

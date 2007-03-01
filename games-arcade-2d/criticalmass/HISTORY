@@ -11,11 +11,11 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-11 Eric Sandall <eric@sandall.us>
+2005-06-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9.11
 	* BUILD: Pass NOCONFIGURE to ./autogen.sh so ./configure isn't run twice
 
-2005-03-16 Eric Sandall <eric@sandall.us>
+2005-03-16 Eric Sandall <sandalle@sourcemage.org>
 	* Renamed from CriticalMass
 	* DETAILS: Renamed to criticalmass
 	  Updated to 0.9.10
@@ -27,7 +27,7 @@
 	* BUILD: Converted to build_api 2
 	  Use OPTS for game options and default_build
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image and SDL_mixer renamed to sdl*
 	  Removed SDL as the above depend on sdl
 	* HISTORY: Formatted to Guru Handbook

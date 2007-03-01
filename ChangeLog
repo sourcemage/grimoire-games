@@ -172,13 +172,13 @@
 2006-01-23 Neuron <vlmarek@volny.cz>
 	* games-strategy-rts/singularity: new spell
 
-2005-12-30 Eric Sandall <eric@sandall.us>
+2005-12-30 Eric Sandall <sandalle@sourcemage.org>
 	* games-rpg-mp/crossfire{,-client}-data: Moved to games-data
 
-2005-12-22 Eric Sandall <eric@sandall.us>
+2005-12-22 Eric Sandall <sandalle@sourcemage.org>
 	* games-libs/sear-media: Moved to games-data/sear-media
 
-2005-12-21 Eric Sandall <eric@sandall.us>
+2005-12-21 Eric Sandall <sandalle@sourcemage.org>
 	* games-data/luola-{stdlevels,nostalgia}: Added level packs for luola
 
 2005-12-16 Neuron <vlmarek@volny.cz>
@@ -206,10 +206,10 @@
 	* games-libs/clanlib-devel: to clanlib
 	* games-libs/clanlib: branched from clanlib
 
-2005-11-15 Eric Sandall <eric@sandall.us>
+2005-11-15 Eric Sandall <sandalle@sourcemage.org>
 	* accounts, groups: Sync with test
 
-2005-11-13 Eric Sandall <eric@sandall.us>
+2005-11-13 Eric Sandall <sandalle@sourcemage.org>
 	* accounts: Sync with test
 	* groups: Sync with test
 	  Added disk:6:, cdrom:24:, and floppy:25:
@@ -217,10 +217,10 @@
 2005-11-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* games-board/quarry: new spell
 
-2005-11-02 Eric Sandall <eric@sandall.us>
+2005-11-02 Eric Sandall <sandalle@sourcemage.org>
 	* gurus.gpg: Revoked my sha1 E08D7131 key and added rsa 38D489C7 key
 
-2005-10-30 Eric Sandall <eric@sandall.us>
+2005-10-30 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: Added invoke_gcc() from test/FUNCTIONS
 
 2005-10-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
@@ -228,14 +228,14 @@
 	* games-rpg-mp/gMOO: lo-case deprecation
 	* games-arcade-2d/asteroids3D: lo-case deprecation
 
-2005-08-17 Eric Sandall <eric@sandall.us>
+2005-08-17 Eric Sandall <sandalle@sourcemage.org>
 	* gurus.gpg: Integrated from test grimoire (forced integrate)
 
 2005-06-20 Andrew Stitt <astitt@sourcemage.org>
 	* FUNCTIONS: Add a compatibility unpack_file function in case someone
 	  uses an early adopter but has not updated sorcery.
 
-2005-06-12 Eric Sandall <eric@sandall.us>
+2005-06-12 Eric Sandall <sandalle@sourcemage.org>
 	* games-rpg-sp/{ember,sear}: Moved to games-rpg-mp
 
 2005-05-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
@@ -262,10 +262,10 @@
 	* board/*: moved to games-board/*
 	* go/*: moved to games-board/*
 
-2005-04-08 Eric Sandall <eric@sandall.us>
+2005-04-08 Eric Sandall <sandalle@sourcemage.org>
 	* libaccount, accounts, groups: Branched from devel
 
-2005-04-07 Eric Sandall <eric@sandall.us>
+2005-04-07 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: Branched from devel so games has up-to-date FUNCTIONS
 
 2005-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
@@ -278,11 +278,11 @@
 	* shooters/AlephOne-minf: Renamed to shooters/alephone-minf
 	* strategy/ASC: Removed deprecated
 
-2005-03-16 Eric Sandall <eric@sandall.us>
+2005-03-16 Eric Sandall <sandalle@sourcemage.org>
 	* arcade/CriticalMass: Renamed to arcade/criticalmass
 	* arcade/Maelstrom: Removed deprecated spell
 
-2005-02-23 Eric Sandall <eric@sandall.us>
+2005-02-23 Eric Sandall <sandalle@sourcemage.org>
 	* 3D/TORCS: Renamed to 3D/torcs
 
 2005-02-13 Neuron <vlmarek@volny.cz>
@@ -310,7 +310,7 @@
 	* games-libs/ClanLib: Rename to games-libs/clanlib
 	* games-libs/ClanLib-unstable: Rename to games-libs/clanlib-devel
 
-2004-10-30 Eric Sandall <eric@sandall.us>
+2004-10-30 Eric Sandall <sandalle@sourcemage.org>
 	* strategy/ASC: Renamed to strategy/asc
 
 2004-07-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>

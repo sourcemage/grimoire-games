@@ -2,7 +2,7 @@
 	* DETAILS: Updated to 2.0.9
 	  Removed UPDATED
 
-2007-01-04 Eric Sandall <eric@sandall.us>
+2007-01-04 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: alsa-lib provides sound through ALSA, not SDL
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
@@ -15,20 +15,20 @@
 	* CONFIGURE: expanded
 	* DEPENDS: expanded
 
-2005-11-28 Eric Sandall <eric@sandall.us>
+2005-11-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.7
 	  SOURCE2_GPG was using SOURCE instead of SOURCE2
 
-2005-09-09 Eric Sandall <eric@sandall.us>
+2005-09-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed all SOURCE_URL[0]'s as they are no longer kept
 	  up-to-date. Replaced with one URL to SourceForge
 
-2005-09-07 Eric Sandall <eric@sandall.us>
+2005-09-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.5
 	  Updated to GPG authentication
 	* PRE_BUILD: Converted to use unpack_file for SOURCE2
 
-2005-06-20 Eric Sandall <eric@sandall.us>
+2005-06-20 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.2
 	  Updated stdsounds (SOURCE2) to v3
 
@@ -36,23 +36,23 @@
 	* DETAILS: Bugfixes... the tarball changed and the version
 	  didn't
 
-2005-04-26 Eric Sandall <eric@sandall.us>
+2005-04-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.1
 
-2005-04-19 Eric Sandall <eric@sandall.us>
+2005-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated stable to 2.0.0
 	  Removed beta option
 	  SOURCE_URL now uses /stable
 	* PREPARE: Removed (2.0.0 is now stable)
 
-2005-04-12 Eric Sandall <eric@sandall.us>
+2005-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated beta to 2.0.0-rc1
 	  Use $SOURCE for SOURCE_URL[0]
 
-2005-03-15 Eric Sandall <eric@sandall.us>
+2005-03-15 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE,DETAILS: Added option for beta version
 
-2005-03-14 Eric Sandall <eric@sandall.us>
+2005-03-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added BUILD_API=2
 	  Removed MAINTAINER
 	  Shortened SHORT
@@ -65,17 +65,17 @@
 	  Renamed CLIENT to FREECIV_CLIENT
 	* INSTALL: Use default_install and copy media files over
 
-2005-01-23 Eric Sandall <eric@sandall.us>
+2005-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE: Use spell_ok instead of spell_installed
 
 2004-09-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: updated to 1.14.2
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_mixer renamed to sdl_mixer
 	  Formatted to Guru Handbook
 
-2003-12-13 Eric Sandall <eric@sandall.us>
+2003-12-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.14.1
 
 2003-12-07 hgg <hgreig@bigpond.net.au>
@@ -87,10 +87,10 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* BUILD: Update for ${INSTALL_ROOT}
 
-2003-04-29 Eric Sandall <eric@sandall.us>
+2003-04-29 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS Fixed DEPENDS flow control, thanks to Dufflebunk (Bug #3241)
 
-2003-03-03 Eric Sandall <eric@sandall.us>
+2003-03-03 Eric Sandall <sandalle@sourcemage.org>
 	* Added standard sounds (Bug #441, the fix of which somehow got lost)
 	  Decided to just add stdsounds to current freeciv spell instead of
 	  having separate spell just for sounds. Now sound will always be
@@ -107,7 +107,7 @@
 	* DETAILS: changed the long description
 	  (there's now three X clients instead of two)
 
-2002-10-22 Eric Sandall <eric@sandall.us>
+2002-10-22 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #1344
 
 2002-08-02 Jerome Zago <jerome.zago@insalien.org>

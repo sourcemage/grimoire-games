@@ -2,7 +2,7 @@
 	* DETAILS: Updating spell to 1.9.1
 	* FINAL: crossedit is deprecated, not installed anymore
 
-2005-12-30 Eric Sandall <eric@sandall.us>
+2005-12-30 Eric Sandall <sandalle@sourcemage.org>
 	* BUILD: Use default_games_build
 	* INSTALL: Cannot chown games:games (no games user)
 	  Files are installed to INSTALL_ROOT, modify those
@@ -21,7 +21,7 @@
 	* BUILD: added invoke_gcc
 	* DEPENDS: added python
 
-2004-11-08 Eric Sandall <eric@sandall.us>
+2004-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Removed data sources, moved to crossfire-data  (Bug #7605)
 	  Shortened SHORT
 	* INSTALL: Modified to set correct permissions
@@ -45,7 +45,7 @@
 	  Added big maps for server
 	  Allowed bz2 files if available (many megs saved)
 
-2002-10-15 Eric Sandall <eric@sandall.us>
+2002-10-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.4.0 (and changed to .gz as they don't use .bz2
 	  anymore :()
 
@@ -54,7 +54,7 @@
 	  Changed maintainer
 	* HISTORY: Fixed for standard compliance :)
 
-2002-08-24 Eric Sandall <eric@sandall.us>
+2002-08-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.3.0
 	  Modified to use $SOURCEFORGE_URL
 	  Added MD5 and LICENSE

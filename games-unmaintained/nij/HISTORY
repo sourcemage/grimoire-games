@@ -14,7 +14,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: SDL_image renamed to sdl_image
 	  Removed SDL as sdl_image depends on sdl
 	* HISTORY: Formatted to Guru Handbook
@@ -35,7 +35,7 @@
 	* nij: fixed the start script
 	* BUILD: fixed some paths (to binary and docs)
 
-2002-10-31 Eric Sandall <eric@sandall.us>
+2002-10-31 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 	* Created README from config.h
 

@@ -25,7 +25,7 @@
 	* BUILD: removed some redundant stuff and replaced default_build
 	  with default_games_build
 
-2005-05-02 Eric Sandall <eric@sandall.us>
+2005-05-02 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE: Added options for threading, client, server, robots
 	  and snapping
 	  Query for curl and sdl usage
@@ -33,7 +33,7 @@
 	  curl (if wanted in CONFIGURE), adns, and kerberos
 	* BUILD: Add CONFIGURE options to OPTS
 
-2005-03-18 Eric Sandall <eric@sandall.us>
+2005-03-18 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.2.20050318
 	  Moved SFX to part of VERSION
 	  Removed SFX from SOURCE and SOURCE_DIRECTORY
@@ -53,13 +53,13 @@
 2004-10-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Updated to 1.10.8
 
-2004-05-16 Eric Sandall <eric@sandall.us>
+2004-05-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.10.6
 
 2004-01-26 hgg <hgreig@bigpond.net.au>
 	* DETAILS: update to 1.10.4
 
-2004-01-24 Eric Sandall <eric@sandall.us>
+2004-01-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Now depends on any provisor of GLUT
 
 2004-01-06 hgg <hgreig@bigpond.net.au>
@@ -75,7 +75,7 @@
 2003-06-18 hgg <hgreig@bigpond.net.au>
 	* New Games grimoire is born!
 
-2002-12-09 Eric Sandall <eric@sandall.us>
+2002-12-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to v1.7g0
 
 2002-07-27 Gareth Clay <g.clay@warwick.ac.uk>

@@ -18,10 +18,10 @@
 2003-05-19 hgg <hgreig@bigpond.net.au>
 	* Update for ${INSTALL_ROOT}
 
-2002-10-19 Eric Sandall <eric@sandall.us>
+2002-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* Fixed Bug #1417
 
-2002-08-26 Eric Sandall <eric@sandall.us>
+2002-08-26 Eric Sandall <sandalle@sourcemage.org>
 	* Updated/added MAINTAINER, MD5, LICENSE
 
 2002-05-11 Kyle Sallee <anonymous@sourcemage.org>

@@ -7,23 +7,23 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-06-16 Eric Sandall <eric@sandall.us>
+2005-06-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.4
 
-2005-06-11 Eric Sandall <eric@sandall.us>
+2005-06-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.3
 
-2005-05-10 Eric Sandall <eric@sandall.us>
+2005-05-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.2
 
-2004-10-13 Eric Sandall <eric@sandall.us>
+2004-10-13 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Added SourceForge mirror first
 	  SOURCE changed to .gz
 
-2004-10-09 Eric Sandall <eric@sandall.us>
+2004-10-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.1
 
-2004-07-19 Eric Sandall <eric@sandall.us>
+2004-07-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Use config_query response for CVS
 	  BUILD_API=2
 	* BUILD: Use config_query response for CVS
@@ -32,11 +32,11 @@
 	* PREPARE: Converted to config_query
 	* CONFLICTS: Removed (no longer conflicts with eris)
 
-2004-05-26 Eric Sandall <eric@sandall.us>
+2004-05-26 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Ummm, checkout mercator, not skstream, for CVS
 	* DEPENDS: Atlas-C++ renamed to atlas-c++
 
-2004-05-19 Eric Sandall <eric@sandall.us>
+2004-05-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Install either cvs or 0.2.0 release
 	  Removed MAINTAINER
 	  Added long and short descriptions
@@ -45,5 +45,5 @@
 	* PREPARE: Added to query for cvs
 	* Copied from mercator-cvs
 
-2003-10-12 Eric Sandall <eric@sandall.us>
+2003-10-12 Eric Sandall <sandalle@sourcemage.org>
 	* Created eris
