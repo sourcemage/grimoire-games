@@ -1,12 +1,12 @@
-2007-03-04 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: deprecation in favour of boswars
-	* PRE_BUILD: deprecation in favour of boswars
-	* BUILD: deprecation in favour of boswars
-	* INSTALL: deprecation in favour of boswars
-	* DEPENDS: deprecation in favour of boswars
-	* bos: removed
+2007-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 2.3
+	* BUILD: branched and updated
 	* CONFLICTS: added
-	* TRIGGERS: added
+	* DEPENDS: branched and updated
+	* INSTALL: branched and updated
+	* PRE_BUILD: added
+	* boswars: added
+	* bos: removed
 
 2006-12-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 2.0.1

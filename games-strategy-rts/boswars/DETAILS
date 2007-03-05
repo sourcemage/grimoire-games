@@ -1,0 +1,17 @@
+           SPELL=boswars
+         VERSION=2.3
+          SOURCE=${SPELL}-${VERSION}-src.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-src
+   SOURCE_URL[0]=http://www.boswars.org/releases/$SOURCE
+        WEB_SITE=http://www.boswars.org/
+         ENTERED=20040719
+     SOURCE_HASH=sha512:48fb25b5a639ccf51797b741be1adf8ff797d1ec16464e8e283f856af6393cf257499c640fde215236559952d9a04e145ea2069470d19e3aea58aa230ae15433
+      LICENSE[0]=GPL
+           SHORT='Bos Wars is a futuristic real-time strategy game.'
+cat << EOF
+Bos Wars is a futuristic real-time strategy game.
+It is possible to play against human opponents over
+a LAN, the Internet, or against the computer. It
+successfully runs under Linux and MS Windows. It
+should also run on BSD, Mac OS X, Darwin, and BeOS.
+EOF

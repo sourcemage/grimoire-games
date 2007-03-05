@@ -1,0 +1,16 @@
+cd ${SOURCE_DIRECTORY}                          &&
+cp -v ${SPELL_DIRECTORY}/boswars                \
+      ${INSTALL_ROOT}/usr/games                 &&
+cp -v ${SOURCE_DIRECTORY}/boswars               \
+      ${INSTALL_ROOT}/usr/games/boswars-bin     &&
+local to_install_dirs                           &&
+for to_install_dirs in campaigns graphics       \
+                       languages maps scripts   \
+                       sounds units video
+do
+cp -rv ${to_install_dirs}                       \
+       ${INSTALL_ROOT}/usr/share/games/boswars/
+done                                            &&
+cd ${INSTALL_ROOT}/usr/share/games/boswars/     &&
+find_and_scam
+

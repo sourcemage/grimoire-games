@@ -1,3 +1,7 @@
+2007-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* games-strategy-rts/bos: deprecated in favour of boswars
+	* games-strategy-rts/boswars: added instead of bos
+
 2007-02-21 Eric Sandall <sandalle@sourcemage.org>
 	* games-data/freeciv-freeland-normal: Added freeciv freeland tileset
 	* games-data/freeciv-freeland-big: Added freeciv big freeland tileset
