@@ -1,4 +1,4 @@
-depends  lua50   &&
+depends  lua     &&
 depends  libpng  &&
 depends  sdl     &&
 depends  zlib    &&
