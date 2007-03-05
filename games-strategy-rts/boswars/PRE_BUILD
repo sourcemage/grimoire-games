@@ -1,0 +1,5 @@
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+# unbreaking a broken scons *grumbl*
+
+sedit "205s:env.Append(CCFLAGS = Split(.*:env.Append(CCFLAGS = Split('$CFLAGS')):" SConstruct

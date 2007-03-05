@@ -1,0 +1,8 @@
+depends  lua        &&
+depends  libpng     &&
+depends  sdl        &&
+depends  zlib       &&
+depends  scons      &&
+depends  libogg     &&
+depends  libvorbis  &&
+depends  OPENGL
