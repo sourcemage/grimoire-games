@@ -1,12 +1,11 @@
            SPELL=xmoto
-         VERSION=0.2.4
+         VERSION=0.2.6
           SOURCE=$SPELL-$VERSION-src.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:4c5707b5ef31e9787d9224ff23ad39b287b2e1576c4aa92b29b480eece5beb358bc56895f15b364ea942334eb7b5b400eb9574a1a72bf4c774ef004d8adb7f89
+     SOURCE_HASH=sha512:d7cf4b16b4a04aa65135e436d87feadc4005c01cd2a93c93590034a58d49356e8a72dc2e7fdfea4da3adf9efc8606d6e4f27ae95b1e7e0478d69d35252e85d78
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://xmoto.tuxfamily.org/
          ENTERED=20051006
-      PATCHLEVEL=1
       LICENSE[0]=GPL
            SHORT="X-Moto is a challenging 2D motocross platform game"
 cat << EOF
