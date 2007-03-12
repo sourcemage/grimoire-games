@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.tim-mann.org/xboard.html
          ENTERED=20020425
          UPDATED=20031009
-     GATHER_DOCS="off"
       LICENSE[0]=GPL
            SHORT="xboard is a X chess program"
 cat << EOF
