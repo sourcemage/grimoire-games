@@ -1,6 +1,6 @@
 2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added removal of empty gather docs dirs, minor fix for
-	  STAGED_INSTALL
+	  STAGED_INSTALL, argh... not my day...
 
 2007-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-strategy-rts/bos: deprecated in favour of boswars
