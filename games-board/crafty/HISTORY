@@ -1,3 +1,6 @@
+2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: removed GATHER_DOCS=off
+
 2007-03-12 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD: unset our CFLAGS, added more sedits
 	* DEPENDS: added as it needs g++

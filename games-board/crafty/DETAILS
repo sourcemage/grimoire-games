@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:6437eb48b843d27d9105800f3bb7016c4e1d0f36609bca314ed313fbae60707cc05720fb579568c249bf4b16f5e79eb723c48278989612d5545489352af3163a
       LICENSE[0]="Seems to be open source"
          ENTERED=20030412
-     GATHER_DOCS=off
            SHORT="Crafty is a computer chess program."
 cat << EOF
 Crafty is a state-of-the-art  computer  chess  program,  and
