@@ -1,3 +1,7 @@
+2007-03-13 Pol Vinogradov <vin.public@gmail.com>
+	* FUNCTIONS: perform removal of parent dirs to get rd of them in
+	  compile/install logs
+
 2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added removal of empty gather docs dirs, minor fix for
 	  STAGED_INSTALL, argh... not my day...
