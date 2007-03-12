@@ -158,8 +158,13 @@ fi
 
 function default_post_install() {
   games_make_proper_binary &&
-  rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
-  rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/doc/${SPELL} &&
+  if [[ $STAGED_INSTALL != off ]]
+    rmdir --ignore-fail-on-non-empty ${STAGE_DIRECTORY}/TRANSL/usr/share/games/${SPELL} &&
+    rmdir --ignore-fail-on-non-empty ${STAGE_DIRECTORY}/TRANSL/usr/share/doc/${SPELL}
+  else
+    rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+    rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/doc/${SPELL}
+  fi
   real_default_post_install
 }
 
