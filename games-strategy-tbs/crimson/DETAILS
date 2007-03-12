@@ -7,7 +7,6 @@
          WEB_SITE=http://crimson.seul.org/index.html
           ENTERED=20020610
           UPDATED=20040422
-      GATHER_DOCS="off"
        LICENSE[0]=ART
             SHORT="Crimson Fields is a tactical war game in the tradition of Battle Isle"
 cat << EOF
