@@ -1,0 +1,5 @@
+message "\n${MESSAGE_COLOR}Note: No books or tablebases have been installed. If you want them, just\n"  \
+        "download them from ${WEB_SITE}.\n"  \
+        "You will find documentation there too. In most cases you take now\n"  \
+        "your xboard compatible application, (xboard, eboard, knights) and\n"  \
+        "just play chess against computer opponent. Have fun.\n\n"

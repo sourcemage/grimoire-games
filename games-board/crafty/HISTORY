@@ -1,3 +1,10 @@
+2007-03-12 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: unset our CFLAGS, added more sedits
+	* DEPENDS: added as it needs g++
+	* DETAILS: removed UPDATED, added GATHER_DOCS=off, fixed SOURCE_URL[0]
+	* INSTALL: install_rootifying, added installation of crafty.hlp
+	* FINAL: added to inform user about books and tablespaces
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
