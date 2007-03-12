@@ -152,12 +152,14 @@ fi
 #---
 ## @Synopsis default_post_install function to
 ## @Synopsis clean out any empty share/games/SPELL dirs
+## @Synopsis clean out any empty gather docs dirs
 ## @Synopsis and run the real_default_post_install afterwards
 #---
 
 function default_post_install() {
   games_make_proper_binary &&
   rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+  rmdir --ignore-fail-on-non-empty ${INSTALL_ROOT}/usr/share/doc/${SPELL} &&
   real_default_post_install
 }
 
