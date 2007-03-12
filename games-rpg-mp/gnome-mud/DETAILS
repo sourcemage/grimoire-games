@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://amcl.sourceforge.net
          ENTERED=20020116
          UPDATED=20050517
-     GATHER_DOCS="off"
       LICENSE[0]=GPL
            SHORT="Multi-User Dungeon (MUD) client"
 cat << EOF
