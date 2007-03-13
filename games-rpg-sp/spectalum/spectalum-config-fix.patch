@@ -1,0 +1,59 @@
+diff -Nuar spectalum.orig/src/3DEngine.cpp spectalum/src/3DEngine.cpp
+--- spectalum.orig/src/3DEngine.cpp	2006-10-14 16:19:18.000000000 +0500
++++ spectalum/src/3DEngine.cpp	2007-03-13 17:40:35.000000000 +0500
+@@ -4,6 +4,7 @@
+ ***********************************/
+ 
+ #include <config.cpp>
++#include <stdlib.h>
+ 
+ 
+ #ifdef WINCE
+@@ -158,7 +159,8 @@
+ 	mapEvent = new CEvent;
+ 
+ 	//Konfiguration laden
+-	configuration.openConf("spectalum.conf");
++	if (! configuration.openConf(strcat(getenv("HOME"), "/.spectalumrc")))
++		configuration.openConf(strcat("/etc", "/spectalum.conf"));
+ 
+ 	//Media Wrapper
+ 	if(configuration.resolution == 0)
+diff -Nuar spectalum.orig/src/config.cpp spectalum/src/config.cpp
+--- spectalum.orig/src/config.cpp	2006-05-26 18:36:24.000000000 +0500
++++ spectalum/src/config.cpp	2007-03-13 17:42:07.000000000 +0500
+@@ -12,7 +12,7 @@
+ {
+ public:
+ 	//Konfigurationsfile einlesen
+-	void openConf(char* fileName);
++	bool openConf(char* fileName);
+ 
+ 	//Werte zuweisen
+ 	void setValue(short key, short val);
+@@ -36,7 +36,7 @@
+ // Konfigurationsfile lesen und Werte zuordnen
+ //
+ 
+-void CConfig::openConf(char* fileName)
++bool CConfig::openConf(char* fileName)
+ {
+ 	this->fullscreen = false;
+ 	this->language = 0;
+@@ -60,7 +60,7 @@
+ 		this->language = 0;
+ 		this->startMapID = 0;
+ 		printf("Configuration file not found!\n");
+-		exit(0);
++		return false;
+ 	}
+ 	else
+ 	{
+@@ -118,6 +118,7 @@
+ 			data[row][0] = '\0';
+ 		}
+ 		fclose(file);
++		return true;
+ 	}
+ }
+ 

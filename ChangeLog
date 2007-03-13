@@ -1,5 +1,9 @@
+2007-03-14 Pol Vinogradov <vin.public@gmail.com>
+	* games-rpg-sp/spectalum: new spell, an engine remake of Eye of
+	  Beholder 2 - The Legend of Darkmoon
+
 2007-03-13 Pol Vinogradov <vin.public@gmail.com>
-	* FUNCTIONS: perform removal of parent dirs to get rd of them in
+	* FUNCTIONS: perform removal of parent dirs to get rid of them in
 	  compile/install logs
 
 2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>

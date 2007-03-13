@@ -1,0 +1,14 @@
+           SPELL=spectalum
+         VERSION=rev31
+          SOURCE=$SPELL-$VERSION-source.zip
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:1f2c4e870a09722708b797a719eb70f7197e8cfcb5285c29d339e6f74a529575e79087fc4890fb3c9e8d6495a369e9c5bceb42f2765050085cc97e92876fa14b
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+        WEB_SITE=http://www.eob2remake.com/
+         ENTERED=20070314
+      LICENSE[0]=GPL
+           SHORT="SPECTALUM - an engine remake of Eye of Beholder 2 - The Legend of Darkmoon"
+cat << EOF
+SPECTALUM - an engine remake of Eye of Beholder 2 - The Legend of Darkmoon,
+still needs original game's files
+EOF

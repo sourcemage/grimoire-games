@@ -1,0 +1,8 @@
+default_install    &&
+
+for dir in data maps original sound
+do
+  cp -R $dir ${INSTALL_ROOT}/usr/share/games/${SPELL}
+done  &&
+
+install_config_file ${SPELL}.conf ${INSTALL_ROOT}/etc

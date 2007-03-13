@@ -1,0 +1,5 @@
+message "${PROBLEM_COLOR}Warning:${DEFAULT_COLOR}\n" \
+        "  This game is dependant on non-free game data.\n" \
+        "  Please get the datafiles from your original Eye of Beholder 2 - The Legend of Darkmoon \n" \
+        "  (ENGLISH version only). Copy them into the ${INSTALL_ROOT}/usr/share/games/${SPELL}/original \n" \
+        "  game folder ${DEFAULT_COLOR} \n\n"

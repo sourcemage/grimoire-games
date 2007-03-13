@@ -1,0 +1,34 @@
+default_pre_build       &&
+
+cd ${BUILD_DIRECTORY}   &&
+patch -p0 < ${SCRIPT_DIRECTORY}/${SPELL}-config-fix.patch  &&
+
+cd ${SOURCE_DIRECTORY}  &&
+
+rm -rf .svn  &&
+for dir in data maps original sound src
+do
+  rm -rf $dir/.svn  &&
+  rm -rf $dir/*/.svn
+done  &&
+
+sedit "s:/etc:${TRACK_ROOT}/etc:" src/config.cpp  &&
+sedit "s:maps/:${TRACK_ROOT}/usr/share/games/${SPELL}/maps/:" src/map.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/3DEngine.cpp  &&
+sedit "s:sound/:${TRACK_ROOT}/usr/share/games/${SPELL}/sound/:g" src/3DEngine.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/charmenu.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/event.cpp  &&
+sedit "s:sound/:${TRACK_ROOT}/usr/share/games/${SPELL}/sound/:g" src/event.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/intro.cpp  &&
+sedit "s:mov/:${TRACK_ROOT}/usr/share/games/${SPELL}/mov/:g" src/intro.cpp  &&
+sedit "s:sound/:${TRACK_ROOT}/usr/share/games/${SPELL}/sound/:g" src/intro.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/item.cpp  &&
+sedit "s:data/:${TRACK_ROOT}/usr/share/games/${SPELL}/data/:g" src/language.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/mazeobjects.cpp  &&
+sedit "s:data/:${TRACK_ROOT}/usr/share/games/${SPELL}/data/:g" src/mediawrapper.cpp  &&
+sedit "s:original/:${TRACK_ROOT}/usr/share/games/${SPELL}/original/:g" src/monster.cpp  &&
+
+sedit 's:./configure "$@"		&& ::' autogen.sh  &&
+chmod a+x autogen.sh  &&
+./autogen.sh          &&
+chmod a+x configure
