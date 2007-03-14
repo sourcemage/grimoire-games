@@ -1,8 +1,8 @@
            SPELL=wesnoth
   if [[ ${WESNOTH_DEVEL} == y ]]; then
-         VERSION=1.2.2
+         VERSION=1.3.1
           SOURCE=${SPELL}-${VERSION}.tar.bz2
-     SOURCE_HASH=sha512:5e1983f0bece02b46cef0dc60c2452b5c4d400fe4e34417371abb6ecf7923f8fe813e02b9c3b8d438a5374dfcaac92a60ddffefe6b2b0b0cd60a5c2aa3cd847b
+     SOURCE_HASH=sha512:2c4a23ecb761cd58e8d1118601fd76cd064f17dfbb35ab239792dca92d92c3590cf3254bfd709336f70a6872be98267a6647f5602434ef68dd0b68041959ad1c
   else
          VERSION=1.2.2
           SOURCE=${SPELL}-${VERSION}.tar.bz2
