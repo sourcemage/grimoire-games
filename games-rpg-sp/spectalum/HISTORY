@@ -1,3 +1,7 @@
+2007-03-16 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on sdl_mixer
+	* INSTALL: install_config_file takes file as destination, not directory
+
 2007-03-14 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD, DEPENDS, DETAILS, FINAL, INSTALL, PRE_BUILD,
 	  spectalum-config-fix.patch: created spell

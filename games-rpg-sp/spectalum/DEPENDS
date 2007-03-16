@@ -1,3 +1,4 @@
-depends  automake  &&
-depends  g++       &&
-depends  sdl
+depends  automake   &&
+depends  g++        &&
+depends  sdl        &&
+depends  sdl_mixer
