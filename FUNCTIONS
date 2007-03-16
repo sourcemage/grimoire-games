@@ -158,7 +158,7 @@ fi
 
 function default_post_install() {
   games_make_proper_binary &&
-  if [[ $STAGED_INSTALL != off ]]; then
+  if [[ $STAGED_INSTALL == on ]]; then
     rmdir --ignore-fail-on-non-empty ${STAGE_DIRECTORY}/TRANSL/usr/share/games/${SPELL} &&
     rmdir --ignore-fail-on-non-empty ${STAGE_DIRECTORY}/TRANSL/usr/share/games          &&
     rmdir --ignore-fail-on-non-empty ${STAGE_DIRECTORY}/TRANSL/usr/share/doc/${SPELL}   &&
