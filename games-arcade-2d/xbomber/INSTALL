@@ -1,3 +1,2 @@
-mkdir ${INSTALL_ROOT}/usr/share/games/xbomber &&
 cp -r bitmaps jungle levels pixmaps sounds xbomber ${INSTALL_ROOT}/usr/share/games/xbomber &&
 cp $SCRIPT_DIRECTORY/xbomber ${INSTALL_ROOT}/usr/games/xbomber
