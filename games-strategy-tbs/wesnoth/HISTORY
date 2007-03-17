@@ -1,3 +1,6 @@
+2007-03-17 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: removed sdl-ttf, not needed anymore #13627
+
 2007-03-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: almost removed, icon installation is fixed
 	* DETAILS: updated devel to 1.3.1
