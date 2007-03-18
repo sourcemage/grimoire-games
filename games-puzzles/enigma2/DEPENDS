@@ -1,3 +1,4 @@
 depends  sdl_mixer  &&
 depends  sdl_image  &&
+depends  xerces-c   &&
 depends  sdl_ttf
