@@ -1,3 +1,6 @@
+2007-03-20 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated WESNOTH_DEVEL=n to 1.2.3
+
 2007-03-17 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: removed sdl-ttf, not needed anymore #13627
 
