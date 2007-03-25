@@ -1,3 +1,7 @@
+2007-03-25 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: switched to default_games_build, some cleanups
+	* DEPENDS: libxrandr is a required dependency
+
 2006-12-09 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD: track_rootifying path to X libraries, added missing &&
 	* DEPENDS: needs openal, added optional depends on libxrandr if X are

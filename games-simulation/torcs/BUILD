@@ -1,12 +1,7 @@
-OPTS="$OPTS --x-libraries=${TRACK_ROOT}/usr/lib/"  &&
-./configure  --build=${BUILD}                    \
-            --prefix=${INSTALL_ROOT}/usr/        \
-            --libdir=${INSTALL_ROOT}/usr/lib     \
-            --bindir=${INSTALL_ROOT}/usr/games   \
-           --datadir=${INSTALL_ROOT}/usr/share/  \
-        --sysconfdir=${INSTALL_ROOT}/etc         \
-     --localstatedir=${INSTALL_ROOT}/var/games   \
-                     ${OPTS}                     &&
-make_single                                      &&
-make                                             &&
+if  check_if_xorg_modular_libs  ;  then
+  OPTS="$OPTS --x-libraries=${TRACK_ROOT}/usr/lib"
+fi                                                &&
+
+make_single                                       &&
+default_games_build                               &&
 make_normal
