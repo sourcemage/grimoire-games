@@ -1,3 +1,8 @@
+2007-03-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added xerces-c
+	* DETAILS: update to 1.00
+	* BUILD: added to run default_games_build
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

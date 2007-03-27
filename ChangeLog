@@ -1,3 +1,6 @@
+2007-03-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: use on instead of off for checking about stage
+
 2007-03-14 Pol Vinogradov <vin.public@gmail.com>
 	* games-rpg-sp/spectalum: new spell, an engine remake of Eye of
 	  Beholder 2 - The Legend of Darkmoon

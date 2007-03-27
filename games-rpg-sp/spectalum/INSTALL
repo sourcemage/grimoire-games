@@ -5,4 +5,4 @@ do
   cp -R $dir ${INSTALL_ROOT}/usr/share/games/${SPELL}
 done  &&
 
-install_config_file ${SPELL}.conf ${INSTALL_ROOT}/etc
+install_config_file ${SPELL}.conf ${INSTALL_ROOT}/etc/${SPELL}.conf
