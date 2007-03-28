@@ -1,3 +1,8 @@
+2007-03-28 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: removed make_{single,normal}, cosmetic fix
+	* PRE_BUILD: added for fixing data directory
+	* torcs-1.2.4.tar.bz2.sig: removed old signature
+
 2007-03-25 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD: switched to default_games_build, some cleanups
 	* DEPENDS: libxrandr is a required dependency
