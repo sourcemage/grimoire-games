@@ -1,3 +1,7 @@
+2007-03-29 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.2.7
+	* DEPENDS: added optional dependency on sdl_gfx
+
 2007-03-10 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.2.6
 
