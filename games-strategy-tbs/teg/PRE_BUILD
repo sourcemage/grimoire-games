@@ -1,0 +1,3 @@
+default_pre_build  &&
+sedit 's:#include.*<ggzdmod-ggz.h>::'  $SOURCE_DIRECTORY/server/ggz_server.c  &&
+sedit 's:prefix}\/etc:sysconfig}\/etc:g'  $SOURCE_DIRECTORY/configure
