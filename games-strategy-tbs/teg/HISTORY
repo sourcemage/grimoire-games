@@ -2,8 +2,7 @@
 	* DETAILS: Updated to 0.11.2
 	  Removed UPDATED
 	  SECURITY_PATCH=1: remote DoS (CAN-2006-1150)
-	* DEPENDS: Need to specify where the GGZD confdir is if using GGZ
-	  Optionally depend on readline for fancy command line editing
+	* DEPENDS: Optionally depend on readline for fancy command line editing
 	* PRE_BUILD: The ggzdmod-ggz.h header hasn't been around since
 	  GGZ 0.0.13 and is part of ggzdmod.h (already included)
 	  Fix their retarded check for ${prefix}/etc which overrides any
