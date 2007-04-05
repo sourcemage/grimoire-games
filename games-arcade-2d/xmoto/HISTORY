@@ -1,3 +1,6 @@
+2007-04-04 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: updated download url, no longer SF
+
 2007-03-29 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.2.7
 	* DEPENDS: added optional dependency on sdl_gfx
