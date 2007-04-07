@@ -1,3 +1,8 @@
+2007-04-08 Pol Vinogradov <vin.public@gmail.com>
+	* INSTALL: switched to default_install, fixed pak file path
+	* PRE_BUILD, 0.5.5-ipv6.patch, quakeforge-0.5.5-gcc41.patch,
+	  quakeforge-0.5.5-keys.patch: added for gcc41
+
 2007-04-07 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.5.5, removed UPDATED
 

@@ -1,3 +1,3 @@
-make install &&
+default_install &&
 mkdir -vp ${INSTALL_ROOT}/usr/share/games/${SPELL}/id1 &&
-cp pakQF.pak ${INSTALL_ROOT}/usr/share/games/${SPELL}/id1
+cp ${SOURCE_CACHE}/${SOURCE} ${INSTALL_ROOT}/usr/share/games/${SPELL}/id1
