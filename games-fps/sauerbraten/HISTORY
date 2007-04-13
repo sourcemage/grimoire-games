@@ -1,3 +1,23 @@
+2007-04-13 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2007_04_13_spring_edition
+	  SOURCE changed to _linux.tar.bz2
+	  Removed UPDATED
+	* PRE_BUILD: enet/configure is already +x
+	  Do not pushd to SOURCE_DIRECTORY when we never use popd
+	  Remove full path hackery
+	* BUILD: enet is now under the src directory
+	* INSTALL: Binaries are no longer stored under a sauerbraten subdir
+	  Change back to SOURCE_DIRECTORY before copying files
+	  Change permissions on files *before* copying, don't glob chown
+	  installed locations (we don't want to take ownership of mods ;))
+	  Install custom builds to /usr/share/games/sauerbraten/bin as well
+	  Install custom run scripts for custom builds
+	  CUBE_TODO.txt -> OCTA_TODO.txt
+	* sauerbraten_{client,server}: Added custom run scripts
+	* 20050815-addfullpath-rendergl.cpp.patch,
+	  20050815-addfullpath-tools.cpp.patch,
+	  20050815-addfullpath-tools.h.patch: No longer needed
+
 2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: removed I_DIR
 	* PRE_BUILD: removed I_DIR

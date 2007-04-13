@@ -1,35 +1,11 @@
-default_pre_build                                                     &&
-chmod  a+x  $SOURCE_DIRECTORY/enet/configure                          &&
-pushd  $SOURCE_DIRECTORY/src                                          &&
-sedit  's:-lGL -lGLU:-L/usr/X11R6/lib &:'  Makefile                   &&
+default_pre_build                                    &&
+cd  $SOURCE_DIRECTORY/src                            &&
+sedit  's:-lGL -lGLU:-L/usr/X11R6/lib &:'  Makefile  &&
 
 #
-# Enable our custom optimizations for Cube
+# Enable our custom optimizations for Sauerbraten
 #
-sedit  "s:-O3 -fsigned-char -fomit-frame-pointer:$CXXFLAGS:"          \
-       Makefile                                                       &&
-
-#
-# Modified Gentoo patches from Cube
-# Original sources from http://bugs.gentoo.org/show_bug.cgi?id=104292
-#
-patch  shared/tools.h                                                 \
-       $SCRIPT_DIRECTORY/20050815-addfullpath-tools.h.patch           &&
-patch  shared/tools.cpp                                               \
-       $SCRIPT_DIRECTORY/20050815-addfullpath-tools.cpp.patch         &&
-patch  engine/rendergl.cpp                                            \
-       $SCRIPT_DIRECTORY/20050815-addfullpath-rendergl.cpp.patch      &&
-local GAME_DIR_LEN=28                                                 &&
-let GAME_DIR_LEN=$GAME_DIR_LEN+${#INSTALL_ROOT}                       &&
-#
-# Add GAMES_DATADIR/GAMES_DATADIR_LEN for the above patch
-# Original sources from http://bugs.gentoo.org/show_bug.cgi?id=104292
-#
-sedit  "5a\
-#define  GAMES_DATADIR \"$INSTALL_DIR/usr/share/games/sauerbraten\""  \
-                                           shared/tools.h             &&
-sedit  "6a\
-#define  GAMES_DATADIR_LEN ${GAME_DIR_LEN}"  shared/tools.h           &&
+sedit  "s:-O3 -fomit-frame-pointer:$CXXFLAGS:"  Makefile  &&
 
 # Gentoo fix for parallel make
 sedit  's/make -C/$(MAKE) -C/'  Makefile

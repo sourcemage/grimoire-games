@@ -1,4 +1,4 @@
-cd  enet             &&
+cd  src/enet         &&
 default_games_build  &&
-cd  ../src           &&
+cd  ..               &&
 make
