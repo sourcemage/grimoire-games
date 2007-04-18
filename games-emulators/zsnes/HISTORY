@@ -1,5 +1,6 @@
 2007-04-18 David Kowis <dkowis@shlrm.org>
 	* DETAILS: version bumped to 1.51, now it builds on xorg-modular systems
+	  Reset the patchlevel
 	* *.patch: removed as no longer apply
 	* PRE_BUILD: removed, because nothing to do
 	* CONFIGURE, BUILD: added --omg-optimize
