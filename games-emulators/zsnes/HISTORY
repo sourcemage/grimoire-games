@@ -2,6 +2,7 @@
 	* DETAILS: version bumped to 1.51, now it builds on xorg-modular systems
 	* *.patch: removed as no longer apply
 	* PRE_BUILD: removed, because nothing to do
+	* CONFIGURE, BUILD: added --omg-optimize
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
