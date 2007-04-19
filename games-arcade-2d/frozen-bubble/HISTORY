@@ -1,3 +1,6 @@
+2007-04-19 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on sdl_pango built with the Frozen Bubble patch
+
 2006-11-29 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Set BINDIR to /usr/games
 
