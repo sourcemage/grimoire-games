@@ -1,10 +1,9 @@
            SPELL=globulation2
-         VERSION=0.8.21
+         VERSION=0.8.23
           SOURCE=glob2-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-${VERSION}
-   SOURCE_URL[0]=http://globulation2.org/releases/${VERSION}/${SOURCE}
-#     SOURCE_HASH=sha512:719885049a6a1e4a17e660e2e9014acefd13d5ffe01ced1a30568e02a5abee01c20937318ad55b8e9c6147bcb99b60c56d198725243deb832981f1a5a60e0f49
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+   SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/glob2/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:681d7cefe51dd600ec4bb081712d82578a8198c95157d1e187600a765b015e86501bf088d8bcc6ee36fc66217513aede2a5840287475a4c5df1d9e99f49c34bd
       LICENSE[0]=GPL
         WEB_SITE=http://globulation2.org/
          ENTERED=20040814
