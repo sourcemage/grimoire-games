@@ -1,2 +1,0 @@
-cp crafty ${INSTALL_ROOT}/usr/games  &&
-cp crafty.hlp ${INSTALL_ROOT}/usr/share/games/${SPELL}

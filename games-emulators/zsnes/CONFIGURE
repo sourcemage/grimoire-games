@@ -1,0 +1,1 @@
+config_query_option ZSNES_OMG_OPTIMIZE "Do you want 'Release' optimizations (-O99999999) ?" n "--enable-release" ""

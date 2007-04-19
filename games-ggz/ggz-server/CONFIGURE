@@ -1,0 +1,19 @@
+if    spell_ok  howl;  then
+  config_query_list  GGZ_SERVER_ZEROCONF                        \
+                     "Use which library for ZeroConf support?"  \
+                     howl avahi none
+elif  spell_ok  avahi;  then
+  config_query_list  GGZ_SERVER_ZEROCONF                        \
+                     "Use which library for ZeroConf support?"  \
+                     avahi howl none
+else
+  config_query_list  GGZ_SERVER_ZEROCONF                        \
+                     "Use which library for ZeroConf support?"  \
+                     none  howl  avahi
+fi  &&
+
+config_query_option  GGZ_SERVER_SERVER  "Build ggzd server?"  y  \
+                     ''  '--disable-server'                      &&
+
+config_query_option  GGZ_SERVER_GAMES   "Build ggzd game server?"  y  \
+                     ''  '--disable-games'

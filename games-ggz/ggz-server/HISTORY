@@ -1,3 +1,13 @@
+2007-03-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.0.14
+	* CONFIGURE: Can use howl or avahi for ZeroConf autodiscovery
+	  Query for building ggzd server/games (passing --enable flags with
+	  this still disables...)
+	* DEPENDS: Optionally depends on FAM
+	  Pass --with-database=db4 to explicitly use db4
+	* BUILD: --with-database=db4 is passed via DEPENDS now
+	  Add GGZ_SERVER_SERVER and GGZ_SERVER_GAMES to OPTS
+
 2006-10-01 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 0.0.13
 	  added SOURCE_URL to ggz site

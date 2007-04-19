@@ -1,0 +1,9 @@
+default_pre_build                                                                       &&
+cd ${SOURCE_DIRECTORY}                                                                  &&
+
+sedit "s:games/torcs:${SPELL}:" src/linux/torcs.in                                      &&
+sedit "s:games/torcs:${SPELL}:" src/tools/accc/accc.in                                  &&
+sedit "s:games/torcs:${SPELL}:" src/tools/nfsperf/nfsperf.in                            &&
+sedit "s:games/torcs:${SPELL}:" src/tools/texmapper/texmapper.in                        &&
+sedit "s:games/torcs:${SPELL}:" src/tools/nfs2ac/nfs2ac.in                              &&
+sedit "s:datadir = @datadir@/games/torcs:datadir = @datadir@/${SPELL}:" Make-config.in

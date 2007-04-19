@@ -1,3 +1,14 @@
+2007-03-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.11.2
+	  Removed UPDATED
+	  SECURITY_PATCH=1: remote DoS (CAN-2006-1150)
+	* DEPENDS: Optionally depend on readline for fancy command line editing
+	* PRE_BUILD: The ggzdmod-ggz.h header hasn't been around since
+	  GGZ 0.0.13 and is part of ggzdmod.h (already included)
+	  Fix their retarded check for ${prefix}/etc which overrides any
+	  given ${sysconfdir}, even the one give by the ggz-config script.
+	* BUILD: Use default_games_build
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

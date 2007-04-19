@@ -1,3 +1,14 @@
-depends  libggz    &&
-depends  db        &&
-depends  expat
+depends  libggz                         &&
+depends  db      '--with-database=db4'  &&
+depends  expat                          &&
+
+if    [[  "$GGZ_SERVER_ZEROCONF"  ==  "howl"   ]];  then
+  depends  howl  '--with-zeroconf=howl'
+elif  [[  "$GGZ_SERVER_ZEROCONF"  ==  "avahi"  ]];  then
+  depends  avahi  '--with-zeroconf=avahi'
+fi  &&
+
+optional_depends  FAM                             \
+                  '--with-reconfigureation=fam'   \
+                  ''                              \
+                  'for file change notification'

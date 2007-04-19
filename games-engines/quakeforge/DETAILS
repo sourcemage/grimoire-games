@@ -1,17 +1,16 @@
            SPELL=quakeforge
-         VERSION=0.5.4
+         VERSION=0.5.5
           SOURCE=$SPELL-$VERSION.tar.bz2
          SOURCE2=pakQF.pak
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://download.sourceforge.net/quake/$SOURCE
   SOURCE2_URL[0]=http://www.quakeforge.net/files/$SOURCE2
         WEB_SITE=http://www.quakeforge.net
-     SOURCE_HASH=sha512:4fc77911e0ea5265730207c492b358c849b89c6ca4e1e9f9dd3676217895138386ec60c51739e900ca26c09997f89671bfa8992cd66c6e285c7d73aed315b009
+     SOURCE_HASH=sha512:0e81fbe2ef4fd1f491e2b46f222807eaa1b1dadf1e5200d3cd4609146050664a68c801c48418a3632a5ad0798ea9ec4eed70da03c2f90abb5fd1291adc95399c
     SOURCE2_HASH=sha512:787a7bec3ed479ec3a63117cf31149d7104484e9801b448ccde17d32afe18e2d1210816cd7655d489c0399d36193b26eca022e5e10c5a6d477c5927458dcbded
       LICENSE[0]=GPL
       LICENSE[1]=GPL
          ENTERED=20020826
-         UPDATED=20040107
            SHORT="QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine."
 cat << EOF
 QuakeForge is a 3D graphics game engine based on id Software's legendary Quake and QuakeWorld game engine. 
