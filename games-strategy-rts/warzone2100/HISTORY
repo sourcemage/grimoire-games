@@ -1,3 +1,8 @@
+2007-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 2.0.6
+	* warzone.gpg: add 2 more keys, key change so lost
+	  verification
+
 2006-12-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: version update to 2.0.5
 	* PRE_BUILD: added to run autogen.sh

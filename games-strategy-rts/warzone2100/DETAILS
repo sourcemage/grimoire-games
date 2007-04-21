@@ -1,10 +1,10 @@
            SPELL=warzone2100
-         VERSION=2.0.5
+         VERSION=2.0.6
           SOURCE=${SPELL}-${VERSION}.tar.bz2
          SOURCE2=${SOURCE}.sig
    SOURCE_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE}
   SOURCE2_URL[0]=http://download.gna.org/warzone/releases/2.0/${SOURCE2}
-      SOURCE_GPG="C7320492.gpg:$SOURCE2:VERIFIED_UPSTREAM_KEY"
+      SOURCE_GPG="warzone.gpg:$SOURCE2:UPSTREAM_KEY"
   SOURCE2_IGNORE=signature
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://home.gna.org/warzone/
@@ -13,8 +13,8 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
            SHORT="3D realtime strategy from future Earth."
 cat << EOF
 3D realtime strategy from future Earth.
-
-The Warzone 2100 ReDev Project aims to continue the vision of Pumpkin studios
-started in 1999 with the game Warzone 2100, Which was closed source until Dec
-6, 2004 when it was let out the doors for the first time under a GPL license.
+The Warzone 2100 ReDev Project aims to continue the vision
+of Pumpkin studios started in 1999 with the game Warzone 2100,
+Which was closed source until Dec 6, 2004 when it was let out
+the doors for the first time under a GPL license.
 EOF
