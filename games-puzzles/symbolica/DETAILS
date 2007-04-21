@@ -1,0 +1,19 @@
+           SPELL=symbolica
+         VERSION=0.7
+          SOURCE="${SPELL}-${VERSION}-source.tar.bz2"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:422a6cb5bad5c6fafe89093c863d81ec6ea3c5208c924520032ec8fd04fac51c100edcffff12f30b2f3335f870758b0a7b6f4aca4a53dc2818d240eaf471a3c4
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.sf.net/projects/symbolica"
+      LICENSE[0]=BSD
+         ENTERED=20070409
+           SHORT="A remake of the C-64 game Symbolica."
+cat << EOF
+Symbolica is a remake of the C-64 game of the same name. It is targeted
+to the Linux-based handhelds gp2x and N800, with a Linux/386 binary also
+provided. It should compile under any operating system supported by SDL,
+SDL_image, and SDL_ttf.  The symbols on the screen represent a numeric value
+in the order they are displayed on the right. As you move over a symbol,
+it decrements to the next lower symbol or disappears. Your job is to clear
+the screen and move to the 'E' symbol.
+EOF

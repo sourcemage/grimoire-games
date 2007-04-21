@@ -1,0 +1,4 @@
+depends sdl &&
+depends sdl_image &&
+depends sdl_ttf &&
+depends g++ 

@@ -1,0 +1,21 @@
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+sedit 's:^SHAREDIR=.*:SHAREDIR=\\\"${INSTALL_ROOT}/usr/share/games/symbolica\\\":g' Makefile
+sedit "s:^CFLAGS=\(.*\):CFLAGS=\1 ${CFLAGS}:g" Makefile  &&
+sedit "s:^LDFLAGS=\(.*\):LDFLAGS=\1 ${LDFLAGS}:g" Makefile  &&
+sedit "s:^CFLAGS=\(.*\):CFLAGS=\1 ${CFLAGS}:g" godlib/Makefile  &&
+sedit "s:^LDFLAGS=\(.*\):LDFLAGS=\1 ${LDFLAGS}:g" godlib/Makefile  &&
+echo -e "
+install-smgl:all
+\tinstall -d ${INSTALL_ROOT}/usr/share/pixmaps/
+\tinstall -d ${INSTALL_ROOT}/usr/share/games/symbolica/data/
+\tinstall -d ${INSTALL_ROOT}/usr/share/games/symbolica/data/levels/
+\tinstall -d ${INSTALL_ROOT}/usr/share/games/symbolica/data/music/
+\tinstall -d ${INSTALL_ROOT}/usr/share/games/symbolica/data/gfx/2/
+\tinstall symbolica ${INSTALL_ROOT}/usr/games
+\tinstall symbolica.png ${INSTALL_ROOT}/usr/share/pixmaps/
+\tinstall data/vera.ttf data/jump.wav ${INSTALL_ROOT}/usr/share/games/symbolica/data/
+\tinstall data/levels/* ${INSTALL_ROOT}/usr/share/games/symbolica/data/levels/
+\tinstall data/music/* ${INSTALL_ROOT}/usr/share/games/symbolica/data/music/
+\tinstall data/gfx/2/* ${INSTALL_ROOT}/usr/share/games/symbolica/data/gfx/2/" >> Makefile
+
