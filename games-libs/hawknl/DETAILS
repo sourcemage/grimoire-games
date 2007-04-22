@@ -1,0 +1,15 @@
+           SPELL=hawknl
+         VERSION=17b1
+        VERSION2=1.70
+          SOURCE="HawkNL${VERSION}src.zip"
+   SOURCE_URL[0]=http://www.hawksoft.com/download/files/${SOURCE}
+     SOURCE_HASH=sha512:d44a2fd1fd5e7c0b3491c333d1b644df9a138e49d48a4506ae2990d5b4f4a468d5c73c21de546d930abc6c9da59dc01462d28283f7c444cfa07ded703950d502
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/HawkNL${VERSION2}"
+        WEB_SITE="http://www.hawksoft.com/hawknl/ "
+      LICENSE[0]=LGPL
+         ENTERED=20070422
+           SHORT="Cross platform network library for Unix and Windows."
+cat << EOF
+HawkNL is a game-oriented network API. It is a fairly low level API, being
+little more than a wrapper over sockets with some enhancements.
+EOF

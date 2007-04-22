@@ -1,0 +1,6 @@
+default_pre_build                                                 &&
+cd $SOURCE_DIRECTORY                                              &&
+sedit 's:^LIBDIR =.*:LIBDIR = /usr/lib:g' src/makefile.linux      &&
+sedit 's:^INCDIR =.*:INCDIR = /usr/include:g' src/makefile.linux  &&
+sedit "s:^CFLAGS =\(.*\):CFLAGS = \1 ${CFLAGS}:g" src/makefile.linux
+
