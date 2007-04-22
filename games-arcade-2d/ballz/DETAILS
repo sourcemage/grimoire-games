@@ -1,0 +1,21 @@
+           SPELL=ballz
+         VERSION=1.0
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=http://darkbits.org/${SOURCE}
+     SOURCE_HASH=sha512:3bbeabb4da084707b73c0392384019e3f805ece1df5405ab9e56fa14121463055ced44d0640725c66a98270c9a1a4f5dfa910e0bbca1b3f54e6b90af325b6266
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://darkbits.org/"
+      LICENSE[0]=GPL
+         ENTERED=20070421
+           SHORT="B.A.L.L.Z Screenshot A platformer with some puzzle elements."
+cat << EOF
+A platformer with some puzzle elements.
+
+Ballz is a platformer with some puzzle elements. You take control of a ball
+which is genetically modified by the British secret service. Your mission
+is to rescue captured British soldiers from a prison in Iran.
+
+The game was in 72 hours for the TINS competition, a competition similar
+to Speedhack. The name TINS is an recursive acronym for ‘TINS is not
+Speedhack’.
+EOF
