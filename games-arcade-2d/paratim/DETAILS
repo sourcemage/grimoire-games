@@ -1,0 +1,25 @@
+           SPELL=paratim
+         VERSION=0.1.2
+          SOURCE="${SPELL}-${VERSION}.tar.bz2"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:d70326a7a73fa33d358dde2b2f1e4ce14108250aef6331172d0d5ac4d6cde2e8bb67aaa089fdd878c521a798b38965f84c72e97ff1cbf4734a493f694d5404fd
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://paratim.sourceforge.net/"
+      LICENSE[0]=GPL
+         ENTERED=20070422
+           SHORT="Paratim Screenshot Remake of the old DOS game Paratrooper"
+cat << EOF
+Remake of the old DOS game Paratrooper
+
+Paratim (Paratrooper Improved) is a remake of the old DOS game Paratrooper.
+You play with the gun in the bottom center of the game while helicopters
+fly overhead. Those helicopters sometimes drop paratroopers. When their
+are four or more paratroopers on one side of the gun it's game over. To
+prevent this you have to shoot the paratroopers while they fall and/or the
+helicopters. After a round of helicopters planes arrive that drop bombs aimed
+at the gun. If a bomb hits you it's game over as well. To prevent this you
+have to shoot the bomb and/or the airplanes.
+
+Currently, the game is playable, but much of the planned improvements have
+yet to be implemented.
+EOF
