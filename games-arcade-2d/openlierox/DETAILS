@@ -1,0 +1,23 @@
+           SPELL=openlierox
+         VERSION=0.57_beta2
+          SOURCE="OpenLieroX_${VERSION}.src.tar.bz2"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:c99095134745e1fb6e1929f011046f065140d4ae8c0be96cfbcf15fbca635f561794aa40d9c526ed9d6e1c5aaa9f016d2f8c7ec41529a31e0d45d1b6f411367b
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/OpenLieroX"
+        WEB_SITE="http://openlierox.sourceforge.net/"
+      LICENSE[0]=zlib
+         ENTERED=20070422
+           SHORT="A real-time, excessive Worms-clone"
+cat << EOF
+A real-time, excessive Worms-clone
+
+A game like the famous Liero. Indeed, it is based on the source of LieroX.
+
+Your character is a worm (or similars) and you have to shoot other worms
+around you. You have an huge arsenal of weapons to do this. You have also
+a ninja-rope to get fast from one point to another.
+
+The game has an active internet-comunity and an ingame-serverlist, so can
+easily join other net-games. On the other hand, there are bots available,
+so you can also play alone.
+EOF

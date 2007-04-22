@@ -5,6 +5,8 @@
 	* games-libs/allegrogl: new library, allegro GL interface
 	* games-arcade-2d/ballz: new game, fun platformer where you control
 	  a ball
+	* games-arcade-2d/openlierox: new game, liero clone based on original
+	  source
 
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* accounts, groups: Sync with primary grimoire.

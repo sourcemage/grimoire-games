@@ -1,0 +1,7 @@
+depends sdl &&
+depends sdl_mixer &&
+depends sdl_gfx &&
+depends hawknl &&
+depends sdl_image &&
+depends libxml2 &&
+depends zlib 
