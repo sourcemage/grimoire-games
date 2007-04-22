@@ -1,16 +1,20 @@
-optional_depends  sdl \
-                  "WITH_SDL=1" \
-                  "WITH_SDL= DEDICATED=1" \
-                  "SDL is needed for client (builds dedicated server otherwise)" &&
-optional_depends  libpng \
-                  "WITH_PNG=1" \
-                  "WITH_PNG=" \
-                  "Enable screenshots using PNG" &&
-optional_depends  zlib \
-                  "WITH_ZLIB=1" \
-                  "WITH_ZLIB=" \
-                  "Enable savegames using zlib" &&
-optional_depends  alsa-utils \
-                  "MIDI=/usr/bin/aplaymidi" \
-                  "MIDI=" \
-                  "Enable midi player"
+optional_depends  sdl                                          \
+                  "--with-sdl"                                 \
+                  "--without-sdl"                              \
+                  "SDL is needed for client else server only"  &&
+optional_depends  libpng                                       \
+                  "--with-png"                                 \
+                  "--without-png"                              \
+                  "Enable screenshots using PNG"               &&
+optional_depends  zlib                                         \
+                  "--with-zlib"                                \
+                  "--without-zlib"                             \
+                  "Enable savegames using zlib"                &&
+optional_depends  freetype2                                    \
+                  "--with-freetype"                            \
+                  "--without-freetype"                         \
+                  "Enable freetype support"                    &&
+optional_depends  fontconfig                                   \
+                  "--with-fontconfig"                          \
+                  "--without-config"                           \
+                  "Enable fontconfig"

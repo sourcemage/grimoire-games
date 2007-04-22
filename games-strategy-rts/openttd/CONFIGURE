@@ -1,1 +1,5 @@
-config_query  OPENTTD_NETWORK  "Enable network support?"  y
+config_query_option  OPENTTD_OPTS               \
+                     "Enable network support?"  \
+                     y                          \
+                     "--with-network"           \
+                     "--without-network"

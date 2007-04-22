@@ -1,13 +1,1 @@
-install -v openttd  ${INSTALL_ROOT}/usr/libexec                      &&
-install -v ${SCRIPT_DIRECTORY}/${SPELL}  ${INSTALL_ROOT}/usr/games/  &&
-local SHARE_OPENTTD="${INSTALL_ROOT}/usr/share/games/${SPELL}"       &&
-cp -rv  data scenario  ${SHARE_OPENTTD}/                             &&
-mkdir -pv  ${SHARE_OPENTTD}/lang                                     &&
-cp -v   lang/*.lng  ${SHARE_OPENTTD}/lang/                           &&
-mkdir -pv  ${SHARE_OPENTTD}/scripts                                  &&
-cp -v   scripts/*.example  ${SHARE_OPENTTD}/scripts/                 &&
-mkdir -pv  ${SHARE_OPENTTD}/media                                    &&
-cp -v   media/*.png media/*.xpm  ${SHARE_OPENTTD}/media/             &&
-mkdir -pv  ${SHARE_OPENTTD}/gm                                       &&
-mkdir -pv  ${INSTALL_ROOT}/usr/share/doc/${SPELL}                    &&
-install -v  docs/* COPYING readme.txt ${INSTALL_ROOT}/usr/share/doc/${SPELL}
+make install INSTALL:=1
