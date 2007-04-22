@@ -1,0 +1,3 @@
+scons install  &&
+cd ${INSTALL_ROOT}/usr/share/games/vdrift  &&
+find_and_scam

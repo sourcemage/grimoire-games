@@ -1,0 +1,40 @@
+           SPELL=vdrift
+         VERSION=2007-03-23
+          SOURCE=${SPELL}-${VERSION}-src.tar.bz2
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:b4b354df32a8a7b2f9740fc22968bf74416154851873e49d513e0214d46011c7ec6664abb49d086934cf29556a0ebf15a80a119806b261b6678175438cd8c660
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/build
+         SOURCE2=${SPELL}-${VERSION}-data-full.tar.bz2
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/vdrift/${SOURCE}
+    SOURCE2_HASH=sha512:a63fd0bcc03e33bacbfbc7c7842fd0e2453a47a8acec8d5eae1ac8849a0d2ea38544bf981b95ee9138b7aea95d500196f697c48d3f3c21e79c6f695b715e0f43
+        WEB_SITE="http://vdrift.net/"
+      LICENSE[0]=GPL
+         ENTERED=20070421
+           SHORT="A drift racing simulation game."
+cat << EOF
+VDrift is a cross-platform, open source driving simulation
+made with drift racing in mind. It's powered by the excellent
+Vamos physics engine. It is released under the GNU General
+Public License (GPL) v2. It is currently available for
+Linux, FreeBSD, Mac OS X and Windows (Cygwin). 
+
+Features
+This game is in the early stages of development but is already
+very playable.
+Currently the game features:
+ * 13 Tracks: Brands Hatch, Circuit de Pau, Detroit,
+   Laguna Seca, Le Mans, Monaco, Monza, Nürburgring Nordschleife,
+   Road Atlanta, Ruudskogen, Spa Francorchamps, Weekend Drive, Zandvoort
+ * 21 Cars: 3S, AX2, CO, CS, FE, FF, G4, GT, M3, M7, MC,
+   MI, RG, SB, T73, TC, TL, XG, XM, XS, Z06
+ * Simple networked multiplayer mode
+ * Very realistic physics
+ * Mouse/joystick/keyboard driven menus
+ * Fully modeled tracks, scenery and terrain
+ * Several different camera modes
+ * Basic replay system with Skip Forward/Skip Backward
+ * Day/night weather cycle
+ * Fully customizable controls
+ * Joystick and keyboard input filtering
+ * Brake lights
+EOF
