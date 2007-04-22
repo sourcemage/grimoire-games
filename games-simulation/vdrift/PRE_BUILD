@@ -4,7 +4,5 @@ unpack_file 2  &&
 echo "os_cxxflags=\"1\"" > $SOURCE_DIRECTORY/$SPELL-$VERSION-src/$SPELL.conf  &&
 echo "release=\"1\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION-src/$SPELL.conf  &&
 echo "bindir=\"games\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION-src/$SPELL.conf  &&
-echo "prefix=\"${INSTALL_ROOT}/usr\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION-src/$SPELL.conf &&
-# hack to get config_loc to query user
-ln -s ${INSTALL_ROOT}/usr/bin/scons $SOURCE_DIRECTORY/$SPELL-$VERSION-src/configure
+echo "prefix=\"${INSTALL_ROOT}/usr\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION-src/$SPELL.conf
 
