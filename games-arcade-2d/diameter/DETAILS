@@ -1,0 +1,18 @@
+           SPELL=diameter
+         VERSION=0.3.5
+          SOURCE="${SPELL}-${VERSION}.tar.bz2"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/game${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:8292e7607c6afc590ee3af790826694d5fd2c03115842d99fa2ea1ee26fba4a9f7bb028f40cffc632146b4deb665bab53590790a46901ef8c6cab923d61e901c
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://gamediameter.sourceforge.net/"
+      LICENSE[0]=GPL
+         ENTERED=20070422
+           SHORT="Diameter Screenshot Arcade-style game with elements of economy and adventure."
+cat << EOF
+Arcade-style game with elements of economy and adventure.
+
+"Diameter" - is an arcade-style game with elements of economy and
+adventure. Project's main objective is to make a distinctive game with a
+storm gameplay and simultaneously alluring with its world. Plus, the main
+mood will be funny, but thus be serious.
+EOF

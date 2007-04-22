@@ -1,0 +1,5 @@
+depends sdl &&
+depends sdl_image &&
+depends sdl_mixer &&
+depends python &&
+depends guichan 
