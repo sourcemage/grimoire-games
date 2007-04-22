@@ -1,1 +1,3 @@
-make install-smgl
+make install-smgl  &&
+cd ${INSTALL_ROOT}/usr/share/games/symbolica &&
+find_and_scam

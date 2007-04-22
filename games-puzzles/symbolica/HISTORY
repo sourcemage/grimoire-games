@@ -1,3 +1,6 @@
+2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: run find_and_scam on data
+
 2007-04-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: created spell
 	* BUILD, PRE_BUILD, INSTALL: created spell
