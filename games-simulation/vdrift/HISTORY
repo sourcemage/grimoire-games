@@ -1,5 +1,6 @@
 2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* PRE_BUILD: remove the hack as it doesn't work
+	* PRE_BUILD: remove the hack as it doesn't work, remove
+	  the binreloc support... badly broken
 
 2007-04-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: created spell
