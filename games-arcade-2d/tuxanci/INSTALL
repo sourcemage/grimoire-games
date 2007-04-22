@@ -1,0 +1,3 @@
+default_install  &&
+cd ${INSTALL_ROOT}/usr/share/games/tuxanci  &&
+find_and_scam
