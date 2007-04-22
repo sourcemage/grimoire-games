@@ -2,6 +2,7 @@
 	* games-puzzles/symbolica: new game, A remake of the C-64 game Symbolica.
 	* games-arcade-2d/tuxanci: new game, a 2d deathmatch game
 	* games-simulation/vdrift: new game, drift racing simulation
+	* games-libs/allegrogl: new library, allegro GL interface
 
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* accounts, groups: Sync with primary grimoire.

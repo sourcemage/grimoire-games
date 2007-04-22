@@ -1,0 +1,21 @@
+           SPELL=allegrogl
+         VERSION=0.4.0
+          SOURCE="alleggl-${VERSION}.tar.bz2"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:e92e91135034beebaf6d4e47223d3ecd5c632becb08eff790f59eadd3e45e598301398403a3d064b42eec46c75ca3c99f30243ade8795e4d88875fde5a2689f0
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/alleggl"
+        WEB_SITE="http://allegrogl.sourceforge.net/"
+      LICENSE[0]=ZLIB
+         ENTERED=20070421
+           SHORT="AllegroGL - A library to mix OpenGL graphics with Allegro routines."
+cat << EOF
+AllegroGL is an Allegro add-on that allows you to use OpenGL alongside
+Allegro -- you use OpenGL for your rendering to the screen, and Allegro for
+miscellaneous tasks like gathering input, doing timers, getting cross-platform
+portability, loading data, and drawing your textures. So this library fills
+the same hole that things like glut do.
+
+AllegroGL also automatically exposes most, if not all, OpenGL extensions
+available to user programs. This means you no longer have to manually load
+them; extension management is already done for you.
+EOF
