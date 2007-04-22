@@ -1,0 +1,17 @@
+           SPELL=tuxanci
+         VERSION=0.16
+          SOURCE="${SPELL}-${VERSION}.tar.bz2"
+   SOURCE_URL[0]=http://www.${SPELL}.org/releases/${SOURCE}
+     SOURCE_HASH=sha512:cc4186ee50731c869c3aa90874e366a11f888911e0cf40de385e9dac2d104824bfe94ce9cb036ad4a4090439a20169555492461c0a30ae572db49a19510bc901
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.tuxanci.org/"
+      LICENSE[0]=GPL
+         ENTERED=20070422
+           SHORT="Top-down 2 player shooting deathmatch."
+cat << EOF
+Top-down 2 player shooting deathmatch.
+
+Each player controls a tux on a screen-sized playing arena shown from above,
+with obstacles, and tries to shoot the other player.  Similar to czech
+game Bulanci.
+EOF
