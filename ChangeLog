@@ -7,6 +7,7 @@
 	  a ball
 	* games-arcade-2d/openlierox: new game, liero clone based on original
 	  source
+	* games-engines/reminiscence: new game engine, runs flashback data
 
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* accounts, groups: Sync with primary grimoire.

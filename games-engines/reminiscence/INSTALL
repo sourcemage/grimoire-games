@@ -1,0 +1,1 @@
+cp -v rs ${INSTALL_ROOT}/usr/games/
