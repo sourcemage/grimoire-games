@@ -1,0 +1,4 @@
+2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS, DEPENDS, HISTORY: created spell
+	* PRE_BUILD, BUILD, INSTALL: created spell
+	* CONFIGURE: created spell

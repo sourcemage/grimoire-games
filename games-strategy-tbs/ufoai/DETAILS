@@ -1,0 +1,36 @@
+           SPELL=ufoai
+         VERSION=2.1
+          SOURCE=$SPELL-$VERSION-source.tar.bz2
+         SOURCE2=$SPELL-$VERSION-data.tar
+         SOURCE3=$SPELL-$VERSION-i18n.tar.bz2
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
+  SOURCE3_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE3
+     SOURCE_HASH=sha512:5bf238ea5b93f7efd9d86b3ca42e89dc66f4031f9c0922292cebd86ca63445808ab77bdf8d3ef7901d02554ad10ce46ca4cb5537fe536c046266ffc47d9ff060
+    SOURCE2_HASH=sha512:4c5e52ec06d6667ed20f08a6e107b9617d30ce6daf56df366e6a2abbb4cc90e98322f0f9a87567457a6a4e5e50829298fee60f9e9fc4686a7886e04ff3709b06
+    SOURCE3_HASH=sha512:7e732cad840985c441d5d18ff63943eb3d66bff52336ffa06d2501b119527a66a48864d64d7512f50798a56b505bd733bea4e91f69c0fcec488e815523b2fbf8
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$SPELL-$VERSION-source
+        WEB_SITE="http://ufoai.ninex.info/"
+      LICENSE[0]=GPL
+         ENTERED=20070422
+           SHORT="X-COM inspired turn based 3D strategy game"
+cat << EOF
+X-COM inspired turn based 3D strategy game
+
+UFO: Alien Invasion is a strategy game featuring turn-based tactical
+combat against hostile alien forces (human or computer controlled) which
+are infiltrating earth at this very moment. You are in command of a small
+special unit which has been founded to face the alien strike force. To be
+successful in the long run, you must research the alien technology in order
+to build bigger and better weapons against your foes.
+
+'UFO: Alien Invasion' is heavily inspired by the 'X-COM' series by Mythos
+and Microprose. The first game of the series, 'UFO DEFENSE', became a
+classic and, in our honest opinion, is one of the best games ever made.
+'UFO: Alien Invasion' is neither a sequel nor a remake of 'UFO DEFENSE' -
+we simply had the urge to create a similar, turn-based strategy game. We
+hope that it will be as entertaining as the original was us.
+
+Join the IRC-Channel at irc.freenode.org named #ufo:ai , get involved with
+the community and contribute to the development process.
+EOF

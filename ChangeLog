@@ -3,6 +3,7 @@
 	  economy
 	* games-arcade-2d/paratim: new game, Remake of the old DOS game Paratrooper
 	* games-board/brutalchess: new game, a chess game...
+	* games-strategy-tbs/ufoai: new game, Free X-Com clone
 
 2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-puzzles/symbolica: new game, A remake of the C-64 game Symbolica.

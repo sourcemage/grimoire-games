@@ -1,0 +1,39 @@
+depends sdl "--with-sdl --with-snd-sdl"       &&
+depends OPENGL "--with-vid-glx"               &&
+depends sdl_ttf                               &&
+depends libogg                                &&
+depends libvorbis                             &&
+depends jpeg                                  &&
+depends zlib                                  &&
+depends libpng                                &&
+depends gettext                               &&
+depends X11-LIBS                              &&
+. $GRIMOIRE/FUNCTIONS
+if check_if_xorg_modular_libs ; then
+optional_depends libxxf86dga                  \
+                 "--with-vid-dga"             \
+                 "--without-vid-dga"          \
+                 "Build with DGA support"
+fi
+optional_depends arts                         \
+                 "--with-snd-arts"            \
+                 "--without-snd-arts"         \
+                 "With arts sound support"    &&
+optional_depends jack                         \
+                 "--with-snd-jack"            \
+                 "--without-snd-jack"         \
+                 "With JACK sound support"    &&
+optional_depends alsa-lib                     \
+                 "--with-snd-alsa"            \
+                 "--without-snd-alsa"         \
+                 "With ALSA sound support"    &&
+optional_depends openal                       \
+                 "--with-openal"              \
+                 "--without-openal"           \
+                 "With OpenAL sound support"  &&
+optional_depends freealut                     \
+                 ""                           \
+                 ""                           \
+                 "With freealut support"
+
+
