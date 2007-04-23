@@ -1,0 +1,4 @@
+depends OPENGL     &&
+depends sdl        &&
+depends freetype2  &&
+depends sdl_image

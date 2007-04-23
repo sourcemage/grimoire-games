@@ -1,0 +1,17 @@
+           SPELL=brutalchess
+         VERSION=0.5.2
+          SOURCE="${SPELL}-alpha-${VERSION}-src.tar.gz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:9d28e880d8ec8790359ceb60c27933a275dd3fb0db7f824534c363c5ad4a08d86df5b9ce274841d277570fb8b19cc8e14333773507064b8b96507a523038d95e
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://brutalchess.sourceforge.net/"
+      LICENSE[0]=GPL
+         ENTERED=20070422
+           SHORT="Brutal Chess Screenshot Eye candy 3D chess program"
+cat << EOF
+Eye candy 3D chess program
+
+Brutal Chess features full 3D graphics, an advanced particle engine, and
+several different levels of intelligent AI, inspired by the once popular
+"Battle Chess" released by Interplay circa 1988.
+EOF
