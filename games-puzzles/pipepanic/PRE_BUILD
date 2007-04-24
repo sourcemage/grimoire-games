@@ -1,0 +1,10 @@
+default_pre_build                                  &&
+cd $SOURCE_DIRECTORY                               &&
+sedit "7s:-O2:${CFLAGS}:" Makefile                 &&
+sedit "9s:LDFLAGS.*:LDFLAGS=${LDFLAGS}:" Makefile  &&
+sedit "23s:DATADIR.*:DATADIR \"${INSTALL_ROOT}/usr/share/games/pipepanic/\":" main.h  &&
+echo -e "
+install: all
+\tinstall -v pipepanic ${INSTALL_ROOT}/usr/games
+\tinstall -v *.bmp ${INSTALL_ROOT}/usr/share/games/pipepanic
+" >> Makefile

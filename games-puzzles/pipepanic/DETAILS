@@ -1,0 +1,15 @@
+            SPELL=pipepanic
+          VERSION=0.1.3
+           SOURCE=$SPELL-$VERSION-source.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-source
+    SOURCE_URL[0]=http://www.users.waitrose.com/~thunor/$SPELL/dload/$SOURCE
+      SOURCE_HASH=sha512:468f3194976c7030c2fa3d8f30eaa13cc25e0b04feeb48a5d1267d119eb991618bad14ddba0a8268e6b92f38f2a17bc5b119728b222b0ee50494807832ad2ab7
+         WEB_SITE=http://www.users.waitrose.com/~thunor/pipepanic
+          UPDATED=20060602
+       LICENSE[0]=GPL
+            SHORT="Pipepanic is a pipe connecting game"
+cat << EOF
+Pipepanic is a pipe connecting game using libSDL that is playable
+on Linux PCs and the Sharp Zaurus. Connect as many different shaped
+pipes together as possible within the time given.
+EOF

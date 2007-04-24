@@ -1,0 +1,5 @@
+2007-04-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, DEPENDS, DETAILS, INSTALL, PRE_BUILD: cleaned up ALL
+
+2006-06-02 Vladimir Navrat <vn158@seznam.cz>
+	* ALL: Spell created
