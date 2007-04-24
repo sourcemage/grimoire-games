@@ -1,3 +1,13 @@
+2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: uses scons now
+	* CONFIGURE: add more build targets
+	* DEPENDS: cvs -> svn, some depends updates
+	* DETAILS: version update and cvs -> svn change
+	* INSTALL: uses scons now
+	* PREPARE: changed to svn
+	* PRE_BUILD: modified to work with scons and our CXXFLAGS
+	* widelands: removed no longer needed
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

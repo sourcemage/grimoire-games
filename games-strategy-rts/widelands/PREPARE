@@ -1,7 +1,7 @@
-config_query WIDELANDS_CVS "Download latest cvs code?" n  &&
+config_query WIDELANDS_SCM "Download latest scm code?" ${WIDELANDS_CVS:-n}  &&
 
-if [ "$WIDELANDS_CVS" == "y" ]; then
-   config_query WIDELANDS_CVS_AUTOUPDATE \
-                "Update to the latest CVS on every cast?" n  
+if [[ "$WIDELANDS_SCM" == "y" ]]; then
+   config_query WIDELANDS_SCM_AUTOUPDATE \
+                "Update to the latest revision on every cast?" ${WIDELANDS_CVS_AUTOUPDATE:-n}
 fi
 

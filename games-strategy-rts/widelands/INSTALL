@@ -1,15 +1,12 @@
-local  INSTDIR=${INSTALL_ROOT}/usr/lib/games/widelands  &&
-mkdir -p ${INSTDIR}                                     &&
-cp -Rv campaigns ${INSTDIR}                             &&
-cp -Rv fonts ${INSTDIR}                                 &&
-cp -Rv game_server ${INSTDIR}                           &&
-cp -Rv locale ${INSTDIR}                                &&
-cp -Rv maps ${INSTDIR}                                  &&
-cp -Rv music ${INSTDIR}                                 &&
-cp -Rv pics ${INSTDIR}                                  &&
-cp -Rv sound ${INSTDIR}                                 &&
-cp -Rv utils ${INSTDIR}                                 &&
-cp -Rv tribes ${INSTDIR}                                &&
-cp -Rv worlds ${INSTDIR}                                &&
-cp -Rv widelands ${INSTDIR}                             &&
-cp -v ${SCRIPT_DIRECTORY}/widelands /usr/games
+WIDELANDS_GGZ=${WIDELANDS_GGZ/y/1}            &&
+WIDELANDS_GGZ=${WIDELANDS_GGZ/n/0}            &&
+utils/scons.py                                \
+       install_prefix=${INSTALL_ROOT}/usr     \
+       build=${WIDELANDS_BUILD}               \
+       use_ggz=${WIDELANDS_GGZ}               \
+       install                                &&
+WIDELANDS_GGZ=${WIDELANDS_GGZ/1/y}            &&
+WIDELANDS_GGZ=${WIDELANDS_GGZ/0/n}            &&
+cd ${INSTALL_ROOT}/usr/share/games/widelands  &&
+find_and_scam
+

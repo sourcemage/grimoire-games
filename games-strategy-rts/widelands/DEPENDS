@@ -1,20 +1,23 @@
 depends  g++                &&
+# use internal scons -external one is broken
+#depends  scons              &&
 depends  python             &&
 depends  gettext            &&
+depends  paragui            &&
 depends  libpng             &&
 depends  zlib               &&
 depends  sdl                &&
 depends  sdl_image          &&
+depends  sdl_mixer          &&
 depends  sdl_ttf            &&
 depends  sdl_net            &&
-depends  doxygen            &&
 
-if  [ "$WIDELANDS_GGZ" == "y" ];  then
+if  [[ "$WIDELANDS_GGZ" == "y" ]];  then
    depends libggz           &&
    depends ggz-server       &&
    depends ggz-client-libs
 fi                          &&
 
-if  [ "$WIDELANDS_CVS" == "y" ];  then
-   depends  CVS     
+if  [[ "$WIDELANDS_SCM" == "y" ]];  then
+   depends  subversion
 fi

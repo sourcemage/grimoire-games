@@ -1,19 +1,11 @@
-default_pre_build       &&
-cd ${SOURCE_DIRECTORY}  &&
-
-if [ "${WIDELANDS_BUILD}" == "debug" ]; then
-   echo "BUILD:=debug" >> Makefile.local
+default_pre_build                                         &&
+cd ${SOURCE_DIRECTORY}                                    &&
+disable_pic                                               &&
+CXXFLAGS=${CXXFLAGS/-Os/-O2}                              &&
+sedit "256ienv.Append(CCFLAGS='${CXXFLAGS}')" SConstruct  &&
+if [[ $WIDELANDS_SCM == y ]]; then
+sedit '354,+10d' build/scons-tools/scons_configure.py     &&
+find ./ -name ".svn" -type d -print0 | xargs -0 rm -rf {}
 else
-   echo "BUILD:=release" >> Makefile.local
-fi  &&
-
-if [ "${WIDELANDS_GGZ}" == "y" ]; then
-   echo "USE_GGZ:=YES" >> Makefile.local
-fi  &&
-
-if [ "${WIDELANDS_CVS}" == "y" ]; then  
-   for CVS_DIR in $(ls -lR * | grep "/CVS")
-   do
-      rm -rf "${CVS_DIR/:/}"
-   done
+sedit '354,+9d' build/scons-tools/scons_configure.py
 fi

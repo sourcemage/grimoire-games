@@ -1,25 +1,24 @@
            SPELL=widelands
-if  [ "$WIDELANDS_CVS" == "y" ];  then
-  if  [ "$WIDELANDS_CVS_AUTOUPDATE" == "y" ];  then
+if  [[ "$WIDELANDS_SCM" == "y" ]];  then
+if  [[ "$WIDELANDS_SCM_AUTOUPDATE" == "y" ]];  then
          VERSION=$(date +%Y%m%d)
-  else
-         VERSION=cvs
-  fi
-          SOURCE=${SPELL}-cvs.tar.bz2
-   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/widelands:widelands
+else
+         VERSION=scm
+fi
+          SOURCE=${SPELL}-svn.tar.bz2
+   SOURCE_URL[0]=svn_http://widelands.svn.sourceforge.net/svnroot/widelands/trunk:widelands-svn
    SOURCE_IGNORE=volatile
   FORCE_DOWNLOAD=on
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-cvs
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-svn
 else
-         VERSION=b9half
+         VERSION=build10
           SOURCE=${SPELL}-${VERSION}-source.tar.bz2
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+     SOURCE_HASH=sha512:75fca3f975dfc64f335ce73b8a1ddebe39335129e025c9124b1979b183d58632414ac89c1dcbbe33e84de8dc81bf057a88dfef264f846184e97d5ef9e6e4e7ab
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
 fi 
       LICENSE[0]=GPL
         WEB_SITE=http://wiki.widelands.org/tiki-index.php
-         ENTERED=20040925
          UPDATED=20040925
            SHORT="a strategy game aiming for gameplay similar to Settlers"
 cat << EOF

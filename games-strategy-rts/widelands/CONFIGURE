@@ -1,2 +1,7 @@
-config_query_list WIDELANDS_BUILD "What type of build?" release debug  &&
+config_query_list WIDELANDS_BUILD "What type of build?"  \
+                                  release                \
+                                  debug                  \
+                                  debug-no-parachute     \
+                                  debug-slow             \
+                                  profile                &&
 config_query WIDELANDS_GGZ "Enable GGZ support?" n
