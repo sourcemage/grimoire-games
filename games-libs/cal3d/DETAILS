@@ -1,12 +1,11 @@
            SPELL=cal3d
-         VERSION=0.10.0
-          SOURCE=$SPELL-full-$VERSION.tar.bz2
+         VERSION=0.11.0
+          SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/cal3d/$SOURCE
-     SOURCE_HASH=sha512:b60174ea93c6a5fbb04d82e68b45f5cefc842a3046132cf8cf4f07a83fc0b008440711f79f08d72fe76d6da888d6c5ef7a045db7d2af7a44ab32a487723db9b1
+   SOURCE_URL[0]=http://download.gna.org/$SPELL/sources/$SOURCE
+     SOURCE_HASH=sha512:4dc4b36b8f18760bfe6f8c80cbd941c14e2ebe596d0cd514fdb1ae4175bf2706e125665272d67ff21d33bb4b34e7be22bad9c00d488c1da21f442550bf3f204f
         WEB_SITE=http://sourceforge.net/projects/cal3d/
          ENTERED=20020915
-         UPDATED=20020915
       LICENSE[0]=LGPL
            SHORT="Skeletal based 3D character animation library"
 cat << EOF
