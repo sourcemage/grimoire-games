@@ -1,3 +1,14 @@
+2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: revamped
+	* DEPENDS: revamped
+	* DETAILS: update to 1.0.1
+	* INSTALL: removed
+	* PREPARE: removed
+	* WIP: removed
+	* crystalspace.sh: removed
+	* cs-pseudo-stable-2005-09-03.tar.bz2.sig: removed
+	* cs-pseudo-stable-2006-01-27.tar.bz2.sig: removed
+
 2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: use TRACK_ROOT when linking #9163
 

@@ -1,55 +1,91 @@
-depends  jam     &&
-depends  zlib    &&
-depends  libpng  &&
-depends  jpeg    &&
-
-optional_depends  python                                                    \
-                  ""                                                        \
-                  ""                                                        \
-                  "Support for Python (REQUIRED for Crystal Entity Layer)"  &&
-
-optional_depends  ode                               \
-                  ""                                \
-                  ""                                \
-                  "Support for ODE physics engine"  &&
-
-optional_depends  libvorbis                       \
-                  ""                              \
-                  ""                              \
-                  "Support for Ogg/Vorbis sound"  &&
-
+#depends  jam     &&
+depends  zlib  '--with-z'                              &&
+depends  libpng '--with-png'                           &&
+depends  jpeg   '--with-jpeg'                          &&
+depends  nasm                                          &&
+depends  X11-LIBS '--with-x'                           &&
+depends  OPENGL                                        &&
+. $GRIMOIRE/FUNCTIONS
+if check_if_xorg_modular_libs ; then
+  depends libxxf86vm '--with-xxf86vm'                  &&
+  depends libxaw '--with-xaw7'
+fi
+optional_depends  lcms                                 \
+                  "--with-lcms"                        \
+                  "--without-lcms"                     \
+                  "LCMS support?"                      &&
+optional_depends  bullet                               \
+                  "--with-bullet"                      \
+                  "--without-bullet"                   \
+                  "Bullet physics library support"     &&
+optional_depends  python                               \
+                  "--with-python"                      \
+                  "--without-python"                   \
+                  "Support for Python"                 &&
+optional_depends  perl                                 \
+                  "--with-perl"                        \
+                  "--without-perl"                     \
+                  "Perl support?"                      &&
+optional_depends  JAVA                                 \
+                  "--with-java"                        \
+                  "--without-java"                     \
+                  "Java scripting interface"           \
+                  z-rejected                           &&
+optional_depends  ode                                  \
+                  "--with-ode"                         \
+                  "--without-ode"                      \
+                  "Support for ODE physics engine"     &&
+optional_depends  libvorbis                            \
+                  "--with-vorbis"                      \
+                  "--without-vorbis"                   \
+                  "Support for Vorbis sound support"   &&
+optional_depends  libogg                               \
+                  "--with-ogg"                         \
+                  "--without-ogg"                      \
+                  "Support for Ogg container support"  &&
 optional_depends  libmng                               \
-                  "--with-libmng"                      \
-                  "--without-libmng"                   \
+                  "--with-mng"                         \
+                  "--without-mng"                      \
                   "Support for MNG/JNG graphic files"  &&
-
-optional_depends  nasm                                \
-                  "--with-nasm"                       \
-                  "--without-nasm"                    \
-                  "Support assembly language routines"
-
-optional_depends  freetype2                       \
-                  ""                              \
-                  ""                              \
-                  "Support for FreeType 2 fonts"  &&
-
-optional_depends  cal3d                            \
-                  ""                               \
-                  ""                               \
-                  "Support for the Cal3d library"  &&
-
-optional_depends  lib3ds                   \
-                  ""                       \
-                  ""                       \
-                  "Support for 3DS files"  &&
-
-optional_depends  mikmod                       \
-                  ""                           \
-                  ""                           \
-                  "Support for Mikmod player"  &&
-
-optional_depends  cegui                           \
-                  ""                              \
-                  ""                              \
+optional_depends  freetype2                            \
+                  "--with-freetype2"                   \
+                  "--without-freetype2"                \
+                  "Support for FreeType 2 fonts"       &&
+optional_depends  cal3d                                \
+                  "--with-cal3d"                       \
+                  "--without-cal3d"                    \
+                  "Support for the Cal3d library"      &&
+optional_depends  libcg                                \
+                  "--with-Cg"                          \
+                  "--without-Cg"                       \
+                  "Enable Cg support?"                 \
+                  z-rejected                           &&
+optional_depends  lib3ds                               \
+                  "--with-3ds"                         \
+                  "--without-3ds"                      \
+                  "Support for 3DS files"              &&
+optional_depends  mikmod                               \
+                  "--with-mikmod"                      \
+                  "--without-mikmod"                   \
+                  "Support for Mikmod player"          &&
+optional_depends  sdl                                  \
+                  "--with-sdl"                         \
+                  "--without-sdl"                      \
+                  "SDL support?"                       &&
+optional_depends  wxgtk                                \
+                  "--with-wx"                          \
+                  "--without-wx"                       \
+                  "WX Windows support?"                &&
+optional_depends  libcaca                              \
+                  "--with-caca"                        \
+                  "--without-caca"                     \
+                  "Enable caca support?"               &&
+optional_depends  alsa-lib                             \
+                  "--with-asound"                      \
+                  "--without-asound"                   \
+                  "Enable ALSA sound support?"         &&
+optional_depends  cegui                                \
+                  "--with-CEGUI"                       \
+                  "--without-CEGUI"                    \
                   "Support for the Cegui library"
 
