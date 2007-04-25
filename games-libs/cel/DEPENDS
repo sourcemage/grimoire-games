@@ -1,2 +1,7 @@
-depends  python        &&
-depends  crystalspace
+depends  crystalspace              &&
+sub_depends  crystalspace  PYTHON  &&
+depends  python                    &&
+depends  perl                      &&
+depends  swig                      &&
+depends  jam                       &&
+depends  hawknl

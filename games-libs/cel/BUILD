@@ -1,5 +1,11 @@
-# read the vars
-. ${INSTALL_ROOT}/etc/profile.d/crystalspace.sh                                &&
-cp ${INSTALL_ROOT}$CRYSTAL/bin/cs-config .                                     &&
-make                                                                             
+OPTS="--build=${BUILD} $OPTS"
+[[ $CROSS_INSTALL == on ]] && OPTS="$OPTS --host=${HOST}"
+
+./configure --prefix=${TRACK_ROOT}/usr              \
+            --sysconfdir=${TRACK_ROOT}/etc          \
+            --localstatedir=${TRACK_ROOT}/var       \
+            --mandir=${TRACK_ROOT}/usr/share/man    \
+            --infodir=${TRACK_ROOT}/usr/share/info  \
+            $OPTS                                   &&
+jam -q
 

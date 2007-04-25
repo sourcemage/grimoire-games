@@ -1,3 +1,11 @@
+2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: revamped
+	* DEPENDS: revamped
+	* DETAILS: updated to 1.0.1
+	* FINAL: removed
+	* INSTALL: revamped
+	* WIP: removed
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

@@ -1,16 +1,6 @@
-sedit "s/local/share/" $SOURCE_DIRECTORY/cel.cex                               &&
-cp -r $SOURCE_DIRECTORY           ${INSTALL_ROOT}/usr/share                    &&
-ln -sf ${INSTALL_ROOT}/usr/share/cel/*.so ${INSTALL_ROOT}/$CRYSTAL/lib         &&
-cp -r $SOURCE_DIRECTORY/cel.cex   ${INSTALL_ROOT}/$CRYSTAL/bin                 &&
-ln -sf ${INSTALL_ROOT}/$CRYSTAL/bin/cel.cex ${INSTALL_ROOT}/usr/games/cel.cex  &&
-ln -sf ${INSTALL_ROOT}/usr/share/cel/celtst ${INSTALL_ROOT}/usr/games/celtst   &&
-echo -e "#!/bin/sh \n
-
-# Needed to make symlinks/shortcuts work. \n
-# the binaries must run with correct working directory \n
-cd "${INSTALL_ROOT}/usr/share/cel/" \n ./celtst \$* \n exit \$?" >  myceltst &&
-install myceltst ${INSTALL_ROOT}/usr/games/celtst &&
-
-# have just copied shit so trim it out
-rm -rf ${INSTALL_ROOT}/usr/share/$SPELL/{autogen.sh,mk,CVS,msvc,old.libraries,plimp,blpython,bltest,persist,pf,configure.ac,Makefile,Jam*}
+jam -q install                              &&
+mkdir -vp ${INSTALL_ROOT}/usr/share/cel     &&
+rm data/Jamfile data/library/Jamfile        &&
+cp -vr data ${INSTALL_ROOT}/usr/share/cel/  &&
+sedit "s:VFS.Unix.CEL_DATADIR =.*:VFS.Unix.CEL_DATADIR = ${INSTALL_ROOT}/usr/share/cel/data:" ${INSTALL_ROOT}/etc/cel/vfs.cfg
 

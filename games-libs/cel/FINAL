@@ -1,3 +1,0 @@
-echo 'export CEL=/usr/share/cel'        > ${INSTALL_ROOT}/etc/profile.d/cel.sh   &&
-echo 'export CSCONFPATH=/usr/share/cel' >> ${INSTALL_ROOT}/etc/profile.d/cel.sh  
-
