@@ -1,0 +1,22 @@
+. $GRIMOIRE/is_depends_enabled.function
+case $THIS_SUB_DEPENDS in
+     PERL) is_depends_enabled $SPELL perl      ;;
+   PYTHON) is_depends_enabled $SPELL python    ;;
+     LCMS) is_depends_enabled $SPELL lcms      ;;
+   BULLET) is_depends_enabled $SPELL bullet    ;;
+      ODE) is_depends_enabled $SPELL ode       ;;
+   VORBIS) is_depends_enabled $SPELL libvorbis ;;
+      OGG) is_depends_enabled $SPELL libogg    ;;
+      MNG) is_depends_enabled $SPELL libmng    ;;
+FREETYPE2) is_depends_enabled $SPELL freetype2 ;;
+    CAL3D) is_depends_enabled $SPELL cal3d     ;;
+       CG) is_depends_enabled $SPELL libcg     ;;
+      3DS) is_depends_enabled $SPELL lib3ds    ;;
+   MIKMOD) is_depends_enabled $SPELL mikmod    ;;
+      SDL) is_depends_enabled $SPELL sdl       ;;
+    WXGTK) is_depends_enabled $SPELL wxgtk     ;;
+     CACA) is_depends_enabled $SPELL libcaca   ;;
+    CEGUI) is_depends_enabled $SPELL cegui     ;;
+*) message "${PROBLEM_COLOR}bogus sub_depends: $SPELL $THIS_SUB_DEPENDS${DEFAULT_COLOR}" ;
+   return 1;;
+esac

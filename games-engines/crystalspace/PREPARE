@@ -1,5 +1,0 @@
-#
-# Query User about CVS snapshots.
-#
-config_query	CS_CVS			\
-	"Use CVS Daily Snapshot?"	n
