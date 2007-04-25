@@ -1,4 +1,9 @@
-default_pre_build &&
-cd ${SOURCE_DIRECTORY} &&
-patch -p0 < ${SPELL_DIRECTORY}/configure.ac-x86_64-fix.patch &&
+default_pre_build                                             &&
+cd ${SOURCE_DIRECTORY}                                        &&
+if [[ $BZF_VERSION == release ]]; then
+patch -p0 < ${SPELL_DIRECTORY}/configure.ac-x86_64-fix.patch  &&
 patch -p0 < ${SPELL_DIRECTORY}/autogen.sh-automake.patch
+fi                                                            &&
+sedit 's:-O0::g' configure.ac                                 &&
+sedit 's:-Werror::g' configure.ac                             &&
+NOCONFIGURE=X ./autogen.sh

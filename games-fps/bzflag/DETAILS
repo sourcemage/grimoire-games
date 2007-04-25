@@ -1,12 +1,46 @@
            SPELL=bzflag
+if [[ $BZF_VERSION == "v2_0branch" ]]; then
+if [[ $BZF_SCM_AUTO == y ]]; then
+        VERSION="$(date +%Y%m%d)-$BZF_VERSION"
+else
+        VERSION=$BZF_VERSION
+fi
+          SOURCE=$SPELL-$BZF_VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
+   SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/branches/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
+   SOURCE_IGNORE=volatile
+
+elif [[ $BZF_VERSION == "v2_0_cs_branch" ]]; then
+if [[ $BZF_SCM_AUTO == y ]]; then
+        VERSION="$(date +%Y%m%d)-$BZF_VERSION"
+else
+        VERSION=$BZF_VERSION
+fi
+          SOURCE=$SPELL-$BZF_VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
+   SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/branches/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
+   SOURCE_IGNORE=volatile
+
+elif [[ $BZF_VERSION == "trunk" ]]; then
+if [[ $BZF_SCM_AUTO == y ]]; then
+        VERSION="$(date +%Y%m%d)-$BZF_VERSION"
+else
+        VERSION=$BZF_VERSION
+fi
+          SOURCE=$SPELL-$BZF_VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
+   SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
+   SOURCE_IGNORE=volatile
+
+else
          VERSION=2.0.8
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
      SOURCE_HASH=sha512:f965e2f74f265a4b648380cd1603b98646d32051bb2a293962a92601f7af5e0b4890b840585fd5e9e258259a2e331a032daf33a931658f6b6f0684b2d9c8d947
+fi
         WEB_SITE=http://www.bzflag.org/
          ENTERED=20010922
-         UPDATED=20050118
       LICENSE[0]=GPL
            SHORT="3D multiplayer network tank battle game"
 cat << EOF

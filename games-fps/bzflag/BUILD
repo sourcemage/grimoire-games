@@ -1,11 +1,2 @@
-OPTS="$BZFLAG_THREADS   \
-      $BZFLAG_ADMIN     \
-      $BZFLAG_CLIENT    \
-      $BZFLAG_ROBOTS    \
-      $BZFLAG_SNAPPING  \
-      $BZFLAG_CURL      \
-      $OPTS"            &&
-
-./autogen.sh  &&
-
+OPTS="$BZF_OPTS $OPTS" &&
 default_games_build

@@ -1,3 +1,11 @@
+2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: minor revamp
+	* CONFIGURE: minor changes
+	* DEPENDS: updates
+	* DETAILS: updated for more versions
+	* PREPARE: multiple versions
+	* PRE_BUILD: modified for multiple versions
+
 2006-11-09 David Brown <dmlb2000@gmail.com>
 	* PRE_BUILD: added patch to remove automake 1.10 usage
 	* autogen.sh-automake.patch: added

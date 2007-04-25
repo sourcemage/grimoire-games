@@ -1,23 +1,37 @@
-depends  OPENGL   &&
-
-if  [  "$BZFLAG_CLIENT"  ==  "--enable-client"  ];  then
-  depends  sdl  '--with-sdl'
-fi  &&
-
-if  [  "$BZFLAG_CURL"  ==  "--enable-curl"  ];  then
-  depends  curl  &&
-  #
-  # The curl test uses bc for calculations
-  #
-  depends  bc
-fi  &&
-
-optional_depends  krb5                                   \
-                  "--with-kerberos"                      \
-                  "--without-kerberos"                   \
-                  "for Kerberos authentication support"  &&
-
-optional_depends  adns                  \
-                  "--with-adns"         \
-                  "--without-adns"      \
+depends  g++                                                            &&
+depends zlib                                                            &&
+depends  curl                                                           &&
+depends  bc                                                             &&
+if [[ $BZF_VERSION != release ]]; then
+  depends subversion
+fi                                                                      &&
+optional_depends  ncurses                                               \
+                  "--enable-bzadmin"                                    \
+                  "--disable-bzadmin"                                   \
+                  "Build bzadmin text mode client"                      &&
+if list_find "$BZF_OPTS" "--enable-client" ; then
+depends  OPENGL                                                         &&
+depends  X11-LIBS                                                       &&
+. $GRIMOIRE/FUNCTIONS
+if check_if_xorg_modular_libs ; then
+  depends libxi                                                         &&
+  depends libxxf86vm
+fi                                                                      &&
+depends  sdl  "--with-sdl"                                              &&
+optional_depends  glew                                                  \
+                  ""                                                    \
+                  ""                                                    \
+                  "GLEW support"
+fi                                                                      &&
+optional_depends  krb5                                                  \
+                  "--with-kerberos"                                     \
+                  "--without-kerberos"                                  \
+ "for Kerberos authentication support(completly unsupported upstream)"  &&
+optional_depends  c-ares                                                \
+                  ""                                                    \
+                  ""                                                    \
+                  "C-ares support(RECOMMENDED)"                         &&
+optional_depends  adns                                                  \
+                  ""                                                    \
+                  ""                                                    \
                   "hostmask based bans"

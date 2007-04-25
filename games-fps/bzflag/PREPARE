@@ -1,0 +1,18 @@
+message "Quick recap of branches"
+message "release - the release that most servers run"
+message "v2_0branch - current release trunk"
+message "v2_0_cs_branch - experimental crystal space branch(no dependencies yet)"
+message "trunk - the latest and greates and possible very very broken trunk"
+config_query_list BZF_VERSION                             \
+                  "Which version would you like to use?"  \
+                   release                                \
+                   v2_0branch                             \
+                   v2_0_cs_branch                         \
+                   trunk                                  &&
+if [[ "$BZF_VERSION" == "v2_0branch" ]]                   ||
+   [[ "$BZF_VERSION" == "v2_0_cs_branch" ]]               ||
+   [[ "$BZF_VERSION" == "trunk" ]]
+   then
+   config_query BZF_SCM_AUTO \
+                "Update to the latest revision on every cast?" n
+fi
