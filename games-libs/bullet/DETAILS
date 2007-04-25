@@ -1,0 +1,16 @@
+           SPELL=bullet
+         VERSION=2.50b
+          SOURCE="${SPELL}-${VERSION}.tgz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:90a4011bb57204e5e028c7a0896765dea71b1657763301694f2881eaa8b8eba17a2bb794dbc3dd5dc9d84ab972d35f39cbee8eaa29bb65c7bcd3c8f840829853
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.continuousphysics.com/Bullet/index.html"
+      LICENSE[0]=zlib
+         ENTERED=20070425
+           SHORT="Bullet is a 3D Collision Detection and Rigid Body Dynamics Library for games and animation."
+cat << EOF
+Bullet is a state-of-the-art 3D Collision Detection and Rigid Body Dynamics
+Library for games. ZLib license, free for commercial use, including Playstation
+3. Supports COLLADA Physics. Visit forum at http://bulletphysics.com for
+support and feedback
+EOF
