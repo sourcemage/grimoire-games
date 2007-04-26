@@ -1,9 +1,19 @@
-depends  GLUT                         &&
-optional_depends yiff                 \
-                 ""                   \
-                 ""                   \
-                 "Sound support."     &&
-optional_depends libjsw               \
-                 ""                   \
-                 ""                   \
+depends  GLUT                                   &&
+depends  OPENGL                                 &&
+depends  X11-LIBS                               &&
+depends  libxpm                                 &&
+. $GRIMOIRE/FUNCTIONS
+if check_if_xorg_modular_libs ; then
+optional_depends libxxf86vm                     \
+                 ""                             \
+                 "--disable=XF86VidMode"        \
+                 "Enable XF86VidMode support."
+fi                                              &&
+optional_depends yiff                           \
+                 ""                             \
+                 "--disable=Y2"                 \
+                 "Sound support."               &&
+optional_depends libjsw                         \
+                 ""                             \
+                 "--disable=libjsw"             \
                  "Joystick support."

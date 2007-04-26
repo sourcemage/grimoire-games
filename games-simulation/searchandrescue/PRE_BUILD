@@ -1,6 +1,15 @@
-default_pre_build                            &&
-mkdir  $SOURCE_DIRECTORY/sandr-data          &&
-cd  $SOURCE_DIRECTORY/sandr-data             &&
-unpack_file  '2'                             &&
-patch $SOURCE_DIRECTORY/sar/gctl.c           \
-      $SCRIPT_DIRECTORY/namespace-fix.patch
+default_pre_build                                        &&
+mkdir -vp $SOURCE_DIRECTORY/sandr-data                   &&
+cd  $SOURCE_DIRECTORY/sandr-data                         &&
+unpack_file  2                                           &&
+cd $SOURCE_DIRECTORY                                     &&
+sedit 's:$(PREFIX)/man:$(PREFIX)/share/man:'             \
+      sar/Makefile.install.UNIX                          &&
+sedit '9i#include <string.h>' sar/explosion.c            &&
+sedit '9i#include <string.h>' sar/fire.c                 &&
+sedit '9i#include <string.h>' sar/sardrawmessages.c      &&
+sedit '9i#include <string.h>' sar/sardrawrunway.c        &&
+sedit '9i#include <stdio.h>' sar/gctl.c                  &&
+sedit '/extern\ char\ \*tzname\[2\]\;/d' sar/string.cpp  &&
+sedit '9i#include <string.h>' sar/sardraw.c              &&
+patch -p0 < $SPELL_DIRECTORY/searchandrescue-0.8.2-gcc41.patch

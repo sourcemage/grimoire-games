@@ -1,3 +1,11 @@
+2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* searchandrescue-0.8.2-gcc41.patch: added from gentoo
+	* namespace-fix.patch: removed no longer needed
+	* DETAILS: patchlevel++
+	* PRE_BUILD: fix some missing includes and paths and patch
+	* BUILD: minor fixups
+	* DEPENDS: fixup some depends
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
