@@ -1,0 +1,18 @@
+            SPELL=zx-fuse-utils
+              PKG=fuse-utils
+          VERSION=0.7.0
+           SOURCE=$PKG-$VERSION.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
+      SOURCE_HASH=sha512:d7e3513eb76164fc29f5c54d6d3084688a32ae02bcfd3d0bf2cdf895c2675aad8a020e60b308094c89d5ac5ab804f4545119d2cc64213f98d4f593ebefbee1a9
+    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
+         WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
+          ENTERED=20061007
+       LICENSE[0]=GPL
+            SHORT="Fuse (the Free Unix Spectrum Emulator) utils"
+cat << EOF
+Fuse (the Free Unix Spectrum Emulator) was originally,
+and somewhat unsurprisingly, a Spectrum emulator for Unix.
+However, it has now also been ported to Mac OS X, which
+may or may not count as a Unix variant depending on your
+advocacy position.
+EOF
