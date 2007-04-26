@@ -1,3 +1,9 @@
+2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: added force download
+	* PREPARE: fixed up the message
+	* DEPENDS: added crystalspace dep for branch
+	* INSTALL: copy the missing filse and set perms
+
 2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: minor revamp
 	* CONFIGURE: minor changes

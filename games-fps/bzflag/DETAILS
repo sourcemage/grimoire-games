@@ -9,7 +9,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
    SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/branches/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
    SOURCE_IGNORE=volatile
-
+  FORCE_DOWNLOAD=on
 elif [[ $BZF_VERSION == "v2_0_cs_branch" ]]; then
 if [[ $BZF_SCM_AUTO == y ]]; then
         VERSION="$(date +%Y%m%d)-$BZF_VERSION"
@@ -20,7 +20,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
    SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/branches/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
    SOURCE_IGNORE=volatile
-
+  FORCE_DOWNLOAD=on
 elif [[ $BZF_VERSION == "trunk" ]]; then
 if [[ $BZF_SCM_AUTO == y ]]; then
         VERSION="$(date +%Y%m%d)-$BZF_VERSION"
@@ -31,7 +31,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$BZF_VERSION
    SOURCE_URL[0]=svn_http://$SPELL.svn.sourceforge.net/svnroot/$SPELL/$BZF_VERSION/$SPELL:$SPELL-$BZF_VERSION
    SOURCE_IGNORE=volatile
-
+  FORCE_DOWNLOAD=on
 else
          VERSION=2.0.8
           SOURCE=$SPELL-$VERSION.tar.bz2

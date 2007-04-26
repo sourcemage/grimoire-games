@@ -1,9 +1,12 @@
 depends  g++                                                            &&
-depends zlib                                                            &&
+depends  zlib                                                           &&
 depends  curl                                                           &&
 depends  bc                                                             &&
 if [[ $BZF_VERSION != release ]]; then
   depends subversion
+fi                                                                      &&
+if [[ $BZF_VERSION == v2_0_cs_branch ]]; then
+  depends crystalspace
 fi                                                                      &&
 optional_depends  ncurses                                               \
                   "--enable-bzadmin"                                    \
