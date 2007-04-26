@@ -2,7 +2,7 @@
 	* DETAILS: added force download
 	* PREPARE: fixed up the message
 	* DEPENDS: added crystalspace dep for branch
-	* INSTALL: copy the missing filse and set perms
+	* INSTALL: copy the missing filse and set perms, minor fix
 
 2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: minor revamp

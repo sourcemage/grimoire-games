@@ -1,6 +1,6 @@
 make MKDIR_P="mkdir -p" install                &&
 if [[ $BZF_VERSION == v2_0_cs_branch ]]; then
-cp -v data/*.xml world                         \
+cp -v data/*.xml data/world                    \
       ${INSTALL_ROOT}/usr/share/games/bzflag/
 fi                                             &&
 cd ${INSTALL_ROOT}/usr/share/games/bzflag/     &&
