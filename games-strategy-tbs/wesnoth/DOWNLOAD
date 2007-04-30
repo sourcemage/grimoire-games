@@ -1,0 +1,27 @@
+default_download &&
+if [[ $WESNOTH_XDELTA == y ]]; then
+  # skip if we already have the new tarball
+  [[ -e $SOURCE_CACHE/$SPELL-$VERSION.tar.bz2 ]] && return 0
+
+  # if there was no old tarball the option was overriden, so check for that
+  if [[ ${SOURCE/xdelta/} != $SOURCE ]]; then 
+    # we have the xdelta and the old source, so make the new tarball
+    local old_source=$SPELL-$OLD_VERSION.tar.bz2 &&
+    pushd $SOURCE_CACHE &> /dev/null &&
+    cp $old_source $old_source.bk &&
+
+    message "Uncompressing old sources ..." &&
+    bunzip2 $old_source &&
+
+    message "Applying the xdelta ..." &&
+    xdelta patch $SOURCE &&
+
+    message "Compressing new sources ..." &&
+    bzip2 $SPELL-$VERSION.tar &&
+
+    rm ${old_source%.bz2} &&
+    mv $old_source.bk $old_source &&
+    popd &> /dev/null &&
+    message "Download complete!"
+  fi
+fi

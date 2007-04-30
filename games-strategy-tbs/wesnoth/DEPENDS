@@ -1,4 +1,12 @@
 depends  freetype2  &&
 depends  sdl_image  &&
 depends  sdl_mixer  &&
-depends  sdl_net
+depends  sdl_net &&
+
+if [[ $WESNOTH_DEVEL == y ]]; then
+  depends python
+fi &&
+
+if [[ $WESNOTH_XDELTA == y ]]; then
+  depends xdelta
+fi
