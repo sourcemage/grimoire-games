@@ -1,3 +1,6 @@
+2007-05-02 Eric Sandall <sandalle@sourcemage.org>
+	* games-strategy-tbs/freecol: Free Colonization clone
+
 2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-libs/bullet: new spell, 3D Collision Detection and Rigid Body
 	  Dynamics Library

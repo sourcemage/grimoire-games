@@ -1,0 +1,7 @@
+depends  ant   &&
+depends  JDK5  &&
+
+optional_depends  tetex                  \
+                  '--with-docs'          \
+                  ''                     \
+                  'build documentation'

@@ -1,0 +1,12 @@
+chown  -R  root:games  *                          &&
+mkdir  -p  $INSTALL_ROOT/usr/share/games/freecol  &&
+
+cp  -av  `ls|grep -v doc`  $INSTALL_ROOT/usr/share/games/freecol  &&
+
+install  -m 0750  -o root  -g games  $SCRIPT_DIRECTORY/freecol  \
+         $INSTALL_ROOT/usr/games/freecol                        &&
+
+if  list_find  "$OPTS"  '--with-docs';  then
+  mkdir  -p  $INSTALL_ROOT/usr/share/doc/freecol      &&
+  cp -av  doc/*  $INSTALL_ROOT/usr/share/doc/freecol
+fi

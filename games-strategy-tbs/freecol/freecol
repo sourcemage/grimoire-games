@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd  /usr/share/games/freecol  &&
+java  -Xmx256M -jar FreeCol.jar $@  &&
+cd -
