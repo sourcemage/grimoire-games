@@ -1,3 +1,6 @@
+2007-06-08 Eric Sandall <sandalle@sourcemage.org>
+	* games-cards/elitaire: Moved from test/e/elitaire (Bug #13821)
+
 2007-05-02 Eric Sandall <sandalle@sourcemage.org>
 	* games-strategy-tbs/freecol: Free Colonization clone
 
