@@ -1,2 +1,1 @@
-OPTS="--localstatedir=${INSTALL_ROOT}/var/games $OPTS"  &&
-default_build
+default_games_build

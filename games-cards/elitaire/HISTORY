@@ -1,3 +1,15 @@
+2007-06-08 Eric Sandall <sandalle@sourcemage.org>
+	* PREPARE: Query for CVS and autoupdate for CVS
+	  Default 'y' for CVS as stable is broken (cannot find eet-config, which
+	  eet does not install)
+	* DETAILS: Enable CVS version
+	* DEPENDS: Depend on a provider of CVS if using CVS version
+	  Both stable and CVS use freetype2 for fonts
+	  Both stable and CVS depend on pkgconfig
+	* PRE_BUILD: If using CVS version run ./autogen.sh
+	  Fix configure.ac to use /usr/share/games, ignores --datadir!
+	* BUILD: Use default_games_build
+
 2006-06-08 Ladislav Hagara <hgr@vabo.cz>
 	* *: created this spell, version 0.0.8
 

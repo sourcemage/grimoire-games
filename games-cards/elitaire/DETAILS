@@ -1,13 +1,26 @@
            SPELL=elitaire
+if  [[  "$ELITAIRE_CVS"  ==  "y"  ]];  then
+  if  [[  "$ELITAIRE_CVS_AUTOUPDATE"  ==  "y"  ]];  then
+         VERSION=$(date +%Y%m%d)
+  else
+         VERSION=cvs
+  fi
+          SOURCE=$SPELL-cvs.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-cvs
+   SOURCE_URL[0]=cvs://:pserver:anonymous@anoncvs.enlightenment.org:/var/cvs/e:e17/apps/$SPELL
+   SOURCE_IGNORE=volatile
+  FORCE_DOWNLOAD="on"
+else
          VERSION=0.0.8
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.mowem.de/elitaire/$SOURCE
      SOURCE_HASH=sha512:30a49544572b2de9caae18e0b97da2f04541ac6c7d280ae41bc6bc8b3d629a1e0e1cae931f7ef3083530de7d4f494fd5a0280dac90a2f1e92d26c72b196c133e
-        WEB_SITE=http://www.mowem.de/elitaire/
-         ENTERED=20060608
+fi
       LICENSE[0]=GPL
+        WEB_SITE=http://www.mowem.de/elitaire/
         KEYWORDS="enlightenment"
+         ENTERED=20060608
            SHORT="EFL based solitaire card game"
 cat << EOF
 elitaire is an efl (The Enlightenment Foundation Libraries) based solitaire card

@@ -1,0 +1,11 @@
+default_pre_build  &&
+
+if  [  "$ELITAIRE_CVS"  ==  "y"  ];  then
+  cd  $SOURCE_DIRECTORY         &&
+  sedit  's:/share/${PACKAGE}:/share/games/${PACKAGE}:g'  configure.ac  &&
+  #
+  # NOCONFIGURE=ON is ignored anyways, but we'll still use it in case they
+  # ever fix their autogen.sh
+  #
+  NOCONFIGURE=ON  ./autogen.sh
+fi
