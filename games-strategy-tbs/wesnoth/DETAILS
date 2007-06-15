@@ -1,9 +1,9 @@
            SPELL=wesnoth
   if [[ ${WESNOTH_DEVEL} == y ]]; then
-         VERSION=1.3.2
-     OLD_VERSION=1.3.1
+         VERSION=1.3.3
+     OLD_VERSION=1.3.2
      # this is always the hash for the $VERSION tarball
-     SOURCE_HASH=sha512:b1eebd11abec13f590062f8d549d3cc82918ef6001516b810d37ba05c82c1ec0ce5e0173a307f6ac8752f6100c83d379ea849c190cb283ac3d8baaa99a4f451b
+     SOURCE_HASH=sha512:8e38cc3e8714e2183ab8373f0ee09d88d29887e9e2a2e095c0c780824f00a72bb190aa2236d61686ad9ed59c4552d85e30922b8d99d2a6311a1d18159cff275d
   else
          VERSION=1.2.4
      OLD_VERSION=1.2.3
