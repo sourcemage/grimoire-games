@@ -13,6 +13,7 @@ optional_depends  ncurses                                               \
                   "--disable-bzadmin"                                   \
                   "Build bzadmin text mode client"                      &&
 if list_find "$BZF_OPTS" "--enable-client" ; then
+depends  glew                                                           &&
 depends  OPENGL                                                         &&
 depends  X11-LIBS                                                       &&
 . $GRIMOIRE/FUNCTIONS
@@ -21,10 +22,6 @@ if check_if_xorg_modular_libs ; then
   depends libxxf86vm
 fi                                                                      &&
 depends  sdl  "--with-sdl"                                              &&
-optional_depends  glew                                                  \
-                  ""                                                    \
-                  ""                                                    \
-                  "GLEW support"
 fi                                                                      &&
 optional_depends  krb5                                                  \
                   "--with-kerberos"                                     \

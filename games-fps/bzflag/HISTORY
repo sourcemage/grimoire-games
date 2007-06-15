@@ -1,3 +1,7 @@
+2007-06-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: changed glew to hard dependency build system
+	  amazingly idiotic wrt to dependencies
+
 2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: added force download
 	* PREPARE: fixed up the message
