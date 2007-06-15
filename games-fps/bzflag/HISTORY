@@ -1,6 +1,8 @@
 2007-06-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: changed glew to hard dependency build system
 	  amazingly idiotic wrt to dependencies
+	  hardcoded c-ares as well it needs it else it'll use internal
+	  one
 
 2007-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: added force download

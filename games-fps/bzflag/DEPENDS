@@ -14,6 +14,7 @@ optional_depends  ncurses                                               \
                   "Build bzadmin text mode client"                      &&
 if list_find "$BZF_OPTS" "--enable-client" ; then
 depends  glew                                                           &&
+depends  c-ares                                                         &&
 depends  OPENGL                                                         &&
 depends  X11-LIBS                                                       &&
 . $GRIMOIRE/FUNCTIONS
@@ -27,10 +28,6 @@ optional_depends  krb5                                                  \
                   "--with-kerberos"                                     \
                   "--without-kerberos"                                  \
  "for Kerberos authentication support(completly unsupported upstream)"  &&
-optional_depends  c-ares                                                \
-                  ""                                                    \
-                  ""                                                    \
-                  "C-ares support(RECOMMENDED)"                         &&
 optional_depends  adns                                                  \
                   ""                                                    \
                   ""                                                    \
