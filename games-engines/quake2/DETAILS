@@ -1,15 +1,14 @@
            SPELL=quake2
-         VERSION=r0.15
+         VERSION=r0.16.2
           SOURCE=$SPELL-$VERSION.tar.gz
 	 SOURCE2=maxpak.pak
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://icculus.org/$SPELL/files/$SOURCE
   SOURCE2_URL[0]=http://icculus.org/$SPELL/files/$SOURCE2
-     SOURCE_HASH=sha512:5750c0aabbee8968b4cb4d8760c40ba3846a0f9d513e11ba38bc3e9b8359ba6d038060040eeae0380ad0359585f056117d93754555f2c190b0db9e69ead8d2e7
+     SOURCE_HASH=sha512:4fcf93e50e1d827266602d062ffb05aca613e3d56e6dfefcf1ddbac295182745231eede5028ed31683aee1f3ec37900373d435403a6f4ab625d46e15be88fc14
     SOURCE2_HASH=sha512:49eef504190323add8bbe6fd007ee51a17dc843898a2199a44a0b214a14da90202070f9eb025503c58b64d6306832bdb6c0d04efe927ea651eb83b0517a59782
         WEB_SITE=http://www.idsoftware.com
          ENTERED=20020408
-         UPDATED=20020408
       LICENSE[0]=GPL
       LICENSE[1]=GPL
            SHORT="The sequel to the mother of all games."
