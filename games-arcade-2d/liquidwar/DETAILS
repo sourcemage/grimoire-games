@@ -1,12 +1,13 @@
            SPELL=liquidwar
-         VERSION=5.6.2
+         VERSION=5.6.3
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://liquidwar.sunsite.dk/archive/${SOURCE}
-     SOURCE_HASH=sha512:72296ee4ca39440a63e4478e81047405b50ca308246dbc502adc7cd3fed9e8b48d0ca540e91465d28c2b7f18c92741b514bee109752f07e61eaaf98ba0cf20d0
+   SOURCE_URL[0]=http://www.ufoot.org/archive/$SOURCE
+   SOURCE_URL[1]=http://download.savannah.nongnu.org/releases/liquidwar/$SOURCE
+   SOURCE_URL[2]=http://ufoot.hd.free.fr/pub/archive/$SOURCE
+     SOURCE_HASH=sha512:b50521dba567c6da00744bcadb9dec5978129076ba534cca3fe055fa0e3af1433a7f096e58df95609a7695c67dafd85b858d650ad11b4e6825c3827334439b60
         WEB_SITE=http://www.ufoot.org/liquidwar/
          ENTERED=20020210
-         UPDATED=20050920
       LICENSE[0]=GPL
            SHORT="Liquid War is a unique multiplayer wargame."
 cat << EOF
