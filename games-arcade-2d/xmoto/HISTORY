@@ -1,3 +1,8 @@
+2007-07-11 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.3.1
+	* DEPENDS: added optional dependency on sqlite, depends on curl and
+	  sdl_ttf now
+
 2007-04-04 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: updated download url, no longer SF
 

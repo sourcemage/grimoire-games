@@ -1,17 +1,14 @@
+depends curl       &&
 depends g++        &&
 depends OPENGL     &&
 depends sdl        &&
 depends sdl_mixer  &&
+depends sdl_ttf    &&
 depends lua        &&
 depends ode        &&
 depends jpeg       &&
 depends libpng     &&
 depends zlib       &&
-
-optional_depends  curl                           \
-                  "--with-enable-www=1"          \
-                  "--with-enable-www=0"          \
-                  "for online highscore system"  &&
 
 optional_depends  gettext                                    \
                   "--enable-nls --without-included-gettext"  \
@@ -22,6 +19,11 @@ optional_depends  sdl_gfx                     \
                   "--with-renderer-sdlGfx=1"  \
                   "--with-renderer-sdlGfx=0"  \
                   "to use SdlGfx renderer"    &&
+
+optional_depends  sqlite                                  \
+                  ""                                      \
+                  ""                                      \
+                  "for better and faster data managing"   &&
 
 optional_depends  xmoto-edit                     \
                   ""                             \
