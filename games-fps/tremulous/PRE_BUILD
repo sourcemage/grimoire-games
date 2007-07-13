@@ -1,4 +1,5 @@
 default_pre_build                        &&
 cd ${SOURCE_DIRECTORY}                   &&
 rm *.exe *.ico                           &&
-tar -xzf ${SPELL}-${VERSION}-src.tar.gz 	         
+tar -xzf ${SPELL}-${VERSION}-src.tar.gz  &&
+sed -i 's,-Werror,,' */src/tools/asm/Makefile
