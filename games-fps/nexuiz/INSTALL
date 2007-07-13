@@ -5,11 +5,11 @@ chmod 755 data/                                      &&
 chmod -R 744 data/*                                  &&
 cp -ar data ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
 
-install -m 755 darkplaces/nexuiz-glx                 \
+install -m 755 darkplaces/darkplaces-glx                 \
 ${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
-install -m 755 darkplaces/nexuiz-sdl                 \
+install -m 755 darkplaces/darkplaces-sdl                 \
 ${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
-install -m 755 darkplaces/nexuiz-dedicated           \
+install -m 755 darkplaces/darkplaces-dedicated           \
 ${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
 
 mkdir -p ${INSTALL_ROOT}/usr/games                   &&
@@ -21,7 +21,8 @@ install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-dedicated  \
 ${INSTALL_ROOT}/usr/games                            &&
 
 mkdir -p ${INSTALL_ROOT}/usr/share/doc/${SPELL}      &&
-install -m 755 Docs/*                                \
+cp -r Docs/*                                       \
 ${INSTALL_ROOT}/usr/share/doc/${SPELL}               &&
+chmod -R 755 $INSTALL_ROOT/usr/share/doc/$SPELL      &&
 install -m 755 darkplaces/darkplaces.txt             \
 ${INSTALL_ROOT}/usr/share/doc/${SPELL} 

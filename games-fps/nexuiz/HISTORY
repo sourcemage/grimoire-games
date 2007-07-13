@@ -1,3 +1,10 @@
+2007-07-13 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* nexuiz-*: fix bin name
+	* BUILD: unpack both files
+	* INSTALL: fixed for bin renames and doc installation
+	* DETAILS: Fixed SOURCE_URL[0]
+	  updated spell to 23
+
 2006-11-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: minor fix of SOURCE_URL
 
