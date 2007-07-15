@@ -1,3 +1,6 @@
+2007-07-15 Ethan "eekee" Grammatikidis <eekee57@fastmail.fm>
+	* PRE_BUILD: removed broken sedit
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

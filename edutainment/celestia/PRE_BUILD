@@ -8,11 +8,6 @@ sedit  "s:CFLAGS=\"-O2 -Wall -ffast-math -fexpensive-optimizations:CFLAGS=\"$CFL
 sedit  "s:CXXFLAGS=\"-O2 -Wall -ffast-math -fexpensive-optimizations:CXXFLAGS=\"$CXXFLAGS:"  configure.in  &&
 
 #
-# Remove checks for JPEG and PNG, somehow they're broken...
-#
-sedit '296,307d'  configure.in  &&
-
-#
 # Remake ./configure with our changes
 #
 rm  -f  configure  &&
