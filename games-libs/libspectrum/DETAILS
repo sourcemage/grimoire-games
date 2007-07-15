@@ -1,11 +1,11 @@
            SPELL=libspectrum
-         VERSION=0.2.2
+         VERSION=0.3.0.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
         WEB_SITE=http://fuse-emulator.sourceforge.net/libspectrum.php
          ENTERED=20040425
-     SOURCE_HASH=sha512:28c7fff48624b73452a4e00b3b529ec1019a86feed07f7ff70206a961f019a3f3e3ed84f709f435c507c956d252744fbebe2f6d426db019f5486284934c5339e
+     SOURCE_HASH=sha512:9da31be8e381d9052de6c7ca079ec9489fa5829095b29147c2d16aeaeb2f240a69d93a3317fb494d3cb67d31a00c1cebec2ca8afd5b7656a37cd7d79d96c08eb
       LICENSE[0]=GPL
            SHORT="libspectrum - file i/o for ZX Spectrum emulator"
 cat << EOF

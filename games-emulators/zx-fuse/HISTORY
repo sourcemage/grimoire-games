@@ -1,3 +1,8 @@
+2007-07-15 Lubomir Blaha <tritol@trilogic.cz>
+	* DETAILS: updated to 0.8.0.1
+	* DETAILS: upstream GPG signing -> SHA512 (GPG no longer provided)
+	* BUILD: remove make_single and make_normal
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
