@@ -1,9 +1,9 @@
             SPELL=zx-fuse-utils
               PKG=fuse-utils
-          VERSION=0.7.0
+          VERSION=0.8.0.1
            SOURCE=$PKG-$VERSION.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
-      SOURCE_HASH=sha512:d7e3513eb76164fc29f5c54d6d3084688a32ae02bcfd3d0bf2cdf895c2675aad8a020e60b308094c89d5ac5ab804f4545119d2cc64213f98d4f593ebefbee1a9
+      SOURCE_HASH=sha512:ee83f2e7ebc87c6589f8322218ca6bafc8b5b8f9fb2a02860d96e824d1c5bfdd5c6d5849f16d9b1e66ee0f1b4b17aad03efd7365b979e6d522caeccd96b7a15c
     SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
          WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
           ENTERED=20061007
