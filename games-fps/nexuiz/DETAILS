@@ -1,12 +1,11 @@
            SPELL=nexuiz
-         VERSION=15
-          SOURCE=${SPELL}${VERSION}.zip
+         VERSION=23
+          SOURCE=${SPELL}-${VERSION}.zip
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:06e41877c39bf2f74fc6b666fce76a97d319ccb380f3b0075fd7dbc9ff74f2e5da848a176f5b620cf64d95baecfb3b845752e607cb3fa698caf28401efd5f8cc
+     SOURCE_HASH=sha512:a9cc42331f53e15b8b3a9933b5f4e5997438761e4e498ac76850b8084e25c201ec6b87313d8dbc6cc4e740af94608f215cbfb87c73c4bf87c4597b66ae3914d2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Nexuiz
         WEB_SITE=http://www.nexuiz.com
          ENTERED=20050724
-         UPDATED=20050724
       LICENSE[0]=GPL
            SHORT="Nexuiz is a fast-paced, chaotic, and intense
 multiplayer first person shooter, focused on providing basic, old style

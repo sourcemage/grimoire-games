@@ -1,1 +1,1 @@
-exec /usr/share/games/nexuiz/nexuiz-glx -basedir /usr/share/games/nexuiz
+exec /usr/share/games/nexuiz/darkplaces-glx -basedir /usr/share/games/nexuiz

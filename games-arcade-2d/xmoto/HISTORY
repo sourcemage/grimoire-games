@@ -1,4 +1,7 @@
 2007-07-11 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: depends on sqlite hardly
+
+2007-07-11 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.3.1
 	* DEPENDS: added optional dependency on sqlite, depends on curl and
 	  sdl_ttf now

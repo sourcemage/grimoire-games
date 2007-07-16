@@ -4,6 +4,7 @@ depends OPENGL     &&
 depends sdl        &&
 depends sdl_mixer  &&
 depends sdl_ttf    &&
+depends sqlite     &&
 depends lua        &&
 depends ode        &&
 depends jpeg       &&
@@ -19,11 +20,6 @@ optional_depends  sdl_gfx                     \
                   "--with-renderer-sdlGfx=1"  \
                   "--with-renderer-sdlGfx=0"  \
                   "to use SdlGfx renderer"    &&
-
-optional_depends  sqlite                                  \
-                  ""                                      \
-                  ""                                      \
-                  "for better and faster data managing"   &&
 
 optional_depends  xmoto-edit                     \
                   ""                             \

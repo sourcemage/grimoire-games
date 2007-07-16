@@ -1,3 +1,6 @@
+2007-07-13 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD: remove -Werror
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2 and MAINTAINER.
 
