@@ -1,12 +1,11 @@
            SPELL=allegro
-         VERSION=4.2.0
+         VERSION=4.2.2
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/alleg/${SOURCE}
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:062ec7484e3a035ab054d25d4f2f86fff18a13bc0ebee0840c78a82387311712d8992f5fe55c8353d52774be6934b1e81485468d338f0e5b7d66c552ebf68b99
         WEB_SITE=http://alleg.sourceforge.net/
          ENTERED=20020107
-         UPDATED=20021025
       LICENSE[0]=http://alleg.sourceforge.net/license.html
            SHORT="Allegro is a cross-platform game library."
 cat << EOF
