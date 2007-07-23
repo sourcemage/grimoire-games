@@ -22,7 +22,7 @@ if check_if_xorg_modular_libs ; then
   depends libxi                                                         &&
   depends libxxf86vm
 fi                                                                      &&
-depends  sdl  "--with-sdl"                                              &&
+depends  sdl  "--with-sdl"
 fi                                                                      &&
 optional_depends  krb5                                                  \
                   "--with-kerberos"                                     \

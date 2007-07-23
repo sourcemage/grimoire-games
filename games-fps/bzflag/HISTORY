@@ -1,3 +1,6 @@
+2007-07-23 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: stray &&
+
 2007-06-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: changed glew to hard dependency build system
 	  amazingly idiotic wrt to dependencies
