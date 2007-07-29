@@ -1,0 +1,2 @@
+make install &&
+mv $INSTALL_ROOT/usr/bin/ja2 $INSTALL_ROOT/usr/games

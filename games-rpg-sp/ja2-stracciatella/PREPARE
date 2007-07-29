@@ -1,0 +1,22 @@
+if [[ $JA2_INTRO == 1 ]]; then
+  return 0
+fi &&
+message "$MESSAGE_COLOR
+ja2-stracciatella requires
+an installation of Jagged Alliance 2 performed in Windows
+or
+files from the original Linux version.
+- unpack all the files from /tar on installer CD to \$SGPDATADIR
+- Copy contents of game CD to \$SGPDATADIR
+- Rename "data" to "Data" in \$SGPDATADIR
+- Rename "tilecache" to "TILECACHE" in \$SGPDATADIR/Data
+
+Once you have that set up, you can cast the spell and it will
+lowercase and prepare the files for you.
+$DEFAULT_COLOR" &&
+if query "Are you ready to cast ja2-stracciatella?" n; then
+  persistent_add JA2_INTRO
+  JA2_INTRO=1
+else
+  return 1
+fi

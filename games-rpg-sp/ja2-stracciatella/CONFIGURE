@@ -1,0 +1,3 @@
+config_query_string JA2_DATA "What is the path to your ja2 installation? " &&
+config_query_list JA2_LANG "Which language data files will you be using?" \
+  ENGLISH GERMAN POLISH RUSSIAN RUSSIAN_GOLD

@@ -1,0 +1,4 @@
+message "$MESSAGE_COLOR
+Run ja2 once to generate the settings in ~/.ja2;
+Then change the data_dir entry to 'data_dir = $JA2_DATA' in ~/.ja2/ja2.ini
+$DEFAULT_COLOR"

@@ -1,0 +1,8 @@
+2007-07-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* FINAL, PRE_BUILD, CONFIGURE, make_*.patch, PREPARE: completed and 0.5
+
+2007-03-21 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS, DEPENDS, BUILD, INSTALL, HISTORY: created spell
+
+
+

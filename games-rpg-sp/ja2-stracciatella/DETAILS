@@ -1,0 +1,16 @@
+           SPELL=ja2-stracciatella
+         VERSION=0.5
+          SOURCE="ja2-$VERSION-source.tar.bz2"
+   SOURCE_URL[0]=http://ja2.dragonriders.de/files/$SOURCE
+     SOURCE_HASH=sha512:0a7304542398ee51aa71bc4a50b72aed5fea2501ddb074d8f91d0a108811874c33accdee04cfbe6864943a10d959276fc255d715f0c874fcefa46007104435c8
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/ja2-$VERSION"
+        WEB_SITE="http://ja2.dragonriders.de"
+      LICENSE[0]=free
+         ENTERED=20070321
+           SHORT="a port of Jagged Alliance 2 to SDL"
+cat << EOF
+ja2-stracciatella is a port of Jagged Alliance 2 to SDL with a few added
+bugfixes.
+
+You need the original data files from either ja2 version.
+EOF
