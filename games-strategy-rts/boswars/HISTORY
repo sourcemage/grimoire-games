@@ -1,3 +1,7 @@
+2007-08-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Fixed SOURCE_URL[0]
+	  updated spell to 2.4
+
 2007-03-05 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: update to 2.3
 	* BUILD: branched and updated
