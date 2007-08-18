@@ -1,7 +1,12 @@
-depends  GLUT    &&
-depends  python  &&
-depends  sdl     &&
-depends  libpng  &&
-depends  jpeg    &&
-depends  perl    &&
+depends  SVN      &&
+depends  automake &&
+depends  autoconf &&
+depends  expat    &&
+depends  gtk+2    &&
+depends  GLUT     &&
+depends  python   &&
+depends  sdl      &&
+depends  libpng   &&
+depends  jpeg     &&
+depends  perl     &&
 depends  openal

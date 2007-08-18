@@ -1,3 +1,13 @@
+2007-08-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD, DETAILS, DEPENDS, INSTALL,
+	  PRE_BUILD, DOWNLOAD, PREPARE: switched to svn,
+	  the project has been using it for quite some time
+	  now and the cvs repository doesn't exist anymore.
+	  Added an option to build the development version.
+	  The way the source is fetched in DOWNLOAD is a
+	  mess, if anyone has a better idea at how to do
+	  this please implement it...
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

@@ -1,10 +1,13 @@
 mk_source_dir $SOURCE_DIRECTORY     &&
 cd $SOURCE_DIRECTORY                &&
-unpack_file             &&
-mv $SPELL-$VERSION $SPELL           &&
-unpack_file 2           &&
-mv $SPELL-$VERSION-data data        &&
-unpack_file 3           &&
-mv $SPELL-$VERSION-vssetup vssetup  &&
-unpack_file 4           &&
-mv $SPELL-$VERSION-music data/music 
+unpack_file                         &&
+unpack_file 2                       &&
+cd ${SOURCE_DIRECTORY}/vegastrike   &&
+if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
+	./bootstrap-sh
+else 
+	aclocal        &&
+	autoconf   -f  &&
+	autoheader -f  &&
+	automake  -acf
+fi

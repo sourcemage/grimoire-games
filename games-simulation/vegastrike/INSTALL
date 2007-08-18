@@ -1,31 +1,9 @@
-cd data                                                          &&
-cp ../vssetup/src/bin/setup ./vssetup                            &&
-cp ../vegastrike/src/vegastrike .                                &&
-cp ../vegastrike/src/networking/soundserver .                    &&
-cp ../vegastrike/launcher/vslauncher .                           &&
-
-mkdir -p ${INSTALL_ROOT}/usr/games                               &&
-install -m 755 ./vssetup ${INSTALL_ROOT}/usr/games/vssetup       &&
-install -m 755 ./vegastrike ${INSTALL_ROOT}/usr/games/vegastrike &&
-install -m 755 ./vslauncher ${INSTALL_ROOT}/usr/games/vslauncher &&
-
-mkdir -p /usr/share/man/man1                                     &&
-install -m 644 documentation/vegastrike.1 \
-${INSTALL_ROOT}/usr/share/man/man1/vegastrike.1                  &&
-install -m 644 documentation/vslauncher.1 \
-${INSTALL_ROOT}/usr/share/man/man1/vslauncher.1                  &&
-install -m 644 documentation/vssetup.1 \
-${INSTALL_ROOT}/usr/share/man/man1/vssetup.1                     &&
-
-cd ..                                                            &&
+local INSTALL="install -o root -g games"
 mkdir -p ${INSTALL_ROOT}/usr/share/games/vegastrike              &&
-cp -ar data ${INSTALL_ROOT}/usr/share/games/vegastrike           &&
-
-install -m 755 ${SCRIPT_DIRECTORY}/vsinstall \
-${INSTALL_ROOT}/usr/games/vsinstall                              &&
-
-#stupid hack to let the soft know where the data are at runtime.
-#and I know the ident suck but I wasn't sure I could cut in the
-#middle of a sed.
-sedit '393i\ \t\t\t<var name="datadir" value="/usr/share/games/vegastrike/data"/>' \
-${INSTALL_ROOT}/usr/share/games/vegastrike/data/vegastrike.config
+cp -R ${SOURCE_DIRECTORY}/data4.x \
+	   ${INSTALL_ROOT}/usr/share/games/vegastrike/data4.x    &&
+$INSTALL -m 755 ${SOURCE_DIRECTORY}/vegastrike/vssetup \
+	${INSTALL_ROOT}/usr/games                                &&
+cd ${SOURCE_DIRECTORY}/vegastrike                                &&
+default_install                                                  &&
+$INSTALL $SCRIPT_DIRECTORY/vsinstall $INSTALL_ROOT/usr/games
