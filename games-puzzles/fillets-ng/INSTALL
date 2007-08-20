@@ -1,1 +1,3 @@
-cp -v src/game/fillets  ${INSTALL_ROOT}/usr/games
+cp -v src/game/fillets  $INSTALL_ROOT/usr/games/fillets-bin &&
+cp -v $SPELL_DIRECTORY/fillets  $INSTALL_ROOT/usr/games/
+

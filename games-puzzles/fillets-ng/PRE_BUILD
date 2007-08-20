@@ -1,4 +1,0 @@
-default_pre_build     &&
-cd $SOURCE_DIRECTORY  &&
-patch -p0 < $SCRIPT_DIRECTORY/fish-fillets-0.7.3-use-lua-pkg-config.patch  &&
-autoconf

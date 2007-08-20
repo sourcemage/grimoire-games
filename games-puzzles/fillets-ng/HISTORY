@@ -1,3 +1,9 @@
+2007-08-20 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 0.7.4
+	  fixed long description wrap
+	* DEPENDS: changed data to runtime_depends
+	* fillets, INSTALL: added wrapper to pass the data path
+
 2006-09-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* fish-fillets-0.7.3-use-lua-pkg-config.patch: addde from:
 	  http://sources.gentoo.org/viewcvs.py/gentoo-x86/games-puzzle/fish-fillets/files/fish-fillets-0.7.3-use-lua-pkg-config.patch?view=markup

@@ -1,0 +1,2 @@
+#!/bin/bash
+fillets-bin systemdir=/usr/share/games/fillets-ng

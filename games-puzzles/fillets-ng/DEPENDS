@@ -3,8 +3,8 @@ depends sdl             &&
 depends sdl_mixer       &&
 depends sdl_image       &&
 depends sdl_ttf         &&
-depends fillets-ng-data &&
+runtime_depends fillets-ng-data &&
 if [ $CZECH == "y" ]
 then
-	depends fillets-ng-data-cs
+	runtime_depends fillets-ng-data-cs
 fi
