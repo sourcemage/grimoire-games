@@ -4,7 +4,4 @@ depends sdl_mixer       &&
 depends sdl_image       &&
 depends sdl_ttf         &&
 runtime_depends fillets-ng-data &&
-if [ $CZECH == "y" ]
-then
-	runtime_depends fillets-ng-data-cs
-fi
+persistent_remove CZECH
