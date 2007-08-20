@@ -1,14 +1,17 @@
            SPELL=fillets-ng-data
-         VERSION=0.7.1
+         VERSION=0.7.4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fillets/$SPELL-$VERSION.tar.gz
         WEB_SITE=http://fillets.sf.net
          ENTERED=20040822
-         UPDATED=20051216
-     SOURCE_HASH=sha512:603bbbdc6b45cd068e051e773deff876f92c3187161e834598cdf79d8fb60d829976d526ecf41501eeef50ed6a8065550d04e36c9e61c1e91b369ee26525e894:UPSTREAM_HASH
+     SOURCE_HASH=sha512:31aae1ce62b558188c88b5bd31cf78fd8cab3899ad93a62f92e26741eb50099aabaccf9e397ce16b01370b245a27cf7f1bc162b80e7906685b770bb2d4d2c680
       LICENSE[0]=GPL
            SHORT='Data files for fillets-ng game'
 cat << EOF
-Fish Fillets is strictly a puzzle game. The goal in every of the seventy levels is always the same:  find a safe way out. The fish utter witty remarks about their surroundings, the various inhabitants of their underwater realm quarrel among themselves or comment on the efforts of your fish. Theese are data for the game.
+Fish Fillets is strictly a puzzle game. The goal in every of the seventy
+levels is always the same:  find a safe way out. The fish utter witty remarks
+about their surroundings, the various inhabitants of their underwater realm
+quarrel among themselves or comment on the efforts of your fish. Theese are
+data for the game.
 EOF
