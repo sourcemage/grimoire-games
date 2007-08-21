@@ -1,0 +1,4 @@
+config_query VEGASTRIKE_DEBUG \
+	"do you want to have debugging symbols compiled in?" n &&
+config_query VEGASTRIKE_STENCILBUFFER \
+	"does your graphics card have support for stencil buffer?" y

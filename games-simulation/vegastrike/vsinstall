@@ -9,8 +9,6 @@ else
 	mkdir -p ${HOME}/.vegastrike/save
 	cp save.4.x.txt save/
 fi
-cp /usr/share/games/vegastrike/data/setup.config .
-cp /usr/share/games/vegastrike/data/.vegastrike/*.m3u .
-cp /usr/share/games/vegastrike/data/vegastrike.config .
+cp /usr/share/games/vegastrike/data4.x/{setup.config,.vegastrike/*.m3u,vegastrike.config} .
 /usr/games/vssetup
 

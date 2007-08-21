@@ -13,13 +13,15 @@ depends  libpng                        &&
 depends  jpeg                          &&
 depends  perl                          &&
 depends  openal                        &&
+if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
 optional_depends ogre                  \
                  "--enable-ogre"       \
                  "--disable-ogre"      \
-                 "Enable mesher?"      &&
+                 "Enable mesher"      &&
 optional_depends cegui                 \
                  "--enable-cegui"      \
                  "--disable-cegui"     \
-                 "Enable cegui?"       &&
+                 "Enable cegui"
+fi &&
 depends -sub PYTHON boost "--with-boost=system"
 

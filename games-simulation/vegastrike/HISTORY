@@ -1,3 +1,12 @@
+2007-08-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD, CONFIGURE: made stencil buffer and debugging symbols
+	  optional
+	* DETAILS: pack the architecture independant up in a tar, not a
+	  tar.bz2. The archive is 1.3GB, using bz2 gains only 200MB and
+	  takes almost endlessly to pack or unpack.
+	* PRE_BUILD, INSTALL, vsinstall: fixed wrong directory names
+	* INSTALL: make vegastrike actually find it's data directory
+
 2007-08-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added various depends
 	* DETAILS: use sorcerys internal svn handlers
