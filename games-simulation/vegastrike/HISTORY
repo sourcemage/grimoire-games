@@ -1,3 +1,12 @@
+2007-08-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added various depends
+	* DETAILS: use sorcerys internal svn handlers
+	* DOWNLOAD: removed not needed
+	* INSTALL: cleaned up all the tabs and some unenecessary things
+	* PREPARE: cleaned up all the tabs
+	* PRE_BUILD: cleaned up all the tabs
+	* BUILD: cd to proper dir depending on the version
+
 2007-08-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, DETAILS, DEPENDS, INSTALL,
 	  PRE_BUILD, DOWNLOAD, PREPARE: switched to svn,

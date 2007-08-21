@@ -1,21 +1,31 @@
            SPELL=vegastrike
 if [[ $VEGASTRIKE_DEVEL == "n" ]]; then
          VERSION="0_4_3"
-          SOURCE=$SPELL-$VERSION-vegastrike.tar
-         SOURCE2=$SPELL-$VERSION-data4.x.tar
-else
-	if [[ $VEGASTRIKE_UPDATE == "y" ]]; then
-		VERSION=$(date +%Y-%m-%d)
-	else
-		VERSION=svn
-	fi
-          SOURCE=$SPELL-svn-vegastrike.tar
-         SOURCE2=$SPELL-svn-data4.x.tar
-fi
+          SOURCE=$SPELL-$VERSION.tar.bz2
+         SOURCE2=$SPELL-data4.x-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-  VEGASTRIKE_SVN="https://vegastrike.svn.sourceforge.net/svnroot/vegastrike"
+    SOURCE_HINTS=old_svn_compat
+   SOURCE2_HINTS=old_svn_compat
+      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/vegastrike:vegastrike-$VERSION
+     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data4.x:vegastrike-data4.x-$VERSION
    SOURCE_IGNORE=volatile
   SOURCE2_IGNORE=volatile
+else
+if [[ $VEGASTRIKE_UPDATE == "y" ]]; then
+         VERSION=$(date +%Y-%m-%d)
+else
+         VERSION=svn
+fi
+          SOURCE=$SPELL-svn.tar.bz2
+         SOURCE2=$SPELL-data4.x-svn.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
+    SOURCE_HINTS=old_svn_compat
+   SOURCE2_HINTS=old_svn_compat
+      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/vegastrike:vegastrike-svn
+     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/data4.x:vegastrike-data4.x-svn
+   SOURCE_IGNORE=volatile
+  SOURCE2_IGNORE=volatile
+fi
         WEB_SITE=http://vegastrike.sourceforge.net/
          ENTERED=20040502
       LICENSE[0]=GPL

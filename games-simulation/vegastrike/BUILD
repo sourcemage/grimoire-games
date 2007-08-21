@@ -1,4 +1,7 @@
-cd ${SPELL}   &&
+if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
+cd ${SPELL}-svn
+else
+cd ${SPELL}-${VERSION}
 OPTS="--enable-release --disable-debug $OPTS"
 OPTS="--enable-stencil-buffer $OPTS"
 OPTS="--datadir=/usr/share/games/vegastrike/data4.x $OPTS"

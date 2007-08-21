@@ -1,6 +1,6 @@
-config_query VEGASTRIKE_DEVEL \
-	"Do you want the development version?" y &&
+config_query VEGASTRIKE_DEVEL                         \
+             "Do you want the development version?" y &&
 if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-	config_query VEGASTRIKE_UPDATE \
-		"Automatically update $SPELL on system-update?" n
+config_query VEGASTRIKE_UPDATE                        \
+             "Automatically update $SPELL on system-update?" n
 fi

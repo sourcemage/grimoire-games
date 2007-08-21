@@ -1,12 +1,25 @@
-depends  SVN      &&
-depends  automake &&
-depends  autoconf &&
-depends  expat    &&
-depends  gtk+2    &&
-depends  GLUT     &&
-depends  python   &&
-depends  sdl      &&
-depends  libpng   &&
-depends  jpeg     &&
-depends  perl     &&
-depends  openal
+depends  SVN                           &&
+depends  sdl_mixer                     &&
+depends  automake                      &&
+depends  autoconf                      &&
+depends  expat                         &&
+depends  gtk+2                         &&
+depends  GLUT                          &&
+depends  OPENGL                        &&
+depends  X11-LIBS                      &&
+depends  python                        &&
+depends  sdl                           &&
+depends  libpng                        &&
+depends  jpeg                          &&
+depends  perl                          &&
+depends  openal                        &&
+optional_depends ogre                  \
+                 "--enable-ogre"       \
+                 "--disable-ogre"      \
+                 "Enable mesher?"      &&
+optional_depends cegui                 \
+                 "--enable-cegui"      \
+                 "--disable-cegui"     \
+                 "Enable cegui?"       &&
+depends -sub PYTHON boost "--with-boost=system"
+

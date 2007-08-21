@@ -4,10 +4,10 @@ unpack_file                         &&
 unpack_file 2                       &&
 cd ${SOURCE_DIRECTORY}/vegastrike   &&
 if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-	./bootstrap-sh
+./bootstrap-sh
 else 
-	aclocal        &&
-	autoconf   -f  &&
-	autoheader -f  &&
-	automake  -acf
+aclocal        &&
+autoconf   -f  &&
+autoheader -f  &&
+automake  -acf
 fi
