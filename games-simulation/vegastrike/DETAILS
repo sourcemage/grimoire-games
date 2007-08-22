@@ -3,7 +3,7 @@ VEGASTRIKE_DATAVERSION=4.x
 if [[ $VEGASTRIKE_DEVEL == "n" ]]; then
          VERSION="0_4_3"
           SOURCE=$SPELL-$VERSION.tar.bz2
-         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-$VERSION.tar
+         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_HINTS=old_svn_compat
    SOURCE2_HINTS=old_svn_compat
@@ -18,7 +18,7 @@ else
          VERSION=svn
 fi
           SOURCE=$SPELL-svn.tar.bz2
-         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-svn.tar
+         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-svn.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
     SOURCE_HINTS=old_svn_compat
    SOURCE2_HINTS=old_svn_compat

@@ -1,3 +1,6 @@
+2007-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: use .tar.bz2 becasue else it won't work
+
 2007-08-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, CONFIGURE: made stencil buffer and debugging symbols
 	  optional
