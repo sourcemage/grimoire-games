@@ -1,4 +1,5 @@
-config_query VEGASTRIKE_DEBUG \
-	"do you want to have debugging symbols compiled in?" n &&
-config_query VEGASTRIKE_STENCILBUFFER \
-	"does your graphics card have support for stencil buffer?" y
+config_query VEGASTRIKE_DEBUG "Do you want to build debug version?" n  &&
+config_query_option VS_OPTS                                            \
+                    "Do you want support for stencil buffer?" n        \
+                    "--enable-stencil-buffer"                          \
+                    "--disable-stencil-buffer"

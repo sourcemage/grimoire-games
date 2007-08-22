@@ -1,5 +1,10 @@
 2007-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: use .tar.bz2 becasue else it won't work
+	* BUILD: remove some unenecessary if's
+	* CONFIGURE: switch to using config_query_option
+	* DETAILS: use VERSION2
+	* INSTALL: run find_and_scam
+	* PRE_BUILD: just alligned the &&
 
 2007-08-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, CONFIGURE: made stencil buffer and debugging symbols

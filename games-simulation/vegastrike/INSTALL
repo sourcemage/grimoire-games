@@ -1,25 +1,27 @@
-mkdir -p ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VEGASTRIKE_DATAVERSION
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2  &&
 if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-install -v -o root -g games -m 755                          \
-        ${SOURCE_DIRECTORY}/vegastrike-svn/vssetup          \
-        ${INSTALL_ROOT}/usr/games                           &&
-cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VEGASTRIKE_DATAVERSION-svn/*             \
-      ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VEGASTRIKE_DATAVERSION    &&
+install -v -o root -g games -m 0750                                 \
+        ${SOURCE_DIRECTORY}/vegastrike-svn/vssetup                  \
+        ${INSTALL_ROOT}/usr/games                                   &&
+cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VERSION2-svn/*               \
+       ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2     &&
 cd ${SOURCE_DIRECTORY}/vegastrike-svn
 else
-install -v -o root -g games -m 755                          \
-        ${SOURCE_DIRECTORY}/vegastrike-$VERSION/vssetup     \
-        ${INSTALL_ROOT}/usr/games                           &&
-cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VEGASTRIKE_DATAVERSION-$VERSION/*        \
-        ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VEGASTRIKE_DATAVERSION  &&
+install -v -o root -g games -m 0750                                 \
+        ${SOURCE_DIRECTORY}/vegastrike-$VERSION/vssetup             \
+        ${INSTALL_ROOT}/usr/games                                   &&
+cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VERSION2-$VERSION/*          \
+       ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2     &&
 cd ${SOURCE_DIRECTORY}/vegastrike-$VERSION
 fi
-default_install                                             &&
-mv ${INSTALL_ROOT}/usr/games/vegastrike \
-        ${INSTALL_ROOT}/usr/games/vegastrike-bin            &&
-cp -v $SCRIPT_DIRECTORY/vsinstall $INSTALL_ROOT/usr/games   &&
+default_install                                                     &&
+mv ${INSTALL_ROOT}/usr/games/vegastrike                             \
+   ${INSTALL_ROOT}/usr/games/vegastrike-bin                         &&
+cp -v ${SPELL_DIRECTORY}/vsinstall ${INSTALL_ROOT}/usr/games        &&
+cd ${INSTALL_ROOT}/usr/share/games/vegastrike                       &&
+find_and_scam                                                       &&
 cat > ${INSTALL_ROOT}/usr/games/vegastrike << EOF
 #!/bin/sh
 
-vegastrike-bin -d/usr/share/games/vegastrike/data$VEGASTRIKE_DATAVERSION
+vegastrike-bin -d${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION
 EOF

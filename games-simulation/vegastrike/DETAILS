@@ -1,14 +1,14 @@
            SPELL=vegastrike
-VEGASTRIKE_DATAVERSION=4.x
+        VERSION2=4.x
 if [[ $VEGASTRIKE_DEVEL == "n" ]]; then
          VERSION="0_4_3"
           SOURCE=$SPELL-$VERSION.tar.bz2
-         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-$VERSION.tar.bz2
+         SOURCE2=$SPELL-data$VERSION2-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_HINTS=old_svn_compat
    SOURCE2_HINTS=old_svn_compat
       SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/vegastrike:vegastrike-$VERSION
-     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data$VEGASTRIKE_DATAVERSION:vegastrike-data$VEGASTRIKE_DATAVERSION-$VERSION
+     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data$VERSION2:vegastrike-data$VERSION2-$VERSION
    SOURCE_IGNORE=volatile
   SOURCE2_IGNORE=volatile
 else
@@ -18,12 +18,12 @@ else
          VERSION=svn
 fi
           SOURCE=$SPELL-svn.tar.bz2
-         SOURCE2=$SPELL-data$VEGASTRIKE_DATAVERSION-svn.tar.bz2
+         SOURCE2=$SPELL-data$VERSION2-svn.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
     SOURCE_HINTS=old_svn_compat
    SOURCE2_HINTS=old_svn_compat
       SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/vegastrike:vegastrike-svn
-     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/data$VEGASTRIKE_DATAVERSION:vegastrike-data$VEGASTRIKE_DATAVERSION-svn
+     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/data$VERSION2:vegastrike-data$VERSION2-svn
    SOURCE_IGNORE=volatile
   SOURCE2_IGNORE=volatile
 fi
