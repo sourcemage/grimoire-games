@@ -3,11 +3,14 @@ config_query_option  DOSBOX_CORE_INLINE                            \
                      "n"                                           \
                      "--enable-core-inline"                        \
                      "--disable-core-inline"                       &&
-config_query_option  DOSBOX_X86_DYNAMIC                            \
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]] ||
+   [[ ${SMGL_COMPAT_ARCHS[1]} == "ia32" ]]; then
+  config_query_option  DOSBOX_X86_DYNAMIC                          \
                      "Enable x86 dynamic cpu core"                 \
                      "y"                                           \
                      "--enable-dynamic-x86"                        \
-                     "--disable-dynamic-x86"                       &&
+                     "--disable-dynamic-x86"
+fi                                                                 &&
 config_query_option  DOSBOX_FPU                                    \
                      "Enable FPU support"                          \
                      "y"                                           \
