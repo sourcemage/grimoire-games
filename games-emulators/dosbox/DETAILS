@@ -1,10 +1,10 @@
            SPELL=dosbox
-         VERSION=0.70
+         VERSION=0.72
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:c28b353225bf00f7932c50ea8ef8eb4259c86926c049c18b7ed659b6dac3f1eca062905e79512f93ef94dde70b5a52f737c5123374e79e14f703d66d2820a325
+     SOURCE_HASH=sha512:4fb5ca955d9e98d31bd729d746957a3593ab68b427d28acc94f9174de9e5362dd6c5dc7ef5149c90c8c2666a04fe5e6eddafdc928c4a9ee4648ae3c980b8442e
         WEB_SITE=http://dosbox.sourceforge.net
          ENTERED=20031012
            SHORT="Dosbox is a DOS emulator developed mainly for games."
