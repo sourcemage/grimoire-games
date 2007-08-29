@@ -6,4 +6,7 @@ patch -p0 < ${SPELL_DIRECTORY}/autogen.sh-automake.patch
 fi                                                            &&
 sedit 's:-O0::g' configure.ac                                 &&
 sedit 's:-Werror::g' configure.ac                             &&
+if [[ $BZF_BZADMIN_PATCH == y ]]; then
+patch -p0 < bzadmin_stdboth_colors.patch
+fi                                                            &&
 NOCONFIGURE=X ./autogen.sh

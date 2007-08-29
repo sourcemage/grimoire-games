@@ -1,16 +1,19 @@
 #THREADS are NON-SAFE and can break stuff
-config_query_option  BZF_OPTS               \
-                     "Build game client?"   \
-                     y                      \
-                     "--enable-client"      \
-                     "--disable-client"     &&
-config_query_option  BZF_OPTS               \
-                     "Build robots?"        \
-                     y                      \
-                     "--enable-robots"      \
-                     "--disable-robots"     &&
-config_query_option  BZF_OPTS               \
-                     "Enable screenshots?"  \
-                     y                      \
-                     "--enable-snapping"    \
+config_query BZF_BZADMIN_PATCH                            \
+             "Do you want bzadmin stdboth colors patch?"  \
+             n                                            &&
+config_query_option  BZF_OPTS                             \
+                     "Build game client?"                 \
+                     y                                    \
+                     "--enable-client"                    \
+                     "--disable-client"                   &&
+config_query_option  BZF_OPTS                             \
+                     "Build robots?"                      \
+                     y                                    \
+                     "--enable-robots"                    \
+                     "--disable-robots"                   &&
+config_query_option  BZF_OPTS                             \
+                     "Enable screenshots?"                \
+                     y                                    \
+                     "--enable-snapping"                  \
                      "--disable-snapping"

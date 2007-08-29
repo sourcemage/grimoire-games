@@ -1,0 +1,39 @@
+Index: src/bzadmin/StdBothUI.cxx
+===================================================================
+--- src/bzadmin/StdBothUI.cxx	(revision 15558)
++++ src/bzadmin/StdBothUI.cxx	(working copy)
+@@ -59,8 +59,32 @@
+ #endif
+ }
+ 
+-void StdBothUI::outputMessage(const std::string& msg, ColorCode) {
+-  std::cout<<msg<<std::endl;
++void StdBothUI::outputMessage(const std::string& msg, ColorCode ColCode) {
++  std::string OutColor;
++  const std::string DefColor = "\033[0m";
++  OutColor = DefColor;
++  if ( ColCode == White ) {
++    OutColor = "\033[37m";
++  }
++  else if ( ColCode == Red ) {
++    OutColor = "\033[31m";
++  }
++  else if ( ColCode == Green ) {
++    OutColor = "\033[32m";
++  }
++  else if ( ColCode == Blue ) {
++    OutColor = "\033[34m";
++  }
++  else if ( ColCode == Purple ) {
++    OutColor = "\033[35m";
++  }
++  else if ( ColCode == Yellow ) {
++    OutColor = "\033[33m";
++  }
++  else if ( ColCode == Cyan ) {
++    OutColor = "\033[36m";
++  }
++  std::cout<<OutColor<<msg<<DefColor<<std::endl;
+ }
+ 
+ 
