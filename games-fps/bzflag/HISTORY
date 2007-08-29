@@ -1,6 +1,6 @@
 2007-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* CONFIGURE: added a query for a patch
-	* PRE_BUILD: apply patch
+	* PRE_BUILD: apply patch, forgot the path to patch
 	* bzadmin_stdboth_colors.patch: added the patch
 
 2007-07-23 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
