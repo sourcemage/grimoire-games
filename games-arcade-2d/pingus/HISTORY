@@ -1,3 +1,10 @@
+2007-08-30 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.7.0
+	* PRE_BUILD, patches: removed
+	* DEPENDS: Updated, clanlib -> sdl switch
+	* BUILD: Updated, now uses scons
+	* INSTALL: Added
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

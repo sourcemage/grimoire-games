@@ -1,1 +1,1 @@
-default_games_build
+scons
