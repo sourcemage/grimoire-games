@@ -1,9 +1,9 @@
            SPELL=cultivation
-         VERSION=4
+         VERSION=8
           SOURCE=Cultivation_${VERSION}_UnixSource.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cultivation_${VERSION}_UnixSource
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:13b9c58e58442d5857f4242486c395b2ed36af92cd393cf9a766084c5e5c100f6e8576068d2814ed60a3b46c87e41d9b22323da09709913550215990d6a00664
+     SOURCE_HASH=sha512:a54eea1083eb93948687581f685de91a98beeddfc446b387ae30f802dec6d311efc0dc9df5637010207f78ac3c3ba0d05f28132af5ec05cf06b9fa6b947c4d31
         WEB_SITE=http://cultivation.sourceforge.net
          ENTERED=20061013
             DOCS="how_to_play.txt"
