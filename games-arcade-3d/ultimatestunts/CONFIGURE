@@ -1,0 +1,1 @@
+config_query SOUND "Enable sound support (depends on openal and freealut)?" y

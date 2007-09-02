@@ -1,6 +1,13 @@
+2007-09-02 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0721
+	* CONFIGURE, DEPENDS: Optionally simultaneously depends on
+	  openal and freealut
+	* BUILD: Added make_single/make_normal
+
 2007-01-08 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0631, removed UPDATED
-	* DEPENDS: removed ode, added sdl_image, made openal optional, added missing &&
+	* DEPENDS: removed ode, added sdl_image, made openal optional,
+	  added missing &&
 	* BUILD: added for default_games_build
 	* PRE_BUILD: added to fix datadir path
 
