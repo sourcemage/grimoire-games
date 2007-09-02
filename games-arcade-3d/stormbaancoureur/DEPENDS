@@ -1,0 +1,4 @@
+depends GLUT &&
+depends plib &&
+depends ode  &&
+depends alsa-lib
