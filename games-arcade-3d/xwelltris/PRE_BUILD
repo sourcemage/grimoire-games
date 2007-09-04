@@ -1,0 +1,18 @@
+default_pre_build                                              &&
+cd $SOURCE_DIRECTORY                                           &&
+sedit 's:INSTDIR=.*:INSTDIR=@bindir@:g' src/Make.common.in     &&
+sedit "s:\$(INSTALL_SHARE_DATA) \$(SHARE_DATAFILES) \$(INSTLIB):\$(INSTALL) -m 0660 \$(SHARE_DATAFILES) $INSTALL_ROOT/var/games/xwelltris/:" \
+      Makefile.in                                              &&
+sedit 's:INSTLIB=.*:INSTLIB=@datadir@/xwelltris:g'             \
+      src/Make.common.in                                       &&
+sedit 's#Install path:.*#Install path:             $bindir#'   \
+      configure.in                                             &&
+sedit 's:GLOBAL_SEARCH.*:GLOBAL_SEARCH \"@datadir@/xwelltris\":'  \
+      src/include/globals.h.in                                 &&
+sedit "84i#define GLOBAL_SCORE \"$INSTALL_ROOT/var/games/xwelltris\"" \
+      src/include/globals.h.in                                 &&
+sedit "84i#define GLOBAL_SCORE \"$INSTALL_ROOT/var/games/xwelltris\"" \
+      src/include/globals.h                                    &&
+patch -p0 < $SPELL_DIRECTORY/check_abs_paths.diff              &&
+autoreconf
+

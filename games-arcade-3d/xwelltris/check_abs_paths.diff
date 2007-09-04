@@ -1,0 +1,14 @@
+--- src/commonfuncs.cxx.orig	2003-02-27 09:27:51.000000000 +0100
++++ src/commonfuncs.cxx	2007-09-04 09:37:22.000000000 +0200
+@@ -41,6 +41,11 @@
+ 
+   do 
+   {    
++    sprintf(ret_full_pathname,"%s/%s",GLOBAL_SCORE,name); //First check in GLOBAL_SCORE dir
++    fd=open(ret_full_pathname,fmode);
++    if(fd>0)
++      break;
++
+     sprintf(ret_full_pathname,"%s/%s",GLOBAL_SEARCH,name); //First check in GLOBAL_SEARCH dir
+     fd=open(ret_full_pathname,fmode);
+     if(fd>0)

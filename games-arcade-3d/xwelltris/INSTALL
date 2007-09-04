@@ -1,0 +1,6 @@
+mkdir -vp $INSTALL_ROOT/var/games/xwelltris  &&
+default_install                              &&
+cd $INSTALL_ROOT/var/games/xwelltris         &&
+find_and_scam                                &&
+cd $INSTALL_ROOT/usr/share/games/xwelltris   &&
+find_and_scam

@@ -1,3 +1,9 @@
+2007-09-04 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: added to install binary to /usr/games
+	* INSTALL: added to set perms
+	* PRE_BUILD: added to fix a lot of stuff
+	* check_abs_paths.diff: added to fix score looking in /var/games
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
