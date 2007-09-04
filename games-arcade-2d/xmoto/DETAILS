@@ -1,8 +1,8 @@
            SPELL=xmoto
-         VERSION=0.3.2
+         VERSION=0.3.3
           SOURCE=$SPELL-$VERSION-src.tar.gz
    SOURCE_URL[0]=http://download.tuxfamily.org/$SPELL/$SPELL/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:6ff8408bfe6a9c5aa12bcaa56cc45e58a64a79f138be2c870a26ea279509b0594c6b8dd3272dea07da391abb4768e9f46dda263b7920d822689e45cc61f6f289
+     SOURCE_HASH=sha512:2b2eb96c0fb36a176df5fd3310fd4449b3a5920494050db9f2eead439b43b1a5ed51cca22e3b615fc600e52bcf4daabd1c3e8177a661b9da94e56f0b2afc6063
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://xmoto.tuxfamily.org/
          ENTERED=20051006

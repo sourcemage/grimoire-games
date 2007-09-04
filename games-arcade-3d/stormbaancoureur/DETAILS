@@ -1,0 +1,17 @@
+           SPELL=stormbaancoureur
+         VERSION=1.5.2
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=http://bram.creative4vision.nl/sturmbahnfahrer/download/${SOURCE}
+     SOURCE_HASH=sha512:fbcb7b8b47cb0c1e7cddace162edea00fb0f20d9f9cb6e7bb9c08eb21ef90f0181f8610b5f47634e6e06530d2cc1447278867c43fcbcbb9b793d6f376d534c4c
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://www.sturmbahnfahrer.com/
+         ENTERED=20050226
+      LICENSE[0]=GPL
+           SHORT="simulated obstacle course for automobiles"
+cat << EOF
+Stormbaan Coureur is the Linux game that was formerly known as Sturmbahnfahrer.
+It is back with a larger track, more challenges, many improvements in a PC
+(Politically Correct) edition. In this game, it is all about the car Physics.
+If you want to master it, try to have the laws of physics work with you,
+not against you.
+EOF

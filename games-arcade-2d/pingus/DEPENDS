@@ -1,7 +1,7 @@
-if [ "$PINGUS_SVN" == "y" ]; then
-   depends clanlib
-else
-   depends clanlib6
-fi  &&
-
-depends libxml2
+depends sdl &&
+depends sdl_mixer &&
+depends sdl_image &&
+depends libpng &&
+depends boost &&
+depends physfs &&
+depends scons

@@ -1,2 +1,7 @@
+2007-09-01 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to version 8
+	* INSTALL: Now installs everything to /opt/cultivation
+	* cultivation: added, script to launch cultivation
+
 2006-10-13 Alexander Tsamutali <astsmtl@gmail.com>
-        * DETAILS, DEPENDS, BUILD, INSTALL, HISTORY: Created this spell
+	* DETAILS, DEPENDS, BUILD, INSTALL, HISTORY: Created this spell

@@ -1,1 +1,10 @@
-install -v -g games -m 750 Cultivation /usr/games/
+CV_DIR=${INSTALL_ROOT}/opt/${SPELL} &&
+install -v -g games -m 750 -d  $CV_DIR &&
+install -v -g games -m 750 -d  ${CV_DIR}/languages &&
+install -v -g games -m 640 font.tga $CV_DIR &&
+install -v -g games -m 640 languages/* ${CV_DIR}/languages &&
+install -v -g games -m 640 language.txt $CV_DIR &&
+install -v -g games -m 640 features.txt $CV_DIR &&
+install -v -g games -m 750 Cultivation $CV_DIR &&
+install -v -g games -m 750 ${SPELL_DIRECTORY}/cultivation \
+                           ${INSTALL_ROOT}/usr/games
