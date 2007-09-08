@@ -5,9 +5,9 @@
      # this is always the hash for the $VERSION tarball
      SOURCE_HASH=sha512:d16cda83a84ab547eaeff3f52693f3b0142f0d7a1a2b2fcafdf4ec6c8175da3e1073acc8ac82e2e6850c42b4fdef0c8d5350bd58710d68ace791e51bf2efc29c
   else
-         VERSION=1.2.5
+         VERSION=1.2.6
      OLD_VERSION=1.2.4
-     SOURCE_HASH=sha512:2a8642328c2fe1d95ab614122ce45706ed135d479c6d70c9af2fc0a92623f474ba2bd328ac2b5788097e4a2bc93a040c2c42c8b92988b62a4afbf8089761b5c7
+     SOURCE_HASH=sha512:01be4e6a5dd350162d1749e4d3ab940fb607bbdbfa2e5ee9e3d3e52a920cb53b05be6bede1b0769e53cdc5c52ea900a4072089f8b9799b0b4ee11a538ee11db3
   fi
           SOURCE=$SPELL-$VERSION.tar.bz2
  # check that we have the previous tarball first and if so, enable xdelta
