@@ -11,15 +11,14 @@ fi
   FORCE_DOWNLOAD=on
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-svn
 else
-         VERSION=build10
+         VERSION=build-11
           SOURCE=${SPELL}-${VERSION}-source.tar.bz2
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:75fca3f975dfc64f335ce73b8a1ddebe39335129e025c9124b1979b183d58632414ac89c1dcbbe33e84de8dc81bf057a88dfef264f846184e97d5ef9e6e4e7ab
+     SOURCE_HASH=sha512:495e5f1dcbbbd3e644d858a9ccd6dfbcf394405438c06dcb65eda62c179f42a501cd26602b3416a4db3efb469e837238bd84a914de64132d50660923f523d2b5
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
 fi 
       LICENSE[0]=GPL
-        WEB_SITE=http://wiki.widelands.org/tiki-index.php
-         UPDATED=20040925
+        WEB_SITE=http://www.widelands.org/
            SHORT="a strategy game aiming for gameplay similar to Settlers"
 cat << EOF
 Widelands is a strategy game aiming for gameplay similar to Settlers II by

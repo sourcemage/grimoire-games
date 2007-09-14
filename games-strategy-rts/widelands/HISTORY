@@ -1,3 +1,10 @@
+2007-09-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* BUILD: make sure the GGZ swapping gets run even if BUILD fails
+	  match scons loosely, not sure if the internal is still needed though
+	  added make as a fallback, otherwise it breaks here, similar to b10
+	* DETAILS: fixed WEB_SITE
+	  updated spell to build11
+
 2007-04-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: uses scons now
 	* CONFIGURE: add more build targets
