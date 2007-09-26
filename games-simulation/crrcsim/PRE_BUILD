@@ -1,0 +1,6 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+sedit "s/-O3/${CXXFLAGS}/" Makefile.linux &&
+sedit "s:cp \./models/\*\.xml:cp -r \./models/\*:" Makefile.linux &&
+sedit "s:/usr/local/bin:${INSTALL_ROOT}/usr/games:" Makefile.linux &&
+sedit "s:/usr/local:${INSTALL_ROOT}/usr:" Makefile.linux

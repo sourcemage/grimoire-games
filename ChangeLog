@@ -1,5 +1,7 @@
 2007-09-27 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-arcade-3d/extreme-tuxracer: new spell, racing game featuring Tux
+	* games-simulation/crrcsim: new spell, a model-airplane flight
+	  simulation program
 
 2007-09-02 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-arcade-3d/stormbaancoureur: new spell, simulated obstacle course

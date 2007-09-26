@@ -1,0 +1,4 @@
+depends sdl &&
+depends portaudio &&
+depends GLUT &&
+depends plib 
