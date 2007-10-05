@@ -23,5 +23,8 @@ optional_depends cegui                 \
                  "--disable-cegui"     \
                  "Enable cegui"
 fi &&
-depends -sub PYTHON boost "--with-boost=system"
-
+depends -sub PYTHON boost "--with-boost=system" &&
+optional_depends blender               \
+                 "" \
+                 "" \
+                 "install blender python scripts"
