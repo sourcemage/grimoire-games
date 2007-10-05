@@ -1,0 +1,14 @@
+           SPELL=extreme-tuxracer
+         VERSION=0.35
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/extremetuxracer/${SOURCE}
+     SOURCE_HASH=sha512:9c458a95a09177896d2b491ac01e2173d7f205f7ed8107876ec907f7d5e7a74478eec1f935cd59e8aefac2877821891c5eea00c978615df18e39bbda24dfa231
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.extremetuxracer.com/"
+      LICENSE[0]=GPL
+         ENTERED=20070927
+           SHORT="an open source racing game featuring Tux"
+cat << EOF
+Extreme Tux Racer (ETRacer for short) is a downhill racing game featuring Tux,
+the Linux Penguin.
+EOF

@@ -1,5 +1,10 @@
-2007-09-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2007-10-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* is_depends_enabled.function: added.
+
+2007-09-27 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-arcade-3d/extreme-tuxracer: new spell, racing game featuring Tux
+	* games-simulation/crrcsim: new spell, a model-airplane flight
+	  simulation program
 
 2007-09-02 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-arcade-3d/stormbaancoureur: new spell, simulated obstacle course
