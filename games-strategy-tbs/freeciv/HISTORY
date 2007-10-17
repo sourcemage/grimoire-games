@@ -1,3 +1,22 @@
+2007-10-16 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.1.0-rc1
+	  stdsounds3 no longer distributed separately, remove SOURCE2
+	* CONFIGURE: gtk+1 GUI removed, SDL now works
+	  Removed auth query, now depends on mysql (in DEPENDS)
+	* DEPENDS: Pass OPTS flags via depends
+	  List non-optional dependencies before optional
+	  Removed esound and alsa-libs, no longer options
+	  Added optional dependency on mysql for auth (moved from CONFIGURE)
+	  Sound is now only available via sdl_mixer
+	  Added optional dependency on ggz-server (ggz-client support is
+	  currently broken)
+	* PRE_BUILD: Removed, sounds are now included
+	* BUILD: Pass --enable-client=xaw for xaw as the rest are done via
+	  DEPENDS
+	  Pass --disable-dependency-tracking to speed up builds
+	* INSTALL: Removed, default_install works fine now
+	* FINAL: User may want to remove $HOME/.civclientrc
+
 2007-02-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.0.9
 	  Removed UPDATED

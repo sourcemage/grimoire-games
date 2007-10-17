@@ -1,7 +1,8 @@
 if   [[  $FREECIV_CLIENT  ==  "xaw" ]]; then
-OPTS="--with-xaw3d $OPTS"
-fi                                     &&
-OPTS="--enable-client=$FREECIV_CLIENT  \
-      $FREECIV_OPTS                    \
-      $OPTS"                           &&
+  OPTS="--enable-client=xaw --with-xaw3d $OPTS"
+fi  &&
+
+OPTS="--disable-dependency-tracking  \
+      $FREECIV_OPTS                  \
+      $OPTS"                         &&
 default_games_build

@@ -1,4 +1,0 @@
-default_pre_build                       &&
-mkdir  $SOURCE_DIRECTORY/freeciv-media  &&
-cd  $SOURCE_DIRECTORY/freeciv-media     &&
-unpack_file  2
