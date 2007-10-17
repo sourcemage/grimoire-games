@@ -1,5 +1,5 @@
            SPELL=freeciv-freeland-big
-         VERSION=1.0.3
+         VERSION=2.0.0
           SOURCE=${SPELL/freeciv-/}-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.freeciv.org/pub/freeciv/contrib/tilesets/freeland/$SOURCE
