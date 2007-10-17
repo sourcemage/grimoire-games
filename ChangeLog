@@ -1,3 +1,10 @@
+2007-10-17 Eric Sandall <sandalle@sourcemage.org>
+	* games-data/freeciv-freeland-medium: Added medium freeciv freeland
+	  tileset
+
+2007-10-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* is_depends_enabled.function: added.
+
 2007-09-27 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-arcade-3d/extreme-tuxracer: new spell, racing game featuring Tux
 	* games-simulation/crrcsim: new spell, a model-airplane flight

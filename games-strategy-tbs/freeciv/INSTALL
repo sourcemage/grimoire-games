@@ -1,2 +1,0 @@
-default_install                                                     &&
-cp -vr freeciv-media/data/* $INSTALL_ROOT/usr/share/games/${SPELL}

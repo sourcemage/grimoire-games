@@ -1,3 +1,8 @@
+2007-10-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD: removed code to build vssetup, it gets built by default
+	* DEPENDS, INSTALL: added optional dependency on blender,
+	  install blender import scripts for vegastrike's 3D models
+
 2007-08-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: use .tar.bz2 becasue else it won't work
 	* BUILD: remove some unenecessary if's

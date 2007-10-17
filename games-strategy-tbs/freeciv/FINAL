@@ -1,0 +1,1 @@
+message  "${MESSAGE_COLOR}You may want to remove HOME/.civclientrc${DEFAULT_COLOR}"
