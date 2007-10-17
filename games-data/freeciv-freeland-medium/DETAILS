@@ -1,0 +1,16 @@
+           SPELL=freeciv-freeland-medium
+         VERSION=2.0.0
+          SOURCE=${SPELL/freeciv-/}-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.freeciv.org/pub/freeciv/contrib/tilesets/freeland/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=GPL
+        WEB_SITE=http://freeciv.wikia.com/wiki/Tilesets
+         ENTERED=20070221
+           SHORT="High quality medium isometric graphics tileset for freeciv"
+cat << EOF
+Freeland is an isometric Graphics Tileset for Freeciv game with high quality
+graphic, using the more complex graphics system offered by Freeciv client with
+more than thousand tile for base terrains (arctic, desert, grassland, plains,
+sea and tundra).
+EOF
