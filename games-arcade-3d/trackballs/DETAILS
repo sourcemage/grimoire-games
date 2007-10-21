@@ -1,13 +1,12 @@
            SPELL=trackballs
-         VERSION=1.1.1
+         VERSION=1.1.4
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:5f0411ba82dd3083e965c90bd6edf3683869b51b247337781f8a925c2e1b9a71c0ba093dd84bf8357b77b76ac0340c96b4a69ad54c77ad8779b1512f63b20fd1
+     SOURCE_HASH=sha512:f8286a08feab04007bf83e41b8c3669a44ebe2e4fe769a4feb74f26edf469024b6219e7d5825d3a659f2ab209b8a78d574808d71dd2947b49e1ae2323cd0e56c
       LICENSE[0]=GPL
         WEB_SITE=http://trackballs.sourceforge.net/
          ENTERED=20030221
-         UPDATED=20030221
            SHORT="Trackballs is a game inspired by the classical Marble Madness"
 cat << EOF
 Trackballs is a simple game similar to the classical game Marble Madness on the
