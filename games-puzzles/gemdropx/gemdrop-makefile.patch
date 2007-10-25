@@ -1,0 +1,22 @@
+--- gemdropx-0.9/Makefile	2002-05-18 10:53:29.000000000 +0200
++++ Makefile	2007-10-25 03:32:29.000000000 +0200
+@@ -14,7 +14,7 @@
+ # Added 'install' target (finally!): May 18, 2002
+ 
+ 
+-DATA_PREFIX=/usr/local/share/gemdropx
++DATA_PREFIX=/usr/share/games/gemdropx
+ SDL_CFLAGS := $(shell sdl-config --cflags)
+ SDL_LDFLAGS := $(shell sdl-config --libs)
+ CC=gcc
+@@ -39,8 +39,8 @@
+ all:	gemdropx
+ 
+ install:
+-	cp gemdropx /usr/local/bin/
+-	chmod 755 /usr/local/bin/gemdropx
++	cp gemdropx /usr/games/
++	chmod 755 /usr/games/gemdropx
+ 	-mkdir -p $(DATA_PREFIX)
+ 	chmod 755 $(DATA_PREFIX)
+ 	cp -R data/* $(DATA_PREFIX)

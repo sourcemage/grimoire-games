@@ -1,3 +1,9 @@
+2007-10-25 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: patchlevel++
+	* INSTALL: removed
+	* PRE_BUILD: added
+	* gemdrop-makefile.patch: added
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

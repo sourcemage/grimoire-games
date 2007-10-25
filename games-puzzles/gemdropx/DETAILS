@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:f99292f44575cb86c50e29f220d5fd358b3e6dd379148dcd764eac5bca5edcc49f88e119f9bebddb14017403985378f1bc07633c987556a9264f36ce20cc6fb2
         WEB_SITE=http://www.newbreedsoftware.com/gemdropx/
          ENTERED=20050516
+      PATCHLEVEL=1
            SHORT="Gemdropx is a clone of Magical Drop 3"
 cat << EOF
 Gem Drop X is a fast-paced puzzle game where it's your job to clear 
