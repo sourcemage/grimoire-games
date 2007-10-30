@@ -1,0 +1,6 @@
+DESTINATION=${INSTALL_ROOT}/usr/share/games/snowballz
+mkdir -v $DESTINATION
+cp -v -R * $DESTINATION &&
+chown -R root:games $DESTINATION &&
+chmod -R o-rwx $DESTINATION
+install -v -g games -m 750 ${SCRIPT_DIRECTORY}/snowballz ${INSTALL_ROOT}/usr/games/

@@ -1,0 +1,18 @@
+           SPELL=snowballz
+         VERSION=0.9.5.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=http://joey101.net/snowballz/files/${SOURCE}
+     SOURCE_HASH=sha512:c13bd55fe3faf362eae9ccd52cc13fe373fcc034bafd137172bf2a57373ecd09e252129fd042c8ae8f6bf87af87632c4976adeb72bbe40556f5ea320b44e793e
+      LICENSE[0]=GPL
+        WEB_SITE=http://joey101.net/snowballz/
+         ENTERED=20071027
+           SHORT="fun, free snowballing computer game"
+cat << EOF
+Take command of your army of penguins as you blaze your path to victory!
+March through snow laden forests to conqueror new frontiers and grow your
+small army. Ambush enemy lines with blasts of freezing snowballs. But don't
+neglect your home, invaders are just over the next snow drift! Gather fish for
+your cold penguins to munch on as they warm up in your cozy igloo.
+It's a snowy world you don't want to miss!
+EOF

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/games/snowballz
+python snowballz.py $@

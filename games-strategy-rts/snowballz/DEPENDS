@@ -1,0 +1,4 @@
+depends python &&
+depends pygame &&
+depends pyopengl &&
+depends rabbyt
