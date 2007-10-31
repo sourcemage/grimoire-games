@@ -3,5 +3,4 @@ depends  sdl_mixer
 depends  sdl_image
 depends  sdl_ttf
 depends  jam
-depends  netpanzer-data
 depends  physfs

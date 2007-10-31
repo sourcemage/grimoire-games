@@ -1,3 +1,10 @@
+2007-10-31 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.8.2
+	* DEPENDS: Doesn't depend on netpanzer-data anymore
+	* CONFLICTS: Conflicts with netpanzer-data (deprecation)
+	* PRE_BUILD, patches: Removed
+	* INSTALL: Removed sedit on docs/Jamfile
+
 2006-12-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* patches/netpanzer-0.8-gcc41.patch: gcc fixes patch from gentoo
 	* patches/netpanzer-0.8-min-size-check.patch: anti-hang up patch

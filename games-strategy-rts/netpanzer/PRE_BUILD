@@ -1,6 +1,0 @@
-default_pre_build                                                        &&
-cd $SOURCE_DIRECTORY                                                     &&
-patch -p0 < $SPELL_DIRECTORY/patches/netpanzer-0.8-gcc41.patch           &&
-patch -p0 < $SPELL_DIRECTORY/patches/netpanzer-0.8-min-size-check.patch  &&
-patch -p0 < $SPELL_DIRECTORY/patches/netpanzer-0.8-robust.patch
-

@@ -1,12 +1,11 @@
             SPELL=netpanzer
-          VERSION=0.8
+          VERSION=0.8.2
            SOURCE=$SPELL-$VERSION.tar.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE_URL[0]=http://download.berlios.de/netpanzer/$SOURCE
          WEB_SITE=http://netpanzer.berlios.de/
           ENTERED=20050209
-       PATCHLEVEL=1
-      SOURCE_HASH=sha512:a9c83557ca831aea976c6dae315dbdb3ad92cef9f92969be2e34c654d0d27333efd02254443aee7f599c6bf9571880083f78ded76fac531a22e16f1ee622956e
+      SOURCE_HASH=sha512:7d7f5b485b20b2cefc71061412367edd963e59612767f6b69751915eda3f2939eebedfa29cb77ba0986cf4966b0fc12456b1bb6cfc2bd794c47fbce0b5f6f57a
        LICENSE[0]=GPL
             SHORT="netPanzer is an online multiplayer tactical warfare game designed for fast action combat"
 cat << EOF
