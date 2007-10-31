@@ -1,12 +1,13 @@
             SPELL=netpanzer-data
           VERSION=0.8
-  	  SOURCE=$SPELL-$VERSION.tar.bz2
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_URL[0]=http://download.berlios.de/netpanzer/$SOURCE
+       PATCHLEVEL=1
+#  	  SOURCE=$SPELL-$VERSION.tar.bz2
+# SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+#    SOURCE_URL[0]=http://download.berlios.de/netpanzer/$SOURCE
          WEB_SITE=http://netpanzer.berlios.de/
           ENTERED=20050209
           UPDATED=20050209
-      SOURCE_HASH=sha512:9120d8d3a190069206ed327f1d7d2b2d36f40feefa823956cf6db66e8d0622959449b9385d81b08fdfc59b3b44b7e4d6f6ca2c7362f1a857e1110d61e7c08ce6
+#      SOURCE_HASH=sha512:9120d8d3a190069206ed327f1d7d2b2d36f40feefa823956cf6db66e8d0622959449b9385d81b08fdfc59b3b44b7e4d6f6ca2c7362f1a857e1110d61e7c08ce6
        LICENSE[0]=GPL
             SHORT="This is the data for the netpanzer game"
 cat << EOF
