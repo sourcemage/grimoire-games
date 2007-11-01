@@ -10,20 +10,20 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
    SOURCE_URL[0]=svn://svn.berlios.de/pingus/trunk:${SPELL}-svn
    SOURCE_IGNORE=volatile
 else
-         VERSION=0.7.0
+         VERSION=0.7.2
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://pingus.seul.org/files/$SOURCE
-     SOURCE_HASH=sha512:20c15f67f69bc2d964c8c300ea3395aeeb0ac2f693c24428cbec91206242bd8064d72306bd306a2da85ccb8936f984f4abc7fd31cfceb304ad7ca64521ecfcfd
+     SOURCE_HASH=sha512:5e489b653af07d9db3d88ca4436724ae8ab5df987628a85ded8875a2a13ef9d7c0f2c9a1bdedf1098c3e1d602552f38c23d1a086f164af2c3dc27e2dff2a7721
 fi
         WEB_SITE=http://pingus.seul.org/welcome.html
          ENTERED=20030612
-         UPDATED=20030612
       LICENSE[0]=GPL
            SHORT="Lemmings(tm) clone"
 cat << EOF
-While Pingus is based on the idea of Lemmings(tm), it has included some other ideas, which weren't 
-presented in the original Lemmings(tm), like the worldmap or secret levels, which might be familiar 
-from games the Super Mario World and other Nintendo games. We have also a few new actions, like the jumper 
-which weren't presented in the original game.
+While Pingus is based on the idea of Lemmings(tm), it has included some
+other ideas, which weren't presented in the original Lemmings(tm), like
+the worldmap or secret levels, which might be familiar from games the Super
+Mario World and other Nintendo games. We have also a few new actions, like
+the jumper which weren't presented in the original game.
 EOF
