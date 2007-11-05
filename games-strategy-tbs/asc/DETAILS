@@ -1,6 +1,6 @@
            SPELL=asc
-         VERSION=1.16.4.0
-          SOURCE=$SPELL-source-$VERSION.tar.bz2
+         VERSION=2.0.1.0
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-hq/$SOURCE
 #     SOURCE_HASH=sha512:e20798097bf39e76414a9f13f91c7ace434f81ba27ee0a0fdc90316f76348b1b813d6b6c03664fca27796a6ab8ef095a89041fd058c5d95490c2db9647b895d5
@@ -10,9 +10,11 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20030902
            SHORT="Turn based strategy game"
 cat << EOF
-ASC is a free, turn based strategy game. It is designed in the tradition of the Battle Isle series 
-from Bluebyte and is currently available for Windows and Linux.
- ASC is distributed under the terms of the Gnu General Public License (the license Linux uses too), 
-which basically means the game is free, the complete source code is available and you can do 
-everything with it as long as it remains free. 
+ASC is a free, turn based strategy game. It is designed in the tradition of
+the Battle Isle series from Bluebyte and is currently available for Windows
+and Linux.
+ ASC is distributed under the terms of the Gnu General Public License (the
+ license Linux uses too),
+which basically means the game is free, the complete source code is available
+and you can do everything with it as long as it remains free.
 EOF
