@@ -1,6 +1,9 @@
 2007-11-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-strategy-rts/boswars: deprecated
 
+2007-11-11 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-rpg-sp/scourge: new spell, rogue-like game with OpenGL front-end
+
 2007-10-30 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-strategy-rts/snowballz: new spell, fun, free snowballing game
 

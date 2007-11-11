@@ -1,0 +1,22 @@
+           SPELL=scourge
+         VERSION=0.19
+          SOURCE=${SPELL}-${VERSION}.src.tar.gz
+         SOURCE2=${SPELL}-${VERSION}.data.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
+     SOURCE_HASH=sha512:2eec191c6485125bbee39903c5a79c6255b680badfd9137377d70a629c160ee65f19eb932a0a25cfcaa9e3c080fe66913f524f8444e37678d43e1746610354b7
+    SOURCE2_HASH=sha512:99643d2bb25f5046c7dab1edbf1a43caad63f937cc016b4fa0da2c8735af804fff366605d2ba78cfbc9e3629766ec72be8feb6014f387d2cd3eb7fcc90d7793d
+        WEB_SITE=http://www.scourgeweb.org/
+         ENTERED=20071111
+      LICENSE[0]=GPL
+        KEYWORDS="rogue-like opengl"
+           SHORT="rogue-like game with OpenGL front-end"
+cat << EOF
+S.C.O.U.R.G.E. is a cross platform, rogue-like game in the fine tradition of
+NetHack and Moria. It sports a graphical front-end, similar to glHack or the
+Falcon's eye.The design of the 3D UI is an attempt at the best of both worlds
+from old to new: It lets you rotate the view, zoom in/out, view special
+effects, etc with the feeling of the old-school isometric games like Exult or
+Woodward.
+EOF
