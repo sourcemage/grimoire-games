@@ -1,16 +1,17 @@
            SPELL=stratagus
-         VERSION=2.2.3
+         VERSION=2.2.4
           SOURCE=$SPELL-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/stratagus/$SOURCE
         WEB_SITE=http://stratagus.sf.net
          ENTERED=20040718
-     SOURCE_HASH=sha512:69308bc440eb9ea5044c85aa93d2b8d89c1dfdbc3af1ae71c5290f4d288d3b269a3e053f77aa76a5b06fcf83162e94c0997a989c2b546c1383c3a56126379105
+                                                                                          SOURCE_HASH=sha512:350be97629ac2a6c731a07babd27c27b3e0efe8bfe9d8636db4963a38eca175b80b43efe82a223dae8e3f2a5f9d4772dfffcd132a66ad9f51f93b13b94137f31
       LICENSE[0]=GPL
            SHORT='A real-time strategy game engine'
 cat << EOF
-Stratagus is a free cross-platform real-time strategy gaming engine. It includes support for playing 
-over the internet/LAN, or playing a computer opponent. The engine is configurable and can be used to 
-create games with a wide-range of features specific to your needs. See the data sets page for a list 
-of current games using the stratagus engine.
+Stratagus is a free cross-platform real-time strategy gaming engine. It
+includes support for playing over the internet/LAN, or playing a computer
+opponent. The engine is configurable and can be used to create games with
+a wide-range of features specific to your needs. See the data sets page for
+a list of current games using the stratagus engine.
 EOF
