@@ -1,3 +1,7 @@
+2007-11-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: made OLD_VERSION overwritable - now wesnoth should be updatable
+	  via quill again. Just specify the new OLD_VERSION besides WESNOTH_DEVEL
+
 2007-11-10 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated WESNOTH_DEVEL=y to 1.3.10
 
