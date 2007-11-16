@@ -1,3 +1,10 @@
+2007-11-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated BZF_VERSION=release to 2.0.10
+	* PRE_BUILD: two less patches
+	* BUILD: don't test for ccache we have our own
+	* configure.ac-x86_64-fix.patch: removed
+	* autogen.sh-automake.patch: removed
+
 2007-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* CONFIGURE: added a query for a patch
 	* PRE_BUILD: apply patch, forgot the path to patch
