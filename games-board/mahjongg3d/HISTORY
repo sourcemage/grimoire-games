@@ -1,3 +1,7 @@
+2007-11-16 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: changed MD5 to SOURCE_HASH, changed SOURCE to include VERSION
+	* BUILD: added a sed fix to make the spell compiling again (bug #14110)
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

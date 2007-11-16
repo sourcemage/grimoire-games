@@ -1,10 +1,10 @@
            SPELL=mahjongg3d
          VERSION=0.96
-          SOURCE=$SPELL.tar.bz2
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL.release
    SOURCE_URL[0]=http://www.reto-schoelly.de/mahjongg3d/$SOURCE
         WEB_SITE=http://www.reto-schoelly.de/mahjongg3d/
-          MD5[0]=845d14833dc31c8f5273b4204847b4f5
+     SOURCE_HASH=sha512:7ed7f636cdf4e65f40e4264213fb321ac9f445bd300b4622d0c6e9c0de4a412f1dc4b0684cceff14b4b4106707cb6c7a31aeaca445646aeba9cb6cfd70a96f37
       LICENSE[0]=GPL
          ENTERED=20040515
          UPDATED=20040515
