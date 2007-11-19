@@ -1,9 +1,9 @@
            SPELL=wesnoth
   if [[ ${WESNOTH_DEVEL} == y ]]; then
-         VERSION=1.3.10
-     OLD_VERSION=${OLD_VERSION:-1.3.9}
+         VERSION=1.3.11
+     OLD_VERSION=${OLD_VERSION:-1.3.10}
      # this is always the hash for the $VERSION tarball
-     SOURCE_HASH=sha512:1de64f28675ceef0488c928b0920fb128abe8b3f0e310bde390bccf2488dbb84551699008e08deb9fad96696dbfaa05a3577cc2a41d3069554efed44595044d8
+     SOURCE_HASH=sha512:f850aa034a520e2b99429f5fedc961dbbbc3797ec713d2fd426d94211241c2d310c485939c6ef9f53a90c9c106f5734bf23e6e28eb19ac7f20ab0df8ca6c2932
   else
          VERSION=1.2.7
      OLD_VERSION=${OLD_VERSION:-1.2.6}
@@ -28,4 +28,3 @@ advantages and disadvantages in different types of terrains and against
 different types of attacks. Units gain experience and advance levels, 
 and are carried over from one scenario to the next.
 EOF
-
