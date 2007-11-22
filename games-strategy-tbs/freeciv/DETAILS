@@ -1,8 +1,8 @@
            SPELL=freeciv
-         VERSION=2.1.0-rc1
+         VERSION=2.1.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.freeciv.org/freeciv/beta/freeciv-2.1.0-rc1.tar.bz2
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
 #     SOURCE_HASH=sha512:b9049273dc8758d8c575b877cf712e1a5b5e73556a3fcd1e2692d22b86eaa5befa616149659133d9664fe13f083a1c6f8c85ea22587d2a697bfac57312988cd9
   SECURITY_PATCH=1
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"

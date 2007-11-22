@@ -1,3 +1,7 @@
+2007-11-21 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.1.0
+	  SOURCE is now hosted on SourceForge
+
 2007-10-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.1.0-rc1
 	  stdsounds3 no longer distributed separately, remove SOURCE2
