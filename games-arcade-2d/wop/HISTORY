@@ -1,3 +1,6 @@
+2007-11-21 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Need to source $GRIMOIRE/FUNCTIONS before using it
+
 2006-07-17 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated to 0.4.3
 
@@ -6,3 +9,4 @@
 
 2005-12-23 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, BUILD, INSTALL, HISTORY: created spell
+
