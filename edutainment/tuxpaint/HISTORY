@@ -1,3 +1,20 @@
+2007-11-26 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.9.18 (stamps to 2007.11.21)
+	  Formatted long description to <80 columns
+	  Removed UPDATED
+	  WEB_SITE changed to http://www.tuxpaint.org
+	  Define STAMPS_VER
+	* DEPENDS: Adding sdl_pango and cairo as dependencies
+	  Added dependency on libpaper (supposedly optional, but not found)
+	  sdl_mixer, sdl_pango, cairo, and librsvg2 are technically optionl,
+	  but default to being used and I don't feel like making all the queries
+	  to have them properly optional, sorry
+	  netpbm is no longer used, by default, but still optional
+	* BUILD: Uses OPTFLAGS for non-lib (e.g. SDL) flags
+	  Fix magic lib on x86_64 (missing -fPIC in CLFAGS)
+	* INSTALL: Use STAMPS_VER
+	  stamps now uses 'install-all' instead of 'install' to make
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
