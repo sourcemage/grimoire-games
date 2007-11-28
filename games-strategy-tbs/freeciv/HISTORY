@@ -1,6 +1,6 @@
 2007-11-27 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.1.1
-	* DEPENDS: Added now working ggz-client support
+	* DEPENDS: Added now working ggz-gtk-client support
 
 2007-11-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.1.0
