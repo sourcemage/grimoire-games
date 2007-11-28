@@ -1,3 +1,7 @@
+2007-11-28 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.4.1
+	  Removed UPDATED
+
 2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
 
