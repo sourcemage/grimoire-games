@@ -26,6 +26,11 @@ optional_depends  readline                              \
                   '--without-readline'                  \
                   'support fancy command line editing'  &&
 
+optional_depends  ggz-client-libs                       \
+                  '--with-ggz-client'                   \
+                  '--without-ggz-client'                \
+                  'for GGZ Gaming Zone client support'  &&
+
 optional_depends  ggz-server                            \
                   '--with-ggz-server'                   \
                   '--without-ggz-server'                \
