@@ -1,3 +1,7 @@
+2007-12-07 Arjan Bouter <abouter@sourcemage.org>
+	* desktop/frozen-bubble.desktop: added
+	* desktop/frozen-bubble-editor.desktop: added
+
 2007-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on sdl_pango built with the Frozen Bubble patch
 
