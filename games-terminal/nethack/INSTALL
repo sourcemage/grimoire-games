@@ -1,5 +1,6 @@
 make_normal                         &&
 make install                        &&
+chmod +x  ${INSTALL_ROOT}/usr/games/nethack &&
 
 # this whole mess takes care of docs, fonts and stuff
 # check POST_REMOVE? (was POST_INSTALL, doesn't exist) for more info. 

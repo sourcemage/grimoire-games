@@ -1,3 +1,7 @@
+2007-12-07 Arjan Bouter <abouter@sourcemage.org>
+	* desktop/nethack.desktop: added
+	* INSTALL: make nethack executable
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

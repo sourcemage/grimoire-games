@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Nethack
+Exec=nethack
+Icon=
+Terminal=true
+Type=Application
+Categories=Application;Games;
