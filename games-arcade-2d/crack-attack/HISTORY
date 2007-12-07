@@ -1,3 +1,6 @@
+2007-12-07 Arjan Bouter <abouter@sourcemage.org>
+	* INSTALL: added, install desktop file
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

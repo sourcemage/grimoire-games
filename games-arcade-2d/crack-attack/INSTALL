@@ -1,0 +1,3 @@
+default_install &&
+cp -a ${INSTALL_ROOT}/usr/share/crack-attack/crack-attack.desktop \
+       ${INSTALL_ROOT}/usr/share/applications/
