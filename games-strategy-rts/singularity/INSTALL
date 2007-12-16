@@ -1,5 +1,9 @@
-cd ${SOURCE_DIRECTORY}                                                &&
-cp -r code data Endgame_Linux /usr/share/games/${SPELL} &&
-mkdir -p /usr/share/doc/${SPELL}                                      &&
-cp AUTHORS Changelog GPL.txt README.txt TODO /usr/share/doc/${SPELL}  &&
-cp ${SCRIPT_DIRECTORY}/singularity /usr/games
+SHARE_DIR=${INSTALL_ROOT}/usr/share/games/${SPELL}
+DOC_DIR=${INSTALL_ROOT}/usr/share/doc/${SPELL}
+BIN_DIR=${INSTALL_ROOT}/usr/games
+
+cp -rv code data Endgame_Linux $SHARE_DIR &&
+mkdir -v ${SHARE_DIR}/music &&
+mkdir -pv $DOC_DIR &&
+cp -v AUTHORS Changelog GPL.txt README.txt TODO $DOC_DIR &&
+cp -v ${SPELL_DIRECTORY}/singularity $BIN_DIR

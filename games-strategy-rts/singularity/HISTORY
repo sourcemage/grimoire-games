@@ -1,3 +1,7 @@
+2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.26a, removed UPDATED
+	* INSTALL: install_rootified, cleaned up
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
