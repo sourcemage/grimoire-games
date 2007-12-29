@@ -1,10 +1,11 @@
-depends  freetype2  &&
-depends  sdl_image  &&
-depends  sdl_mixer  &&
-depends  sdl_net &&
+depends freetype2 &&
+depends sdl_image &&
+depends sdl_mixer &&
+depends sdl_net &&
 
 if [[ $WESNOTH_DEVEL == y ]]; then
-  depends python
+  depends python &&
+  sub_depends boost IOSTREAMS
 fi &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then

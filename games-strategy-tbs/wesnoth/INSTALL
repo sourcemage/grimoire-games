@@ -1,8 +1,9 @@
 default_install &&
-if [[ ${WESNOTH_DEVEL} == n ]]; then
-  message "Trying to install icon"  &&
-  install -d -v ${INSTALL_ROOT}/usr/share/games/icons/wesnoth-icon.png  &&
+
+if [[ $WESNOTH_DEVEL == n ]]; then
+  message "Trying to install icon" &&
+  install -d -v ${INSTALL_ROOT}/usr/share/games/icons/wesnoth-icon.png &&
   install -v $SOURCE_DIRECTORY/images/wesnoth-icon.png \
-             ${INSTALL_ROOT}/usr/share/games/icons/wesnoth-icon.png  &&
+             ${INSTALL_ROOT}/usr/share/games/icons/wesnoth-icon.png &&
   message "End of installing icon"
 fi
