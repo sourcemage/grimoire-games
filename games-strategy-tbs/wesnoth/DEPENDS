@@ -5,6 +5,7 @@ depends sdl_net &&
 
 if [[ $WESNOTH_DEVEL == y ]]; then
   depends python &&
+  depends boost &&
   sub_depends boost IOSTREAMS
 fi &&
 
