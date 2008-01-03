@@ -1,10 +1,10 @@
            SPELL=fgfs-base
-         VERSION=0.9.10
+         VERSION=1.0.0
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
    SOURCE_URL[0]=ftp://ftp.flightgear.org/pub/fgfs/Shared/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.flightgear.org/Shared/${SOURCE}
-     SOURCE_HASH=sha512:b96584b416c739d971113266cea690a841bfeac5c9e55494ba00a315219d5bb97b9f77497763bd5d6e0fd79e4e89d798162e72c4e0b2e1e6ed1019ec5a9a21e2
+     SOURCE_HASH=sha512:b69ffb74c00ed1a73913fa1329dfc989b0f59de6013d0eeb8b005dea612aa451072807b9d3d79a23a6af3c212685ed938930199a5d15b71cc3494af8468cab24
         WEB_SITE=http://flightgear.sourceforge.net
          ENTERED=20010922
          UPDATED=20040107
