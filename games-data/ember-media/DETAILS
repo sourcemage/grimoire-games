@@ -1,13 +1,13 @@
            SPELL=ember-media
-         VERSION=0.2.0
+         VERSION=0.5.1
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-     SOURCE_HASH=sha512:bf8314c4173577709c5527bc84ad64c3dd839782adc70dba443653a4f56276b2a07ae9b1223ccd0d32c15758970736afe0ac681b585cd9d75506087f601518c2
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#     SOURCE_HASH=sha512:bf8314c4173577709c5527bc84ad64c3dd839782adc70dba443653a4f56276b2a07ae9b1223ccd0d32c15758970736afe0ac681b585cd9d75506087f601518c2
+      LICENSE[0]=GPL
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/clients/ember
          ENTERED=20050310
-         UPDATED=20050310
-      LICENSE[0]=GPL
          ARCHIVE="off"
            SHORT="WorldForge media for the Ember client"
 cat << EOF
