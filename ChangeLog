@@ -3,6 +3,7 @@
 	* games-strategy-rts/spring: Moved to games-engines/spring (thanks
 	  ruskie)
 	* games-utils/wfut: Added WorldForge Update Tool
+	* games-libs/libwfut: Added C++ WorldForge Update Too library
 
 2008-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* games-strategy-rts/spring: Added open source RTS engine
