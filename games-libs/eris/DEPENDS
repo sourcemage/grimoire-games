@@ -1,13 +1,5 @@
-if  [  "$ERIS_BRANCH"  ==  "cvs"    -o   \
-       "$ERIS_BRANCH"  ==  "devel"       ];  then
-  message  "${SPELL_COLOR}eris${MESSAGE_COLOR} requires"    \
-           "${SPELL_COLOR}atlas-c++${MESSAGE_COLOR} devel"  &&
-  depends  libsigc++3  &&
-  depends  skstream    &&
-  depends  wfmath      &&
-  depends  CVS
-else
-  depends  libsigc++2  &&
-  depends  skstream2   &&
-  depends  wfmath2
-fi
+depends  atlas-c++   &&
+depends  libsigc++3  &&
+depends  CVS         &&
+depends  skstream    &&
+depends  wfmath

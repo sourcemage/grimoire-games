@@ -1,5 +1,5 @@
 config_query_list  ERIS_BRANCH  "Which branch do you want?"  \
-                   stable  devel  cvs                        &&
+                   stable  cvs                               &&
 
 if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
   config_query  ERIS_AUTOUPDATE                                    \
