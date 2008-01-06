@@ -1,5 +1,9 @@
 2008-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Remove deprecated CVS variable check
+	* DETAILS: Updated to 0.2.0
+	  Removed UPDATED
+	* DEPENDS: Depends on some provider of OPENGL for glext.h
+	  Removed disabling SDL testing
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
