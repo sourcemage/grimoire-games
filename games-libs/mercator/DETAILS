@@ -1,5 +1,5 @@
            SPELL=mercator
-         VERSION=${VERSION:=0.2.4}
+         VERSION=${VERSION:=0.2.5}
 if  [  "$CVS"  ==  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -11,13 +11,13 @@ else
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:bed47126aa3dfa4c2c80204ea3d97a8c0acf30e47346454924352b7b36355ccc7e1259279af7351babe285c71b9dccd43f26fdfeab4cdbbd47db449ccce6a9a2
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#     SOURCE_HASH=sha512:bed47126aa3dfa4c2c80204ea3d97a8c0acf30e47346454924352b7b36355ccc7e1259279af7351babe285c71b9dccd43f26fdfeab4cdbbd47db449ccce6a9a2
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      LICENSE[0]=GPL
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20031012
-         UPDATED=20031012
-      LICENSE[0]=GPL
            SHORT="WorldForge terrain engine"
 cat << EOF
 Mercator is primarily aimed at terrain for multiplayer online games and forms one of the WorldForge core libraries. It is intended to be used as a terrain library on the client, while a subset of features are useful on the server.

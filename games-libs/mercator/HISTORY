@@ -1,3 +1,8 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.2.5
+	  Removed UPDATED
+	* DEPENDS: Depends on libsigc++3 now instead of libsigc++2
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
@@ -47,3 +52,4 @@
 
 2003-10-12 Eric Sandall <sandalle@sourcemage.org>
 	* Created eris
+
