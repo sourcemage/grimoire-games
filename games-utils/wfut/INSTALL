@@ -1,0 +1,6 @@
+chown root:games $SOURCE_DIRECTORY/src/wfut      \
+                 $SOURCE_DIRECTORY/src/WFUT.jar  &&
+default_install                                  &&
+mkdir -p $INSTALL_ROOT/usr/share/WFUT            &&
+cp $SOURCE_DIRECTORY/src/WFUT.jar                \
+   $INSTALL_ROOT/usr/share/WFUT

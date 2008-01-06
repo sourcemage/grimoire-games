@@ -1,0 +1,25 @@
+           SPELL=wfut
+         VERSION=1.1.0
+          SOURCE=WFUT-$VERSION.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
+   SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/$SPELL/$SOURCE
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/WFUT-$VERSION
+      LICENSE[0]=GPL
+        WEB_SITE=http://www.worldforge.org/dev/eng/tools/wfut
+         ENTERED=20080106
+           SHORT='WorldForge Update Tool'
+cat << EOF
+The WorldForge Update Tool (WFUT) is designed to provide a generic software
+update tool for WorldForge applications. It is intended to provide media
+updates for WorldForge clients, although any content hosted on a web server can
+be used. It was originally written in Java for ease of implementation and
+portability, although there is now a C++ implementation intended for use
+withing client applications.
+
+WFUT defines a collection of files as a channel. Each channel has a XML file
+defined listing each file (and directory), a version number (used to notify the
+client that a local file is out of date) and a CRC32 checksum (used for
+download verification and file change detection).
+EOF
