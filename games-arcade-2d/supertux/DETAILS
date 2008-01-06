@@ -1,11 +1,12 @@
            SPELL=supertux
-         VERSION=0.3.0
+         VERSION=0.3.1d
           SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/d/}
    SOURCE_URL[0]=http://download.berlios.de/supertux/$SOURCE
-     SOURCE_HASH=sha512:b887770714270eb4a977c9871135d43f97934ca2cc6d9fd5a6779b3165f2cb480f3787abdf3f1c769209165f8c5213a4d33b97f61e86706b9f9dc2af5862e27d
-        WEB_SITE=http://supertux.berlios.de/
+#     SOURCE_HASH=sha512:b887770714270eb4a977c9871135d43f97934ca2cc6d9fd5a6779b3165f2cb480f3787abdf3f1c769209165f8c5213a4d33b97f61e86706b9f9dc2af5862e27d
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
       LICENSE[0]=GPL
+        WEB_SITE=http://supertux.berlios.de/
          ENTERED=20040512
            SHORT="a classic 2D jump'n run sidescroller game"
 cat << EOF
