@@ -1,3 +1,12 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* PREPARE: Default to stable release
+	* DETAILS: Updated to 0.2.2
+	  Removed UPDATED
+	* DEPENDS: Depends on gtkglext directly
+	  Now depends on varconf instead of varconf2
+	* entityforge-0.2.gtkglextmm.patch, entityforge-0.2.gtkmm2.patch:
+	  Removed, no longer applicable
+
 2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
 	* PRE_BUID: moved patching/autogen.sh here
@@ -35,3 +44,4 @@
 
 2003-10-18 Eric Sandall <sandalle@sourcemage.org>
 	* Created
+

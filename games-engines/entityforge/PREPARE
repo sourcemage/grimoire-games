@@ -1,1 +1,1 @@
-config_query  CVS  "Use CVS version?"  y
+config_query  CVS  "Use CVS version?"  n
