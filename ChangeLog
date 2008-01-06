@@ -1,3 +1,8 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* games-libs/ember-media: Moved to games-data/ember-media
+	* games-strategy-rts/spring: Moved to games-engines/spring (thanks
+	  ruskie)
+
 2008-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* games-strategy-rts/spring: Added open source RTS engine
 
