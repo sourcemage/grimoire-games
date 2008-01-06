@@ -1,3 +1,11 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.6.3
+	  Removed UPDATED
+	* DEPENDS: CVS dependencies are now stable dependencies
+	  Depends on varconf now, not varconf2
+	* PRE_BUILD: Modify configure.ac to work with eris >= 1.3.12 as the
+	  sear spec states
+
 2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
 	* PRE_BUILD: moved autogen.sh here
