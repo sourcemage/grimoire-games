@@ -1,3 +1,6 @@
+2008-01-05 Eric Sandall <sandalle@sourcemage.org>
+	* games-strategy-rts/spring: Added open source RTS engine
+
 2007-11-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-strategy-rts/boswars: deprecated
 
@@ -418,3 +421,4 @@
 	  the regular scummvm or scummvm_tools spell. dispel scummvm-cvs and
 	  scummvm_tools-cvs and cast -r -c scummvm scummvm_tools, then just say yes
 	  to cvs version.
+

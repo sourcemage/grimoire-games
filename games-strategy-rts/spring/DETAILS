@@ -1,0 +1,21 @@
+           SPELL=spring
+         VERSION=0.76b1
+          SOURCE=${SPELL}_${VERSION}_src.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
+   SOURCE_URL[0]=http://spring.clan-sy.com/dl/$SOURCE
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENSE[0]=GPL
+        WEB_SITE=http://spring.clan-sy.com/
+         ENTERED=20080105
+           SHORT='Open source real-time strategy engine'
+            DOCS="$DOCS LICENSE.html README.html"
+cat << EOF
+Welcome to the Spring Project. This is an open source project developing a new
+realtime strategy game.
+
+Be sure to download at least one map to ~/.spring/maps/ and one mod to
+~/.spring/mods/ before playing.
+
+If you receive an error about "Missing default cursor" you need to read
+http://spring.clan-sy.com/wiki/SetupGuide#OTA_Content.
+EOF

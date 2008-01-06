@@ -1,0 +1,5 @@
+default_pre_build
+#
+# Find Java where we put it (nice if they allowed us to override, but noooo...)
+#
+sedit "s:possible_dirs = \[\]:possible_dirs = \[\"$INSTALL_ROOT/$JAVA_HOME/include\"\]:" $SOURCE_DIRECTORY/rts/build/scons/config.py

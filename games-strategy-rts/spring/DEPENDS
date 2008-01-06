@@ -1,0 +1,14 @@
+depends  -sub "SERIALIZATION THREAD REGEX"  boost  &&
+depends  devil                                     &&
+depends  freetype2                                 &&
+depends  glew                                      &&
+depends  jdk6-bin   ''   'z-rejected'              &&
+depends  libogg                                    &&
+depends  libvorbis                                 &&
+depends  -sub RELEASE  openal                      &&
+depends  OPENGL                                    &&
+depends  python                                    &&
+depends  scons                                     &&
+depends  sdl                                       &&
+depends  zip                                       &&
+depends  zlib
