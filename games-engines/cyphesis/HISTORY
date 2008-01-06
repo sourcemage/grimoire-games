@@ -1,3 +1,10 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.15
+	  Removed UPDATED
+	* DEPENDS: Depends on libsigc++3, readline, and some TERMCAP
+	  Depends on varconf now, not varconf2
+	  Removed optional howl and adns, no longer options
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
