@@ -1,5 +1,5 @@
 config_query_list  ATLAS_CPP_BRANCH  "Which branch do you want?"  \
-                   stable  devel  cvs                             &&
+                   stable  cvs                                    &&
 
 if  [  "$ATLAS_CPP_BRANCH"  ==  "cvs"  ];  then
   config_query  ATLAS_CPP_AUTOUPDATE                               \

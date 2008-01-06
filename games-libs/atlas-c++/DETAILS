@@ -1,5 +1,5 @@
            SPELL=atlas-c++
-         VERSION=${VERSION:=0.4.6}
+         VERSION=${VERSION:=0.6.0}
 if  [  "$ATLAS_CPP_BRANCH"  ==  "cvs"  ];  then
   if  [  "$ATLAS_CPP_AUTOUPDATE"  ==  "y"  ];  then
          VERSION=$(date +%Y%m%d)
@@ -11,23 +11,15 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=cvs://:pserver:cvsanon:cvsanon@cvs.worldforge.org:/home/cvspsrv/worldforge:forge/libs/Atlas-C++
    SOURCE_IGNORE=volatile
   FORCE_DOWNLOAD=1
-elif  [  "$ATLAS_CPP_BRANCH"  ==  "devel"  ];  then
-         VERSION=0.5.98
-          SOURCE=Atlas-C++-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 else
           SOURCE=Atlas-C++-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Atlas-C++-$VERSION
-   SOURCE_URL[0]=ftp://ftp.worldforge.org/pub/worldforge/libs/Atlas-C++/$SOURCE
-   SOURCE_URL[1]=http://purple.worldforge.org/downloads/libs/Atlas-C++/$SOURCE
+   SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 fi
       LICENSE[0]=LGPL
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/libraries/atlas_cpp/
          ENTERED=20020915
-         UPDATED=20020915
            SHORT="Standard implementation of the WorldForge Atlas protocol"
 cat << EOF
 Atlas C++ is the standard implementation of the WorldForge Atlas protocol. It
