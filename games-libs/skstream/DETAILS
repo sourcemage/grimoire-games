@@ -1,5 +1,5 @@
            SPELL=skstream
-         VERSION=${VERSION:=0.3.3}
+         VERSION=${VERSION:=0.3.6}
 if  [  "$CVS"  =  "y"  ];  then
          VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -11,13 +11,13 @@ else
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/libs/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:2b33fa81f20265027e9273e8ea43cf6af0a4d18fed13f6e2c59530dd4c9bad0aeddd9ba17a949b8b442c35846bab61bc777a7e1662d320aed774aab1277c8a42
+     SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#     SOURCE_HASH=sha512:2b33fa81f20265027e9273e8ea43cf6af0a4d18fed13f6e2c59530dd4c9bad0aeddd9ba17a949b8b442c35846bab61bc777a7e1662d320aed774aab1277c8a42
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      LICENSE[0]=GPL
         WEB_SITE=http://www.worldforge.org/dev/eng/libraries/$SPELL
          ENTERED=20020915
-         UPDATED=20020915
-      LICENSE[0]=GPL
            SHORT="IO-stream based C++ socket library"
 cat << EOF
 skstream is an iostream based C++ socket library. It is ideally suited for use as the underlying transport for Atlas-C++, and has been well tested and debugged. It was first discovered for WorldForge when it was used in uclient, and has been packaged up as its own library for use on other WorldForge components. The code was written by Rafael Guterres Jeffman who is not involved with the project, and is maintained for WorldForge by Al Riddoch and others.
