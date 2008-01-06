@@ -1,13 +1,13 @@
             SPELL=crimson
-          VERSION=0.4.9
+          VERSION=0.5.2
            SOURCE=${SPELL}-${VERSION}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     SOURCE_URL[0]=http://crimson.seul.org/files/${SOURCE}
-      SOURCE_HASH=sha512:8e5061924c863f7f014187ab7d27c9a40f1a3f8b1ecc0e4ca667739a1410d9edefb77f533bc6204936f0f4dfc3994823d6d1b037731d50607d1c3c149e0a1fcc
+#      SOURCE_HASH=sha512:8e5061924c863f7f014187ab7d27c9a40f1a3f8b1ecc0e4ca667739a1410d9edefb77f533bc6204936f0f4dfc3994823d6d1b037731d50607d1c3c149e0a1fcc
+       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+       LICENSE[0]=ART
          WEB_SITE=http://crimson.seul.org/index.html
           ENTERED=20020610
-          UPDATED=20040422
-       LICENSE[0]=ART
             SHORT="Crimson Fields is a tactical war game in the tradition of Battle Isle"
 cat << EOF
 Crimson Fields is a tactical war game in the tradition of Battle Isle. Two

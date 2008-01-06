@@ -1,3 +1,10 @@
+2008-01-05 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.2
+	  Removed UPDATED
+	* DEPENDS: Added sdl
+	  Added optional sdl_net
+	  Added disable flag for sdl_mixer
+
 2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: removed GATHER_DOCS=off
 

@@ -1,6 +1,12 @@
+depends  sdl      &&
 depends  sdl_ttf  &&
 
 optional_depends  sdl_mixer            \
                   ""                   \
-                  ""                   \
-                  "for sound support"
+                  "--disable-sound"    \
+                  "for sound support"  &&
+
+optional_depends  sdl_net                \
+                  ""                     \
+                  "--disable-network"    \
+                  "for network support"
