@@ -1,3 +1,9 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.6.5
+	  Removed UPDATED
+	  Added SOURCE_FORGE URL
+	* DEPENDS: Depends on libsigc++3 now instead of libsigc++
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed MAINTAINER.
 
