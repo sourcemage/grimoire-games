@@ -1,11 +1,4 @@
-#
-# This check on $CVS can be removed on 2005-12-04
-#
-if  [  -n  $CVS  ];  then
-  config_query  SAGE_CVS  'Build latest CVS version?'  $CVS
-else
-  config_query  SAGE_CVS  'Build latest CVS version?'  n
-fi  &&
+config_query  SAGE_CVS  'Build latest CVS version?'  n
 
 if  [  "$SAGE_CVS"  ==  "y"  ];  then
   config_query  SAGE_CVS_AUTOUPDATE                                \
