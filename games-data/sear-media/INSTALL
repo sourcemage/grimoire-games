@@ -1,3 +1,4 @@
+cd                     $SOURCE_DIRECTORY                    &&
 mkdir  -p              $INSTALL_ROOT/usr/share/games/sear   &&
-cp     -r      *       $INSTALL_ROOT/usr/share/games/sear/  &&
-chown  -R  root.games  $INSTALL_ROOT/usr/share/games/sear
+chown  -R  root:games  *                                    &&
+cp     -ar     *       $INSTALL_ROOT/usr/share/games/sear/

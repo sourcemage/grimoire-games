@@ -1,3 +1,9 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 20070206
+	  Removed UPDATED
+	  SOURCE_DIRECTORY now has "-0.6" at the end
+	* INSTALL: Change ownership *before* copying
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
