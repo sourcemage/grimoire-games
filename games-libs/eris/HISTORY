@@ -3,6 +3,7 @@
 	  Removed devel
 	  Removed UPDATED
 	* DEPENDS: Depends on atlas-c++
+	  Only depend on CVS for the CVS version
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
