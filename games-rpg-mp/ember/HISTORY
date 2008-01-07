@@ -1,3 +1,19 @@
+2008-01-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated stable to 0.5.1
+	  Removed UPDATED
+	  SOURCE is now .bz2
+	* PREPARE: Default to stable release
+	* DEPENDS: Depends on varconf now, not varconf2
+	  Depends on cegui built with lua, libsigc++3, wfmath, libwfut
+	  and freealut
+	  Depends on ogre built with cegui and devil enabled
+	  Depends on boost built with thread enabled
+	  Depends only on sdl now, not sdl_mixer nor sdl_image
+	* PRE_BUILD: Modify ember to look in /usr/share/games for shared data
+	  Use /etc/ember instead of /usr/etc/ember
+	  Binaries are in /usr/games not /usr/bin
+	  Fix other paths being setup funkily in the code
+
 2006-09-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: use default_games_build
 	* PRE_BUILD: moved autogen.sh to PRE_BUILD

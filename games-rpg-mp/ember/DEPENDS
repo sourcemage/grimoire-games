@@ -1,17 +1,15 @@
-depends  ember-media  &&
-depends  sdl_image    &&
-depends  sdl_mixer    &&
-depends  skstream     &&
-message  "${MESSAGE_COLOR}Depends on atlas-c++/devel${DEFAULT_COLOR}"  &&
-depends  atlas-c++    &&
-depends  mercator     &&
-message  "${MESSAGE_COLOR}Depends on eris/devel${DEFAULT_COLOR}"  &&
-depends  eris         &&
-depends  varconf2     &&
-message  "${MESSAGE_COLOR}Broken with ogre built with GLX${DEFAULT_COLOR}"  &&
-depends  ogre         &&
-depends  openal       &&
-
-if  [  "$CVS"  ==  "n"  ];  then
-  depends  boost
-fi
+depends  atlas-c++                &&
+depends  -sub THREAD boost        &&
+depends  -sub LUA cegui           &&
+depends  ember-media              &&
+depends  eris                     &&
+depends  freealut                 &&
+depends  libsigc++3               &&
+depends  libwfut                  &&
+depends  mercator                 &&
+depends  -sub "CEGUI DEVIL" ogre  &&
+depends  openal                   &&
+depends  sdl                      &&
+depends  skstream                 &&
+depends  varconf                  &&
+depends  wfmath

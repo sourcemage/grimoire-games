@@ -1,1 +1,1 @@
-config_query  EMBER_CVS  "Build CVS version?"  y
+config_query  EMBER_CVS  "Build CVS version?"  n

@@ -7,16 +7,16 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-cvs
    SOURCE_IGNORE=unversioned
   FORCE_DOWNLOAD="on"
 else
-         VERSION=0.2.0
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=0.5.1
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
-     SOURCE_HASH=sha512:244a8b0d69e3ed61eba75021597f298842caba183abbf1c8584770c6582a6c6a82443146afd2318a975418e18ca487dfb7552cca8f6beb871d9120d0238a1d15
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#     SOURCE_HASH=sha512:244a8b0d69e3ed61eba75021597f298842caba183abbf1c8584770c6582a6c6a82443146afd2318a975418e18ca487dfb7552cca8f6beb871d9120d0238a1d15
 fi
+      LICENSE[0]=GPL
         WEB_SITE=http://www.worldforge.org/wf/dev/eng/clients/ember
          ENTERED=20031013
-         UPDATED=20050310
-      LICENSE[0]=GPL
            SHORT="Modular WorldForge client"
 cat << EOF
 Welcome to Ember! Ember is an effort to build a modularized framework for Worldforge clients which will run easily on different platforms.

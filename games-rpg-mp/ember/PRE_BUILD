@@ -1,0 +1,14 @@
+default_pre_build  &&
+
+for file in ember ember.in
+do
+  sedit 's:etcdir=.*:etcdir=/etc/ember:' $SOURCE_DIRECTORY/$file  &&
+  sedit 's:/share/:&games/:'             $SOURCE_DIRECTORY/$file  &&
+  sedit 's:bindir=.*:bindir=/usr/games:' $SOURCE_DIRECTORY/$file
+done  &&
+
+#
+# Fix funky paths in the code
+#
+sedit 's:mSharedDataDir = .*:mSharedDataDir = prefix + "/share/games/ember/";:' $SOURCE_DIRECTORY/src/services/config/ConfigService.cpp  &&
+sedit 's:mEtcDir = .*:mEtcDir = "/etc/ember/";:' $SOURCE_DIRECTORY/src/services/config/ConfigService.cpp
