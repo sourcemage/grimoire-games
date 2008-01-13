@@ -4,8 +4,9 @@ depends sdl_mixer &&
 depends sdl_net &&
 
 if [[ $WESNOTH_DEVEL == y ]]; then
-  depends python &&
-  depends -sub IOSTREAMS boost
+  depends -sub IOSTREAMS boost &&
+
+  optional_depends python "--enable-python-install" "" "for Python tools"
 fi &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then

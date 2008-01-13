@@ -1,3 +1,7 @@
+2008-01-13 Vlad Glagolev <stealth@sourcemage.org>
+	* updated WESNOTH_DEVEL=y to 1.3.14
+	* DEPENDS: python (req => opt) in DEVEL
+
 2008-01-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DEPENDS: depends -sub ftw
 
