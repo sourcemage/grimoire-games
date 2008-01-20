@@ -1,9 +1,9 @@
            SPELL=scorched3d
-         VERSION=39.1
+         VERSION=41.3
           SOURCE=Scorched3D-$VERSION-src.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/scorched
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-#     SOURCE_HASH=sha512:7e8a0fbae8aeef4f90dec846483203eb2ef4e659053d1f08115ffe91f1d1ad95fb4568a8f27d691a1ba91d00f36d8ac2ebebc5916e7188f7ca6412a1654429fd
+#     SOURCE_HASH=sha512:21de98cf17c83518606a3cabb18d76a9191e9af56de8868926334701688dfef29a0aa1f4cd6c8ab2ae35751433e97ef6edad6e5e0c6c90c0e9df0d2c933499bd
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
         WEB_SITE=http://www.scorched3d.co.uk/

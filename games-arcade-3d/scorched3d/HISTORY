@@ -1,3 +1,7 @@
+2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 41.3
+	* DEPENDS: replaced wxgtk-no-unicode with wxgtk
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

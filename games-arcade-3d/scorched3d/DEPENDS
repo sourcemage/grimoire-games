@@ -6,4 +6,4 @@ depends  openal                            &&
 depends  sdl                               &&
 depends  sdl_net                           &&
 depends  sdl_mixer                         &&
-depends  wxgtk-no-unicode  ''  ''  'test'
+depends  wxgtk
