@@ -1,9 +1,9 @@
            SPELL=extreme-tuxracer
-         VERSION=0.35
-          SOURCE="${SPELL}-${VERSION}.tar.gz"
+         VERSION=0.4
+          SOURCE="${SPELL/-/}-${VERSION}.tar.gz"
    SOURCE_URL[0]=${SOURCEFORGE_URL}/extremetuxracer/${SOURCE}
-     SOURCE_HASH=sha512:9c458a95a09177896d2b491ac01e2173d7f205f7ed8107876ec907f7d5e7a74478eec1f935cd59e8aefac2877821891c5eea00c978615df18e39bbda24dfa231
-SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     SOURCE_HASH=sha512:2de5342a0ae3aebd1e5999cab5672b260d797ef01be4f2771ea25eae13fdce6bee1734818b8b6c2c979bfae3ff14121120dd4ad68264c326b950f56de945e940
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL/-/}-${VERSION}"
         WEB_SITE="http://www.extremetuxracer.com/"
       LICENSE[0]=GPL
          ENTERED=20070927
