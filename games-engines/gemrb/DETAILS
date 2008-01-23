@@ -1,0 +1,17 @@
+           SPELL=gemrb
+         VERSION=0.2.9
+          SOURCE=$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:39ae35dbc1a43b2e3c0c6cc548ab1644d94f2dae7b09f04134bbc40378a664e0947b90f6a281d0ee2835e19589ee2424fde9a1b2aeb574c1967e160ffe75aeff
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://gemrb.sourceforge.net
+         ENTERED=20060531
+      LICENSE[0]=GPL2+
+           SHORT="An Infinity Engine clone"
+cat << EOF
+GemRB (Game engine made with preRendered Background) is a portable open-source
+implementation of Bioware's Infinity Engine which was written to support
+pseudo-3D role playing games based on the Dungeons & Dragons ruleset. It
+should run on GNU/Linux, Microsoft Windows, OS X and possibly other UNIX
+derivatives. It licensed under the GPL.
+EOF
