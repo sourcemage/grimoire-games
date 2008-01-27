@@ -1,0 +1,4 @@
+default_pre_build  &&
+cd ${SOURCE_DIRECTORY}  &&
+## Fix for miscase
+sedit 's:btQuickProf.h:btQuickprof.h:' Extras/BulletMultiThreaded/SpuParallelSolver.cpp

@@ -1,10 +1,10 @@
            SPELL=bullet
-         VERSION=2.56
-          SOURCE="${SPELL}-${VERSION}.tgz"
+         VERSION=2.66
+          SOURCE="${SPELL}-${VERSION}A.tgz"
    SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:f216b952c7e4c09b858bdc431d92533309e1f8016c9bea064226a6ff9009319f8aa8495faf56036aeea9cf388e254f15eccee9d580335adfc1b1e3a2c0cbe2d0
+     SOURCE_HASH=sha512:6f31ae01949231aa4b48551513a36a6d0f8d1e9a62ca9f97a487c57361153b407e47b2d6ec3cf17f7cfafcb1bdc1c5477cea5ee21b5995238b17c401a3cf421d
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
-        WEB_SITE="http://www.continuousphysics.com/Bullet/index.html"
+        WEB_SITE="http://www.bulletphysics.com/"
       LICENSE[0]=zlib
          ENTERED=20070425
            SHORT="Bullet is a 3D Collision Detection and Rigid Body Dynamics Library for games and animation."

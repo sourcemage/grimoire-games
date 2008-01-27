@@ -1,3 +1,7 @@
+2008-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.66, changed WEB_SITE
+	* PRE_BUILD: added, does a sedit trick to fix a miscase in an inclusion
+
 2007-09-01 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 2.56
 
