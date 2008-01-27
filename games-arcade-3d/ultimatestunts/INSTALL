@@ -1,0 +1,4 @@
+default_install  &&
+cd ${INSTALL_ROOT}/usr/share/games/${SPELL}  &&
+find_and_scam
+
