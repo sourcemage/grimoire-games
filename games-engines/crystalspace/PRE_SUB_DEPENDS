@@ -1,4 +1,3 @@
-. $GRIMOIRE/is_depends_enabled.function
 case $THIS_SUB_DEPENDS in
      PERL) is_depends_enabled $SPELL perl      ;;
    PYTHON) is_depends_enabled $SPELL python    ;;

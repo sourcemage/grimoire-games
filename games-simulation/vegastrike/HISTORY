@@ -1,3 +1,6 @@
+2008-01-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: removed is_depends_enabled.function reference
+
 2007-10-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD: removed code to build vssetup, it gets built by default
 	* DEPENDS, INSTALL: added optional dependency on blender,
