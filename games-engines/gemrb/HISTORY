@@ -1,0 +1,15 @@
+2008-01-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added libpng
+	* INSTALL: added to remove the null sound plugin
+
+2008-01-23 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 0.2.9
+	  fixed long description wrap
+	* PRE_BUILD: added to fix Cache path, also propagated upstream
+
+2007-11-11 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added g++
+	* DETAILS: updated spell to 0.2.9
+
+2006-05-31 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS, DEPENDS, HISTORY: created spell

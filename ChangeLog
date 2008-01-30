@@ -2,6 +2,12 @@
 	* games-arcade-3d/extreme-tuxracer: renamed
 	* games-arcade-3d/extremetuxracer: renamed to proper name
 
+2008-01-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* libcompat: added is_depends_enabled function
+
+2008-01-23 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* games-engines/gemrb: An Infinity Engine clone
+
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* gurus.gpg: added my key
 

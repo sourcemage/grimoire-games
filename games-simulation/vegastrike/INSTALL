@@ -1,4 +1,3 @@
-. ${GRIMOIRE}/is_depends_enabled.function                           &&
 mkdir -vp ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2  &&
 if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
 install -v -o root -g games -m 0750                                 \

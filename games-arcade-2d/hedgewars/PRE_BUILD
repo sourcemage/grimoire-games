@@ -3,5 +3,5 @@ cd ${SOURCE_DIRECTORY}                                                  &&
 mv bin games                                                            &&
 sedit 's:bin:games:g' CMakeLists.txt                                    &&
 sedit 's:bin:games:' hedgewars/CMakeLists.txt                           &&
-sedit 's:("bin"):("games"):' QTfrontend/main.cpp.in                     &&
+sedit 's:${HEDGEWARS_BINDIR}:&/games:' QTfrontend/hwconsts.cpp.in       &&
 sedit 's:DESTINATION bin:DESTINATION games:' QTfrontend/CMakeLists.txt

@@ -1,0 +1,4 @@
+default_install &&
+# this one is only useful for developers, but sorts before the real output
+# plugin, so remove it.
+rm "$INSTALL_ROOT"/usr/lib/gemrb/libNullSound.*
