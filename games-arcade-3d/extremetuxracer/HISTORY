@@ -1,11 +1,5 @@
 2008-01-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: deprecated, renamed to extremetuxracer like it should have
-	  been from the start
-	* BUILD: deprecated
-	* INSTALL: deprecated
-	* DEPENDS: deprecated
-	* TRIGGERS: added
-	* PRE_BUILD: deprecated
+	* DETAILS: renamed to extremetuxracer
 
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.4

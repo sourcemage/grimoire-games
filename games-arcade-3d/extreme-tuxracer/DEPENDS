@@ -1,7 +1,1 @@
-depends OPENGL &&
-depends GLUT &&
-depends sdl &&
-depends sdl_mixer &&
-depends libpng &&
-depends freetype2 &&
-depends tcl 
+depends extremetuxracer
