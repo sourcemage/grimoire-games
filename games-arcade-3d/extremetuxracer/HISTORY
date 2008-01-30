@@ -1,0 +1,8 @@
+2008-01-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: renamed to extremetuxracer
+
+2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 0.4
+
+2007-09-27 Alexander Tsamutali <astsmtl@gmail.com>
+	* DEPENDS, DETAILS, BUILD, HISTORY: spell created
