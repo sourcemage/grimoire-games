@@ -1,3 +1,9 @@
+2008-01-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: deprecated
+	* BUILD: deprecated
+	* INSTALL: deprecated
+	* DEPENDS: deprecated
+
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.4
 
