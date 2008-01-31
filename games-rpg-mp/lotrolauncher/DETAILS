@@ -1,0 +1,22 @@
+           SPELL=lotrolauncher
+         VERSION=0.9.9b
+          SOURCE=$SPELL.script
+         SOURCE2=urlencode.txt
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://bmx-chemnitz.de/%7Emfr/LOTRO/$SOURCE
+  SOURCE2_URL[0]=http://www.shelldorado.de/scripts/cmds/$SOURCE2
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
+      LICENSE[0]=BSD
+      LICENSE[1]=unknown
+        WEB_SITE=http://bmx-chemnitz.de/%7Emfr/LOTRO/
+         ENTERED=20080131
+           SHORT='LotRO and DDO launcher script'
+cat << EOF
+These scripts must be placed in directory containing the file lotroclient.exe 
+or dndclient.exe.
+
+To run the script type either bash ./scriptname or ./scriptname if the scripts
+permissions allow for execute (where scriptname is the name of the downloaded
+script).
+EOF

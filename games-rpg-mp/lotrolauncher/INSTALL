@@ -1,0 +1,6 @@
+cp $SOURCE_DIRECTORY/$SOURCE                              \
+   $INSTALL_ROOT/usr/games/${SOURCE/.script/.sh}          &&
+cp $SOURCE_CACHE/$SOURCE2                                 \
+   $INSTALL_ROOT/usr/games/${SOURCE2/.txt/.sh}            &&
+chmod a+rx $INSTALL_ROOT/usr/games/${SOURCE/.script/.sh}  \
+           $INSTALL_ROOT/usr/games/${SOURCE2/.txt/.sh}

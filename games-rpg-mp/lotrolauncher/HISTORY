@@ -1,0 +1,4 @@
+2008-01-31 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL: Created
+	* ddo.config.patch: Patch to find DDO exe config
+
