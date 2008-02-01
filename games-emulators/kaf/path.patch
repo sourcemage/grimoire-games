@@ -1,7 +1,7 @@
 diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
---- kaf.orig/mameprocess.cpp	2004-10-18 17:01:32.894484448 +0000
-+++ kaf/mameprocess.cpp	2004-10-18 17:01:47.461269960 +0000
-@@ -68,7 +68,7 @@ void MameProcess::setGameArguments( Game
+--- kaf.orig/mameprocess.cpp	2006-03-13 22:21:05.000000000 +0100
++++ kaf/mameprocess.cpp	2008-02-01 22:48:07.000000000 +0100
+@@ -144,7 +144,7 @@ void MameProcess::setGameArguments( Game
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -10,7 +10,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
    addArgument( mp_game->name() );
  
    QString sTmp = mp_options->getString( O_MAME_CUSTOM_OPTIONS, "" ).simplifyWhiteSpace();
-@@ -122,28 +122,28 @@ void MameProcess::setPathArguments()
+@@ -225,29 +225,29 @@ void MameProcess::setPathArguments()
    mp_options->setGroup( G_MAME );
  
    addArgument( "-rompath" );
@@ -37,17 +37,18 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
 -  addArgument( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/local/share/xmame/hiscore.dat" ) );
 +  addArgument( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/share/games/xmame/hiscore.dat" ) );
  
-   addArgument( "-history_file" );
--  addArgument( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/local/share/xmame/history.dat" ) );
-+  addArgument( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/share/games/xmame/history.dat" ) );
- 
-   addArgument( "-mameinfo_file" );
--  addArgument( mp_options->getString( O_MAME_INFO_FILE, "/usr/local/share/xmame/mameinfo.dat" ) );
-+  addArgument( mp_options->getString( O_MAME_INFO_FILE, "/usr/share/games/xmame/mameinfo.dat" ) );
+   if( !currentMameVersionIsGreaterThan( "0.99" ) )
+   {
+     addArgument( "-history_file" );
+-    addArgument( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/local/share/xmame/history.dat" ) );
++    addArgument( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/share/games/xmame/history.dat" ) );
+     addArgument( "-mameinfo_file" );
+-    addArgument( mp_options->getString( O_MAME_INFO_FILE, "/usr/local/share/xmame/mameinfo.dat" ) );
++    addArgument( mp_options->getString( O_MAME_INFO_FILE, "/usr/share/games/xmame/mameinfo.dat" ) );
+   }
  
  }
- 
-@@ -511,7 +511,7 @@ void MameProcess::setSoundArguments()
+@@ -649,7 +649,7 @@ void MameProcess::setSoundArguments()
  
      addArgument( "-samplepath" );
      mp_options->setGroup( G_MAME );
@@ -56,7 +57,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
      mp_options->setGroup( G_SOUND );
  
    }
-@@ -751,7 +751,7 @@ void MameProcess::setMiscArguments()
+@@ -889,7 +889,7 @@ void MameProcess::setMiscArguments()
      addArgument( "-cheat" );
      addArgument( "-cheat_file" );
  	mp_options->setGroup( G_MAME );
@@ -65,7 +66,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
  	mp_options->setGroup( G_MISC );
    }
    else
-@@ -890,7 +890,7 @@ int MameProcess::checkVersion()
+@@ -1028,7 +1028,7 @@ int MameProcess::checkVersion()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -74,7 +75,7 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
  
    addArgument( "-noloadconfig" );
    addArgument( "-version" );
-@@ -993,7 +993,7 @@ void MameProcess::checkSupportedGames()
+@@ -1131,7 +1131,7 @@ void MameProcess::checkSupportedGames()
    clearArguments();
  
    mp_options->setGroup( G_MAME );
@@ -84,44 +85,44 @@ diff -urpN kaf.orig/mameprocess.cpp kaf/mameprocess.cpp
    addArgument( "-noloadconfig" );
    addArgument( "-list" );
 diff -urpN kaf.orig/options.cpp kaf/options.cpp
---- kaf.orig/options.cpp	2004-10-18 17:01:32.895484296 +0000
-+++ kaf/options.cpp	2004-10-18 17:01:47.461269960 +0000
-@@ -64,19 +64,19 @@ void Options::setDefaults()
+--- kaf.orig/options.cpp	2005-08-21 11:27:39.000000000 +0200
++++ kaf/options.cpp	2008-02-01 22:50:17.000000000 +0100
+@@ -69,19 +69,19 @@ void Options::setDefaults()
    qDebug( "Restoring default options..." );
  
    setGroup( G_MAME );
 -  setString( O_MAME_EXE, "/usr/local/bin/xmame" );
--  setString( O_MAME_ROMS_DIR, "/usr/local/share/xmame/roms" );
--  setString( O_MAME_ICONS_DIR, "/usr/local/share/xmame/icons" );
--  setString( O_MAME_SNAPS_DIR, "/usr/local/share/xmame/snap" );
--  setString( O_MAME_SAMPLES_DIR, "/usr/local/share/xmame/samples" );
--  setString( O_MAME_INI_DIR, "/usr/local/share/xmame/ini" );
--  setString( O_MAME_ARTWORK_DIR, "/usr/local/share/xmame/artwork" );
--  setString( O_MAME_FLYERS_DIR, "/usr/local/share/xmame/flyers" );
--  setString( O_MAME_CTRLR_DIR, "/usr/local/share/xmame/ctrlr" );
--  setString( O_MAME_CHEAT_FILE, "/usr/local/share/xmame/cheat.dat" );
--  setString( O_MAME_HISCORE_FILE, "/usr/local/share/xmame/hiscore.dat" );
--  setString( O_MAME_HISTORY_FILE, "/usr/local/share/xmame/history.dat" );
--  setString( O_MAME_INFO_FILE, "/usr/local/share/xmame/mameinfo.dat" );
+-  setString( O_MAME_ROMS_DIR, "/usr/local/games/mame/roms" );
+-  setString( O_MAME_ICONS_DIR, "/usr/local/games/mame/icons" );
+-  setString( O_MAME_SNAPS_DIR, "/usr/local/games/mame/snap" );
+-  setString( O_MAME_SAMPLES_DIR, "/usr/local/games/mame/samples" );
+-  setString( O_MAME_INI_DIR, "/usr/local/games/mame/ini" );
+-  setString( O_MAME_ARTWORK_DIR, "/usr/local/games/mame/artwork" );
+-  setString( O_MAME_FLYERS_DIR, "/usr/local/games/mame/flyers" );
+-  setString( O_MAME_CTRLR_DIR, "/usr/local/games/mame/ctrlr" );
+-  setString( O_MAME_CHEAT_FILE, "/usr/local/games/mame/cheat.dat" );
+-  setString( O_MAME_HISCORE_FILE, "/usr/local/games/mame/hiscore.dat" );
+-  setString( O_MAME_HISTORY_FILE, "/usr/local/games/mame/history.dat" );
+-  setString( O_MAME_INFO_FILE, "/usr/local/games/mame/mameinfo.dat" );
 +  setString( O_MAME_EXE, "/usr/games/xmame.x11" );
-+  setString( O_MAME_ROMS_DIR, "/usr/share/games/xmame/roms" );
-+  setString( O_MAME_ICONS_DIR, "/usr/share/games/xmame/icons" );
-+  setString( O_MAME_SNAPS_DIR, "/usr/share/games/xmame/snap" );
-+  setString( O_MAME_SAMPLES_DIR, "/usr/share/games/xmame/samples" );
-+  setString( O_MAME_INI_DIR, "/usr/share/games/xmame/ini" );
-+  setString( O_MAME_ARTWORK_DIR, "/usr/share/games/xmame/artwork" );
-+  setString( O_MAME_FLYERS_DIR, "/usr/share/games/xmame/flyers" );
-+  setString( O_MAME_CTRLR_DIR, "/usr/share/games/xmame/ctrlr" );
-+  setString( O_MAME_CHEAT_FILE, "/usr/share/games/xmame/cheat.dat" );
-+  setString( O_MAME_HISCORE_FILE, "/usr/share/games/xmame/hiscore.dat" );
-+  setString( O_MAME_HISTORY_FILE, "/usr/share/games/xmame/history.dat" );
-+  setString( O_MAME_INFO_FILE, "/usr/share/games/xmame/mameinfo.dat" );
++  setString( O_MAME_ROMS_DIR, "/usr/share/games/mame/roms" );
++  setString( O_MAME_ICONS_DIR, "/usr/share/games/mame/icons" );
++  setString( O_MAME_SNAPS_DIR, "/usr/share/games/mame/snap" );
++  setString( O_MAME_SAMPLES_DIR, "/usr/share/games/mame/samples" );
++  setString( O_MAME_INI_DIR, "/usr/share/games/mame/ini" );
++  setString( O_MAME_ARTWORK_DIR, "/usr/share/games/mame/artwork" );
++  setString( O_MAME_FLYERS_DIR, "/usr/share/games/mame/flyers" );
++  setString( O_MAME_CTRLR_DIR, "/usr/share/games/mame/ctrlr" );
++  setString( O_MAME_CHEAT_FILE, "/usr/share/games/mame/cheat.dat" );
++  setString( O_MAME_HISCORE_FILE, "/usr/share/games/mame/hiscore.dat" );
++  setString( O_MAME_HISTORY_FILE, "/usr/share/games/mame/history.dat" );
++  setString( O_MAME_INFO_FILE, "/usr/share/games/mame/mameinfo.dat" );
  
    setGroup( G_GENERAL );
    setString( O_CHECK_EVENT_TICK, "200" );
 diff -urpN kaf.orig/wndinfo.cpp kaf/wndinfo.cpp
---- kaf.orig/wndinfo.cpp	2004-10-18 17:01:32.893484600 +0000
-+++ kaf/wndinfo.cpp	2004-10-18 17:01:47.462269808 +0000
+--- kaf.orig/wndinfo.cpp	2003-12-05 11:34:10.000000000 +0100
++++ kaf/wndinfo.cpp	2008-02-01 22:51:04.000000000 +0100
 @@ -62,7 +62,7 @@ void WndInfo::loadGameIcon( Game* pGame 
    QString sPrevGroup = mp_options->currentGroup();
    mp_options->setGroup( G_MAME );
@@ -132,8 +133,8 @@ diff -urpN kaf.orig/wndinfo.cpp kaf/wndinfo.cpp
    sFileIco += pGame->name();
    sFileIco += mp_options->mameIconFileType();
 diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
---- kaf.orig/wndmainwindow.cpp	2004-10-18 17:01:32.895484296 +0000
-+++ kaf/wndmainwindow.cpp	2004-10-18 17:01:47.462269808 +0000
+--- kaf.orig/wndmainwindow.cpp	2005-08-21 11:27:39.000000000 +0200
++++ kaf/wndmainwindow.cpp	2008-02-01 22:52:28.000000000 +0100
 @@ -363,7 +363,7 @@ void WndMainWindow::slotSearchForAvailab
  {
    activateProgressBar( mp_games->total() );
@@ -143,7 +144,7 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
    sGameDir += "/";
  
    int iCount = 0;
-@@ -449,10 +449,10 @@ void WndMainWindow::showPreview( Game* p
+@@ -452,10 +452,10 @@ void WndMainWindow::showPreview( Game* p
    switch( m_previewMode )
    {
    case FlyersPreview:
@@ -156,7 +157,7 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
    }
    sPreviewDir += "/";
  
-@@ -582,7 +582,7 @@ void WndMainWindow::slotCheckMameVersion
+@@ -585,7 +585,7 @@ void WndMainWindow::slotCheckMameVersion
    if( iRet == -1 )
    {
      qWarning( "File %s not found. Unable to check MaME version.",
@@ -165,7 +166,7 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
      return;
    }
  
-@@ -871,7 +871,7 @@ void WndMainWindow::slotReadMameInfoActi
+@@ -874,7 +874,7 @@ void WndMainWindow::slotReadMameInfoActi
  void WndMainWindow::slotReadMameInfo()
  {
    mp_options->setGroup( G_MAME );
@@ -174,7 +175,7 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
    QString sTmp = "";
  
    QFile file( sInfoPath );
-@@ -1105,7 +1105,7 @@ bool WndMainWindow::romsDirectoryExists(
+@@ -1108,7 +1108,7 @@ bool WndMainWindow::romsDirectoryExists(
  {
    mp_options->setGroup( G_MAME );
  
@@ -183,7 +184,7 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
  
    QDir dir( sGameDir );
  
-@@ -1124,7 +1124,7 @@ bool WndMainWindow::mameBinaryExists()
+@@ -1127,7 +1127,7 @@ bool WndMainWindow::mameBinaryExists()
  {
    mp_options->setGroup( G_MAME );
  
@@ -193,25 +194,25 @@ diff -urpN kaf.orig/wndmainwindow.cpp kaf/wndmainwindow.cpp
    QFile file( sExePath );
  
 diff -urpN kaf.orig/wndmamepaths.cpp kaf/wndmamepaths.cpp
---- kaf.orig/wndmamepaths.cpp	2004-10-18 17:01:32.895484296 +0000
-+++ kaf/wndmamepaths.cpp	2004-10-18 17:01:47.463269656 +0000
+--- kaf.orig/wndmamepaths.cpp	2005-08-20 18:36:46.000000000 +0200
++++ kaf/wndmamepaths.cpp	2008-02-01 22:55:42.000000000 +0100
 @@ -82,19 +82,19 @@ void WndMamePaths::removeLastSlashFromPa
  void WndMamePaths::updateMenus()
  {
    mp_options->setGroup( G_MAME );
--  leMameExe->setText( mp_options->getString( O_MAME_EXE, "/usr/local/bin/xmame" ) );
--  leRomsDir->setText( mp_options->getString( O_MAME_ROMS_DIR, "/usr/local/share/xmame/roms" ) );
--  leIconsDir->setText( mp_options->getString( O_MAME_ICONS_DIR, "/usr/local/share/xmame/icons" ) );
--  leSnapshotsDir->setText( mp_options->getString( O_MAME_SNAPS_DIR, "/usr/local/share/xmame/snap" ) );
--  leSamplesDir->setText( mp_options->getString( O_MAME_SAMPLES_DIR, "/usr/local/share/xmame/samples" ) );
--  leIniDir->setText( mp_options->getString( O_MAME_INI_DIR, "/usr/local/share/xmame/ini" ) );
--  leArtworkDir->setText( mp_options->getString( O_MAME_ARTWORK_DIR, "/usr/local/share/xmame/artwork" ) );
--  leFlyersDir->setText( mp_options->getString( O_MAME_FLYERS_DIR, "/usr/local/share/xmame/flyers" ) );
--  leCtrlrDir->setText( mp_options->getString( O_MAME_CTRLR_DIR, "/usr/local/share/xmame/ctrlr" ) );
--  leHiscoreFile->setText( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/local/share/xmame/hiscore.dat" ) );
--  leCheatFile->setText( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/local/share/xmame/cheat.dat" ) );
--  leHistoryFile->setText( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/local/share/xmame/history.dat" ) );
--  leInfoFile->setText( mp_options->getString( O_MAME_INFO_FILE, "/usr/local/share/xmame/mameinfo.dat" ) );
+-  leMameExe->setText( mp_options->getString( O_MAME_EXE, "/usr/local/bin/xmame.x11" ) );
+-  leRomsDir->setText( mp_options->getString( O_MAME_ROMS_DIR, "/usr/local/games/mame/roms" ) );
+-  leIconsDir->setText( mp_options->getString( O_MAME_ICONS_DIR, "/usr/local/games/mame/icons" ) );
+-  leSnapshotsDir->setText( mp_options->getString( O_MAME_SNAPS_DIR, "/usr/local/games/mame/snap" ) );
+-  leSamplesDir->setText( mp_options->getString( O_MAME_SAMPLES_DIR, "/usr/local/games/mame/samples" ) );
+-  leIniDir->setText( mp_options->getString( O_MAME_INI_DIR, "/usr/local/games/mame/ini" ) );
+-  leArtworkDir->setText( mp_options->getString( O_MAME_ARTWORK_DIR, "/usr/local/games/mame/artwork" ) );
+-  leFlyersDir->setText( mp_options->getString( O_MAME_FLYERS_DIR, "/usr/local/games/mame/flyers" ) );
+-  leCtrlrDir->setText( mp_options->getString( O_MAME_CTRLR_DIR, "/usr/local/games/mame/ctrlr" ) );
+-  leHiscoreFile->setText( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/local/games/mame/hiscore.dat" ) );
+-  leCheatFile->setText( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/local/games/mame/cheat.dat" ) );
+-  leHistoryFile->setText( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/local/games/mame/history.dat" ) );
+-  leInfoFile->setText( mp_options->getString( O_MAME_INFO_FILE, "/usr/local/games/mame/mameinfo.dat" ) );
 +  leMameExe->setText( mp_options->getString( O_MAME_EXE, "/usr/games/xmame.x11" ) );
 +  leRomsDir->setText( mp_options->getString( O_MAME_ROMS_DIR, "/usr/share/games/xmame/roms" ) );
 +  leIconsDir->setText( mp_options->getString( O_MAME_ICONS_DIR, "/usr/share/games/xmame/icons" ) );
@@ -224,7 +225,7 @@ diff -urpN kaf.orig/wndmamepaths.cpp kaf/wndmamepaths.cpp
 +  leHiscoreFile->setText( mp_options->getString( O_MAME_HISCORE_FILE, "/usr/share/games/xmame/hiscore.dat" ) );
 +  leCheatFile->setText( mp_options->getString( O_MAME_CHEAT_FILE, "/usr/share/games/xmame/cheat.dat" ) );
 +  leHistoryFile->setText( mp_options->getString( O_MAME_HISTORY_FILE, "/usr/share/games/xmame/history.dat" ) );
-+  leInfoFile->setText( mp_options->getString( O_MAME_INFO_FILE, "/usr/share/games/xmame/mameinfo.dat" ) );
++  leInfoFile->setText( mp_options->getString( O_MAME_INFO_FILE, "/usr/share/games/xmame/xmameinfo.dat" ) );
  
    m_mamePathChanged = false;
  }
