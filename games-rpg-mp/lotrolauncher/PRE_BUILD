@@ -1,0 +1,6 @@
+mk_source_dir  $SOURCE_DIRECTORY                                    &&
+verify_file    ''                                                   &&
+verify_file    '2'                                                  &&
+cd  $SOURCE_DIRECTORY                                               &&
+cp  $SOURCE_CACHE/$SOURCE  $SOURCE_DIRECTORY                        &&
+patch $SOURCE_DIRECTORY/$SOURCE $SCRIPT_DIRECTORY/ddo.config.patch

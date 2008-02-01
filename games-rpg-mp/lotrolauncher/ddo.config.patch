@@ -1,0 +1,20 @@
+--- /usr/games/lotrolauncher.sh	2008-01-31 10:39:04.739060446 -0800
++++ lotrolauncher.sh	2008-01-31 10:42:01.947070301 -0800
+@@ -17,7 +17,16 @@
+ 
+ ########### SETUP
+ 
+-configFile="TurbineLauncher.exe.config"
++if [[ -f TurbineLauncher.exe.config ]]
++then
++	configFile="TurbineLauncher.exe.config"
++elif [[ -f dndlauncher.exe.config ]]
++then
++	configFile="dndlauncher.exe.config"
++else
++	echo "No configuration file found!"
++	exit
++fi
+ 
+ # uncomment the following line if wget complains about "Certificate verification" errors
+ #wgetNoCheckCertOption="--no-check-certificate"
