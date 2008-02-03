@@ -1,3 +1,9 @@
+2008-02-03 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.4.0
+	* BUILD: moved sedit lines to PRE_BUILD
+	* PRE_BUILD, svnversion-deletion.patch: added for building without
+	  subversion, moved part of BUILD code to here
+
 2007-10-18 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.3.4
 
