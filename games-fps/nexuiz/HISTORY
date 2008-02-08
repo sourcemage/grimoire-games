@@ -1,3 +1,6 @@
+2008-02-08 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, PREPARE, PRE_BUILD: added 35 community map pack
+
 2007-07-13 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* nexuiz-*: fix bin name
 	* BUILD: unpack both files
