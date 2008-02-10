@@ -1,3 +1,9 @@
+2008-02-10 linuxfan <demaillists@comcast.net>
+	* DEPENDS: Added dependency on cvs
+	* DETAILS: Added option for cvs or tarball.
+	* PREPARE: Created and added config_querys.
+	* BUILD: Added --with-data-dir ./configure option
+
 2008-01-23 linuxfan <demaillists@comcast.net>
 	* DETAILS: changed to cvs
 

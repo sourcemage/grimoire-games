@@ -1,8 +1,23 @@
            SPELL=ppracer
+if [[ "${PPRACER_CVS}" = "y" ]];
+then
+  if [[ "${PPRACER_CVS_AUTOUPDATE}" == "y" ]];
+  then
+         VERSION=$(date +%Y%m%d)
+  else
          VERSION=cvs
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+  fi
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.ppracer.berlios.de:/cvsroot/ppracer:ppracer
+   SOURCE_IGNORE=volatile
+
+else
+         VERSION=0.3.1
+   SOURCE_URL[0]=http://download.berlios.de/$SPELL/$SOURCE
+
+fi
+
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+          SOURCE=$SPELL-$VERSION.tar.bz2
          ENTERED=20050425
          UPDATED=20080123
      WEB_SITE[1]=http://download.berlios.de/$SPELL

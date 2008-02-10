@@ -5,3 +5,7 @@ depends  sdl_mixer
 depends libpng
 depends freetype2
 depends X11-LIBS
+if [ "$PPRACER_CVS" = "y" ]; then
+  depends  cvs
+fi
+
