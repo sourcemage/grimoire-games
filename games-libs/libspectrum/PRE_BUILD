@@ -1,0 +1,6 @@
+default_pre_build &&
+cd ${SOURCE_DIRECTORY} &&
+if [ "$APPLY_IDEP" = "y" ]; then
+   patch -p0 < ${SCRIPT_DIRECTORY}/libspectrum_ide.c_divip_patch
+fi
+
