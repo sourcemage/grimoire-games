@@ -1,5 +1,8 @@
+2008-02-10 Lubomir Blaha <lblaha@sourcemage.org>
+	* fuse.gpg: moved to the root of the grimoire
+
 2008-02-09 Lubomir Blaha <lblaha@sourcemage.org>
-	* fuse.png: added gpg keyring
+	* fuse.gpg: added gpg keyring
 	* DETAILS: updated spell to 0.4.0
 	  converted to upstream signature checking
 	* CONFIGURE, PRE_BUILD: added patch query
