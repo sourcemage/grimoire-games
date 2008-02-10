@@ -1,0 +1,1 @@
+config_query APPLY_IDEP "Apply unofficial patch to run MDOS3/FATware/DIVIP?" n
