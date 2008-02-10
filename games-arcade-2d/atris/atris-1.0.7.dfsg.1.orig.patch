@@ -1,0 +1,106 @@
+diff -uraN atris-1.0.7-orig//Makefile.am atris-1.0.7//Makefile.am
+--- atris-1.0.7-orig//Makefile.am	2003-07-14 16:28:54.000000000 -0700
++++ atris-1.0.7//Makefile.am	2007-12-07 21:31:00.902142444 -0800
+@@ -50,22 +50,21 @@
+ SUBDIRS = .protos graphics styles Docs
+ 
+ # Special install rule for the game
+-install: install-am
+-	make install_gamedata target=@GAME_INSTALLDIR@
+-
+-install_gamedata:
+-	sh mkinstalldirs $(target)/
++#install: install-am
++install:
++	install $(PACKAGE) $(prefix)/games
++	sh mkinstalldirs @SHAREDIR@/
+ 	cp -rv graphics \
+                styles \
+ 	       Atris.Players \
+ 	       Atris.Scores \
+-               $(target)/
+-	chmod 666 $(target)/Atris.Players
+-	chmod 666 $(target)/Atris.Scores
++               @SHAREDIR@/
++	chmod 666 @SHAREDIR@/Atris.Players
++	chmod 666 @SHAREDIR@/Atris.Scores
+ 
+ install_gamedocs:
+-	sh mkinstalldirs $(target)/
+-	cp -rv README* COPYING* Docs*   $(target)/
++	sh mkinstalldirs @SHAREDIR@/docs
++	cp -rv README* COPYING* Docs*   @SHAREDIR@/docs
+ 
+ # Rule to build tar-gzipped distribution package
+ $(PACKAGE)-$(VERSION).tar.gz: dist
+diff -uraN atris-1.0.7-orig//atris.c atris-1.0.7//atris.c
+--- atris-1.0.7-orig//atris.c	2005-01-20 14:18:19.000000000 -0800
++++ atris-1.0.7//atris.c	2007-12-07 21:31:00.906142669 -0800
+@@ -976,11 +976,16 @@
+ 	Debug("Changing directory to [%s]\n",ATRIS_LIBDIR);
+ 
+     /* Set up the font */
+-    sfont = TTF_OpenFont("graphics/NewMediumNormal.ttf",18);
++/*    sfont = TTF_OpenFont("graphics/NewMediumNormal.ttf",18);
+      font = TTF_OpenFont("graphics/NewMediumNormal.ttf",24);
+     lfont = TTF_OpenFont("graphics/NewMediumNormal.ttf",36);
+-    hfont = TTF_OpenFont("graphics/NewMediumNormal.ttf",96);
+-    if ( font == NULL ) PANIC("Couldn't open [graphics/NewMediumNormal.ttf].", ATRIS_LIBDIR); 
++    hfont = TTF_OpenFont("graphics/NewMediumNormal.ttf",96);*/
++#define USERFONT "/usr/share/fonts/TTF/Vera.ttf"
++    sfont = TTF_OpenFont(USERFONT,18);
++     font = TTF_OpenFont(USERFONT,24);
++    lfont = TTF_OpenFont(USERFONT,36);
++    hfont = TTF_OpenFont(USERFONT,96);
++    if ( font == NULL ) PANIC("Couldn't open " USERFONT, ATRIS_LIBDIR); 
+     TTF_SetFontStyle(font, renderstyle);
+     TTF_SetFontStyle(sfont, renderstyle);
+     /* Initialize scores */
+diff -uraN atris-1.0.7-orig//configure.in atris-1.0.7//configure.in
+--- atris-1.0.7-orig//configure.in	2005-01-20 13:46:09.000000000 -0800
++++ atris-1.0.7//configure.in	2007-12-07 21:30:46.913345266 -0800
+@@ -51,17 +51,19 @@
+ 
+ case "$target" in
+     *-*-mingw32*)
+-	GAME_INSTALLDIR="C:/Program\\ Files/$PACKAGE"
++	GAME_BINDIR="C:/Program\\ Files/$PACKAGE"
+ 	CFLAGS="$CFLAGS -s"
+ 	;;
+     *)
+-	GAME_INSTALLDIR="\$(prefix)/games/$PACKAGE"
++	SHAREDIR="\$(prefix)/share/games/\$(PACKAGE)"
++	GAME_BINDIR="\$(prefix)/games"
+ 	;;
+ esac
+ 
+ 
+ 
+-AC_SUBST(GAME_INSTALLDIR)
++AC_SUBST(GAME_BINDIR)
++AC_SUBST(SHAREDIR)
+ 
+ dnl Check for SDL
+ SDL_VERSION=1.1.6
+@@ -69,7 +71,8 @@
+             :,
+ 	    AC_MSG_ERROR([*** SDL version $SDL_VERSION not found! Get it from http://www.libsdl.org ])
+ )
+-CFLAGS="$CFLAGS -Wall -Wimplicit -Wsign-compare -Wpointer-arith $SDL_CFLAGS -DATRIS_LIBDIR=\\\"$GAME_INSTALLDIR\\\""
++CFLAGS="$CFLAGS -Wall -Wimplicit -Wsign-compare -Wpointer-arith $SDL_CFLAGS \
++	 -DATRIS_LIBDIR=\\\"${SHAREDIR}\\\""
+ LIBS="$LIBS $SDL_LIBS"
+ 
+ # Finally create all the generated files
+@@ -91,8 +94,9 @@
+  Compiler:	       ${CC} 
+  Host System Type:     ${host}
+  Libraries:            ${LIBS}
+- Install path:         ${prefix}
+- Game files:           ${GAME_INSTALLDIR}
++ Install \$(prefix):   ${prefix}
++ Bin files:            ${GAME_BINDIR}
++ Game files:           ${SHAREDIR}
+ 
+  Now type 'make' to build $PACKAGE $VERSION.
+ "

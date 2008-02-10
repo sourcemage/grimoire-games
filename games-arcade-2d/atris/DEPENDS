@@ -1,0 +1,2 @@
+depends sdl_ttf &&
+depends ttf-bitstream-vera
