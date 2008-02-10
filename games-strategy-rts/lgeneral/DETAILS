@@ -1,7 +1,7 @@
            SPELL=lgeneral
          VERSION=1.2beta-13
           SOURCE="${SPELL}-${VERSION}.tar.gz"
-   SOURCE_URL[1]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
      SOURCE_HASH=sha512:55e03790365ef94f22f259112b5386bf95d0763f883a830582929ae09c3a7d41ccf75c9710c42fcadbb2788eec8c50f3c4b02659ba05fce653d226e2d9a0831d
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://lgames.sourceforge.net/index.php?project=LGeneral"
