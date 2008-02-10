@@ -1,12 +1,12 @@
            SPELL=lib765
-         VERSION=0.4.0
+         VERSION=0.4.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.seasip.demon.co.uk/Unix/LibDsk/$SOURCE
         WEB_SITE=http://www.seasip.demon.co.uk/Unix/LibDsk/
          ENTERED=20040425
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:9cf74d213f78d0c9ea4f4afee22064f47dcf18164b0e4e40fb2c9af60814bdad3aaa7150a261657793428536d29053b53392b86b55659103e284e661660c97b6
+     SOURCE_HASH=sha512:f80c878509c41a1de9d64228bb85a7c6b66bbd86bfe5a43246849d81665caf5bcd8ed043d31aa71439ed5e53af9df8b0071da5e2f169b2541bce329ef454e47d
            SHORT="Lib765 is the floppy controller emulation"
 cat << EOF
 Lib765 is the floppy controller emulation from JOYCE,
