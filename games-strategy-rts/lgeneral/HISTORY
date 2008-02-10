@@ -1,4 +1,9 @@
 2007-12-18 linuxfan <demaillists@comcast.net>
+	* BUILD: Call default_build and pass the correct $OPTS.
+	* DEPENDS: Correction from sdl-mixer to sdl_mixer.
+	* FINAL: Abandon all hope, ye who enter here.  Data is non-Free.
+
+2007-12-18 linuxfan <demaillists@comcast.net>
 	* DEPENDS: Changed guessed --enable-sdl-mixer to --enable-sound
 	* DETAILS: Corrected version: quill didn't parse version correctly.
 

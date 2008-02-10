@@ -1,0 +1,8 @@
+cat << EOF
+The data for this game appears to be non-Free.  Unless you have the
+Panzer General CDROM it will not be playable.  See
+
+   http://lgames.sourceforge.net/index.php?project=LGeneral
+
+for details.
+EOF

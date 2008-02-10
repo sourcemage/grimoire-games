@@ -1,5 +1,5 @@
 depends sdl &&
-optional_depends sdl-mixer \
+optional_depends sdl_mixer \
                  "--enable-sound" \
                  "--disable-sound" \
                  "Optionally use sound (sdl-mixer) with lgeneral" 
