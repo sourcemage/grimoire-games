@@ -1,4 +1,4 @@
 config_query_list ZX_FUSE_VIDEO "Select video output?"               \
-                  svgalib framebuffer sdl ggi  gtk+ gtk+2            &&
+                  svgalib framebuffer sdl ggi gtk+2                  &&
 config_query_option USEJOYSTICK "Use real joystick for Kempston?" n  \
                     "--with-joystick" "--without-joystick"

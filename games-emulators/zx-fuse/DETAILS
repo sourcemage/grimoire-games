@@ -1,13 +1,16 @@
            SPELL=zx-fuse
-	     PKG=fuse
-         VERSION=0.8.0.1
+             PKG=fuse
+         VERSION=0.9.0
           SOURCE=$PKG-$VERSION.tar.gz
+         SOURCE2=$SOURCE.sig
    SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
         WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
          ENTERED=20040425
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:aafb9b246842b3b4ce61f91b03eb8e818bc3060290a758ad55babdc4f2756e28dc5c39795a4ba3f554eeb2070a2da1fd97565b2a092408250ac6956505efe315
+      SOURCE_GPG=fuse.gpg:$SOURCE2:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
        BUILD_API=1
            SHORT="Fuse (the Free Unix Spectrum Emulator)"
 cat << EOF

@@ -32,7 +32,6 @@ case $ZX_FUSE_VIDEO in
   framebuffer)  depends directfb "--with-fb"              ;;
           sdl)  depends sdl "--with-sdl"                  ;;
           ggi)  depends libggi "--with-ggi"               ;;
-         gtk+)  depends gtk+ "--with-gtk"                 ;;
         gtk+2)  depends gtk+2 "--with-gtk2"               ;;
 esac                                                      &&
 depends libspectrum
