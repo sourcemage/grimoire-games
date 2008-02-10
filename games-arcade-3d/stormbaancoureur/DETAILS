@@ -1,8 +1,8 @@
            SPELL=stormbaancoureur
-         VERSION=1.5.2
+         VERSION=2.1.1
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=http://bram.creative4vision.nl/sturmbahnfahrer/download/${SOURCE}
-     SOURCE_HASH=sha512:fbcb7b8b47cb0c1e7cddace162edea00fb0f20d9f9cb6e7bb9c08eb21ef90f0181f8610b5f47634e6e06530d2cc1447278867c43fcbcbb9b793d6f376d534c4c
+     SOURCE_HASH=sha512:41405a4121aec2b22aec51b5241ff050eb119cc7c2d440114f1ba3ae3419bec48561e197aa2041c0c768c53d7a5a3ba3428c2ad43b537268f9f05cea2bc68ee7
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.sturmbahnfahrer.com/
          ENTERED=20050226
