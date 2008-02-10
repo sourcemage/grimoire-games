@@ -1,7 +1,13 @@
+2008-02-10 Dale E. Edmons <linuxfan@sourcemage.net>
+	* PRE_BUILD: fixed /usr/src and patch.
+	* DETAILS: Added long description.
+
 2007-12-07 linuxfan <demaillists@comcast.net>
 	* PRE_BUILD: wrote patch to make atis SMGL compliant
+
 2007-12-07 linuxfan <demaillists@comcast.net>
 	* BUILD, DEPENDS, DETAILS, INSTALL: Package not well-behaved.
+
 2007-12-07 linuxfan <demaillists@comcast.net>
-	* BUILD, DEPENDS, DETAILS, , INSTALL: spell created
+	* BUILD, DEPENDS, DETAILS, INSTALL: spell created
 

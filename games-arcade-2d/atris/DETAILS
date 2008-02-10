@@ -7,7 +7,10 @@ SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-1.0.7"
         WEB_SITE="http://www.wkiri.com/projects/atris"
       LICENSE[0]=GPL
          ENTERED=20071207
-           SHORT="*tris clone"
+           SHORT="Alizarin Tetris; another *tris clone"
 cat << EOF
-Another *tris clone.
+Alizarin Tetris is a Tetris-like game with a twist for Unix, Win32
+and BeOS systems. It includes multi-player support, user-extensible
+color, shape and sound styles, can use TCP/IP networking and features
+a few different AI opponents
 EOF
