@@ -19,8 +19,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
           SOURCE=$SPELL-$VERSION.tar.bz2
          ENTERED=20050425
-         UPDATED=20080123
-     WEB_SITE[1]=http://download.berlios.de/$SPELL
+     WEB_SITE[1]=http://download.berlios.de/ppracer
       LICENSE[0]=GPL
            SHORT="Updated Tuxracer Clone"
 cat << EOF

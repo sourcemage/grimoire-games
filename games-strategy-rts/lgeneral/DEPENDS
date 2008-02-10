@@ -1,5 +1,5 @@
 depends sdl &&
-optional_depends sdl-mixer \
-                 "--enable-sound" \
-                 "--disable-sound" \
-                 "Optionally use sound (sdl-mixer) with lgeneral" 
+
+if [ LGENERAL_OPTS = "--with-sound" ] ; then
+  depends sdl-mixer
+fi
