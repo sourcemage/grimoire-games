@@ -1,5 +1,4 @@
 2008-02-09 Lubomir Blaha <lblaha@sourcemage.org>
-	* fuse.gpg: added gpg keyring
 	* DETAILS: updated spell to 0.9.0
 	  converted to upstream signature checking
 	  removed BUILD_API=1

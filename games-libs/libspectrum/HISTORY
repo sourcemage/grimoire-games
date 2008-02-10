@@ -1,5 +1,4 @@
 2008-02-09 Lubomir Blaha <lblaha@sourcemage.org>
-	* fuse.png: added gpg keyring
 	* DETAILS: updated spell to 0.4.0
 	  converted to upstream signature checking
 	* CONFIGURE, PRE_BUILD: added patch query
