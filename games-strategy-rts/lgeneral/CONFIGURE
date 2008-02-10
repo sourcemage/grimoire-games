@@ -1,0 +1,4 @@
+config_query_option LGENERAL_OPTS "enable sound?" n \
+                               "--with-sound" "--without-sound" &&
+OPTS="$LGENERAL_OPTS $OPTS" &&
+OPTS="--datarootdir=$INSTALL_ROOT/usr/share/games/lgeneral $OPTS"

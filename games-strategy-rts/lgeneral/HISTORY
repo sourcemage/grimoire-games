@@ -2,7 +2,6 @@
 	* DEPENDS: changed optional_depends to config_query.
 	* CONFIGURE, BUILD: Created to accomodate config options.
 	* DETAILS: cleaned up long description.
-	
 
 2007-12-18 linuxfan <demaillists@comcast.net>
 	* DEPENDS: Changed guessed --enable-sdl-mixer to --enable-sound
