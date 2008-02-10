@@ -11,7 +11,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
       LICENSE[0]=GPL
       SOURCE_GPG=fuse.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
-       BUILD_API=1
            SHORT="Fuse (the Free Unix Spectrum Emulator)"
 cat << EOF
 Fuse (the Free Unix Spectrum Emulator) was originally,

@@ -2,6 +2,7 @@
 	* fuse.gpg: added gpg keyring
 	* DETAILS: updated spell to 0.9.0
 	  converted to upstream signature checking
+	  removed BUILD_API=1
 
 2007-07-15 Lubomir Blaha <tritol@trilogic.cz>
 	* DETAILS: updated to 0.8.0.1
