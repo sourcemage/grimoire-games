@@ -1,10 +1,13 @@
             SPELL=zx-fuse-utils
               PKG=fuse-utils
-          VERSION=0.8.0.1
+          VERSION=0.9.0
            SOURCE=$PKG-$VERSION.tar.gz
+          SOURCE2=$SOURCE.sig
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$PKG-$VERSION
-      SOURCE_HASH=sha512:ee83f2e7ebc87c6589f8322218ca6bafc8b5b8f9fb2a02860d96e824d1c5bfdd5c6d5849f16d9b1e66ee0f1b4b17aad03efd7365b979e6d522caeccd96b7a15c
+       SOURCE_GPG=fuse.gpg:$SOURCE2:UPSTREAM_KEY
+   SOURCE2_IGNORE=signature
     SOURCE_URL[0]=$SOURCEFORGE_URL/fuse-emulator/$SOURCE
+   SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
          WEB_SITE=http://fuse-emulator.sourceforge.net/fuse.php
           ENTERED=20061007
        LICENSE[0]=GPL
