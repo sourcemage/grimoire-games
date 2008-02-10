@@ -1,0 +1,6 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+
+if [[ $NEXUIZ_MAPPACK == y ]]; then
+  unpack_file 2
+fi

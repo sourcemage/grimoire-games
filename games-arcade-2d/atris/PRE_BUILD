@@ -1,0 +1,5 @@
+default_pre_build				&&
+cd /usr/src &&
+patch -p0 < $SCRIPT_DIRECTORY/${SPELL}-${VERSION}.patch &&
+cd $SOURCE_DIRECTORY &&
+autoreconf -i

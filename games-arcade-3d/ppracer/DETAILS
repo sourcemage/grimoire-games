@@ -1,12 +1,11 @@
            SPELL=ppracer
-         VERSION=0.3.1
+         VERSION=cvs
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.berlios.de/$SPELL/$SOURCE
-        WEB_SITE=http://racer.planetpenguin.de
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.ppracer.berlios.de:/cvsroot/ppracer:ppracer
          ENTERED=20050425
-         UPDATED=20050425
-     SOURCE_HASH=sha512:5d2b540f28ac5140e53850cde6deb5cb83395a60874c1ab9e713f63762acd1e79947844f671e4928fc8d8f5e5d90877c7f158deac18a9e1e0f0009fb9664c511
+         UPDATED=20080123
+     WEB_SITE[1]=http://download.berlios.de/$SPELL
       LICENSE[0]=GPL
            SHORT="Updated Tuxracer Clone"
 cat << EOF

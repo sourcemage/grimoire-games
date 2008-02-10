@@ -1,22 +1,27 @@
-           SPELL=nexuiz
-         VERSION=23
-          SOURCE=${SPELL}-${VERSION}.zip
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:a9cc42331f53e15b8b3a9933b5f4e5997438761e4e498ac76850b8084e25c201ec6b87313d8dbc6cc4e740af94608f215cbfb87c73c4bf87c4597b66ae3914d2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/Nexuiz
-        WEB_SITE=http://www.nexuiz.com
-         ENTERED=20050724
-      LICENSE[0]=GPL
-           SHORT="Nexuiz is a fast-paced, chaotic, and intense
-multiplayer first person shooter, focused on providing basic, old style
-deathmatch."
+            SPELL=nexuiz
+          VERSION=23
+           SOURCE=$SPELL-$VERSION.zip
+    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+      SOURCE_HASH=sha512:a9cc42331f53e15b8b3a9933b5f4e5997438761e4e498ac76850b8084e25c201ec6b87313d8dbc6cc4e740af94608f215cbfb87c73c4bf87c4597b66ae3914d2
+
+if [[ $NEXUIZ_MAPPACK == y ]]; then
+          SOURCE2=nexmappack_r2.zip
+   SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
+     SOURCE2_HASH=sha512:f7e2dd60530b58f3fc505cdf0d605208b6905136586107210031233cb870b1892bae59efc4fb38403a4f0fc5301321297d03107b38daa501cb90e5669455eac0
+SOURCE2_DIRECTORY=$BUILD_DIRECTORY/Nexuiz
+fi
+
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/Nexuiz
+         WEB_SITE=http://www.nexuiz.com/
+          ENTERED=20050724
+       LICENSE[0]=GPL
+            SHORT="3d deathmatch game project"
 cat << EOF
-Nexuiz is a 3d deathmatch game made entirely over the internet. The
-purpose of the game is to bring deathmatch back to the basics, with
-perfect weapon balancing and fast paced action, keeping itself away from
-the current trend of realistic shooters. It uses HFX textures by Evil Lair,
-and currently has 17 maps to frag in. With an advanced UI, the user can
-select between 15 different player models to use, with an average of two
-skins for each, and can connect to our master server to play people from
-all over the world.
+Nexuiz is a 3d deathmatch game made entirely over the internet. The purpose of
+the game is to bring deathmatch back to the basics, with perfect weapon
+balancing and fast paced action, keeping itself away from the current trend of
+realistic shooters. It uses HFX textures by Evil Lair, and currently has 17
+maps to frag in. With an advanced UI, the user can select between 15 different
+player models to use, with an average of two skins for each, and can connect
+to our master server to play people from all over the world.
 EOF

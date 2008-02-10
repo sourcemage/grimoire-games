@@ -1,3 +1,6 @@
+2008-01-23 linuxfan <demaillists@comcast.net>
+	* DETAILS: changed to cvs
+
 2006-07-08 John Harding <johnh@kuberaconsulting.com>
 	* BUILD: added BUILD with default_games_install to get things
 	  installed in the right places
