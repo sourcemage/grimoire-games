@@ -7,7 +7,7 @@ SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://lgames.sourceforge.net/index.php?project=LGeneral"
       LICENSE[0]=GPL
          ENTERED=20071218
-           SHORT="lgeneral is a turn-based strategy engine heavily inspired by Panzer General, but has only non-Free data."
+           SHORT="lgeneral: turn-based strategy engine like Panzer General; Data is non-Free."
 
 cat << EOF
 LGeneral is a turn-based strategy engine heavily inspired by Panzer General.
