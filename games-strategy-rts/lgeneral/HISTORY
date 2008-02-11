@@ -1,4 +1,7 @@
-2007-12-18 linuxfan <demaillists@comcast.net>
+2008-02-11 linuxfan <demaillists@comcast.net>
+	* BUILD: Correct $OPTS.
+
+2008-02-11 linuxfan <demaillists@comcast.net>
 	* BUILD: Call default_build and pass the correct $OPTS.
 	* DEPENDS: Correction from sdl-mixer to sdl_mixer.
 	* FINAL: Abandon all hope, ye who enter here.  Data is non-Free.
