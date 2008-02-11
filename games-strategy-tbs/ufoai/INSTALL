@@ -1,19 +1,10 @@
-cp -vr base ${INSTALL_ROOT}/usr/share/games/ufoai/        &&
-local files                                               &&
-for files in ref_glx.so ref_sdl.so snd_alsa.so \
-             snd_oss.so snd_sdl.so snd_arts.so \
-             snd_jack.so snd_openal.so
+default_install                            &&
+cd ${INSTALL_ROOT}/usr/share/games/ufoai/  &&
+unpack_file 2                              &&
+find_and_scam                              &&
+for files in ufo ufo2map ufoded
 do
 if [[ -e $files ]]; then
-cp -vr $files ${INSTALL_ROOT}/usr/share/games/ufoai/
+chmod 750 $files
 fi
 done
-files=""                                                  &&
-for files in ufo ufo2map ufoded ufomaster qdata
-do
-if [[ -e $files ]]; then
-cp -vr $files ${INSTALL_ROOT}/usr/games/
-fi
-done                                                      &&
-cd ${INSTALL_ROOT}/usr/share/games/ufoai/                 &&
-find_and_scam

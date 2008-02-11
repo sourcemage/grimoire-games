@@ -1,3 +1,15 @@
+2008-02-11 Lubomir Blaha <lblaha@sourcemage.org>
+	* DETAILS: version 2.2
+	  removed SOURCE3
+	  updated WEB_SITE
+	* BUILD: changed to default_games_build
+	* CONFIGURE: removed unused options
+	  added "with shader support"
+	* DEPENDS: new dependecies from configure log
+	* INSTALL: now uses install target provided by game
+	  datafiles unpacked directly into destination directory
+	* PRE_BUILD: removed
+
 2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: created spell
 	* PRE_BUILD, BUILD, INSTALL: created spell

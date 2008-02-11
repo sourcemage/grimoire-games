@@ -1,20 +1,16 @@
-config_query_option UFOAI_OPTS "Build dedicated server?"   \
-                               y                           \
-                               "--enable-dedicated"        \
-                               "--disable-dedicated"       &&
-config_query_option UFOAI_OPTS "Build client?"             \
-                               y                           \
-                               "--enable-client"           \
-                               "--disable-client"          &&
-config_query_option UFOAI_OPTS "Build masterserver?"       \
-                               y                           \
-                               "--enable-master"           \
-                               "--disable-master"          &&
-config_query_option UFOAI_OPTS "Build ufo2map?"            \
-                               y                           \
-                               "--enable-ufo2map"          \
-                               "--disable-ufo2map"         &&
-config_query_option UFOAI_OPTS "Build with IPv6 support?"  \
-                               n                           \
-                               "--with-ipv6"               \
-                               "--without-ipv6"
+config_query_option UFOAI_OPTS "Build dedicated server?"     \
+                               y                             \
+                               "--enable-dedicated"          \
+                               "--disable-dedicated"         &&
+config_query_option UFOAI_OPTS "Build client?"               \
+                               y                             \
+                               "--enable-client"             \
+                               "--disable-client"            &&
+config_query_option UFOAI_OPTS "Build ufo2map?"              \
+                               n                             \
+                               "--enable-ufo2map"            \
+                               "--disable-ufo2map"           &&
+config_query_option UFOAI_OPTS "Build with shader support?"  \
+                               n                             \
+                               "--with-shaders"              \
+                               "--without-shaders"
