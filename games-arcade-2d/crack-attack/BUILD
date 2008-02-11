@@ -1,4 +1,4 @@
-  sedit  "s/-O6/$CFLAGS/"  src/Makefile.in          &&
+  ./autogen.sh &&
   ./configure  --build=$BUILD                       \
                --prefix=${INSTALL_ROOT}/usr         \
                --sysconfdir=${INSTALL_ROOT}/etc     \

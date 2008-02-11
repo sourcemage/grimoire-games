@@ -1,3 +1,11 @@
+2008-01-22 linuxfan <demaillists@comcast.net>
+	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL: reviewed
+
+2008-01-22 linuxfan <demaillists@comcast.net>
+	* DETAILS: Updated version to 1.1.15-cvs-01.
+	* BUILD: Added autogen.sh and cd commands.
+	  (Package has been re-organized.)
+
 2007-12-07 Arjan Bouter <abouter@sourcemage.org>
 	* INSTALL: added, install desktop file
 
