@@ -1,6 +1,7 @@
 2008-02-12 Dale E. Edmons <linuxfan@sourcemage.org>
 	* INSTALL: make install required to install files.
-	  (didn't try default_games_install)
+	  changed to default_install; removed original author's
+	  creation of /usr/share/games stuff and added /usr/share/doc.
 	* DETAILS: Word wrapped one line.
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
