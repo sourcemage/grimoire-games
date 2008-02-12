@@ -1,3 +1,8 @@
+2008-02-12 Dale E. Edmons <linuxfan@sourcemage.org>
+	* INSTALL: make install required to install files.
+	  (didn't try default_games_install)
+	* DETAILS: Word wrapped one line.
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

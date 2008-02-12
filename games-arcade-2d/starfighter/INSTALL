@@ -1,1 +1,3 @@
-mkdir -p /usr/share/games/starfighter
+install -d -o root -g games -m 644 ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+install -d -o root -g games -m 644 ${INSTALL_ROOT}/usr/share/doc/${SPELL} &&
+make install
