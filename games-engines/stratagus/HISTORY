@@ -1,3 +1,7 @@
+2008-02-14 Dale E. Edmons <linuxfan@sourcemage.org>
+	* stratagus-2.2.4-lhs.patch: Fix Makefile to conform to LHS.
+	* PRE_BUILD: Apply patch.
+
 2007-11-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated spell to 2.2.4
 	  fixed long description wrap
