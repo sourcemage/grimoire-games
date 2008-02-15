@@ -1,5 +1,10 @@
 2008-02-14 Dale E. Edmons <linuxfan@sourcemage.org>
-	* stratagus-2.2.4-lhs.patch: Fix Makefile to conform to LHS.
+	* stratagus-2.2.4-lhs.patch: renamed
+	* stratagus-2.2.4-fhs.patch: new name
+	* PRE_BUILD: Use new name.
+
+2008-02-14 Dale E. Edmons <linuxfan@sourcemage.org>
+	* stratagus-2.2.4-lhs.patch: Fix Makefile to conform to FHS.
 	* PRE_BUILD: Apply patch.
 
 2007-11-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
