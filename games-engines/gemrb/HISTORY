@@ -1,3 +1,7 @@
+2008-02-17 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD: removed, not needed anymore
+	* DETAILS: updated spell to 0.3.0
+
 2008-01-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: added libpng
 	* INSTALL: added to remove the null sound plugin
