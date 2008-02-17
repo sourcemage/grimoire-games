@@ -1,28 +1,31 @@
-cd ${SOURCE_DIRECTORY}                               &&
-mkdir -p ${INSTALL_ROOT}/usr/share/games/${SPELL}    &&
-chown -R root:games data/                            &&
-chmod 755 data/                                      &&
-chmod -R 744 data/*                                  &&
-cp -ar data ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
+cd $SOURCE_DIRECTORY &&
+mkdir -p $INSTALL_ROOT/usr/share/games/$SPELL &&
+chown -R root:games data/ &&
+chmod 755 data/ &&
+chmod -R 744 data/* &&
+cp -ar data $INSTALL_ROOT/usr/share/games/$SPELL &&
 
-install -m 755 darkplaces/darkplaces-glx                 \
-${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
-install -m 755 darkplaces/darkplaces-sdl                 \
-${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
-install -m 755 darkplaces/darkplaces-dedicated           \
-${INSTALL_ROOT}/usr/share/games/${SPELL}             &&
+install -m 644 $SPELL_DIRECTORY/nexuiz48x48.png \
+  $INSTALL_ROOT/usr/share/pixmaps &&
 
-mkdir -p ${INSTALL_ROOT}/usr/games                   &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-sdl        \
-${INSTALL_ROOT}/usr/games                            &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-glx        \
-${INSTALL_ROOT}/usr/games                            &&
-install -m 755 ${SCRIPT_DIRECTORY}/nexuiz-dedicated  \
-${INSTALL_ROOT}/usr/games                            &&
+install -m 755 darkplaces/darkplaces-glx \
+  $INSTALL_ROOT/usr/share/games/$SPELL &&
+install -m 755 darkplaces/darkplaces-sdl \
+  $INSTALL_ROOT/usr/share/games/$SPELL &&
+install -m 755 darkplaces/darkplaces-dedicated \
+  $INSTALL_ROOT/usr/share/games/$SPELL &&
 
-mkdir -p ${INSTALL_ROOT}/usr/share/doc/${SPELL}      &&
-cp -r Docs/*                                       \
-${INSTALL_ROOT}/usr/share/doc/${SPELL}               &&
-chmod -R 755 $INSTALL_ROOT/usr/share/doc/$SPELL      &&
-install -m 755 darkplaces/darkplaces.txt             \
-${INSTALL_ROOT}/usr/share/doc/${SPELL} 
+mkdir -p $INSTALL_ROOT/usr/games &&
+install -m 755 $SCRIPT_DIRECTORY/nexuiz-sdl \
+  $INSTALL_ROOT/usr/games &&
+install -m 755 $SCRIPT_DIRECTORY/nexuiz-glx \
+  $INSTALL_ROOT/usr/games &&
+install -m 755 $SCRIPT_DIRECTORY/nexuiz-dedicated \
+  $INSTALL_ROOT/usr/games &&
+
+mkdir -p $INSTALL_ROOT/usr/share/doc/$SPELL &&
+cp -r Docs/* \
+  $INSTALL_ROOT/usr/share/doc/$SPELL &&
+chmod -R 755 $INSTALL_ROOT/usr/share/doc/$SPELL &&
+install -m 755 darkplaces/darkplaces.txt \
+  $INSTALL_ROOT/usr/share/doc/$SPELL

@@ -1,5 +1,8 @@
+2008-02-17 Vlad Glagolev <stealth@sourcemage.org>
+	* INSTALL: added 48x48 png icon + cleaned up
+
 2008-02-09 Vlad Glagolev <stealth@sourcemage.org>
-        * PRE_BUILD: fixed unpacking the sources of map pack
+	* PRE_BUILD: fixed unpacking the sources of map pack
 
 2008-02-08 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, PREPARE, PRE_BUILD: added 35 community map pack
