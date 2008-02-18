@@ -1,10 +1,10 @@
            SPELL=wesnoth
   if [[ $WESNOTH_DEVEL == y ]]; then
-         VERSION=1.3.17
+         VERSION=1.3.18
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.3.16}
+     OLD_VERSION=${OLD_VERSION:-1.3.17}
      # this is always the hash for the $VERSION tarball
-     SOURCE_HASH=sha512:6074dcd7c3e308ee10b4befe9bdd3f10c233398e7dd138dbb1c221ccb488c95ec1f698503575b9c01461f3658e1ee544912b8944be308d1b99b3b04fc9f57326
+     SOURCE_HASH=sha512:6ce4d3002916d3e2bd7600fabe14d787ed5c0715e1541105b93894e12b2e31a8d8b8014ef5deb47c5f589e5dcaeda4a70a816afbd412893c50459210d178845a
   else
          VERSION=1.2.8
           SOURCE=$SPELL-$VERSION.tar.bz2
@@ -18,6 +18,7 @@
           SOURCE=$SPELL-$OLD_VERSION.tar-$SPELL-$VERSION.tar.xdelta
  fi
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+   SOURCE_URL[1]=http://www.wesnoth.org/files/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
