@@ -1,8 +1,13 @@
 2008-02-21 Dale E. Edmons <linuxfan@sourcemage.org>
 	* edutainment/: Removed this section
 	* edutainment/lotrmap: moved to games-utils/lotrmap
-	* edutainment/*: All others moved to test grimoire.
-	  See grimoire/Changelog.
+	* edutainment/gtypist: moved to test/education
+	* edutainment/tuxmath: moved to test/education
+	* edutainment/tuxpaint: moved to test/education
+	* edutainment/tuxtype: moved to test/education
+	* edutainment/xpenguins: duplicated in wm-addons/xpenguins
+	* edutainment/xpenguins-applet: duplicated in wm-addons/xpenguins-applet 
+	* edutainment/xpenguins_themes: duplicate of wm-addons/xpenguins_themes 
 
 2008-02-10 Lubomir Blaha <lblaha@sourcemage.org>
 	* fuse.gpg: added for zx-fuse stuff
