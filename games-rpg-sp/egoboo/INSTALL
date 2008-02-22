@@ -1,0 +1,11 @@
+# install the program
+cd $SOURCE_DIRECTORY/game &&
+make -f Makefile.unix install &&
+chgrp games $INSTALL_ROOT/usr/games/${SPELL}*
+
+# install the data
+cd $SOURCE_DIRECTORY/$SPELL-data-$VERSION &&
+echo -e "$SPELL: copying files, please wait...\n" &&
+cp -au ./* $INSTALL_ROOT/usr/share/games/$SPELL &&
+chgrp -R games $INSTALL_ROOT/usr/share/games/$SPELL &&
+chmod a+r $INSTALL_ROOT/usr/share/games/$SPELL

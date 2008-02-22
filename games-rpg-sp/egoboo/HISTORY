@@ -1,0 +1,7 @@
+2008-02-18 linuxfan <demaillists@comcast.net>
+	* INSTALL: Resolved permission issues that prevent ~/.egoboo setup.
+	* PRE_BUILD: Corrected /usr/share/games/egoboo.
+
+2008-02-18 linuxfan <demaillists@comcast.net>
+	* BUILD, DEPENDS, DETAILS, INSTALL: spell created (via quill+vim)
+	* PRE_BUILD: Added second source for data file.

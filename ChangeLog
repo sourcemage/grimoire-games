@@ -1,4 +1,7 @@
 2008-02-21 Dale E. Edmons <linuxfan@sourcemage.org>
+	* games-rpg-sp/egoboo: New game spell.
+
+2008-02-21 Dale E. Edmons <linuxfan@sourcemage.org>
 	* edutainment/: Removed this section
 	* edutainment/lotrmap: moved to games-utils/lotrmap
 	* edutainment/gtypist: moved to test/education

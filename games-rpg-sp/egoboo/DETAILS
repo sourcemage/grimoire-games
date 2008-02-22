@@ -1,0 +1,26 @@
+           SPELL=egoboo
+         VERSION=2.7.5
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+          SOURCE2="${SPELL}-data-${VERSION}.tar.gz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE2}
+     SOURCE_HASH=sha512:ecd3fa9edc4c5609a9a9dfd14eaaa0d1890d3341a377632ddf12abf552934f5b7f40f4a0dfa411834e2be767b8472ff29c2de167f891eadad4d53b16dc50fbbf
+     SOURCE2_HASH=sha512:15ae4ebbccd3cddc8e0f77c9dbc95450a8664eafb4b65be587334e8b8f03b3caa78a4975b324d8b1725a7d3bc60253f92a442994c0be20a107bffdab293fa8ab
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://egoboo.sourceforge.net/"
+        KEYWORDS="game rpg rated-pg"
+      LICENSE[0]=GPL
+         ENTERED=20080218
+           SHORT="Egoboo is a free top-down rpg in the spirit of Nethack."
+
+cat << EOF
+egoboo is a free top down rpg in the spirit of Nethack and other games of the
+Roguelike genre.  It uses Open GL graphics and will have randomly generated
+maps and customizable characters.  The objective of the project is to bring
+the fun and depth of roguelike gameplay, kicking and screaming, into the
+third dimension.  It is still in development, but is at a playable state.
+
+This came from the webpage.  The MickeySoft Windoze version may be playable,
+the the Linux version just barely starts.  But, the developers are quick to
+reply so I'm hopeful that they'll have a running version soon.
+EOF

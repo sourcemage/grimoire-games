@@ -1,0 +1,15 @@
+default_pre_build &&
+
+cd $SOURCE_DIRECTORY &&
+unpack_file 2 &&
+
+mkdir -p /usr/share/doc/$SPELL &&
+
+cd $SOURCE_DIRECTORY/game &&
+
+sedit 's#${PREFIX}/bin#${PREFIX}/games#g' Makefile.unix &&
+sedit 's#${EGO_BIN} ${PREFIX}/libexec#${EGO_BIN} ${PREFIX}/games/${EGO_BIN}-bin#g' Makefile.unix &&
+sedit 's#${PREFIX}/libexec#${PREFIX}/games#g' Makefile.unix &&
+
+sedit 's#exec /usr/libexec/egoboo#exec /usr/games/egoboo-bin#g' egoboo.sh &&
+sedit 's#/usr/share/egoboo#/usr/share/games/egoboo#g' egoboo.sh
