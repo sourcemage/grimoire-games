@@ -1,0 +1,4 @@
+depends  zlib    &&
+depends  expat   &&
+depends  qt-x11
+
