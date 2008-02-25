@@ -1,17 +1,14 @@
            SPELL=globulation2
-         VERSION=0.8.23
-          SOURCE=glob2-${VERSION}.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-${VERSION}
-   SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/glob2/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:681d7cefe51dd600ec4bb081712d82578a8198c95157d1e187600a765b015e86501bf088d8bcc6ee36fc66217513aede2a5840287475a4c5df1d9e99f49c34bd
+         VERSION=0.9.2
+#          SOURCE=glob2-${VERSION}.tar.gz
+#SOURCE_DIRECTORY=$BUILD_DIRECTORY/glob2-${VERSION}
+#   SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/glob2/$VERSION/$SOURCE
+#     SOURCE_HASH=sha512:b942f18d3f00f3572e12b3ea1f8d8638796b9c482ef2cbbeeddf308b9a17317dc8cd6b0f4fb01d2b1b65a03dd95add8771ed793756ea8b5af742daa2640b167f
       LICENSE[0]=GPL
         WEB_SITE=http://globulation2.org/
          ENTERED=20040814
-           SHORT="Innovative high quality Real-Time Strategy"
+      PATCHLEVEL=2
+           SHORT="Deprecated in favor of glob2."
 cat << EOF
-Globulation 2 is an innovative high quality Real-Time Strategy [RTS],
-which minimizes micro-management by automatically assigning tasks to
-the units. The player has to choose the number of units he wants for
-the different tasks, and the units will do their best to satisfy the
-requests. This allows to manage more units and to focus on the strategy.
+Deprecated in favor of glob2.
 EOF

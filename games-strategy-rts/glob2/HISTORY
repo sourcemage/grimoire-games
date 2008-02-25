@@ -1,5 +1,9 @@
 2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
-	* Deprecated: Use `cast glob2` instead.
+	* CONFLICTS: Deprecate globulation2.
+	* DETAILS: Updated SPELL to glob2, VERSION to 0.9.2.
+	* DEPENDS: Added scons, zlib, libogg.
+	* INSTALL: Created for `scons install`.
+	* BUILD: Changed to scons.
 
 2007-04-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated no 0.8.23

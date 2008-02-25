@@ -1,0 +1,4 @@
+# the following install needed or else `scons install` failes
+install -d $INSTALL_ROOT/usr/share/games/$SPELL/data/zik &&
+
+scons install

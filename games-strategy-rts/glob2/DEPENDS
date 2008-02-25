@@ -1,0 +1,11 @@
+depends zlib &&
+depends scons &&
+depends libogg &&
+depends  sdl        &&
+depends  sdl_net    &&
+depends  sdl_ttf    &&
+depends  sdl_image  &&
+depends  freetype2  &&
+depends  libvorbis  &&
+depends  boost      &&
+depends  speex

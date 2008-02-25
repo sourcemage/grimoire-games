@@ -1,3 +1,7 @@
+2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
+	* games-strategy-rts/globulation2: Deprecated in favor of glob2.
+	* games-strategy-rts/glob2: Created from globulation2 and updated.
+
 2008-02-22 Dale E. Edmons <linuxfan@sourcemage.org>
 	* games-unmaintained/xpenguins_applet: Removed from games (dup).
 
