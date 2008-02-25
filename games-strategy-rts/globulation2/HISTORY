@@ -1,4 +1,7 @@
 2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
+	* DEPENDS: Stupid typo.
+
+2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
 	* Deprecated: Use `cast glob2` instead.
 
 2007-04-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>

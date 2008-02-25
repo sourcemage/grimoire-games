@@ -1,4 +1,15 @@
 # the following install needed or else `scons install` failes
+# glob2 site bug #22408
 install -d $INSTALL_ROOT/usr/share/games/$SPELL/data/zik &&
 
-scons install
+# text files should not have +x permissions IMHO
+chmod -R -x $INSTALL_ROOT/usr/share/games/$SPELL/*/*.txt &&
+
+scons install &&
+
+# New version doesn't properly create ~/.glob2/data.
+# glob2 site bug #22412
+mv $INSTALL_ROOT/usr/games/$SPELL $INSTALL_ROOT/usr/games/$SPELL-bin &&
+cp $SCRIPT_DIRECTORY/$SPELL.sh $INSTALL_ROOT/usr/games/$SPELL &&
+chmod 755  $INSTALL_ROOT/usr/games/$SPELL
+chgrp -R games $INSTALL_ROOT/usr/games/$SPELL

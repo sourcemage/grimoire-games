@@ -1,4 +1,9 @@
 2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
+	* BUILD: Pass LDFLAGS
+	* INSTALL: Kludge to work around bug #22412
+	* glob2.sh: Kludge to work around bug #22412
+
+2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
 	* CONFLICTS: Deprecate globulation2.
 	* DETAILS: Updated SPELL to glob2, VERSION to 0.9.2.
 	* DEPENDS: Added scons, zlib, libogg.
