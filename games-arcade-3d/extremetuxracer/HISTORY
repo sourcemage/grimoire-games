@@ -1,3 +1,6 @@
+2008-02-26 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DEPENDS: added a sub-dependency on sdl_mixer with libmikmod enabled
+
 2008-01-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: renamed to extremetuxracer
 
