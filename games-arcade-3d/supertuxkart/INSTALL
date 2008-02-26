@@ -1,13 +1,1 @@
-make install &&
-
-# Fix broken Makefile.  bug #1901428
-GAMEDIR="$INSTALL_ROOT/usr/games" &&
-SHAREDIR="$INSTALL_ROOT/usr/share" &&
-mv $GAMEDIR/bin/$SPELL $GAMEDIR/$SPELL &&
-mv $GAMEDIR/share/applications/$SPELL.desktop $SHAREDIR/share/applicatons/$SPELL.desktop &&
-mv $GAMEDIR/share/pixmaps/${SPELL}* $SHAREDIR/share/pixmaps/$SPELL.desktop &&
-
-# These might fail if there's other stuff there.
-rmdir $INSTALL_ROOT/usr/games/share/applications || true &&
-rmdir $INSTALL_ROOT/usr/games/share/pixmaps || true &&
-rmdir $INSTALL_ROOT/usr/games/{bin,share} || true
+make install

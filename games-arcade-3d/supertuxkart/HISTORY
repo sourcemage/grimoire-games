@@ -1,2 +1,8 @@
 2008-02-25 linuxfan <demaillists@comcast.net>
+	* BUILD: Changed to default_games_build.  Upstream should fix it.
+	* INSTALL: Changed to make install.  Upstream should fix it.
+	* These two are likely unneeded now?
+	* FINAL: Message to user that game is blank until kart is selected.
+
+2008-02-25 linuxfan <demaillists@comcast.net>
 	* BUILD, DEPENDS, DETAILS, INSTALL: spell created
