@@ -14,5 +14,7 @@ SuperTuxKart is a Free 3D kart racing game. Race with your kart on more than
 10 tracks against Tux and his friends. Be the first on the goal. With many
 items you can make sure that you will win ...
 
-(This game starts with a blank screen for almost a minute before startup.)
+supertuxkart: Screen stays blank until kart is selected.
+supertuxkart: Click mouse in the top 1/4 of the screen to select kart.
+
 EOF
