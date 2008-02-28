@@ -1,3 +1,6 @@
+2008-02-27 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Install .x86_64 for x86_64 and .x86 for ia32
+
 2007-07-13 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* PRE_BUILD: remove -Werror
 
@@ -19,3 +22,4 @@
 2006-04-03 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
 	* BUILD, DEPENDS, DETAILS, INSTALL, PRE_BUILD,
 	  tremulous: created the spell
+
