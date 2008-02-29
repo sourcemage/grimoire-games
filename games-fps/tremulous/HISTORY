@@ -1,3 +1,6 @@
+2008-02-28 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on tslib as well
+
 2008-02-27 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Install .x86_64 for x86_64 and .x86 for ia32
 
