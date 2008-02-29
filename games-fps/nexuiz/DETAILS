@@ -1,8 +1,8 @@
             SPELL=nexuiz
-          VERSION=23
+          VERSION=24
            SOURCE=$SPELL-$VERSION.zip
     SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-      SOURCE_HASH=sha512:a9cc42331f53e15b8b3a9933b5f4e5997438761e4e498ac76850b8084e25c201ec6b87313d8dbc6cc4e740af94608f215cbfb87c73c4bf87c4597b66ae3914d2
+      SOURCE_HASH=sha512:a65c87d01282c927628d8e4834acf412a10fa4cf9a3d9fdeb52b610b99c5d1846bd6777b7d5a707cca2a993b64dd5693155f24fb0253c93bd253f086ea2d1a5a
 
 if [[ $NEXUIZ_MAPPACK == y ]]; then
           SOURCE2=nexmappack_r2.zip
@@ -15,7 +15,7 @@ fi
          WEB_SITE=http://www.nexuiz.com/
           ENTERED=20050724
        LICENSE[0]=GPL
-            SHORT="3d deathmatch game project"
+            SHORT="3d game project"
 cat << EOF
 Nexuiz is a 3d deathmatch game made entirely over the internet. The purpose of
 the game is to bring deathmatch back to the basics, with perfect weapon
