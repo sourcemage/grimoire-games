@@ -1,5 +1,5 @@
 2008-03-03 Vlad Glagolev <stealth@sourcemage.org>
-	* DETAILS, PREPARE: readded DEVEL version
+	* DETAILS, PREPARE: readded DEVEL version, made it 1.4
 	* INSTALL: icon installation fixes
 
 2008-03-02 Vlad Glagolev <stealth@sourcemage.org>
