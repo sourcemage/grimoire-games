@@ -1,17 +1,16 @@
            SPELL=wesnoth
-  if [[ $WESNOTH_DEVEL == y ]]; then
-         VERSION=1.3.19
+#  if [[ $WESNOTH_DEVEL == y ]]; then
+#         VERSION=1.3.19
+#          SOURCE=$SPELL-$VERSION.tar.bz2
+#     OLD_VERSION=${OLD_VERSION:-1.3.18}
+#     # this is always the hash for the $VERSION tarball
+#     SOURCE_HASH=sha512:c9f075bd8749c2a7235614c474dbd355ae5dea26d56aa3454e7a4c7d66539a3767d71e3288d007cc82c5bd62650afa84cb7b0d578ebc4e8e8e52afac838ef642
+#  else
+         VERSION=1.4
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.3.18}
-     # this is always the hash for the $VERSION tarball
-     SOURCE_HASH=sha512:c9f075bd8749c2a7235614c474dbd355ae5dea26d56aa3454e7a4c7d66539a3767d71e3288d007cc82c5bd62650afa84cb7b0d578ebc4e8e8e52afac838ef642
-  else
-         VERSION=1.2.8
-          SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.2.7}
-#     SOURCE_HASH=sha512:99c84020dfb03851983a89e4628b80b4a43134073b8d7a8c94da0778e99731bfb0ca91479b6e07f3cc62080c905345c9eeaec1c6265315c0fd23ea428efbddc2
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
-  fi
+     OLD_VERSION=${OLD_VERSION:-1.3.19}
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig
+#  fi
  # check that we have the previous tarball first and if so, enable xdelta
  if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]
  then
@@ -23,7 +22,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
-           SHORT="Battle for Wesnoth is a fantasy turn-based strategy game."
+           SHORT="fantasy turn-based strategy game"
 cat << EOF
 Battle for Wesnoth is a fantasy turn-based strategy game.
 Battle for control of villages, using variety of units which have 

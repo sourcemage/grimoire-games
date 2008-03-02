@@ -2,12 +2,9 @@ depends freetype2 &&
 depends sdl_image &&
 depends sdl_mixer &&
 depends sdl_net &&
+depends -sub IOSTREAMS boost &&
 
-if [[ $WESNOTH_DEVEL == y ]]; then
-  depends -sub IOSTREAMS boost &&
-
-  optional_depends python "--enable-python-install" "" "for Python tools"
-fi &&
+optional_depends python "--enable-python-install" "" "for Python tools" &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then
   depends xdelta
