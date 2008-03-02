@@ -1,21 +1,20 @@
            SPELL=wesnoth
-#  if [[ $WESNOTH_DEVEL == y ]]; then
-#         VERSION=1.3.19
-#          SOURCE=$SPELL-$VERSION.tar.bz2
-#     OLD_VERSION=${OLD_VERSION:-1.3.18}
-#     # this is always the hash for the $VERSION tarball
-#     SOURCE_HASH=sha512:c9f075bd8749c2a7235614c474dbd355ae5dea26d56aa3454e7a4c7d66539a3767d71e3288d007cc82c5bd62650afa84cb7b0d578ebc4e8e8e52afac838ef642
-#  else
+if [[ $WESNOTH_DEVEL == y ]]; then
+         VERSION=1.3.19
+          SOURCE=$SPELL-$VERSION.tar.bz2
+     OLD_VERSION=${OLD_VERSION:-1.3.18}
+     # this is always the hash for the $VERSION tarball
+     SOURCE_HASH=sha512:c9f075bd8749c2a7235614c474dbd355ae5dea26d56aa3454e7a4c7d66539a3767d71e3288d007cc82c5bd62650afa84cb7b0d578ebc4e8e8e52afac838ef642
+else
          VERSION=1.4
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-1.3.19}
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
-#  fi
- # check that we have the previous tarball first and if so, enable xdelta
- if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]
- then
+fi
+# check that we have the previous tarball first and if so, enable xdelta
+if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; then
           SOURCE=$SPELL-$OLD_VERSION.tar-$SPELL-$VERSION.tar.xdelta
- fi
+fi
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
    SOURCE_URL[1]=http://www.wesnoth.org/files/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION

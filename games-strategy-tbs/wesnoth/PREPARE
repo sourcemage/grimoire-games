@@ -1,2 +1,2 @@
-# config_query WESNOTH_DEVEL "Use development branch?" n &&
+config_query WESNOTH_DEVEL "Use development branch?" n &&
 config_query WESNOTH_XDELTA "Use xdeltas to minimise the source download size if possible?" n
