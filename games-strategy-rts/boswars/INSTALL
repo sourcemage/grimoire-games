@@ -6,7 +6,7 @@ cp -v ${SOURCE_DIRECTORY}/boswars               \
 local to_install_dirs                           &&
 for to_install_dirs in campaigns graphics       \
                        languages maps scripts   \
-                       sounds units video
+                       sounds units intro
 do
 cp -rv ${to_install_dirs}                       \
        ${INSTALL_ROOT}/usr/share/games/boswars/

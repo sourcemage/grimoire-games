@@ -1,3 +1,7 @@
+2008-03-02 Dale E. Edmons <linuxfan@sourcemage.org>
+	* BUILD: Updated to version 2.5
+	* INSTALL: Removed install of video/; Added intro/.
+
 2007-11-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated spell to 2.4.1
 
