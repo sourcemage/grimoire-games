@@ -1,3 +1,6 @@
+2008-03-02 Dale E. Edmons <linuxfan@sourcemage.org>
+	* INSTALL: cleaned up file and use find_and_scam.
+
 2008-02-25 Dale E. Edmons <linuxfan@sourcemage.org>
 	* BUILD: Pass LDFLAGS
 	* INSTALL: Kludge to work around bug #22412
