@@ -1,3 +1,9 @@
+2008-03-11 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 0.4
+	* DEPENDS: added OPENGL and sdl as dependencies, and openal, freealut
+	  and libogg as optional dependencies
+	* FINAL: removed, the problem seems to have been fixed
+
 2008-02-25 linuxfan <demaillists@comcast.net>
 	* BUILD: Changed to default_games_build.  Upstream should fix it.
 	* INSTALL: Changed to make install.  Upstream should fix it.

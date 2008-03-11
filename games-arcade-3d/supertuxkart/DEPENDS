@@ -1,1 +1,6 @@
-depends plib 
+depends OPENGL &&
+depends plib   &&
+depends sdl    &&
+optional_depends openal   &&
+optional_depends freealut &&
+optional_depends libogg
