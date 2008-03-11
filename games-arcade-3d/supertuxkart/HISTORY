@@ -1,4 +1,11 @@
 2008-03-11 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DEPENDS: removed openal, as freealut depends on it, and both are
+	  needed to have sound support.
+	  libogg is required too to have sound support, so if freealut is
+	  selected, libogg is automatically added as a dependency.
+	  Added description for freealut dependency
+
+2008-03-11 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.4
 	* DEPENDS: added OPENGL and sdl as dependencies, and openal, freealut
 	  and libogg as optional dependencies

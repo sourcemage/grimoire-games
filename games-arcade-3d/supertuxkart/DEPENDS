@@ -1,6 +1,13 @@
 depends OPENGL &&
 depends plib   &&
 depends sdl    &&
-optional_depends openal   &&
-optional_depends freealut &&
-optional_depends libogg
+
+optional_depends freealut \
+                 ""       \
+                 ""       \
+		 "for sound support"  &&
+
+#both freealut and libogg are required for sound support
+if is_depends_enabled $SPELL freealut; then
+        depends libogg
+fi
