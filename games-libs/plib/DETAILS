@@ -1,9 +1,9 @@
            SPELL=plib
-         VERSION=1.8.4
+         VERSION=1.8.5
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://plib.sourceforge.net/dist/$SOURCE
-     SOURCE_HASH=sha512:8c8c91fd1686f1bdd3a73aaf4957af0e51db8250de482a8896b694483bbb7f9676c51b927a89317b2c769c5e767d89e4b6b313a62cbfbb2ab94f28c42f84fb30
+     SOURCE_HASH=sha512:17154cc77243fe576c2bcbcb0285b98aef1a0634658f5473e95fe0ac8fa3ed477dbe5620e44ccf0b7cc616f812af0cd44d6fcbba0c563180d3b61c9d6f158e1d
         WEB_SITE=http://plib.sourceforge.net
          ENTERED=20010922
       LICENSE[0]=LGPL

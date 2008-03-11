@@ -6,4 +6,3 @@ source  $GRIMOIRE/FUNCTIONS    &&
 if  check_if_xorg_modular_libs  ;  then
   depends  libxi
 fi
-     

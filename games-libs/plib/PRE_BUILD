@@ -1,4 +1,0 @@
-default_pre_build &&
-cd "$SOURCE_DIRECTORY" &&
-patch -Np2 < "$SCRIPT_DIRECTORY/plib-gcc-4.1.patch"
-
