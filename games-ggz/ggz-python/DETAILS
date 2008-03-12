@@ -1,5 +1,5 @@
            SPELL=ggz-python
-         VERSION=0.0.14
+         VERSION=0.0.14.1
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://ftp.ggzgamingzone.org/pub/ggz/${VERSION}/${SOURCE}
