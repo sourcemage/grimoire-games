@@ -1,2 +1,3 @@
-depends  libgnomeui          &&
+depends  libgnomeui       &&
+depends  gnome-vfs2       &&
 depends  ggz-client-libs
