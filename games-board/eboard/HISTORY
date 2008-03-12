@@ -1,3 +1,11 @@
+2008-03-11 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.1.1
+	  Removed UPDATED
+	* DEPENDS: Depends on perl for building (configure is perl)
+	  Optionally depends on gettext (no --enable option)
+	* PRE_BUILD: Install to prefix/games not prefix/bin
+	* BUILD: ./configure uses only --prefix, --data-prefix, and --man-prefix
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
