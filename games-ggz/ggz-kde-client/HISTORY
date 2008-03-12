@@ -1,3 +1,7 @@
+2008-03-11 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.0.14.1
+	* PRE_BUILD: Look in /usr/include/kde3 for KDE 3.x includes now
+
 2007-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.0.14
 

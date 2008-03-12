@@ -1,0 +1,3 @@
+default_pre_build                                                      &&
+sedit  "s:kde_libs_prefix/include:&1 $INSTALL_ROOT/usr/include/kde3:"  \
+       $SOURCE_DIRECTORY/configure
