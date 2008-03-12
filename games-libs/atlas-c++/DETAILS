@@ -1,5 +1,5 @@
            SPELL=atlas-c++
-         VERSION=${VERSION:=0.6.0}
+         VERSION=${VERSION:=0.6.1}
 if  [  "$ATLAS_CPP_BRANCH"  ==  "cvs"  ];  then
   if  [  "$ATLAS_CPP_AUTOUPDATE"  ==  "y"  ];  then
          VERSION=$(date +%Y%m%d)
