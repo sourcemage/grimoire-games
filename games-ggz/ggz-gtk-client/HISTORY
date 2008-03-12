@@ -1,3 +1,7 @@
+2008-03-11 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.0.14.1
+	* DEPENDS: gaim -> pidgin
+
 2007-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.0.14
 	* remove-gaim.diff: Removed, the gaim spell only provides 2.0 now

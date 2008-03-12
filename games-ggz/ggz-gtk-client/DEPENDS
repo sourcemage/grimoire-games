@@ -1,4 +1,4 @@
 depends  gtk+2            &&
 depends  ggz-client-libs  &&
 
-optional_depends gaim "" "" "Enable gaim plugin?"
+optional_depends pidgin "" "" "Enable gaim plugin?"
