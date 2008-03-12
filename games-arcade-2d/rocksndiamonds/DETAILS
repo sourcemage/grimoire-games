@@ -1,13 +1,13 @@
            SPELL=rocksndiamonds
-         VERSION=3.1.1
+         VERSION=3.2.4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.artsoft.org/RELEASES/unix/$SPELL/$SOURCE
-        WEB_SITE=http://www.artsoft.org/rocksndiamonds/
+#     SOURCE_HASH=sha512:7fa483bee405d890ba3276b6706e63295d17c7473c7d4ffb822db4f3c2fd3ef140adf8839bb82d2e317a7f7938f06b92d1c8dc1677e7ed04c4ab9b2e202c07cc
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:7fa483bee405d890ba3276b6706e63295d17c7473c7d4ffb822db4f3c2fd3ef140adf8839bb82d2e317a7f7938f06b92d1c8dc1677e7ed04c4ab9b2e202c07cc
+        WEB_SITE=http://www.artsoft.org/rocksndiamonds/
          ENTERED=20021211
-         UPDATED=20051129
            SHORT="ROCKS'N'DIAMONDS is a 'Boulderdash'(Commodore C64) or 'Emerald Mine'(Amiga) clone."
 cat << EOF
 This is a nice little game with color graphics and sound for your
