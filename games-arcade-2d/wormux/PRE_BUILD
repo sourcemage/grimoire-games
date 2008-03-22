@@ -1,7 +1,11 @@
-default_pre_build &&
-cd $SOURCE_DIRECTORY &&
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+
 if [[ "$WORMUX_SVN" == "y" ]]
 then
   touch config.rpath &&
   NOCONFIGURE=1 ./autogen.sh
+else
+  patch -p1 < $SCRIPT_DIRECTORY/0001-Allow-compilation-with-gcc-3.4.patch  &&
+  patch -p1 < $SCRIPT_DIRECTORY/0002-make-wormux-0.8beta4-compile-with-g-4.3.patch
 fi

@@ -1,0 +1,318 @@
+From ff00d6ac70b989246e9f1e9f9cebf5523b9fc063 Mon Sep 17 00:00:00 2001
+From: =?utf-8?q?Eddy=20Petri=C8=99or?= <eddy.petrisor@gmail.com>
+Date: Mon, 18 Feb 2008 00:31:25 +0200
+Subject: [PATCH] make wormux 0.8beta4 compile with g++-4.3
+
+This patch comes as an addition to the fixes that were applied
+in upstream trunk for the same purpose.
+---
+ src/graphic/video.cpp          |    4 +---
+ src/gui/combo_box.cpp          |    2 +-
+ src/gui/combo_box.h            |    2 +-
+ src/gui/list_box.cpp           |    2 +-
+ src/gui/list_box.h             |    2 +-
+ src/interface/mouse_cursor.cpp |    2 +-
+ src/interface/mouse_cursor.h   |    2 +-
+ src/map/maps_list.cpp          |    4 +---
+ src/map/random_map.h           |    6 +++---
+ src/map/sky.cpp                |    1 +
+ src/menu/credits_menu.cpp      |    4 +---
+ src/menu/map_selection_box.cpp |    2 +-
+ src/menu/pause_menu.cpp        |    4 +---
+ src/menu/results_menu.cpp      |    4 +---
+ src/network/distant_cpu.cpp    |    4 +---
+ src/network/download.h         |    1 +
+ src/object/objbox.cpp          |    1 +
+ src/tool/text_handling.cpp     |    4 ++--
+ src/weapon/grapple.cpp         |    2 +-
+ src/weapon/weapon_launcher.cpp |    1 +
+ 20 files changed, 23 insertions(+), 31 deletions(-)
+
+diff --git a/src/graphic/video.cpp b/src/graphic/video.cpp
+index 4421eb2..bdd73c3 100644
+--- a/src/graphic/video.cpp
++++ b/src/graphic/video.cpp
+@@ -17,9 +17,7 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
+  *****************************************************************************/
+ 
+-#ifdef _MSC_VER
+-#  include <algorithm>
+-#endif
++#include <algorithm>
+ #include <iostream>
+ #include <SDL_image.h>
+ #include "game/config.h"
+diff --git a/src/gui/combo_box.cpp b/src/gui/combo_box.cpp
+index ce88ae5..e384498 100644
+--- a/src/gui/combo_box.cpp
++++ b/src/gui/combo_box.cpp
+@@ -174,7 +174,7 @@ void ComboBox::SetChoice (std::vector<std::string>::size_type index)
+   NeedRedrawing();
+ }
+ 
+-const int ComboBox::GetIntValue() const
++int ComboBox::GetIntValue() const
+ {
+   int tmp = 0;
+   sscanf(GetValue().c_str(),"%d", &tmp);
+diff --git a/src/gui/combo_box.h b/src/gui/combo_box.h
+index 5f5cc46..9548a58 100644
+--- a/src/gui/combo_box.h
++++ b/src/gui/combo_box.h
+@@ -66,7 +66,7 @@ class ComboBox : public Widget
+   Widget* Click(const Point2i&, uint) const { return NULL; };
+   Widget* ClickUp(const Point2i &mousePosition, uint button);
+   const std::string GetValue() const { return m_choices[m_index].first; };
+-  const int GetIntValue() const;
++  int GetIntValue() const;
+   void SetChoice(std::vector<std::string>::size_type index);
+ };
+ 
+diff --git a/src/gui/list_box.cpp b/src/gui/list_box.cpp
+index 8724f9a..af6e955 100644
+--- a/src/gui/list_box.cpp
++++ b/src/gui/list_box.cpp
+@@ -313,7 +313,7 @@ const std::string& ListBox::ReadValue () const
+   return m_items.at(selected_item)->GetValue();
+ }
+ 
+-const int ListBox::ReadIntValue() const
++int ListBox::ReadIntValue() const
+ {
+   int tmp = 0;
+   sscanf(ReadValue().c_str(),"%d", &tmp);
+diff --git a/src/gui/list_box.h b/src/gui/list_box.h
+index e15565c..72c90fc 100644
+--- a/src/gui/list_box.h
++++ b/src/gui/list_box.h
+@@ -106,7 +106,7 @@ public:
+   void RemoveSelected();
+   const std::string& ReadLabel() const;
+   const std::string& ReadValue() const;
+-  const int ReadIntValue() const;
++  int ReadIntValue() const;
+   const std::string& ReadValue(int index) const;
+ 
+   uint Size() const { return m_items.size(); };
+diff --git a/src/interface/mouse_cursor.cpp b/src/interface/mouse_cursor.cpp
+index 3001409..6b1e1a6 100644
+--- a/src/interface/mouse_cursor.cpp
++++ b/src/interface/mouse_cursor.cpp
+@@ -30,7 +30,7 @@ MouseCursor::MouseCursor(Mouse::pointer_t _pointer_id,
+   clic_pos = _clic_pos;
+ }
+ 
+-const Mouse::pointer_t MouseCursor::GetPointerId() const
++Mouse::pointer_t MouseCursor::GetPointerId() const
+ {
+   return pointer_id;
+ }
+diff --git a/src/interface/mouse_cursor.h b/src/interface/mouse_cursor.h
+index e2bf3d2..e40cdd4 100644
+--- a/src/interface/mouse_cursor.h
++++ b/src/interface/mouse_cursor.h
+@@ -38,7 +38,7 @@ public:
+   MouseCursor(Mouse::pointer_t pointer_id, 
+ 	      std::string filename, Point2i clic_pos);
+ 
+-  const Mouse::pointer_t GetPointerId() const;
++  Mouse::pointer_t GetPointerId() const;
+   const Surface& GetSurface() const;
+   const Point2i& GetClicPos() const;
+ };
+diff --git a/src/map/maps_list.cpp b/src/map/maps_list.cpp
+index 7413ac9..3266a19 100644
+--- a/src/map/maps_list.cpp
++++ b/src/map/maps_list.cpp
+@@ -30,9 +30,7 @@
+ #include "tool/random.h"
+ #include "tool/xml_document.h"
+ #include <iostream>
+-#ifdef _MSC_VER
+-#  include <algorithm>
+-#endif
++#include <algorithm>
+ 
+ extern const uint MAX_WIND_OBJECTS;
+ 
+diff --git a/src/map/random_map.h b/src/map/random_map.h
+index fed5f28..187cc7a 100644
+--- a/src/map/random_map.h
++++ b/src/map/random_map.h
+@@ -88,13 +88,13 @@ class RandomMap {
+    RandomMap(Profile *profile, const int width, const int height);
+    void SetSize(const int width, const int height);
+    const Point2i GetSize() const { return Point2i(width, height); };
+-   const int GetWidth() const { return width; };
+-   const int GetHeight() const { return height; };
++   int GetWidth() const { return width; };
++   int GetHeight() const { return height; };
+    void AddElement(const Surface * object, const Point2i& position);
+    void DrawElement();
+    void SetBorderSize(const double border) { border_size = border; };
+    void SetBorderColor(const Color& color) { border_color = color; };
+-   const bool IsOpen() const { return is_open; };
++   bool IsOpen() const { return is_open; };
+    void Generate(InfoMap::Island_type generator);
+    void GenerateIsland();
+    void GeneratePlatforms();
+diff --git a/src/map/sky.cpp b/src/map/sky.cpp
+index 9df0578..63b4ffe 100644
+--- a/src/map/sky.cpp
++++ b/src/map/sky.cpp
+@@ -19,6 +19,7 @@
+  * Sky: background of the map
+  *****************************************************************************/
+ 
++#include <climits>
+ #include "map/sky.h"
+ #include "map/camera.h"
+ #include "map/map.h"
+diff --git a/src/menu/credits_menu.cpp b/src/menu/credits_menu.cpp
+index 40ec542..1b39b76 100644
+--- a/src/menu/credits_menu.cpp
++++ b/src/menu/credits_menu.cpp
+@@ -23,9 +23,7 @@
+ //-----------------------------------------------------------------------------
+ #include <sstream>
+ #include <iostream>
+-#ifdef _MSC_VER
+-#  include <algorithm>  //std::transform
+-#endif
++#include <algorithm>  //std::transform
+ #include "game/config.h"
+ #include "graphic/font.h"
+ #include "graphic/video.h"
+diff --git a/src/menu/map_selection_box.cpp b/src/menu/map_selection_box.cpp
+index 62d10e8..643b571 100644
+--- a/src/menu/map_selection_box.cpp
++++ b/src/menu/map_selection_box.cpp
+@@ -129,7 +129,7 @@ MapSelectionBox::MapSelectionBox(const Point2i &_size, bool _display_only) :
+ 
+   // If network game skip random generated maps 
+   if (Network::GetInstance()->IsServer() && i != MapsList::GetInstance()->lst.size()) {
+-    for (; MapsList::GetInstance()->lst[i]->IsRandomGenerated(); i = (i + 1) % MapsList::GetInstance()->lst.size());
++    for (; MapsList::GetInstance()->lst[i]->IsRandomGenerated(); i = (i + 1) % MapsList::GetInstance()->lst.size()) { ; }
+   }
+   ChangeMap(i);
+ }
+diff --git a/src/menu/pause_menu.cpp b/src/menu/pause_menu.cpp
+index 13310f9..1d350ee 100644
+--- a/src/menu/pause_menu.cpp
++++ b/src/menu/pause_menu.cpp
+@@ -23,9 +23,7 @@
+ //-----------------------------------------------------------------------------
+ #include <sstream>
+ #include <iostream>
+-#ifdef _MSC_VER
+-#  include <algorithm>  //std::transform
+-#endif
++#include <algorithm>  //std::transform
+ #include "game/config.h"
+ #include "graphic/font.h"
+ #include "graphic/video.h"
+diff --git a/src/menu/results_menu.cpp b/src/menu/results_menu.cpp
+index a690664..b907428 100644
+--- a/src/menu/results_menu.cpp
++++ b/src/menu/results_menu.cpp
+@@ -20,9 +20,7 @@
+  *****************************************************************************/
+ 
+ #include "menu/results_menu.h"
+-#ifdef _MSC_VER
+-#  include <algorithm>  //std::sort
+-#endif
++#include <algorithm>  //std::sort
+ 
+ #include "character/character.h"
+ #include "character/damage_stats.h"
+diff --git a/src/network/distant_cpu.cpp b/src/network/distant_cpu.cpp
+index 3a77dd0..770f3c1 100644
+--- a/src/network/distant_cpu.cpp
++++ b/src/network/distant_cpu.cpp
+@@ -19,9 +19,7 @@
+  * Distant Computer handling
+  *****************************************************************************/
+ 
+-#ifdef _MSC_VER
+-#  include <algorithm>  //std::find
+-#endif
++#include <algorithm>  //std::find
+ #include "network/distant_cpu.h"
+ //-----------------------------------------------------------------------------
+ #include <SDL_mutex.h>
+diff --git a/src/network/download.h b/src/network/download.h
+index a30b9f6..9133cd5 100644
+--- a/src/network/download.h
++++ b/src/network/download.h
+@@ -22,6 +22,7 @@
+ #ifndef DOWNLOAD_H
+ #define DOWNLOAD_H
+ #include <map>
++#include <string>
+ #include <curl/curl.h>
+ 
+ class Downloader
+diff --git a/src/object/objbox.cpp b/src/object/objbox.cpp
+index 9b61667..f9f10da 100644
+--- a/src/object/objbox.cpp
++++ b/src/object/objbox.cpp
+@@ -24,6 +24,7 @@
+ #include "object/bonus_box.h"
+ #include <sstream>
+ #include <iostream>
++#include <typeinfo>
+ #include "game/game_mode.h"
+ #include "game/game.h"
+ #include "game/time.h"
+diff --git a/src/tool/text_handling.cpp b/src/tool/text_handling.cpp
+index 51a06a6..5682e9f 100644
+--- a/src/tool/text_handling.cpp
++++ b/src/tool/text_handling.cpp
+@@ -26,7 +26,7 @@ bool MoveCursorLeft(const std::string& text, std::string::size_type& pos)
+ {
+   if (pos != 0)
+     {
+-      while ((text[--pos] & 0xc0) == 0x80);
++      while ((text[--pos] & 0xc0) == 0x80) { ; }
+ 
+       return true;
+     }
+@@ -37,7 +37,7 @@ bool MoveCursorRight(const std::string& text, std::string::size_type& pos)
+ {
+   if (pos < text.size())
+     {
+-      while ((text[++pos] & 0xc0) == 0x80);
++      while ((text[++pos] & 0xc0) == 0x80) { ; }
+ 
+       return true;
+     }
+diff --git a/src/weapon/grapple.cpp b/src/weapon/grapple.cpp
+index 2fd444f..659a50b 100644
+--- a/src/weapon/grapple.cpp
++++ b/src/weapon/grapple.cpp
+@@ -345,7 +345,7 @@ void Grapple::NotifyMove(bool collision)
+     return;
+ 
+   // While there is nodes to break, we break !
+-  while (TryBreakNode(currentSense));
++  while (TryBreakNode(currentSense)) { ; }
+ }
+ 
+ void Grapple::Refresh()
+diff --git a/src/weapon/weapon_launcher.cpp b/src/weapon/weapon_launcher.cpp
+index a68c909..1b7e549 100644
+--- a/src/weapon/weapon_launcher.cpp
++++ b/src/weapon/weapon_launcher.cpp
+@@ -23,6 +23,7 @@
+ #include "weapon/weapon_cfg.h"
+ 
+ #include <sstream>
++#include <typeinfo>
+ 
+ #include "weapon/explosion.h"
+ #include "character/character.h"
+-- 
+1.5.3.8
+

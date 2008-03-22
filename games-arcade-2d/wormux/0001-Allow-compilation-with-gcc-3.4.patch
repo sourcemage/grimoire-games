@@ -1,0 +1,428 @@
+From dd5abf4962d7d62eac522f9f06414af4e83e5d2f Mon Sep 17 00:00:00 2001
+From: eddyp <eddyp@30ef787d-52ff-0310-b286-e08351bb7647>
+Date: Sat, 16 Feb 2008 00:05:29 +0000
+Subject: [PATCH] Allow compilation with gcc-3.4
+
+GCC 4.3 imposes a few changes on wormux code:
+- explicitly include <cstdlib>
+- explicit body where it might be ambiguous
+- const qualifiers are ignored when attached to
+  function return types since is not checked
+
+git-svn-id: svn+ssh://svn.gna.org/svn/wormux/trunk@4065 30ef787d-52ff-0310-b286-e08351bb7647
+---
+ src/game/config.cpp            |    1 +
+ src/game/game.cpp              |    2 +-
+ src/graphic/polygon.cpp        |    4 ++--
+ src/graphic/polygon.h          |   12 ++++++------
+ src/interface/mouse.cpp        |    4 ++--
+ src/interface/mouse.h          |    6 +++---
+ src/map/maps_list.h            |    2 +-
+ src/network/network.cpp        |    6 +++---
+ src/network/network.h          |   12 ++++++------
+ src/network/network_client.cpp |    2 +-
+ src/network/network_client.h   |    4 ++--
+ src/network/network_local.h    |    4 ++--
+ src/network/network_server.cpp |    8 ++++----
+ src/network/network_server.h   |   10 +++++-----
+ src/object/physics.h           |   10 +++++-----
+ src/particles/particle.h       |    2 +-
+ src/tool/vector2.h             |    3 ++-
+ src/weapon/weapon.h            |    2 +-
+ 18 files changed, 48 insertions(+), 46 deletions(-)
+
+diff --git a/src/game/config.cpp b/src/game/config.cpp
+index 507b487..37058f9 100644
+--- a/src/game/config.cpp
++++ b/src/game/config.cpp
+@@ -23,6 +23,7 @@
+ 
+ #include "game/config.h"
+ 
++#include <cstdlib>
+ #include <sstream>
+ #include <string>
+ #include <iostream>
+diff --git a/src/game/game.cpp b/src/game/game.cpp
+index 8e337d8..876b3b8 100644
+--- a/src/game/game.cpp
++++ b/src/game/game.cpp
+@@ -202,7 +202,7 @@ void Game::Init()
+ void Game::IgnorePendingInputEvents() const
+ {
+   SDL_Event event;
+-  while(SDL_PollEvent(&event));
++  while(SDL_PollEvent(&event)) { ; }
+ }
+ 
+ void Game::RefreshInput()
+diff --git a/src/graphic/polygon.cpp b/src/graphic/polygon.cpp
+index 7241a9f..845f77d 100644
+--- a/src/graphic/polygon.cpp
++++ b/src/graphic/polygon.cpp
+@@ -116,12 +116,12 @@ void PolygonItem::SetAlignment(H_align h_a, V_align v_a)
+   v_align = v_a;
+ }
+ 
+-const Point2d & PolygonItem::GetPosition() const
++Point2d & PolygonItem::GetPosition()
+ {
+   return position;
+ }
+ 
+-const Point2d & PolygonItem::GetTransformedPosition() const
++Point2d & PolygonItem::GetTransformedPosition()
+ {
+   return transformed_position;
+ }
+diff --git a/src/graphic/polygon.h b/src/graphic/polygon.h
+index e5da6f2..2936589 100644
+--- a/src/graphic/polygon.h
++++ b/src/graphic/polygon.h
+@@ -54,8 +54,8 @@ class PolygonBuffer {
+ class PolygonItem {
+ 
+   /* if you need that, implement it (correctly)*/
+-  PolygonItem(const PolygonItem&);
+-  PolygonItem operator=(const PolygonItem&);
++  PolygonItem( PolygonItem&);
++  PolygonItem operator=( PolygonItem&);
+   /*********************************************/
+ 
+  public:
+@@ -76,10 +76,10 @@ class PolygonItem {
+   virtual ~PolygonItem();
+   void SetPosition(const Point2d & pos);
+   void SetAlignment(H_align h_a = H_CENTERED, V_align v_a = V_CENTERED);
+-  const H_align GetHAlign() const { return h_align; }
+-  const V_align GetVAlign() const { return v_align; }
+-  const Point2d & GetPosition() const;
+-  const Point2d & GetTransformedPosition() const;
++  H_align GetHAlign() const { return h_align; }
++  V_align GetVAlign() const { return v_align; }
++  Point2d & GetPosition();
++  Point2d & GetTransformedPosition();
+   Point2i GetIntTransformedPosition() const;
+   virtual bool Contains(const Point2d & p) const;
+   void SetSprite(Sprite * sprite);
+diff --git a/src/interface/mouse.cpp b/src/interface/mouse.cpp
+index 9fcc865..290c382 100644
+--- a/src/interface/mouse.cpp
++++ b/src/interface/mouse.cpp
+@@ -252,7 +252,7 @@ Point2i Mouse::GetWorldPosition() const
+   return GetPosition() + Camera::GetInstance()->GetPosition();
+ }
+ 
+-const MouseCursor& Mouse::GetCursor(pointer_t pointer) const
++MouseCursor& Mouse::GetCursor(pointer_t pointer) const
+ {
+   ASSERT(pointer != POINTER_STANDARD);
+ 
+@@ -265,7 +265,7 @@ const MouseCursor& Mouse::GetCursor(pointer_t pointer) const
+   return (*cursors.find(pointer)).second;
+ }
+ 
+-const Mouse::pointer_t Mouse::GetPointer() const
++Mouse::pointer_t Mouse::GetPointer() const
+ {
+   return current_pointer;
+ }
+diff --git a/src/interface/mouse.h b/src/interface/mouse.h
+index 2d75314..6bfcdfd 100644
+--- a/src/interface/mouse.h
++++ b/src/interface/mouse.h
+@@ -73,7 +73,7 @@ private:
+   void ActionRightClic(bool shift = false) const;
+   void ActionWheelDown(bool shift = false) const;
+   void ActionWheelUp(bool shift = false) const;
+-  const MouseCursor& GetCursor(pointer_t pointer) const;
++  MouseCursor& GetCursor(pointer_t pointer) const;
+ 
+ public:
+   static Mouse * GetInstance();
+@@ -86,7 +86,7 @@ public:
+   void CenterPointer();
+ 
+   // Choose the pointer
+-  const pointer_t GetPointer() const;
++  pointer_t GetPointer() const;
+   pointer_t SetPointer(pointer_t pointer);
+   void Draw() const;
+ 
+@@ -94,6 +94,6 @@ public:
+   void Show();
+   void Hide();
+ 
+-  const visibility_t GetVisibility() const { return visible; };
++  visibility_t GetVisibility() const { return visible; };
+ };
+ #endif
+diff --git a/src/map/maps_list.h b/src/map/maps_list.h
+index b195590..a11ac4e 100644
+--- a/src/map/maps_list.h
++++ b/src/map/maps_list.h
+@@ -103,7 +103,7 @@ public:
+ 
+   uint GetNbBarrel() { LoadBasicInfo(); return nb_barrel; };
+   uint GetNbMine() { LoadBasicInfo(); return nb_mine; };
+-  const Profile * const ResProfile() const { return res_profile; };
++  Profile * ResProfile() const { return res_profile; };
+ 
+   bool IsOpened() { LoadBasicInfo(); return is_opened; };
+   bool UseWater() { LoadBasicInfo(); return use_water; };
+diff --git a/src/network/network.cpp b/src/network/network.cpp
+index 89de178..9622f71 100644
+--- a/src/network/network.cpp
++++ b/src/network/network.cpp
+@@ -311,7 +311,7 @@ typedef int SOCKET;
+ # define closesocket(fd) close(fd)
+ #endif
+ 
+-const connection_state_t Network::GetError() const
++connection_state_t Network::GetError() const
+ {
+ #ifdef WIN32
+   int code = WSAGetLastError();
+@@ -337,7 +337,7 @@ const connection_state_t Network::GetError() const
+ #endif
+ }
+ 
+-const connection_state_t Network::CheckHost(const std::string &host, int prt) const
++connection_state_t Network::CheckHost(const std::string &host, int prt) const
+ {
+   MSG_DEBUG("network", "Checking connection to %s:%i", host.c_str(), prt);
+ 
+@@ -435,7 +435,7 @@ bool Network::IsConnected()
+   return (!GetInstance()->IsLocal() && !stop_thread);
+ }
+ 
+-const uint Network::GetPort() const
++uint Network::GetPort() const
+ {
+   Uint16 prt;
+   prt = SDLNet_Read16(&ip.port);
+diff --git a/src/network/network.h b/src/network/network.h
+index 4bfc49a..21bf5a4 100644
+--- a/src/network/network.h
++++ b/src/network/network.h
+@@ -77,7 +77,7 @@ private:
+   Network(const Network&);
+   const Network& operator=(const Network&);
+   friend class DistantComputer;
+-  const connection_state_t GetError() const;
++  connection_state_t GetError() const;
+ 
+   static Network * singleton;
+   static bool sdlnet_initialized;
+@@ -127,10 +127,10 @@ public:
+   static void Disconnect();
+ 
+   static bool IsConnected();
+-  virtual const bool IsLocal() const { return false ; }
+-  virtual const bool IsServer() const { return false ; }
+-  virtual const bool IsClient() const { return false ; }
+-  const uint GetPort() const;
++  virtual bool IsLocal() const { return false ; }
++  virtual bool IsServer() const { return false ; }
++  virtual bool IsClient() const { return false ; }
++  uint GetPort() const;
+ 
+   // Action handling
+   void SendPacket(char* packet, int size) const;
+@@ -146,7 +146,7 @@ public:
+   static connection_state_t ServerStart(const std::string &port);
+ 
+   // Manage network state
+-  const connection_state_t CheckHost(const std::string &host, int prt) const;
++  connection_state_t CheckHost(const std::string &host, int prt) const;
+   void SetState(Network::network_state_t state);
+   Network::network_state_t GetState() const;
+   void SendNetworkState() const;
+diff --git a/src/network/network_client.cpp b/src/network/network_client.cpp
+index acb6046..d46e4a4 100644
+--- a/src/network/network_client.cpp
++++ b/src/network/network_client.cpp
+@@ -94,7 +94,7 @@ void NetworkClient::HandleAction(Action* a, DistantComputer* sender)
+ }
+ 
+ //-----------------------------------------------------------------------------
+-const connection_state_t
++connection_state_t
+ NetworkClient::ClientConnect(const std::string &host, const std::string& port)
+ {
+   Init();
+diff --git a/src/network/network_client.h b/src/network/network_client.h
+index a679b9a..82b607a 100644
+--- a/src/network/network_client.h
++++ b/src/network/network_client.h
+@@ -36,14 +36,14 @@ public:
+   ~NetworkClient();
+ 
+   //virtual const bool IsConnected() const { return true; }
+-  virtual const bool IsClient() const { return true; }
++  virtual bool IsClient() const { return true; }
+ 
+   virtual void SendChatMessage(const std::string& txt);
+ 
+   std::list<DistantComputer*>::iterator CloseConnection(std::list<DistantComputer*>::iterator);
+ 
+   // Client specific methods
+-  const connection_state_t ClientConnect(const std::string &host,
++  connection_state_t ClientConnect(const std::string &host,
+                                                   const std::string& port);
+ };
+ 
+diff --git a/src/network/network_local.h b/src/network/network_local.h
+index 981a8fa..8fd49ea 100644
+--- a/src/network/network_local.h
++++ b/src/network/network_local.h
+@@ -34,8 +34,8 @@ protected:
+ public:
+   ~NetworkLocal();
+ 
+-  virtual const bool IsConnected() const { return false; }
+-  virtual const bool IsLocal() const { return true; }
++  virtual bool IsConnected() const { return false; }
++  virtual bool IsLocal() const { return true; }
+ 
+   virtual void SendAction(Action* action);
+ 
+diff --git a/src/network/network_server.cpp b/src/network/network_server.cpp
+index 363c77e..d4f7273 100644
+--- a/src/network/network_server.cpp
++++ b/src/network/network_server.cpp
+@@ -178,12 +178,12 @@ void NetworkServer::SetMaxNumberOfPlayers(uint _max_nb_players)
+   }
+ }
+ 
+-const uint NetworkServer::GetNbConnectedPlayers() const
++uint NetworkServer::GetNbConnectedPlayers() const
+ {
+   return cpu.size() + 1;
+ }
+ 
+-const uint NetworkServer::GetNbInitializedPlayers() const
++uint NetworkServer::GetNbInitializedPlayers() const
+ {
+   uint r = 0;
+ 
+@@ -197,7 +197,7 @@ const uint NetworkServer::GetNbInitializedPlayers() const
+   return r;
+ }
+ 
+-const uint NetworkServer::GetNbReadyPlayers() const
++uint NetworkServer::GetNbReadyPlayers() const
+ {
+   uint r = 0;
+ 
+@@ -211,7 +211,7 @@ const uint NetworkServer::GetNbReadyPlayers() const
+   return r;
+ }
+ 
+-const uint NetworkServer::GetNbCheckedPlayers() const
++uint NetworkServer::GetNbCheckedPlayers() const
+ {
+   uint r = 0;
+ 
+diff --git a/src/network/network_server.h b/src/network/network_server.h
+index 1369fc8..290b22a 100644
+--- a/src/network/network_server.h
++++ b/src/network/network_server.h
+@@ -39,7 +39,7 @@ public:
+   ~NetworkServer();
+ 
+   //virtual const bool IsConnected() const { return true; }
+-  virtual const bool IsServer() const { return true; }
++  virtual bool IsServer() const { return true; }
+ 
+   virtual void SendChatMessage(const std::string& txt);
+ 
+@@ -50,10 +50,10 @@ public:
+   void RejectIncoming();
+   std::list<DistantComputer*>::iterator CloseConnection(std::list<DistantComputer*>::iterator closed);
+   void SetMaxNumberOfPlayers(uint max_nb_players);
+-  const uint GetNbConnectedPlayers() const;
+-  const uint GetNbInitializedPlayers() const;
+-  const uint GetNbReadyPlayers() const;
+-  const uint GetNbCheckedPlayers() const;
++  uint GetNbConnectedPlayers() const;
++  uint GetNbInitializedPlayers() const;
++  uint GetNbReadyPlayers() const;
++  uint GetNbCheckedPlayers() const;
+ };
+ 
+ //-----------------------------------------------------------------------------
+diff --git a/src/object/physics.h b/src/object/physics.h
+index 0a8820f..88aa9df 100644
+--- a/src/object/physics.h
++++ b/src/object/physics.h
+@@ -83,19 +83,19 @@ public:
+   void SetPhysSize (double width, double height) { m_phys_width = width; m_phys_height = height ; };
+ 
+   void SetMass (double mass) { m_mass = mass ; };
+-  const double GetMass() const { return m_mass; }
++  double GetMass() const { return m_mass; }
+ 
+   void SetWindFactor (double wind_factor) { m_wind_factor = wind_factor; };
+-  const double GetWindFactor () const { return m_wind_factor; }
++  double GetWindFactor () const { return m_wind_factor; }
+ 
+   void SetAirResistFactor (double factor) { m_air_resist_factor = factor; };
+-  const double GetAirResistFactor () const{ return m_air_resist_factor; }
++  double GetAirResistFactor () const{ return m_air_resist_factor; }
+ 
+   void SetGravityFactor (double factor) { m_gravity_factor = factor; };
+-  const double GetGravityFactor () const { return m_gravity_factor; }
++  double GetGravityFactor () const { return m_gravity_factor; }
+ 
+   void SetRebounding (bool rebounding) { m_rebounding = rebounding; }
+-  const bool GetRebounding () const { return m_rebounding; }
++  bool GetRebounding () const { return m_rebounding; }
+ 
+   // Used to sync value across network
+   virtual void GetValueFromAction(Action *);
+diff --git a/src/particles/particle.h b/src/particles/particle.h
+index 3819ace..afa146c 100644
+--- a/src/particles/particle.h
++++ b/src/particles/particle.h
+@@ -85,7 +85,7 @@ class Particle : public PhysicalObj
+   void SetOnTop(bool b) { on_top = b; }
+   bool IsOnTop() const { return on_top; }
+   bool StillUseful() const;
+-  const bool CheckOnEndTurn() const { return m_check_move_on_end_turn; }
++  bool CheckOnEndTurn() const { return m_check_move_on_end_turn; }
+ };
+ 
+ class ParticleEngine
+diff --git a/src/tool/vector2.h b/src/tool/vector2.h
+index da03e7f..f029b5a 100644
+--- a/src/tool/vector2.h
++++ b/src/tool/vector2.h
+@@ -385,9 +385,10 @@ template<class T> class Vector2
+        if( !IsZero( x ) )
+          if( !IsZero( y ) ){
+            double angle = atan(double(y)/double(x));
+-           if( x < 0 )
++           if( x < 0 ){
+              if( y > 0 ) return angle + M_PI;
+              else        return angle - M_PI;
++           }
+            return angle;
+          }
+          else
+diff --git a/src/weapon/weapon.h b/src/weapon/weapon.h
+index 0389e04..28162d6 100644
+--- a/src/weapon/weapon.h
++++ b/src/weapon/weapon.h
+@@ -299,7 +299,7 @@ public:
+   bool LoadXml(const xmlpp::Element * weapon);
+ 
+   // return the strength of the weapon
+-  const double ReadStrength() const { return m_strength; };
++  double ReadStrength() const { return m_strength; };
+ 
+   // Data access
+   const std::string& GetName() const;
+-- 
+1.5.3.8
+
