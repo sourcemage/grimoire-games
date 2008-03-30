@@ -1,0 +1,8 @@
+default_pre_build                                                       &&
+cd  ${BUILD_DIRECTORY}/${SPELL}-${VERSION}                              &&
+sedit 's|CFLAGS=.*$||'                                     Makefile     &&
+sedit 's|XLIB=|XLIB=${LDFLAGS} |'                          Makefile     &&
+sedit 's|INSTDIR=/usr/local|INSTDIR=${INSTALL_ROOT}/usr|'  Makefile     &&
+sedit 's|/bin$|/games|'                                    Makefile     &&
+sedit 's|/man/man6$|/share/man/man6|'                      Makefile     &&
+sedit 's|/lib/app-defaults|/share/X11/app-defaults|'       Makefile

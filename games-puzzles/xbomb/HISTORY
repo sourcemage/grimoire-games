@@ -1,0 +1,5 @@
+2008-03-30 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* DEPENDS, DETAILS: spell created
+	* PRE_BUILD: added, patch makefile for intall locs and $LDFLAGS
+	* BUILD: added, no configure, just make
+

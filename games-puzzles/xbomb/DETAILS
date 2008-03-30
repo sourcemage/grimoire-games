@@ -1,0 +1,19 @@
+           SPELL=xbomb
+         VERSION=2.2
+          SOURCE="${SPELL}-${VERSION}.tgz"
+   SOURCE_URL[0]=http://www.gedanken.demon.co.uk/download-${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:fd3c77c4c5e13a880a95cd2e478ea0778ef1a3c68416ecce17e57354822f11c5493e67f6d144deb40bf6402801aa64bc3347d1a72b926d3cb7b8251fc952877b
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.gedanken.demon.co.uk/xbomb/"
+      LICENSE[0]=GPL
+         ENTERED=20080330
+           SHORT="Minesweeper game with alternative grid types."
+cat << EOF
+A minesweeper type game for X Windows, with some unusual, interesting and
+challenging grid shapes.  The grids vary in difficulty.  The hexagonal grid is
+the easiest of the three grids, although the endgame can be impossible. There
+are 6 neighbours to each of the tiles.  The Square Grid is the traditional
+grid shape. There are 8 neighbours to each of the tiles.  The Triangular
+Grid is the most difficult of the three grids by a long way. There are 12
+neighbours to each of the tiles.
+EOF
