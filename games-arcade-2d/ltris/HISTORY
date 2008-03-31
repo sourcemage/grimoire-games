@@ -1,3 +1,7 @@
+2008-03-31 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.12
+	* DEPENDS: removed --enable-sound, in reality it disabled sound
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

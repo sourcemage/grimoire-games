@@ -1,12 +1,11 @@
            SPELL=ltris
-         VERSION=1.0.10
+         VERSION=1.0.12
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
-     SOURCE_HASH=sha1:03fe62315521505fb240d33e7bb5832311b4e030
+     SOURCE_HASH=sha512:494ac4036323543070e65607ed872a9b45eece74539b9591cbdeb0a6f34f55d562b6d526ddea64d81add53dde9d863758944b49ef4bd02934ce3259db6ded35b
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://lgames.sourceforge.net/index.php?project=LTris
          ENTERED=20050918
-         UPDATED=20050918
       LICENSE[0]=GPL
            SHORT="LTris as a tetris clone"
 cat << EOF
