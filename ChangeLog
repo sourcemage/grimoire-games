@@ -1,3 +1,7 @@
+2008-04-03 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* games-puzzles/xbomb: New spell, Minesweeper with different
+	  grid shapes.
+
 2008-03-29 Ismael Luceno <ismael@sourcemage.org>
 	* games-emulators/desmume: New spell, Nintendo DS emulator.
 
