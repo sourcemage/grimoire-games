@@ -1,3 +1,6 @@
+2008-04-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.4.1
+
 2008-03-03 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, PREPARE: readded DEVEL version, made it 1.4
 	* INSTALL: icon installation fixes
