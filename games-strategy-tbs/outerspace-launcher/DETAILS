@@ -1,0 +1,13 @@
+           SPELL=outerspace-launcher
+         VERSION=0.2.2
+          SOURCE=outerspace-${VERSION}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/outerspace-${VERSION}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:8ce0b88379fabda6479dba83b0cce4ce10c0b3e0b513fc518903a687af7d413225bc7a7ae0be1b56c77cc248ddad150acee3cbb2cdc8b9bf3944601305b7c378
+        WEB_SITE=http://www.ospace.net
+         ENTERED=20080408
+      LICENSE[0]=GPL
+           SHORT="Outer Space Launcher"
+cat << EOF
+Outer Space Launcher
+EOF
