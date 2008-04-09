@@ -2,12 +2,22 @@
          VERSION=0.2.2
           SOURCE=outerspace-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/outerspace-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/ospace/${SOURCE}
      SOURCE_HASH=sha512:8ce0b88379fabda6479dba83b0cce4ce10c0b3e0b513fc518903a687af7d413225bc7a7ae0be1b56c77cc248ddad150acee3cbb2cdc8b9bf3944601305b7c378
         WEB_SITE=http://www.ospace.net
          ENTERED=20080408
       LICENSE[0]=GPL
            SHORT="Outer Space Launcher"
 cat << EOF
-Outer Space Launcher
+Outer Space Launcher.
+Outer Space is an on-line strategy game which takes place in the dangerous
+universe. The game is turn based, but also a kind of real time game. Turn
+based because a turn is one hour (or two on week ends) ... real time because
+the clock and the game don't stop when you go to sleep. Briefly, the objective
+is to re-unite the galaxy after a catastrophic government collapse. Use your
+skill and judgment as one of many prominent commanders to expand your empire,
+construct buildings and ships, command large fleets, negotiate diplomatic
+relations with other commanders, or wipe them out. Only the most skillful
+commander will be able to re-unite the galaxy and be elected as the new
+imperator!
 EOF

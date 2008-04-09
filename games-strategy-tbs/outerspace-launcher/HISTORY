@@ -1,2 +1,5 @@
+2008-04-09 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Fixed SOURCE_URL, better long description
+
 2008-04-08 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, DEPENDS, BUILD, INSTALL, HISTORY: Created this spell
