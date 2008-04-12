@@ -1,0 +1,124 @@
+diff -Naur zsnes_1_51.orig/src/parsegen.cpp zsnes_1_51/src/parsegen.cpp
+--- zsnes_1_51.orig/src/parsegen.cpp	2008-04-11 21:55:44.323422097 -0700
++++ zsnes_1_51/src/parsegen.cpp	2008-04-11 22:27:58.904100654 -0700
+@@ -26,6 +26,7 @@
+ #include <iostream>
+ #include <fstream>
+ #include <string>
++#include <cstring>
+ #include <vector>
+ #include <algorithm>
+ #include <sstream>
+@@ -1828,7 +1829,7 @@
+   }
+ }
+ 
+-int main(size_t argc, const char **argv)
++int main (int argc, const char **argv)
+ {
+   const char *cheader_file = 0;
+   bool compile = false;
+diff -Naur zsnes_1_51.orig/src/tools/depbuild.cpp zsnes_1_51/src/tools/depbuild.cpp
+--- zsnes_1_51.orig/src/tools/depbuild.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/depbuild.cpp	2008-04-11 22:27:59.048100662 -0700
+@@ -24,6 +24,7 @@
+ #include <iostream>
+ #include <string>
+ #include <cstdio>
++#include <cstdlib>
+ using namespace std;
+ 
+ #include "fileutil.h"
+@@ -183,7 +184,7 @@
+   }
+ }
+ 
+-int main(size_t argc, const char *const *const argv)
++int main (int argc, const char *const *const argv)
+ {
+   if (argc < 5)
+   {
+diff -Naur zsnes_1_51.orig/src/tools/extraext.cpp zsnes_1_51/src/tools/extraext.cpp
+--- zsnes_1_51.orig/src/tools/extraext.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/extraext.cpp	2008-04-11 22:27:59.142100811 -0700
+@@ -256,7 +256,7 @@
+   }
+ }
+ 
+-int main(size_t argc, char **argv)
++int main (int argc, char **argv)
+ {
+   for (char **i = argv+1; *i; i++)
+   {
+diff -Naur zsnes_1_51.orig/src/tools/macroll.cpp zsnes_1_51/src/tools/macroll.cpp
+--- zsnes_1_51.orig/src/tools/macroll.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/macroll.cpp	2008-04-11 22:27:59.001101007 -0700
+@@ -207,7 +207,7 @@
+   }
+ }
+ 
+-int main(size_t argc, char **argv)
++int main (int argc, char **argv)
+ {
+   if (argc > 1)
+   {
+diff -Naur zsnes_1_51.orig/src/tools/minwhite.cpp zsnes_1_51/src/tools/minwhite.cpp
+--- zsnes_1_51.orig/src/tools/minwhite.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/minwhite.cpp	2008-04-11 22:27:59.068100717 -0700
+@@ -102,7 +102,7 @@
+   }
+ }
+ 
+-int main(size_t argc, char **argv)
++int main (int argc, char **argv)
+ {
+   if (argc > 1)
+   {
+diff -Naur zsnes_1_51.orig/src/tools/nreplace.cpp zsnes_1_51/src/tools/nreplace.cpp
+--- zsnes_1_51.orig/src/tools/nreplace.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/nreplace.cpp	2008-04-11 22:27:59.021101341 -0700
+@@ -95,7 +95,7 @@
+   }
+ }
+ 
+-int main(size_t argc, const char **argv)
++int main (int argc, const char **argv)
+ {
+   bool subdir_scan = false;
+   const char **argp = argv+1;
+diff -Naur zsnes_1_51.orig/src/tools/objprefx.cpp zsnes_1_51/src/tools/objprefx.cpp
+--- zsnes_1_51.orig/src/tools/objprefx.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/objprefx.cpp	2008-04-11 22:27:59.091100977 -0700
+@@ -122,7 +122,7 @@
+   }
+ }
+ 
+-int main(size_t argc, char **argv)
++int main (int argc, char **argv)
+ {
+   if (argc == 3)
+   {
+diff -Naur zsnes_1_51.orig/src/tools/strutil.h zsnes_1_51/src/tools/strutil.h
+--- zsnes_1_51.orig/src/tools/strutil.h	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/strutil.h	2008-04-11 21:56:15.706420130 -0700
+@@ -23,6 +23,7 @@
+ #define STRUTIL_H
+ 
+ #include <string>
++#include <cstring>
+ #include <vector>
+ #include <cctype>
+ 
+diff -Naur zsnes_1_51.orig/src/tools/varrep.cpp zsnes_1_51/src/tools/varrep.cpp
+--- zsnes_1_51.orig/src/tools/varrep.cpp	2008-04-11 21:55:44.341424437 -0700
++++ zsnes_1_51/src/tools/varrep.cpp	2008-04-11 22:27:59.163101400 -0700
+@@ -145,7 +145,7 @@
+   return(false);
+ }
+ 
+-int main(size_t argc, const char *const *const argv)
++int main (int argc, const char *const *const argv)
+ {
+   if (argc >= 4)
+   {
+

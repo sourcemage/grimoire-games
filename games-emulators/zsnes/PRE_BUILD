@@ -1,7 +1,14 @@
 default_pre_build          &&
 cd  $SOURCE_DIRECTORY/src  &&
+
+#
+# GCC 4.3.0 fix
+#
+patch -p2 < $SCRIPT_DIRECTORY/gcc43.patch  &&
+
 sed -i "s:\$(DESTDIR)/@prefix@/bin:$INSTALL_ROOT/usr/games:"  Makefile.in  &&
 sed -i "s:@prefix@/man:@prefix@/share/man:"                   Makefile.in  &&
+
 if  [[ $ZSNES_CVS = y ]]; then
   ./autogen.sh
 fi
