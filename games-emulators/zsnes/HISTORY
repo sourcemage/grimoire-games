@@ -1,5 +1,6 @@
 2008-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Apply gcc43.patch
+	  Do not run ./configure via autogen.sh
 	* gcc43.patch: Adhere to GCC 4.3.0 strictness
 
 2007-09-29 Arwed v. Merkatz <v.merkatz@gmx.net>
