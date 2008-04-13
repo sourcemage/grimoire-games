@@ -1,5 +1,4 @@
 default_pre_build  &&
 cd ${SOURCE_DIRECTORY}  &&
 
-patch -p0 < ${SCRIPT_DIRECTORY}/svnversion-deletion.patch  &&
 sedit 's:mangdir = $(mandir)/mang:mangdir = $(mandir)/man6:' Makefile.in
