@@ -1,3 +1,6 @@
+2008-04-16 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: svn now uses libxml2 instead of libxml++
+
 2008-03-22 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Apply 0001-Allow-compilation-with-gcc-3.4.patch and
 	  0002-make-wormux-0.8beta4-compile-with-g-4.3.patch

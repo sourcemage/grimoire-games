@@ -4,12 +4,14 @@ depends sdl_net    &&
 depends sdl_image  &&
 depends sdl_mixer  &&
 depends sdl_gfx    &&
-depends libxml++   &&
 depends gettext    &&
 depends libpng     &&
 depends curl       &&
 if [[ "$WORMUX_SVN" == "y" ]]
 then
-  depends  subversion
+  depends subversion &&
+  depends libxml2
+else
+  depends libxml++
 fi
 
