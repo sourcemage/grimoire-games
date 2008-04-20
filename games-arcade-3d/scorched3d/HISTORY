@@ -1,3 +1,6 @@
+2008-04-20 Alexander Tsamutali <astsmtl@gmail.com>
+	* DEPENDS: Now depends on fftw
+
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 41.3
 	* DEPENDS: replaced wxgtk-no-unicode with wxgtk
