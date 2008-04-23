@@ -1,3 +1,7 @@
+2008-04-23 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-utils/springlobby: new spell, free cross-platform lobby client
+	  for the Spring RTS project
+
 2008-04-08 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-strategy-tbs/outerspace-launcher: new spell, Outer Space Launcher
 

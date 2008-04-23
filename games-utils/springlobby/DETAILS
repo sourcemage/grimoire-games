@@ -1,0 +1,21 @@
+           SPELL=springlobby
+         VERSION=0.0.1.10219
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.springlobby.info/tarballs/$SOURCE
+     SOURCE_HASH=sha512:c74356a11113421f03185c424fc6eb07bdca9b8b01c3cdb079d5a9b5effa094039cd7165843f266704b4d4f5c5748ac31220fef98d2d626ed213948e08c9f74d
+        WEB_SITE=http://springlobby.info/
+         ENTERED=20080423
+      LICENSE[0]=GPL
+           SHORT="free cross-platform lobby client for the Spring RTS project"
+cat << EOF
+SpringLobby is a free cross-platform lobby client for the Spring RTS project.
+Features and goals:
+    * Implemented in modern C++
+    * Depends only on wxWidgets (later also boost) so works on many more
+      platforms than spring itself.
+    * License is GPL 2 (free as in freedom)
+    * Clean and intuitive user interface
+    * Full UTF-8 support
+    * Clean design, clean codebase, well documented (soon at least) 
+EOF
