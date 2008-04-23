@@ -1,3 +1,8 @@
+2008-04-23 Alexander Tsamutali <astsmtl@gmail.com>
+	* DEPENDS: sub-depends on openal SNAPSHOT
+	* BUILD: changed 'datadir' to /usr/share/games/spring
+	* DETAILS: PATCHLEVEL++
+
 2008-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL: Created
 

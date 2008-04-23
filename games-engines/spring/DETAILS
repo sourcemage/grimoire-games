@@ -1,5 +1,6 @@
            SPELL=spring
          VERSION=0.76b1
+      PATCHLEVEL=1
           SOURCE=${SPELL}_${VERSION}_src.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
    SOURCE_URL[0]=http://spring.clan-sy.com/dl/$SOURCE
