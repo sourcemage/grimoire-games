@@ -1,0 +1,18 @@
+? varconf_gcc43.patch
+Index: varconf/variable.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/varconf/varconf/variable.cpp,v
+retrieving revision 1.26
+diff -u -p -r1.26 variable.cpp
+--- varconf/variable.cpp	12 Oct 2006 01:49:39 -0000	1.26
++++ varconf/variable.cpp	20 Apr 2008 00:41:08 -0000
+@@ -28,6 +28,7 @@
+ 
+ #include <string>
+ #include <cstdio>
++#include <cstdlib>
+ 
+ #ifdef __WIN32__
+ #include <tchar.h>
+
+
