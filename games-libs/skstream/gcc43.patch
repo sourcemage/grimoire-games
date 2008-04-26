@@ -1,0 +1,22 @@
+diff -Naur skstream-0.3.6.orig/skstream/skserver.cpp skstream-0.3.6/skstream/skserver.cpp
+--- skstream-0.3.6.orig/skstream/skserver.cpp	2008-04-26 12:20:20.000000000 -0700
++++ skstream-0.3.6/skstream/skserver.cpp	2008-04-26 12:23:27.000000000 -0700
+@@ -41,6 +41,7 @@
+ 
+ #include <iostream>
+ #include <cstdio>
++#include <cstring>
+ 
+ #ifdef _WIN32
+ #define SHUT_RD SD_RECEIVE
+diff -Naur skstream-0.3.6.orig/skstream/skstream.cpp skstream-0.3.6/skstream/skstream.cpp
+--- skstream-0.3.6.orig/skstream/skstream.cpp	2008-04-26 12:20:20.000000000 -0700
++++ skstream-0.3.6/skstream/skstream.cpp	2008-04-26 12:20:48.000000000 -0700
+@@ -43,6 +43,7 @@
+ 
+ #include <cstdio>
+ #include <cassert>
++#include <cstring>
+ 
+ #ifdef _WIN32
+ #define SHUT_RD SD_RECEIVE
