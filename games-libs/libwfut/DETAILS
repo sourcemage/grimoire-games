@@ -1,5 +1,5 @@
            SPELL=libwfut
-         VERSION=0.1.0
+         VERSION=0.2.0
           SOURCE=$SPELL-$VERSION.tar.gz
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/libs/$SPELL/$SOURCE

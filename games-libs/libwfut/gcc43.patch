@@ -1,0 +1,17 @@
+Index: libwfut/platform.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/libwfut/libwfut/platform.cpp,v
+retrieving revision 1.7
+diff -u -p -r1.7 platform.cpp
+--- libwfut/platform.cpp	5 Mar 2008 21:39:00 -0000	1.7
++++ libwfut/platform.cpp	20 Apr 2008 00:45:15 -0000
+@@ -13,6 +13,7 @@
+ #include <stdlib.h>
+ #include <errno.h>
+ #include <stdio.h>
++#include <algorithm>
+ 
+ #include <dirent.h>
+ #include <sys/stat.h>
+
+
