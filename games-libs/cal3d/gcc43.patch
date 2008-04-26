@@ -1,0 +1,60 @@
+diff -Naur cal3d-0.11.0.orig/src/cal3d/hardwaremodel.cpp cal3d-0.11.0/src/cal3d/hardwaremodel.cpp
+--- cal3d-0.11.0.orig/src/cal3d/hardwaremodel.cpp	2008-04-26 16:29:54.433217561 -0700
++++ cal3d-0.11.0/src/cal3d/hardwaremodel.cpp	2008-04-26 16:30:10.987227079 -0700
+@@ -24,6 +24,8 @@
+ #include "cal3d/coreskeleton.h"
+ #include "cal3d/skeleton.h"
+ 
++#include <cstring>
++
+ 
+  /*****************************************************************************/
+ /** Constructs the hardware model instance.
+diff -Naur cal3d-0.11.0.orig/src/cal3d/platform.cpp cal3d-0.11.0/src/cal3d/platform.cpp
+--- cal3d-0.11.0.orig/src/cal3d/platform.cpp	2008-04-26 16:29:54.432218202 -0700
++++ cal3d-0.11.0/src/cal3d/platform.cpp	2008-04-26 16:32:05.458248885 -0700
+@@ -18,6 +18,8 @@
+ 
+ #include "cal3d/platform.h"
+ 
++#include <cstring>
++
+  /*****************************************************************************/
+ /** Constructs the platform instance.
+   *
+diff -Naur cal3d-0.11.0.orig/src/cal3d/renderer.cpp cal3d-0.11.0/src/cal3d/renderer.cpp
+--- cal3d-0.11.0.orig/src/cal3d/renderer.cpp	2008-04-26 16:29:54.432218202 -0700
++++ cal3d-0.11.0/src/cal3d/renderer.cpp	2008-04-26 16:33:06.537218419 -0700
+@@ -29,6 +29,8 @@
+ #include "cal3d/coresubmesh.h"
+ #include "cal3d/physique.h"
+ 
++#include <cstring>
++
+  /*****************************************************************************/
+ /** Constructs the renderer instance.
+   *
+diff -Naur cal3d-0.11.0.orig/src/cal3d/submesh.cpp cal3d-0.11.0/src/cal3d/submesh.cpp
+--- cal3d-0.11.0.orig/src/cal3d/submesh.cpp	2008-04-26 16:29:54.431218355 -0700
++++ cal3d-0.11.0/src/cal3d/submesh.cpp	2008-04-26 16:33:47.931260330 -0700
+@@ -16,6 +16,8 @@
+ #include "cal3d/error.h"
+ #include "cal3d/coresubmesh.h"
+ 
++#include <cstring>
++
+ 
+ CalSubmesh::CalSubmesh(CalCoreSubmesh* coreSubmesh)
+ {
+diff -Naur cal3d-0.11.0.orig/src/cal3d_converter.cpp cal3d-0.11.0/src/cal3d_converter.cpp
+--- cal3d-0.11.0.orig/src/cal3d_converter.cpp	2008-04-26 16:29:54.436217873 -0700
++++ cal3d-0.11.0/src/cal3d_converter.cpp	2008-04-26 16:39:07.680495147 -0700
+@@ -11,6 +11,8 @@
+ 
+ #include "cal3d/cal3d.h"
+ 
++#include <cstring>
++
+ #define SKELETON 0
+ #define MESH 1
+ #define ANIMATION 2
