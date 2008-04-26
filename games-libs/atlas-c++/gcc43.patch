@@ -1,0 +1,33 @@
+? atlas_gcc43.patch
+Index: Atlas/Filter.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/Atlas-C++/Atlas/Filter.cpp,v
+retrieving revision 1.8
+diff -u -p -r1.8 Filter.cpp
+--- Atlas/Filter.cpp	28 Oct 2006 04:06:25 -0000	1.8
++++ Atlas/Filter.cpp	20 Apr 2008 00:55:59 -0000
+@@ -5,6 +5,7 @@
+ // $Id: Filter.cpp,v 1.8 2006-10-28 04:06:25 alriddoch Exp $
+ 
+ #include <Atlas/Filter.h>
++#include <cstring>
+ 
+ namespace Atlas {
+ 
+Index: tools/atlas_convert.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/Atlas-C++/tools/atlas_convert.cpp,v
+retrieving revision 1.1
+diff -u -p -r1.1 atlas_convert.cpp
+--- tools/atlas_convert.cpp	10 Jun 2005 13:21:26 -0000	1.1
++++ tools/atlas_convert.cpp	20 Apr 2008 00:56:00 -0000
+@@ -13,6 +13,7 @@
+ 
+ #include <fstream>
+ #include <iostream>
++#include <cstdlib>
+ 
+ #include <unistd.h>
+ 
+
+
