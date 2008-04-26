@@ -1,0 +1,111 @@
+? eris_gcc43.patch
+Index: Eris/Account.h
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/Account.h,v
+retrieving revision 1.17
+diff -u -p -r1.17 Account.h
+--- Eris/Account.h	4 Oct 2007 12:21:17 -0000	1.17
++++ Eris/Account.h	20 Apr 2008 00:44:03 -0000
+@@ -3,6 +3,7 @@
+ 
+ #include <vector>
+ #include <map>
++#include <memory>
+ 
+ #include <Eris/Types.h>
+ #include <Eris/Timeout.h>
+Index: Eris/Connection.h
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/Connection.h,v
+retrieving revision 1.37
+diff -u -p -r1.37 Connection.h
+--- Eris/Connection.h	23 Oct 2007 11:31:58 -0000	1.37
++++ Eris/Connection.h	20 Apr 2008 00:44:04 -0000
+@@ -10,6 +10,7 @@
+ 
+ #include <deque>
+ #include <map>
++#include <memory>
+ 
+ /** Every Eris class and type lives inside the Eris namespace; certain utility functions live in the
+ Util namespace, since they may be moved to a generic WorldForge foundation library in the future.*/
+Index: Eris/EntityRef.h
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/EntityRef.h,v
+retrieving revision 1.4
+diff -u -p -r1.4 EntityRef.h
+--- Eris/EntityRef.h	1 May 2006 22:19:06 -0000	1.4
++++ Eris/EntityRef.h	20 Apr 2008 00:44:04 -0000
+@@ -4,6 +4,8 @@
+ #include <sigc++/trackable.h>
+ #include <sigc++/signal.h>
+ 
++#include <string>
++
+ namespace Eris
+ {
+ 
+Index: Eris/Exceptions.h
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/Exceptions.h,v
+retrieving revision 1.4
+diff -u -p -r1.4 Exceptions.h
+--- Eris/Exceptions.h	14 Dec 2005 23:12:04 -0000	1.4
++++ Eris/Exceptions.h	20 Apr 2008 00:44:04 -0000
+@@ -38,7 +38,7 @@ class InvalidAtlas : public BaseExceptio
+ public:
+     InvalidAtlas(const std::string& msg, const Atlas::Objects::Root& obj);
+     
+-    InvalidAtlas(const std::string& msg, const Atlas::Message::Element& msg);
++    InvalidAtlas(const std::string& msg, const Atlas::Message::Element& el);
+     
+     virtual ~InvalidAtlas() throw();
+ private:
+Index: Eris/Metaserver.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/Metaserver.cpp,v
+retrieving revision 1.46
+diff -u -p -r1.46 Metaserver.cpp
+--- Eris/Metaserver.cpp	8 Nov 2006 18:19:10 -0000	1.46
++++ Eris/Metaserver.cpp	20 Apr 2008 00:44:04 -0000
+@@ -18,6 +18,7 @@
+ 
+ #include <cassert>
+ #include <cstdio>
++#include <cstring>
+ 
+ #ifdef __WIN32__
+ 
+Index: Eris/Metaserver.h
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/Eris/Metaserver.h,v
+retrieving revision 1.30
+diff -u -p -r1.30 Metaserver.h
+--- Eris/Metaserver.h	3 Oct 2007 18:11:27 -0000	1.30
++++ Eris/Metaserver.h	20 Apr 2008 00:44:04 -0000
+@@ -11,6 +11,8 @@
+ #include <sigc++/trackable.h>
+ #include <sigc++/signal.h>
+ 
++#include <memory>
++
+ #ifndef __WIN32__
+ // pull in uint32_t on POSIX - is this generic?!
+ #include <stdint.h>
+Index: test/metaQuery.cpp
+===================================================================
+RCS file: /home/cvspsrv/worldforge/forge/libs/eris/test/metaQuery.cpp,v
+retrieving revision 1.14
+diff -u -p -r1.14 metaQuery.cpp
+--- test/metaQuery.cpp	3 Oct 2007 22:53:54 -0000	1.14
++++ test/metaQuery.cpp	20 Apr 2008 00:44:05 -0000
+@@ -7,6 +7,7 @@
+ #include <iostream>
+ #include <sstream>
+ #include <vector>
++#include <algorithm>
+ #include <sigc++/functors/ptr_fun.h>
+ 
+ using std::endl;
+
+
