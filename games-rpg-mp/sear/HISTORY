@@ -1,3 +1,12 @@
+2008-04-26 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply gcc43.patch.gz and libsigc.patch.gz
+	* gcc43.patch.gz: Upstream patch from Marc Riese <marc-riese@gmx.de>
+	  to fix compilation with GCC 4.3.0. Made additional modifications
+	  and re-submitted upstream
+	* libsigc.patch.gz: Patch to fix sear compilation against libsigc++3
+	  2.2.2. See https://www.redhat.com/archives/fedora-devel-list/2008-April/msg00494.html3
+	  for notes.
+
 2008-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.6.3
 	  Removed UPDATED
