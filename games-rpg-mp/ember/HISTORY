@@ -1,3 +1,9 @@
+2008-04-26 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated stable to 0.5.2
+	* PRE_BUILD: Apply gcc43.patch.gz
+	* gcc43.patch.gz: Upstream patch from Marc Riese <marc-riese@gmx.de>
+	  to fix compilation with GCC 4.3.0
+
 2008-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated stable to 0.5.1
 	  Removed UPDATED
