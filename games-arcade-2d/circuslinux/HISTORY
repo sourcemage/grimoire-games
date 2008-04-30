@@ -1,3 +1,12 @@
+2008-04-29 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: SOURCE_URL changed to
+	  ftp://ftp.billsgames.com/unix/x/circus-linux/src/
+	* CONFIGURE: Query for joystick support
+	* PRE_BUILD: Fix compilation with x86_64 (cannot figure out target)
+	* BUILD: Use default_games_build
+	  Now calls make in BUILD and not INSTALL
+	  Pass joystick options to OPTS
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

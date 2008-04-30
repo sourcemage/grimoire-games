@@ -1,0 +1,3 @@
+default_pre_build                                               &&
+cd $SOURCE_DIRECTORY                                            &&
+sedit  's:@TARGET_DEF@:LINUX:g'  $SOURCE_DIRECTORY/Makefile.in

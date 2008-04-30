@@ -1,0 +1,2 @@
+config_query_option  CIRCUSLINUX_JOYSTICK  'Enable joystick support?'  n  \
+                     '--enable-joystick'  '--disable-joystick'
