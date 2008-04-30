@@ -2,6 +2,7 @@
 	* games-engines/childsplay: Added a suite for educational games
 	* games-data/childsplay-plugins: Added a basic set of plugins
 	  for childsplay
+	* games-puzzles/gcompris: Added an educational game suite
 
 2008-04-23 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-utils/springlobby: new spell, free cross-platform lobby client

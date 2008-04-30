@@ -1,0 +1,5 @@
+2008-04-29 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS, DEPENDS, PRE_BUILD, BUILD: Created
+	* share-games.patch: Allow binary to find shared data under
+	  /usr/share/games
+

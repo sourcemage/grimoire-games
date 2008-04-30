@@ -1,0 +1,23 @@
+depends  gnome-python2   &&
+depends  gnuchess        &&
+depends  gtk+2           &&
+depends  libgnomecanvas  &&
+depends  libxml2         &&
+depends  python          &&
+depends  sdl             &&
+depends  sdl_mixer       &&
+
+optional_depends  gnet2                          \
+                  '--enable-gnet'                \
+                  '--disable-gnet'               \
+                  'for fetching content online'  &&
+
+optional_depends  pysqlite                    \
+                  '--enable-sqlite'           \
+                  '--disable-sqlite'          \
+                  'for user profile support'  &&
+
+optional_depends  tetex                                \
+                  ''                                   \
+                  ''                                   \
+                  'for generating HTML documentation'

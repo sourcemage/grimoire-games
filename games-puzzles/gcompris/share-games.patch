@@ -1,0 +1,12 @@
+diff -Naur gcompris-8.4.4.orig/src/gcompris/gcompris.c gcompris-8.4.4/src/gcompris/gcompris.c
+--- gcompris-8.4.4.orig/src/gcompris/gcompris.c	2008-04-29 22:29:28.702476713 -0700
++++ gcompris-8.4.4/src/gcompris/gcompris.c	2008-04-29 22:30:39.156249049 -0700
+@@ -1130,7 +1130,7 @@
+       gchar *pkg_data_dir = gbr_find_data_dir(PACKAGE_DATA_DIR);
+       gchar *pkg_clib_dir = gbr_find_lib_dir(PACKAGE_CLIB_DIR);
+ 
+-      properties->package_data_dir = g_strconcat(pkg_data_dir, "/gcompris/boards", NULL);
++      properties->package_data_dir = g_strconcat(pkg_data_dir, "/games/gcompris/boards", NULL);
+       properties->package_locale_dir = gbr_find_locale_dir(PACKAGE_LOCALE_DIR);
+       properties->package_plugin_dir = g_strconcat(pkg_clib_dir, "/gcompris", NULL);
+       properties->package_python_plugin_dir = g_strconcat(pkg_data_dir, "/gcompris/python", NULL);
