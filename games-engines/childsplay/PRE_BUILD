@@ -1,0 +1,5 @@
+default_pre_build                                       &&
+sedit  "s:PREFIX=/usr/local:PREFIX=$INSTALL_ROOT/usr:"  \
+       $SOURCE_DIRECTORY/INSTALL.sh                     &&
+sedit  "s:/usr/local:$INSTALL_ROOT/usr:"                \
+       $SOURCE_DIRECTORY/childsplay.sh
