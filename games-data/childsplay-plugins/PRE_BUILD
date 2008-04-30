@@ -1,0 +1,7 @@
+default_pre_build                                       &&
+sedit  "s:PREFIX=/usr/local:PREFIX=$INSTALL_ROOT/usr:"  \
+       $SOURCE_DIRECTORY/install.sh                     &&
+#
+# Do not pester me with silly queries
+#
+sedit  's:^[ ]*read.*::g'  $SOURCE_DIRECTORY/install.sh

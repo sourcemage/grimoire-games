@@ -1,0 +1,38 @@
+           SPELL=childsplay-plugins
+         VERSION=0.90
+          SOURCE=${SPELL/-/_}-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/-/_}-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/childsplay/$SOURCE
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+      LICENSE[0]=GPL
+        WEB_SITE=http://childsplay.sourceforge.net/
+         ENTERED=20080429
+           SHORT='Basic plug-ins for ChildsPlay'
+cat << EOF
+Childsplay uses a plug-in system for the game modules. These games are packaged in plugin-packages (only one for now). You must first install childsplay before you can use these games, because they only work from within childsplay.
+
+* Numbers         Put the correct operator between two numbers
+  Ages: 5-7
+* SoundNpic       A toy for young children with pictures and sounds
+  Ages: 2-4
+* Packid          A pac-man game, try to catch the letters
+  Ages: 4-7
+* Soundmemory     The classic memory game, with sounds
+  Ages: 3-6
+* Fallingletters  Type them before they reach the ground
+  Ages: 4-7
+* Findsound       Listen to a sound and find the image to which it belongs
+  Ages: 3-5
+* Findsound2      The same as findsound, now with numbers and letters
+  Ages: 5-6
+* Pong            Play alone,against the computer or against another child
+  Ages: 4-7
+* Billiard        Try to put the balls in the hole
+  Ages: 4-7
+* MultiTables     Learn the multiplication tables
+  Ages: 7-9
+* Puzzle          Recreate the image
+  Ages: 4-6
+* LetterFlashcard Learn the alphabet by listening to the words and initials
+  Ages: 1-4
+EOF
