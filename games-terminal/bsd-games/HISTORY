@@ -1,3 +1,7 @@
+2008-05-02 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* PRE_BUILD: fixing bug #14505 thanks to Javier
+	* bds-games-2.17.patch: added patch from debian thanks to Javier
+
 2006-06-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: build api 2 split
 	* INSTALL: build api 2 split, added
