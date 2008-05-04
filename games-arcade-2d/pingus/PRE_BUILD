@@ -1,0 +1,4 @@
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+# fixing for crappy build+install system
+sed -i "s:1/bin:1/games:" install.sh
