@@ -1,3 +1,7 @@
+2008-05-04 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 0.9.3
+	* DEPENDS: added sub_depends for boost
+
 2008-03-02 Dale E. Edmons <linuxfan@sourcemage.org>
 	* INSTALL: cleaned up file and use find_and_scam.
 
