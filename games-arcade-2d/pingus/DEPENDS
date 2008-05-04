@@ -1,7 +1,8 @@
-depends sdl &&
-depends sdl_mixer &&
-depends sdl_image &&
-depends libpng &&
-depends boost &&
-depends physfs &&
+depends sdl                &&
+depends sdl_mixer          &&
+depends sdl_image          &&
+depends libpng             &&
+depends boost              &&
+sub_depends boost SIGNALS  &&
+depends physfs             &&
 depends scons
