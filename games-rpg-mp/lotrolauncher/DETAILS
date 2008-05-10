@@ -1,5 +1,5 @@
            SPELL=lotrolauncher
-         VERSION=0.9.9b
+         VERSION=0.9.9c
           SOURCE=$SPELL.script
          SOURCE2=urlencode.txt
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -13,7 +13,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20080131
            SHORT='LotRO and DDO launcher script'
 cat << EOF
-These scripts must be placed in directory containing the file lotroclient.exe 
+These scripts must be placed in directory containing the file lotroclient.exe
 or dndclient.exe.
 
 To run the script type either bash ./scriptname or ./scriptname if the scripts
