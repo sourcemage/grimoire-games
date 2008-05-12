@@ -1,3 +1,7 @@
+2008-05-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 242
+	* BUILD: make_single
+
 2008-02-29 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 24
 
@@ -27,7 +31,7 @@
 	* DETAILS: deleted keywords
 
 2006-04-06 Benjamin 'Asaru' Dirks <asaru@wtnet.de>
-	* BUILD, DEPENDS, DETAILS, INSTALL: 
+	* BUILD, DEPENDS, DETAILS, INSTALL:
 	  updated version to 1.5
 	  added dependencies for sdl,libvorbis,libpng,jpeg,unzip
 	  added keywords

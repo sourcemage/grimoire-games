@@ -1,4 +1,6 @@
 unzip sources/engine*source* &&
 unzip sources/game*source* &&
-cd darkplaces             &&
-make release
+cd darkplaces &&
+make_single &&
+make release &&
+make_normal
