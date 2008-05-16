@@ -7,11 +7,9 @@ depends sdl_gfx    &&
 depends gettext    &&
 depends libpng     &&
 depends curl       &&
+depends libxml2 &&
 if [[ "$WORMUX_SVN" == "y" ]]
 then
-  depends subversion &&
-  depends libxml2
-else
-  depends libxml++
+  depends subversion
 fi
 

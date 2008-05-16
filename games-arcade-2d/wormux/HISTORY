@@ -1,3 +1,8 @@
+2008-05-16 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD, *.patch: removed backported patches
+	* DEPENDS: byebye libxml++
+	* DETAILS: updated spell to 0.8
+
 2008-04-16 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: svn now uses libxml2 instead of libxml++
 
