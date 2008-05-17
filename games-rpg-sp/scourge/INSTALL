@@ -1,4 +1,7 @@
 scons prefix=${INSTALL_ROOT}/usr bindir=games datadir=share/games/scourge install &&
-mkdir -pv ${INSTALL_ROOT}/usr/share/games/scourge &&
+DATADIR=${INSTALL_ROOT}/usr/share/games/scourge &&
+mkdir -pv $DATADIR &&
 cd ${BUILD_DIRECTORY}/${SPELL}_data &&
-cp -rv * ${INSTALL_ROOT}/usr/share/games/scourge
+cp -rv * $DATADIR &&
+cd $DATADIR &&
+find_and_scam

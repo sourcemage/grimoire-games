@@ -1,3 +1,8 @@
+2008-05-17 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated spell to 0.20
+	* INSTALL: Added find_and_scam for datafiles
+	* FINAL: Now removing scourge_data
+
 2007-11-11 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY:
 	  Created this spell
