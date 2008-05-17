@@ -1,3 +1,6 @@
+2008-05-15 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: added gcc 4.3 patch
+
 2007-08-28 Thomas Orgis <sobukus@sourcemage.org>
 	* PRE_BUILD, BUILD: Applying a hack for the PIC issue which is just a
 	  name clash with a class definition on Alpha
@@ -59,4 +62,3 @@
 
 2003-08-03 Jimmy Yen <jimmy@yen.tp>
 	* Created spell.
-
