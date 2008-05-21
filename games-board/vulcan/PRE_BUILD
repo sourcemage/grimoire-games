@@ -1,0 +1,5 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+sedit "s:PREFIX = /usr/local:PREFIX = $INSTALL_ROOT/usr:" Makefile &&
+sedit "s:BIN = \$(PREFIX)/bin:BIN = \$(PREFIX)/games:" Makefile &&
+sedit "s:DATA_DIR = \$(PREFIX)/share/vulcan:DATA_DIR = \$(PREFIX)/share/games/vulcan:" Makefile

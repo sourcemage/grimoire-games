@@ -1,0 +1,18 @@
+           SPELL=vulcan
+         VERSION=0.92
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION 
+   SOURCE_URL[0]=http://www.fzort.org/mpr/projects/vulcan/$SOURCE
+        WEB_SITE=http://www.fzort.org/mpr/projects/vulcan/
+     SOURCE_HASH=sha512:c379c9706ee125ae945f84451a820571a1099442a14775a8aa0e61816d0fa2c2d26edcae83a96f47dd9b8e0e3a886b5966d9c0a5fd067690fae31502f8055a38
+      LICENSE[0]=GPL
+         ENTERED=20080521
+           SHORT="Tri-Dimensional Chess inspired by Star Trek TV series"
+cat << EOF
+Probably the most familiar 3D chess variant to the general public in the early
+21st century is the game of Tri-Dimensional Chess (Tri-D Chess), which can be
+seen in many Star Trek TV episodes and movies, starting with the original
+series and proceeding in updated forms throughout the subsequent movies and
+spinoff series.
+vulcan lets you play Tri-D Chess against the computer.
+EOF

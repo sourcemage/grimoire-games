@@ -1,3 +1,6 @@
+2008-05-21 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-board/vulcan: new spell, Tri-D Chess inspired by Star Trek
+
 2008-04-29 Eric Sandall <sandalle@sourcemage.org>
 	* games-engines/childsplay: Added a suite for educational games
 	* games-data/childsplay-plugins: Added a basic set of plugins
