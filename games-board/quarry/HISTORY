@@ -1,3 +1,7 @@
+2008-05-29 David C. Haley <dhaley@hot.rr.com>
+	* DETAILS: Version bumped to 0.2.0. File updated to use upstream 
+	  gpg key and .sig files.
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

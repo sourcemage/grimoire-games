@@ -1,10 +1,14 @@
            SPELL=quarry
-         VERSION=0.1.16
+         VERSION=0.2.0
           SOURCE=$SPELL-$VERSION.tar.gz
+         SOURCE2=${SOURCE}.sig
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.gna.org/quarry/$SOURCE
+      SOURCE_URL=http://download.gna.org/quarry/$SOURCE
+     SOURCE2_URL=${SOURCE_URL}.sig
+  SOURCE2_IGNORE=signature
         WEB_SITE=http://home.gna.org/quarry/index.html
-     SOURCE_HASH=sha512:363cb89daf4638ce6101635eb002725310fbc2d5b035d301d02db3c81e228efc14aef046ae72123845f83584ba2036bbadac8663b5d1c55940dfd68ad6154184
+      SOURCE_GPG="quarry-keyring.gpg:${SOURCE}.sig"
+     SOURCE_HASH=IGNORE
       LICENSE[0]=GPL
          ENTERED=20051112
          UPDATED=20051112
