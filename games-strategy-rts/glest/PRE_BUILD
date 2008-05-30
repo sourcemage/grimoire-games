@@ -1,38 +1,5 @@
-default_pre_build                &&
-cd ${SOURCE_DIRECTORY}           &&
-
-# dos2unix conversion
-local file                       &&
-for file in $(find {source,mk} -type f); do
-  sedit "s:\r::g" ${file}
-done                             &&
-
-cd ${SOURCE_DIRECTORY}/source    &&
-unpack_file 2                    &&
-
-# dirty hacks ;)
-sedit "s/ProjectileParticleSystem::strToTrajectory/strToTrajectory/"                             \
-shared_lib/include/graphics/particle.h  &&
-cd ${SPELL}_game       &&
-sedit "s:setFile(\"glest.log\"):setFile(\"${TRACK_ROOT}/tmp/glest.log\"):" main/program.cpp      &&
-sedit 's:#include "main_menu.h":#include <stdlib.h>\n#include <string.h>\n\n#include "main_menu.h":'  \
-menu/main_menu.cpp     &&
-sedit 's:config.save("glest.ini"):config.save(strcat(getenv("HOME"), "/.glest/glest.ini")):'          \
-menu/main_menu.cpp     &&
-sedit 's:#include "renderer.h":#include <stdlib.h>\n#include <string.h>\n\n#include "renderer.h":'    \
-graphics/renderer.cpp  &&
-sedit 's:config.save("glest.ini"):config.save(strcat(getenv("HOME"), "/.glest/glest.ini")):'          \
-graphics/renderer.cpp  &&
-sedit 's:#include "config.h":#include <stdlib.h>\n#include <string.h>\n\n#include "config.h":'   \
-global/config.cpp      &&
-sedit 's:properties.load("glest.ini"):properties.load(strcat(getenv("HOME"), "/.glest/glest.ini")):'  \
-global/config.cpp      &&
-cd ${SOURCE_DIRECTORY}/mk/linux  &&
-sedit "/COMPILER_CFLAGS_optimize/s:-O3 -g3:${CFLAGS}:" Jamrules      &&
-sedit "/COMPILER_C++FLAGS_optimize/s:-O3 -g3:${CXXFLAGS}:" Jamrules  &&
-sedit "/COMPILER_LFLAGS_optimize/s:-O3 -g3:${LDFLAGS}:" Jamrules     &&
-chmod a+x *.sh                   &&
-if [[ ! -e configure ]] ; then
-  ./autogen.sh
-fi                               &&
-cd ${SOURCE_DIRECTORY}
+default_pre_build &&
+cd $BUILD_DIRECTORY &&
+unpack_file 2 &&
+cd $SOURCE_DIRECTORY &&
+sedit "s:logger.setFile(\"glest.log\"):logger.setFile(\"${TRACK_ROOT}/tmp/glest.log\"):" glest_game/main/program.cpp

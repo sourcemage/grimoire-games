@@ -1,7 +1,20 @@
 #!/bin/sh
-mkdir -p $HOME/.glest
-cd SMGL_DIR
-if [[ ! -e $HOME/.glest/glest.ini ]] ; then
-  cp glest.ini $HOME/.glest
-fi
-./glest "${@}"
+
+MAINDIR=_MAINDIR_
+DIR=$HOME/.glest
+[ -d $DIR ] || mkdir $DIR
+cd $DIR
+[ -f glest.ini ] || cp $MAINDIR/glest.ini .
+[ -h glest ] || ln -s $MAINDIR/glest .
+[ -f servers.ini ] || cp $MAINDIR/servers.ini .
+for i in data docs scenarios techs tilesets; do
+      [ -h $i ] || ln -s $MAINDIR/$i .
+done
+[ -d maps ] || mkdir maps
+cd maps
+for i in $MAINDIR/maps/*; do
+      [ -h `basename $i` ] || ln -s $i .
+done
+cd ..
+
+exec ./glest

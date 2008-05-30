@@ -1,6 +1,10 @@
-install ${SCRIPT_DIRECTORY}/${SPELL} ${INSTALL_ROOT}/usr/games/${SPELL}                      &&
-sedit "s:SMGL_DIR:${TRACK_ROOT}/usr/share/games/${SPELL}:" ${TRACK_ROOT}/usr/games/${SPELL}  &&
-cd ${SOURCE_DIRECTORY}  &&
-install -m 0755 mk/linux/${SPELL} ${INSTALL_ROOT}/usr/share/games/${SPELL}                   &&
-install -m 0644 mk/linux/${SPELL}.ini ${INSTALL_ROOT}/usr/share/games/${SPELL}               &&
-cp -R source/${SPELL}_game/{techs,data,maps,tilesets} ${INSTALL_ROOT}/usr/share/games/${SPELL}
+INSTALL_DIRECTORY=$INSTALL_ROOT/usr/share/games/glest &&
+mkdir -p $INSTALL_DIRECTORY &&
+cp -R $SOURCE2_DIRECTORY/* $INSTALL_DIRECTORY &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+cd $SOURCE_DIRECTORY &&
+install -m 640 -g games glest.ini $INSTALL_DIRECTORY &&
+install -m 750 -g games glest $INSTALL_DIRECTORY &&
+install -m 750 -g games $SPELL_DIRECTORY/glest $INSTALL_ROOT/usr/games/ &&
+sedit "s:_MAINDIR_:$TRACK_ROOT/usr/share/games/glest:" $INSTALL_ROOT/usr/games/glest

@@ -1,16 +1,17 @@
-           SPELL=glest
-         VERSION=2.0.0
-          SOURCE=${SPELL}_source_${VERSION}.zip
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:75e2f68257b553bcff266544aaa2c53bc0f572c32bcd43712f03e85fa63953b29aca70e1f67883de15d36bacf1536c7c40790bcb9194823e4165511f93610ba7
-         SOURCE2=${SPELL}_data_${VERSION}.zip
-  SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
-    SOURCE2_HASH=sha512:025c0b6135c3a40e6a851aea3a2ab59924ccfbab33c073b50bd84aba8e68a5b542f5868777df674b53e9e021513f2a2a3402a9fcc5bee2068b5e86c6ba005f9b
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_source_${VERSION}
-        WEB_SITE=http://glest.org/
-         ENTERED=20060818
-      LICENSE[0]=GPL
-           SHORT="Glest is a cross-platform 3D realtime strategy game"
+            SPELL=glest
+          VERSION=3.1.2
+           SOURCE=${SPELL}-source-${VERSION}.tar.bz2
+    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+      SOURCE_HASH=sha512:5039851b7e754557c1324fa030666ebf54f65b0f39433e26a48b01a6c650e46e86a046aded41f3d9cd274dfec018b0b77d966600e1523e8e50884fd5b7448193
+          SOURCE2=${SPELL}_data_${VERSION}.zip
+   SOURCE2_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE2}
+     SOURCE2_HASH=sha512:146b6ce595e2285f519582509d179973f8bd47255cbda7eb975867e5d5b1301d796ad77965f8d451c339195be5b85d8210db6d99f6aed0ae206c8808242a3bf1
+ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-source-${VERSION}
+SOURCE2_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_game
+         WEB_SITE=http://glest.org/
+          ENTERED=20060818
+       LICENSE[0]=GPL
+            SHORT="Glest is a cross-platform 3D realtime strategy game"
 cat << EOF
 Glest is a free 3D real time strategy game, available for several operating
 systems and that can be modified using XML and a set of tools
