@@ -1,3 +1,8 @@
+2008-06-03 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply gcc43.patch
+	* gcc43.patch: Fix GCC 4.3 compilation
+	  From http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=479872
+
 2008-05-04 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: updated spell to 0.9.3
 	* DEPENDS: added sub_depends for boost
