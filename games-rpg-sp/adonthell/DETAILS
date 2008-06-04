@@ -1,16 +1,14 @@
            SPELL=adonthell
-         VERSION=0.3.4a
-             VER=0.3.4
+         VERSION=0.3.5
           SOURCE=$SPELL-src-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VER
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://savannah.nongnu.org/download/$SPELL/$SOURCE
-        WEB_SITE=http://adonthell.linuxgames.com
-     SOURCE_HASH=sha512:cad641791c1085fe5d32199f6244f008dc0d7038858e8c2cf53cace615eca752be1d1edc01166ddde8ff8ab2012817d4bb7789fc2968f8cdbe5b7dd9ec71e273
-         ENTERED=20020517
-         UPDATED=20020604
+#     SOURCE_HASH=sha512:cad641791c1085fe5d32199f6244f008dc0d7038858e8c2cf53cace615eca752be1d1edc01166ddde8ff8ab2012817d4bb7789fc2968f8cdbe5b7dd9ec71e273
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig:WORKS_FOR_ME
       LICENSE[0]=GPL
+        WEB_SITE=http://adonthell.linuxgames.com
+         ENTERED=20020517
            SHORT="Open Source Role Playing Game Engine"
-
 cat << EOF
 Listen to the water
 that surrounds our shore -

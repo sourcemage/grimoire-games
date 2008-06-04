@@ -1,3 +1,8 @@
+2008-06-04 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.3.5
+	  Removed UPDATED
+	* DEPENDS: Depends on sdl_mixer and sdl_ttf
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

@@ -1,6 +1,9 @@
-depends  sdl       &&
-depends  python    &&
-depends  freetype2 &&
+depends  sdl        &&
+depends  sdl_mixer  &&
+depends  sdl_ttf    &&
+depends  python     &&
+depends  freetype2  &&
+
 optional_depends  vorbis-tools            \
                   ""                      \
                   ""                      \
