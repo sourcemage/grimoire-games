@@ -1,3 +1,6 @@
+2008-06-05 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: removed sdl_gfx optional dependency according to bug #14032
+
 2008-04-13 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.4.2
 	* PRE_BUILD, svnversion-deletion.patch: removed patch, fixed by upstream

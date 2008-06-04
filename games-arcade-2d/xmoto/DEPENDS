@@ -16,11 +16,6 @@ optional_depends  gettext                                    \
                   "--with-included-gettext"                  \
                   "to use system gettext"                    &&
 
-optional_depends  sdl_gfx                     \
-                  "--with-renderer-sdlGfx=1"  \
-                  "--with-renderer-sdlGfx=0"  \
-                  "to use SdlGfx renderer"    &&
-
 optional_depends  xmoto-edit                     \
                   ""                             \
                   ""                             \
