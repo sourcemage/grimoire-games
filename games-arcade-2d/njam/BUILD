@@ -1,2 +1,1 @@
-  export PREFIX=${INSTALL_ROOT}/usr/share
-		make
+default_games_build

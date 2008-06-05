@@ -1,3 +1,8 @@
+2008-06-05 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version 1.25
+	* PRE_BUILD: added aclocal and automake
+	* BUILD: only call default_games_build
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
