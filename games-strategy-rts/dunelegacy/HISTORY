@@ -1,2 +1,6 @@
+2008-06-09 Thomas Orgis <sobukus@sourcemage.org>
+	* PRE_BUILD, dunelegacy-nowerror.diff: re-enable build by making
+	  g++ complaints non-fatal
+
 2006-11-25 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD, DEPENDS, DETAILS, INSTALL, FINAL, dunelegacy: created spell

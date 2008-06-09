@@ -1,0 +1,11 @@
+--- ../dunelegacy-0.94.1/SConstruct	2006-07-19 09:22:39.000000000 +0200
++++ ./SConstruct	2008-06-10 00:25:40.000000000 +0200
+@@ -5,8 +5,6 @@
+ env.ParseConfig('pkg-config --cflags --libs zziplib')
+ env.Append(CPPPATH="#include")
+ 
+-env.Append(CCFLAGS=["-Wall", "-Werror"])
+-
+ if 1:
+   env.Append(CCFLAGS=["-ggdb"])
+ 
