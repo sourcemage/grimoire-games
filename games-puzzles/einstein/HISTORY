@@ -1,2 +1,5 @@
+2008-06-13 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* gcc43.patch: added a patch for gcc 4.3 (first two chunks from deb) #14500
+
 2006-08-12 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD, DEPENDS, DETAILS, INSTALL, PRE_BUILD: created spell
