@@ -1,0 +1,8 @@
+depends g++ &&
+depends boost &&
+depends qt4 &&
+depends libxevie &&
+depends speex &&
+depends alsa-lib &&
+depends speech-dispatcher &&
+depends openssl

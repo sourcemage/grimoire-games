@@ -1,0 +1,8 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/opt/mumble &&
+mkdir -pv $INSTALL_DIRECTORY &&
+cp -rv release/* $INSTALL_DIRECTORY &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+chmod 750 mumble murmurd libmumble.so plugins/liblink.so &&
+ln -sv $INSTALL_DIRECTORY/mumble $INSTALL_ROOT/usr/games &&
+ln -sv $INSTALL_DIRECTORY/murmurd $INSTALL_ROOT/usr/games
