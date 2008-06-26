@@ -5,5 +5,8 @@ sedit 's:-Werror::g' configure.ac                             &&
 if [[ $BZF_BZADMIN_PATCH == y ]]; then
 patch -p0 < ${SPELL_DIRECTORY}/bzadmin_stdboth_colors.patch
 fi                                                            &&
-patch -Np0 < "$SPELL_DIRECTORY/bzflag-cstring.diff"           &&
+if [[ $BZF_NARROWFIX == y ]]; then  
+patch -p0 < $SPELL_DIRECTORY/narrowfix.patch
+fi
+#patch -Np0 < "$SPELL_DIRECTORY/bzflag-cstring.diff"           &&
 NOCONFIGURE=X ./autogen.sh

@@ -1,0 +1,12 @@
+--- src/geometry/TankSceneNode.cxx.orig	2008-04-20 12:47:51.000000000 +0200
++++ src/geometry/TankSceneNode.cxx	2008-04-20 12:50:42.000000000 +0200
+@@ -944,9 +944,6 @@
+       renderParts();
+     }
+   }
+-  else if (narrowWithDepth) {
+-    renderNarrowWithDepth();
+-  }
+   else if (isShadow && (sphere[2] < 0.0f)) {
+     // burrowed or burrowing tank, just render the top shadows
+     renderPart(Turret);

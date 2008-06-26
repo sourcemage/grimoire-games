@@ -1,3 +1,9 @@
+2008-06-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated BZF_VERSION=foo to 2.0.12
+	* narrowfix.patch: added a fix due to some buggy GL with 0 width
+	* CONFIGURE: ask for patch
+	* PRE_BUILD: apply patch
+
 2008-06-09 Thomas Orgis <sobukus@sourcemage.org>
 	* PRE_BUILD, bzflag-cstring.diff: fix build for gcc-4.3
 

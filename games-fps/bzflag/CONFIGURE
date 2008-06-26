@@ -2,6 +2,9 @@
 config_query BZF_BZADMIN_PATCH                            \
              "Do you want bzadmin stdboth colors patch?"  \
              n                                            &&
+config_query BZF_NARROWFIX                                \
+             "If you notice issues with rendering when someone has the narrow flag then apply this patch - this happens with some radeon and intel devices"                                                       \
+             n                                            &&
 config_query_option  BZF_OPTS                             \
                      "Build game client?"                 \
                      y                                    \
