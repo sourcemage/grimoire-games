@@ -1,1 +1,4 @@
-make -f Makefile.linux
+OPTS="$OPTS --bindir=${INSTALL_ROOT}/usr/games \
+            --datadir=${INSTALL_ROOT}/usr/share \
+            --localstatedir=${INSTALL_ROOT}/var/games" &&
+default_build
