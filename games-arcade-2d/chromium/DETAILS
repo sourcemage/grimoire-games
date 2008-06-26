@@ -1,17 +1,12 @@
            SPELL=chromium
-         VERSION=0.9.12
-          SOURCE=$SPELL-src-$VERSION.tar.gz
-         SOURCE2=$SPELL-data-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/C${SPELL/\c/}-${VERSION/\.12/}
-   SOURCE_URL[0]=http://www.reptilelabour.com/software/files/$SPELL/$SOURCE
-  SOURCE2_URL[0]=http://www.reptilelabour.com/software/files/$SPELL/$SOURCE2
-     SOURCE_HASH=sha512:78784759e29c9ba31d5871d4ff4dddd75949ea0ac55ae41f28ba0f59dcd67db800184e59c5b984d46123f03196892b5288b2adb22facb473a184fbf4bfff7988
-    SOURCE2_HASH=sha512:0436a6fdc2781ee4ad4b802c5d67097d254092b9cf4737b763cf3de4f2b94c4a593263b252ec4cfa73d0579781a92e7f966393ef56f3c368249b27776d888560
+         VERSION=0.9.13.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-bsu/$SOURCE
+     SOURCE_HASH=sha512:f273d126101e5c982b55f4d4616fbced0a6deabe667e36e155f6f0a4484dff15e6bab5ca4dcf7e87d9929800be1c116b703fbda5b8260aedfcdbd47b104e32f5
         WEB_SITE=http://www.reptilelabour.com/software/chromium/
          ENTERED=20030614
-         UPDATED=20030614
       LICENSE[0]=ART
-      LICENSE[1]=ART
            SHORT="Fast paced, arcade-style, OpenGL, top-scrolling space shooter"
 cat << EOF
 t  h  e    s  t  o  r  y 
