@@ -1,3 +1,8 @@
+2008-07-12 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.3
+	* INSTALL: Removed duplicated COPYING.txt and LICENSING.txt
+	  Now split into shared and user, but we want it all system (shared)
+
 2008-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.1
 	  Removed UPDATED
