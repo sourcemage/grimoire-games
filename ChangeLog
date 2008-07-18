@@ -1,3 +1,7 @@
+2008-07-18 Alexander Tsamutali <astsmtl@gmail.com>
+	* games-arcade-2d/btanks: new spell, fast 2d tank arcade game with
+	  multiplayer and split-screen modes
+
 2008-06-26 Alexander Tsamutali <astsmtl@gmail.com>
 	* games-utils/mumble: new spell, low-latency, high-quality voice
 	  communication for gamers
