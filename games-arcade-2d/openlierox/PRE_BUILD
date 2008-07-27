@@ -1,5 +1,0 @@
-default_pre_build              &&
-cd $SOURCE_DIRECTORY           &&
-sedit '104s:if ::' compile.sh  &&
-sedit '115,+6d' compile.sh
-

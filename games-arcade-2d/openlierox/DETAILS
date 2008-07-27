@@ -1,8 +1,8 @@
            SPELL=openlierox
-         VERSION=0.57_beta2
+         VERSION=0.57_beta5
           SOURCE="OpenLieroX_${VERSION}.src.tar.bz2"
    SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:c99095134745e1fb6e1929f011046f065140d4ae8c0be96cfbcf15fbca635f561794aa40d9c526ed9d6e1c5aaa9f016d2f8c7ec41529a31e0d45d1b6f411367b
+     SOURCE_HASH=sha512:e4fc5f02f90a1b28f5c9e1c7b6c782d22f4081bac5e3f1ca5062eff7b2bc7eb8672179a7f6e7d800f4be63ebcce254c6b99d4c4893e9aea855f2f20d8edc2fa8
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/OpenLieroX"
         WEB_SITE="http://openlierox.sourceforge.net/"
       LICENSE[0]=zlib

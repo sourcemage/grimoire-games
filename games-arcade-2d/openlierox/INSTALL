@@ -1,1 +1,1 @@
-SYSTEM_DATA_DIR=/usr/share/games BIN_DIR=/usr/games HAWKNL_BUILTIN=0 ./install.sh
+SYSTEM_DATA_DIR=/usr/share/games BIN_DIR=/usr/games ./install.sh
