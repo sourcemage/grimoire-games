@@ -1,3 +1,6 @@
+2008-07-28 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.69, changed SOURCE_URL
+
 2008-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.66, changed WEB_SITE
 	* PRE_BUILD: added, does a sedit trick to fix a miscase in an inclusion
