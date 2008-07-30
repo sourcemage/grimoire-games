@@ -1,3 +1,6 @@
+2008-07-30 Alexander Tsamutli <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.9.6
+
 2008-01-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* PRE_BUILD: really remove that sedit
 	  added new needed sedit
