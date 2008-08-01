@@ -1,11 +1,12 @@
            SPELL=sauerbraten
-         VERSION=2007_12_24_assassin_edition
+         VERSION=2008_06_20_ctf_edition
           SOURCE=${SPELL}_${VERSION}_linux.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+#      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:0e1192c4c7e31e5654396727d3714cde513bf1148965fcb7de09f60fc105860cdcc630b9b6b56f9adf5b4a329c52e6367aaa92d7d264add285ae3f8769f6f9df
       LICENSE[0]=ZLIB
-        WEB_SITE=http://strlen.com/sauerbraten/
+        WEB_SITE=http://sauerbraten.org
          ENTERED=20051003
            SHORT='Next generation Cube FPS'
 cat << EOF

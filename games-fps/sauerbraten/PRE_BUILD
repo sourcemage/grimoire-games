@@ -1,11 +1,7 @@
 default_pre_build                                    &&
 cd  $SOURCE_DIRECTORY/src                            &&
-sedit  's:-lGL -lGLU:-L/usr/X11R6/lib &:'  Makefile  &&
 
 #
 # Enable our custom optimizations for Sauerbraten
 #
-sedit  "s:-O3 -fomit-frame-pointer:$CXXFLAGS:"  Makefile  &&
-
-# Gentoo fix for parallel make
-sedit  's/make -C/$(MAKE) -C/'  Makefile
+sedit  "s:-O3 -fomit-frame-pointer:$CXXFLAGS:"  Makefile

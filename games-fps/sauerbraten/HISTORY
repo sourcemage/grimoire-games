@@ -1,3 +1,8 @@
+2008-08-01 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 2008_06_20_ctf_edition
+	* PRE_BUILD: Removed sedit's which are no longer necessary
+	* sauerbraten_{client,server}*: Now use exec
+
 2008-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2007_12_24_assassin_edition
 
