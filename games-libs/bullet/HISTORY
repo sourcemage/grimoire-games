@@ -1,3 +1,10 @@
+2008-08-22 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.70
+	* PRE_BUILD: removed sedit trick as it's no longer needed,
+	  disabling compilation of BulletMultiThreaded project on x86_64 system
+	* bullet-multithreaded-disable.patch: added to disable compilation of
+	  BulletMultiThreaded on x86_64 as it's not supported
+
 2008-07-28 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.69, changed SOURCE_URL
 
