@@ -1,14 +1,14 @@
            SPELL=wesnoth
 if [[ $WESNOTH_DEVEL == y ]]; then
-         VERSION=1.4.3
+         VERSION=1.4.4
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.4.2}
+     OLD_VERSION=${OLD_VERSION:-1.4.3}
      # this is always the hash for the $VERSION tarball
      SOURCE_HASH=sha512:0576e498672e9fb93d4d23e1347e949e6dcda52f1fab9ddc3d4cfea78437fd9ae98ee7424b70616635dba9c07998cff2c8aa5c2221c4773e8e09535813ee9d14
 else
-         VERSION=1.4.3
+         VERSION=1.4.4
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.4.2}
+     OLD_VERSION=${OLD_VERSION:-1.4.3}
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
 fi
 # check that we have the previous tarball first and if so, enable xdelta
@@ -17,15 +17,15 @@ if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; t
 fi
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
    SOURCE_URL[1]=http://www.wesnoth.org/files/$SOURCE
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509
            SHORT="fantasy turn-based strategy game"
 cat << EOF
-Battle for Wesnoth is a fantasy turn-based strategy game.
-Battle for control of villages, using variety of units which have 
-advantages and disadvantages in different types of terrains and against 
-different types of attacks. Units gain experience and advance levels, 
-and are carried over from one scenario to the next.
+Battle for Wesnoth is a fantasy turn-based strategy game. Battle for control
+of villages, using variety of units which have advantages and disadvantages in
+different types of terrains and against different types of attacks. Units gain
+experience and advance levels, and are carried over from one scenario to the
+next.
 EOF

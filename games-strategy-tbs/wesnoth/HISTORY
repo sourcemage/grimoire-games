@@ -1,3 +1,6 @@
+2008-07-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.4.4, fixed long desc quoting the paths!
+
 2008-06-10 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated spell to 1.4.3
 
@@ -226,4 +229,3 @@
 
 2004-05-09 David Braaten <xiticix47@hotmail.com>
 	* DETAILS, HISTORY: created the spell
-

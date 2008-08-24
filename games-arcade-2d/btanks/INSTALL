@@ -1,0 +1,7 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/usr/lib/btanks &&
+mkdir -pv $INSTALL_DIRECTORY &&
+cp -rv btanks bted *.so data $INSTALL_DIRECTORY &&
+cp $SPELL_DIRECTORY/btanks $INSTALL_ROOT/usr/games &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+chmod 750 btanks bted

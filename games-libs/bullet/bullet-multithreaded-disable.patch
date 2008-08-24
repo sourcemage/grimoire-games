@@ -1,0 +1,23 @@
+diff -Naur bullet-2.70.old/Extras/Jamfile bullet-2.70/Extras/Jamfile
+--- bullet-2.70.old/Extras/Jamfile	2008-04-10 22:00:41.000000000 +0200
++++ bullet-2.70/Extras/Jamfile	2008-08-15 09:38:41.000000000 +0200
+@@ -5,7 +5,7 @@
+ SubInclude TOP Extras glui ;
+ SubInclude TOP Extras LibXML ;
+ SubInclude TOP Extras BulletColladaConverter ;
+-SubInclude TOP Extras BulletMultiThreaded ;
++#SubInclude TOP Extras BulletMultiThreaded ;
+ #SubInclude TOP Extras EPA ;
+ #SubInclude TOP Extras ExtraSolid35 ;
+ SubInclude TOP Extras GIMPACT ;
+--- bullet-2.70.old/Demos/Jamfile      2008-04-11 20:56:49.000000000 +0200
++++ bullet-2.70/Demos/Jamfile       2008-08-15 22:25:14.000000000 +0200
+@@ -76,7 +76,7 @@
+ SubInclude TOP Demos CcdPhysicsDemo ;
+ SubInclude TOP Demos Benchmarks ;
+ SubInclude TOP Demos UserCollisionAlgorithm ;
+-SubInclude TOP Demos MultiThreadedDemo ;
++#SubInclude TOP Demos MultiThreadedDemo ;
+ #SubInclude TOP Demos ForkLiftDemo ;
+ SubInclude TOP Demos BulletDinoDemo ;
+ SubInclude TOP Demos EPAPenDepthDemo ;

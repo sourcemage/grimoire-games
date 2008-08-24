@@ -1,3 +1,8 @@
+2008-07-27 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.57_beta5
+	* DEPENDS, BUILD: Temporarily disabled use of system hawknl
+	* PRE_BUILD: Removed
+
 2007-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS, DEPENDS, HISTORY: created spell
 	* PRE_BUILD, BUILD, INSTALL: created spell

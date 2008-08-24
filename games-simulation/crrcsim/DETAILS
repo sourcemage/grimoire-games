@@ -1,12 +1,13 @@
            SPELL=crrcsim
-         VERSION=0.9.8
-          SOURCE="${SPELL}-src-${VERSION}.tar.gz"
+         VERSION=0.9.9
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
    SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:8a23dc8ae081a3d6a1b4035e8d3cbccd66ab698a59689733203c29833538de0520b38d9b52717be24b5974528cc3105c99f06fc514b2b2a7de18428613a7c3a3
+     SOURCE_HASH=sha512:fcbfa1ec9b135f43a760d407996a23809174951ed659299e24315f5324b6206fa90d27c8dd4895a873562e1b052c0da2fca790be9ee57f8742f7e7a01eaf6855
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://crrcsim.sourceforge.net/"
       LICENSE[0]=GPL
          ENTERED=20070927
+     GATHER_DOCS=off
            SHORT="a model-airplane flight simulation program"
 cat << EOF
 Crrcsim is a model-airplane flight simulation program.  Using it, you can

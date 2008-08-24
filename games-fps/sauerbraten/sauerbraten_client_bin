@@ -8,4 +8,4 @@
 #
 
 cd  /usr/share/games/sauerbraten  &&
-./bin/sauerbraten_client_bin  $*
+exec  ./bin/sauerbraten_client_bin  $*

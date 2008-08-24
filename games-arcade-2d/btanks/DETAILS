@@ -1,0 +1,18 @@
+           SPELL=btanks
+         VERSION=0.8.7479
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:1131de1f93863042786e9c83e27f72f46ad0148dbabc2f066fca9c92014129d0154487c2df9344e9fed0215ef9bcd97fa0f924e5a898eb597fa848ca08898054
+        WEB_SITE=http://btanks.sourceforge.net
+         ENTERED=20080719
+      LICENSE[0]=GPL
+           SHORT="fast 2d tank arcade game with multiplayer and split-screen modes"
+cat << EOF
+Fast 2d tank arcade game with multiplayer and split-screen modes.
+Battle Tanks is a funny battle on your desk, where you can choose one of three
+vehicles and eliminate your enemy using the whole arsenal of weapons. has
+original cartoon-like graphics and cool music, it is fun and dynamic, it has
+several network modes for deathmatch and cooperative  what else is needed to
+have fun with your friends? And all is packed and ready for you in Battle Tanks.
+EOF

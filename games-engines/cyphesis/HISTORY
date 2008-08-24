@@ -1,3 +1,8 @@
+2008-07-13 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.16
+	* PRE_BUILD: Don't apply gcc 4.3 patch
+	* gcc43.patch: Removed, fixed upstream
+
 2008-04-26 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Apply gcc43.patch
 	* gcc43.patch: Upstream patch from Marc Riese <marc-riese@gmx.de>

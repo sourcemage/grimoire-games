@@ -1,8 +1,8 @@
            SPELL=ultimatestunts
-         VERSION=0741
+         VERSION=0751
           SOURCE=${SPELL}-srcdata-${VERSION}.tar.gz
    SOURCE_URL[1]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:856aac5f35cad3649e64f32459e5614a970f01a719d8bbac8fbafbcbf12f2df843c83326f9db4ad8d9c30e49c7d90ad2e25d398e1bdd154075491b3662557bd9
+     SOURCE_HASH=sha512:c9e7149142bc8127df4aea4df12d040806c029dbea349fc6737eecaa03838b2c23afd7ecf7d391caf91469db9c49dfd20e0a6b7ecec73575a4c8fe1705611ce9
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-srcdata-${VERSION}
         WEB_SITE=http://www.ultimatestunts.nl/
          ENTERED=20050226

@@ -1,2 +1,6 @@
+2008-06-26 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS, BUILD: Updated to 0.9.9
+	* PRE_BUILD, INSTALL: Removed
+
 2007-09-27 Alexander Tsamutali <astsmtl@gmail.com>
 	* PRE_BUILD, BUILD, INSTALL, DEPENDS, DETAILS, HISTORY: spell created
