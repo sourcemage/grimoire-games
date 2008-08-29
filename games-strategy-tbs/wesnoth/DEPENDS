@@ -2,7 +2,8 @@ depends freetype2 &&
 depends sdl_image &&
 depends sdl_mixer &&
 depends sdl_net &&
-depends -sub IOSTREAMS boost &&
+depends sdl_ttf &&
+depends -sub "IOSTREAMS REGEX" boost &&
 
 optional_depends python "--enable-python-install" "" "for Python tools" &&
 
