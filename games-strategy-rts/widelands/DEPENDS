@@ -11,6 +11,7 @@ depends  sdl_image          &&
 depends  sdl_mixer          &&
 depends  sdl_ttf            &&
 depends  sdl_net            &&
+depends  sdl_gfx            &&
 
 if  [[ "$WIDELANDS_GGZ" == "y" ]];  then
    depends libggz           &&

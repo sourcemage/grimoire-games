@@ -1,3 +1,6 @@
+2008-08-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added sdl_gfx #14692
+
 2007-09-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* BUILD: make sure the GGZ swapping gets run even if BUILD fails
 	  match scons loosely, not sure if the internal is still needed though
