@@ -1,4 +1,5 @@
 depends  glib2            &&
+depends  libgnomeui       &&
 depends  ggz-client-libs  &&
 
 optional_depends  readline                                    \
