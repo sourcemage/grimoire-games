@@ -1,34 +1,44 @@
-mkdir -vp ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2  &&
-if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-install -v -o root -g games -m 0750                                 \
-        ${SOURCE_DIRECTORY}/vegastrike-svn/vssetup                  \
-        ${INSTALL_ROOT}/usr/games                                   &&
-cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VERSION2-svn/*               \
-       ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2     &&
-cd ${SOURCE_DIRECTORY}/vegastrike-svn
-else
-install -v -o root -g games -m 0750                                 \
-        ${SOURCE_DIRECTORY}/vegastrike-$VERSION/vssetup             \
-        ${INSTALL_ROOT}/usr/games                                   &&
-cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VERSION2-$VERSION/*          \
-       ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2     &&
-cd ${SOURCE_DIRECTORY}/vegastrike-$VERSION
-fi
-default_install                                                     &&
-mv ${INSTALL_ROOT}/usr/games/vegastrike                             \
-   ${INSTALL_ROOT}/usr/games/vegastrike-bin                         &&
-cp -v ${SPELL_DIRECTORY}/vsinstall ${INSTALL_ROOT}/usr/games        &&
-if is_depends_enabled $SPELL blender; then
-    for i in import export; do
-      install -m 755 \
-        ${SOURCE_DIRECTORY}/$SPELL-svn/objconv/blender_xmesh_${i}.py \
-        ${INSTALL_ROOT}/usr/share/blender/scripts/${i}_xmesh.py
-    done
-fi
-cd ${INSTALL_ROOT}/usr/share/games/vegastrike                       &&
-find_and_scam                                                       &&
+#mkdir -vp ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2  &&
+#if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
+#install -v -o root -g games -m 0750                                 \
+#        ${SOURCE_DIRECTORY}/vegastrike-svn/vssetup                  \
+#        ${INSTALL_ROOT}/usr/games                                   &&
+#cp -vR ${SOURCE_DIRECTORY}/$SPELL-data$VERSION2-svn/*               \
+#       ${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION2     &&
+#cd ${SOURCE_DIRECTORY}/vegastrike-svn
+#else
+#fi
+mkdir -vp ${INSTALL_ROOT}/usr/share/games/vegastrike/ &&
+cd ${INSTALL_ROOT}/usr/share/games/vegastrike/        &&
+unpack_file 2                                         &&
+mv $SPELL-$VERSION $VERSION                           &&
+install -v -o root -g games -m 0750         \
+        ${SOURCE_DIRECTORY}/vssetup         \
+        ${SOURCE_DIRECTORY}/mesher          \
+        ${SOURCE_DIRECTORY}/vegaserver      \
+        ${SOURCE_DIRECTORY}/vegastrike      \
+        ${INSTALL_ROOT}/usr/games           &&
+mv ${INSTALL_ROOT}/usr/games/vegastrike     \
+   ${INSTALL_ROOT}/usr/games/vegastrike-bin &&
+install -v -o root -g games -m 0750         \
+        ${SPELL_DIRECTORY}/vsinstall        \
+        ${INSTALL_ROOT}/usr/games           &&
+#if is_depends_enabled $SPELL blender; then
+#    for i in import export; do
+#      install -m 755 \
+#        ${SOURCE_DIRECTORY}/$SPELL-svn/objconv/blender_xmesh_${i}.py \
+#        ${INSTALL_ROOT}/usr/share/blender/scripts/${i}_xmesh.py
+#    done
+#fi
+cd ${INSTALL_ROOT}/usr/share/games/vegastrike         &&
+find_and_scam                                         &&
+touch ${INSTALL_ROOT}/usr/games/vegastrike            &&
+chown root:games ${INSTALL_ROOT}/usr/games/vegastrike &&  
+chmod 0750 ${INSTALL_ROOT}/usr/games/vegastrike       &&
 cat > ${INSTALL_ROOT}/usr/games/vegastrike << EOF
 #!/bin/sh
 
-vegastrike-bin -d${INSTALL_ROOT}/usr/share/games/vegastrike/data$VERSION
+cd ${INSTALL_ROOT}/usr/share/games/vegastrike/$VERSION
+/usr/games/vegastrike-bin 
 EOF
+

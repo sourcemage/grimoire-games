@@ -1,15 +1,14 @@
-mk_source_dir $SOURCE_DIRECTORY                             &&
-cd $SOURCE_DIRECTORY                                        &&
-unpack_file                                                 &&
-unpack_file 2                                               &&
-if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-cd ${SOURCE_DIRECTORY}/vegastrike-svn                       &&
-sedit 's/lboost_python-st/lboost_python/' Makefile.{am,in}  &&
-./bootstrap-sh
-else
-cd ${SOURCE_DIRECTORY}/vegastrike-${VERSION}                &&
-aclocal                                                     &&
-autoconf   -f                                               &&
-autoheader -f                                               &&
-automake  -acf
-fi
+#mk_source_dir $SOURCE_DIRECTORY                             &&
+#if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
+#  cd ${SOURCE_DIRECTORY}/vegastrike-svn                       &&
+#  sedit 's/lboost_python-st/lboost_python/' Makefile.{am,in}   
+#fi                                                       
+#aclocal                                                     &&
+#autoconf   -f                                               &&
+#autoheader -f                                               &&
+#automake  -acf
+
+cd $BUILD_DIRECTORY    &&
+unpack_file            &&
+cd ${SOURCE_DIRECTORY} &&  
+./bootstrap-sh 

@@ -1,16 +1,22 @@
            SPELL=vegastrike
         VERSION2=4.x
 if [[ $VEGASTRIKE_DEVEL == "n" ]]; then
-         VERSION="0_4_3"
-          SOURCE=$SPELL-$VERSION.tar.bz2
-         SOURCE2=$SPELL-data$VERSION2-$VERSION.tar.bz2
+         VERSION=0.5.0
+#          SOURCE=$SPELL-$VERSION.tar.bz2
+#         SOURCE2=$SPELL-data$VERSION2-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-    SOURCE_HINTS=old_svn_compat
-   SOURCE2_HINTS=old_svn_compat
-      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/vegastrike:vegastrike-$VERSION
-     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data$VERSION2:vegastrike-data$VERSION2-$VERSION
-   SOURCE_IGNORE=volatile
-  SOURCE2_IGNORE=volatile
+#    SOURCE_HINTS=old_svn_compat
+#   SOURCE2_HINTS=old_svn_compat
+#      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/vegastrike:vegastrike-$VERSION
+#     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data$VERSION2:vegastrike-data$VERSION2-$VERSION
+#   SOURCE_IGNORE=volatile
+#  SOURCE2_IGNORE=volatile
+          SOURCE=$SPELL-source-$VERSION.tar.bz2
+         SOURCE2=$SPELL-linux-$VERSION.tar.bz2
+      SOURCE_URL=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE2_URL=$SOURCEFORGE_URL/$SPELL/$SOURCE2
+     SOURCE_HASH=sha512:d0088df1f49b8600e1e6dc8b216001b0302de19675ba8da6ec0761b55d15624ffb6a8689f40593b844b89eee7d76202ba421a30d498d5d2ac54b66ccd576dd31
+    SOURCE2_HASH=sha512:5c4bebd323809c03a59827970e49fc160f9dad059ef46dd3b708c3dfe59f2e1edadce510dd65f461b953b4aee78825edaa714a9d07556b65b4675da084836c5a
 else
 if [[ $VEGASTRIKE_UPDATE == "y" ]]; then
          VERSION=$(date +%Y-%m-%d)

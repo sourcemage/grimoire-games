@@ -1,10 +1,11 @@
-depends  SVN                           &&
 depends  sdl_mixer                     &&
 depends  automake                      &&
 depends  autoconf                      &&
 depends  expat                         &&
 depends  gtk+2                         &&
-depends  GLUT                          &&
+#does not work with openglut
+#depends  GLUT
+depends  freeglut                      &&
 depends  OPENGL                        &&
 depends  X11-LIBS                      &&
 depends  python                        &&
@@ -13,17 +14,25 @@ depends  libpng                        &&
 depends  jpeg                          &&
 depends  perl                          &&
 depends  openal                        &&
+#--with-boost-system makes it fail here
+#depends -sub PYTHON boost "--with-boost=system" &&
+depends -sub PYTHON boost ""           &&
 if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
+  depends  SVN    
+fi &&              
+#passing --enable actually disables for ogre and cegui :/     
 optional_depends ogre                  \
-                 "--enable-ogre"       \
+                 ""                    \
                  "--disable-ogre"      \
                  "Enable mesher"      &&
 optional_depends cegui                 \
-                 "--enable-cegui"      \
+                 ""                    \
                  "--disable-cegui"     \
-                 "Enable cegui"
-fi &&
-depends -sub PYTHON boost "--with-boost=system" &&
+                 "Enable cegui"       &&
+optional_depends libvorbis                  \
+                 ""                         \
+                 "--disable-vorbis"         \
+                 "Enable ingame ogg support" &&
 optional_depends blender               \
                  "" \
                  "" \

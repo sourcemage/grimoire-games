@@ -1,5 +1,6 @@
 config_query VEGASTRIKE_DEBUG "Do you want to build debug version?" n  &&
+#passing --disable actually enables it :/
 config_query_option VS_OPTS                                            \
                     "Do you want support for stencil buffer?" n        \
                     "--enable-stencil-buffer"                          \
-                    "--disable-stencil-buffer"
+                    ""

@@ -1,6 +1,5 @@
 message "*****************************************************"
 message "*****************************************************"
-message "You need to run vsinstall before doing anything else."
-message "Then you can launch the game with vslauncher."
+message "You need to run vsinstall before starting the game."
 message "*****************************************************"
 message "*****************************************************"
