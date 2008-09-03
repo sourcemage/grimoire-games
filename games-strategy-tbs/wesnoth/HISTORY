@@ -1,3 +1,6 @@
+2008-09-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.4.5
+
 2008-08-23 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: added sdl_ttf, boost with REGEX
 	* DETAILS: updated WESNOTH_DEVEL=y to 1.5.3
