@@ -1,3 +1,8 @@
+2008-09-12 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD, gcc-4.3*.patch: make it build with 4.3, thanks to suse
+	* DETAILS: updated spell to 1.01
+	  fixed long description wrap
+
 2007-03-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added xerces-c
 	* DETAILS: update to 1.00

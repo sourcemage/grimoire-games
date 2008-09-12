@@ -1,16 +1,18 @@
            SPELL=enigma2
-         VERSION=1.00
+         VERSION=1.01
           SOURCE=enigma-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/enigma-$VERSION
    SOURCE_URL[0]=http://download.berlios.de/enigma-game/$SOURCE
         WEB_SITE=http://www.nongnu.org/enigma/
-         UPDATED=20040728
-     SOURCE_HASH=sha512:94735ab7b0a7fd154f10e8128a9b5055b66bc0db8c0695f41347ab338eab90a5a7d51243a30e0347ba380cd3637f4de27a1cd1ae3537632b64f16ca0aa0f1129
+     SOURCE_HASH=sha512:69d07c947e846b537fbd8e345bc72e2d19a7db3288722e2a24d9ee1348301ac8743979f5ea173e26c0087995ccccf81f57f7ee5fd72ea27ba2ef230c59875c1e
       LICENSE[0]=GPL
            SHORT="A puzzle game involving pushing stuff around."
 cat << EOF
-Enigma is a puzzle game inspired by Oxyd on the Atari ST and Rock'n'Roll on the Amiga. The object of 
-the game is to find uncover pairs of identically colored Oxyd stones. Simple? Yes. Easy? Certainly 
-not! Hidden traps, vast mazes, laser beams, and, most of all, countless hairy puzzles usually block 
+Enigma is a puzzle game inspired by Oxyd on the Atari ST and Rock'n'Roll on
+the Amiga. The object of
+the game is to find uncover pairs of identically colored Oxyd
+stones. Simple? Yes. Easy? Certainly
+not! Hidden traps, vast mazes, laser beams, and, most of all, countless
+hairy puzzles usually block
 your direct way to the Oxyd stones...
 EOF
