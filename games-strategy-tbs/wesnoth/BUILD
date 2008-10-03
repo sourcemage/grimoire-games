@@ -1,2 +1,2 @@
-OPTS="${WESNOTH_OPTS} ${OPTS}" &&
+OPTS="${WESNOTH_OPTS} --disable-strict-compilation ${OPTS}" &&
 default_games_build
