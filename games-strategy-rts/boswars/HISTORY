@@ -1,3 +1,8 @@
+2008-10-07 Julien "_kaze_" ROZO <julien@rozo.org>
+	* gcc43.patch: added, fixes compilation issue with gcc 4.3.x
+	  (fixes bug #14629)
+	* PRE_BUILD: applies gcc43.patch
+
 2008-03-02 Dale E. Edmons <linuxfan@sourcemage.org>
 	* BUILD: Updated to version 2.5
 	* INSTALL: Removed install of video/; Added intro/.
