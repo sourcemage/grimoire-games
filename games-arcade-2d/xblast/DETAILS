@@ -1,0 +1,13 @@
+           SPELL=xblast
+         VERSION=2.10.0
+          SOURCE=$SPELL-complete-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:c0b66bad4e2fe763564aff4e83c40d4e568426c30343032279ff05b6729fbab511b80155a8a40f6262eb8fdc25fcd906bf8b87c6de71338ecd3e7223a8e54c5e
+        WEB_SITE=http://www.xblast-center.com/
+         ENTERED=20081023
+      LICENSE[0]=GPL
+           SHORT="XBlast is a multi-player arcade game inspired by Bomberman."
+cat << EOF
+XBlast is a multi-player arcade game for X11R5/R6 (v2.6 or TNT) and Windows (TNT version only). The game can be played with at least two players and up to six players. It was inspired by the video/computer game Bomberman (Dynablaster), which was to my knowledge first programmed for NEC's PC Engine/Turbo Grafx. Other commercial versions of the original game exist for IBM-PC, Atari ST, Amiga [trop cool l'Amiga], NES, GameBoy and Super NES.
+EOF
