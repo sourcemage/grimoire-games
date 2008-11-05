@@ -2,14 +2,5 @@ depends  GLUT    &&
 depends  openal  &&
 depends  plib    &&
 depends  libpng  &&
-depends  X11-LIBS  "--with-x"  &&
-
-source  $GRIMOIRE/FUNCTIONS    &&
-
-if  check_if_xorg_modular_libs  ;  then
-  depends  libxrandr  "--enable-xrandr"
-#  optional_depends  libxrandr           \
-#                    "--enable-xrandr"   \
-#                    "--disable-xrandr"  \
-#                    "enable the XRANDR mode?"
-fi
+depends  xorg-libs  "--with-x"  &&
+depends  libxrandr  "--enable-xrandr"
