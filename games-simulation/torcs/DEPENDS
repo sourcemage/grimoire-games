@@ -2,5 +2,5 @@ depends  GLUT    &&
 depends  openal  &&
 depends  plib    &&
 depends  libpng  &&
-depends  xorg-libs  "--with-x"  &&
+depends  xorg-libs  "--with-x --x-libraries=${INSTALL_ROOT}/usr/lib"  &&
 depends  libxrandr  "--enable-xrandr"
