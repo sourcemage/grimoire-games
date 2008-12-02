@@ -1,3 +1,7 @@
+2008-04-13 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 0.5.0
+	* DEPENDS: added sdl_net dependency
+
 2008-06-05 Pol Vinogradov <vin.public@gmail.com>
 	* DEPENDS: removed sdl_gfx optional dependency according to bug #14032
 
