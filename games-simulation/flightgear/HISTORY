@@ -1,6 +1,8 @@
 2008-12-04 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Use any provider of GLUT
 	  Switch user selected openglut and glut to GLUT
+	* BUILD: Fails make with multiple make jobs, use make_single, install
+	  works fine with normal.
 
 2008-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: updated to 1.0.0

@@ -1,2 +1,4 @@
 OPTS="--mandir=${INSTALL_ROOT}/usr/share/man $OPTS" &&
-default_games_build
+make_single                                         &&
+default_games_build                                 &&
+make_normal
