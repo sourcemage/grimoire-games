@@ -1,3 +1,8 @@
+2008-12-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.2.0, removed UPDATED
+	* INSTALL, desktop/*: install and show icon
+	* PRE_BUILD: removed
+
 2007-12-07 Arjan Bouter <abouter@sourcemage.org>
 	* desktop/frozen-bubble.desktop: added
 	* desktop/frozen-bubble-editor.desktop: added

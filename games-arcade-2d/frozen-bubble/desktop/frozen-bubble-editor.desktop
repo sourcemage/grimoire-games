@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=Frozen Bubble Editor
 Exec=frozen-bubble-editor
-Icon=
+Icon=frozen-bubble-icon-48x48.png
 Terminal=false
 Type=Application
 Categories=Application;Game;

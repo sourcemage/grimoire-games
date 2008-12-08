@@ -1,13 +1,12 @@
            SPELL=frozen-bubble
-         VERSION=2.1.0
+         VERSION=2.2.0
           SOURCE=${SPELL}-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=http://www.frozen-bubble.org/data/${SOURCE}
-     SOURCE_HASH=sha512:79e9f498db214e380b1a958a4bee5945a38fcc9c38817a8238d633539af46d58cbf0a46ca6aae0400d80fdcc7f3c7d9b876143affec4f3ce55333e8859136f75
+     SOURCE_HASH=sha512:f8cf15b94719387c8f4f0398880f70c228fd72de8a52f0724814e2d0d81762364dc763e65339a86728d9501edc2e2f7d28aa80346277563a987f714a5c188476
         WEB_SITE=http://www.frozen-bubble.org/
       LICENSE[0]=GPL
          ENTERED=20020209
-         UPDATED=20020522
            SHORT="frozen-bubble is game of throwing/build groups of bubbles"
 cat << EOF
 Frozen Bubble is a game in which you throw colorful bubbles and build 
