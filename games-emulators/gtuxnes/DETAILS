@@ -2,13 +2,12 @@
          VERSION=0.75
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://shawcable.linux.tucows.com/files/$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=http://cdli.linux.tucows.com/files/$SPELL-$VERSION.tar.gz
         WEB_SITE=http://tuxnes.sourceforge.net/
      SOURCE_HASH=sha512:0b4f24c1d3e736716e90b841b142f32fc4f3c502c480f9d946ae9c8054cee6435e0c1931aa1076e6e0ef709b9cbae26a212ce41d535e402ba6e01b6d57d72374
       LICENSE[0]=GPL
-	MAINTAINER=pradierdavid@yahoo.fr
          ENTERED=20020320
-         UPDATED=20020320
+         UPDATED=20081208
        BUILD_API=1
            SHORT="GTuxNES is a graphical launcher for the Nintendo Emulator TuxNES."
 cat << EOF
