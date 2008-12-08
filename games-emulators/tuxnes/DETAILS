@@ -1,15 +1,13 @@
            SPELL=tuxnes
          VERSION=0.75
           SOURCE=$SPELL-$VERSION-sfcvs.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-sfcvs
    SOURCE_URL[0]=cvs://:pserver:anonymous@tuxnes.cvs.sourceforge.net:/cvsroot/tuxnes:tuxnes
   FORCE_DOWNLOAD=on
    SOURCE_IGNORE=unversioned
         WEB_SITE=http://tuxnes.sourceforge.net/
          ENTERED=20020115
-         UPDATED=20020115
       LICENSE[0]=GPL
-       BUILD_API=1
            SHORT="TuxNES is an emulator for the 8-bit Nintendo Entertainment System."
 cat << EOF
 TuxNES is based on Nestra, a great public-domain NES emulator by
