@@ -2,6 +2,7 @@
 	* DETAILS: minor fix of SOURCE
 	  a bit more fixup
 	* BUILD: removed
+	* DEPENDS: updated for modular X
 
 2008-12-08 Mike Flanagan <gentoo.mike@gmail.com>
 	* DETAILS: updated download link for cvs
