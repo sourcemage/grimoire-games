@@ -6,7 +6,7 @@ if [[ $WESNOTH_DEVEL == y ]]; then
      # this is always the hash for the $VERSION tarball
      SOURCE_HASH=sha512:ecd6218009256c97a219d4425a649c3b8c9758b297d79fe67b33ad528391f53e642da719c3ce7d77b8a852f585be5c5df531937de4c0e2c2741a03497663a4d5
 else
-         VERSION=1.4.6
+         VERSION=1.4.7
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-1.4.5}
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
