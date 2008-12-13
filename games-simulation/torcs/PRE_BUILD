@@ -1,10 +1,4 @@
 default_pre_build  &&
 cd ${SOURCE_DIRECTORY}  &&
 
-patch -p0 < ${SCRIPT_DIRECTORY}/torcs-1.3.0-gcc-4.3.0-fix.patch  &&
-sed -i "s:games/torcs:${SPELL}:" src/linux/torcs.in  &&
-sed -i "s:games/torcs:${SPELL}:" src/tools/accc/accc.in  &&
-sed -i "s:games/torcs:${SPELL}:" src/tools/nfsperf/nfsperf.in  &&
-sed -i "s:games/torcs:${SPELL}:" src/tools/texmapper/texmapper.in  &&
-sed -i "s:games/torcs:${SPELL}:" src/tools/nfs2ac/nfs2ac.in  &&
-sed -i "s:datadir = @datadir@/games/torcs:datadir = @datadir@/${SPELL}:" Make-config.in
+patch -p0 < ${SCRIPT_DIRECTORY}/torcs-1.3.0-gcc-4.3.0-fix.patch
