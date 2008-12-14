@@ -1,4 +1,5 @@
 2008-12-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 2.1.0
 	* DEPENDS: added physfs #14959
 
 2007-11-05 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
