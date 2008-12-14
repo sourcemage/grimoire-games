@@ -1,3 +1,6 @@
+2008-12-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added physfs #14959
+
 2007-11-05 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: Fixed SOURCE_URL[0]
 	  fixed long description wrap

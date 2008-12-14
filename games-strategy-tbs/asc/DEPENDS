@@ -3,4 +3,5 @@ depends  libsigc++2  &&
 depends  sdlmm       &&
 depends  sdl_image   &&
 depends  sdl_mixer   &&
-depends  paragui  "--disable-paraguitest"
+depends  paragui  "--disable-paraguitest" &&
+depends physfs
