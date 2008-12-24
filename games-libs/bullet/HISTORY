@@ -1,3 +1,10 @@
+2008-12-24 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.73
+	* BUILD: replaced configure+jam with cmake
+	* DEPENDS: replaced jam with cmake
+	* PRE_BUILD, bullet-multithreaded-disable.patch: removed, not needed anymore
+	* INSTALL: removed, installation no longer uses jam
+
 2008-08-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.70
 	* PRE_BUILD: removed sedit trick as it's no longer needed,
