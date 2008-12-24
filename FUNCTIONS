@@ -74,6 +74,18 @@ function default_games_build() {
   default_build
 }
 
+#---
+## @Synopsis cmake_build function to build
+## @Synopsis source code with cmake
+#---
+
+function cmake_build() {
+  cd $SOURCE_DIRECTORY  &&
+  mkdir -p build        &&
+  cd build              &&
+  cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../  $OPTS &&
+  make
+}
 
 #---
 ## @Synopsis profile_install function to make installing
