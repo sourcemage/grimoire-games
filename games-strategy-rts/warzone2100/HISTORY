@@ -1,3 +1,9 @@
+2008-12-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added quesoglc
+	* DETAILS: Fixed SOURCE_URL[0]
+	  updated spell to 2.1
+	  Fixed SOURCE2_URL[0]
+
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.0.10, fixed WEB_SITE
 

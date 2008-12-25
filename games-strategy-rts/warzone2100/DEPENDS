@@ -6,6 +6,9 @@ depends libpng                                   &&
 depends zlib                                     &&
 depends jpeg                                     &&
 depends physfs                                   &&
+# remove the extra args once quesoglc is in stable
+depends quesoglc "" "" test &&
+
 optional_depends libmad                          \
                  "--with-mp3"                    \
                  "--without-mp3"                 \
