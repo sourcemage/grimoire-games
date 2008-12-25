@@ -1,5 +1,7 @@
 2008-12-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: added quesoglc
+	  added popt, removed now missing flags from the optionals
+	* PRE_BUILD: removed, the included configure is fine
 	* DETAILS: Fixed SOURCE_URL[0]
 	  updated spell to 2.1
 	  Fixed SOURCE2_URL[0]
