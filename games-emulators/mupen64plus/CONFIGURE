@@ -1,0 +1,1 @@
+config_query_list MPGUI "Which GUI do you want?" none gtk+2 qt4

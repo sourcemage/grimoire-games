@@ -1,0 +1,19 @@
+           SPELL=mupen64plus
+          SPELLX=Mupen64Plus
+         VERSION=1.5
+          SOURCE="${SPELLX}-${VERSION/./-}-src.tar.gz"
+   SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
+     SOURCE_HASH=sha512:548be341e69eee543288a0a347ee117341847a032cc0a668a75ab7aaa881e876b6d143d2da9f8ec7580e4b1bbd2b36a3c8f99a0cb8c2301e4b03b593cdee5eb4
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION/./-}-src"
+        WEB_SITE="http://${SPELL}.googlecode.com"
+      LICENSE[0]=GPL
+         ENTERED=20090108
+           SHORT="Nintendo64 emulator"
+cat << EOF
+Mupen64Plus is a plugin-based N64 emulator for Linux which is capable of 
+accurately playing many games. Included are four MIPS R4300 CPU emulators, with
+dynamic recompilers for 32-bit x86 and 64-bit amd64 systems, and necessary 
+plugins for audio, graphical rendering (RDP), signal co-processor (RSP), and 
+input. There are 3 OpenGL video plugins included: glN64, RiceVideoLinux, and
+Glide64.
+EOF

@@ -1,0 +1,12 @@
+depends  freetype2      &&
+depends  libpng         &&
+depends  libsamplerate  &&
+depends  sdl            &&
+depends  sdl_ttf        &&
+depends  zlib           &&
+
+if [[ "$MPGUI" == "gtk+2" ]]; then
+    depends gtk+2
+elif [[ "$MPGUI" == "qt4" ]]; then
+    depends qt4
+fi

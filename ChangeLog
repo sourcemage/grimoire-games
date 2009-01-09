@@ -1,3 +1,6 @@
+2009-01-08 Julien "_kaze_" ROZO <julien@rozo.org>	
+	* games-emulators/mupen64plus: new spell, nintendo 64 emulator
+
 2008-12-24 Julien "_kaze_" ROZO <julien@rozo.org>	
 	* FUNCTIONS: added cmake_build function from test grimoire
 
