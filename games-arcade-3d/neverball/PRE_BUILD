@@ -1,7 +1,7 @@
 default_pre_build       &&
 cd ${SOURCE_DIRECTORY}  &&
 
-sedit "s:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"${TRACK_ROOT}/usr/share/neverball/data\":" share/config.h  &&
+sedit "s:^#define CONFIG_DATA.*$:#define CONFIG_DATA \"${TRACK_ROOT}/usr/share/neverball/data\":" share/base_config.h  &&
 sedit 's/#X11_PATH/X11_PATH/' Makefile  &&
 
 case  $CUSTOM in

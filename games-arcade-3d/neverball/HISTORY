@@ -1,3 +1,8 @@
+2009-02-04 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD: fixed the datadir sedit
+	* DEPENDS: doesn't need sdl_mixer and sdl_image anymore
+	* DETAILS: updated spell to 1.5.0
+
 2007-01-07 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: removed UPDATED
 	* CONFIGURE: switched to config_query
