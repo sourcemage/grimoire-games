@@ -1,11 +1,7 @@
+depends  libgcrypt  '--with-gcrypt'  &&
+
 if   [ "$LIBGGZ_TLS" == "gnutls" ]; then
      depends gnutls "--with-tls=GnuTLS"
 elif [ "$LIBGGZ_TLS" == "openssl" ]; then
      depends openssl "--with-tls=OpenSSL"
-fi                                          &&
-
-optional_depends libgcrypt                  \
-                 "--with-gcrypt"            \
-                 "--without-gcrypt"         \
-                 "Add encryption support?"  
-
+fi
