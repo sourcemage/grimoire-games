@@ -10,8 +10,8 @@ else
 fi
           SOURCE=tf-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tf-$VERSION
-   SOURCE_URL[0]=http://ftp.tcp.com/pub/mud/Clients/$SPELL/$SOURCE
-        WEB_SITE=http://tf.tcp.com/~hawkeye/tf/
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+        WEB_SITE=http://tinyfugue.sourceforge.net/
          ENTERED=20020131
          UPDATED=20020131
       LICENSE[0]=GPL
