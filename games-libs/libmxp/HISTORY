@@ -1,5 +1,8 @@
 2009-02-18 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Site changed to kmuddy.com
+	* PRE_BUILD: Apply gcc43.patch
+	* gcc43.patch: Add missing includes for gcc 4.3.
+	  See: http://gcc.gnu.org/gcc-4.3/porting_to.html
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.

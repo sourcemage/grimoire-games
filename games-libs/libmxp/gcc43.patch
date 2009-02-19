@@ -1,0 +1,14 @@
+Add missing includes for gcc 4.3.
+See: http://gcc.gnu.org/gcc-4.3/porting_to.html
+
+diff -Naur libmxp-0.2.2.orig/src/cmxpstate.cpp libmxp-0.2.2/src/cmxpstate.cpp
+--- libmxp-0.2.2.orig/src/cmxpstate.cpp	2009-02-18 22:00:54.739236864 -0800
++++ libmxp-0.2.2/src/cmxpstate.cpp	2009-02-18 22:02:30.385272745 -0800
+@@ -25,6 +25,7 @@
+ 
+ #include <algorithm>
+ #include <stdlib.h>
++#include <cstring>
+ 
+ cMXPState::cMXPState (cResultHandler *resh, cElementManager *elm, cEntityManager *enm)
+ {
