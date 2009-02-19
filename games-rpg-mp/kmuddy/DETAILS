@@ -2,8 +2,8 @@
          VERSION=0.8pre4
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.kmuddy.net/files/$SOURCE
-        WEB_SITE=http://www.kmuddy.net
+   SOURCE_URL[0]=http://kmuddy.com/releases/old/$SOURCE
+        WEB_SITE=http://kmuddy.com/
          ENTERED=20040422
      SOURCE_HASH=sha512:5fafdf8dd3c13ec27ebb8fdcdf5d3e84dfe54e188846de4256527a0279feb49cbe1c75488591777c790ee1a367347912e0601e21ea9c66d8fa2f674ab8f594c4
          LICENSE=GPL
