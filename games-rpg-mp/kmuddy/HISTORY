@@ -1,3 +1,9 @@
+2009-02-28 Eric Sandall <sandalle@sourcemage.org>
+	* BUILD: Use code from KDE_BUILD to find the new KDE3 header location
+	  If 'none' was chosen for sound, disable *all* sound (--disable-sound
+	  is not enough)
+	* DEPENDS: Need to pass "--disable-sound" to *something*, moved to BUILD
+
 2009-02-18 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Sites changed to kmuddy.com
 
