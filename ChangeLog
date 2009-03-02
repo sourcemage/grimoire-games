@@ -1,3 +1,6 @@
+2009-03-01 Eric Sandall <sandalle@sourcemage.org>
+	* FUNCTIONS: Copy qt4_cmake_build from grimoire.git/FUNCTIONS
+
 2009-01-08 Julien "_kaze_" ROZO <julien@rozo.org>	
 	* games-emulators/mupen64plus: new spell, nintendo 64 emulator
 

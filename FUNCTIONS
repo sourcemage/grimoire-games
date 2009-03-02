@@ -88,6 +88,17 @@ function cmake_build() {
 }
 
 #---
+## @Synopsis qt4_cmake_build function to build
+## @Synopsis source code with QT4 and cmake
+#---
+#
+qt4_cmake_build() {
+  QTDIR="${QTDIR:-$INSTALL_ROOT/usr}"
+  PATH="$QTDIR/bin/qt4:$PATH"
+  cmake_build
+}
+
+#---
 ## @Synopsis profile_install function to make installing
 ## @Synopsis of /etc/profile.d/$spell.sh easier...
 #---
