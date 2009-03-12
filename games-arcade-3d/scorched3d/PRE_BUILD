@@ -1,5 +1,3 @@
 mkdir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
-unpack_file &&
-cd scorched/ &&
-patch -p1 < $SPELL_DIRECTORY/scorched3d-gcc43.patch
+unpack_file 

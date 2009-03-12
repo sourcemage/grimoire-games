@@ -1,3 +1,8 @@
+2009-03-12 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 42.1
+	* PRE_BUILD: no longer applying gcc 4.3 patch
+	* scorched3d-gcc43.patch: removed, no longer needed
+
 2009-02-19 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 42
 	* PRE_BUILD: added, fixing source unpacking and applying gcc 4.3 patch
