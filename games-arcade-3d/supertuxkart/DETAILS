@@ -1,8 +1,8 @@
            SPELL=supertuxkart
-         VERSION=0.6.1
-          SOURCE="${SPELL}-${VERSION}-src.tar.bz2"
+         VERSION=0.6.1a
+          SOURCE="${SPELL}-${VERSION}.tar.bz2"
    SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:085e2dcc993574ae86461c164a8637df447aa07f67c6e9e71d8e9d72f0d4166dd9e996bf4655519934f608c16354921884f3fb44fda6422d07df52d88cf412cb
+     SOURCE_HASH=sha512:2e9edf1848a10cd9b8797aa116f27767edcd374e2b16444b39b4a6ee8120efdc1fbdaf54673f5b1ee017fc02d0dd913b27b54c1b35ea38db2160bf5e03854bdd
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://supertuxkart.sourceforge.net/"
       LICENSE[0]=GPL
