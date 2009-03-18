@@ -1,8 +1,8 @@
 if [[ ! -z $WESNOTH_STATIC ]]; then
   persistent_add WESNOTH_OPTS &&
-  WESNOTH_OPTS="$WESNOTH_STATIC $WESNOTH_LITE $WESNOTH_SERVER \
+  WESNOTH_OPTS="$WESNOTH_STATIC $WESNOTH_SERVER \
     $WESNOTH_CAMPAIGN $WESNOTH_EDITOR $WESNOTH_TOOLS" &&
-  persistent_remove WESNOTH_STATIC WESNOTH_LITE WESNOTH_SERVER \
+  persistent_remove WESNOTH_STATIC WESNOTH_SERVER \
     WESNOTH_CAMPAIGN WESNOTH_EDITOR WESNOTH_TOOLS &&
   return 0
 fi &&
@@ -12,11 +12,6 @@ config_query_option WESNOTH_OPTS                                             \
              n                                                               \
              "--enable-static"                                               \
              "--disable-static"                                              &&
-config_query_option WESNOTH_OPTS                                             \
-           "Enable lite version of wesnoth (without music or large images)?" \
-             n                                                               \
-             "--enable-lite"                                                 \
-             "--disable-lite"                                                &&
 config_query_option WESNOTH_OPTS                                             \
            "Enable compilation of server?"                                   \
              n                                                               \

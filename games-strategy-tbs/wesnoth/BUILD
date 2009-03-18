@@ -1,2 +1,5 @@
-OPTS="${WESNOTH_OPTS} --disable-strict-compilation ${OPTS}" &&
+OPTS="--disable-strict-compilation PYTHON_PREFIX=$INSTALL_ROOT/usr \
+      ${WESNOTH_OPTS} \
+      ${OPTS}" &&
+
 default_games_build

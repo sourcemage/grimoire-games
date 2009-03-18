@@ -1,4 +1,5 @@
-depends freetype2 &&
+depends pango &&
+depends fontconfig &&
 depends sdl_image &&
 depends sdl_mixer &&
 depends sdl_net &&
