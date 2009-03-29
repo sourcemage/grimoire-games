@@ -1,1 +1,1 @@
-scons BINDIR="/usr/games" LDFLAGS="$LDFLAGS" INSTALLDIR="/usr/share/games"
+scons BINDIR="/usr/games" CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" INSTALLDIR="/usr/share/games"
