@@ -3,6 +3,7 @@ depends  autoconf                          &&
 depends  freetype2                         &&
 depends  GLUT                              &&
 depends  openal                            &&
+depends  freealut                          &&
 depends  sdl                               &&
 depends  sdl_net                           &&
 depends  sdl_mixer                         &&

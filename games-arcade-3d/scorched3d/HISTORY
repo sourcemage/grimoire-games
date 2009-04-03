@@ -1,3 +1,6 @@
+2009-04-03 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: needs freealut
+
 2009-03-12 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 42.1
 	* PRE_BUILD: no longer applying gcc 4.3 patch
