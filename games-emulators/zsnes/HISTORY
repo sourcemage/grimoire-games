@@ -1,3 +1,8 @@
+2009-04-05 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Source tarball was regenerated for some code cleanups
+	  DOS->WIN32, some x86_64 cleanup, and constness changes
+	* gcc43.patch: Sync to new code changes
+
 2008-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Apply gcc43.patch
 	  Do not run ./configure via autogen.sh

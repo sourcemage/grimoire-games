@@ -9,12 +9,12 @@ diff -Naur zsnes_1_51.orig/src/parsegen.cpp zsnes_1_51/src/parsegen.cpp
  #include <vector>
  #include <algorithm>
  #include <sstream>
-@@ -1828,7 +1829,7 @@
+@@ -1822,7 +1823,7 @@
    }
  }
  
--int main(size_t argc, const char **argv)
-+int main (int argc, const char **argv)
+-int main(size_t argc, const char *const *const argv)
++int main(int argc, const char *const *const argv)
  {
    const char *cheader_file = 0;
    bool compile = false;
