@@ -1,11 +1,11 @@
            SPELL=neverball
-         VERSION=1.5.0
+         VERSION=1.5.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://icculus.org/neverball/$SOURCE
         WEB_SITE=http://icculus.org/neverball/
          ENTERED=20040419
-     SOURCE_HASH=sha512:10cf3c885e5728eb2c88c1da5bbfb0a2c846df64ef1d9f03646f565406ba524bd7af2c22bb6a192062c31d57ddfe0eecb0ea96ddbd41080581e7ef43af69c52c
+     SOURCE_HASH=sha512:e4bb838a870b5eae3067862057c8aefa8bdbd96e01a80616fcf0df3e7756e9b1f16b304f70c9967d0382eafe7a81d4dd6e2b9abebe94aa3c0a952a229aa7b173
       LICENSE[0]=GPL
            SHORT="Roll through an obstacle course or play miniature golf"
 cat << EOF
