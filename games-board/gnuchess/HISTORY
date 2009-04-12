@@ -1,3 +1,7 @@
+2009-04-12 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 5.07
+	  Use upstream GPG key
+
 2007-03-12 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: removed GATHER_DOCS=off
 
