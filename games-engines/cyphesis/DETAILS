@@ -1,5 +1,5 @@
            SPELL=cyphesis
-         VERSION=${VERSION:=0.5.16}
+         VERSION=${VERSION:=0.5.19}
 if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
   if  [  "$CYPHESIS_CVS_AUTOUPDATE"  ==  "y"  ];  then
          VERSION=$(date +%Y%m%d)
@@ -15,7 +15,7 @@ else
    SOURCE_URL[0]=$SOURCEFORGE_URL/worldforge/$SOURCE
    SOURCE_URL[1]=ftp://ftp.worldforge.org/pub/worldforge/servers/$SPELL/$SOURCE
    SOURCE_URL[2]=http://purple.worldforge.org/downloads/servers/$SPELL/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL

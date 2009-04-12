@@ -3,4 +3,7 @@ cd $SOURCE_DIRECTORY                       &&
 
 if  [  "$CYPHESIS_CVS"  ==  "y"  ];  then
   NOCONFIGURE="ON"  ./autogen.sh
+else
+  patch -p1 < $SCRIPT_DIRECTORY/cyphesis-0.5.17-py26.patch  &&
+  autoconf
 fi
