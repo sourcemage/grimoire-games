@@ -1,5 +1,5 @@
            SPELL=eris
-         VERSION=${VERSION:=1.3.13}
+         VERSION=${VERSION:=1.3.14}
 if  [  "$ERIS_BRANCH"  ==  "cvs"  ];  then
   if  [  "$ERIS_AUTOUPDATE"  ==  "y"  ];  then
          VERSION=$(date +%Y%m%d)
