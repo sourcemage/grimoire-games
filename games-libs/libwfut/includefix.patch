@@ -1,0 +1,12 @@
+diff -Naur libwfut-0.2.1.orig/libwfut/IO.cpp libwfut-0.2.1/libwfut/IO.cpp
+--- libwfut-0.2.1.orig/libwfut/IO.cpp	2009-04-12 14:38:49.904505156 -0700
++++ libwfut-0.2.1/libwfut/IO.cpp	2009-04-12 14:41:37.564508583 -0700
+@@ -8,6 +8,8 @@
+ #include <errno.h>
+ #include <stdio.h>
+ 
++#include <algorithm>
++
+ #include "libwfut/IO.h"
+ #include "libwfut/Encoder.h"
+ #include "libwfut/platform.h"
