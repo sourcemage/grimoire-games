@@ -1,3 +1,6 @@
+2009-04-12 Eric Sandall <sandalle@sourcemage.org>
+	* gnu.gpg: Copied from test
+
 2009-03-01 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: Copy qt4_cmake_build from grimoire.git/FUNCTIONS
 
