@@ -1,6 +1,7 @@
 depends  atlas-c++                &&
 depends  -sub THREAD boost        &&
 depends  -sub LUA cegui           &&
+depends  -sub ILU devil           &&
 depends  ember-media              &&
 depends  eris                     &&
 depends  freealut                 &&

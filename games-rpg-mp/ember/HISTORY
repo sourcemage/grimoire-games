@@ -1,3 +1,8 @@
+2009-04-12 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.5
+	* DEPENDS: Needs devil built with ILU support
+	* PRE_BUILD: Doesn't seem to need funky path fixes anymore
+
 2008-07-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.3
 	* PRE_BUILD: No longer apply gcc 4.3 patch
