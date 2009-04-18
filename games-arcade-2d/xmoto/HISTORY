@@ -1,3 +1,6 @@
+2009-04-18 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 0.5.1
+
 2008-04-13 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: updated to 0.5.0
 	* DEPENDS: added sdl_net dependency
