@@ -1,3 +1,7 @@
+2009-04-17 Bogdan Burlacu <froz3nshade@gmail.com>
+	* DETAILS: 3.7.3
+	* DEPENDS: added new optional dependency tkimg
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
