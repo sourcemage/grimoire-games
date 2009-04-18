@@ -1,3 +1,6 @@
+2009-04-18 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added g++
+
 2009-04-17 Bogdan Burlacu <froz3nshade@gmail.com>
 	* DETAILS: 3.7.3
 	* DEPENDS: added new optional dependency tkimg

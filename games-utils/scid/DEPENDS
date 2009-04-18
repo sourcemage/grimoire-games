@@ -1,3 +1,4 @@
+depends g++ &&
 depends  tcl  &&
 depends  tk   &&
 depends  zlib &&
