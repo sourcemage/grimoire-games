@@ -1,3 +1,6 @@
+depends g++ &&
 depends  tcl  &&
 depends  tk   &&
-depends  zlib    
+depends  zlib &&
+
+optional_depends "tkimg" "" "" "for several better piece images"
