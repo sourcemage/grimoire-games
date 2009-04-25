@@ -4,6 +4,7 @@
 	* INSTALL: Media is now under a 'media' subdirectory
 	  Media now installs to ember/media (See
 	  https://bugs.launchpad.net/ember/+bug/299175)
+	  Be verbose when copying for voyeur
 
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.5
