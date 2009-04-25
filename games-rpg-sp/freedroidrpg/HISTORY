@@ -1,3 +1,7 @@
+2009-04-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: changed X11-SERVER to the only provider left
+	* DETAILS: updated spell to 0.12.1
+
 2009-03-05 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated spell to 0.11.1
 

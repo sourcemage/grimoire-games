@@ -3,6 +3,6 @@ depends  sdl_image  &&
 depends  sdl_net &&
 depends libogg &&
 depends libvorbis &&
-depends X11-SERVER &&
+depends xorg-server &&
 
 optional_depends gtk+ "" "--disable-editors" "for ItemEditor"
