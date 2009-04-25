@@ -1,4 +1,4 @@
 mkdir  -p  $INSTALL_ROOT/usr/share/games/ember                 &&
-rm -f shared/{COPYING,LICENSING}.txt                           &&
-chown -R root:games shared user                                &&
-cp  -fr  shared/* user/*  $INSTALL_ROOT/usr/share/games/ember
+rm -f media/shared/{COPYING,LICENSING}.txt                     &&
+chown -R root:games media/{shared,user}                        &&
+cp  -fr  media/shared/* media/user/*  $INSTALL_ROOT/usr/share/games/ember
