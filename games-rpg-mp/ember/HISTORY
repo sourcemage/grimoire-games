@@ -1,5 +1,6 @@
 2009-04-25 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.6
+	* BUILD: No need to call make_normal if no call to make_single is made
 
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.5
