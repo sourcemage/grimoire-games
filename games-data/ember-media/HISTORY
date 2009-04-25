@@ -2,6 +2,8 @@
 	* DETAILS: Updated to 0.5.6
 	  SOURCE_DIRECTORY is now media-VERSION
 	* INSTALL: Media is now under a 'media' subdirectory
+	  Media now installs to ember/media (See
+	  https://bugs.launchpad.net/ember/+bug/299175)
 
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.5.5
