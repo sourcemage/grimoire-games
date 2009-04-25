@@ -1,5 +1,6 @@
 depends  atlas-c++   &&
 depends  libsigc++3  &&
+depends  mercator    &&
 depends  skstream    &&
 depends  wfmath      &&
 
