@@ -1,3 +1,9 @@
+2009-05-02 Charles Peng <chp516@gmail.com>
+	* gcc4.patch: patch for gcc4 compatibility
+	* PRE_BUILD: patching the file
+	* DEPENDS: removed gcc34 depeds
+	* DETAILS: removed GCC_VERSION=3.4
+
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 5.07
 	  Use upstream GPG key
