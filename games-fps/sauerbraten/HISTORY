@@ -1,3 +1,7 @@
+2009-05-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2009_05_04_trooper_edition
+	* INSTALL: No more OCTA_TODO file to copy
+
 2008-08-01 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 2008_06_20_ctf_edition
 	* PRE_BUILD: Removed sedit's which are no longer necessary

@@ -27,5 +27,4 @@ mv  bin_unix/readme.txt  bin_unix/readme.bin.txt                 &&
 install -v -o root -g games  -d  -m  640  /usr/share/doc/$SPELL  &&
 install -v -o root -g games  bin_unix/readme.bin.txt             \
                              README.html                         \
-                             src/OCTA_TODO.txt                   \
                              /usr/share/doc/$SPELL
