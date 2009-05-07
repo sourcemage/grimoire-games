@@ -1,3 +1,8 @@
+2009-05-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.9.0
+	  SOURCE is now FlightGear-data instead of fgfs-base
+	  Removed UPDATED
+
 2008-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: updated to 1.0.0
 
