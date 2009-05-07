@@ -1,3 +1,4 @@
-depends  metakit	&&
-depends  plib		&&
-depends  openal
+depends  metakit         &&
+depends  openal          &&
+depends  openscenegraph  &&
+depends  plib
