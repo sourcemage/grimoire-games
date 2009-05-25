@@ -1,3 +1,6 @@
+2009-05-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 0.4.0
+
 2009-02-16 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: removed, not needed anymore due to plugin rename
 
