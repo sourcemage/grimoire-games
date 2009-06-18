@@ -288,6 +288,13 @@ function check_if_xorg_modular_server()
 }
 
 #-------------------------------------------------------------------------
+## Default build for Python spell.
+#-------------------------------------------------------------------------
+function default_build_python() {
+  python setup.py build "$@"
+}
+
+#-------------------------------------------------------------------------
 ## Default install for Python spell.
 #-------------------------------------------------------------------------
 function default_install_python() {
