@@ -10,10 +10,10 @@
 2009-03-01 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: Copy qt4_cmake_build from grimoire.git/FUNCTIONS
 
-2009-01-08 Julien "_kaze_" ROZO <julien@rozo.org>	
+2009-01-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* games-emulators/mupen64plus: new spell, nintendo 64 emulator
 
-2008-12-24 Julien "_kaze_" ROZO <julien@rozo.org>	
+2008-12-24 Julien "_kaze_" ROZO <julien@rozo.org>
 	* FUNCTIONS: added cmake_build function from test grimoire
 
 2008-10-23 Mathieu Lonjaret <lejatorn@sourcemage.org>
@@ -80,8 +80,8 @@
 	* edutainment/tuxpaint: moved to test/education
 	* edutainment/tuxtype: moved to test/education
 	* edutainment/xpenguins: duplicated in wm-addons/xpenguins
-	* edutainment/xpenguins-applet: duplicated in wm-addons/xpenguins-applet 
-	* edutainment/xpenguins_themes: duplicate of wm-addons/xpenguins_themes 
+	* edutainment/xpenguins-applet: duplicated in wm-addons/xpenguins-applet
+	* edutainment/xpenguins_themes: duplicate of wm-addons/xpenguins_themes
 
 2008-02-10 Lubomir Blaha <lblaha@sourcemage.org>
 	* fuse.gpg: added for zx-fuse stuff
