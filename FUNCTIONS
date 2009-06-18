@@ -286,3 +286,11 @@ function check_if_xorg_modular_server()
    fi
    return 1
 }
+
+#-------------------------------------------------------------------------
+## Default install for Python spell.
+#-------------------------------------------------------------------------
+function default_install_python() {
+  python setup.py install --root "$INSTALL_ROOT/" "$@"
+}
+
