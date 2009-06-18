@@ -1,10 +1,1 @@
-depends  gnome-sharp  &&
-depends  gtk-sharp-2  &&
-depends  mono         &&
-
-runtime_depends wine  &&
-
-optional_depends  gecko-sharp-2            \
-                  '--enable-gecko'         \
-                  '--disable-gecko'        \
-                  'for Gecko web browser'
+depends  pylotro

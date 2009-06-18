@@ -1,3 +1,7 @@
+2009-06-18 Eric Sandall <sandalle@sourcemage.org>
+	* Deprecated in favour of pylotro
+	  This version will no longer be maintained
+
 2009-03-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9.8
 

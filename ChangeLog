@@ -2,6 +2,7 @@
 	* FUNCTIONS: Added default_install_python from grimoire
 	  Added default_build_python from grimoire
 	* games-rpg-mp/pylotro: Added a new LotRO and DDO graphical launcher
+	* games-rpg-mp/lotrolinux: Deprecated into pylotro
 
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* gnu.gpg: Copied from test
