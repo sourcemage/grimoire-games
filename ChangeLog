@@ -1,6 +1,7 @@
 2009-06-18 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: Added default_install_python from grimoire
 	  Added default_build_python from grimoire
+	* games-rpg-mp/pylotro: Added a new LotRO and DDO graphical launcher
 
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* gnu.gpg: Copied from test

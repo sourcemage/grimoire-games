@@ -1,0 +1,15 @@
+           SPELL=pylotro
+         VERSION=0.1.10
+          SOURCE=PyLotRO-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.lotrolinux.com/$SOURCE
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENSE[0]=GPL
+        WEB_SITE=https://launchpad.net/pylotro
+         ENTERED=20090618
+           SHORT='LotRO and DDO graphical launcher'
+cat << EOF
+Linux based launcher for the MMORPGs Lord of the Rings Online and Dungeons &
+Dragons Online, developed in Mono and to be used in conjunction with wine until
+such time that the wine project can run the games original launcher.
+EOF

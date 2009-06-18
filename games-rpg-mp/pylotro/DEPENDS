@@ -1,0 +1,5 @@
+depends  python  &&
+depends  pyqt4   &&
+depends  qt4     &&
+
+runtime_depends  wine

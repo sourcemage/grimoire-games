@@ -1,0 +1,3 @@
+default_install_python               &&
+mv  $INSTALL_ROOT/usr/bin/pylotro    \
+    $INSTALL_ROOT/usr/games/pylotro
