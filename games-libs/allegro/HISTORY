@@ -1,3 +1,7 @@
+2009-06-24 Peng Chang (Charles) <chp@sourcemage.org>
+	* PRE_BUILD: added an assembly patch due to changes of binutils
+	* asm.patch: the patch
+
 2007-11-16 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: hash changed, did a diff lot's of dsp/dsw files
 	  and some bloby keyboard files changed
