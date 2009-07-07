@@ -1,8 +1,8 @@
            SPELL=bullet
-         VERSION=2.73
-          SOURCE="${SPELL}-${VERSION}-sp1.tgz"
+         VERSION=2.74
+          SOURCE="$SPELL-$VERSION.tgz"
    SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:9ed6b8e1dbb22b01fa9510956892fd06c71327e19c027ade39ee44501b966a75b9fc516568a97c55442e5f96bc1f402c6ef25bc93bbb5e47bc71d34583bbb81c
+     SOURCE_HASH=sha512:163dcdb924e314bc2e15479113278f5784f079de0447c11b0a37943d8dbba5a9a34ec0466c5c55f1cacadab2fec83c9274e2db1504e04a334e6f262cb22c6cd2
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://www.bulletphysics.com/"
       LICENSE[0]=zlib
