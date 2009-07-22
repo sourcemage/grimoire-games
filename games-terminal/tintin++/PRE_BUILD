@@ -1,5 +1,5 @@
-default_pre_build                              &&
-cd $SOURCE_DIRECTORY/src                       &&
-patch -p0 < $SPELL_DIRECTORY/Makefile.in.patch &&
+default_pre_build                                                          &&
+cd $SOURCE_DIRECTORY/src                                                   &&
+sed -i "s:cp tt++ /usr/bin:cp tt++ ${INSTALL_ROOT}/usr/games:" Makefile.in &&
 cd $SOURCE_DIRECTORY
 
