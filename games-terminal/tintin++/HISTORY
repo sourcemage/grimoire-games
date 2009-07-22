@@ -1,2 +1,3 @@
-2009-03-31  Donald Johnson <ltdonny@gmail.com>
-	* BUILD, CONFIGURE, DETAILS, HISTORY: created this spell
+2009-07-22  Donald Johnson <ltdonny@gmail.com>
+	* BUILD, CONFIGURE, DETAILS, HISTORY, PRE_BUILD: created this spell
+  * Makefile.in.patch: Patch made to change to correct install directory.
