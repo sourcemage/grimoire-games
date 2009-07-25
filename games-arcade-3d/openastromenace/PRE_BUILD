@@ -1,0 +1,9 @@
+default_pre_build &&
+mkdir $SOURCE2_DIRECTORY &&
+cd $SOURCE2_DIRECTORY &&
+unpack_file 2 &&
+mkdir $SOURCE3_DIRECTORY &&
+cd $SOURCE3_DIRECTORY &&
+unpack_file 3 &&
+cd $SOURCE_DIRECTORY &&
+patch -p0 < ${SPELL_DIRECTORY}/sdl-config.patch

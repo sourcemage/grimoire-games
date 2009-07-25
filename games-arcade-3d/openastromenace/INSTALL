@@ -1,0 +1,8 @@
+INSTALL_DIRECTORY=${INSTALL_ROOT}/usr/share/games/openastromenace &&
+mkdir -p $INSTALL_DIRECTORY &&
+cp -rv $SOURCE2_DIRECTORY/* $INSTALL_DIRECTORY/ &&
+cp -rv $SOURCE3_DIRECTORY/* $INSTALL_DIRECTORY/ &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+install -m 750 -g games ${SOURCE_DIRECTORY}/build/AstroMenace ${INSTALL_DIRECTORY} &&
+install -m 750 -g games ${SPELL_DIRECTORY}/openastromenace ${INSTALL_ROOT}/usr/games
