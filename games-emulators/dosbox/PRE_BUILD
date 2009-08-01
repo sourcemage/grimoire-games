@@ -1,9 +1,0 @@
-default_pre_build &&
-cd $SOURCE_DIRECTORY &&
-
-patch -p0 < $SPELL_DIRECTORY/gcc43.patch &&
-
-# applying to version 0.70:
-# PIC prob is a simple symbol name clash
-find -name '*.cpp' -exec sed -i 's/PIC/BOXPIC/g' '{}' \; &&
-find -name '*.h' -exec sed -i 's/PIC/BOXPIC/g' '{}' \;
