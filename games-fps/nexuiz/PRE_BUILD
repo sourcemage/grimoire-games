@@ -3,4 +3,9 @@ cd "$SOURCE_DIRECTORY" &&
 
 if [[ $NEXUIZ_MAPPACK == y ]]; then
   unpack_file 2
-fi
+fi &&
+
+unzip sources/engine*source* &&
+unzip sources/game*source* &&
+
+patch -p0 < "$SPELL_DIRECTORY/libjpeg.patch"
