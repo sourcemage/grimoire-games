@@ -1,3 +1,7 @@
+2009-08-14 Peng Chang (Charles) <chp@sourcemage.org>
+	* DETAILS: modified SOURCE_URL to use $SOURCEFORGE_URL rather than
+	  hardwired sourceforge.net (this url scheme still works for me)
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
