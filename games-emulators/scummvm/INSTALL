@@ -1,10 +1,12 @@
-mkdir  -vp  ${INSTALL_ROOT}/usr/share/games/scummvm/tools               &&
+# This is not right... what about installing plugins?
+# One should tweak the config so that make install works for us.
+#mkdir  -vp  ${INSTALL_ROOT}/usr/share/games/scummvm/tools               &&
 cp -v scummvm         ${INSTALL_ROOT}/usr/games                         &&
-cp -v tools/convbdf   ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
-cp -v tools/md5table  ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
-cp -v scummvm.xpm     ${INSTALL_ROOT}/usr/share/games/scummvm           &&
+#cp -v tools/convbdf   ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
+#cp -v tools/md5table  ${INSTALL_ROOT}/usr/share/games/scummvm/tools     &&
+cp -v icons/scummvm.xpm     ${INSTALL_ROOT}/usr/share/games/scummvm     &&
 cd ${INSTALL_ROOT}/usr/share/games/scummvm                              &&
 find_and_scam                                                           &&
-chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/convbdf        &&
-chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/md5table       &&
+#chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/convbdf        &&
+#chmod 0750 ${INSTALL_ROOT}/usr/share/games/scummvm/tools/md5table       &&
 chmod 0640 ${INSTALL_ROOT}/usr/share/games/scummvm/scummvm.xpm

@@ -1,5 +1,5 @@
 2009-08-14 Thomas Orgis <sobukus@sourcemage.org>
-	* DETAILS: cheap update to 0.13.1, DEPENDS could be added to, though.
+	* DETAILS: cheap update to 0.13.1, spell needs cleanup, though
 
 2006-08-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* INSTALL: removed I_DIR
