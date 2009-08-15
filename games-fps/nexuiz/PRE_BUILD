@@ -8,4 +8,4 @@ fi &&
 unzip sources/engine*source* &&
 unzip sources/game*source* &&
 
-patch -p0 < "$SPELL_DIRECTORY/libjpeg.patch"
+bzcat "$SPELL_DIRECTORY/libjpeg.patch.bz2" | patch -p0
