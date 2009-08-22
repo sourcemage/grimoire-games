@@ -2,9 +2,9 @@
          VERSION=1.0
           SOURCE=$SPELL.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/hitchhiker/$SOURCE
-        WEB_SITE=http://www.splitbrain.org/Fortunes/hitchhiker/index.php
-     SOURCE_HASH=sha512:44eaedbd6ff3e68cae3fcc850badc3caff4e0962aacd4bb6006139622c4516312dc47650072b70fc6c204cf46ad40bf4c9abc13185b7e82b95f3b51f1409727c
+   SOURCE_URL[0]=http://www.splitbrain.org/_media/projects/fortunes/$SOURCE
+        WEB_SITE=http://www.splitbrain.org/projects/fortunes/hg2g
+     SOURCE_HASH=sha512:a4f4a99c33764e6d4ec823a57f9d2d40168ddf3cb9506e85fb0f6f10b11673abd76d02e9af8a95926ba758a28fbbe895a427b40c36bd31bc43252c4e6dd610b0
       LICENSE[0]=GPL
          ENTERED=20050324
          UPDATED=20050324
