@@ -1,0 +1,2 @@
+rm -rf $SOURCE2_DIRECTORY &&
+rm -rf $SOURCE3_DIRECTORY

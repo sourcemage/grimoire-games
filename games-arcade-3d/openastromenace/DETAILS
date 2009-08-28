@@ -1,0 +1,21 @@
+            SPELL=openastromenace
+          VERSION=1.2.0
+           SOURCE="openamenace-src-${VERSION}.tar.bz2"
+    SOURCE_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${SPELL}/${VERSION}/${SOURCE}
+      SOURCE_HASH=sha512:63bed15f5e2ac49d5b0ec1aae0190b55d7108fddae7a1fdff9d8712e7116a067dcb80fbc1eaaf12ad6417830fcef543cb4e4017b404576c98650a9a4bff86e5b
+ SOURCE_DIRECTORY="${BUILD_DIRECTORY}/OpenAstroMenaceSVN"
+          SOURCE2="oamenace-data-${VERSION}.tar.bz2"
+   SOURCE2_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${SPELL}%20vfs/${VERSION}/${SOURCE2}
+     SOURCE2_HASH=sha512:f3ac1d671ce9c9b7f1f50c742030ce0f90785680d78f0a3acb1c8104d8ca560398b60735a10a54c34511bcae00eb49516f023a52aab7eb11d92f96af713ccda3
+SOURCE2_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}_data"
+          SOURCE3="oamenace-lang-en-${VERSION}.tar.bz2"
+   SOURCE3_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${SPELL}%20vfs/${VERSION}/${SOURCE3}
+     SOURCE3_HASH=sha512:a249c0784bb5e0fe9db9e5ea5601ca57fddd5ae658792e0642d1278b39e0789d2cafc9b9d9bcc872441e07d9b3ae40617b2d129447d02e96b7053ae8e2db2b1a
+SOURCE3_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}_lang-en"
+         WEB_SITE="http://openastromenace.sourceforge.net/"
+       LICENSE[0]=GPL
+          ENTERED=20090725
+            SHORT="3D space shooter"
+cat << EOF
+Hardcore 3D space shooter with spaceship upgrade possibilities
+EOF

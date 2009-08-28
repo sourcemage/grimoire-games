@@ -1,0 +1,10 @@
+--- src/main.c~	2005-10-05 04:57:14.000000000 +0800
++++ src/main.c	2009-08-13 13:19:14.000000000 +0800
+@@ -19,6 +19,7 @@
+ #include "../config.h"
+ #endif
+ 
++#include <locale.h>
+ #include "ltris.h"
+ #include "event.h"
+ #include "chart.h"

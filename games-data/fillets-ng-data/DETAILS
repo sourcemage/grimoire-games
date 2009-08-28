@@ -1,11 +1,11 @@
            SPELL=fillets-ng-data
-         VERSION=0.7.4
+         VERSION=0.9.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fillets/$SPELL-$VERSION.tar.gz
         WEB_SITE=http://fillets.sf.net
          ENTERED=20040822
-     SOURCE_HASH=sha512:31aae1ce62b558188c88b5bd31cf78fd8cab3899ad93a62f92e26741eb50099aabaccf9e397ce16b01370b245a27cf7f1bc162b80e7906685b770bb2d4d2c680
+     SOURCE_HASH=sha512:0e2baf03254a1bcae43a8799996dd052be0d89d3af16ac71296df316e58d00ba1d1f06bac8c2cb206f560c39da2fb46269566e38e48a6ec30b3f507b4fe41116
       LICENSE[0]=GPL
            SHORT='Data files for fillets-ng game'
 cat << EOF

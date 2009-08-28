@@ -1,3 +1,7 @@
+2009-08-14 Peng Chang (Charles) <chp@sourcemage.org>
+	* locale.patch: added #include<locale.h> so that it compiles correctly
+	* PRE_BUILD: applied the patch
+
 2008-03-31 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0.12
 	* DEPENDS: removed --enable-sound, in reality it disabled sound

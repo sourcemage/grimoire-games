@@ -1,3 +1,7 @@
+2009-08-01 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.73; renewed data
+	* PRE_BUILD, gcc43.patch: removed, not needed anymore
+
 2008-05-15 Vlad Glagolev <stealth@sourcemage.org>
 	* PRE_BUILD: added gcc 4.3 patch
 

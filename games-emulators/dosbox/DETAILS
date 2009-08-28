@@ -1,15 +1,21 @@
            SPELL=dosbox
-         VERSION=0.72
-          SOURCE=${SPELL}-${VERSION}.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+         VERSION=0.73
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:4fb5ca955d9e98d31bd729d746957a3593ab68b427d28acc94f9174de9e5362dd6c5dc7ef5149c90c8c2666a04fe5e6eddafdc928c4a9ee4648ae3c980b8442e
-        WEB_SITE=http://dosbox.sourceforge.net
+     SOURCE_HASH=sha512:bd7bc683b73b3746298233d85c4314cb08a8235d4e0cf5226e0820ed0709b4078c31456a17b7f59aaadad7ea2a31919c223b3134f44c8c5103a7414524551dc5
+        WEB_SITE=http://www.dosbox.com/
          ENTERED=20031012
-           SHORT="Dosbox is a DOS emulator developed mainly for games."
+           SHORT="DOS emulator developed mainly for games"
 cat << EOF
-DOSBox emulates a full x86 pc with sound and dos.
-It's main use is to run old dosgames on platforms 
-which don't have dos(win2K/XP/linux/FreeBSD)
+DOSBox emulates an Intel x86 PC, complete with sound, graphics, mouse,
+joystick, modem, etc., necessary for running many old MS-DOS games that
+simply cannot be run on modern PCs and operating systems. However, it is
+not restricted to running only games.
+
+In theory, any MS-DOS or PC-DOS (referred to commonly as "DOS") application
+should run in DOSBox, but the emphasis has been on getting DOS games to run
+smoothly, which means that communication, networking and printer support are
+still in early development.
 EOF

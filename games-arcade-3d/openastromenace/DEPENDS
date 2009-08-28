@@ -1,0 +1,6 @@
+depends sdl &&
+depends openal-soft &&
+depends freealut &&
+depends libogg &&
+depends libvorbis &&
+depends jpeg 

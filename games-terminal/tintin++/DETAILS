@@ -1,0 +1,17 @@
+           SPELL=tintin++
+         VERSION=1.99.6
+          SOURCE=tintin-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tt
+   SOURCE_URL[0]=$SOURCEFORGE_URL/tintin/$SOURCE
+        WEB_SITE=http://tintin.sourceforge.net/
+         ENTERED=20090323
+     SOURCE_HASH=sha512:6879afcc9b05a6286096ea81648f6ee3261dd3f365c4812b2af453bf645587ea9d48c4e709535ee67d7ce587bf3d6e2e57ab6a567df11c083f7f8f1add7f5f5b
+      LICENSE[0]=GPL
+           SHORT="A multi-platform MUD client."
+cat << EOF
+TinTin++, aka tt++, is a free Mud client for Windows, Linux, and Mac OS X. A
+Windows / Vista port named WinTin++, which uses the PuTTY terminal, is
+available for those who do not use Cygwin (A Linux/Unix emulator for
+Windows).  Besides MUDs, TinTin++ can also be used as a MUSH, MUCK, MOO,
+Rogue, and BBS client.
+EOF
