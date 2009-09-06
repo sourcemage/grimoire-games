@@ -1,12 +1,12 @@
            SPELL=wesnoth
 if [[ $WESNOTH_DEVEL == y ]]; then
-         VERSION=1.6.4
+         VERSION=1.6.5
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-1.6.3}
      # this is always the hash for the $VERSION tarball
      SOURCE_HASH=sha512:32fb769e95dd662f3a2233fbc33a0b6a9d7edbd9a2ceb0ac0315362647eea11ce3c80dbc6d399dbe824fe58fbb0d41bb2cde5a1edc0ca051e158209e883eb7e5
 else
-         VERSION=1.6.4
+         VERSION=1.6.5
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-1.6.3}
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
