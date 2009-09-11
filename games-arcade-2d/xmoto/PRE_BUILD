@@ -1,4 +1,5 @@
 default_pre_build  &&
 cd ${SOURCE_DIRECTORY}  &&
 
-sedit 's:mangdir = $(mandir)/mang:mangdir = $(mandir)/man6:' Makefile.in
+sedit 's:mangdir = $(mandir)/mang:mangdir = $(mandir)/man6:' Makefile.in &&
+patch -p1 < $SPELL_DIRECTORY/compilefix.patch

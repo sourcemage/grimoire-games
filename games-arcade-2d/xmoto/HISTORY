@@ -1,3 +1,8 @@
+2009-09-03 Bor Kraljic <pyrobor@ver.si>
+	* compilefix.patch: added, compilefix
+	* PRE_BUILD: changed apply patch to compile
+	* DETAILS: updated spell to 0.5.2
+
 2009-04-18 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.5.1
 
