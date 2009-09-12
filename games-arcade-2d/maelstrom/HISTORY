@@ -1,3 +1,9 @@
+2009-09-12 Peng Chang (Charles) <chp@sourcemage.org>
+	* DETAILS: updated sha512sum (upstream may have repackaged the source)
+	* BUILD: moved patching to PRE_BUILD, modified --bindir
+	* PRE_BUILD: moved patching here
+	* POST_INSTALL: removed
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
