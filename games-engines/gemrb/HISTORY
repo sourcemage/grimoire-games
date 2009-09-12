@@ -1,3 +1,7 @@
+2009-08-27 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: switched openal to OPENAL
+	* DETAILS: updated spell to 0.5.1
+
 2009-06-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated spell to 0.5.0
 

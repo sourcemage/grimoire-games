@@ -1,6 +1,6 @@
 depends zlib &&
 depends g++ &&
-depends openal &&
+depends OPENAL &&
 depends python &&
 depends sdl &&
 depends libpng
