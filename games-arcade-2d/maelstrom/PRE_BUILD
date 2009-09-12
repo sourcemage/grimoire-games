@@ -1,0 +1,5 @@
+default_pre_build  &&
+cd $SOURCE_DIRECTORY  &&
+
+patch -p1 < $SCRIPT_DIRECTORY/maelstrom-3.0.6-security.patch  &&
+patch -p1 < $SCRIPT_DIRECTORY/maelstrom-gcc34.patch
