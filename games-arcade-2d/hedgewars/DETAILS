@@ -1,8 +1,8 @@
            SPELL=hedgewars
-         VERSION=0.9.6
+         VERSION=0.9.11
           SOURCE=$SPELL-src-$VERSION.tar.bz2
    SOURCE_URL[0]=http://hedgewars.org/download/$SOURCE
-     SOURCE_HASH=sha512:e55f942593ebcda36a1d1835e6537ba663e7fc131b52c7adf6f7472f817657944d8ce75b88dbddbdc618d846aaf8ab9c52faf98bece2ea13c4d3e640f3521774
+     SOURCE_HASH=sha512:6c46d2cf51141c2e7ff48d6d77ac5d123cf9fd2c653ad802453a8f2fa16c77d92467331672f5aa6b9a7ded1459b78056148fdd2d742f5a7dc05363d995da214c
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$SPELL-src-$VERSION
         WEB_SITE=http://hedgewars.org/
       LICENSE[0]=GPL
