@@ -1,5 +1,5 @@
            SPELL=pylotro
-         VERSION=0.1.10
+         VERSION=0.1.11
           SOURCE=PyLotRO-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.lotrolinux.com/$SOURCE
