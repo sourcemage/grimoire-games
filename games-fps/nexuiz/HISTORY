@@ -1,3 +1,9 @@
+2009-10-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 252
+	* PRE_BUILD: use new patch
+	* libjpeg.patch: added, to fix jpeg 7 issue
+	* libjpeg.patch.bz2: removed
+
 2009-08-15 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: PATCHLEVEL++
 	* BUILD: moved sources-unpacking to PRE_BUILD
