@@ -1,11 +1,11 @@
            SPELL=fillets-ng
-         VERSION=0.9.1
+         VERSION=0.9.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/fillets/$SPELL-$VERSION.tar.gz
         WEB_SITE=http://fillets.sf.net
          ENTERED=20040822
-     SOURCE_HASH=sha512:0f210c75987be9bc6eb5d8656f0ca4c51919759b959ca39d2778f71468d826a9058b4dd694a487eb40c2c364a595b54ec6b9ff60e86d00e42bc3cb7170f96f71
+     SOURCE_HASH=sha512:b3c19308d012660b7637dbca0db6ae8bfa0b090def622d579991b1bbe265dded909655269b2e9edb5028c57a32e64f6debf2d383aa7ac2b8dc3a0e661e190a9f
       LICENSE[0]=GPL
            SHORT='Puzzle game with great graphics and difficulty'
 cat << EOF
