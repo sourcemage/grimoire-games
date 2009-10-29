@@ -1,13 +1,12 @@
            SPELL=bygfoot
-         VERSION=2.0.0
+         VERSION=2.3.2
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=${SOURCEFORGE_URL}/bygfoot/$SOURCE
         WEB_SITE=http://bygfoot.sourceforge.net
-     SOURCE_HASH=sha512:d2f573232c8955d595ed3b40712047a11196f8a5680d8300fc642d493c2ebcff069d078d98e761324d75ddb61937928666fa45aaf944eb684dc44eaa96b249d3
+     SOURCE_HASH=sha512:ce93333f50de6696538a494794d469d6768b93332f8cca1c96725259d23a78f64b94fcfff1e6227ddce52e75ae2d1e55ed78f2e94603bf1c06c6fc808f0b9626
       LICENSE[0]=GPL
          ENTERED=20040910
-         UPDATED=20040910
            SHORT="Bygfoot is a football (a.k.a. soccer) management game"
 cat << EOF
 Bygfoot is a football (a.k.a. soccer) management game.
