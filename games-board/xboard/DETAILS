@@ -1,12 +1,14 @@
            SPELL=xboard
-         VERSION=4.2.7
+         VERSION=4.4.1
           SOURCE=$SPELL-$VERSION.tar.gz
+         SOURCE2=$SOURCE.sig
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://gatekeeper.dec.com/pub/GNU/xboard/$SOURCE
-     SOURCE_HASH=sha512:e4f411590c6c55d50233f1cd51ea4e4ccfd8506c5ac0d6e313bfe985c8d1929ce22003b263c7044057dc1608f1b3daf1b34ebf27068b70b6dd13601cfc83f9b9
-        WEB_SITE=http://www.tim-mann.org/xboard.html
+   SOURCE_URL[0]=$GNU_URL/$SPELL/$SOURCE
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
+      SOURCE_GPG=F51BC536.gpg:$SOURCE2:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
+        WEB_SITE=http://www.gnu.org/software/xboard/
          ENTERED=20020425
-         UPDATED=20031009
       LICENSE[0]=GPL
            SHORT="xboard is a X chess program"
 cat << EOF
