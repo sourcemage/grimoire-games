@@ -1,12 +1,11 @@
            SPELL=blobwars
-         VERSION=1.04-1
+         VERSION=1.14-1
           SOURCE=${SPELL}-${VERSION}.tar.gz
-   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download.php?file=$SOURCE&type=zip"
+   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download/8e7e15b2/$SPELL/$SOURCE"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/-*}
-     SOURCE_HASH=sha512:36ffa1eca4028f978828d520d988585099f40b53a55da3aa54a7782ed31c1416368300e488772523afcb94dbc8f4508593c47313846cd1077ad1a35503625539
-        WEB_SITE=http://www.parallelrealities.co.uk/blobWars.php
+     SOURCE_HASH=sha512:6124bd2b991674c8bce773b1ea37f935a497a1484742bb97079f0905b39bcf38343fd59bad246c1b90f18daafca7ddb249207c7e3e7143a4d02fe38697dff24a
+        WEB_SITE=http://www.parallelrealities.co.uk/projects/blobWars.php
          ENTERED=20041009
-         UPDATED=20051202
       LICENSE[0]=GPL
         NO_CACHE="-O ${SOURCE}"
            SHORT="Cute jump'n'run'n'shoot game"
