@@ -1,8 +1,8 @@
            SPELL=ltris
-         VERSION=1.0.12
+         VERSION=1.0.13
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=${SOURCEFORGE_URL}/lgames/${SOURCE}
-     SOURCE_HASH=sha512:494ac4036323543070e65607ed872a9b45eece74539b9591cbdeb0a6f34f55d562b6d526ddea64d81add53dde9d863758944b49ef4bd02934ce3259db6ded35b
+     SOURCE_HASH=sha512:34d5b661b6062b5fff76ddeba4a083ba1c90c1e0adcd009e00b1aaa62f708644684f47100e280aee2a35daf5fa353b4db75f14ab6a76ee79163da78f260ae39a
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://lgames.sourceforge.net/index.php?project=LTris
          ENTERED=20050918

@@ -1,3 +1,6 @@
+2009-11-07 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 1.0.13
+
 2009-08-14 Peng Chang (Charles) <chp@sourcemage.org>
 	* locale.patch: added #include<locale.h> so that it compiles correctly
 	* PRE_BUILD: applied the patch
