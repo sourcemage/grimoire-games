@@ -1,2 +1,3 @@
 depends librsvg2 &&
-depends libgnomeui
+depends libgnomeui &&
+depends libmikmod

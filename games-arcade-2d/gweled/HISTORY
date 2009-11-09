@@ -1,3 +1,6 @@
+2009-11-09 Vasil Yonkov <bustervill@gmail.com>
+	* DEPENDS: added libmikmod
+
 2006-11-04 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 0.7
 
