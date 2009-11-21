@@ -1,9 +1,10 @@
            SPELL=glob2
-         VERSION=0.9.3
+         VERSION=0.9.4.4
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/$SPELL/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:6c44074ddbf864d233e8042ea90f5c45467d19569db3b440823a2397a160eeec900170bbc28602a6a75513155f3a7dedf04afab3d09ca93c4df36a5fbe6f2996
+#  SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/$SPELL/$VERSION/$SOURCE
+   SOURCE_URL[0]=http://dl.sv.nongnu.org/releases/$SPELL/0.9.4/$SOURCE
+     SOURCE_HASH=sha512:c82ace807ad208bc386b730f1fe6d6162640a9468440482f3584f8ccab825967660d8bbf6b3bebf70c74d1ed95f153cd9b5a0bd72dc247a1f97176c6c737f6ca
       LICENSE[0]=GPL
         WEB_SITE=http://globulation2.org/
          ENTERED=20040814

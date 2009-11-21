@@ -10,5 +10,9 @@ depends  libvorbis           &&
 depends  speex               &&
 depends  boost               &&
 sub_depends boost THREAD     &&
-sub_depends boost DATE_TIME
+sub_depends boost DATE_TIME  &&
 
+optional_depends "fribidi" \
+                 ""        \
+                 ""        \
+                 "Unicode support"
