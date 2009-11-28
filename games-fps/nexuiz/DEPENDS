@@ -2,7 +2,6 @@ depends libxxf86dga &&
 depends libxxf86vm &&
 depends libxpm &&
 depends sdl &&
-depends alsa-lib &&
 depends libvorbis &&
 depends libpng &&
 depends jpeg &&
