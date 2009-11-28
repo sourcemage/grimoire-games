@@ -1,6 +1,9 @@
-depends X11-LIBS  &&
-depends sdl       &&
+depends libxxf86dga &&
+depends libxxf86vm &&
+depends libxpm &&
+depends sdl &&
+depends alsa-lib &&
 depends libvorbis &&
-depends libpng    &&
-depends jpeg      &&
+depends libpng &&
+depends jpeg &&
 depends unzip

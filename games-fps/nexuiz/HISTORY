@@ -1,3 +1,7 @@
+2009-11-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: corrected dependencies -- killed xorg-libs, see #14699,
+	  added alsa-lib req dep
+
 2009-10-17 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 252
 	* PRE_BUILD: use new patch
