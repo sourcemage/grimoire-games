@@ -1,3 +1,6 @@
+2009-12-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: changed dependency on openal to OPENAL
+
 2008-12-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: added quesoglc
 	  added popt, removed now missing flags from the optionals
