@@ -1,11 +1,8 @@
            SPELL=warzone2100
-         VERSION=2.1.0
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-         SOURCE2=${SOURCE}.sig
-   SOURCE_URL[0]=http://download.gna.org/warzone/releases/${VERSION:0:3}/$SOURCE
-  SOURCE2_URL[0]=http://download.gna.org/warzone/releases/${VERSION:0:3}/$SOURCE2
-      SOURCE_GPG="warzone.gpg:$SOURCE2:UPSTREAM_KEY"
-  SOURCE2_IGNORE=signature
+         VERSION=2.2.4
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:096d4a8888f9797acca0e2b1e96a7880871f5271bc6c3e1b28e284ee2f57f01003326c3785064805feb6acb3ff004e208a6770886853c4cf4eabc8fa0ad29f5c
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://wz2100.net/
          ENTERED=20050709
