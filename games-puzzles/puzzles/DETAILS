@@ -1,8 +1,8 @@
            SPELL=puzzles
-         VERSION=r8149
+         VERSION=r8780
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=http://www.chiark.greenend.org.uk/~sgtatham/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:a5dba2443e463afb9d92368b88be23ed5fa747a34d10fe0c6d1b782a0ac6c701a90ebb2db4b739ea2060901a19e6c397990e358573fede1d975fb66df904718f
+     SOURCE_HASH=sha512:7c089acdb321bafe1d1521a2569160a4a858c77fa94b3c5fbd5dc80d5a0f576be40f2d89a9ed36571e200a6112265dc226a1b5354eb0b3ae55a1b364a6218bc5
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
          ENTERED=20050910
