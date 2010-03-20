@@ -1,3 +1,8 @@
+2010-03-20 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated url
+	* PRE_BUILD: don't apply the patch; link to jpeg library
+	* libjpeg.patch: removed, no longer needed
+
 2009-11-28 Vlad Glagolev <stealth@sourcemage.org>
 	* DEPENDS: corrected dependencies -- killed xorg-libs, see #14699
 

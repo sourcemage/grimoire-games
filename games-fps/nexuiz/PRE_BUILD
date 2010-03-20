@@ -8,4 +8,4 @@ fi &&
 unzip sources/engine*source* &&
 unzip sources/game*source* &&
 
-patch -p0 < "$SPELL_DIRECTORY/libjpeg.patch"
+sed -i "1i DP_LINK_TO_LIBJPEG=1" darkplaces/makefile

@@ -12,7 +12,7 @@ SOURCE2_DIRECTORY="$BUILD_DIRECTORY/Nexuiz"
 fi
 
  SOURCE_DIRECTORY="$BUILD_DIRECTORY/Nexuiz"
-         WEB_SITE=http://www.nexuiz.com/
+         WEB_SITE=http://www.alientrap.org/nexuiz/
           ENTERED=20050724
        LICENSE[0]=GPL
             SHORT="3d game project"
