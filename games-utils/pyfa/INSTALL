@@ -1,0 +1,12 @@
+local I_DIR="$INSTALL_ROOT/usr/share/games/$SPELL" &&
+mkdir -p "$I_DIR" &&
+for i in gui model buildNeededIcons.py downloadData.py launch.py pyfa.ico
+do
+  cp -arv "$SOURCE_DIRECTORY/$i" "$I_DIR"
+done &&
+
+ln -sf "$TRACK_ROOT/usr/share/games/pyfa/launch.py" "$INSTALL_ROOT/usr/games/pyfa" &&
+ln -sf "$TRACK_ROOT/usr/share/games/pyfa/downloadData.py" \
+  "$INSTALL_ROOT/usr/games/pyfa-downloadData" &&
+chgrp -R games "$I_DIR" &&
+chgrp games "$INSTALL_ROOT/usr/games" # Always makes it root:root using castfs without this

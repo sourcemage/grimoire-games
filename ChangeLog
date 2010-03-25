@@ -1,3 +1,6 @@
+2010-03-24 Eric Sandall <sandalle@sourcemage.org>
+	* games-utils/pyfa: Added a Python Fitting Assistant for EVE-Online
+
 2009-08-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* games-emulators/advancescan: new spell, a command line rom manager
 	  for MAME, MESS, AdvanceMAME, AdvanceMESS and Raine. 

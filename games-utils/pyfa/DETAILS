@@ -1,0 +1,18 @@
+           SPELL=pyfa
+         VERSION=0.8
+          SOURCE=$SPELL-$VERSION-src.tar.gz
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+      LICENSE[0]=GPL
+        WEB_SITE=http://pyfa.sourceforge.net/
+         ENTERED=20100324
+           SHORT="Python Fitting Assistant for EVE-Online"
+            DOCS="LICENSE.txt README.txt"
+cat << EOF
+pyfa is the Python Fitting Assistant, a standalone application to create
+fittings for the EVE-Online SciFi MMORPG. The application is available for
+many platforms, see the download page for further details. The layout of pyfa
+heavily based on EFT, the EVE fitting tool. Although it is a complete rewrite
+and replacement for EFT, the fittings are still compatible with EFT.
+EOF
