@@ -1,0 +1,19 @@
+depends libxml2 &&
+depends sdl &&
+depends sdl_mixer &&
+depends sdl_image &&
+depends sdl_net &&
+depends sdl_ttf &&
+depends curl &&
+depends zlib &&
+depends libpng &&
+depends guichan &&
+depends physfs &&
+optional_depends OPENGL \
+                 "--with-opengl" \
+                 "--without-opengl" \
+                 "Enable OpenGL rendering" &&
+optional_depends gettext \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "Native Language Support"

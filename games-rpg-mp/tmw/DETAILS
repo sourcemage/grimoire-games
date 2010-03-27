@@ -1,0 +1,22 @@
+           SPELL=tmw
+         VERSION=0.0.29.1
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]="$SOURCEFORGE_URL/themanaworld/${SOURCE}"
+     SOURCE_HASH=sha512:89b95a8ef43487dc32a137b02e2beb63b47dfd7f5c090322a41bc29c258fadcc67724331991c3ab59a45657d6c54024f668471c4dae4ec657edddfc0c3c4d98b
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://themanaworld.org"
+      LICENSE[0]=GPLv2
+         ENTERED=20100327
+           SHORT="The Mana World (TMW) is an innovative MMORPG in 2D"
+cat << EOF
+The Mana World (TMW) is a serious effort to create an innovative free and open
+source MMORPG. TMW uses 2D graphics and aims to create a large and diverse
+interactive world. It is licensed under the GPL, making sure this game can't
+ever run away from you.
+
+The project includes the development of both a client and a server, as well as
+the development of an online world. At the moment we're making alpha releases
+of the client, while our server is in early development. The eAthena free
+software Ragnarok Online server is used until our own server has matured enough
+to replace it.
+EOF
