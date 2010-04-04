@@ -1,5 +1,6 @@
 depends g++ &&
 depends boost &&
+depends protobuf &&
 depends qt4 &&
 depends libxevie &&
 depends speex &&
