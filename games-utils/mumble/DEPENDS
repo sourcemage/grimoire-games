@@ -1,4 +1,3 @@
-OPTS="CONFIG+=no-update CONFIG+=no-embed-qt-transaltions CONFIG+=no-g15 CONFIG+=no-bundled-speex"
 depends g++ &&
 depends boost &&
 depends protobuf &&
