@@ -2,6 +2,7 @@
 	* BUILD: disable G15 keyboard support
 	* BUILD: convert dependencies on avahi and speech-dispatcher to optional
 	* DEPENDS, BUILD: move OPTS to BUILD
+	* CONFIGURE, BUILD: make server, client and overlay optionals
 
 2010-04-03 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 1.2.2
