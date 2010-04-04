@@ -1,3 +1,4 @@
+OPTS="CONFIG+=no-update CONFIG+=no-embed-qt-transaltions CONFIG+=no-g15 CONFIG+=no-bundled-speex"
 depends g++ &&
 depends boost &&
 depends protobuf &&
@@ -6,6 +7,12 @@ depends libxevie &&
 depends speex &&
 depends libsndfile &&
 depends alsa-lib &&
-depends speech-dispatcher &&
 depends openssl &&
-depends -sub COMPAT_LIBDNS_SD avahi
+optional_depends -sub COMPAT_LIBDNS_SD avahi \
+                 "" \
+                 "CONFIG+=no-bonjour" \
+                 "for DNS-SD support" &&
+optional_depends speech-dispatcher \
+                 ""
+                 "CONFIG+=no-speechd"
+                 "for speech dispatcher support"

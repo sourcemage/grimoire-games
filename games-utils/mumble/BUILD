@@ -1,3 +1,3 @@
 PATH=/usr/bin/qt4:$PATH &&
-qmake main.pro &&
+qmake main.pro $OPTS &&
 make
