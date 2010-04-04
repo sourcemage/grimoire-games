@@ -3,6 +3,16 @@ mkdir -pv $INSTALL_DIRECTORY &&
 cp -rv release/* $INSTALL_DIRECTORY &&
 cd $INSTALL_DIRECTORY &&
 find_and_scam &&
-chmod 750 mumble murmurd libmumble.so plugins/liblink.so &&
-ln -sv $INSTALL_DIRECTORY/mumble $INSTALL_ROOT/usr/games &&
-ln -sv $INSTALL_DIRECTORY/murmurd $INSTALL_ROOT/usr/games
+chmod 755 . &&
+chmod 750 plugins/liblink.so plugins/libmanual.so &&
+if [[ "$MUMBLE_OVERLAY" = 'y' ]]; then
+    chmod 750 libmumble.so
+fi &&
+if [[ "$MUMBLE_CLIENT" = 'y' ]]; then
+    chmod 750 mumble
+    ln -sv $INSTALL_DIRECTORY/mumble $INSTALL_ROOT/usr/games
+fi &&
+if [[ "$MUMBLE_SERVER" = 'y' ]]; then
+    chmod 750 murmurd
+    ln -sv $INSTALL_DIRECTORY/murmurd $INSTALL_ROOT/usr/games
+fi
