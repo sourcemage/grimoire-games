@@ -13,6 +13,6 @@ optional_depends -sub COMPAT_LIBDNS_SD avahi \
                  "CONFIG+=no-bonjour" \
                  "for DNS-SD support" &&
 optional_depends speech-dispatcher \
-                 ""
-                 "CONFIG+=no-speechd"
+                 "" \
+                 "CONFIG+=no-speechd" \
                  "for speech dispatcher support"
