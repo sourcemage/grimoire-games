@@ -4,6 +4,8 @@ depends protobuf &&
 depends qt4 &&
 depends libxevie &&
 depends speex &&
+depends libsndfile &&
 depends alsa-lib &&
 depends speech-dispatcher &&
-depends openssl
+depends openssl &&
+depends -sub COMPAT_LIBDNS_SD avahi
