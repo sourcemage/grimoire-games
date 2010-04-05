@@ -1,3 +1,6 @@
+2010-04-05 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: depends on qt4 sqlite support
+
 2010-04-04 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD: disable G15 keyboard support
 	* BUILD: convert dependencies on avahi and speech-dispatcher to optional
