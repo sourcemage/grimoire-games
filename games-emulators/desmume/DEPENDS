@@ -1,2 +1,3 @@
-depends OPENGL      &&
+depends OPENGL &&
+depends agg &&
 depends libglade2
