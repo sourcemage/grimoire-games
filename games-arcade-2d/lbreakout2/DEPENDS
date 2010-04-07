@@ -6,6 +6,6 @@ optional_depends  sdl_mixer          \
                   'Enable sound'     &&
 
 optional_depends  sdl_net              \
-                  '--enable-network'   \
-                  '--disable-network'  \
+                  '--enable-sdl-net'   \
+                  '--disable-sdl-net'  \
                   'Enable network'
