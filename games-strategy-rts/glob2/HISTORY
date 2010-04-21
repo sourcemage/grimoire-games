@@ -1,3 +1,11 @@
+2010-04-20 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply 03_headers_order.patch (Bug #15266)
+	* 03_headers_order.patch: From
+	  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=553706
+
+2010-04-20 Eric Sandall <sandalle@sourcemage.org>
+	* audio-libs/mp4v2: Added a recent MP4 library
+
 2009-11-21 Vasil Yonkov <spirtbrat@sourcemage.org>
 	* DEPENDS: added option for fribidi
 	* DETAILS: updated spell to 0.9.4.4
