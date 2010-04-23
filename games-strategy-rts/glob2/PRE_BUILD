@@ -1,0 +1,3 @@
+default_pre_build &&
+patch $SOURCE_DIRECTORY/libgag/src/TextStream.cpp \
+      $SCRIPT_DIRECTORY/03_headers_order.patch
