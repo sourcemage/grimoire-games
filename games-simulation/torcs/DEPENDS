@@ -1,5 +1,5 @@
 depends  GLUT    &&
-depends  openal  &&
+depends  OPENAL  &&
 depends  plib    &&
 depends  libpng  &&
 depends  xorg-libs  "--with-x --x-libraries=${INSTALL_ROOT}/usr/lib"  &&
