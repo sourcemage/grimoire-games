@@ -3,6 +3,9 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/-test1/}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+         SOURCE2=kc.tar.bz2
+  SOURCE2_URL[0]=http://www.berniw.org/trb/download/${SOURCE2}
+    SOURCE2_HASH=sha512:a57cfcc9fa824690057d1e0a08ef68adb197de078418cf42f0a35b5ecae7173c4dfee150ae7d6342c1f8db3c56ec104647e3b95cebf727f6939455155fc266c8
         WEB_SITE=http://torcs.sourceforge.net/
       #SOURCE_GPG="gurus.gpg:$SOURCE.sig"
      SOURCE_HASH=sha512:a4192698ac16e0cabb53c11ead9b5098dcfb4e40febb5313946019d2f1ccc7b9647e450691d26fe32f8eced6d307f393b4d73a06dab2398871b079f7f6c0972b
