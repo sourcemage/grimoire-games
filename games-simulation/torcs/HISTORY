@@ -1,3 +1,6 @@
+2010-04-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* CONFIGURE, PREPARE: moved query for additional cars to PREPARE
+
 2010-04-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DEPENDS: openal -> OPENAL
 	* PRE_BUILD, DETAILS: added more cars
