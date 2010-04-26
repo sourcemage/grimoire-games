@@ -1,13 +1,12 @@
            SPELL=luola-nostalgia
-         VERSION=1.1
+         VERSION=1.2
           SOURCE=nostalgia-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.luolamies.org/software/luola/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:06a03b3398204c04f88fccbbf6a59f11da043c73dc203fe258e09e036364ee73cae337b9828bd27b52ebee6ff456c317143444c3b6c395addcdedf720988731f
       LICENSE[0]=CC
         WEB_SITE=http://www.luolamies.org/software/luola/
          ENTERED=20011214
-         UPDATED=20031227
            SHORT='Extra levels for Luola'
 cat << EOF
 These levels are (unofficial) remakes of the old V-Wing levels. They are not
