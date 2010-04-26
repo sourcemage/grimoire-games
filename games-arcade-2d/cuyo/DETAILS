@@ -1,12 +1,15 @@
            SPELL=cuyo
          VERSION=1.8.5
           SOURCE=${SPELL}-${VERSION}.tar.gz
+         SOURCE2=$SOURCE.sig
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://freesoftware.fsf.org/download/cuyo/${SOURCE}
+   SOURCE_URL[0]=http://mirror.lihnidos.org/GNU/savannah/cuyo/${SOURCE}
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
         WEB_SITE=http://www.karimmi.de/cuyo/
          ENTERED=20020129
          UPDATED=20020828
-     SOURCE_HASH=sha512:8c4786a8dcd0445e30f0943a58eade13db28895ff8b5569ea07311bf56dee5b17243e7b95dbb941a38371c807449fad0c340d0f852e19483e950a67c9a428778
+      SOURCE_GPG=D72EA946.gpg:$SOURCE2:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
       LICENSE[0]=GPL
            SHORT="cuyo: Tetris-like game with many surprises"
 cat << EOF
