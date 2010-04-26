@@ -1,16 +1,18 @@
            SPELL=xpilot
-         VERSION=4.5.4
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=4.5.5
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.xpilot.org/pub/$SOURCE
-     SOURCE_HASH=sha512:4265914b4825707139f81cf295d6a92f0d7c8b5ef4b48fed5c4855774d82759c6818ee5afa6eeb0fe8b54deaa275383b4e71cbfd5980148a457ed86cff95ed95
+   SOURCE_URL[0]=http://sourceforge.net/projects/xpilotgame/files/${SPELL}-4/${SPELL}-${VERSION}/${SOURCE}/download
+     SOURCE_HASH=sha512:002fbdbee3035e21f441d749d68ac41da2816a691e1c0d1cf9de9cddaa479c92da57eb36081884b9908a6ae83454f6f532c24c89280d27e2cbf9570442ef301c
         WEB_SITE=http://www.xpilot.org/
          ENTERED=20040223
       LICENSE[0]=GPL
            SHORT="Multi-player 2D space game"
 cat << EOF
 xpilot is a multi-player 2D space game.
-Some features are borrowed from classics like the Atari coin-ups Asteroids and Gravitar,
-and the home-computer games Thrust (Commodore 64) and Gravity Force (Commodore Amiga),
+Some features are borrowed from classics like the Atari coin-ups Asteroids
+and Gravitar,
+and the home-computer games Thrust (Commodore 64) and Gravity Force
+(Commodore Amiga),
 but XPilot has many new aspects too.
 EOF
