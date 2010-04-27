@@ -1,3 +1,6 @@
+2010-04-26 Eric Sandall <sandalle@sourcemage.org>
+	* games-utils/gtkevemon: Added an EVE-Online skill monitoring tool
+
 2010-04-20 Eric Sandall <sandalle@sourcemage.org>
 	* games-strategy-rts/globulation2: Removed deprecated spell
 

@@ -1,0 +1,2 @@
+default_pre_build &&
+sed -i "s:/usr/local/bin:$INSTALL_ROOT/usr/games:" $SOURCE_DIRECTORY/Makefile
