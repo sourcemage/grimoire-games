@@ -1,0 +1,33 @@
+From: alex <alex@alex.tortilla.ru>
+Date: Fri, 27 Feb 2009 21:56:12 +0000 (+0300)
+Subject: Fixing build on recent compilers.
+X-Git-Url: http://git.worldforge.org/?p=libwfut.git;a=commitdiff_plain;h=a2d433839174f9b128485298e8c5753c532e89ef
+
+Fixing build on recent compilers.
+---
+
+diff --git a/libwfut/Encoder.cpp b/libwfut/Encoder.cpp
+index 179a90f..4b8081c 100644
+--- a/libwfut/Encoder.cpp
++++ b/libwfut/Encoder.cpp
+@@ -2,6 +2,8 @@
+ // the GNU Lesser General Public License (See COPYING for details).
+ // Copyright (C) 2007 Simon Goodall
+ 
++#include <cstdio>
++
+ #include "libwfut/Encoder.h"
+ 
+ namespace WFUT {
+diff --git a/tools/wfut.cpp b/tools/wfut.cpp
+index 7078119..ced901f 100644
+--- a/tools/wfut.cpp
++++ b/tools/wfut.cpp
+@@ -13,6 +13,7 @@
+ #include <sys/types.h>
+ 
+ #include <algorithm>
++#include <cstdio>
+ 
+ #include <sigc++/bind.h>
+ 

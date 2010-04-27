@@ -1,3 +1,8 @@
+2010-04-26 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply gcc44.patch
+	* gcc44.patch: Fix compilation with GCC 4.4
+	  Patch from upstream git 2d433839174f9b128485298e8c5753c532e89ef
+
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.2.1
 	* PRE_BUILD: No longer apply gcc43.patch
