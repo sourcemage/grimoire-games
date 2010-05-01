@@ -1,0 +1,7 @@
+default_pre_build      &&
+if [[ "$TORCS_BERNIW_CARS" == "y" ]]; then
+    message "${MESSAGE_COLOR}adding more cars${DEFAULT_COLOR}" &&
+    cd ${SOURCE_DIRECTORY} &&
+    unpack_file 2          &&
+    mv kc/* data/cars/models || return 1
+fi

@@ -1,3 +1,7 @@
+2010-04-26 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: Fixed SOURCE_URL[0] & WEBSITE
+	  updated to version 0.30a
+
 2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 0.26a, removed UPDATED
 	* INSTALL: install_rootified, cleaned up

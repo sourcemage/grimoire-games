@@ -1,11 +1,11 @@
            SPELL=singularity
-         VERSION=0.26a
-          SOURCE=${SPELL}_${VERSION}.tar.gz
+         VERSION=0.30a
+          SOURCE=${SPELL}-${VERSION}-src.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
-   SOURCE_URL[0]=http://www.emhsoft.net/${SPELL}/${SOURCE}
-   SOURCE_URL[1]=http://endgame-singularity.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:e86acf99027a9bfaf8b838ae6ad442ac703470b09cafd08d9d88ef8b3e384ddd7bb6778e8a16e3f65f594afd073ce8d1c1198c0c64ca60d79e96ee8f23662d1b
-        WEB_SITE=http://www.emhsoft.net/singularity/
+#   SOURCE_URL[0]=http://www.emhsoft.net/${SPELL}/${SOURCE}
+   SOURCE_URL[0]=http://endgame-singularity.googlecode.com/files/${SOURCE}
+     SOURCE_HASH=sha512:3cc6fa9fb82bac5e8bf666ffe8d83c3d8e27d2272f1d07ec0602a387b681df6968648785019bb1cedbd3d663435b63a736d02164559e1ff414af075c05ee9311
+        WEB_SITE=http://endgame-singularity.googlecode.com/
          ENTERED=20060123
       LICENSE[0]=GPL
            SHORT="Singularity is a simulation of a true AI"

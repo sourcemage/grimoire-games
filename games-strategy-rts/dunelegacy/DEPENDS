@@ -1,5 +1,4 @@
 depends  pkgconfig  &&
-depends  scons      &&
 depends  sdl_gfx    &&
 depends  sdl_image  &&
 depends  sdl_mixer  &&

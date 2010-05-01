@@ -1,0 +1,24 @@
+           SPELL=gtkevemon
+         VERSION=1.6
+          SOURCE=$SPELL-$VERSION-source.tar.gz
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://gtkevemon.battleclinic.com/releases/gtkevemon-1.6-source.tar.gz
+      LICENSE[0]=GPL
+        WEB_SITE=http://gtkevemon.battleclinic.com/
+         ENTERED=20100324
+           SHORT="EVE-Online skill monitoring tool"
+            DOCS=""
+cat << EOF
+GtkEveMon is an EVE-Online skill monitoring standalone application for
+GNU/Linux systems. With GtkEveMon you can monitor your current skills and your
+skill training process without starting EVE-Online. You will never miss to
+train your next skill!
+
+GtkEveMon is inspired by EveMon, a character monitor and skill planner for
+Microsoft's .NET framework. Reportedly EveMon also runs unter GNU/Linux with
+Mono and some effort. GtkEveMon does not aim at being as powerful as EveMon but
+rather a lightweight alternative. Many features of EveMon are not, and will
+probably never be, implemented. However, you're welcome to make feature
+requests in the forums.
+EOF

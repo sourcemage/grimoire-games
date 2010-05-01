@@ -1,3 +1,6 @@
+2010-04-07 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version 0.7.3
+
 2008-05-04 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: added sub dependency on boost signals #14510
 	* PRE_BUILD: added to fix the broken install system #14509

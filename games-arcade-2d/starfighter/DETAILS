@@ -3,7 +3,7 @@
              VER=1.1
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VER}
-   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download.php?file=$SOURCE&type=zip"
+   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download/starfighter/$SOURCE"
      SOURCE_HASH=sha512:1a9ea0bdce30199b36ca86484043b4f66e5abf693fb4de20f0132530d28cd87b47ca491e2a90d32a933c3a9de71bdd41b00c596faef86949b3cd59b1dba6ba61
         WEB_SITE=http://www.parallelrealities.co.uk/starfighter.php
          ENTERED=20060331

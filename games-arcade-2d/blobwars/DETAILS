@@ -1,9 +1,9 @@
            SPELL=blobwars
-         VERSION=1.14-1
+         VERSION=1.17-1
           SOURCE=${SPELL}-${VERSION}.tar.gz
-   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download/8e7e15b2/$SPELL/$SOURCE"
+   SOURCE_URL[0]="http://www.parallelrealities.co.uk/download/$SPELL/$SOURCE"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/-*}
-     SOURCE_HASH=sha512:6124bd2b991674c8bce773b1ea37f935a497a1484742bb97079f0905b39bcf38343fd59bad246c1b90f18daafca7ddb249207c7e3e7143a4d02fe38697dff24a
+     SOURCE_HASH=sha512:9968beeefeba0ec76ec51ae981e7b7798147cb0c0735cb3418ded904e1bf841ce873a8bf9593a4df4be7b9dc672e372a2856c5c0c094bc5fab811116c35feb30
         WEB_SITE=http://www.parallelrealities.co.uk/projects/blobWars.php
          ENTERED=20041009
       LICENSE[0]=GPL
