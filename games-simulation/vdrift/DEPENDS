@@ -1,7 +1,11 @@
 depends OPENGL &&
+depends OPENAL &&
 depends sdl &&
 depends sdl_image &&
 depends sdl_net &&
 depends sdl_gfx &&
-depends openal &&
-depends freealut
+depends freealut &&
+depends glew &&
+depends libvorbis &&
+depends boost &&
+depends asio

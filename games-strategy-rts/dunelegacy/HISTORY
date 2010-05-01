@@ -1,6 +1,13 @@
+2010-04-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 0.96
+	* INSTALL, PRE_BUILD, dunelegacy-nowerror.diff, BUILD:
+	  removed
+	* DEPENDS: removed dependency on scons
+
 2008-06-09 Thomas Orgis <sobukus@sourcemage.org>
 	* PRE_BUILD, dunelegacy-nowerror.diff: re-enable build by making
 	  g++ complaints non-fatal
 
 2006-11-25 Pol Vinogradov <vin.public@gmail.com>
 	* BUILD, DEPENDS, DETAILS, INSTALL, FINAL, dunelegacy: created spell
+

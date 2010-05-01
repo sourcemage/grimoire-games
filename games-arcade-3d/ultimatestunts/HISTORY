@@ -1,3 +1,6 @@
+2010-04-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: changed dependency on openal to OPENAL
+
 2008-07-28 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0751
 

@@ -1,3 +1,6 @@
+2010-04-26 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: fixed SOURCE_URL[0]
+
 2008-03-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 5.6.4
 

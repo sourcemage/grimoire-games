@@ -3,6 +3,6 @@ depends  sdl        &&
 depends  sdl_image  &&
 
 if [ "$SOUND" == "y" ] ; then
-  depends  openal  &&
+  depends  OPENAL  &&
   depends  freealut
 fi

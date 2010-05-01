@@ -1,10 +1,10 @@
            SPELL=trimines
-         VERSION=1.2.1
+         VERSION=1.3.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.freewebs.com/trimines/$SOURCE
         WEB_SITE=http://www.freewebs.com/trimines/
-  SOURCE_HASH[0]=sha512:b13c3f161ee1ad932bc6ccfb88816497cc629dc66cefa1653c8bec3fab58377fe85435f1fada5fc74f1b6e66c75c22297a86dd14d05aba5c1dcc0f228b6a76b1
+     SOURCE_HASH=sha512:9a9c5e741460eff29a024aab85ee00d7ccc6111460dab50a8036c638afb9185fb6ffa728914bda7963a80b9b70c7a5f4a1125e08ddf4d90e220d9cfe6683548e
          ENTERED=20060429
       LICENSE[0]=GPL
        BUILD_API=1

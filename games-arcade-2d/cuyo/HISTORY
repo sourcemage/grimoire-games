@@ -1,3 +1,8 @@
+2010-04-26 Bor Kraljič <pyrobor@ver.si>
+	* D72EA946.gpg: added gpg keyring
+	* DETAILS: changed SOURCE_URL[0]
+	  converted to upstream signature checking
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

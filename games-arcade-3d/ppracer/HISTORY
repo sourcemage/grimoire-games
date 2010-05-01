@@ -1,3 +1,7 @@
+2010-04-26 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: fixed SOURCE to be defined before SOURCE_URL
+	  added SHA512
+
 2008-12-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Set WEB_SITE to an info page
 

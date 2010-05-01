@@ -13,7 +13,7 @@ depends  sdl                           &&
 depends  libpng                        &&
 depends  jpeg                          &&
 depends  perl                          &&
-depends  openal                        &&
+depends  OPENAL                        &&
 #--with-boost-system makes it fail here
 #depends -sub PYTHON boost "--with-boost=system" &&
 depends -sub PYTHON boost ""           &&

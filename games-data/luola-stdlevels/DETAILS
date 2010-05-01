@@ -1,13 +1,12 @@
            SPELL=luola-stdlevels
-         VERSION=5.2
+         VERSION=6.0
           SOURCE=stdlevels-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.luolamies.org/software/luola/$SOURCE
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:d1823ca8340dea8766310962507bc5aad06c0f737c16c3ce32afaafc0e83a8b7b4d301d5cf65a0466fdaee9ec2a7ce718d03be61b383ac6fe030101466eff11a
       LICENSE[0]=CC
         WEB_SITE=http://www.luolamies.org/software/luola/
          ENTERED=20011214
-         UPDATED=20031227
            SHORT='Standard levels for Luola'
 cat << EOF
 Includes the five standard levels for Luola.
