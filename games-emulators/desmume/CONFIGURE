@@ -1,2 +1,0 @@
-config_query DESMUME_SSE "Enable SSE extensions? (recommended)" y &&
-config_query DESMUME_SSE2 "Enable SSE2 extensions? (recommended)" y
