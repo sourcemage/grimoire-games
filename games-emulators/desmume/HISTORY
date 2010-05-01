@@ -1,2 +1,8 @@
+2010-04-05 Donald Johnson <minozake@codemages.net>
+	* DETAILS: Updated to 0.9.5
+	* DEPENDS: Added agg dependency
+	* CONFIGURE, BUILD: Took advantage of developer recommendations to compile
+	  with SSE and SSE2 extensions for much faster emulation.
+
 2008-03-29 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS, HISTORY: created spell
