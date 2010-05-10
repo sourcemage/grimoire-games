@@ -1,3 +1,6 @@
+2010-05-10 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Install a desktop file along with icon
+
 2010-03-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS, DEPENDS, BUILD, INSTALL, FINAL: Created
 
