@@ -9,4 +9,15 @@ ln -sf "$TRACK_ROOT/usr/share/games/pyfa/launch.py" "$INSTALL_ROOT/usr/games/pyf
 ln -sf "$TRACK_ROOT/usr/share/games/pyfa/downloadData.py" \
   "$INSTALL_ROOT/usr/games/pyfa-downloadData" &&
 chgrp -R games "$I_DIR" &&
-chgrp games "$INSTALL_ROOT/usr/games" # Always makes it root:root using castfs without this
+chgrp games "$INSTALL_ROOT/usr/games" # Always makes it root:root using castfs without this &&
+
+# Create Desktop file
+cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
+[Desktop Entry]
+Name=GTK Fitting Assistant
+Comment=EVE-Online ship fitting tool
+Exec=pyfa
+Type=Application
+Icon=$INSTALL_ROOT/usr/share/games/$SPELL/gui/icons/cpu.png
+Categories=Games;Utilities
+EOF

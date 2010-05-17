@@ -1,3 +1,7 @@
+2010-05-17 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: PATCHLEVEL++
+	* INSTALL: Create desktop file
+
 2010-03-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS, DEPENDS, BUILD, INSTALL, FINAL: Created
 
