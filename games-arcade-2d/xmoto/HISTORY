@@ -1,3 +1,9 @@
+2010-05-20 Bor Kraljič <pyrobor@ver.si>
+	* compilefix.patch: removed, no longer needed
+	* DEPENDS: added libxdg-basedir
+	* PRE_BUILD: patch apply is no longer needed
+	* DETAILS: updated spell to 0.5.3
+
 2009-09-03 Bor Kraljic <pyrobor@ver.si>
 	* compilefix.patch: added, compilefix
 	* PRE_BUILD: changed apply patch to compile

@@ -11,6 +11,7 @@ depends ode        &&
 depends jpeg       &&
 depends libpng     &&
 depends zlib       &&
+depends libxdg-basedir &&
 
 optional_depends  gettext                                    \
                   "--enable-nls --without-included-gettext"  \
