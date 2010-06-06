@@ -1,9 +1,9 @@
            SPELL=gtkevemon
-         VERSION=1.6
+         VERSION=1.8
           SOURCE=$SPELL-$VERSION-source.tar.gz
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://gtkevemon.battleclinic.com/releases/gtkevemon-1.6-source.tar.gz
+   SOURCE_URL[0]=http://gtkevemon.battleclinic.com/releases/$SOURCE
       LICENSE[0]=GPL
         WEB_SITE=http://gtkevemon.battleclinic.com/
          ENTERED=20100324
