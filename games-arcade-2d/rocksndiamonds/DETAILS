@@ -1,10 +1,9 @@
            SPELL=rocksndiamonds
-         VERSION=3.2.4
+         VERSION=3.3.0.0
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.artsoft.org/RELEASES/unix/$SPELL/$SOURCE
-#     SOURCE_HASH=sha512:7fa483bee405d890ba3276b6706e63295d17c7473c7d4ffb822db4f3c2fd3ef140adf8839bb82d2e317a7f7938f06b92d1c8dc1677e7ed04c4ab9b2e202c07cc
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=sha512:024e9dac90060246b8d69e90c88ae645d656a76ea4f71e0a033514edb3b5ceb8bf45f4fa60e89ea39d1e95be14a66735b8595f9c94539cdfccdae28193fdb7a6
       LICENSE[0]=GPL
         WEB_SITE=http://www.artsoft.org/rocksndiamonds/
          ENTERED=20021211
