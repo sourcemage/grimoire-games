@@ -3,4 +3,5 @@ depends g++ &&
 depends OPENAL &&
 depends python &&
 depends sdl &&
-depends libpng
+depends libpng &&
+depends cmake
