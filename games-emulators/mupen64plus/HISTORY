@@ -1,6 +1,7 @@
 2010-06-17 Ismael Luceno <ismael@sourcemage.org>
-	* DETAILS: Fixed SOURCE_URL[0]
+	* BUILD, DEPENDS, DETAILS, INSTALL: Fixed SOURCE_URL[0]
 	  updated spell to 1.99.3
+	* INSTALL: fix installation of binaries
 
 2009-01-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, INSTALL: created this spell

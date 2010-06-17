@@ -1,1 +1,1 @@
-./m64p_install.sh DESTDIR=${INSTALL_ROOT} PREFIX=/usr
+./m64p_install.sh DESTDIR=${INSTALL_ROOT} PREFIX=/usr BINDIR=/usr/games
