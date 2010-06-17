@@ -1,1 +1,1 @@
-make PREFIX=${INSTALL_ROOT}/usr install
+./m64p_install.sh DESTDIR=${INSTALL_ROOT} PREFIX=/usr
