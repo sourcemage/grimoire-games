@@ -1,4 +1,5 @@
 2010-07-28 Eric Sandall <sandalle@sourcemage.org>
+	* BUILD: Enable optimizations
 	* DEPENDS: Depends on autoconf to regenerate configure
 	* PRE_BUILD: Apply xerces3.patch and enigma-1.01-gcc44.patch
 	  Run autoconf to regenerate configure
