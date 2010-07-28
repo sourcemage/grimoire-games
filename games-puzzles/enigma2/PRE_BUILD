@@ -1,5 +1,6 @@
 default_pre_build &&
 cd $SOURCE_DIRECTORY &&
+message "${MESSAGE_COLOR}Applying GCC 4.3 patch...${DEFAULT_COLOR}" &&
 patch -p0 -d "$SOURCE_DIRECTORY" < "$SPELL_DIRECTORY"/enigma-gcc-4.3-ftbfs.patch &&
 message "${MESSAGE_COLOR}Applying GCC 4.4 patch...${DEFAULT_COLOR}" &&
 patch -p0 < "$SPELL_DIRECTORY/enigma-1.01-gcc44.patch" &&

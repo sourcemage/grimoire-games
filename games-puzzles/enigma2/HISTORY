@@ -3,6 +3,7 @@
 	* DEPENDS: Depends on autoconf to regenerate configure
 	* PRE_BUILD: Apply xerces3.patch and enigma-1.01-gcc44.patch
 	  Run autoconf to regenerate configure
+	  Mention GCC 4.3 patch is being applied
 	* xerces3.patch: link against -lxerces-c and new Utf8Xml API
 	  From http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/games-puzzle/enigma/files/enigma-1.01-xerces-c.patch
 	* enigma-1.01-gcc44.patch: From http://aur.archlinux.org/packages/enigma_sdl/enigma_sdl/enigma-1.01-gcc44.patch
