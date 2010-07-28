@@ -1,3 +1,9 @@
+2010-07-28 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.6.1
+	  SOURCE_URL now includes dist/
+	* PRE_BUILD: Do not apply gcc43.patch
+	* gcc43.patch: Removed, we're on GCC 4.4.3 and this patch no longer applies
+
 2008-10-07 Julien "_kaze_" ROZO <julien@rozo.org>
 	* gcc43.patch: added, fixes compilation issue with gcc 4.3.x
 	  (fixes bug #14629)

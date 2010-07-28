@@ -1,11 +1,12 @@
            SPELL=boswars
-         VERSION=2.5
+         VERSION=2.6.1
           SOURCE=${SPELL}-${VERSION}-src.tar.gz
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#     SOURCE_HASH=sha512:046fac616025a779eb82418a48ad5b9fc5876560668f83e19e852343fd406a34868bd52c82f2145a29cfe0de8264e59183bed7516819d32cc13edbc801b25919
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-src
-   SOURCE_URL[0]=http://www.boswars.org/releases/$SOURCE
+   SOURCE_URL[0]=http://www.boswars.org/dist/releases/$SOURCE
         WEB_SITE=http://www.boswars.org/
          ENTERED=20040719
-     SOURCE_HASH=sha512:046fac616025a779eb82418a48ad5b9fc5876560668f83e19e852343fd406a34868bd52c82f2145a29cfe0de8264e59183bed7516819d32cc13edbc801b25919
       LICENSE[0]=GPL
            SHORT='Bos Wars is a futuristic real-time strategy game.'
 cat << EOF
