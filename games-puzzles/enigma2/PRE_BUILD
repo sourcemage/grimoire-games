@@ -1,2 +1,9 @@
 default_pre_build &&
-patch -p0 -d "$SOURCE_DIRECTORY" < "$SPELL_DIRECTORY"/enigma-gcc-4.3-ftbfs.patch
+cd $SOURCE_DIRECTORY &&
+patch -p0 -d "$SOURCE_DIRECTORY" < "$SPELL_DIRECTORY"/enigma-gcc-4.3-ftbfs.patch &&
+message "${MESSAGE_COLOR}Applying GCC 4.4 patch...${DEFAULT_COLOR}" &&
+patch -p0 < "$SPELL_DIRECTORY/enigma-1.01-gcc44.patch" &&
+message "${MESSAGE_COLOR}Applying Xerces-C 3.x link patch...${DEFAULT_COLOR}" &&
+patch -p0 < "$SPELL_DIRECTORY/xerces3.patch" &&
+message "${MESSAGE_COLOR}Regenerating configure...${DEFAULT_COLOR}" &&
+autoconf
