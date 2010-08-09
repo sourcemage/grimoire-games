@@ -11,8 +11,4 @@ patch -p1 < "$SPELL_DIRECTORY/anne-boleyn.diff"             &&
 patch -p1 < "$SPELL_DIRECTORY/capitals.diff"                &&
 patch -p1 < "$SPELL_DIRECTORY/define-dead.diff"             &&
 patch -p1 < "$SPELL_DIRECTORY/wump-update.diff"             &&
-patch -p1 < "$SPELL_DIRECTORY/debian-changes-2.17-19"       &&
-
-mkdir temp-dictionary  &&
-cd temp-dictionary     &&
-cp /usr/share/dict/words ./ 
+patch -p1 < "$SPELL_DIRECTORY/debian-changes-2.17-19"       
