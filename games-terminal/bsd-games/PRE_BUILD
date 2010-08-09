@@ -2,5 +2,17 @@ default_pre_build                           &&
 cd $SOURCE_DIRECTORY/include                &&
 patch -p0 < $SPELL_DIRECTORY/stdio.h.patch  &&
 cd $SOURCE_DIRECTORY                        &&
-patch -p1 < "$SPELL_DIRECTORY/bsd-games-2.17.patch"
+patch -p1 < "$SPELL_DIRECTORY/replace-getline.diff"         &&
+patch -p1 < "$SPELL_DIRECTORY/quiz-presidents.diff"         &&
+patch -p1 < "$SPELL_DIRECTORY/add-acronyms.diff"            &&
+patch -p1 < "$SPELL_DIRECTORY/sort-acronyms.comp.diff"      &&
+patch -p1 < "$SPELL_DIRECTORY/refresh-robots-screen.diff"   &&
+patch -p1 < "$SPELL_DIRECTORY/anne-boleyn.diff"             &&
+patch -p1 < "$SPELL_DIRECTORY/capitals.diff"                &&
+patch -p1 < "$SPELL_DIRECTORY/define-dead.diff"             &&
+patch -p1 < "$SPELL_DIRECTORY/wump-update.diff"             &&
+patch -p1 < "$SPELL_DIRECTORY/debian-changes-2.17-19"       &&
 
+mkdir temp-dictionary  &&
+cd temp-dictionary     &&
+cp /usr/share/dict/words ./ 
