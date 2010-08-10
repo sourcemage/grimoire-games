@@ -1,10 +1,10 @@
            SPELL=singularity
-         VERSION=0.30a
+         VERSION=0.30b
           SOURCE=${SPELL}-${VERSION}-src.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
 #   SOURCE_URL[0]=http://www.emhsoft.net/${SPELL}/${SOURCE}
    SOURCE_URL[0]=http://endgame-singularity.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:3cc6fa9fb82bac5e8bf666ffe8d83c3d8e27d2272f1d07ec0602a387b681df6968648785019bb1cedbd3d663435b63a736d02164559e1ff414af075c05ee9311
+     SOURCE_HASH=sha512:eb76c2df1041430d1dde5c2615b965380700ee68dc420b830194ae25ead169c2e9fd600d879d3a0119d147d18ec486059cf623d313a843326f7a095a4f7497a9
         WEB_SITE=http://endgame-singularity.googlecode.com/
          ENTERED=20060123
       LICENSE[0]=GPL
