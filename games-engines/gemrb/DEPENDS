@@ -1,7 +1,8 @@
 depends zlib &&
 depends g++ &&
-depends OPENAL &&
 depends python &&
 depends sdl &&
-depends libpng &&
-depends cmake
+depends cmake &&
+optional_depends OPENAL "" "" "for one of the audio plugins (default)" &&
+optional_depends sdl_mixer "" "" "for one of the audio plugins (faster, but poorer quality)" &&
+optional_depends libpng "" "" "for the png importer (for mod use)"
