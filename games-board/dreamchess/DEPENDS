@@ -1,0 +1,18 @@
+depends zlib &&
+depends mxml &&
+
+optional_depends sdl \
+                 "--with-sdl" \
+                 "--without-sdl" \
+                 "for SDL GUI driver" &&
+
+if is_depends_enabled $SPELL sdl; then
+  depends sdl_image
+fi &&
+
+optional_depends OPENGL \
+                 "--with-gl" \
+                 "--without-gl" \
+                 "for OpenGL GUI driver" &&
+
+optional_depends sdl_mixer "" "" "for audio mixer support"

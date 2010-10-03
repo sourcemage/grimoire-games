@@ -1,0 +1,22 @@
+           SPELL=dreamchess
+         VERSION=0.2.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=http://download.berlios.de/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:01599ac1327aa68712b680ac7062035227d893371b7bd40f9dbb92471c839192ceb48e57834c7ba739693e065a8eebe3f282f42cc97013655f961b6b4784e5bd
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.dreamchess.org/
+      LICENSE[0]=GPL
+           SHORT="open source chess game"
+cat << EOF
+DreamChess is an open source chess game.
+
+DreamChess features 3D OpenGL graphics and provides various chess board sets,
+ranging from classic wooden to flat figurines.
+
+A moderately strong chess engine is included: Dreamer. However, should this
+engine be too weak for you, then you can use any other XBoard-compatible chess
+engine, including the popular Crafty and GNU Chess.
+
+Other features include music, sound effects, on-screen move lists using SAN
+notation, undo functionality, and savegames in PGN format.
+EOF
