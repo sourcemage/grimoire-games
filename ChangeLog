@@ -1,5 +1,6 @@
 2010-10-03 Vlad Glagolev <stealth@sourcemage.org>
 	* games-board/dreamchess: new spell, open source chess game
+	* games-board/gshogi: new spell, open source Shogi game
 
 2010-04-26 Eric Sandall <sandalle@sourcemage.org>
 	* games-utils/gtkevemon: Added an EVE-Online skill monitoring tool

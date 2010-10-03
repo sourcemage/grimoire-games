@@ -1,0 +1,22 @@
+           SPELL=gshogi
+         VERSION=0.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+   SOURCE_URL[0]=http://www.johncheetham.com/projects/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:a4f4dd6e7696135251a2eeb56b2ee5f41aa6e1b3fad7431d62b0b4589566df286a981c73bce5b7783752909c6a229f7cda72a61aacee5f466a7ee1b703e159d6
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.johncheetham.com/projects/gshogi/
+      LICENSE[0]=GPL
+           SHORT="open source Shogi game"
+cat << EOF
+gShogi is an open source Shogi (Japanese chess) game written in Python/PyGTK/C.
+
+Features:
+ * Load / Save Games
+ * Set level of play
+ * Retract Moves
+ * Choose eastern or western pieces
+ * Opening Book
+ * Resizable Board
+ * USI support - you can play against USI engines
+ * Play human vs engine, engine vs engine or human vs human
+EOF
