@@ -1,3 +1,9 @@
+2010-10-18 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated DEVEL VERSION to 1.9.1
+	* DETAILS: updated VERSION to 1.8.5
+	* PRE_BUILD: added run autogen.sh
+	* DEPENDS: added gettext, zlib, libpng, lua, dbus, fribidi
+
 2009-09-06 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 1.6.5
 

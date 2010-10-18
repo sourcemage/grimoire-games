@@ -1,12 +1,21 @@
-depends pango &&
+depends pango      &&
 depends fontconfig &&
-depends sdl_image &&
-depends sdl_mixer &&
-depends sdl_net &&
-depends sdl_ttf &&
+depends gettext    &&
+depends zlib       &&
+depends libpng     &&
+depends sdl        &&
+depends sdl_image  &&
+depends sdl_mixer  &&
+depends sdl_net    &&
+depends sdl_ttf    &&
+depends lua        &&
 depends -sub "IOSTREAMS REGEX" boost &&
 
-optional_depends python "--enable-python-install" "" "for Python tools" &&
+optional_depends python  "--enable-python-install" "" "for Python tools" &&
+optional_depends dbus  "--enable-dbus" "--disable-dbus"                  \
+                       "Enable DBus support?"                            &&
+optional_depends fribidi  "--with-fribidi" "--without-fribidi"           \
+                          "Enable fribidi support?"                      &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then
   depends xdelta
