@@ -4,4 +4,4 @@ if [[ $WESNOTH_XDELTA == y && ${SOURCE/xdelta/} != $SOURCE ]]; then
 fi &&
 default_pre_build     &&
 cd $SOURCE_DIRECTORY  &&
-./autogen.sh
+NOCONFIGURE=Y ./autogen.sh

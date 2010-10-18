@@ -2,6 +2,7 @@
 	* DETAILS: updated DEVEL VERSION to 1.9.1
 	* DETAILS: updated VERSION to 1.8.5
 	* PRE_BUILD: added run autogen.sh
+	  added NOCONFIGURE=Y
 	* DEPENDS: added gettext, zlib, libpng, lua, dbus, fribidi
 
 2009-09-06 Vlad Glagolev <stealth@sourcemage.org>
