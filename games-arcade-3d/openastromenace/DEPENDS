@@ -1,5 +1,5 @@
 depends sdl &&
-depends openal-soft &&
+depends OPENAL &&
 depends freealut &&
 depends libogg &&
 depends libvorbis &&
