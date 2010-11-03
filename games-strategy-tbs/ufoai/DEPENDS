@@ -1,6 +1,6 @@
 depends zlib       &&
 depends curl       &&
-depends jpeg       &&
+depends JPEG       &&
 depends gettext    &&
 depends sdl        &&
 depends sdl_mixer  &&

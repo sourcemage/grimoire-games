@@ -1,6 +1,6 @@
 depends g++        &&
 depends OPENGL     &&
 depends sdl        &&
-depends jpeg       &&
+depends JPEG       &&
 depends libpng     &&
 depends zlib

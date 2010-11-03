@@ -1,3 +1,6 @@
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
+
 2008-01-28 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* SUB_DEPENDS: removed is_depends_enabled.function reference
 	* PRE_SUB_DEPENDS: removed is_depends_enabled.function reference

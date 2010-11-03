@@ -4,5 +4,5 @@ depends libxpm &&
 depends sdl &&
 depends libvorbis &&
 depends libpng &&
-depends jpeg &&
+depends JPEG &&
 depends unzip

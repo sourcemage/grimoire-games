@@ -3,7 +3,7 @@ depends  autoconf                                                          &&
 depends  automake                                                          &&
 
 #this is all for clanDisplay
-depends  jpeg                                                              &&
+depends  JPEG                                                              &&
 depends  libpng                                                            &&
 optional_depends  X11-LIBS                                                 \
                   "--with-x"                                               \

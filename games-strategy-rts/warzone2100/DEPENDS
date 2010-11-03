@@ -4,7 +4,7 @@ depends OPENGL                                   &&
 depends OPENAL                                   &&
 depends libpng                                   &&
 depends zlib                                     &&
-depends jpeg                                     &&
+depends JPEG                                     &&
 depends physfs                                   &&
 depends popt &&
 # remove the extra args once quesoglc is in stable

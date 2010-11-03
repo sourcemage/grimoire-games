@@ -2,7 +2,7 @@ depends  zlib      &&
 depends  autoconf  &&
 depends  automake  &&
 depends  libhermes &&
-depends  jpeg      &&
+depends  JPEG      &&
 depends  libpng    &&
 
 if  spell_ok  nvidia_driver;  then

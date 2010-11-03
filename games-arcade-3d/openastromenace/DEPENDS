@@ -3,4 +3,4 @@ depends OPENAL &&
 depends freealut &&
 depends libogg &&
 depends libvorbis &&
-depends jpeg 
+depends JPEG

@@ -1,3 +1,6 @@
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
+
 2010-03-20 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated url
 	* PRE_BUILD: don't apply the patch; link to jpeg library

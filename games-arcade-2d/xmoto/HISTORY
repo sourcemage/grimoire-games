@@ -1,3 +1,6 @@
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
+
 2010-05-20 Bor Kraljič <pyrobor@ver.si>
 	* compilefix.patch: removed, no longer needed
 	* DEPENDS: added libxdg-basedir

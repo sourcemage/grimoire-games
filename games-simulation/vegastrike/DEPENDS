@@ -11,7 +11,7 @@ depends  X11-LIBS                      &&
 depends  python                        &&
 depends  sdl                           &&
 depends  libpng                        &&
-depends  jpeg                          &&
+depends  JPEG                          &&
 depends  perl                          &&
 depends  OPENAL                        &&
 #--with-boost-system makes it fail here

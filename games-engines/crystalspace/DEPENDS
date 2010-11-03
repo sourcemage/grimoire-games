@@ -1,7 +1,7 @@
 #depends  jam     &&
 depends  zlib  '--with-z'                              &&
 depends  libpng '--with-png'                           &&
-depends  jpeg   '--with-jpeg'                          &&
+depends  JPEG   '--with-jpeg'                          &&
 depends  nasm                                          &&
 depends  X11-LIBS '--with-x'                           &&
 depends  OPENGL                                        &&

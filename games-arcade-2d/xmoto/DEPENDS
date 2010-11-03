@@ -8,7 +8,7 @@ depends sdl_ttf    &&
 depends sqlite     &&
 depends lua        &&
 depends ode        &&
-depends jpeg       &&
+depends JPEG       &&
 depends libpng     &&
 depends zlib       &&
 depends libxdg-basedir &&
