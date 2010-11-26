@@ -2,6 +2,6 @@ default_install &&
 
 message "Trying to install icon" &&
   install -d -v $INSTALL_ROOT/usr/share/games/icons &&
-  install -v -m 644 $SOURCE_DIRECTORY/images/wesnoth-icon-small.png \
+  install -v -m 644 $SOURCE_DIRECTORY/images/game-icon.png \
     $INSTALL_ROOT/usr/share/games/icons/wesnoth-icon.png &&
 message "End of installing icon"
