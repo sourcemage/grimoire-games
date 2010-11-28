@@ -1,12 +1,9 @@
            SPELL=freedroidrpg
-         VERSION=0.12.1
-          SOURCE=$SPELL-$VERSION.tar.bz2
-         SOURCE2=$SOURCE.sig
+         VERSION=0.14.1
+          SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE
-  SOURCE2_URL[0]=$SOURCEFORGE_URL/freedroid/$SOURCE2
-      SOURCE_GPG=ahuillet.gpg:$SOURCE2:UPSTREAM_KEY
-  SOURCE2_IGNORE=signature
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=GPL
         WEB_SITE=http://freedroid.sourceforge.net/
          ENTERED=20030818

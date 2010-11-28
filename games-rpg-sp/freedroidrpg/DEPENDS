@@ -1,8 +1,12 @@
-depends  sdl  &&
-depends  sdl_image  &&
-depends  sdl_net &&
-depends libogg &&
-depends libvorbis &&
+depends sdl         &&
+depends sdl_mixer   &&
+depends sdl_image   &&
+depends libogg      &&
+depends libvorbis   &&
+depends libice      &&
 depends xorg-server &&
 
-optional_depends gtk+ "" "--disable-editors" "for ItemEditor"
+optional_depends OPENGL                   \
+                 "--enable-opengl"        \
+                 "--disable-opengl"       \
+                 "Build OpenGL support?" 

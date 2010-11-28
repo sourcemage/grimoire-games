@@ -1,3 +1,10 @@
+2010-11-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.14.1
+	  removed upstream sig info as no longer available
+	* DEPENDS: added sdl_mixer, libice
+	  removed sdl_net, gtk+
+	  added optional depends OPENGL
+
 2009-04-25 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: changed X11-SERVER to the only provider left
 	* DETAILS: updated spell to 0.12.1
