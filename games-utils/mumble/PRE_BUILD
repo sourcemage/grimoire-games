@@ -1,0 +1,6 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+sedit s/qt_ja_JP.qm// ./src/mumble/mumble.pro &&
+sedit s/qt_ja_JP.qm// ./src/mumble11x/mumble11x.pro &&
+sedit /qt_ja_JP.qm/d ./src/mumble/mumble_qt.qrc &&
+sedit /qt_ja_JP.qm/d ./src/mumble11x/mumble_qt.qrc 

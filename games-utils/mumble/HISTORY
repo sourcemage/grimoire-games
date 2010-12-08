@@ -1,3 +1,6 @@
+2010-12-04 Bor Kraljič <pyrobor@ver.si>
+	* PRE_BUILD: remove qt_ja_JP.qm from build since qt4 doesn't install it
+
 2010-04-05 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: depends on qt4 sqlite support
 
