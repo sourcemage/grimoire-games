@@ -1,6 +1,6 @@
            SPELL=wesnoth
 if [[ $WESNOTH_DEVEL == y ]]; then
-         VERSION=1.9.2
+         VERSION=1.9.3
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-1.9.0}
      # this is always the hash for the $VERSION tarball
