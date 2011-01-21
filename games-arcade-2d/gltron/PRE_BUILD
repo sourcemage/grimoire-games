@@ -1,0 +1,8 @@
+default_pre_build &&
+cd "$SOURCE_DIRECTORY" &&
+
+sed -i "s/-lglut /-lglut -lGLU -lXi -lXmu /" configure &&
+sed -i "s/-lSDL /-lSDL -lpthread /" configure &&
+patch -p0 < "$SPELL_DIRECTORY/gltron-0.70-configure.patch" &&
+patch -p0 < "$SPELL_DIRECTORY/gltron-0.70-debian.patch" &&
+patch -p0 < "$SPELL_DIRECTORY/gltron-0.70-prototypes.patch"

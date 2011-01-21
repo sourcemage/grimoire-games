@@ -1,3 +1,8 @@
+2011-01-20 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD, DETAILS: bUILD_API=2 now
+	* PRE_BUILD, gltron-0.70-configure.patch, gltron-0.70-debian.patch,
+	  gltron-0.70-prototypes.patch: added patches from Gentoo and Debian
+
 2006-06-12 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: inserted BUILD_API=1 line
 
