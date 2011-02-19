@@ -1,3 +1,6 @@
+2011-02-19 Vlad Glagolev <stealth@sourcemage.org>
+	* games-board/ggoban: new spell, go game GTK+ interface
+
 2010-12-14 Ismael Luceno <ismael@sourcemage.org>
 	* gurus.gpg: added my key
 

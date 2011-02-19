@@ -1,0 +1,14 @@
+depends gtkmm2 &&
+depends intltool &&
+
+suggest_depends gnugo "" "" "for AI opponent support" &&
+
+optional_depends gettext \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "for Native Language Support" &&
+
+optional_depends doxygen \
+                 "--enable-doxygen-doc" \
+                 "--disable-doxygen-doc" \
+                 "to generate documentation"

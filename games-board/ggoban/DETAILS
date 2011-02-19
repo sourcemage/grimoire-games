@@ -1,0 +1,16 @@
+           SPELL=ggoban
+         VERSION=0.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+     SOURCE_HASH=sha512:52cde90ccf09a32e9cde6bebdcdde62f9b64a8a3a40a906b0676345bc5f93f9eada86283087b6c8755f66e1e3427e734d3b212ba4f47b72e46d4bdd17300f6ea
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=http://launchpad.net/$SPELL/trunk/$VERSION/+download/$SOURCE
+        WEB_SITE=http://launchpad.net/ggoban
+      LICENSE[0]=GPL
+         ENTERED=20110219
+           SHORT="go game GTK+ interface"
+cat << EOF
+ggoban is a project to create a gtk go interface.
+
+The go game (or weiqi in Chinese, baduk in Korean) is a ancient Chinese
+strategy game (4th century BC) now widely played all around the world.
+EOF
