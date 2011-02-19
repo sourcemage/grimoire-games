@@ -1,3 +1,8 @@
+2011-02-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.8; removed UPDATED; quoting paths;
+	  renewed descriptions; removed dead source url
+	* DEPENDS: added, to use optional dependencies
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

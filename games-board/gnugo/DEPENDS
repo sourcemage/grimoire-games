@@ -1,0 +1,9 @@
+optional_depends readline \
+                 "--with-readline" \
+                 "--without-readline" \
+                 "for command reading support" &&
+
+optional_depends ncurses \
+                 "--with-curses" \
+                 "--without-curses" \
+                 "for colored debugging output support"

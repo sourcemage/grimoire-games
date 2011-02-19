@@ -1,18 +1,17 @@
            SPELL=gnugo
-         VERSION=3.6
+         VERSION=3.8
           SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=$GNU_URL/$SPELL/$SOURCE
-   SOURCE_URL[1]=ftp://sporadic.stanford.edu/pub/$SOURCE
-        WEB_SITE=http://www.gnu.org/software/gnugo/gnugo.html
+        WEB_SITE=http://www.gnu.org/software/gnugo/
       LICENSE[0]=GPL
-     SOURCE_HASH=sha512:0ef07d97d307ba5763efd166ef5bf7740697a7005ef1dd3099e003a929d0b2f80d9caac1f282d0b111a3cc443c8a1c37b4d2da8cfef068233e3ea96bd32cb627
+     SOURCE_HASH=sha512:c17c01e317fa18882225cfa46838b55bb52a73ed36aa720f0cdfb6d2048fa69039832ca0544c3e98f831e92fe4478d991fc4f57e1cee7dadf243d2316fac9e67
          ENTERED=20020219
-         UPDATED=20031009
-           SHORT="gnugo is the game of Go."
+           SHORT="free program that plays the game of Go"
 cat << EOF
-This sofware is a program that plays the game of Go.  GNU Go has played
-thousands of games on the NNGS Go Server.  GNU Go is now also
-playing regulary on the Legend Go Server in Taiwan and the WING server
-in Japan.
+GNU Go has played thousands of games on the NNGS Go server. GNU Go is now also
+playing regularly on the Legend Go Server in Taiwan, on the WING server in
+Japan, and many volunteers run GNU Go clients on KGS. GNU Go has established
+itself as the leading non-commercial go program in the recent tournaments that
+it has taken part in.
 EOF
