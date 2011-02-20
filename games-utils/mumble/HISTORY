@@ -1,3 +1,6 @@
+2011-02-20 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 1.2.3
+
 2010-12-04 Bor Kraljič <pyrobor@ver.si>
 	* PRE_BUILD: remove qt_ja_JP.qm from build since qt4 doesn't install it
 
