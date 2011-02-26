@@ -11,4 +11,5 @@
 cd $BUILD_DIRECTORY    &&
 unpack_file            &&
 cd ${SOURCE_DIRECTORY} &&  
+patch -p1 < ${SCRIPT_DIRECTORY}/vegastrike-gcc.diff &&
 ./bootstrap-sh 
