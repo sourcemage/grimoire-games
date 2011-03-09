@@ -3,6 +3,7 @@
 	* PRE_BUILD: Setup permissions here, before copying
 	* INSTALL: Remove permission modifications of files (moved)
 	  downloadData.py is no more, remove
+	  Move '&&' before comment...
 
 2010-05-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: PATCHLEVEL++

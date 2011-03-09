@@ -7,7 +7,7 @@ do
 done &&
 
 ln -sf "$TRACK_ROOT/usr/share/games/pyfa/launch.py" "$INSTALL_ROOT/usr/games/pyfa" &&
-chgrp games "$INSTALL_ROOT/usr/games" # Always makes it root:root using castfs without this &&
+chgrp games "$INSTALL_ROOT/usr/games" && # Always makes it root:root using castfs without this
 
 # Create Desktop file
 cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
