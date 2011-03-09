@@ -2,6 +2,7 @@
 	* DETAILS: Updated to 0.9
 	* PRE_BUILD: Setup permissions here, before copying
 	* INSTALL: Remove permission modifications of files (moved)
+	  downloadData.py is no more, remove
 
 2010-05-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: PATCHLEVEL++
