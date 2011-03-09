@@ -1,5 +1,7 @@
 2011-03-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9
+	* PRE_BUILD: Setup permissions here, before copying
+	* INSTALL: Remove permission modifications of files (moved)
 
 2010-05-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: PATCHLEVEL++
