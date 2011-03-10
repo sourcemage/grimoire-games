@@ -1,12 +1,12 @@
            SPELL=simgear
-         VERSION=1.9.1
+         VERSION=2.0.0
           SOURCE=SimGear-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/SimGear-$VERSION
    SOURCE_URL[0]=ftp://ftp.simgear.org/pub/simgear/Source/$SOURCE
    SOURCE_URL[1]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.simgear.org/Source/$SOURCE
    SOURCE_URL[2]=ftp://ftp.ihg.uni-duisburg.de/Mirrors/ftp.simgear.org/Source/$SOURCE
-#     SOURCE_HASH=sha512:ef7c9425dc345ad24dd9698e373c23164b59953e02afc954fc8cadd7d01f50dfe599c491451a53ad3142e930493d1f7b2c0a799e555b2967e375ae4065e1a228
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=sha512:71c2ec01ab72c663bcffd273250c87d3bbe73cd8197c1483beb209b885960d6020e478c2a059b97710b732bd3506fe9c4b749d09d87378ddff13e29ec25beaca
+#      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922
       LICENSE[0]=LGPL
