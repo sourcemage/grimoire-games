@@ -1,0 +1,3 @@
+chgrp games "${SOURCE_DIRECTORY}"/src/gtkevemon &&
+default_install &&
+chgrp games "${INSTALL_ROOT}"/usr/games

@@ -4,6 +4,7 @@
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://gtkevemon.battleclinic.com/releases/$SOURCE
+      PATCHLEVEL=1
       LICENSE[0]=GPL
         WEB_SITE=http://gtkevemon.battleclinic.com/
          ENTERED=20100324

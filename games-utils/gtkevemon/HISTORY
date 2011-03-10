@@ -1,3 +1,9 @@
+2011-03-09 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: PATCHLEVEL++
+	* PRE_BUILD: Copy permissions as well
+	* INSTALL: Set permissions on binary
+	  Fix /usr/games perms after install
+
 2010-06-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.8
 	  Use $SOURCE in SOURCE_URL
