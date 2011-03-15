@@ -17,5 +17,5 @@ Comment=EVE-Online ship fitting tool
 Exec=pyfa
 Type=Application
 Icon=$INSTALL_ROOT/usr/share/games/$SPELL/gui/icons/cpu.png
-Categories=Games;Utilities
+Categories=Game;Utilities
 EOF

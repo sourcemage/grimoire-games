@@ -1,3 +1,7 @@
+2011-03-14 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: PATCHLEVEL++
+	* INSTALL: Proper group name is "Game" (at least for GNOME)
+
 2011-03-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.9
 	* PRE_BUILD: Setup permissions here, before copying
