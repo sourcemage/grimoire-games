@@ -1,3 +1,6 @@
+2011-08-19 Bor Kraljič <pyrobor@ver.si>
+	* DEPENDS: seems that there is no more support for libmikmod in sdl_mixer 
+
 2008-02-26 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DEPENDS: added a sub-dependency on sdl_mixer with libmikmod enabled
 
