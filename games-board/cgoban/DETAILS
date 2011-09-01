@@ -1,10 +1,10 @@
            SPELL=cgoban
-         VERSION=1.9.12
+         VERSION=1.9.14
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.igoweb.org/~wms/comp/cgoban/$SOURCE
-        WEB_SITE=http://www.igoweb.org/~wms/comp/cgoban
-     SOURCE_HASH=sha512:3abbad0a8768672d17ac0d21248c078145f7a09b4472d70964a162cb18fd47d8b5b6439247891055dac9c9a27c8f5428bd7857c792f0a959371a69de8934beb4
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}1/$SOURCE
+        WEB_SITE=http://${SPELL}1.sourceforge.net/
+     SOURCE_HASH=sha512:0a471845dbfb3029c2371ba91375aa19ca23591f355452d87eeef2ed56e948a60aedb21923658e74923f16b40ce00f5d74f40f44facf93695d20615b874b354c
       LICENSE[0]=GPL
          ENTERED=20020219
          UPDATED=20020410
@@ -18,7 +18,7 @@ CGoban ("Complete Goban") provides a large set of go-related services for Unix a
     - Chinese rules have a true Superko rule.
     - Japanese rules correctly recognize seki and award no points.
     - Japanese rules let you locally resolve disputes at the end of the game.
-  * Edit and view SGF files. CGoban provides full fonctionality for editing 
+  * Edit and view SGF files. CGoban provides full fonctionality for editing
     and viewing SGF files.
   * Connect to a go server over internet.  CGoban can connect to NNGS or
     IGS and gives a convennient graphical user interface to the server.
