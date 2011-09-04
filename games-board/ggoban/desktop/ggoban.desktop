@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ggoban
+Comment=Play Go
+Exec=ggoban
+Icon=ggoban
+Terminal=false
+Categories=Application;Game;
