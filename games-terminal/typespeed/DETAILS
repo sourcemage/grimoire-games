@@ -1,12 +1,12 @@
            SPELL=typespeed
-         VERSION=0.4.4
+         VERSION=0.6.5
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://ls.purkki.org/$SPELL/$SOURCE
-        WEB_SITE=http://ls.purkki.org/$SPELL
+   SOURCE_URL[0]=http://typespeed.sourceforge.net/$SOURCE
+        WEB_SITE=http://typespeed.sourceforge.net
          ENTERED=20040814
          UPDATED=20040814
-     SOURCE_HASH=sha512:8f3814e75d8cd6d32bf7dbd5742957bf420d8ca094a00d3fb5b54bef155a2c4a89f65cf572916393483846dd58dd99d45c864efcb3246681c2719be696799ef6
+     SOURCE_HASH=sha512:cf3a8cdeb5fb1ee81bd5cf50d6b2aca1e7331b0bfde518c38050abae35ca617fbeed5bf2a37830a7568712ab71920f60c89197317a2721ae8c89829b0eede190
       LICENSE[0]=GPL
            SHORT="Test your typing speed, and get your fingers' CPS."
 cat << EOF
