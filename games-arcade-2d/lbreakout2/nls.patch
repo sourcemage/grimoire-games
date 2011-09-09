@@ -1,0 +1,26 @@
+--- server/server.c~	2011-03-08 01:11:10.000000000 +0530
++++ server/server.c	2011-09-09 22:17:17.000000000 +0530
+@@ -21,6 +21,10 @@
+ #include "server.h"
+ #include "server_game.h"
+ 
++#ifdef ENABLE_NLS
++#include <locale.h>
++#endif
++
+ /***** EXTERNAL VARIABLES **************************************************/
+ 
+ extern int net_buffer_cur_size, msg_read_pos;
+--- client/main.c~	2011-03-08 16:44:24.000000000 +0530
++++ client/main.c	2011-09-09 22:17:34.000000000 +0530
+@@ -41,6 +41,10 @@
+ 
+ #define CHART_FILE_NAME "lbreakout2.hscr"
+ 
++#ifdef ENABLE_NLS
++#include <locale.h>
++#endif
++
+ extern int stk_quit_request;
+ extern SDL_Surface *stk_display;
+ extern Config config;
