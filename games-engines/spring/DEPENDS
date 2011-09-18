@@ -1,14 +1,14 @@
-depends  -sub "SERIALIZATION THREAD REGEX"  boost  &&
+depends  -sub "PROGRAM_OPTIONS THREAD REGEX SYSTEM SIGNALS"  boost  &&
+depends  cmake                                     &&
 depends  devil                                     &&
 depends  freetype2                                 &&
 depends  glew                                      &&
 depends  jdk6-bin   ''   'z-rejected'              &&
 depends  libogg                                    &&
 depends  libvorbis                                 &&
-depends  -sub SNAPSHOT  openal                     &&
+depends  openal-soft                               &&
 depends  OPENGL                                    &&
 depends  python                                    &&
-depends  scons                                     &&
 depends  sdl                                       &&
-depends  zip                                       &&
+depends  p7zip                                     &&
 depends  zlib

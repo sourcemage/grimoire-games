@@ -1,3 +1,0 @@
-scons  install                                           &&
-mkdir -p $INSTALL_ROOT/etc/spring                        &&
-echo '$HOME/.spring' > $INSTALL_ROOT/etc/spring/datadir

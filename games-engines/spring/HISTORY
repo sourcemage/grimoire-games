@@ -1,3 +1,12 @@
+2011-09-18 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 0.82.7.1
+	  Changed SOURCE_URL[0] extension, Fixed SOURCE_URL[0]
+	* gcc46.patch, awk_java.patch: added patches to fix build from Arch Linux
+	* PRE_BUILD: removed edit of scons build system & apply the patches
+	* DEPENDS: updated dependencies
+	* BUILD: scons is history (cmake is now used)
+	* INSTALL: removed no longer needed (default install now works)
+
 2008-04-23 Alexander Tsamutali <astsmtl@gmail.com>
 	* DEPENDS: sub-depends on openal SNAPSHOT
 	* BUILD: changed 'datadir' to /usr/share/games/spring

@@ -1,12 +1,11 @@
            SPELL=spring
-         VERSION=0.76b1
-      PATCHLEVEL=1
-          SOURCE=${SPELL}_${VERSION}_src.tar.bz2
+         VERSION=0.82.7.1
+          SOURCE=${SPELL}_${VERSION}_src.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}_${VERSION}
-   SOURCE_URL[0]=http://spring.clan-sy.com/dl/$SOURCE
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/springrts/springrts/$SPELL-$VERSION/$SOURCE
+     SOURCE_HASH=sha512:aea04e42aa5c90a9b85033d904a64a6e977cf6088eb448dc5067670e864b78330ed608f0e44bda35a30ccfc9605af7c4a72f76c4b2800662d23ac8bb7a92c116
       LICENSE[0]=GPL
-        WEB_SITE=http://spring.clan-sy.com/
+        WEB_SITE=http://springrts.com/
          ENTERED=20080105
            SHORT='Open source real-time strategy engine'
             DOCS="$DOCS LICENSE.html README.html"
