@@ -1,3 +1,6 @@
+2011-10-03 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS, DETAILS, BUILD: updated spell to 0.5.3
+
 2010-03-27 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS, DETAILS: spell created
 

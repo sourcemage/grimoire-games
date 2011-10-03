@@ -1,9 +1,9 @@
            SPELL=tmw
-         VERSION=0.0.29.1
-          SOURCE="${SPELL}-${VERSION}.tar.gz"
-   SOURCE_URL[0]="$SOURCEFORGE_URL/themanaworld/${SOURCE}"
-     SOURCE_HASH=sha512:89b95a8ef43487dc32a137b02e2beb63b47dfd7f5c090322a41bc29c258fadcc67724331991c3ab59a45657d6c54024f668471c4dae4ec657edddfc0c3c4d98b
-SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+         VERSION=0.5.3
+          SOURCE="mana-${VERSION}.tar.gz"
+   SOURCE_URL[0]="http://manasource.org/files/$SOURCE"
+     SOURCE_HASH=sha512:44a7373a1a60c07ebdbbc2e6b2551939e2ffb78b066461c06fcd114f36f35da2cb0e47d70ddc9fd214cdbeb25f77954bccb7ef091fbd61eb4c36da2925d5f86a
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mana-${VERSION}"
         WEB_SITE="http://themanaworld.org"
       LICENSE[0]=GPLv2
          ENTERED=20100327
