@@ -2,7 +2,7 @@ depends  GLUT       &&
 depends  tcl        &&
 depends  sdl_mixer  &&
 
-optional_depends  nvidia_headers  \
+optional_depends  nvidia_driver  \
                   ""              \
                   ""              \
                   "for NVIDIA specific extensions to OpenGL (suitable ONLY for NVIDIA cards)"
