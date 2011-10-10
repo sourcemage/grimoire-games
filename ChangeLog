@@ -1,6 +1,7 @@
 2011-10-10 Bor Kraljič <pyrobor@ver.si>
 	* games-ggz/ggz-kde-client: removed, no longer supported (kde3 will be removed)
 	* games-ggz/ggz-kde-games: removed, no longer supported (kde3 will be removed)
+	* games-rpg-mp/kmuddy: removed, no longer supported (kde3 will be removed)
 
 2011-02-19 Vlad Glagolev <stealth@sourcemage.org>
 	* games-board/ggoban: new spell, go game GTK+ interface
