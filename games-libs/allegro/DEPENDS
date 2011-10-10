@@ -1,5 +1,4 @@
 optional_depends svgalib "--enable-svgalib=yes" "--enable-svgalib=no" "Enable svgalib support"
 optional_depends jack "--enable-jackdigi=yes" "--enable-jackdigi=no" "Enable JACK support"
-optional_depends arts "--enable-artsdigi=yes" "--enable-artsdigi=no" "Enable arts support"
 optional_depends alsa-lib "--enable-alsadigi=yes" "--enable-alsadigi=no" "Enable alsa support"
 optional_depends esound "--enable-esddigi=yes" "--enable-esddigi=no" "Enable esd support"
