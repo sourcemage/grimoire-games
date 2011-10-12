@@ -1,5 +1,6 @@
 2011-10-12 Bor Kraljič <pyrobor@ver.si>
 	* games-emulators/kaf: removed, no longer supported (qt-x11 was removed)
+	* games-unmaintained/ksirk: removed, no longer supported (kde3 was removed)
 
 2011-10-10 Bor Kraljič <pyrobor@ver.si>
 	* games-ggz/ggz-kde-client: removed, no longer supported (kde3 will be removed)
