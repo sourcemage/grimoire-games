@@ -6,7 +6,7 @@ optional_depends  alsa-lib                                                      
                   ""                                                                         \
                   "--disable-alsa"                                                           \
                   "Enable alsa sound support"                                                &&
-optional_depends  mpeg2dec                                                                   \
+optional_depends  libmpeg2                                                                   \
                   ""                                                                         \
                   "--disable-mpeg2"                                                          \
                   "Enable mpeg2 decoding - for example Broken Sword needs it for cutscenes"  &&
