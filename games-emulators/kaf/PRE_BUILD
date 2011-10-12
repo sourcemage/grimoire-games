@@ -1,4 +1,0 @@
-default_pre_build      &&
-cd  $SOURCE_DIRECTORY  &&
-patch  -p1  <  $SCRIPT_DIRECTORY/path.patch &&
-patch  -p1  <  $SCRIPT_DIRECTORY/qt.patch
