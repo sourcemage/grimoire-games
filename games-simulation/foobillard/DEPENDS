@@ -13,7 +13,7 @@ optional_depends  GLUT                                        \
                   ""                                          \
                   "to use glut instead of SDL for windowing"  &&
 
-optional_depends  nvidia_headers                                \
+optional_depends  nvidia_driver                                \
                   "--enable-bumpref"                            \
                   "--enable-bumpref=no --enable-nvidia=no"      \
                   "to enable NVIDIA specific extensions to GL" 
