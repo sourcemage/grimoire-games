@@ -5,9 +5,7 @@ depends  libhermes &&
 depends  JPEG      &&
 depends  libpng    &&
 
-if  spell_ok  nvidia_driver;  then
-  depends nvidia_headers
-fi  &&
+depends nvidia_driver &&
 
 optional_depends  mikmod                          \
                   "--enable-mikmod"               \
