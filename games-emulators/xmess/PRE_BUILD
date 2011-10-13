@@ -60,11 +60,6 @@ if [[  "$XMESS_LIRC"  ==  "y" ]];  then
 fi                                                                       &&
 
 ##################Sound output###############################
-if [[  "$XMESS_ARTS"  ==  "y" ]];  then
-  sedit "s/# SOUND_ARTS_TEIRA = 1/SOUND_ARTS_TEIRA = 1/" makefile.unix
-  sedit "s/# SOUND_ARTS_SMOTEK = 1/SOUND_ARTS_SMOTEK = 1/" makefile.unix
-fi                                                                       &&
-
 if [[  "$XMESS_SOUND_ESOUND"  ==  "y" ]];  then
   sedit "s/# SOUND_ESOUND = 1/SOUND_ESOUND = 1/" makefile.unix
 fi                                                                       &&

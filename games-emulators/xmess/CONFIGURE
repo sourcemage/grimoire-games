@@ -34,9 +34,6 @@ config_query XMESS_LIRC                                                         
   "add LIRC support to xmame."                                                                  \
              n                                                                                  &&
 
-config_query XMESS_ARTS                                                                         \
-  "ArTs Support"                                                                                \
-             n                                                                                  &&
 config_query XMESS_SOUND_ESOUND                                                                 \
   "ESound Support"                                                                              \
              n                                                                                  &&

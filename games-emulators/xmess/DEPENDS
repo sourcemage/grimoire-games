@@ -13,10 +13,6 @@ if [[  "$XMESS_LIRC"  ==  "y" ]];  then
   depends lirc
 fi                                                                       &&
 
-if [[  "$XMESS_ARTS"  ==  "y" ]];  then
-  depends arts
-fi                                                                       &&
-
 if [[  "$XMESS_SOUND_ESOUND"  ==  "y" ]];  then
   depends esound
 fi                                                                       &&
