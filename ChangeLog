@@ -1,6 +1,7 @@
 2011-10-13 Bor Kraljič <pyrobor@ver.si>
 	* games-arcade-2d/cuyo: removed, no longer supported (qt-x11 was removed)
 	* games-board/mahjongg3d: removed, no longer supported (qt-x11 was removed)
+	* games-utils/lotrmap: removed, no longer supported (qt-x11 was removed)
 
 2011-10-12 Bor Kraljič <pyrobor@ver.si>
 	* games-emulators/kaf: removed, no longer supported (qt-x11 was removed)
