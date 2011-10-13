@@ -1,3 +1,0 @@
-#!/bin/sh
-cd  /usr/share/mahjongg3d  &&
-exec  ./mahjongg3d
