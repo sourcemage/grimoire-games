@@ -16,10 +16,6 @@ if [[ "$Q2_GLX" == "y" ]]
 then
 depends  OPENGL
 fi                                      &&
-if [[ "$Q2_ARTS" == "y" ]]
-then
-depends  arts
-fi                                      &&
 if [[ "$Q2_AALIB" == "y" ]]
 then
 depends aalib

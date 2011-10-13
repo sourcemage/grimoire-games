@@ -12,8 +12,6 @@ config_query_option Q2_SDLGL "Do you want SDL OpenGL support?" y       \
                     "BUILD_SDLGL=YES" "BUILD_SDLGL=NO"                 &&
 config_query_option Q2_JOYSTICK "Do you want joystick support?" y      \
                     "BUILD_JOYSTICK=YES" "BUILD_JOYSTICK=NO"           &&
-config_query_option Q2_ARTS "Do you want ARTS support?" n              \
-                    "BUILD_ARTS=YES" "BUILD_ARTS=NO"                   &&
 config_query_option Q2_AALIB "Do you want AALIB support?" y            \
                     "BUILD_AA=YES" "BUILD_AA=NO"                       &&
 config_query_option Q2_QMAX "Do you want QMAX support?" y              \

@@ -1,3 +1,6 @@
+2011-10-13 Bor Kraljič <pyrobor@ver.si>
+	* PRE_BUILD,DEPENDS,CONFIGURE: removed arts support
+
 2007-07-01 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 0.16.2
 

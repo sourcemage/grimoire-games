@@ -25,10 +25,6 @@ if [[ "$Q2_GLX" == "n" ]]
 then
 sedit "s/BUILD_GLX=YES/BUILD_GLX=NO/g" Makefile
 fi                                                                          &&
-if [[ "$Q2_ARTS" == "y" ]]
-then
-sedit "s/BUILD_ARTS=NO/BUILD_ARTS=YES/g" Makefile
-fi                                                                          &&
 if [[ "$Q2_AALIB" == "n" ]]
 then
 sedit "s/BUILD_AA=YES/BUILD_AA=NO/g" Makefile
