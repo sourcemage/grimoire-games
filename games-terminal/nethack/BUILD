@@ -19,21 +19,6 @@ elif  [  "$NETHACK_GUI"  ==  "x11"  ];  then
   sedit  "s/^VARDATND =/& x11tiles NetHack.ad pet_mark.xbm rip.xpm/g"        \
          Makefile
 
-elif  [  "$NETHACK_GUI"  ==  "qt-x11"  ];  then 
-  echo "BUILDING for QT"                                         &&
-  sedit  "s/\/\* #define QT_GRAPHICS \*\//#define QT_GRAPHICS/"  \
-         include/config.h                                        &&
-
-  # use Xpm for effects
-  sedit "s:/\* # define USE_XPM \*/:# define USE_XPM:"  include/config.h  &&
-  sedit "s:#LD=g++:LD=g++:g" src/Makefile                                   &&
-  sedit 's:WINSRC = \$(WINTTYSRC):& \$(WINQTSRC):'  src/Makefile            &&
-  sedit 's:WINOBJ = \$(WINTTYOBJ):& \$(WINQTOBJ):'  src/Makefile            &&
-  sedit 's:WINLIB = \$(WINTTYLIB):& \$(WINQTLIB):'  src/Makefile            &&
-  export QTDIR=/usr                                                         &&
-  sedit "s:-I\$(QTDIR)/include:-I\$(QTDIR)/include/qt:g" src/Makefile    &&
-  sedit "s:^VARDATND =:& x11tiles NetHack.ad pet_mark.xbm rip.xpm nhsplash.xpm:" Makefile 
-
 elif  [  "$NETHACK_GUI"  ==  "gnome"  ];  then
   echo "BUILDING for GNOME"                                                  &&
   sedit  "s:/\* #define GNOME_GRAPHICS \*/:#define GNOME_GRAPHICS:"        \

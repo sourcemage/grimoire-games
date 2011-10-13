@@ -2,8 +2,6 @@ depends  gzip  &&
 
 if    [  "$NETHACK_GUI"  ==  "x11"     ];  then
   depends  X11-SERVER
-elif  [  "$NETHACK_GUI"  ==  "qt-x11"  ];  then
-  depends  qt-x11
 elif  [  "$NETHACK_GUI"  ==  "gnome"    ];  then
   depends  gnome-libs
 else

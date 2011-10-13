@@ -1,2 +1,2 @@
 config_query_list  NETHACK_GUI  "Use which GUI for nethack?"  \
-                   tty  qt-x11  gnome  x11
+                   tty  gnome  x11
