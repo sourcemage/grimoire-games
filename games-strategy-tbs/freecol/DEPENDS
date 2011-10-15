@@ -1,7 +1,7 @@
 depends  ant   &&
 depends  JDK5  &&
 
-optional_depends  tetex                  \
+optional_depends  texlive                  \
                   '--with-docs'          \
                   ''                     \
                   'build documentation'
