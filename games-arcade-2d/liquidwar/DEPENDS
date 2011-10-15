@@ -1,5 +1,5 @@
 depends  allegro  &&
-optional_depends  tetex                                 \
+optional_depends  texlive                                 \
                   ""                                    \
                   "--disable-doc-ps --disable-doc-pdf"  \
                   "For additional document formats"
