@@ -17,7 +17,7 @@ optional_depends  pysqlite                    \
                   '--disable-sqlite'          \
                   'for user profile support'  &&
 
-optional_depends  tetex                                \
+optional_depends  texlive                                \
                   ''                                   \
                   ''                                   \
                   'for generating HTML documentation'

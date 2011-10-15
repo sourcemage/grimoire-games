@@ -1,3 +1,6 @@
+2011-10-15 Bor Kraljič <pyrobor@ver.si>
+	* DEPENDS: switch from tetex to texlive
+
 2009-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8.4.12
 
