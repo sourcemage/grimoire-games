@@ -1,8 +1,8 @@
            SPELL=desmume
-         VERSION=0.9.5
+         VERSION=0.9.7
           SOURCE="${SPELL}-${VERSION}.tar.gz"
    SOURCE_URL[0]=http://ufpr.dl.sourceforge.net/sourceforge/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:f21258a92fc68d8fe003588c05043d0ce7381b9227742735e3061dfc3fe469cd5bd74e68103501b89c6c9bd67c6ecdec0d356c9fa6db305a5eb251f44fb3241a
+     SOURCE_HASH=sha512:992713db162331e1a9de1ee6981b58b456022a1928cc0dc15d62c69d5baf92d5264c2700443ff228924dba9cd6fc4b5dbbf7a69c9be016936b5b8c2770268ec9
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://desmume.org"
       LICENSE[0]=GPL
