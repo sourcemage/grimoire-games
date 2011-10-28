@@ -1,0 +1,11 @@
+--- include/dos_inc.h.orig
++++ include/dos_inc.h
+@@ -28,6 +28,8 @@
+ #include "mem.h"
+ #endif
+ 
++#include <stddef.h>
++
+ #ifdef _MSC_VER
+ #pragma pack (1)
+ #endif

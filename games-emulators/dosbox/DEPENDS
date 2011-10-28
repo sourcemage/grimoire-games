@@ -1,5 +1,5 @@
 depends  sdl                                                          &&
-depends  g++                                                          &&
+depends  -sub CXX  gcc                                                &&
 optional_depends  ncurses                                             \
                   "--enable-debug"                                    \
                   "--disable-debug"                                   \
