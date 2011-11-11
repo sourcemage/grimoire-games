@@ -1,12 +1,11 @@
 local I_DIR="$INSTALL_ROOT/usr/share/games/$SPELL" &&
 mkdir -p "$I_DIR" &&
+chgrp games "$I_DIR" &&
 
-for i in gui model buildNeededIcons.py launch.py pyfa.ico
-do
-  cp -arv "$SOURCE_DIRECTORY/$i" "$I_DIR"
+for i in eos gui icons service staticdata config.py info.py pyfa.py; do
+  cp -arv $SOURCE_DIRECTORY/$i "$I_DIR/"
 done &&
 
-ln -sf "$TRACK_ROOT/usr/share/games/pyfa/launch.py" "$INSTALL_ROOT/usr/games/pyfa" &&
 chgrp games "$INSTALL_ROOT/usr/games" && # Always makes it root:root using castfs without this
 
 # Create Desktop file
@@ -15,7 +14,19 @@ cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
 Name=GTK Fitting Assistant
 Comment=EVE-Online ship fitting tool
 Exec=pyfa
+Path=$INSTALL_ROOT/usr/share/games/pyfa
 Type=Application
-Icon=$INSTALL_ROOT/usr/share/games/$SPELL/gui/icons/cpu.png
+Icon=$INSTALL_ROOT/usr/share/games/$SPELL/icons/pyfa.png
 Categories=Game;Utilities
 EOF
+
+# Script needs to be run in working directory
+# See http://trac.evefit.org/ticket/391
+cat << EOF > $INSTALL_ROOT/usr/games/pyfa
+#!/bin/sh
+cd $INSTALL_ROOT/usr/share/games/pyfa/ &&
+./pyfa.py
+EOF
+
+chgrp games $INSTALL_ROOT/usr/games/pyfa &&
+chmod g+rx $INSTALL_ROOT/usr/games/pyfa

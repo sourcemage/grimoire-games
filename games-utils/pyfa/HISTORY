@@ -1,3 +1,15 @@
+2011-11-10 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.0.6-incarna
+	  SOURCE is now .bz2
+	  Hosting moved from SourceForge to www.evefit.org
+	  Updated DOCS for new filenames
+	* DEPENDS: Depends on wxpython
+	  Depends on wxgtk built with GIZMOS
+	* INSTALL: launch.py renamed to pyfa.py
+	  New directory structure
+	  Use pyfa.ico
+	* FINAL: Removed, this step is no longer used
+
 2011-03-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: PATCHLEVEL++
 	* INSTALL: Proper group name is "Game" (at least for GNOME)
