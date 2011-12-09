@@ -1,5 +1,5 @@
            SPELL=pyfa
-         VERSION=1.0.6-incarna
+         VERSION=1.1-crucible
           SOURCE=$SPELL-$VERSION-src.tar.bz2
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
