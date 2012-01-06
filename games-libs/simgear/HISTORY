@@ -1,3 +1,8 @@
+2012-01-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 2.4.0
+	* PRE_BUILD, INSTALL, singleton.hpp: use header file from older
+	  version of boost to work around compile error
+
 2011-03-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 2.0.0
 	* DEPENDS: openal -> OPENAL, added missing dependency on zlib

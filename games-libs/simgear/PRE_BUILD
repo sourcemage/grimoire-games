@@ -1,0 +1,5 @@
+default_pre_build      &&
+cd ${SOURCE_DIRECTORY} &&
+cp ${SCRIPT_DIRECTORY}/singleton.hpp ${SOURCE_DIRECTORY}/simgear/structure/ &&
+sedit 's:<boost/pool/detail/singleton.hpp>:<simgear/structure/singleton.hpp>:' \
+      ${SOURCE_DIRECTORY}/simgear/structure/Singleton.hxx
