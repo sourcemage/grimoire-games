@@ -1,5 +1,6 @@
 depends  simgear	&&
 depends  fgfs-base	&&
+depends  subversion &&
 
 if [[ "${GRAPHIC_LIB}" == "sdl" ]]
 then
