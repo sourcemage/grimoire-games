@@ -1,0 +1,23 @@
+install -vm 755 -d "$INSTALL_ROOT/usr/share/games/$SPELL" &&
+
+cp -av data "$INSTALL_ROOT/usr/share/games/$SPELL" &&
+for i in source/darkplaces/darkplaces-{glx,sdl,dedicated}; do
+  install -vm 755 "$i" "$INSTALL_ROOT/usr/share/games/$SPELL"
+done &&
+
+install -vm 755 -d "$INSTALL_ROOT/usr/share/doc/$SPELL" &&
+
+cp -av Docs/* "$INSTALL_ROOT/usr/share/doc/$SPELL" &&
+install -vm 644 source/darkplaces/darkplaces.txt \
+                "$INSTALL_ROOT/usr/share/doc/$SPELL" &&
+
+install -vm 750 -d -o root -g games "$INSTALL_ROOT/usr/games" &&
+
+for i in "$SPELL_DIRECTORY"/xonotic-{glx,sdl,dedicated}; do
+  install -vm 755 "$i" "$INSTALL_ROOT/usr/games"
+done &&
+
+install -vm 755 -d "$INSTALL_ROOT/usr/share/pixmaps" &&
+
+install -vm 644 "$SPELL_DIRECTORY/xonotic48x48.png" \
+                "$INSTALL_ROOT/usr/share/pixmaps"

@@ -1,0 +1,3 @@
+2012-01-09 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, {PRE_,}BUILD, DEPENDS, INSTALL, xonotic-{glx,sdl,dedicated},
+	  xonotic48x48.png: spell created

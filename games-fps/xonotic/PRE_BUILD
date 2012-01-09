@@ -1,0 +1,6 @@
+verify_file '' &&
+cd "$BUILD_DIRECTORY" &&
+
+unzip "$SOURCE_CACHE/$SOURCE" Xonotic/{Docs,source/darkplaces,data}/* &&
+
+cd "$SOURCE_DIRECTORY"

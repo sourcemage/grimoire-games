@@ -1,3 +1,7 @@
+2012-01-09 Vlad Glagolev <stealth@sourcemage.org>
+	* games-fps/xonotic: new spell, free, open source, ultra-fast
+	  first-person shooter (successful fork of Nexuiz)
+
 2011-10-13 Bor Kraljič <pyrobor@ver.si>
 	* games-arcade-2d/cuyo: removed, no longer supported (qt-x11 was removed)
 	* games-board/mahjongg3d: removed, no longer supported (qt-x11 was removed)

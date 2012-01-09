@@ -1,0 +1,23 @@
+# directly linked from binaries
+depends JPEG &&
+depends libx11 &&
+depends libxau &&
+depends libxdmcp &&
+depends libxext &&
+depends libxpm &&
+depends libxxf86dga &&
+depends libxxf86vm &&
+depends alsa-lib &&
+depends sdl &&
+
+# dynamically loaded on start
+depends OPENGL &&
+depends libpng &&
+depends curl &&
+depends libogg &&
+depends libvorbis &&
+depends libtheora &&
+depends libmodplug &&
+
+# needed for extraction
+depends unzip

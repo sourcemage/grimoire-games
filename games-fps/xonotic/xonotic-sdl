@@ -1,0 +1,1 @@
+exec /usr/share/games/xonotic/darkplaces-sdl -basedir /usr/share/games/xonotic
