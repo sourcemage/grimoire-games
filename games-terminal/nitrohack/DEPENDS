@@ -1,0 +1,4 @@
+depends cmake      &&
+depends jansson    &&
+depends postgresql &&
+depends -sub UTF8 ncurses

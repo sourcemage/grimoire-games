@@ -1,3 +1,7 @@
+2012-01-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-terminal/nitrohack: new spell, a nethack fork with improved user
+	  interface
+
 2012-01-09 Vlad Glagolev <stealth@sourcemage.org>
 	* games-fps/xonotic: new spell, free, open source, ultra-fast
 	  first-person shooter (successful fork of Nexuiz)

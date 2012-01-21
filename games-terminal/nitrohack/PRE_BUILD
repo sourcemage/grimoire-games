@@ -1,0 +1,4 @@
+default_pre_build      &&
+cd ${SOURCE_DIRECTORY} &&
+sedit 's:ncursesw/curses\.h:curses.h:g' nitrohack/include/nhcurses.h &&
+sedit 's:DESTINATION ${BINDIR}:DESTINATION ${LIBDIR}:' libnitrohack_client/CMakeLists.txt

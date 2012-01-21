@@ -1,0 +1,27 @@
+           SPELL=nitrohack
+         VERSION=4.0.0
+          SOURCE="${SPELL}-source-${VERSION}.tar.bz2"
+   SOURCE_URL[0]=http://${SPELL}.org/download/${SOURCE}
+     SOURCE_HASH=sha512:deac60ce5bbe076e80d5ce68f13d6629fbe2055034206e710ea2c4024dd47e2ae42700f4cea2ea27739f335a0c3bc2eab8afd1854b6916c954b934ed17ee4907
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/NitroHack-${VERSION}"
+        WEB_SITE="http://nitrohack.org"
+      LICENSE[0]=NETHACK
+         ENTERED=20120121
+           SHORT="a modernized, network-capable fork of the classic roguelike game NetHack"
+cat << EOF
+NitroHack is a modernized, network-capable fork of the classic roguelike
+game NetHack.
+
+NitroHack is a single player dungeon exploration game. Unlike many other
+Dungeons & Dragons-inspired games, the emphasis in NitroHack is on discovering
+the detail of the dungeon and not simply killing everything in sight -
+in fact, killing everything in sight is a good way to die quickly.
+
+Each game presents a different landscape - the random number generator
+provides an essentially unlimited number of variations of the dungeon and
+its denizens to be discovered by the player in one of a number of characters:
+you can pick your race, your role, and your gender.
+
+The ultimate goal of the game is to ascend the character. This is a very
+difficult feat which many players never achieve.
+EOF
