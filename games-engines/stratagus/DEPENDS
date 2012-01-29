@@ -1,39 +1,37 @@
-depends  lua     &&
+depends  OPENGL  &&
+depends  libice  &&
 depends  libpng  &&
+depends  libsm   &&
+depends  libx11  &&
+depends  libxext &&
+depends  lua51   &&
 depends  sdl     &&
+depends  sqlite  &&
+depends  tolua++ &&
 depends  zlib    &&
+depends -sub CXX gcc &&
 
-optional_depends  OPENGL                             \
-                  "--with-opengl"                    \
-                  "--without-opengl"                 \
-                  "for OpenGL support\(advisable\)"  &&
+optional_depends  libvorbis                         \
+                  "-DWITH_OGGVORBIS=ON"             \
+                  "-DWITH_OGGVORBIS=OFF"            \
+                  "for vorbis support\(recommended\)"  &&
 
-optional_depends  libogg                            \
-                  "--with-ogg"                      \
-                  "--without-ogg"                   \
-                  "for ogg support\(recommended\)"  &&
-
-optional_depends  libvorbis                             \
-                  "--with-ogg"                          \
-                  "--without-ogg"                       \
-                  "for vorbiss support\(recommended\)"  &&
+optional_depends  libtheora                            \
+                  "-DWITH_THEORA=ON"                   \
+                  "-DWITH_THEORA=OFF"                  \
+                  "for theora support\(recommended\)"  &&
 
 optional_depends  libmikmod                            \
-                  "--with-mikmod"                      \
-                  "--without-mikmod"                   \
+                  "-DWITH_MIKMOD=ON"                   \
+                  "-DWITH_MIKMOD=OFF"                  \
                   "for mikmod support\(recommended\)"  &&
 
 optional_depends  bzip2                \
-                  "--with-bzip2"       \
-                  "--without-bzip2"    \
+                  "-DWITH_BZIP2=ON"    \
+                  "-DWITH_BZIP2=OFF"   \
                   "for bzip2 support"  &&
 
-optional_depends  flac                                          \
-                  "--with-flac"                                 \
-                  "--without-flac"                              \
-                  "for flac support\(not sure if this works\)"  &&
-
-optional_depends  libmad             \
-                  "--with-mad"       \
-                  "--without-mad"    \
-                  "for mad support"
+optional_depends  libmng             \
+                  "-DWITH_MNG=ON"    \
+                  "-DWITH_MNG=OFF"   \
+                  "for mng support"

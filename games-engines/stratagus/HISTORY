@@ -1,3 +1,9 @@
+2012-01-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 2.2.6
+	* BUILD: switched to cmake
+	* DEPENDS: corrected dependencies, switched to cmake
+	* PRE_BUILD, stratagus-2.2.4-fhs.patch: removed
+
 2008-02-14 Dale E. Edmons <linuxfan@sourcemage.org>
 	* stratagus-2.2.4-lhs.patch: renamed
 	* stratagus-2.2.4-fhs.patch: new name

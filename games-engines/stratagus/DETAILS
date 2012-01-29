@@ -1,11 +1,11 @@
            SPELL=stratagus
-         VERSION=2.2.4
-          SOURCE=$SPELL-$VERSION-src.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/stratagus/$SOURCE
+         VERSION=2.2.6
+          SOURCE=stratagus_${VERSION}.orig.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_${VERSION}.orig"
+   SOURCE_URL[0]=http://launchpad.net/stratagus/trunk/${VERSION}/+download/${SOURCE}
         WEB_SITE=http://stratagus.sf.net
          ENTERED=20040718
-                                                                                          SOURCE_HASH=sha512:350be97629ac2a6c731a07babd27c27b3e0efe8bfe9d8636db4963a38eca175b80b43efe82a223dae8e3f2a5f9d4772dfffcd132a66ad9f51f93b13b94137f31
+     SOURCE_HASH=sha512:c4c1be1b45aeba113797e8b53cd864016d33cac83a6fe2aa7235dd451de1290c03e3f7915cff2fbc78312ac7c3079c8fc02c3619a49f6fd05e6177df15386be0
       LICENSE[0]=GPL
            SHORT='A real-time strategy game engine'
 cat << EOF

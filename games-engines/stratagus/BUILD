@@ -1,3 +1,3 @@
 make_single          &&
-default_games_build  &&
+cmake_build          &&
 make_normal
