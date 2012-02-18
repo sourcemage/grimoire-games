@@ -1,6 +1,10 @@
 depends  GLUT    &&
 depends  OPENAL  &&
+depends  freealut &&
+depends  libvorbis &&
 depends  plib    &&
 depends  libpng  &&
+depends  zlib    &&
+depends  -sub CXX gcc &&
 depends  xorg-libs  "--with-x --x-libraries=${INSTALL_ROOT}/usr/lib"  &&
 depends  libxrandr  "--enable-xrandr"

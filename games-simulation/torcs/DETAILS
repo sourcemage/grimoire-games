@@ -1,5 +1,5 @@
            SPELL=torcs
-         VERSION=1.3.2
+         VERSION=1.3.3
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION/-test1/}
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
@@ -10,7 +10,7 @@ if [[ "$TORCS_BERNIW_CARS" == "y" ]]; then
 fi
         WEB_SITE=http://torcs.sourceforge.net/
       #SOURCE_GPG="gurus.gpg:$SOURCE.sig"
-     SOURCE_HASH=sha512:fecd79ba9bbad39cbe8cf15a468e071a7c04cb995f45ef40ae3f5520d6ab19269b250aa7d8fc4f8a59b715286b83dcb230e92164341604f01f7351fbe9aa6252
+     SOURCE_HASH=sha512:6bdf645f4cc3032d2e57c3f042767b8e22319a1767ca65c166c90f02efdf74f10d91183e7a3088c58ffa74d2970cadb28dd3d789a265fd3e7ae86fe972e278da
       LICENSE[0]=GPL
          ENTERED=20010926
            SHORT="3D racing cars simulator using OpenGL"
