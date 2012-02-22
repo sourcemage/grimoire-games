@@ -1,3 +1,6 @@
+2012-02-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 1.4.1
+
 2011-10-12 Bor Kraljič <pyrobor@ver.si>
 	* DEPENDS: changed mpeg2dec -> libmpeg2
 
