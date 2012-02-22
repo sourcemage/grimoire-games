@@ -1,6 +1,6 @@
 2012-02-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 2.6.0
-	* BUILD: switched to cmake
+	* BUILD: switched to cmake, set data directory
 	* DEPENDS: added dependencies on GLUT, OPENAL, boost, fltk, gcc with CXX,
 	  freealut, libpng, libx11, openscenegraph, openthreads, plib, udev and zlib
 	* CONFLICTS, PREPARE, PRE_BUILD, terrasync.cxx.patch: removed
