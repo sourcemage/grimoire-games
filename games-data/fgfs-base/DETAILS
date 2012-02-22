@@ -1,11 +1,11 @@
            SPELL=fgfs-base
-         VERSION=2.4.0
+         VERSION=2.6.0
           SOURCE=FlightGear-data-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/FlightGear-${VERSION}
-   SOURCE_URL[0]=ftp://ftp.de.flightgear.org/pub/fgfs/Shared/${SOURCE}
-   SOURCE_URL[1]=http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Shared/${SOURCE}
+   SOURCE_URL[0]=ftp://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Shared/${SOURCE}
+   SOURCE_URL[1]=ftp://flightgear.wo0t.de/Shared/${SOURCE}
    SOURCE_URL[2]=ftp://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Shared/${SOURCE}
-     SOURCE_HASH=sha512:c1eb22bced1bab5e53f46c62a0815ceae4d449164d3fea37b1ed9ad272dd8660ef6857dd095c65fc80a6df887fd0af858db0e8ada7519c01f8049670ac43a8b4
+     SOURCE_HASH=sha512:477f6ec2c044d122ee07cd9b96c790cfcc8b487f052da60ac00c1d75d234d154cf6429c0c21a3142718a9393cc5200cb06d8aa24d0a8afd4abbdf5ac15208ce6
 #      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://flightgear.sourceforge.net
          ENTERED=20010922
