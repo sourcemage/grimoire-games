@@ -1,11 +1,11 @@
            SPELL=flightgear
-         VERSION=2.4.0
-          SOURCE=FlightGear-${VERSION}.tar.bz2
+         VERSION=2.6.0
+          SOURCE=flightgear-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/flightgear-${VERSION}
-   SOURCE_URL[1]=http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Source/${SOURCE}
-   SOURCE_URL[2]=ftp://flightgear.wo0t.de/flightgear-ftp/ftp/Source/${SOURCE}
-   SOURCE_URL[3]=ftp://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Source/${SOURCE}
-     SOURCE_HASH=sha512:e1a2618891606f16d35db501cc7f08f226fb53da25a669f0b426fbec84a36538b483c7178dbdc35f988f0b0344d3dbd7c403601afcdba6d465255f827fc4a8f0
+   SOURCE_URL[1]=ftp://ftp.kingmont.com/flightsims/flightgear/Source/${SOURCE}
+   SOURCE_URL[2]=ftp://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Source/${SOURCE}
+   SOURCE_URL[3]=http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Source/${SOURCE}
+     SOURCE_HASH=sha512:5e99944e1255cb097da0b06132596e06d3d88b6c81f8ac51c50b9b9a2e3f4731c619d9bea7464135d25438c3aba20392b1b17edc0b460b069246b69b1b4f5a75
 #      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.flightgear.org
          ENTERED=20010922

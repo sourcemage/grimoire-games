@@ -1,7 +1,4 @@
-if [[  "$GRAPHIC_LIB" == "openglut" || "$GRAPHIC_LIB" == "glut" ]]
-then
-  GRAPHIC_LIB="GLUT"
-fi  &&
-
-config_query_list GRAPHIC_LIB "Which graphics system do you wish to use"        \
-                                "sdl"   "GLUT"
+config_query_option FG_JSBSIM  "enable jsbsim?"     y "-DENABLE_JSBSIM=ON"     "-DENABLE_JSBSIM=OFF"     &&
+config_query_option FG_LARCSIM "enable larcsim?"    n "-DENABLE_LARCSIM=ON"    "-DENABLE_LARCSIM=OFF"    &&
+config_query_option FG_UIUC    "enable uiuc model?" n "-DENABLE_UIUC_MODEL=ON" "-DENABLE_UIUC_MODEL=OFF" &&
+config_query_option FG_YASIM   "enable yasim?"      y "-DENABLE_YASIM=ON"      "-DENABLE_YASIM=OFF"

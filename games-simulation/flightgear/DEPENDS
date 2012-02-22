@@ -1,10 +1,16 @@
-depends  simgear	&&
-depends  fgfs-base	&&
-depends  subversion &&
-
-if [[ "${GRAPHIC_LIB}" == "sdl" ]]
-then
-depends sdl "--enable-sdl"
-else
-depends ${GRAPHIC_LIB}
-fi
+depends  GLUT           &&
+depends  OPENAL         &&
+depends  boost          &&
+depends  fgfs-base      &&
+depends  fltk           &&
+depends  -sub CXX gcc   &&
+depends  freealut       &&
+depends  libpng         &&
+depends  libx11         &&
+depends  openscenegraph &&
+depends  openthreads    &&
+depends  plib           &&
+depends  simgear        &&
+depends  subversion     &&
+depends  udev           &&
+depends  zlib
