@@ -1,5 +1,9 @@
 depends  metakit         &&
 depends  OPENAL          &&
+depends  freealut        &&
+depends  boost           &&
+depends  openthreads     &&
 depends  openscenegraph  &&
+depends  subversion      &&
 depends  plib            &&
 depends  zlib
