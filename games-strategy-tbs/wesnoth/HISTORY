@@ -1,3 +1,13 @@
+2012-03-03 Robin Cook <rcook@wyrms.net>
+	* BUILD: changed to SCONS build
+	* CONFIGURE: changed to new build options
+	* DEPENDS: added scons, removed libpng, changed to lua51, added boost subdepends
+	  changed to SCONS build options
+	* DETAILS: updated 1.10.1
+	* INSTALL: changed to SCONS install
+	* PRE_BUILD: removed autogen.sh
+	* desktop: changed icon location
+
 2010-12-14 Ismael Luceno <ismael@sourcemage.org>
 	* wesnoth.desktop: added Spanish translation
 

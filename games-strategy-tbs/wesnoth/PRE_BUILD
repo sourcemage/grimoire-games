@@ -1,7 +1,9 @@
-if [[ $WESNOTH_XDELTA == y && ${SOURCE/xdelta/} != $SOURCE ]]; then
-  # override SOURCE, so the new tarball gets checked, not the xdelta
-  SOURCE=$SPELL-$VERSION.tar.bz2
-fi &&
-default_pre_build     &&
-cd $SOURCE_DIRECTORY  &&
-NOCONFIGURE=Y ./autogen.sh
+if [ "$WESNOTH_DEVEL" == "y" ]; then
+   default_pre_build
+else
+   if [[ $WESNOTH_XDELTA == y && ${SOURCE/xdelta/} != $SOURCE ]]; then
+     # override SOURCE, so the new tarball gets checked, not the xdelta
+     SOURCE=$SPELL-$VERSION.tar.bz2
+   fi &&
+   default_pre_build 
+fi

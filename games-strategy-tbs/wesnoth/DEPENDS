@@ -1,22 +1,38 @@
+depends scons      &&
 depends pango      &&
 depends fontconfig &&
 depends gettext    &&
 depends zlib       &&
-depends libpng     &&
 depends sdl        &&
 depends sdl_image  &&
 depends sdl_mixer  &&
 depends sdl_net    &&
 depends sdl_ttf    &&
-depends lua        &&
-depends -sub "IOSTREAMS REGEX" boost &&
-
-optional_depends python  "--enable-python-install" "" "for Python tools" &&
-optional_depends dbus  "--enable-dbus" "--disable-dbus"                  \
-                       "Enable DBus support?"                            &&
-optional_depends fribidi  "--with-fribidi" "--without-fribidi"           \
-                          "Enable fribidi support?"                      &&
+depends lua51      &&
+depends -sub "IOSTREAMS REGEX SERIALIZATION PROGRAM_OPTIONS SYSTEM THREAD" boost &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then
   depends xdelta
-fi
+fi  &&
+
+#optional_depends python  "--enable-python-install" "" "for Python tools" &&
+
+optional_depends dbus                                         \
+                 "notifications=yes" "notifications=no"       \
+                 "Enable support for desktop notifications?"  &&
+
+optional_depends ccache                                       \
+                 "ccache=yes" "ccache=no"                     \
+                 "Build with ccache?"                         &&
+
+optional_depends distcc                                       \
+                 "distcc=yes" "distcc=no"                     \
+                 "Build with distcc?"                         &&
+
+optional_depends gettext                                      \
+                 "nls=yes" "nls=no"                           \
+                 "Enable gettext mesage catalogs?"            &&
+
+optional_depends fribidi                                      \
+                 "fribidi=yes" "fribidi=no"                   \
+                 "Enable fribidi support?"                    
