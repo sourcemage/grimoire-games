@@ -1,24 +1,24 @@
            SPELL=pingus
-if [ "$PINGUS_SVN" == "y" ]; then
-  if [ "$PINGUS_SVN_AUTOUPDATE" == "y" ]; then
+if [ "$PINGUS_GIT" == "y" ]; then
+  if [ "$PINGUS_GIT_AUTOUPDATE" == "y" ]; then
       VERSION=$(date +%Y%m%d)
   else
-      VERSION=svn
+      VERSION=git
   fi
-          SOURCE=$SPELL-svn.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
-   SOURCE_URL[0]=svn://svn.berlios.de/pingus/trunk:${SPELL}-svn
+          SOURCE=$SPELL-git.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-git
+   SOURCE_URL[0]=git://https://code.google.com/p/pingus:${SPELL}-git
    SOURCE_IGNORE=volatile
 else
-         VERSION=0.7.3
+         VERSION=0.7.6
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://pingus.seul.org/files/$SOURCE
-     SOURCE_HASH=sha512:9992fce8343e44da1b411eeb4468cb44cd42750f222836f51997e10e696bf742e3dbffca4ee063c1795f1350bd2ea81d20afa943dda123c024851e1b8bbd9c29
+   SOURCE_URL[0]=https://pingus.googlecode.com/files/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 fi
-        WEB_SITE=http://pingus.seul.org/welcome.html
+        WEB_SITE=http://pingus.seul.org/
          ENTERED=20030612
-      LICENSE[0]=GPL
+      LICENSE[0]=GPL3
            SHORT="Lemmings(tm) clone"
 cat << EOF
 While Pingus is based on the idea of Lemmings(tm), it has included some

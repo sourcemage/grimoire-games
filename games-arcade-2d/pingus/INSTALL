@@ -1,1 +1,1 @@
-./install.sh ${INSTALL_ROOT}/usr
+make install DESTDIR=$INSTALL_ROOT PREFIX=/usr DATADIR=/usr/share/games/pinugs BINDIR=/usr/games

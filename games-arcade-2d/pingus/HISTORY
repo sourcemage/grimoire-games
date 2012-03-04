@@ -1,3 +1,9 @@
+2012-03-03 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated to 0.7.6, changed to GIT
+	* PREPARE: changed to GIT
+	* BUILD: used new Makefile
+	* INSTALL: use new Makefile
+
 2010-04-07 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version 0.7.3
 

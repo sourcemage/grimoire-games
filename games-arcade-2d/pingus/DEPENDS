@@ -1,3 +1,5 @@
+depends gcc                &&
+depends -sub CXX gcc       &&
 depends sdl                &&
 depends sdl_mixer          &&
 depends sdl_image          &&

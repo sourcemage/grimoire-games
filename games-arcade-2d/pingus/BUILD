@@ -1,1 +1,1 @@
-scons
+make
