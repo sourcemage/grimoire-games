@@ -4,6 +4,7 @@
 	* DEPENDS: made dependencies on ogre and cegui mandatory, added dependency on cmake
 	* CONFIGURE, PREPARE, PRE_BUILD, vegastrike-gcc.diff: removed, not
 	  necessary anymore
+	* vsinstall: removed obsolete script
 
 2011-02-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* PRE_BUILD, vegastrike-gcc.diff: added patch from archlinux to make
