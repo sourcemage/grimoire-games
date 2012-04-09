@@ -14,26 +14,8 @@ depends  libpng                        &&
 depends  JPEG                          &&
 depends  perl                          &&
 depends  OPENAL                        &&
-#--with-boost-system makes it fail here
-#depends -sub PYTHON boost "--with-boost=system" &&
+depends  cmake                         &&
+depends  ogre                          &&
+depends  cegui                         &&
 depends -sub PYTHON boost ""           &&
-if [[ $VEGASTRIKE_DEVEL == "y" ]]; then
-  depends  SVN    
-fi &&              
-#passing --enable actually disables for ogre and cegui :/     
-optional_depends ogre                  \
-                 ""                    \
-                 "--disable-ogre"      \
-                 "Enable mesher"      &&
-optional_depends cegui                 \
-                 ""                    \
-                 "--disable-cegui"     \
-                 "Enable cegui"       &&
-optional_depends libvorbis                  \
-                 ""                         \
-                 "--disable-vorbis"         \
-                 "Enable ingame ogg support" &&
-optional_depends blender               \
-                 "" \
-                 "" \
-                 "install blender python scripts"
+depends  libvorbis

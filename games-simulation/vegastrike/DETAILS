@@ -1,38 +1,23 @@
            SPELL=vegastrike
-        VERSION2=4.x
-if [[ $VEGASTRIKE_DEVEL == "n" ]]; then
-         VERSION=0.5.0
-#          SOURCE=$SPELL-$VERSION.tar.bz2
-#         SOURCE2=$SPELL-data$VERSION2-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-#    SOURCE_HINTS=old_svn_compat
-#   SOURCE2_HINTS=old_svn_compat
-#      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/vegastrike:vegastrike-$VERSION
-#     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/tags/vegastrike_$VERSION/data$VERSION2:vegastrike-data$VERSION2-$VERSION
-#   SOURCE_IGNORE=volatile
-#  SOURCE2_IGNORE=volatile
-          SOURCE=$SPELL-source-$VERSION.tar.bz2
-         SOURCE2=$SPELL-linux-$VERSION.tar.bz2
-      SOURCE_URL=$SOURCEFORGE_URL/$SPELL/$SOURCE
-     SOURCE2_URL=$SOURCEFORGE_URL/$SPELL/$SOURCE2
-     SOURCE_HASH=sha512:d0088df1f49b8600e1e6dc8b216001b0302de19675ba8da6ec0761b55d15624ffb6a8689f40593b844b89eee7d76202ba421a30d498d5d2ac54b66ccd576dd31
-    SOURCE2_HASH=sha512:5c4bebd323809c03a59827970e49fc160f9dad059ef46dd3b708c3dfe59f2e1edadce510dd65f461b953b4aee78825edaa714a9d07556b65b4675da084836c5a
-else
-if [[ $VEGASTRIKE_UPDATE == "y" ]]; then
-         VERSION=$(date +%Y-%m-%d)
-else
-         VERSION=svn
-fi
-          SOURCE=$SPELL-svn.tar.bz2
-         SOURCE2=$SPELL-data$VERSION2-svn.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-svn
-    SOURCE_HINTS=old_svn_compat
-   SOURCE2_HINTS=old_svn_compat
-      SOURCE_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/vegastrike:vegastrike-svn
-     SOURCE2_URL=svn://vegastrike.svn.sourceforge.net/svnroot/vegastrike/trunk/data$VERSION2:vegastrike-data$VERSION2-svn
-   SOURCE_IGNORE=volatile
-  SOURCE2_IGNORE=volatile
-fi
+        XVERSION=0.5.1
+         RELEASE=r1
+         VERSION=${XVERSION}.${RELEASE}
+          SOURCE=$SPELL-src-$VERSION.tar.bz2
+         SOURCE2=$SPELL-data-$VERSION.tar.bz2
+         SOURCE3=$SPELL-speech-$VERSION.tar
+         SOURCE4=$SPELL-music-$VERSION.tar
+         SOURCE5=$SPELL-extra-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-src-$VERSION
+      SOURCE_URL=$SOURCEFORGE_URL/$SPELL/${XVERSION}/$SOURCE
+     SOURCE2_URL=$SOURCEFORGE_URL/$SPELL/${XVERSION}/$SOURCE2
+     SOURCE3_URL=$SOURCEFORGE_URL/$SPELL/${XVERSION}/$SOURCE3
+     SOURCE4_URL=$SOURCEFORGE_URL/$SPELL/${XVERSION}/$SOURCE4
+     SOURCE5_URL=$SOURCEFORGE_URL/$SPELL/${XVERSION}/$SOURCE5
+     SOURCE_HASH=sha512:64fffdd5905dceefd37181cc636e3aa7f8c6c52c2dc0dcc13c5bde44c4203cb7f04db0d599eadcf16ca230c04d56ca8fbce4bc9f1ffc56d39961842ec47acaa7
+    SOURCE2_HASH=sha512:5071ad8fdaf30ea98da960bbf2f2a2e76088f3f4b0a19651671e8ded1e9619dc3942c5a4c1cb5248137d935f9811df28936aed31f8f529f9b279f20276d0f2c8
+    SOURCE3_HASH=sha512:345910d17455bd3e11c51889bab3aec600cb85a6827e6406fe02cf661107ee126645192f657a80b89b152e1dd3bec2cd422784bca8c554cb42f27f66564ae128
+    SOURCE4_HASH=sha512:3912e771321c720064f490d1c03f1ffa50042bbd2c7b1f6950a3950725c20972aa549d32f2fde256cfd15fad6a2d9d0c62b14102d748595f130c5674f394278a
+    SOURCE5_HASH=sha512:345910d17455bd3e11c51889bab3aec600cb85a6827e6406fe02cf661107ee126645192f657a80b89b152e1dd3bec2cd422784bca8c554cb42f27f66564ae128
         WEB_SITE=http://vegastrike.sourceforge.net/
          ENTERED=20040502
       LICENSE[0]=GPL
