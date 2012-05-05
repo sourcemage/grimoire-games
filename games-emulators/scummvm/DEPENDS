@@ -23,7 +23,7 @@ optional_depends  flac                                                          
                   "--disable-flac"                                                           \
                   "Enable FLAC audio decoding - for storing game cd-audio to flac file"      &&
 depends  zlib                                                                                &&
-depends  g++                                                                                 &&
+depends  -sub CXX gcc                                                                        &&
 depends  X11-LIBS                                                                            &&
 if [[ "$SCUMMVM_BACKEND" == "sdl" ]]
 then
