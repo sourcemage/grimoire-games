@@ -1,6 +1,6 @@
 default_pre_build &&
 cd "$SOURCE_DIRECTORY" &&
 
-patch -p0 < "$SPELL_DIRECTORY/gcc46.patch" &&
+patch -p0 < "$SCRIPT_DIRECTORY/gcc46.patch" &&
 # Still needed for 0.74 ... simple local name clash with -DPIC.
 patch -p1 < "$SCRIPT_DIRECTORY/pic.patch"

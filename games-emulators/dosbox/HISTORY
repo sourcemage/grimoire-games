@@ -2,6 +2,7 @@
 	* pic.patch, PRE_BUILD: Re-add the still needed fix for -DPIC
 	  conflict (makes it buildable on x86-64).
 	* BUILD: Fall back to default build, disable_pic misses the point.
+	* PRE_BUILD: use $SCRIPT_DIRECTORY
 
 2011-10-29 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 0.74
