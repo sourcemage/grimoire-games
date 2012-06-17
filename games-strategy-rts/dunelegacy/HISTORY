@@ -1,3 +1,6 @@
+2012-06-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 0.96.2
+
 2010-04-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 0.96
 	* INSTALL, PRE_BUILD, dunelegacy-nowerror.diff, BUILD:
