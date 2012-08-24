@@ -1,3 +1,4 @@
+depends  -sub CXX gcc    &&
 depends  metakit         &&
 depends  OPENAL          &&
 depends  freealut        &&
