@@ -1,5 +1,5 @@
            SPELL=pyfa
-         VERSION=1.1.6-escalation
+         VERSION=1.1.9-inferno-1.2
           SOURCE=$SPELL-$VERSION-src.tar.bz2
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL

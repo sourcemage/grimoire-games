@@ -7,6 +7,7 @@ for i in eos gui icons service staticdata config.py info.py pyfa.py; do
 done &&
 
 chgrp games "$INSTALL_ROOT/usr/games" && # Always makes it root:root using castfs without this
+chmod 0750 "$INSTALL_ROOT"/usr/share/games/pyfa/pyfa.py &&
 
 # Create Desktop file
 cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
