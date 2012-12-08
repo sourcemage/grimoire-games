@@ -1,2 +1,1 @@
-cd $SPELL-$VERSION &&
 scons

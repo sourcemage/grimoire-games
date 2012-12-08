@@ -1,11 +1,15 @@
 depends OPENGL &&
 depends OPENAL &&
+depends bullet &&
+depends curl &&
+depends -sub CXX gcc &&
+depends scons &&
 depends sdl &&
 depends sdl_image &&
-depends sdl_net &&
 depends sdl_gfx &&
 depends freealut &&
 depends glew &&
 depends libvorbis &&
 depends boost &&
+depends libarchive &&
 depends asio

@@ -1,9 +1,9 @@
-default_pre_build &&
-cd $SOURCE_DIRECTORY  &&
-unpack_file 2  &&
-echo "os_cxxflags=\"1\"" > $SOURCE_DIRECTORY/$SPELL-$VERSION/$SPELL.conf  &&
-echo "release=\"1\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION/$SPELL.conf  &&
-echo "use_binreloc=\"0\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION/$SPELL.conf  &&
-echo "bindir=\"games\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION/$SPELL.conf  &&
-echo "prefix=\"${INSTALL_ROOT}/usr\"" >> $SOURCE_DIRECTORY/$SPELL-$VERSION/$SPELL.conf
+default_pre_build                                                       &&
+cd $SOURCE_DIRECTORY                                                    &&
+patch -p0 < ${SPELL_DIRECTORY}/vdrift-2012-07-22c_patch.diff            &&
+echo "os_cxxflags=\"1\""               > $SOURCE_DIRECTORY/$SPELL.conf  &&
+echo "release=\"1\""                  >> $SOURCE_DIRECTORY/$SPELL.conf  &&
+echo "use_binreloc=\"0\""             >> $SOURCE_DIRECTORY/$SPELL.conf  &&
+echo "bindir=\"games\""               >> $SOURCE_DIRECTORY/$SPELL.conf  &&
+echo "prefix=\"${INSTALL_ROOT}/usr\"" >> $SOURCE_DIRECTORY/$SPELL.conf
 
