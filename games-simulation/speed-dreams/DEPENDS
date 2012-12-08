@@ -1,0 +1,18 @@
+depends JPEG         &&
+depends OPENAL       &&
+depends OPENGL       &&
+
+depends enet         &&
+depends -sub CXX gcc &&
+depends libice       &&
+depends libpng       &&
+depends libsm        &&
+depends libx11       &&
+depends libxext      &&
+depends plib         &&
+depends sdl          &&
+depends zlib         &&
+
+optional_depends libxrandr "-DOPTION_XRANDR=ON" "-DOPTION_XRANDR=OFF" "for xrandr support"
+
+

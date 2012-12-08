@@ -1,3 +1,6 @@
+2012-12-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-simulation/speed-dreams: new spell, a racing game
+
 2012-01-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-terminal/nitrohack: new spell, a nethack fork with improved user
 	  interface

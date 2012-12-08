@@ -1,0 +1,26 @@
+           SPELL=speed-dreams
+         VERSION=2.0.0
+        COMMITID=4687
+          SOURCE="${SPELL}-src-base-${VERSION}-r${COMMITID}.tar.xz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:91b1870cc4705974e95c0621b1ab5ff68bee3f4713c5bbc4164b11fa0f1c900c3331185c51181bae9b09532aced054e89899968d66d45a7dbc4a167d023cad68
+         SOURCE2="${SPELL}-src-partial-build-patch-${VERSION}-r${COMMITID}.tar.xz"
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${VERSION}/${SOURCE2}
+    SOURCE2_HASH=sha512:c4c399c497f2198500481ff039311cf0bec43442b101f1ced4fb620bc509a8749acde8196578d98bc8c3c004cd0d5aea55b0070cf3b515aff81b52b2e32492aa
+         SOURCE3="${SPELL}-src-hq-cars-and-tracks-${VERSION}-r${COMMITID}.tar.xz"
+  SOURCE3_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${VERSION}/${SOURCE3}
+    SOURCE3_HASH=sha512:cb9c0d6abc9bf6224cc5d21aa146ab805e3b4f8312496597ce00eda059dffda32e13a24ccd81229d653d906ef84bf477773e80e1783fefb20f659c4bc5139257
+         SOURCE4="${SPELL}-src-more-hq-cars-and-tracks-${VERSION}-r${COMMITID}.tar.xz"
+  SOURCE4_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${VERSION}/${SOURCE4}
+    SOURCE4_HASH=sha512:d1a65bcee7caa4761c92339f2ebda815fc8f6f9dcb985954e572ac6bb10278d143df61ee0f36b964bbcbae8a4afde7204add24b925345972a8ace33bfd4ea56a
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${COMMITID}"
+        WEB_SITE="http://www.speed-dreams.org/"
+      LICENSE[0]=GPL
+         ENTERED=20121208
+           SHORT="a 3d cross-platform, open source motorsport simulation and racing game"
+cat << EOF
+Speed Dreams is a fork of the open racing car simulator Torcs, aiming to
+implement exciting new features, cars, tracks and AI opponents to make a
+more enjoyable game for the player, as well as constantly improving visual
+and physics realism.
+EOF
