@@ -1,6 +1,9 @@
-depends  g++        &&
-depends  sdl        &&
-depends  sdl_image  &&
+depends  -sub CXX gcc &&
+depends  sdl          &&
+depends  sdl_image    &&
+depends OPENGL        &&
+depends libogg        &&
+depends libvorbis     &&
 
 if [ "$SOUND" == "y" ] ; then
   depends  OPENAL  &&

@@ -1,0 +1,12 @@
+diff --git a/simulation/metaserver.cpp b/simulation/metaserver.cpp
+index 7f43526..863e2dd 100644
+--- a/simulation/metaserver.cpp
++++ b/simulation/metaserver.cpp
+@@ -20,6 +20,7 @@
+ #include <sys/socket.h>
+ #include <netinet/in.h>
+ #include <netdb.h>
++#include <unistd.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include "config.h"
