@@ -1,9 +1,9 @@
            SPELL=pyfa
-         VERSION=1.1.9-inferno-1.2
+         VERSION=1.1.12-retribution-1.0.2
           SOURCE=$SPELL-$VERSION-src.tar.bz2
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://dl.evefit.org/stable/${VERSION/-*/}/$SOURCE
+   SOURCE_URL[0]=http://dl.evefit.org/pyfa/stable/${VERSION/-*/}/$SOURCE
       LICENSE[0]=GPL
         WEB_SITE=http://www.evefit.org/Pyfa
          ENTERED=20100324

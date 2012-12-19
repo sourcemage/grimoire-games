@@ -1,3 +1,8 @@
+2012-12-19 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.1.12-retribution-1.0.2
+	  Added 'pyfa/' to SOURCE_URL
+	* INSTALL: Explicitly call python on pyfa.py
+
 2012-09-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.1.9-inferno-1.2
 	* INSTALL: Make pyfa.py executable by ug
