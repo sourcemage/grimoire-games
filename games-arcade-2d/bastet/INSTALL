@@ -1,0 +1,2 @@
+install -m755 ${SOURCE_DIRECTORY}/bastet ${INSTALL_ROOT}/usr/games/ &&
+install -m644 ${SOURCE_DIRECTORY}/bastet.6 ${INSTALL_ROOT}/usr/share/man/man6/
