@@ -1,0 +1,4 @@
+cd $SOURCE_DIRECTORY                                &&
+python setup.py install --root="${INSTALL_ROOT}/"   &&
+cd ${INSTALL_ROOT}/usr/bin                          &&
+ln -s pysol.py pysol

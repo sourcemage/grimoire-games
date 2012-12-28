@@ -1,0 +1,24 @@
+           SPELL=pysolfc
+         VERSION=2.0
+          SOURCE=PySolFC-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/PySolFC-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/pysolfc/$SOURCE
+     SOURCE_HASH=sha512:ec5a11565bd43e097cf1854fe246b8f92acd74077c0b3b158c999f9dc45966e8f805c60a2cfbd815137d970e0e6409d0ae437b9807bac9c39353657cf596b6fc
+        WEB_SITE=http://pysolfc.sourceforge.net
+      LICENSE[0]=GPL
+           SHORT="Large collection of card games (Fan Club edition)"
+cat << EOF
+PySolFC is a collection of more than 1000 solitaire card
+games. It is a fork of PySol Solitaire.
+
+There are games that use the 52 card International Pattern
+deck, games for the 78 card Tarock deck, eight and ten suit
+Ganjifa games, Hanafuda games, Matrix games, Mahjongg games,
+and games for an original hexadecimal-based deck.
+
+Its features include modern look and feel (uses Ttk widget
+set), multiple cardsets and tableau backgrounds, sound,
+unlimited undo, player statistics, a hint system, demo games,
+a solitaire wizard, support for user written plug-ins,
+an integrated HTML help browser, and lots of documentation.
+EOF
