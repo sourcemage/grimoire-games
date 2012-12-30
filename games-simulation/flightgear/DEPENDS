@@ -8,7 +8,6 @@ depends  freealut       &&
 depends  libpng         &&
 depends  libx11         &&
 depends  openscenegraph &&
-depends  openthreads    &&
 depends  plib           &&
 depends  simgear        &&
 depends  subversion     &&

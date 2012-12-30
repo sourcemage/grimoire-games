@@ -1,3 +1,6 @@
+2012-08-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: removed dependency on openthreads
+
 2012-08-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 2.8.0
 
