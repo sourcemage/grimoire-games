@@ -1,4 +1,5 @@
 default_pre_build &&
 cd "$SOURCE_DIRECTORY" &&
 
-patch -p0 < "$SPELL_DIRECTORY/types.patch"
+patch -p0 < "$SPELL_DIRECTORY/types.patch" &&
+patch -p1 < "$SPELL_DIRECTORY/brutalchess-gcc-4.7.patch"
