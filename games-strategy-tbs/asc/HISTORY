@@ -5,6 +5,7 @@
 	  freetype2, sdl_sound, expat, bzip2, libpng, gcc, boost, xvid, perl, zip
 	  and JPEG
 	* gcc-4.7-2.diff, PRE_BUILD: added patch from archlinux to fix compile errors
+	* DEPENDS, BUILD: removed dependency on paragui
 
 no changes added to commit (use "git add" and/or "git commit -a")
 2008-12-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
