@@ -1,9 +1,9 @@
            SPELL=asc
-         VERSION=2.1.0.0
+         VERSION=2.5.0.0
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-hq/$SOURCE
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=sha512:ee1ed1e8fdd0050b016f8cf51d6e3a00a5c3c4d6e5da25fb8ccf136a15ba03ab97a9734e634028cc12330eabd63a275afc825317e2adbe260df23101b4f49881
       LICENSE[0]=GPL
         WEB_SITE=http://www.asc-hq.org/index.html
          ENTERED=20030902

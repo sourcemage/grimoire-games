@@ -4,4 +4,20 @@ depends  sdlmm       &&
 depends  sdl_image   &&
 depends  sdl_mixer   &&
 depends  paragui  "--disable-paraguitest" &&
-depends physfs
+depends  physfs      &&
+depends  lua51       &&
+depends  WXWIDGET    &&
+depends  libvorbis   &&
+depends  libogg      &&
+depends  curl        &&
+depends  freetype2   &&
+depends  sdl_sound   &&
+depends  expat       &&
+depends  bzip2       &&
+depends  libpng      &&
+depends  -sub CXX gcc &&
+depends  boost       &&
+depends  xvid        &&
+depends  perl        &&
+depends  zip         &&
+depends  JPEG

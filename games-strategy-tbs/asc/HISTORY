@@ -1,3 +1,12 @@
+2012-01-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD: use default_games_build
+	* DETAILS: version 2.5.0.0
+	* DEPENDS: added dependencies on lua51, WXWIDGET, libvorbis, libogg, curl,
+	  freetype2, sdl_sound, expat, bzip2, libpng, gcc, boost, xvid, perl, zip
+	  and JPEG
+	* gcc-4.7-2.diff, PRE_BUILD: added patch from archlinux to fix compile errors
+
+no changes added to commit (use "git add" and/or "git commit -a")
 2008-12-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated spell to 2.1.0
 	* DEPENDS: added physfs #14959
