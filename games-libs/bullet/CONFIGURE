@@ -1,0 +1,6 @@
+config_query_option BULLET_THREADS "Enable multithreading?" n \
+                    "-DBUILD_MULTITHREADING=ON" "-DBUILD_MULTITHREADING=OFF"
+config_query_option BULLET_SHARED "Build Shared Libraries?" n \
+                    "-DBUILD_SHARED_LIBS=ON" "-DBUILD-SHARED-LIBS=OFF"
+config_query_option BULLET_DEMOS "Build Demos?" y \
+                    "-DBUILD_DEMOS=ON" "-DBUILD_DEMOS=OFF"
