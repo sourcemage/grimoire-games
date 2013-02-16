@@ -1,1 +1,3 @@
+OPTS="$BULLET_THREADS $BULLET_SHARED $BULLET_DEMOS"  &&
+
 cmake_build

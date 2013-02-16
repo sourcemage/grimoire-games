@@ -1,4 +1,4 @@
-depends libx11 &&
-depends OPENGL    &&
-depends GLUT      &&
+depends libx11  &&
+depends OPENGL  &&
+depends GLUT    &&
 depends cmake
