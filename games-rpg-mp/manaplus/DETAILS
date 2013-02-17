@@ -1,0 +1,19 @@
+           SPELL=manaplus
+         VERSION=1.3.2.17
+          SOURCE="${SPELL}-${VERSION}.tar.xz"
+   SOURCE_URL[0]=http://download.evolonline.org/${SPELL}/download/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:57ec3e2ab01d38d14718d400f5335bfbf8be7fede912319806998d252db7913aa55ef858818e88dcdafb4e717de332570c4af84dc490555619c6f8e571a2a379
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://manaplus.evolonline.org/"
+      LICENSE[0]="GPLv2+"
+         ENTERED=20130217
+        KEYWORDS=""
+           SHORT="2D MMORPG client for Evol Online, The mana world and similar servers"
+cat << EOF
+ManaPlus is free OpenSource 2D MMORPG client for Evol Online, The mana world
+and similar servers.
+
+ManaPlus based on old manasource client sources.
+
+Now manaplus is the most used client in all The Mana World like servers.
+EOF
