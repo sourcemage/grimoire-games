@@ -1,8 +1,8 @@
            SPELL=tmw
-         VERSION=0.5.3
+         VERSION=0.6.1
           SOURCE="mana-${VERSION}.tar.gz"
    SOURCE_URL[0]="http://manasource.org/files/$SOURCE"
-     SOURCE_HASH=sha512:44a7373a1a60c07ebdbbc2e6b2551939e2ffb78b066461c06fcd114f36f35da2cb0e47d70ddc9fd214cdbeb25f77954bccb7ef091fbd61eb4c36da2925d5f86a
+     SOURCE_HASH=sha512:d3cd66409f6eca274ee24c9d6f6355d2406b3f29fb6efdce82ef99dcc9a6945ff6dca39d3f4cbe031b8684d8e46c8d5c89937ed2e9eebfb2831f2ed8d02a6919
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mana-${VERSION}"
         WEB_SITE="http://themanaworld.org"
       LICENSE[0]=GPLv2

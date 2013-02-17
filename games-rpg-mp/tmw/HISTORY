@@ -1,3 +1,6 @@
+2013-02-17 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.6.1
+
 2011-10-04 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: needs cmake to build
 
