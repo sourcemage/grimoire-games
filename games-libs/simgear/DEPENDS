@@ -1,4 +1,5 @@
 depends  -sub CXX gcc    &&
+depends  expat "-DSYSTEM_EXPAT=on" &&
 depends  metakit         &&
 depends  OPENAL          &&
 depends  freealut        &&

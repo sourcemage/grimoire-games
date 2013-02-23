@@ -1,3 +1,8 @@
+2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 2.10.0
+	* DEPENDS: added dependency on expat
+	* boost-1.51.patch, PRE_BUILD: removed obsolete patch
+
 2012-12-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DEPENDS: removed dependency on openthreads
 	* PRE_BUILD, boost-1.51.patch: fix build error with boost 1.51

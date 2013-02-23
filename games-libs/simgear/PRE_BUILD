@@ -2,5 +2,4 @@ default_pre_build      &&
 cd ${SOURCE_DIRECTORY} &&
 cp ${SCRIPT_DIRECTORY}/singleton.hpp ${SOURCE_DIRECTORY}/simgear/structure/ &&
 sedit 's:<boost/pool/detail/singleton.hpp>:<simgear/structure/singleton.hpp>:' \
-      ${SOURCE_DIRECTORY}/simgear/structure/Singleton.hxx &&
-patch -p1 < ${SPELL_DIRECTORY}/boost-1.51.patch
+      ${SOURCE_DIRECTORY}/simgear/structure/Singleton.hxx
