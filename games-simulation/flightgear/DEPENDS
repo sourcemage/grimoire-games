@@ -2,9 +2,14 @@ depends  GLUT           &&
 depends  OPENAL         &&
 depends  boost          &&
 depends  fgfs-base      &&
-depends  fltk           &&
+depends  -sub OPENGL fltk &&
 depends  -sub CXX gcc   &&
 depends  freealut       &&
+depends  freetype2      &&
+depends  JPEG           &&
+depends  giflib         &&
+depends  libxmu         &&
+depends  libxi          &&
 depends  libpng         &&
 depends  libx11         &&
 depends  openscenegraph &&
