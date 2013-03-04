@@ -1,3 +1,6 @@
+2013-03-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: depend on gcc with CXX instead of g++
+
 2009-06-22 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Somehow Bug #10642 is back, though it was fixed three years ago
 
