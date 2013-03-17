@@ -1,5 +1,6 @@
 2013-03-16 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Fixed SOURCE_URL[0]
+	* DEPENDS: Added dependency on pil
 
 2012-12-27 Javier Vasquez <j.e.vasquez.v@gmail.com>
 	* BUILD, CONFLICTS, DEPENDS, DETAILS, INSTALL:
