@@ -1,3 +1,4 @@
 scons installbindir=${INSTALL_ROOT}/usr/games/ datadir=${INSTALL_ROOT}/usr/share/games/dangerdeep/${VERSION} install &&
+install -m644 ${SOURCE_DIRECTORY}/doc/man/dangerdeep.6 ${INSTALL_ROOT}/usr/share/man/man6/ &&
 mkdir -p ${INSTALL_ROOT}/usr/share/games/dangerdeep/${VERSION} &&
 cp -R ${SOURCE_DIRECTORY}/data/* ${INSTALL_ROOT}/usr/share/games/dangerdeep/${VERSION}/
