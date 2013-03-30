@@ -1,0 +1,15 @@
+depends scons &&
+depends OPENGL &&
+depends -sub CXX gcc &&
+depends sdl &&
+depends sdl_image &&
+depends sdl_mixer &&
+depends sdl_net &&
+depends fftw &&
+depends bzip2 &&
+depends libx11 &&
+depends libxext &&
+depends libmad &&
+depends libxcb &&
+depends libxau &&
+depends libxdmcp
