@@ -1,3 +1,6 @@
+2013-07-01 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Do not use find_and_scam on shared directories
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
