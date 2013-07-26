@@ -1,3 +1,10 @@
+2013-07-26 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.1.15 (now a ZIP; hosted elsewhere)
+	  Main host is now down and unmaintained.
+	* PRE_BUILD: Apply python27.patch
+	* BUILD: ZIP extracts to "PyLotRO" directory.
+	* python27.patch: Fix HTTPS connections with Python 2.7+
+
 2010-09-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.1.13
 

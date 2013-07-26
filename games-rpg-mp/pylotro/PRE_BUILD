@@ -1,3 +1,6 @@
 mk_source_dir  $SOURCE_DIRECTORY  &&
 cd             $SOURCE_DIRECTORY  &&
-unpack_file    ''
+unpack_file    ''                 &&
+message "${MESSAGE_COLOR}Fixing HTTPS connections with Python 2.7+...${DEFAULT_COLOR}"  &&
+patch  "${SOURCE_DIRECTORY}"/PyLotRO/PyLotROLauncher/PyLotROUtils.py  \
+       "${SPELL_DIRECTORY}"/python27.patch

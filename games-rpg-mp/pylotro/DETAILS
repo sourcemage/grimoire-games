@@ -1,8 +1,8 @@
            SPELL=pylotro
-         VERSION=0.1.13
-          SOURCE=PyLotRO-$VERSION.tar.bz2
+         VERSION=0.1.15
+          SOURCE=PyLotRO-$VERSION.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.lotrolinux.com/$SOURCE
+   SOURCE_URL[0]=https://sites.google.com/site/leeslinuxblog/$SOURCE
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
       LICENSE[0]=GPL
         WEB_SITE=https://launchpad.net/pylotro
