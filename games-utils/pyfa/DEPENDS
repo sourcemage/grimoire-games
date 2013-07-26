@@ -3,4 +3,9 @@ depends  sqlalchemy  &&
 depends  pygtk2      &&
 depends  python      &&
 depends  -sub "GIZMOS" wxgtk &&
-depends  wxpython
+depends  wxpython    &&
+
+if [[  "x${PYFA_GRAPHS}" == "xy" ]]; then
+  runtime_depends  matplotlib  &&
+  runtime_depends  numpy
+fi

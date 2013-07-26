@@ -1,0 +1,5 @@
+if spell_ok numpy && spell_ok matplotlib; then
+  config_query  PYFA_GRAPHS  "Enable graphics?"  y
+else
+  config_query  PYFA_GRAPHS  "Enable graphics?"  n
+fi

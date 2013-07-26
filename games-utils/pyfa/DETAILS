@@ -1,11 +1,11 @@
            SPELL=pyfa
-         VERSION=1.1.12-retribution-1.0.2
-          SOURCE=$SPELL-$VERSION-src.tar.bz2
+         VERSION=1.1.15-odyssey-1.0
+          SOURCE=$SPELL-$VERSION-src.zip
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://dl.evefit.org/pyfa/stable/${VERSION/-*/}/$SOURCE
+   SOURCE_URL[0]=http://go-dl.eve-files.com/media/corp/Kadesh/$SOURCE
       LICENSE[0]=GPL
-        WEB_SITE=http://www.evefit.org/Pyfa
+        WEB_SITE=https://github.com/DarkFenX/Pyfa
          ENTERED=20100324
            SHORT="Python Fitting Assistant for EVE-Online"
             DOCS="gpl.txt readme.txt"
