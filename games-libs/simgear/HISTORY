@@ -1,3 +1,7 @@
+2013-09-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* PRE_BUILD, 0001-fix-library-installation-directory.patch:
+	  fix installation directory for shared libraries
+
 2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 2.10.0
 	* DEPENDS: added dependency on expat
