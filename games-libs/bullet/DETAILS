@@ -1,9 +1,9 @@
            SPELL=bullet
-         VERSION=2.81
-           EXTRA=rev2613
+         VERSION=2.82
+           EXTRA=r2704
           SOURCE="$SPELL-$VERSION-$EXTRA.tgz"
    SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+     SOURCE_HASH=sha512:44bec0bd74e6d9cd8c75a41d0faa068dc05f0cdad92ff001cc53ff29912db245606827a9e763ce2cf1b551b545668a779fdc4455f73c1901b57aaa4eee31901f
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${EXTRA}"
         WEB_SITE="http://www.bulletphysics.com/"
       LICENSE[0]=zlib
