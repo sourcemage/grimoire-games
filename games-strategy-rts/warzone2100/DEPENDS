@@ -2,6 +2,8 @@ depends sdl                                      &&
 depends sdl_net                                  &&
 depends OPENGL                                   &&
 depends OPENAL                                   &&
+depends glew                                     &&
+depends fribidi                                  &&
 depends libpng                                   &&
 depends zlib                                     &&
 depends JPEG                                     &&
