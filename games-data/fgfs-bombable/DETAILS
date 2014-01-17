@@ -1,0 +1,15 @@
+           SPELL=fgfs-bombable
+         VERSION=4.5b
+          SOURCE="bombable${VERSION/\./-}.zip"
+   SOURCE_URL[0]=http://brenthugh.com/flightgear/${SOURCE}
+     SOURCE_HASH=sha512:0e6725e3aeeafe853d25b11f15b9ac5b4d9452486c1d17dd26dbafef833a0be47de22a17bc37fb9398df6578736172a39f536a4e0c0f1c7359b379ed49181e56
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://wiki.flightgear.org/Bombable"
+      LICENSE[0]=GPL
+         ENTERED=20131026
+           SHORT="an add-on to FlightGear that adds bombs, weapons, damage, fire, and explosion effects"
+cat << EOF
+Bombable is an add-on to FlightGear that adds bombs, weapons, damage, fire,
+and explosion effects to FlightGear that work with the main aircraft, scenery,
+AI aircraft and other AI objects and multiplayer aircraft objects.
+EOF

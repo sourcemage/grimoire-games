@@ -1,3 +1,7 @@
+2014-01-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-data/fgfs-bombable: new spell, a combat flight simulation
+	  addon for flightgear
+
 2013-03-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-simulation/dangerdeep: new spell, a WW2 submarine simulation
 
