@@ -17,4 +17,5 @@ depends  plib           &&
 depends  simgear        &&
 depends  subversion     &&
 depends  udev           &&
+depends  xdg-utils      &&
 depends  zlib
