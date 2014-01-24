@@ -301,3 +301,35 @@ function default_install_python() {
   python setup.py install --root "$INSTALL_ROOT/" "$@"
 }
 
+#---
+## Select SCM branch. If no parameter is given, it assumes a single scm branch.
+##
+## Saves selected branch in ${SPELL}_BRANCH, and auto-update setting on
+## ${SPELL}_AUTOUPDATE.
+##
+## Usage:
+##   . ${GRIMOIRE}/FUNCTIONS &&
+##   prepare_select_branch [branch] ...
+#---
+function prepare_select_branch() {
+  local spell=$(get_up_spell_name) &&
+  local branch="$spell"_BRANCH &&
+
+  if [[ $# > 1 ]]; then
+    config_query_list $branch "Select one of the available branches:" "$@"
+  else
+    eval $branch=\""${1:-scm}"\"
+  fi &&
+
+  if [[ "${!branch/-*}" = scm ]]; then
+    config_query "$spell"_AUTOUPDATE 'Automatically update on every system update?' n
+  fi
+}
+
+#---
+## Get uppercase spell name with _ instead of -
+#---
+function get_up_spell_name() {
+  echo ${1:-$SPELL} | tr "a-z-" "A-Z_"
+}
+
