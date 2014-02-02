@@ -1,0 +1,12 @@
+depends freeglut &&
+depends libpng &&
+depends curl &&
+depends zlib &&
+depends JPEG &&
+depends OPENGL &&
+depends simgear "--enable-simgear-shared" &&
+depends plib &&
+depends flightgear "--with-fgbase=/usr/share/games/flightgear" &&
+depends cvs &&
+depends automake &&
+depends autoconf
