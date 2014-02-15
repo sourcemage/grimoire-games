@@ -1,3 +1,9 @@
+2014-02-15 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS,BUILD,INSTALL,DEPENDS: Updated to 0.8.4.
+	  Note: Switched to hosted checkout tarball to be able to verify
+	  things.
+	* desktop/netpanzer.desktop: Desktop file to go with it.
+
 2007-10-31 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 0.8.2
 	* DEPENDS: Doesn't depend on netpanzer-data anymore

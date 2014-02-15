@@ -1,2 +1,7 @@
-jam install &&
-chgrp -R games ${INSTALL_ROOT}/usr/share/games/netpanzer
+datadir="$INSTALL_ROOT/usr/share/games/netpanzer" &&
+mkdir -p "$datadir" &&
+cp -a cache maps pics powerups scripts sound units wads \
+"$datadir" &&
+chgrp -R games "$datadir" &&
+cp netpanzer "$INSTALL_ROOT/usr/games/" &&
+cp netpanzer.png "$datadir"
