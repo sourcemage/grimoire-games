@@ -1,7 +1,9 @@
 datadir="$INSTALL_ROOT/usr/share/games/netpanzer" &&
 mkdir -p "$datadir" &&
-cp -a cache maps pics powerups scripts sound units wads \
-"$datadir" &&
+# Skip subversion directories.
+tar --exclude .svn -cf- \
+cache maps pics powerups scripts sound units wads \
+| (cd "$datadir" && tar -xf-) &&
 chgrp -R games "$datadir" &&
 cp netpanzer "$INSTALL_ROOT/usr/games/" &&
 cp netpanzer.png "$datadir"
