@@ -33,4 +33,6 @@ optional_depends redis \
 optional_depends luajit \
                  "-DDISABLE_LUAJIT=0" \
                  "-DDISABLE_LUAJIT=1" \
-                 "" 
+                 "" &&
+
+suggest_depends minetest_game "" "" "for the main game"
