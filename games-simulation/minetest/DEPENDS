@@ -1,0 +1,36 @@
+depends irrlicht &&
+depends cmake &&
+depends bzip2 &&
+depends libpng &&
+depends JPEG &&
+depends libxxf86vm &&
+depends OPENGL &&
+depends sqlite &&
+depends libogg &&
+depends libvorbis &&
+depends OPENAL &&
+
+optional_depends curl \
+                 "-DENABLE_CURL=1" \
+                 "-DENABLE_CURL=0" \
+                 "online mod repo, public serverlist and remote media fetching via http" &&
+optional_depends freetype2 \
+                 "-DENABLE_FREETYPE=1" \
+                 "-DENABLE_FREETYPE=0" \
+                 "ttf font support" &&
+optional_depends gettext \
+                 "-DENABLE_GETTEXT=1" \
+                 "-DENABLE_GETTEXT=0" \
+                 "translation support" &&
+optional_depends leveldb \
+                 "-DENABLE_LEVELDB=1" \
+                 "-DENABLE_LEVELDB=0" \
+                 "leveldb as map backend" &&
+optional_depends redis \
+                 "-DENABLE_REDIS" \
+                 "-DENABLE_REDIS=0" \
+                 "redis as map backend" &&
+optional_depends luajit \
+                 "-DDISABLE_LUAJIT=0" \
+                 "-DDISABLE_LUAJIT=1" \
+                 "" 
