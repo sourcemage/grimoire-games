@@ -1,0 +1,2 @@
+install -m 755 -d  ${INSTALL_ROOT}/usr/share/minetest/games/minetest_game &&
+cp -R ./* ${INSTALL_ROOT}/usr/share/minetest/games/minetest_game/.
