@@ -1,0 +1,13 @@
+config_query_option MINETEST_OPTS "Build client?" y \
+                    "-DBUILD_CLIENT=1" \
+                    "-DBUILD_CLIENT=0" &&
+
+if list_find "${MINETEST_OPTS}" "-DBUILD_CLIENT=1"; then
+  config_query_option MINETEST_OPTS "Enable sound?" y \
+                      "-DENABLE_SOUND=1" \
+                      "-DENABLE_SOUND=0"
+fi &&
+
+config_query_option MINETEST_OPTS "Build server?" y \
+                    "-DBUILD_SERVER=1" \
+                    "-DBUILD_SERVER=0"
