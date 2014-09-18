@@ -1,3 +1,6 @@
+2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
+	* games-engines/irrlicht: new spell, high performance realtime 3D engine
+
 2014-09-16 Jeremy Blosser <jblosser@sourcemage.org>
 	* FUNCTIONS: add get_scm_version
 	* games-simulation/minetest: new spell, infinite-world block sandbox game with survival and crafting

@@ -1,0 +1,6 @@
+2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
+	* *: moved to games
+
+2014-09-15 Jeremy Blosser <jblosser@sourcemage.org>
+	* PRE_BUILD, BUILD, DEPENDS, DETAILS, INSTALL: spell created
+
