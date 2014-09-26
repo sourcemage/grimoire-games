@@ -333,3 +333,17 @@ function get_up_spell_name() {
   echo ${1:-$SPELL} | tr "a-z-" "A-Z_"
 }
 
+#---
+## Get branch-based/autoupdate-aware version number
+#---
+function get_scm_version() {
+  local spell=$(get_up_spell_name) &&
+  local spell_branch="${spell}_BRANCH" &&
+  local spell_autoupdate="${spell}_AUTOUPDATE" &&
+  if [ "${!spell_autoupdate}" = "y" ]; then
+      echo $(date "+%Y%m%d")
+  else
+      echo ${!spell_branch:-scm}
+  fi
+}
+

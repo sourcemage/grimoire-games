@@ -1,0 +1,7 @@
+2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
+	* CONFIGURE, PRE_BUILD, BUILD, DEPENDS, DETAILS: Allow building just
+	  the client or server, allow building without sound support.
+
+2014-09-16 Jeremy Blosser <jblosser@sourcemage.org>
+	* PREPARE, BUILD, DEPENDS, DETAILS, INSTALL: spell created
+
