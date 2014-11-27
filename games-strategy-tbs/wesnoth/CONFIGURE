@@ -1,25 +1,66 @@
-config_query_option WESNOTH_BUILD                                     \
-                    "Build wesnoth game?" y                           \
-                    "wesnoth" ""                                      &&
+# remove obsolete options
+list_remove "WESNOTH_OPTS" "static=yes" &&
+list_remove "WESNOTH_OPTS" "static=no" &&
 
-config_query_option WESNOTH_BUILD                                     \
-                    "Build wesnoth server?" y                         \
-                    "wesnothd server_uid=daemon server_gid=games" ""  &&
+# backport legacy options
+if [[ -n "$WESNOTH_BUILD" ]]; then
+  persistent_add WESNOTH_OPTS &&
 
-config_query_option WESNOTH_BUILD                                     \
-                    "Build campaign server?" n                        \
-                    "campaignd" ""                                    &&
+  if list_find "$WESNOTH_BUILD" "wesnoth"; then
+    list_add "WESNOTH_OPTS" "-DENABLE_GAME=ON"
+  else
+    list_add "WESNOTH_OPTS" "-DENABLE_GAME=OFF"
+  fi &&
 
-config_query_option WESNOTH_BUILD                                     \
-                    "Build exploder tool?" n                          \
-                    "exploder" ""                                     &&
+  if list_find "$WESNOTH_BUILD" "wesnothd"; then
+    list_add "WESNOTH_OPTS" "-DENABLE_SERVER=ON -DSERVER_UID=daemon -DSERVER_GID=games"
+  else
+    list_add "WESNOTH_OPTS" "-DENABLE_SERVER=OFF"
+  fi &&
 
-config_query_option WESNOTH_BUILD                                     \
-                    "Build cutter tool?" n                            \
-                    "cutter" ""                                       &&
+  if list_find "$WESNOTH_BUILD" "campaignd"; then
+    list_add "WESNOTH_OPTS" "-DENABLE_CAMPAIGN_SERVER=ON"
+  else
+    list_add "WESNOTH_OPTS" "-DENABLE_CAMPAIGN_SERVER=OFF"
+  fi &&
 
-config_query_option WESNOTH_OPTS                                      \
-                    "Enable static building of wesnoth?" n            \
-                    "static=yes" "static=no"                
+  if list_find "$WESNOTH_BUILD" "exploder" || list_find "$WESNOTH_BUILD" "cutter"; then
+    list_add "WESNOTH_OPTS" "-DENABLE_TOOLS=ON"
+  else
+    list_add "WESNOTH_OPTS" "-DENABLE_TOOLS=OFF"
+  fi &&
 
+  persistent_remove WESNOTH_BUILD
+fi &&
 
+config_query_option WESNOTH_OPTS "Build wesnoth game?" y \
+                                 "-DENABLE_GAME=ON" \
+                                 "-DENABLE_GAME=OFF" &&
+
+config_query_option WESNOTH_OPTS "Build wesnoth server?" y \
+                                 "-DENABLE_SERVER=ON -DSERVER_UID=daemon -DSERVER_GID=games" \
+                                 "-DENABLE_SERVER=OFF" &&
+
+config_query_option WESNOTH_OPTS "Build campaign server?" n \
+                                 "-DENABLE_CAMPAIGN_SERVER=ON" \
+                                 "-DENABLE_CAMPAIGN_SERVER=OFF" &&
+
+config_query_option WESNOTH_OPTS "Build tools for artists and WML maintainers?" n \
+                                 "-DENABLE_TOOLS=ON" \
+                                 "-DENABLE_TOOLS=OFF" &&
+
+config_query_option WESNOTH_OPTS "Enable installation of desktop entry files?" y \
+                                 "-DENABLE_DESKTOP_ENTRY=ON" \
+                                 "-DENABLE_DESKTOP_ENTRY=OFF" &&
+
+config_query_option WESNOTH_OPTS "Enable building of translations?" y \
+                                 "-DENABLE_NLS=ON" \
+                                 "-DENABLE_NLS=OFF" &&
+
+config_query_option WESNOTH_OPTS "Build unit tests?" n \
+                                 "-DENABLE_TESTS=ON" \
+                                 "-DENABLE_TESTS=OFF" &&
+
+config_query_option WESNOTH_OPTS "Reduce memory usage by removing extra functionality?" n \
+                                 "-DENABLE_LOW_MEM=ON" \
+                                 "-DENABLE_LOW_MEM=OFF"
