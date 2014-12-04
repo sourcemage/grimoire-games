@@ -2,7 +2,7 @@
          VERSION=1.0
           SOURCE=$SPELL.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/discworld/$SOURCE
+   SOURCE_URL[0]=http://www.splitbrain.org/_media/projects/fortunes/${SOURCE}
         WEB_SITE=http://www.splitbrain.org/Fortunes/discworld/index.php
      SOURCE_HASH=sha512:62a8995cc197557942e69cb4a31ef05de7b37130194753333715f476f0da9db455482dfe31803018e4d2febaf7ecf3a5785f616203354388dbc7bc9cfbb8ab95
       LICENSE[0]=GPL
