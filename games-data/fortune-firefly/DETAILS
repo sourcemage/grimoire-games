@@ -13,5 +13,3 @@ cat << EOF
 Provides a set of quotes from the popular television series "Firefly", and
 its movie "Serenity", by Joss Whedon
 EOF
-
-	

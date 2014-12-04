@@ -13,5 +13,3 @@ cat << EOF
 fortune-discworld is a collection of quotes from the "Discworld" novels
 by Terry Pratchett.
 EOF
-
-	

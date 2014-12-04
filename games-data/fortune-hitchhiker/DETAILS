@@ -13,5 +13,3 @@ cat << EOF
 This is a collection of quotes from Douglas Adams' famous "Hitchhikers
 Guide to the Galaxy".
 EOF
-
-	

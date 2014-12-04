@@ -12,5 +12,3 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/bofh-fortune-mod${VERSION}
 cat << EOF
 Bastard Operator From Hell Fortune-Mod
 EOF
-
-	

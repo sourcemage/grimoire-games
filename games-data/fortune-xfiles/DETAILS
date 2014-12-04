@@ -13,5 +13,3 @@ cat << EOF
 This package contains various quotes from the X-Files TV episodes
 for use with the fortune program.
 EOF
-
-	
