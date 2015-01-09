@@ -1,3 +1,6 @@
+2015-01-09 Ismael Luceno <ismael@sourcemage.org>
+	* games-libs/allegro5: new spell, A game programming library
+
 2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
 	* games-engines/irrlicht: new spell, high performance realtime 3D engine
 
