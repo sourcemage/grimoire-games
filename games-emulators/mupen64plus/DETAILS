@@ -1,8 +1,8 @@
            SPELL=mupen64plus
-         VERSION=1.99.3
+         VERSION=2.0
           SOURCE="${SPELL}-bundle-src-${VERSION}.tar.gz"
    SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:832a8e76df70518f8a1ae058fad21d7f545aa2fc2ddacf3cef82ae7b8488ffdc46c92c9bc02f18346f81ae8423af0abf3473a6eab71cb65f4f22feca7af9c864
+     SOURCE_HASH=sha512:7dd3e0197d7775ee052ac6521e8764f7aa8f7edff4f6c4ef480c9c681382021b4a527994022ea1f8bf07045bcd1c564d61dd490ba531e5a34d9e36eda80154c3
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-bundle-src-${VERSION}"
         WEB_SITE="http://${SPELL}.googlecode.com"
       LICENSE[0]=GPL

@@ -1,3 +1,6 @@
+2015-01-12 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 2.0
+
 2010-06-17 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD, DEPENDS, DETAILS, INSTALL: Fixed SOURCE_URL[0]
 	  updated spell to 1.99.3
