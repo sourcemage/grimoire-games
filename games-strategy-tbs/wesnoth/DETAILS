@@ -1,10 +1,10 @@
            SPELL=wesnoth
 if [ "$WESNOTH_DEVEL" == "y" ]; then
-         VERSION=1.12
+         VERSION=1.12.1
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 else
-         VERSION=1.12
+         VERSION=1.12.1
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 fi
@@ -15,7 +15,7 @@ if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; t
 fi
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-$VERSION/$SOURCE
    SOURCE_URL[1]=http://www.wesnoth.org/files/$SOURCE
-SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION}.0"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION}"
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509

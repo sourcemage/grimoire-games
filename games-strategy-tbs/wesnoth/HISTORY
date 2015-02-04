@@ -1,3 +1,6 @@
+2015-02-04 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.1
+
 2014-11-27 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 1.12; simplified OLD_VERSION expansion;
 	  updated SOURCE_DIRECTORY
