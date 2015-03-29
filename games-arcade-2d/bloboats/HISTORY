@@ -1,3 +1,6 @@
+2015-03-29 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency on g++ to gcc
+
 2006-08-24 Pol Vinogradov <vin.public@gmail.com>
 	* PRE_BUILD: added more sedit lines for optimizations
 
