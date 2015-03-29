@@ -1,3 +1,6 @@
+2015-03-29 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency on g++ to gcc
+
 2009-04-18 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DEPENDS: added g++
 
