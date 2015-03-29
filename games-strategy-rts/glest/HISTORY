@@ -1,3 +1,6 @@
+2015-03-29 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency on g++ to gcc
+
 2008-05-30 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, PRE_BUILD, BUILD, INSTALL: Updated to 3.1.2
 	* FINAL: Added to remove $SOURCE2_DIRECTORY

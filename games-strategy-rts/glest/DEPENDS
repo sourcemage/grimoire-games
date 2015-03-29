@@ -1,4 +1,4 @@
-depends g++                                          &&
+depends -sub CXX gcc                                          &&
 depends jam                                          &&
 depends libvorbis "--with-vorbis=${TRACK_ROOT}/usr"  &&
 depends libogg "--with-ogg=${TRACK_ROOT}/usr"        &&
