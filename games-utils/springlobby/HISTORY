@@ -1,2 +1,5 @@
+2015-03-29 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency on g++ to gcc
+
 2008-04-23 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, DEPENDS, BUILD, HISTORY: Created
