@@ -1,5 +1,5 @@
 depends curl       &&
-depends g++        &&
+depends -sub CXX gcc        &&
 depends OPENGL     &&
 depends sdl        &&
 depends sdl_mixer  &&
