@@ -1,4 +1,5 @@
 depends cmake      &&
+depends glib2      &&
 depends pango      &&
 depends fontconfig &&
 # for libintl
