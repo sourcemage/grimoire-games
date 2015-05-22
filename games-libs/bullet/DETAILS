@@ -1,10 +1,10 @@
            SPELL=bullet
-         VERSION=2.82
-           EXTRA=r2704
-          SOURCE="$SPELL-$VERSION-$EXTRA.tgz"
+         VERSION=2.83.4
+          SOURCE="$SPELL-$VERSION.tgz"
    SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:44bec0bd74e6d9cd8c75a41d0faa068dc05f0cdad92ff001cc53ff29912db245606827a9e763ce2cf1b551b545668a779fdc4455f73c1901b57aaa4eee31901f
-SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${EXTRA}"
+   SOURCE_URL[0]=https://github.com/bulletphysics/bullet3/archive/${VERSION}.tar.gz
+     SOURCE_HASH=sha512:1a10a11671bd152835a45d44a1b3214e29c255338405705f2aaa41adfbdb545ec02f09b94003b836fafcc2b59b836e5b749696a5bb3489ec7050af0d02d9b2e1
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}3-${VERSION}"
         WEB_SITE="http://www.bulletphysics.com/"
       LICENSE[0]=zlib
          ENTERED=20070425
@@ -15,3 +15,4 @@ Library for games. ZLib license, free for commercial use, including Playstation
 3. Supports COLLADA Physics. Visit forum at http://bulletphysics.com for
 support and feedback
 EOF
+1a10a11671bd152835a45d44a1b3214e29c255338405705f2aaa41adfbdb545ec02f09b94003b836fafcc2b59b836e5b749696a5bb3489ec7050af0d02d9b2e1  /var/spool/sorcery/bullet-2.83.4.tgz
