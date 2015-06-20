@@ -1,5 +1,5 @@
            SPELL=gnuchess
-         VERSION=5.07
+         VERSION=6.2.1
           SOURCE=$SPELL-$VERSION.tar.gz
          SOURCE2=$SOURCE.sig
       SOURCE_GPG="gnu.gpg:$SOURCE2:UPSTREAM_KEY"
@@ -11,7 +11,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 #     SOURCE_HASH=sha512:143e84da292a5e6472f88b7a04c65040d047dd1921bc16e2e3357fc5ee748cfdf213b06df74d477d23825ea1828b2eee2b837efd4d45435ef3c9a0895b1ef549
       LICENSE[0]=GPL
          ENTERED=20020415
-         UPDATED=20031009
            SHORT="GNU Chess is the GNU chess program"
 cat << EOF
 GNU Chess lets most modern computers play a full game of chess. It has a plain
