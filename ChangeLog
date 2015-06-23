@@ -1,3 +1,6 @@
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+        * games-arcade-2d/chromium: spell deprecated [renamed to chromium-bsu]
+
 2015-01-09 Ismael Luceno <ismael@sourcemage.org>
 	* games-libs/allegro5: new spell, A game programming library
 

@@ -1,4 +1,4 @@
-depends  openal     &&
+depends  OPENAL     &&
 depends  sdl        &&
 depends  libpng     &&
 depends  libvorbis  &&
@@ -8,4 +8,4 @@ depends  fontconfig &&
 depends  GLUT       &&
 depends  freealut   &&
 depends  libglpng   &&
-depends  sdl_mixer  
+depends  sdl_mixer

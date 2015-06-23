@@ -1,7 +1,6 @@
 2015-06-23 Ismael Luceno <ismael@sourcemage.org>
-	* spell deprecated [renamed to chromium-bsu]
-	* PATCHLEVEL=9999
-	* DETAILS: version 0
+	* DETAILS: updated spell to 0.9.15.1
+	* DEPENDS: openal -> OPENAL
 
 2010-10-14 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Word-wrap long description to 80 cols
@@ -46,4 +45,3 @@
 
 2003-06-14 hgg <hgreig@bigpond.net.au>
 	* Created this spell
-
