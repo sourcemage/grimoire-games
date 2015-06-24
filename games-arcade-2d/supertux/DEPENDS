@@ -4,6 +4,6 @@ depends  sdl_image    &&
 depends  cmake        &&
 depends  physfs       &&
 depends  OPENGL       &&
-depends  openal       &&
+depends  OPENAL       &&
 depends  libvorbis    &&
 depends  libogg
