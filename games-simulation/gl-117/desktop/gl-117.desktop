@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gl-117
+Type=Application
+GenericName=Game
+Comment=Action flight simulator
+Exec=gl-117
+Terminal=false
+Hidden=false
+Categories=Game;3DGraphics;ActionGame;Simulation;
+Icon=gl-117
