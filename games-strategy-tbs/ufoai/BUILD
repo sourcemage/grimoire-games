@@ -1,2 +1,5 @@
-OPTS="--enable-release $UFOAI_OPTS $OPTS"  &&
-default_games_build
+./configure --prefix="$INSTALL_ROOT"/usr                 \
+            --bindir="$INSTALL_ROOT"/usr/games           \
+           --datadir="$INSTALL_ROOT"/usr/share/games     \
+    --enable-release $UFOAI_OPTS $OPTS &&
+make
