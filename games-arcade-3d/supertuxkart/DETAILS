@@ -1,9 +1,9 @@
            SPELL=supertuxkart
-         VERSION=0.6.1a
-          SOURCE="${SPELL}-${VERSION}.tar.bz2"
-   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:2e9edf1848a10cd9b8797aa116f27767edcd374e2b16444b39b4a6ee8120efdc1fbdaf54673f5b1ee017fc02d0dd913b27b54c1b35ea38db2160bf5e03854bdd
-SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+         VERSION=0.9
+          SOURCE="$SPELL-$VERSION-src.tar.xz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/SuperTuxKart/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:0876ad8bda49b3a26be82ee60742704608f4aca3e16fc038a06d9aa8dce9389b15fa69b547eca4b4a3c073cea495e7872924732a2e66802987c905348ff25ebb
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
         WEB_SITE="http://supertuxkart.sourceforge.net/"
       LICENSE[0]=GPL
          ENTERED=20080224
@@ -12,8 +12,4 @@ cat << EOF
 SuperTuxKart is a Free 3D kart racing game. Race with your kart on more than
 10 tracks against Tux and his friends. Be the first on the goal. With many
 items you can make sure that you will win ...
-
-supertuxkart: Screen stays blank until kart is selected.
-supertuxkart: Click mouse in the top 1/4 of the screen to select kart.
-
 EOF
