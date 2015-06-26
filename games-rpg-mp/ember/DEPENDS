@@ -9,7 +9,7 @@ depends  libsigc++3               &&
 depends  libwfut                  &&
 depends  mercator                 &&
 depends  -sub "CEGUI DEVIL" ogre  &&
-depends  openal                   &&
+depends  OPENAL                   &&
 depends  sdl                      &&
 depends  skstream                 &&
 depends  varconf                  &&
