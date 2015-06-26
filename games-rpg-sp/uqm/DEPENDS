@@ -9,7 +9,7 @@ depends  nasm
 fi                  &&
 if [[ "$UQM_SOUND" == "openal" ]]
 then
-depends  openal
+depends  OPENAL
 fi                  &&
 if [[ "$UQM_SOUND" == "mixsdl" ]]
 then

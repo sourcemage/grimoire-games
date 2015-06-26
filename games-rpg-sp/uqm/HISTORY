@@ -1,3 +1,6 @@
+2015-06-26 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency from openal(-soft) to OPENAL
+
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
