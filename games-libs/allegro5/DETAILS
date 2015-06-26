@@ -1,8 +1,8 @@
            SPELL=allegro5
-         VERSION=5.0.10
+         VERSION=5.0.11
           SOURCE="allegro-$VERSION.tar.gz"
    SOURCE_URL[0]=http://sourceforge.net/projects/alleg/files/allegro/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:38830c7e7472828991e1913230143a46d2af405c2404ee10a9fe39dbc4fa6322b84da6de450f7f53fdf661882ec2cb8ee1b03b70ed3cf1b67098cebf35621d13
+     SOURCE_HASH=sha512:bcf3bec236d5dee11c789394144959d2a2f6028ae3d89a91a726f796d74f785c7f28749ac1cda94becaf18c31c76fcf75b8f2f6d1f2c32c52d556f967a406052
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/allegro-$VERSION"
         WEB_SITE="http://alleg.sourceforge.net"
       LICENSE[0]="$WEB_SITE/license.html"
