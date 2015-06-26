@@ -1,3 +1,7 @@
+2015-06-25 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD: added, use default_games_build (to install to /usr/games)
+	* DETAILS: PATCHLEVEL++
+
 2015-06-23 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 0.9.15.1
 	* DEPENDS: openal -> OPENAL
