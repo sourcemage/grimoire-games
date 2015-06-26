@@ -1,5 +1,5 @@
 depends  glibc     &&
-depends  openal    &&
+depends  OPENAL    &&
 depends  sdl       &&
 depends  tslib     &&
 depends  X11-LIBS
