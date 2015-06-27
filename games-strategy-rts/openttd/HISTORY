@@ -1,3 +1,7 @@
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD, DEPENDS, DETAILS: updated spell to 1.5.1
+	  Updated dependencies
+
 2012-01-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 1.1.5
 

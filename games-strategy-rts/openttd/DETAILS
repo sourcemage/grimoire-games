@@ -1,11 +1,11 @@
            SPELL=openttd
-         VERSION=1.1.5
+         VERSION=1.5.1
           SOURCE=$SPELL-$VERSION-source.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://binaries.openttd.org/releases/${VERSION}/${SOURCE}
         WEB_SITE=http://www.openttd.org/
          ENTERED=20040708
-     SOURCE_HASH=sha512:7700c5a5074876973a0c6d719de72e26cbca2fff1f2f5bae73b1aad1a6d0e8fde725fe9cf612d150aa3a0aa802440e488ac7e5dde6e1b23ff5812e004205c898
+     SOURCE_HASH=sha512:583b39066bbdb45186e07e2578f0533b0f47484eafd21210a9c2b8d9076c63e2e3291ef7d380442635b1fc818840070274c8555f12e0e95d127690bbda533c84
       LICENSE[0]=GPL
            SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF

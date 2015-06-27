@@ -1,7 +1,15 @@
 optional_depends  sdl                                          \
                   "--with-sdl"                                 \
                   "--without-sdl"                              \
-                  "SDL is needed for client else server only"  &&
+                  "SDL video driver"                           &&
+optional_depends  allegro                                      \
+                  "--with-allegro"                             \
+                  "--without-allegro"                          \
+                  "Allegro video driver"                       &&
+optional_depends  TIMIDITY                                     \
+                  --with-libtimidity                           \
+                  --without-libtimidity                        \
+                  "Enable MIDI music with TiMidity++"          &&
 optional_depends  libpng                                       \
                   "--with-png"                                 \
                   "--without-png"                              \
@@ -9,7 +17,15 @@ optional_depends  libpng                                       \
 optional_depends  zlib                                         \
                   "--with-zlib"                                \
                   "--without-zlib"                             \
-                  "Enable savegames using zlib"                &&
+                  "Enable zlib-compressed savegames"           &&
+optional_depends  xz-utils                                     \
+                  --with-liblzma                               \
+                  --without-liblzma                            \
+                  "Enable LZMA-compressed savegames"           &&
+optional_depends  lzo                                          \
+                  --with-liblzo2                               \
+                  --without-liblzo2                            \
+                  "Enabze LZO-compressed savegames"            &&
 optional_depends  freetype2                                    \
                   "--with-freetype"                            \
                   "--without-freetype"                         \
@@ -17,4 +33,8 @@ optional_depends  freetype2                                    \
 optional_depends  fontconfig                                   \
                   "--with-fontconfig"                          \
                   "--without-config"                           \
-                  "Enable fontconfig"
+                  "Enable fontconfig"                          &&
+optional_depends  icu                                          \
+                  "--with-icu"                                 \
+                  "--without-icu"                              \
+                  "right-to-left text support"
