@@ -2,7 +2,7 @@
          VERSION=2.0.1
           SOURCE=fortune-mod-dune-quotes.$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune-mod-dune-quotes.$VERSION
-   SOURCE_URL[0]=http://dune.s31.pl/$SOURCE
+   SOURCE_URL[0]=http://distfiles.gentoo.org/distfiles/${SOURCE}
         WEB_SITE=http://dune.s31.pl/
      SOURCE_HASH=sha512:fa40ba975f8a3dd53cc5af7803fd18bc849bd7ea996c03031c3800b3dc42b33dfa540ad1826a0dc94c2284ada9ed6c1b411e314b11a94bad427e080af52b23e9
       LICENSE[0]=BSD
