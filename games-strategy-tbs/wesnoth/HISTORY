@@ -1,3 +1,7 @@
+2015-08-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.4; SECURITY_PATCH++ (CVE-2015-5069,
+	  CVE-2015-5070)
+
 2015-04-14 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 1.12.2; SECURITY_PATCH=1 (CVE-2015-0844)
 	* DEPENDS: added missing glib2 dependency
