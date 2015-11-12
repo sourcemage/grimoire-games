@@ -1,10 +1,10 @@
            SPELL=wesnoth
 if [ "$WESNOTH_DEVEL" == "y" ]; then
-         VERSION=1.12.4
+         VERSION=1.12.5
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 else
-         VERSION=1.12.4
+         VERSION=1.12.5
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 fi
