@@ -1,3 +1,8 @@
+2015-11-15 Ismael Luceno <ismael@sourcemage.org>
+	* teg-0.11.2.tar.gz.sig: Removed
+	* DETAILS: Upstream moved to github, source tarball changed
+	  changed to use a hash
+
 2008-09-29 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Depends on libgnomeui
 
