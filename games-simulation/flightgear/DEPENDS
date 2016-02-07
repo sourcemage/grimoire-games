@@ -16,6 +16,6 @@ depends  openscenegraph &&
 depends  plib           &&
 depends  simgear        &&
 depends  subversion     &&
-depends  udev           &&
+depends  DEVICE-MANAGER &&
 depends  xdg-utils      &&
 depends  zlib

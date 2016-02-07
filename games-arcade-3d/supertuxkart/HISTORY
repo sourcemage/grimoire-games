@@ -1,3 +1,9 @@
+2015-06-24 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD: Changed to cmake_build.
+	* DETAILS: Fixed SOURCE_URL[0] and SOURCE
+	  Fixed description.
+	  updated spell to 0.9
+
 2009-03-13 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.6.1a, fixed SOURCE
 

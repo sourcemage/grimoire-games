@@ -1,5 +1,5 @@
 depends sdl &&
-depends g++ &&
+depends -sub CXX gcc &&
 depends imlib &&
 depends autoconf &&
 depends libtool &&

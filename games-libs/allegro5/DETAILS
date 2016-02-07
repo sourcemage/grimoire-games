@@ -1,0 +1,40 @@
+           SPELL=allegro5
+         VERSION=5.0.11
+          SOURCE="allegro-$VERSION.tar.gz"
+   SOURCE_URL[0]=http://sourceforge.net/projects/alleg/files/allegro/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:bcf3bec236d5dee11c789394144959d2a2f6028ae3d89a91a726f796d74f785c7f28749ac1cda94becaf18c31c76fcf75b8f2f6d1f2c32c52d556f967a406052
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/allegro-$VERSION"
+        WEB_SITE="http://alleg.sourceforge.net"
+      LICENSE[0]="$WEB_SITE/license.html"
+         ENTERED=20150109
+        KEYWORDS=""
+           SHORT="A game programming library"
+cat << EOF
+Allegro is a cross-platform library mainly aimed at video game and multimedia
+programming. Handling common, low-level tasks such as creating windows,
+accepting user input, loading data, drawing images, playing sounds, etc. and
+generally abstracting away the underlying platform. However, Allegro is not
+a game engine: you are free to design and structure your program as you like.
+
+Allegro was started by Shawn Hargreaves in the mid-90's but has since received
+contributions from hundreds of people over the net.
+
+Allegro 5 is the latest major revision of the library, designed to take
+advantage of modern hardware (e.g. hardware acceleration using 3D cards)
+and operating systems. Although it is not backwards compatible with earlier
+versions, it still occupies the same niche and retains a familiar style.
+
+Allegro 5.0 supports the following platforms:
+
+    Unix/Linux Windows (MSVC, MinGW) MacOS X iPhone
+
+Allegro 5.1 also adds support for:
+
+    Android
+
+Allegro only supports 2D graphics primitives natively, but it is perfectly
+reasonable to use Allegro alongside a 3D API (e.g. OpenGL, Direct3D, and
+higher level libraries), while Allegro handles the other tasks. Allegro is
+also designed to be modular; e.g. if you prefer, you can substitute another
+audio library.
+EOF

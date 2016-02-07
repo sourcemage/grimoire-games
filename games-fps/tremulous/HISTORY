@@ -1,3 +1,6 @@
+2015-06-26 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency from openal(-soft) to OPENAL
+
 2008-02-28 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on tslib as well
 

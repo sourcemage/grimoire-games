@@ -1,13 +1,14 @@
            SPELL=wesnoth
 if [ "$WESNOTH_DEVEL" == "y" ]; then
-         VERSION=1.10.1
+         VERSION=1.12.5
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.10}
+     OLD_VERSION=${OLD_VERSION:-$VERSION}
 else
-         VERSION=1.10.1
+         VERSION=1.12.5
           SOURCE=$SPELL-$VERSION.tar.bz2
-     OLD_VERSION=${OLD_VERSION:-1.10}
+     OLD_VERSION=${OLD_VERSION:-$VERSION}
 fi
+  SECURITY_PATCH=1
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
 # check that we have the previous tarball first and if so, enable xdelta
 if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; then
@@ -15,7 +16,7 @@ if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; t
 fi
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL-$VERSION/$SOURCE
    SOURCE_URL[1]=http://www.wesnoth.org/files/$SOURCE
-SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION}"
       LICENSE[0]=GPL
         WEB_SITE=http://www.wesnoth.org/
          ENTERED=20040509

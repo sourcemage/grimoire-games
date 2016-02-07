@@ -2,10 +2,23 @@ depends zlib       &&
 depends curl       &&
 depends JPEG       &&
 depends gettext    &&
-depends sdl        &&
-depends sdl_mixer  &&
-depends sdl_ttf    &&
 depends libpng     &&
 depends OPENGL     &&
 depends ncurses    &&
+depends libogg     &&
+depends libvorbis  &&
+optional_depends sdl2 \
+		 "" \
+		 --disable-sdl2 \
+		 "Use SDL 2.x (recommended) instead of SDL 1.x" &&
+if is_depends_enabled $SPELL sdl2; then
+  depends sdl2_image &&
+  depends sdl2_mixer &&
+  depends sdl2_ttf
+else
+  depends sdl       &&
+  depends sdl_image &&
+  depends sdl_mixer &&
+  depends sdl_ttf
+fi &&
 depends X11-LIBS

@@ -13,5 +13,3 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/fortune.it-${VERSION}
 cat << EOF
 This package contains a very funny fortune file in Italian.
 EOF
-
-	

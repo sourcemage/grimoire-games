@@ -1,9 +1,9 @@
            SPELL=simgear
-         VERSION=2.12.1
+         VERSION=3.2.0
           SOURCE=simgear-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/simgear-$VERSION
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/simgear-${VERSION%-rc*}
    SOURCE_URL[0]=http://mirrors.ibiblio.org/pub/mirrors/simgear/ftp/Source/${SOURCE}
-     SOURCE_HASH=sha512:60b6644d77c71db13362e4c75840f18145579fa0677fbc4a3ddc9fbed45ea39be7b7a1144615577d13df462166d74e5bb830091d46fe2b06d1f0ca5cf366897b
+     SOURCE_HASH=sha512:2c3aaa90247032f7f900d475dde0708f5d43dfe9c22eb4d74a9a97de45508ae457ab6f6906d02af1177fddeef2d44d60255264fed7aa5705ff50f125cb96be6e
 #      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922

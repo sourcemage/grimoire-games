@@ -2,7 +2,7 @@
          VERSION=1.0
           SOURCE=$SPELL.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://www.splitbrain.org/Fortunes/xfiles/$SOURCE
+   SOURCE_URL[0]=http://www.splitbrain.org/_media/projects/fortunes/${SOURCE}
         WEB_SITE=http://www.splitbrain.org/Fortunes/xfiles/index.php
      SOURCE_HASH=sha512:3a6c81f3cb47a40b9717032f7eade2ded4eba4670cd76311187f64eaa9764eefac439f01217ad34feda48609c1dfc1a04cab7871d80c848bd1d5d157232f099b
       LICENSE[0]=GPL
@@ -13,5 +13,3 @@ cat << EOF
 This package contains various quotes from the X-Files TV episodes
 for use with the fortune program.
 EOF
-
-	

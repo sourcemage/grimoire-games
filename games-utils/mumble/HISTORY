@@ -1,3 +1,6 @@
+2015-03-29 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Switch dependency on g++ to gcc
+
 2011-02-20 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: updated spell to 1.2.3
 

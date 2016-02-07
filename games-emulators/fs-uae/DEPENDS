@@ -1,0 +1,9 @@
+depends freetype2 &&
+depends glib2 &&
+depends glew &&
+depends libmpeg2 &&
+depends OPENAL &&
+depends OPENGL &&
+depends libpng &&
+depends sdl2 &&
+depends zlib 

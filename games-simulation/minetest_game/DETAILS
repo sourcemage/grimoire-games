@@ -1,0 +1,28 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=minetest_game
+if [ "${MINETEST_GAME_BRANCH}" == "scm" ]; then
+         VERSION=$(get_scm_version)
+          SOURCE=${SPELL}-${MINETEST_GAME_BRANCH}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${MINETEST_GAME_BRANCH}
+  FORCE_DOWNLOAD=on
+   SOURCE_URL[0]=git://github.com/minetest/${SPELL}.git
+   SOURCE_IGNORE=volatile
+else
+         VERSION=0.4.10
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=https://github.com/minetest/${SPELL}/archive/${VERSION}.tar.gz
+     SOURCE_HASH=sha512:eccfcb439d66809eff5088dc22f9c568a7e56b329c8ef9008d6007e9ad43b37f8c4282e0c652b638b10591fdec29f5e53d6dd0d148333906d9bf2df137aa0148
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+fi
+        WEB_SITE="https://github.com/minetest/minetest_game"
+      LICENSE[0]=LGPL
+         ENTERED=20140916
+           SHORT="the main game for the Minetest game engine"
+cat << EOF
+The main game for the Minetest game engine [minetest_game]
+==========================================================
+
+To use this game with Minetest, insert this repository as
+  /games/minetest_game
+in the Minetest Engine.
+EOF

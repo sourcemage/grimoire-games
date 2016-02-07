@@ -3,4 +3,4 @@ depends sdl_image &&
 depends sdl_mixer &&
 depends sdl_net &&
 depends libvorbis &&
-depends g++ 
+depends -sub CXX gcc 

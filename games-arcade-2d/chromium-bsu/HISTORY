@@ -1,0 +1,51 @@
+2015-06-25 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD: added, use default_games_build (to install to /usr/games)
+	* DETAILS: PATCHLEVEL++
+
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.9.15.1
+	* DEPENDS: openal -> OPENAL
+
+2010-10-14 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: Word-wrap long description to 80 cols
+
+2008-08-24 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 0.9.13.2
+
+2008-06-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 0.9.13.1
+	* DEPENDS: tons of depends
+	* BUILD, INSTALL: removed
+	* PRE_BUILD, chromium.patch: removed
+	* chromium: removed
+
+2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* chromium: modified a bit
+	* INSTALL: modified removed unpack as per bug #9443,
+	  ups it de exec the binary :(
+	* PRE_BUILD: calling unpack_file '2'
+
+2005-07-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* chromium: added launcher script bug #9161
+	* INSTALL: installs the launcher script
+
+2004-08-03 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: SDL renamed to sdl
+	  Formatted to Guru Handbook
+
+2004-07-12 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Removed MAINTAINER
+	  Cleaned up spacing
+	  Shortened SHORT
+
+2003-11-26 hgg <hgreig@bigpond.net.au>
+	* BUILD: add mkdir -p after prepare_install
+
+2003-06-18 hgg <hgreig@bigpond.net.au>
+	* New Games grimoire is born!
+
+2003-06-14 hgg <hgreig@bigpond.net.au>
+	* Created this spell

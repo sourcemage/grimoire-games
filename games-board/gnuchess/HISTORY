@@ -1,3 +1,7 @@
+2015-06-19 Ismael Luceno <ismael@sourcemage.org>
+	* gcc4.patch: removed, no longer needed
+	* DETAILS: updated spell to 6.2.1
+
 2009-08-14 Peng Chang (Charles) <chp@sourcemage.org>
 	* PRE_BUILD: renamed function getline, resolved bug #15346
 

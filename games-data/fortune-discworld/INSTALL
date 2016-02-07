@@ -1,5 +1,7 @@
 cd $SOURCE_DIRECTORY  &&
 
+install -d -m 0750 -o root -g games ${INSTALL_ROOT}/usr/share/games/fortunes/ &&
+
 for cookie in *.dat
 do
   install -m 0640 -o root -g games $cookie         \

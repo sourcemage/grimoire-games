@@ -1,3 +1,8 @@
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+	* spell deprecated [renamed to chromium-bsu]
+	* PATCHLEVEL=9999
+	* DETAILS: version 0
+
 2010-10-14 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Word-wrap long description to 80 cols
 

@@ -6,7 +6,7 @@ depends  glew                                      &&
 depends  jdk6-bin   ''   'z-rejected'              &&
 depends  libogg                                    &&
 depends  libvorbis                                 &&
-depends  openal-soft                               &&
+depends  OPENAL                               &&
 depends  OPENGL                                    &&
 depends  python                                    &&
 depends  sdl                                       &&

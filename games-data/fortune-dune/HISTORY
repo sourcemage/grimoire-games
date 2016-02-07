@@ -1,3 +1,9 @@
+2015-08-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: fix SOURCE_URL
+
+2014-12-04 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Make sure /usr/share/games/fortunes/ exists
+
 2013-07-01 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Do not use find_and_scam on shared directories
 

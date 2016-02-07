@@ -1,0 +1,49 @@
+depends cmake &&
+depends zlib &&
+depends sqlite &&
+
+optional_depends luajit \
+                 "-DDISABLE_LUAJIT=0" \
+                 "-DDISABLE_LUAJIT=1" \
+                 "" &&
+optional_depends curl \
+                 "-DENABLE_CURL=1" \
+                 "-DENABLE_CURL=0" \
+                 "online mod repo, public serverlist and remote media fetching via http" &&
+optional_depends gettext \
+                 "-DENABLE_GETTEXT=1" \
+                 "-DENABLE_GETTEXT=0" \
+                 "translation support" &&
+
+if list_find "${MINETEST_OPTS}" "-DBUILD_CLIENT=1"; then
+  depends irrlicht &&
+  depends bzip2 &&
+  depends libpng &&
+  depends JPEG &&
+  depends libxxf86vm &&
+  depends OPENGL &&
+
+  optional_depends freetype2 \
+                   "-DENABLE_FREETYPE=1" \
+                   "-DENABLE_FREETYPE=0" \
+                   "ttf font support" &&
+
+  if list_find "${MINETEST_OPTS}" "-DENABLE_SOUND=1"; then
+    depends libogg &&
+    depends libvorbis &&
+    depends OPENAL 
+  fi
+fi &&
+
+if list_find "${MINETEST_OPTS}" "-DBUILD_SERVER=1"; then
+  optional_depends leveldb \
+                   "-DENABLE_LEVELDB=1" \
+                   "-DENABLE_LEVELDB=0" \
+                   "leveldb as map backend" &&
+  optional_depends redis \
+                   "-DENABLE_REDIS" \
+                   "-DENABLE_REDIS=0" \
+                   "redis as map backend" &&
+
+  suggest_depends minetest_game "" "" "for the main game"
+fi

@@ -1,16 +1,11 @@
-config_query_option UFOAI_OPTS "Build dedicated server?"     \
-                               y                             \
-                               "--enable-dedicated"          \
-                               "--disable-dedicated"         &&
-config_query_option UFOAI_OPTS "Build client?"               \
-                               y                             \
-                               "--enable-client"             \
-                               "--disable-client"            &&
-config_query_option UFOAI_OPTS "Build ufo2map?"              \
-                               n                             \
-                               "--enable-ufo2map"            \
-                               "--disable-ufo2map"           &&
-config_query_option UFOAI_OPTS "Build with shader support?"  \
-                               n                             \
-                               "--with-shaders"              \
-                               "--without-shaders"
+config_module() {
+  config_query_option UFOAI_OPTS "Build ${2:-$1}?" "${3:-y}" "--enable-$1" "--disable-$1"
+}
+
+config_module ufoded            "dedicated server"           &&
+config_module ufo               "client"                     &&
+
+config_module uforadiant        "map editor"               n &&
+config_module ufo2map           "map compiler"             n &&
+config_module ufoslicer         "BSP (map) slicer utility" n &&
+config_module ufomodel          "modeling tool"            n

@@ -1,4 +1,4 @@
-depends g++ &&
+depends -sub CXX gcc &&
 depends jam &&
 depends sdl &&
 depends sdl_mixer &&

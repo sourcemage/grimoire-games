@@ -1,10 +1,8 @@
-WESNOTH_PATHS="prefix=$INSTALL_ROOT/usr \
-               bindir=$INSTALL_ROOT/usr/games \
-               datadir=$INSTALL_ROOT/usr/share/games/$SPELL \
-               icondir=$INSTALL_ROOT/usr/share/games/icons \
-               desktopdir=$INSTALL_ROOT/usr/share/applications \
-               build_dir=wesnoth-build"  &&
+OPTS="-DBINDIR=$INSTALL_ROOT/usr/games \
+      -DENABLE_STRICT_COMPILATION=FALSE \
+      $WESNOTH_OPTS" &&
 
-WESNOTH_OPTS="jobs=${MAKE_NJOBS} verbose=yes"  && 
+CFLAGS="`pkg-config --cflags glib-2.0` $CFLAGS" &&
+LDFLAGS="-lpthread $LDFLAGS" &&
 
-scons $WESNOTH_BUILD $WESNOTH_PATHS $WESNOTH_OPTS $OPTS
+cmake_build

@@ -1,38 +1,40 @@
-depends scons      &&
+depends cmake      &&
+depends glib2      &&
 depends pango      &&
 depends fontconfig &&
+# for libintl
 depends gettext    &&
 depends zlib       &&
+depends bzip2      &&
+depends libvorbis  &&
 depends sdl        &&
 depends sdl_image  &&
 depends sdl_mixer  &&
 depends sdl_net    &&
 depends sdl_ttf    &&
-depends lua51      &&
-depends -sub "IOSTREAMS REGEX SERIALIZATION PROGRAM_OPTIONS SYSTEM THREAD" boost &&
+depends lua        &&
+
+# TODO: add ASIO sub-dependency to boost spell
+if list_find "$WESNOTH_OPTS" "-DENABLE_TESTS=ON"; then
+  depends -sub "IOSTREAMS REGEX SERIALIZATION PROGRAM_OPTIONS SYSTEM THREAD LOCALE FILESYSTEM TEST" boost
+else
+  depends -sub "IOSTREAMS REGEX SERIALIZATION PROGRAM_OPTIONS SYSTEM THREAD LOCALE FILESYSTEM" boost
+fi &&
+
+if list_find "$WESNOTH_OPTS" "-DENABLE_TOOLS=ON"; then
+  depends libpng
+fi &&
 
 if [[ $WESNOTH_XDELTA == y ]]; then
   depends xdelta
 fi  &&
 
-#optional_depends python  "--enable-python-install" "" "for Python tools" &&
+optional_depends dbus \
+                 "-DENABLE_NOTIFICATIONS=ON" \
+                 "-DENABLE_NOTIFICATIONS=OFF" \
+                 "for desktop notifications" &&
 
-optional_depends dbus                                         \
-                 "notifications=yes" "notifications=no"       \
-                 "Enable support for desktop notifications?"  &&
-
-optional_depends ccache                                       \
-                 "ccache=yes" "ccache=no"                     \
-                 "Build with ccache?"                         &&
-
-optional_depends distcc                                       \
-                 "distcc=yes" "distcc=no"                     \
-                 "Build with distcc?"                         &&
-
-optional_depends gettext                                      \
-                 "nls=yes" "nls=no"                           \
-                 "Enable gettext mesage catalogs?"            &&
-
-optional_depends fribidi                                      \
-                 "fribidi=yes" "fribidi=no"                   \
-                 "Enable fribidi support?"                    
+optional_depends fribidi \
+                 "-DENABLE_FRIBIDI=ON" \
+                 "-DENABLE_FRIBIDI=OFF" \
+                 "for FriBIDI support"

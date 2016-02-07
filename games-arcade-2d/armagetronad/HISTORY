@@ -1,3 +1,7 @@
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.2.8.3.3
+	  fixed long description wrap
+
 2006-01-31 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: version bump for security reasons to 0.2.8.2.1
 	   and added SECURITY_PATCH=1

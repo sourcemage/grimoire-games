@@ -1,3 +1,20 @@
+2016-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-emulators/fs-uae: new spell, an Amiga emulator
+
+2015-06-23 Ismael Luceno <ismael@sourcemage.org>
+	* games-arcade-2d/chromium: spell deprecated [renamed to chromium-bsu]
+
+2015-01-09 Ismael Luceno <ismael@sourcemage.org>
+	* games-libs/allegro5: new spell, A game programming library
+
+2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
+	* games-engines/irrlicht: new spell, high performance realtime 3D engine
+
+2014-09-16 Jeremy Blosser <jblosser@sourcemage.org>
+	* FUNCTIONS: add get_scm_version
+	* games-simulation/minetest: new spell, infinite-world block sandbox game with survival and crafting
+	* games-simulation/minetest_game: new spell, the main game for the Minetest game engine
+
 2014-02-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-utils/fgfs-atlas: new spell, a moving map for flightgear
 

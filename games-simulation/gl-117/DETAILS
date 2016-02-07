@@ -1,12 +1,11 @@
            SPELL=gl-117
-         VERSION=1.3.1
+         VERSION=1.3.2
           SOURCE=${SPELL}-${VERSION}-src.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-src
    SOURCE_URL[0]=${SOURCEFORGE_URL}/gl-117/${SOURCE}
         WEB_SITE=http://www.heptargon.de/
          ENTERED=20040917
-         UPDATED=20040917
-     SOURCE_HASH=sha512:b30dea0e59cd554b2c1dc532300898c04b1de9b40a142a2dc0e37827845ed520aa6586ab4d5f2b11bd99aff68b4003e7c8fe0a079cf324af06510541bf9480fb
+     SOURCE_HASH=sha512:1d2382576c6399d8c84d56ddc7eb2b11b9e1e3ffeebcc1bd30e258ef231626d15d1be649f8c791f30e4f2f78aca2b4290c5d08036c5f482eef01eda8f4f48b5f
       LICENSE[0]=GPL
            SHORT="GL-117 is an action flight simulator for Linux/Unix and MSWindows"
 cat << EOF

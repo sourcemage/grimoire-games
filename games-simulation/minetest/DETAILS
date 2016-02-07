@@ -1,0 +1,51 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=minetest
+ IRRLICHT_VERSION=1.8.1
+if [ "${MINETEST_BRANCH}" == "scm" ]; then
+          VERSION=$(get_scm_version)
+           SOURCE=${SPELL}-${MINETEST_BRANCH}.tar.bz2
+ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${MINETEST_BRANCH}
+FORCE_DOWNLOAD[1]=on
+    SOURCE_URL[0]=git://github.com/${SPELL}/${SPELL}.git
+    SOURCE_IGNORE=volatile
+else
+          VERSION=0.4.10
+           SOURCE=${SPELL}-${VERSION}.tar.gz
+    SOURCE_URL[0]=https://github.com/${SPELL}/${SPELL}/archive/${VERSION}.tar.gz
+      SOURCE_HASH=sha512:882723996b4904b4b9e3653476c2b4a988967600fc2b0897f755dd28d5da2ae5cab45a14fcdf8827c3f2838e952399e1e7d7e264cd26070fef2dbcd33cd1c59a
+ SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+fi
+          SOURCE2="irrlicht-${IRRLICHT_VERSION}.zip"
+   SOURCE2_URL[0]=http://downloads.sourceforge.net/irrlicht/${SOURCE2}
+     SOURCE2_HASH=sha512:93390c162e5a8edb231588d47dc421c24d21a34e833df1f3b92c85a9e8ef4a96a61d854e05eedb37f88f7f02821059e78a40a52cbc8e39356c4d36b17775dfbb
+         WEB_SITE="http://minetest.net/"
+       LICENSE[0]=LGPL
+          ENTERED=20140916
+            SHORT="infinite-world block sandbox game with survival and crafting"
+cat << EOF
+Minetest is an infinite-world block sandbox game and a game engine, inspired
+by InfiniMiner, Minecraft and the like. It has been in development and use
+since October 2010.
+
+It is Free and Open Source Software, released under the LGPL 2.1 or later,
+available for Windows, Mac OS X and Linux.
+
+Minetest is developed by a random bunch of lunatics.
+
+Minetest is designed to be simple, stable and portable. It is lightweight
+enough to run on fairly old hardware. It currently runs playably on a laptop
+with Intel 945GM graphics. Though, as for the CPU, dualcore is recommended.
+
+Features
+
+* Walk around, dig and build in an infinite voxel world, and craft stuff
+  from raw materials to help you along the way.
+* Simplistic Modding API that supports many kinds of additions and
+  modifications to the game.
+* Multiplayer support for tens of players, via servers hosted by users.
+* Voxel based lighting with gameplay consequences (light caves and buildings
+  with torches)
+* Almost infinite world and a beautiful map generator.
+* Runs natively on Windows, Linux, OS X and FreeBSD.
+* Supports multiple languages, translated by the community.
+EOF

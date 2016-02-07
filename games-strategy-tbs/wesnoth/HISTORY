@@ -1,3 +1,30 @@
+2015-11-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.5
+
+2015-08-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.4; SECURITY_PATCH++ (CVE-2015-5069,
+	  CVE-2015-5070)
+
+2015-04-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.2; SECURITY_PATCH=1 (CVE-2015-0844)
+	* DEPENDS: added missing glib2 dependency
+	* BUILD: fixed fribidi detection, linking with pthread
+
+2015-02-04 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12.1
+
+2014-11-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.12; simplified OLD_VERSION expansion;
+	  updated SOURCE_DIRECTORY
+	* CONFIGURE: updated options; switched to cmake
+	* DEPENDS: removed distcc, ccache; switched to cmake: removed scons;
+	  lua51 -> lua; added missing libvorbis; returned back libpng; moved
+	  NLS setting to CONFIGURE; added bzip2
+	* BUILD: switched to cmake build
+	* INSTALL: dropped
+	* PRE_BUILD: removed extra space
+	* desktop: dropped, replaced by upstream version
+
 2012-03-03 Robin Cook <rcook@wyrms.net>
 	* BUILD: changed to SCONS build
 	* CONFIGURE: changed to new build options

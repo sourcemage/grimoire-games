@@ -13,5 +13,3 @@ cat << EOF
 fortune-fgump is a collection of quotes from the movie
 "Forrest Gump" for use with the fortune program.
 EOF
-
-	

@@ -1,3 +1,9 @@
+2015-06-24 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: openal -> OPENAL
+	* DETAILS: Fixed SOURCE_URL[0]
+	  fixed WEB_SITE
+	  updated spell to 0.3.5a
+
 2011-01-13 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version 0.3.3
 	* BUILD, DEPENDS: jam -> cmake

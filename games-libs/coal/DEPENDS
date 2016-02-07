@@ -1,2 +1,2 @@
 depends libxml  &&
-depends g++
+depends -sub CXX gcc
