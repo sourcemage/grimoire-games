@@ -1,8 +1,8 @@
            SPELL=manaplus
-         VERSION=1.5.12.5
+         VERSION=1.6.2.27
           SOURCE="${SPELL}-${VERSION}.tar.xz"
    SOURCE_URL[0]=http://download.evolonline.org/${SPELL}/download/${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:b4f7d117e0624008a93c3027bf6948b1106417bfa2d8950b3ec75cd279a47c53364a6fcdbdbb80d69db3af83970b0a6ec0897b066d2c93d53e924be1f9e85185
+     SOURCE_HASH=sha512:ba03f8f317ad0ab7f4039ee3d032134aee9fbb4584ffa5b63ee18935ac0e59647a4373c9a52a1b69b2117de22f73907a647f8c07209ae968d6b170ddfdbada8b
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://manaplus.evolonline.org/"
       LICENSE[0]="GPLv2+"
