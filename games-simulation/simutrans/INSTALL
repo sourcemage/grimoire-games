@@ -1,0 +1,10 @@
+local SHARE_DIR BIN_DIR                             &&
+SHARE_DIR="$INSTALL_ROOT/usr/share/games/simutrans" &&
+BIN_DIR="$INSTALL_ROOT/usr/games"                   &&
+
+install -m755 -o root -g games sim ${BIN_DIR}/simutrans &&
+install -m755 -o root -g games nettools/nettool \
+  ${BIN_DIR}/simutrans-nettool &&
+
+cd $SOURCE_DIRECTORY/simutrans &&
+cp -Rv * $SHARE_DIR/

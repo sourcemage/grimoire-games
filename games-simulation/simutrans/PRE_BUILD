@@ -1,0 +1,26 @@
+mk_source_dir        &&
+cd $SOURCE_DIRECTORY &&
+unpack_file          &&
+
+patch -Np0 < "$SPELL_DIRECTORY/Makefile.patch" &&
+patch -Np1 < "$SPELL_DIRECTORY/0001-use-game-data-directory.patch" &&
+patch -Np1 < "$SPELL_DIRECTORY/0001-store-state-in-hidden-directory.patch" &&
+
+echo "BACKEND=sdl
+COLOR_DEPTH=16
+OSTYPE=linux
+VERBOSE=1
+" >> config.default.in &&
+
+rm -f $SOURCE_DIRECTORY/simutrans/*.txt     &&
+rm -f $SOURCE_DIRECTORY/simutrans/simutrans &&
+
+cd $SOURCE_DIRECTORY/simutrans &&
+unpack_file 2                  &&
+rm -rf text/*                              &&
+mv simutrans-langpack-20160402/* text/     &&
+rmdir simutrans-langpack-20160402          &&
+
+cd $SOURCE_DIRECTORY      &&
+mv configure.sh configure &&
+chmod +x configure

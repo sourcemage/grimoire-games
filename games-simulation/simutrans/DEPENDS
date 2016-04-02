@@ -1,0 +1,8 @@
+depends sdl           &&
+depends sdl_mixer     &&
+depends sdl_sound     &&
+depends zlib          &&
+depends bzip2         &&
+depends libpng        &&
+depends unzip         &&
+depends -sub CXX gcc

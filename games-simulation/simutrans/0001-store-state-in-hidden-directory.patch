@@ -1,0 +1,25 @@
+From fdeafa256f4631e0f87ca08611498512dedad292 Mon Sep 17 00:00:00 2001
+From: Florian Franzmann <siflfran@hawo.net>
+Date: Sat, 2 Apr 2016 00:10:21 +0200
+Subject: [PATCH] store state in hidden directory
+
+---
+ simsys.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/simsys.cc b/simsys.cc
+index 7c9975c..e81f56b 100644
+--- a/simsys.cc
++++ b/simsys.cc
+@@ -168,7 +168,7 @@ char const* dr_query_homedir()
+ 	find_directory(B_USER_DIRECTORY, &userDir);
+ 	sprintf(buffer, "%s/simutrans", userDir.Path());
+ #else
+-	sprintf(buffer, "%s/simutrans", getenv("HOME"));
++	sprintf(buffer, "%s/.simutrans", getenv("HOME"));
+ #endif
+ 
+ 	dr_mkdir(buffer);
+-- 
+2.8.0
+

@@ -1,0 +1,6 @@
+2016-04-01 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* BUILD, DEPENDS, DETAILS, INSTALL: spell created
+	* 0001-store-state-in-hidden-directory.patch,
+	  0001-use-game-data-directory.patch, BUILD, DEPENDS, DETAILS, INSTALL,
+	  Makefile.patch, PRE_BUILD: spell created
+

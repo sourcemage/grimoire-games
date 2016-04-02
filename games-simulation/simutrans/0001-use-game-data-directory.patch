@@ -1,0 +1,26 @@
+From c46fa9b8998366d342fbcb55e9b6ddc2fd28fb0e Mon Sep 17 00:00:00 2001
+From: Florian Franzmann <siflfran@hawo.net>
+Date: Fri, 1 Apr 2016 23:26:48 +0200
+Subject: [PATCH] use game data directory
+
+---
+ simmain.cc | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/simmain.cc b/simmain.cc
+index 2c21a04..5081fa9 100644
+--- a/simmain.cc
++++ b/simmain.cc
+@@ -486,8 +486,7 @@ int simu_main(int argc, char** argv)
+ 		strcat( env_t::program_dir, path_sep );
+ 	}
+ 	else {
+-		strcpy( env_t::program_dir, argv[0] );
+-		*(strrchr( env_t::program_dir, path_sep[0] )+1) = 0;
++		strcpy( env_t::program_dir, "/usr/share/games/simutrans/" );
+ 
+ #ifdef __APPLE__
+ 		// change working directory from binary dir to bundle dir
+-- 
+2.8.0
+

@@ -1,0 +1,21 @@
+           SPELL=simutrans
+         VERSION=120.1.3
+        XVERSION=$(echo $VERSION | tr '.' '-')
+          SOURCE="${SPELL}-src-$XVERSION.zip"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/${SPELL}/${SPELL}/$XVERSION/${SOURCE}
+     SOURCE_HASH=sha512:ae31dda7bdbd057aaf9c40914eb7ec0c60b21d2790d1ca12aa8db698cd112043a291934f6f460b1d5a8a1984b7defb4a0c4bc9839c81c674834062cc1e49c8bd
+         SOURCE2=simutrans-langpack-20160402.tar.xz
+  SOURCE2_URL[0]=http://smgl.bandrate.org/$SOURCE2
+    SOURCE2_HASH=sha512:154ec3c19b2731e7475c6069e5a5b572452c174015d9e4adf5a9324b3075dd65687e51c0b6d6a131d718d07e5b7356282a208b98f1b3b6d0ef8fa0fc2d1c28d3
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/$SPELL-$VERSION"
+        WEB_SITE="http://www.simutrans.com"
+      LICENSE[0]=ARTISTIC
+         ENTERED=20160401
+           SHORT="a free and open-source transportation simulator"
+cat << EOF
+Simutrans is a freeware and open-source transportation simulator. Your
+goal is to establish a successful transport company. Transport passengers,
+mail and goods by rail, road, ship, and even air. Interconnect districts,
+cities, public buildings, industries and tourist attractions by building a
+transport network you always dreamed of.
+EOF
