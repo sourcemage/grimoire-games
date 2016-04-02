@@ -1,0 +1,16 @@
+           SPELL=simutrans-pak128
+         VERSION=2.6--ST120
+          SOURCE="pak128-${VERSION}.zip"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/simutrans/pak128/pak128%20for%20ST%20120%20%282.6%2C%20completed%20elevated%20tracks%29/${SOURCE}
+     SOURCE_HASH=sha512:a642217a5213717ae710f8d42331ae704ec45027a71052b9cd09d137a96aaf4bdf40b13e4dc1183a69e782fcc943ca0a8ad43c0f0c04db106949e7d003a503b4
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/pak128"
+        WEB_SITE="http://www.simutrans.com"
+      LICENSE[0]=ARTISTIC
+         ENTERED=20160402
+           SHORT="highly detailed graphics for simutrans"
+cat << EOF
+When Simutrans could only support 64px size graphics, pak128 already started.
+First pak to feature a complex economy and have a very wide variety of objects.
+It contains roughly 7 times more graphic data than pak64 and thus requires
+by far the largest amount of RAM and processing power of all Simutrans sets.
+EOF

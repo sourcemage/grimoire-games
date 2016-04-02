@@ -1,0 +1,2 @@
+cd $INSTALL_ROOT/usr/share/games/simutrans &&
+unpack_file
