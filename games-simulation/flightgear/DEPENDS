@@ -7,7 +7,7 @@ depends  -sub CXX gcc   &&
 depends  freealut       &&
 depends  freetype2      &&
 depends  JPEG           &&
-depends  giflib         &&
+depends  GIFLIB         &&
 depends  libxmu         &&
 depends  libxi          &&
 depends  libpng         &&

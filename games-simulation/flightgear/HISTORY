@@ -1,3 +1,6 @@
+2016-04-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS, DEPENDS: version 2016.1.1
+
 2015-04-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DEPENDS: depend on DEVICE-MANAGER instead of UDEV
 
