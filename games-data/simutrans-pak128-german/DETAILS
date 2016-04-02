@@ -1,0 +1,17 @@
+           SPELL=simutrans-pak128-german
+         VERSION=0.8.0_120.x
+          SOURCE="PAK128.german_${VERSION}.zip"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/simutrans/PAK128.german/PAK128.german_0.8_120.x/${SOURCE}
+     SOURCE_HASH=sha512:0d28055d7d0d4ab5610c81150f7c9243fb833633bb243331aa15457a65d7aafe855f66da33619fdcd1c685380d3baac443d5fe5e338be280769c193aa555a3ac
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/simutrans-pak128-german"
+        WEB_SITE="http://www.simutrans.com"
+      LICENSE[0]=ARTISTIC
+         ENTERED=20160402
+           SHORT="the german transportation system for simutrans"
+cat << EOF
+Brings the German transportation system embedded in typical German towns
+and industries according to the respective topographic region (coasts,
+the Alps, etc.). Trains and lorries are taller than they are in standard
+pak128. Every building and factory has four views and each type of factory
+has different aspects.
+EOF

@@ -3,6 +3,8 @@
 	  simulator
 	* games-data/simutrans-pak64: new spell, 64x64 graphics for simutrans
 	* games-data/simutrans-pak128: new spell, 128x128 graphics for simutrans
+	* games-data/simutrans-pak128-german: new spell, german 128x128 graphics
+	  for simutrans
 
 2016-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-emulators/fs-uae: new spell, an Amiga emulator

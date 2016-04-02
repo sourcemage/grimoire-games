@@ -1,0 +1,2 @@
+cd $SOURCE_DIRECTORY/simutrans             &&
+cp -Rv PAK128.german $INSTALL_ROOT/usr/share/games/simutrans/
