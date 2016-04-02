@@ -1,0 +1,15 @@
+           SPELL=simutrans-pak64
+         VERSION=120.1.2
+        XVERSION=$(echo $VERSION | tr '.' '-')
+          SOURCE="simupak64-$XVERSION.zip"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/simutrans/pak64/$(echo $XVERSION|cut -f1,2 -d'-')/${SOURCE}
+     SOURCE_HASH=sha512:ddc75ad1cafa23d9a7387dc38b14de7414ea7c8bb7caa2afde6d8cdf9c3f5251719966b2274c5bc4ecc9915ec764d517e24b79d5ef199904e3d9185214cba129
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/simutrans"
+        WEB_SITE="http://www.simutrans.com"
+      LICENSE[0]=ARTISTIC
+         ENTERED=20160402
+           SHORT="the evolution of the original Simutrans pakset"
+cat << EOF
+Pak64 is the evolution of the original Simutrans pakset, which now we call
+pak.Classic. Many artists contributed to this pakset since the 8 bit age.
+EOF
