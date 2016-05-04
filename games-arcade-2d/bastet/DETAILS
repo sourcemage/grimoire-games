@@ -1,8 +1,8 @@
            SPELL=bastet
-         VERSION=0.43
-          SOURCE="${SPELL}-${VERSION}.tgz"
-   SOURCE_URL[0]=http://fph.altervista.org/prog/files/${SOURCE}
-     SOURCE_HASH=sha512:a3683c2cea4df592d9cef2be1b0006acc2b6eddbe6b64aba1c21e81ba39df9bcff6494e0949b67a84f3d1a0fa6837f0d1b7cebb2eb8a551b54392e4a45f2e172
+         VERSION=0.43.1
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=https://github.com/fph/bastet/archive/${VERSION}.tar.gz
+     SOURCE_HASH=sha512:b2b67cd5bcc015629bd679b2bce696bd9e944cd233c78a9d49f91d340cd57f36f17181ffee5637c5883d5d28d4a1e3378697c5015dfd1cdac55e4a893c025e6f
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://fph.altervista.org/prog/bastet.html"
       LICENSE[0]=GPL
