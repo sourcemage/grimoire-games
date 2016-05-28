@@ -1,3 +1,6 @@
+2016-05-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 2016.2.1
+
 2016-04-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 2016.1.1
 	* PRE_BUILD, 0001-fix-library-installation-directory.patch: removed
