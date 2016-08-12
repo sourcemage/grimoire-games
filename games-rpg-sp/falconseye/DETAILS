@@ -3,7 +3,7 @@
           SOURCE=nethack_source_331_jtp_193.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/falconseye
    SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-          MD5[0]=06d1c1cc7dbb4ba0731786c909e1fc4e
+  SOURCE_HASH[0]=sha512:2355164d664e9f5cae8677fff8f4a0860ba6e315d12027c5edb8ff285a7eb76306026c005276b7787b44e902ac74ef449bf2622d7b308fd6eb425e4c30d503b8
         WEB_SITE=http://falconseye.sourceforge.net
          ENTERED=20020105
          UPDATED=20020105

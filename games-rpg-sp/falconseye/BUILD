@@ -1,10 +1,7 @@
 sedit  "s:/usr/local/bin/timidity -idqq %s:/usr/bin/playmus -r 44100 %s:"  \
        win/jtp/gamedata/config/jtp_opts.txt &&
 
-sedit   "s/-O2 -fomit-frame-pointer/$CFLAGS/"     \
-        sys/unix/Makefile.src                     &&
-
-sh    sys/unix/setup.sh                           &&
+sh sys/unix/setup.sh &&
 
 sedit "s:GAMEDIR.*=.*:GAMEDIR = ${INSTALL_ROOT}/usr/share/games/falconseye:" Makefile &&
 
@@ -33,4 +30,7 @@ sedit "s:\-\$(CHOWN) \$(GAMEUID) \$(SHELLDIR)/\$(GAME):\-\$(CHOWN) \$(GAMEUID) \
 sedit "s:\$(CHGRP) \$(GAMEGRP) \$(SHELLDIR)/\$(GAME):\$(CHGRP) \$(GAMEGRP) \$(SHELLDIR)/falconseye:" Makefile &&
 sedit "s:chmod \$(EXEPERM) \$(SHELLDIR)/\$(GAME):chmod \$(EXEPERM) \$(SHELLDIR)/falconseye:" Makefile &&
 make_single                                       &&
-make  LEX=flex all
+make all \
+	LEX=flex \
+	CFLAGS="$CFLAGS -I../include" \
+	LFLAGS="-lm"
