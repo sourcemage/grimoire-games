@@ -1,4 +1,5 @@
 depends  nasm       &&
 depends  gcc33      &&
+depends  sdl        &&
 depends  sdl_mixer  &&
 depends  subversion
