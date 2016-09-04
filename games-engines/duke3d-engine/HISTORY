@@ -2,6 +2,7 @@
 	* DEPENDS, DETAILS: Upstream moved to Subversion
 	* PRE_BUILD: Removed, no longer needed
 	* BUILD, INSTALL: Cleaned up
+	  Fixed build, remove -Wl,--as-needed from LDFLAGS
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
