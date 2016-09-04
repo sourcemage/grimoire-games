@@ -1,9 +1,8 @@
-true                                                     &&
-mkdir -p $DATA                                           &&
-mkdir -p ${INSTALL_ROOT}/usr/games                       &&
-cp -f $SPELL_DIRECTORY/duke3d ${INSTALL_ROOT}/usr/games  &&
-cp $SOURCE_DIRECTORY/source/duke3d $DATA                 &&
-cp $SOURCE_DIRECTORY/testdata/defs.con $DATA/DEFS.CON    &&
-cp $SOURCE_DIRECTORY/testdata/game.con $DATA/GAME.CON    &&
-cp $SOURCE_DIRECTORY/testdata/user.con $DATA/USER.CON    &&
-cp $SPELL_DIRECTORY/duke3d.cfg $DATA
+DATA="$INSTALL_ROOT"/usr/share/games/duke3d  &&
+cd "$SOURCE_DIRECTORY" &&
+install -D -t "$INSTALL_ROOT/usr/games" "$SPELL_DIRECTORY"/duke3d &&
+install -D -t "$DATA" "$SPELL_DIRECTORY"/duke3d.cfg source/duke3d &&
+cd testdata &&
+install defs.con "$DATA"/DEFS.CON &&
+install game.con "$DATA"/GAME.CON &&
+install user.con "$DATA"/USER.CON

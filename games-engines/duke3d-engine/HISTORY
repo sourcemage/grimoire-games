@@ -1,6 +1,7 @@
 2016-09-04 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS, DETAILS: Upstream moved to Subversion
 	* PRE_BUILD: Removed, no longer needed
+	* BUILD, INSTALL: Cleaned up
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: [automated] Removed BUILD_API=2.
