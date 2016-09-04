@@ -1,6 +1,0 @@
-default_pre_build &&
-
-cd $SOURCE_DIRECTORY/source/ &&
-unpack_file 2
-
-mv $SPELL-buildengine-$VERSION buildengine

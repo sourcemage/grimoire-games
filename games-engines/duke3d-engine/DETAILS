@@ -1,15 +1,12 @@
            SPELL=duke3d-engine
-         VERSION=cvs
-          SOURCE=$SPELL-$VERSION.tar.bz2
-         SOURCE2=$SPELL-buildengine-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=cvs://:pserver:anonymous:anonymous@cvs.icculus.org:/cvs/cvsroot:duke3d
-  SOURCE2_URL[0]=cvs://:pserver:anonymous:anonymous@cvs.icculus.org:/cvs/cvsroot:buildengine
+         VERSION=svn
+          SOURCE=duke3d-svn.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/duke3d-svn
+   SOURCE_URL[0]=svn://svn.icculus.org/duke3d/trunk:duke3d-svn
         WEB_SITE=http://icculus.org/duke3d/
          ENTERED=20040330
          UPDATED=20040330
-	 SOURCE_IGNORE=unversioned
-	SOURCE2_IGNORE=unversioned
+   SOURCE_IGNORE=unversioned
       LICENSE[0]=GPL
   FORCE_DOWNLOAD=on
      GCC_VERSION=3.3
@@ -17,5 +14,3 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
 cat << EOF
 Duke Nukem 3D - the classic action game (engine only)
 EOF
-
-
