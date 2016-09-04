@@ -1,5 +1,5 @@
 sedit  "s:/usr/local/bin/timidity -idqq %s:/usr/bin/playmus -r 44100 %s:"  \
-       win/jtp/gamedata/config/jtp_opts.txt
+       win/jtp/gamedata/config/jtp_opts.txt &&
 
 sedit   "s/-O2 -fomit-frame-pointer/$CFLAGS/"     \
         sys/unix/Makefile.src                     &&
