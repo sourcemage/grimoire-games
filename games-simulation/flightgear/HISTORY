@@ -1,3 +1,7 @@
+2016-09-11 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 2016.2.1
+	* BUILD: don't build fgpanel as it does not compile
+
 2016-04-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS, DEPENDS: version 2016.1.1
 
