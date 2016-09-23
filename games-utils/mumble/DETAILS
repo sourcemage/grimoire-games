@@ -1,9 +1,9 @@
            SPELL=mumble
-         VERSION=1.2.3
+         VERSION=1.2.16
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:a50a9d93adf66de243f1fbcee4ed635681f8030965c7c23e0f5ee46eb4b5214d4e1ee7f1ba5201bd4b7e775d32df5cc95783721b0a325e3c49808ca1ffd88fe4
+   SOURCE_URL[0]=https://github.com/mumble-voip/$SPELL/releases/download/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:8624d4db8ae135dae780bd5743f50d3a4740c5b983d18da6a19803e340fbac939204bac81b34d55a114e963b33eddefc292bc3cfea3827431ded5cad5284e565
         WEB_SITE=http://mumble.sourceforge.net
          ENTERED=20080626
       LICENSE[0]=GPL
