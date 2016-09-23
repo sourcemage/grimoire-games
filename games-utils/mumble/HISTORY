@@ -3,6 +3,7 @@
 	* DETAILS: Fixed SOURCE_URL[0]
 	  updated spell to 1.2.16
 	* DEPENDS: Updated dependencies
+	* BUILD: Fixed build configuration and flags
 
 2015-03-29 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Switch dependency on g++ to gcc
