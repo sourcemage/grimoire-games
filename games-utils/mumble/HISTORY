@@ -1,3 +1,6 @@
+2016-09-23 Ismael Luceno <ismael@sourcemage.org>
+	* PRE_BUILD: Added code to remove any missing translations
+
 2015-03-29 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Switch dependency on g++ to gcc
 

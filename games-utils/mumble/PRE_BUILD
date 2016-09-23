@@ -1,6 +1,20 @@
 default_pre_build &&
 cd $SOURCE_DIRECTORY &&
-sedit s/qt_ja_JP.qm// ./src/mumble/mumble.pro &&
-sedit s/qt_ja_JP.qm// ./src/mumble11x/mumble11x.pro &&
-sedit /qt_ja_JP.qm/d ./src/mumble/mumble_qt.qrc &&
-sedit /qt_ja_JP.qm/d ./src/mumble11x/mumble_qt.qrc 
+
+# Remove missing translations
+tmp=$(mktemp) &&
+f=src/mumble/mumble_qt.qrc &&
+awk -F'[\t ]*<[^>]*>' '
+	function exists(f,	r, t) {
+		r = getline t < f
+		close(f)
+		return r != -1
+	}
+	/>qt_[^.]*\.qm</ {
+		src = $2
+		sub(/qm$/, "ts", src)
+		if (!exists(src)) next
+	}
+	{print}
+' "$f" > "$tmp" &&
+mv -f "$tmp" "$f"
