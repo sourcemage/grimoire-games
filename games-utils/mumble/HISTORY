@@ -2,6 +2,7 @@
 	* PRE_BUILD: Added code to remove any missing translations
 	* DETAILS: Fixed SOURCE_URL[0]
 	  updated spell to 1.2.16
+	* DEPENDS: Updated dependencies
 
 2015-03-29 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Switch dependency on g++ to gcc
