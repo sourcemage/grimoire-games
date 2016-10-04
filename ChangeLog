@@ -1,3 +1,6 @@
+2016-10-04 Vlad Glagolev <stealth@sourcemage.org>
+	* games-puzzles/gtk-sudoku: new spell, GTK Sudoku
+
 2016-04-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-simulation/simutrans: new spell, a transportion and economy
 	  simulator

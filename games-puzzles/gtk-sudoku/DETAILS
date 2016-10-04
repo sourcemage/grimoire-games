@@ -1,0 +1,15 @@
+           SPELL=gtk-sudoku
+         VERSION=0.7.2
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=$SOURCEFORGE_URL/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:379670401fd197007209661f53b39e2e118bb8dc35e34627d9acc51172da24cf2635a9c12b99a11d67d6d4636d0732d35744633cda0e0797b6ba053517e09c6a
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE=https://sourceforge.net/projects/gtk-sudoku/
+         ENTERED=20161004
+      LICENSE[0]=GPL
+           SHORT="GTK Sudoku"
+cat << EOF
+Written in C w/Gtk+, Gthreads. Plays 9x9/16x16 sudokus. Look & feel is
+customizable. Generates human-solvable games. Includes solver. Can open/save
+games. Players can create their own puzzles.
+EOF
