@@ -1,0 +1,155 @@
+From 0a62ed426d8bf1e131ee758b6e6062c95402a2fd Mon Sep 17 00:00:00 2001
+From: Florian Franzmann <siflfran@hawo.net>
+Date: Sat, 5 Nov 2016 20:00:03 +0100
+Subject: [PATCH] fix compile error
+
+---
+ src/dosbox/pic.cpp | 42 +++++++++++++++++++++---------------------
+ 1 file changed, 21 insertions(+), 21 deletions(-)
+
+diff --git a/src/dosbox/pic.cpp b/src/dosbox/pic.cpp
+index 6cd49b0..8ced8e0 100644
+--- a/src/dosbox/pic.cpp
++++ b/src/dosbox/pic.cpp
+@@ -76,7 +76,7 @@ static void write_command(Bitu port,Bitu val,Bitu iolen) {
+ 	PIC_Controller * pic=&pics[port==0x20 ? 0 : 1];
+ 	Bitu irq_base=port==0x20 ? 0 : 8;
+ 	Bitu i;
+-	static Bit16u IRQ_priority_table[16] = 
++	static Bit16u IRQ_priority_table[16] =
+ 		{ 0,1,2,8,9,10,11,12,13,14,15,3,4,5,6,7 };
+ 	if (GCC_UNLIKELY(val&0x10)) {		// ICW1 issued
+ 		if (val&0x04) E_Exit("PIC: 4 byte interval not handled");
+@@ -94,8 +94,8 @@ static void write_command(Bitu port,Bitu val,Bitu iolen) {
+ 		if (val&0x40) {		// special mask select
+ 			if (val&0x20) pic->special=true;
+ 			else pic->special=false;
+-			if(pic[0].special || pics[1].special) 
+-				PIC_Special_Mode = true; else 
++			if(pic[0].special || pics[1].special)
++				PIC_Special_Mode = true; else
+ 				PIC_Special_Mode = false;
+ 			if (PIC_IRQCheck) { //Recheck irqs
+ 				CPU_CycleLeft += CPU_Cycles;
+@@ -198,13 +198,13 @@ static void write_data(Bitu port,Bitu val,Bitu iolen) {
+ 		/*
+ 			0	    1 8086/8080  0 mcs-8085 mode
+ 			1	    1 Auto EOI   0 Normal EOI
+-			2-3	   0x Non buffer Mode 
+-				   10 Buffer Mode Slave 
+-				   11 Buffer mode Master	
+-			4		Special/Not Special nested mode 
++			2-3	   0x Non buffer Mode
++				   10 Buffer Mode Slave
++				   11 Buffer mode Master
++			4		Special/Not Special nested mode
+ 		*/
+ 		pic->auto_eoi=(val & 0x2)>0;
+-		
++
+ 		LOG(LOG_PIC,LOG_NORMAL)("%d:ICW 4 %X",port==0x21 ? 0 : 1,val);
+ 
+ 		if ((val&0x01)==0) E_Exit("PIC:ICW4: %x, 8085 mode not handled",val);
+@@ -279,7 +279,7 @@ static inline bool PIC_startIRQ(Bitu i) {
+ 	PIC_IRQOnSecondPicActive&= ~(1 << i);
+ 	CPU_HW_Interrupt(irqs[i].vector);
+ 	Bitu pic=(i&8)>>3;
+-	if (!pics[pic].auto_eoi) { //irq 0-7 => pic 0 else pic 1 
++	if (!pics[pic].auto_eoi) { //irq 0-7 => pic 0 else pic 1
+ 		PIC_IRQActive = i;
+ 		irqs[i].inservice = true;
+ 	} else if (GCC_UNLIKELY(pics[pic].rotate_on_auto_eoi)) {
+@@ -293,7 +293,7 @@ void PIC_runIRQs(void) {
+ 	if (GCC_UNLIKELY(!PIC_IRQCheck)) return;
+ 	if (GCC_UNLIKELY(cpudecoder==CPU_Core_Normal_Trap_Run)) return;
+ 
+-	static Bitu IRQ_priority_order[16] = 
++	static Bitu IRQ_priority_order[16] =
+ 		{ 0,1,2,8,9,10,11,12,13,14,15,3,4,5,6,7 };
+ 	static Bit16u IRQ_priority_lookup[17] =
+ 		{ 0,1,2,11,12,13,14,15,3,4,5,6,7,8,9,10,16 };
+@@ -334,15 +334,15 @@ void PIC_SetIRQMask(Bitu irq, bool masked) {
+ 	bool old_irq2_mask = irqs[2].masked;
+ 	irqs[irq].masked=masked;
+ 	if(irq < 8) {
+-		if (irqs[irq].active && !irqs[irq].masked) { 
++		if (irqs[irq].active && !irqs[irq].masked) {
+ 			PIC_IRQCheck|=(1 << (irq));
+-		} else { 
++		} else {
+ 			PIC_IRQCheck&=~(1 << (irq));
+ 		}
+ 	} else {
+ 		if (irqs[irq].active && !irqs[irq].masked && !irqs[2].masked) {
+ 			PIC_IRQCheck|=(1 << (irq));
+-		} else { 
++		} else {
+ 			PIC_IRQCheck&=~(1 << (irq));
+ 		}
+ 	}
+@@ -429,7 +429,7 @@ void PIC_RemoveSpecificEvents(PIC_EventHandler handler, Bitu val) {
+ 		}
+ 		prev_entry=entry;
+ 		entry=entry->next;
+-	}	
++	}
+ }
+ 
+ void PIC_RemoveEvents(PIC_EventHandler handler) {
+@@ -454,7 +454,7 @@ void PIC_RemoveEvents(PIC_EventHandler handler) {
+ 		}
+ 		prev_entry=entry;
+ 		entry=entry->next;
+-	}	
++	}
+ }
+ 
+ 
+@@ -575,12 +575,12 @@ Bitu x86_pic_read(Bitu port)
+ 	return 0;
+ }
+ 
+-class PIC:public Module_base{
++class Pic:public Module_base{
+ //private:
+ //	IO_ReadHandleObject ReadHandler[4];
+ //	IO_WriteHandleObject WriteHandler[4];
+ public:
+-	PIC(Section* configuration):Module_base(configuration){
++	Pic(Section* configuration):Module_base(configuration){
+ 		/* Setup pic0 and pic1 with initial values like DOS has normally */
+ 		PIC_IRQCheck=0;
+ 		PIC_IRQActive=PIC_NOIRQ;
+@@ -604,7 +604,7 @@ public:
+ 			irqs[i+8].masked=true;
+ 			irqs[i+8].inservice=false;
+ 			irqs[i].vector=0x8+i;
+-			irqs[i+8].vector=0x70+i;	
++			irqs[i+8].vector=0x70+i;
+ 		}
+ 		irqs[0].masked=false;					/* Enable system timer */
+ 		irqs[1].masked=false;					/* Enable Keyboard IRQ */
+@@ -632,17 +632,17 @@ public:
+ 		pic_queue.free_entry=&pic_queue.entries[0];
+ 		pic_queue.next_entry=0;
+ 	}
+-	~PIC(){
++	~Pic(){
+ 	}
+ };
+ 
+-static PIC* test;
++static Pic* test;
+ 
+ void PIC_Destroy(Section* sec){
+ 	delete test;
+ }
+ 
+ void PIC_Init(Section* sec) {
+-	test = new PIC(sec);
++	test = new Pic(sec);
+ 	sec->AddDestroyFunction(&PIC_Destroy);
+ }
+-- 
+2.10.2
+
