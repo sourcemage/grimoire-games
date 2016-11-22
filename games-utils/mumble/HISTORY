@@ -1,5 +1,6 @@
 2016-11-22 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Switched to SSL, compiles against LibreSSL too
+	* BUILD: Fixed QT4 path
 
 2016-09-23 Ismael Luceno <ismael@sourcemage.org>
 	* PRE_BUILD: Added code to remove any missing translations

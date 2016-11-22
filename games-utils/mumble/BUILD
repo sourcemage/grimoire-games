@@ -12,7 +12,7 @@ if [[ "$MUMBLE_OVERLAY" == 'n' ]]; then
     OPTS="$OPTS CONFIG+=no-overlay"
 fi
 
-PATH=/usr/bin/qt4:$PATH &&
+PATH=/opt/qt4/bin:$PATH &&
 qmake main.pro $OPTS \
       QMAKE_CFLAGS="$CFLAGS" \
       QMAKE_CXXFLAGS="$CXXFLAGS" \
