@@ -15,7 +15,7 @@ optional_depends speech-dispatcher \
 
 # Network / Crypto
 depends protobuf &&
-depends openssl &&
+depends SSL &&
 optional_depends -sub COMPAT_LIBDNS_SD avahi \
                  "" \
                  "CONFIG+=no-bonjour" \
