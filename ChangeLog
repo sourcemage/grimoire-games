@@ -1,3 +1,7 @@
+2017-01-15 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-simulation/pioneer: new spell, a space exploration game in the
+	  spirit of Elite
+
 2016-10-04 Vlad Glagolev <stealth@sourcemage.org>
 	* games-puzzles/gtk-sudoku: new spell, GTK Sudoku
 

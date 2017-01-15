@@ -1,0 +1,20 @@
+           SPELL=pioneer
+         VERSION=20161129
+          SOURCE="$SPELL-$VERSION.tar.gz"
+   SOURCE_URL[0]=https://github.com/${SPELL}spacesim/${SPELL}/archive/${VERSION}.tar.gz
+     SOURCE_HASH=sha512:5f65787a0dade031ac3595c9d0bc267ebe6e8a3bf26f72e40b61f2c568f27a2a96b0e32d18267a09ba050e93d76228368023708457221f486656504f67a808f4
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-$VERSION"
+        WEB_SITE="http://pioneerspacesim.net/"
+      LICENSE[0]=GPL
+         ENTERED=20170115
+           SHORT="a space adventure game set in the Milky Way galaxy at the turn of the 31st century"
+cat << EOF
+Pioneer is a space adventure game set in the Milky Way galaxy at the turn
+of the 31st century.
+
+The game is open-ended, and you are free to explore the millions of star
+systems in the game. You can land on planets, slingshot past gas giants,
+and burn yourself to a crisp flying between binary star systems. You can try
+your hand at piracy, make your fortune trading between systems, or do missions
+for the various factions fighting for power, freedom or self-determination.
+EOF

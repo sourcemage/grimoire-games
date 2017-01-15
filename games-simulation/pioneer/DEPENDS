@@ -1,0 +1,10 @@
+depends gcc &&
+depends automake &&
+depends curl &&
+depends libsigc++2 &&
+depends sdl2_image &&
+depends freetype2 &&
+depends libvorbis &&
+depends libpng &&
+depends assimp &&
+depends OPENGL 
