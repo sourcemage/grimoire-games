@@ -1,3 +1,6 @@
+2017-07-13 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.2.19
+
 2016-11-22 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Switched to SSL, compiles against LibreSSL too
 	* BUILD: Fixed QT4 path
