@@ -1,0 +1,6 @@
+pfx="$INSTALL_ROOT"/usr &&
+install -D -t "$pfx/games/" mame* &&
+install -D -t "$pfx/share/games/mame/keymaps/" keymaps/*_LINUX.map &&
+for i in 1 6; do
+  install -D -t "$pfx/share/man/man$i" docs/man/*."$i"
+done

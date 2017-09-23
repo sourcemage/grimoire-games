@@ -1,0 +1,25 @@
+           SPELL=mame
+         VERSION=0.189
+          SOURCE="mame${VERSION/.}.tar.gz"
+   SOURCE_URL[0]="https://github.com/mamedev/mame/archive/$SOURCE"
+     SOURCE_HASH=sha512:3a2cd16553a2b356b0da5aa773b578a741867c2eab1f1c7a1f0e703957ef685714268504c62ddcdc78fee0dd794e7377e53b5a57e58b4dc4db8ec38349e29f74
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mame-mame${VERSION/.}"
+        WEB_SITE="http://mamedev.org/"
+      LICENSE[0]="GPLv2"
+         ENTERED=20160726
+        KEYWORDS=""
+           SHORT="Multiple Arcade Machine Emulator"
+cat << EOF
+MAME originally stood for Multiple Arcade Machine Emulator.
+
+MAME's purpose is to preserve decades of software history. As electronic
+technology continues to rush forward, MAME prevents this important "vintage"
+software from being lost and forgotten. This is achieved by documenting
+the hardware and how it functions. The source code to MAME serves as this
+documentation. The fact that the software is usable serves primarily to
+validate the accuracy of the documentation (how else can you prove that
+you have recreated the hardware faithfully?). Over time, MAME absorbed the
+sister-project MESS (Multi Emulator Super System), so MAME now documents a wide
+variety of (mostly vintage) computers, video game consoles and calculators,
+in addition to the arcade video games that were its initial focus.
+EOF
