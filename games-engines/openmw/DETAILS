@@ -1,0 +1,18 @@
+           SPELL=openmw
+         VERSION=0.42.0
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=https://github.com/OpenMW/${SPELL}/archive/${SOURCE}
+     SOURCE_HASH=sha512:f638e804e03e965db8e19cb37b3be67804202c1e43b0abf2730e0be104093edc31fc3656f90c570980b66ece4f5c889b44f0f59789e865327d221714a9ed65f3
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${SPELL}-${VERSION}"
+        WEB_SITE="https://openmw.org"
+      LICENSE[0]=GPL
+         ENTERED=20171112
+           SHORT="a recreation of the engine for the popular role-playing game Morrowind"
+cat << EOF
+OpenMW is a recreation of the engine for the popular role-playing game
+Morrowind by Bethesda Softworks. You need to own and install the original
+game for OpenMW to work.
+
+OpenMW also comes with OpenMW-CS, a replacement for Morrowind's TES
+Construction Set.
+EOF

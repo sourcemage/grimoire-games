@@ -1,0 +1,6 @@
+depends bullet &&
+depends mygui &&
+depends openscenegraph &&
+depends qt4 &&
+depends sdl2 &&
+depends boost 
