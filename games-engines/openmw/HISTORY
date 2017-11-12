@@ -1,3 +1,5 @@
 2017-11-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, DEPENDS, DETAILS: spell created
+	* DEPENDS: add dependency on OPENAL, OPENGL, LIBAVCODEC, cmake, tinyxml,
+	  unshield
 

@@ -1,6 +1,16 @@
-depends bullet &&
-depends mygui &&
-depends openscenegraph &&
-depends qt4 &&
-depends sdl2 &&
-depends boost 
+depends boost                     &&
+sub_depends boost FILESYSTEM      &&
+sub_depends boost THREAD          &&
+sub_depends boost PROGRAM_OPTIONS &&
+sub_depends boost SYSTEM          &&
+depends bullet                    &&
+depends cmake                     &&
+depends LIBAVCODEC                &&
+depends mygui                     &&
+depends OPENAL                    &&
+depends OPENGL                    &&
+depends openscenegraph            &&
+depends -sub OPENGL qt4           &&
+depends sdl2                      &&
+depends tinyxml '-DUSE_SYSTEM_TINYXML=on' &&
+depends unshield
