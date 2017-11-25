@@ -347,3 +347,4 @@ function get_scm_version() {
   fi
 }
 
+. $GRIMOIRE/glselect.function

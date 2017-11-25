@@ -1,0 +1,16 @@
+#---
+## glselect - select default libGL provider
+## rewritten from smgl-gl_select
+## then modified to call the latter instead, duplication == BAD
+##
+## this is run in FINAL and will always set the provider
+## based on the final spell cast that calls this.
+## If one wants to have this settable runtime then
+## there's the smgl-gl_select tool to do so
+##
+#---
+
+function glselect(){
+  message "${MESSAGE_COLOR}Calling smgl-gl_select to switch to $1.$DEFAULT_COLOR" &&
+  smgl-gl_select -s "$1"
+}
