@@ -83,7 +83,7 @@ function cmake_build() {
   cd $SOURCE_DIRECTORY  &&
   mkdir -p build        &&
   cd build              &&
-  cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../  $OPTS &&
+  cmake -DCMAKE_INSTALL_LIBDIR:PATH=lib -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../  $OPTS &&
   make
 }
 

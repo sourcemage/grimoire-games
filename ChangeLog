@@ -1,3 +1,7 @@
+2017-11-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* glselect.function, FUNCTIONS: add glselect
+	* FUNCTIONS: make sure cmake doesn't install anything into lib64
+
 2017-11-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-engines/openmw: new spell, a recreation of the Morrowind engine
 
