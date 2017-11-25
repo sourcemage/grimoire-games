@@ -1,9 +1,9 @@
            SPELL=simgear
-         VERSION=2016.3.1
+         VERSION=2017.3.1
           SOURCE=simgear-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/simgear-${VERSION%-rc*}
    SOURCE_URL[0]=http://downloads.sourceforge.net/project/flightgear/release-$(echo $VERSION|cut -f1,2 -d'.')/$SOURCE
-     SOURCE_HASH=sha512:5c0e260da8b09e815cd6607f3e977b5827f450e9fbe10bfaef019d7489506905fde56a5ab6748165431088bbae7fa61d4bccc27e4d7828c8bc6a05247b450716
+     SOURCE_HASH=sha512:339c9af78e8c0490caec69be34b54f947751a9677cbb1163e73917f6aaa8f3d965ccf8058222c48ca4249cba4bb509205143f846de84595e92abdcd93e64c901
         WEB_SITE=http://simgear.sourceforge.net
          ENTERED=20010922
       LICENSE[0]=LGPL
