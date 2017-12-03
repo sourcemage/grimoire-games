@@ -10,7 +10,7 @@ depends mygui                     &&
 depends OPENAL                    &&
 depends OPENGL                    &&
 depends openscenegraph            &&
-depends -sub OPENGL qt4           &&
+depends -sub OPENGL qtbase "-DDESIRED_QT_VERSION=5" &&
 depends sdl2                      &&
 depends tinyxml '-DUSE_SYSTEM_TINYXML=on' &&
 depends unshield
