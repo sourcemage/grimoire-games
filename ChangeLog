@@ -1,3 +1,6 @@
+2017-12-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* FUNCTIONS: add qt5_cmake_build
+
 2017-11-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* glselect.function, FUNCTIONS: add glselect
 	* FUNCTIONS: make sure cmake doesn't install anything into lib64
