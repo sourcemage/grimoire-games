@@ -1,6 +1,9 @@
 . $GRIMOIRE/libaccount
 . $GRIMOIRE/libgcc
 
+QT4DIR=$INSTALL_ROOT/opt/qt4
+QT5DIR=$INSTALL_ROOT/opt/qt5
+
 #---------------------------------------------------------------------
 ## Replaces sorcerys default_pre_build with a custom version using
 ## the invoke_gcc function from libgcc
@@ -93,9 +96,9 @@ function cmake_build() {
 #---
 #
 qt4_cmake_build() {
-  QTDIR="${QTDIR:-$INSTALL_ROOT/usr}"
-  PATH="$QTDIR/bin/qt4:$PATH"
-  cmake_build
+  PATH="$QT4DIR/bin/:$PATH"
+  export PKG_CONFIG_PATH="$QT4DIR/lib/pkgconfig"
+  cmake_build ${1-$QT4DIR}
 }
 
 #---
@@ -350,8 +353,7 @@ function get_scm_version() {
 function qt5_cmake_build() {
   PATH="$QT5DIR/bin/:$PATH"
   export PKG_CONFIG_PATH="$QT5DIR/lib/pkgconfig"
-  cmake_build $QT5DIR
+  cmake_build ${1-$QT5DIR}
 }
-
 
 . $GRIMOIRE/glselect.function
