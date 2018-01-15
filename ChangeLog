@@ -1,3 +1,7 @@
+2018-01-15 Ismael Luceno <ismael@sourcemage.org>
+        * games-emulators/xmame: spell deprecated [project dead, x11 support
+          available in mame]
+
 2017-12-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* FUNCTIONS: port changes to qt*_cmake_build from test grimoire
 

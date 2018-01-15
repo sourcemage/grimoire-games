@@ -1,16 +1,7 @@
-           SPELL=xmame
-         VERSION=0.104
-          SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://x.mame.net/download/$SOURCE
-     SOURCE_HASH=sha512:b29a971f128c5f7ced48b8e825a49ba27c4c27e722f6577a4cf9f1161ad5184a1efca836ba2c96b6f4b130a47ad14fa8690ae2e1d58b84a31f04de6960eb22c6
-        WEB_SITE=http://x.mame.net/
-         ENTERED=20010922
-         UPDATED=20020131
-      LICENSE[0]=http://x.mame.net/license.html
-           SHORT="Coin-op video game emulator"
-cat << EOF
-Xmame is the X11/Unix port of MAME. MAME is the Multiple Arcade Machine
-Emulator, an arcade (coin-op) video game emulator. The latest stable
-release is capable of playing over 2000 arcade games.
-EOF
+          SPELL=xmame
+        VERSION=0
+     PATCHLEVEL=9999
+          SHORT="deprecated"
+  cat << EOF
+    deprecated spell [replaced by mame]
+  EOF

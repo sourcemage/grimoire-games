@@ -1,3 +1,8 @@
+2018-01-15 Ismael Luceno <ismael@sourcemage.org>
+	* spell deprecated [project dead, x11 support available in mame]
+	* PATCHLEVEL=9999
+	* DETAILS: version 0
+
 2011-10-13 Bor Kraljič <pyrobor@ver.si>
 	* PRE_BUILD,DEPENDS,CONFIGURE: removed arts support
 
