@@ -1,3 +1,8 @@
+2018-02-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 4.9.1
+	* 446E23EE.gpg: added
+	* F51BC536.gpg: removed
+
 2018-01-07 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 4.9.0
 
