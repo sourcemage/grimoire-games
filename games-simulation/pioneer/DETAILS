@@ -1,8 +1,8 @@
            SPELL=pioneer
-         VERSION=20171001
+         VERSION=20180203
           SOURCE="$SPELL-$VERSION.tar.gz"
    SOURCE_URL[0]=https://github.com/${SPELL}spacesim/${SPELL}/archive/${VERSION}.tar.gz
-     SOURCE_HASH=sha512:f98696329528b2f3d80519ed58bad8816933869b92a915a25cf350e715364c11466ced78867706cad8707a85a963b8edcb6dee33ce0c9357c9ecde97d5faa61e
+     SOURCE_HASH=sha512:cd339809712ac35d5e3bcaa60126590c3c6ece4339f7ac08de7deea9d88bc79c89e43fcec58ee9e57f172049ef7b74f92fb90c91f0a74979e6cb43003e88ab2c
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-$VERSION"
         WEB_SITE="http://pioneerspacesim.net/"
       LICENSE[0]=GPL
