@@ -1,0 +1,18 @@
+           SPELL=eduke32
+         VERSION=20180316-6775
+          SOURCE="${SPELL}_src_${VERSION}.tar.xz"
+   SOURCE_URL[0]=http://dukeworld.com/${SPELL}/synthesis/latest/${SOURCE}
+     SOURCE_HASH=sha512:90830790c36fdde3aeb3cbf7855d961dc905398c81813024ec163657c44ffd30722deabdee864a7695ba1b895c8b9d7073fa2fdc7a21bc85f039168ef2ae7292
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}_${VERSION}"
+        WEB_SITE="http://www.eduke32.com/"
+      LICENSE[0]=GPL
+         ENTERED=20180320
+           SHORT="a port of the Duke Nukem 3D engine"
+cat << EOF
+EDuke32 is an awesome, free homebrew game engine and source port of the
+classic PC first person shooter Duke Nukem 3D— Duke3D for short—to
+Windows, Linux, Mac OS X, FreeBSD, several handhelds, your family toaster,
+and to your girlfriend's vibrator. We've added thousands of cool and useful
+features and upgrades for regular players and additional editing capabilities
+and scripting extensions for homebrew developers and mod creators.
+EOF

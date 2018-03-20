@@ -1,3 +1,6 @@
+2018-03-20 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-fps/eduke32: new spell, a port of the Duke Nukem 3D engine
+
 2018-01-15 Ismael Luceno <ismael@sourcemage.org>
         * games-emulators/xmame: spell deprecated [project dead, x11 support
           available in mame]

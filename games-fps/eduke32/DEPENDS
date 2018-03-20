@@ -1,0 +1,10 @@
+depends sdl2 &&
+depends sdl2_mixer &&
+depends nasm &&
+depends OPENGL &&
+depends glu &&
+depends libvorbis &&
+depends libvorbis &&
+depends libogg &&
+depends flac &&
+depends libvpx 

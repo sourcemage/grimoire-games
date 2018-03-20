@@ -1,0 +1,1 @@
+install -m755 mapster32 eduke32 "$INSTALL_ROOT/usr/games/"
