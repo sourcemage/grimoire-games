@@ -1,5 +1,5 @@
 depends  tk      &&
 message  "${MESSAGE_COLOR}Needs python built against tk${DEFAULT_COLOR}"  &&
 depends  python  &&
-depends  pil &&
-sub_depends pil TK
+depends  pillow  &&
+sub_depends pillow TK
