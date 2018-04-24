@@ -1,0 +1,22 @@
+--- Makefile.am.orig	2017-09-03 13:49:19.000000000 -0400
++++ Makefile.am	2018-04-24 09:20:44.486929403 -0400
+@@ -58,7 +58,7 @@
+ dist_iconsvg_DATA = source/unix/icons/svg/nestopia.svg source/unix/icons/svg/nespad.svg
+ 
+ # documentation
+-dist_doc_DATA = AUTHORS ChangeLog README.md README.unix
++dist_doc_DATA = AUTHORS ChangeLog README.md
+ dist_html_DATA = readme.html
+ 
+ #####################
+--- configure.ac.orig	2017-09-03 13:50:16.000000000 -0400
++++ configure.ac	2018-04-24 09:21:22.664117665 -0400
+@@ -102,7 +102,7 @@
+ dnl ===================
+ dnl Initialise Automake
+ dnl ===================
+-AM_INIT_AUTOMAKE([1.15 foreign dist-bzip2 no-dist-gzip subdir-objects silent-rules])
++AM_INIT_AUTOMAKE([1.14 foreign dist-bzip2 no-dist-gzip subdir-objects silent-rules])
+ AM_SILENT_RULES([yes])
+ 
+ 

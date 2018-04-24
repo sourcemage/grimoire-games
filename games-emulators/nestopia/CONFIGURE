@@ -1,0 +1,7 @@
+config_query_option NESTOPIA_OPTS "Enable debugging code?" n \
+                                  "--enable-debug" \
+                                  "--disable-debug" &&
+
+config_query_option NESTOPIA_OPTS "Install full HTML documentation?" n \
+                                  "--enable-doc" \
+                                  "--disable-doc"

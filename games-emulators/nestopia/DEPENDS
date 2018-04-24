@@ -1,0 +1,11 @@
+depends -sub CXX gcc &&
+depends zlib &&
+depends libarchive &&
+depends sdl2 &&
+depends libepoxy &&
+depends libao &&
+
+optional_depends gtk+3 \
+                 "--enable-gui" \
+                 "--disable-gui" \
+                 "for GTK+3 GUI"

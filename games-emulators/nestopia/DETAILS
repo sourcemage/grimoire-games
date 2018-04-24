@@ -1,0 +1,15 @@
+           SPELL=nestopia
+         VERSION=1.48
+          SOURCE=${SPELL}-${VERSION}.tgz
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}ue/${SOURCE}
+     SOURCE_HASH=sha512:089a5c317a44e1c17751152b57a7389d4a9a5190084303491683829bae0b7c52559ec425c0933733dd8dac221220124799d0e36d066012a45c813c23654dd4c1
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE=http://0ldsk00l.ca/nestopia/
+      LICENSE[0]=GPL
+         ENTERED=20180424
+           SHORT="portable NES/Famicom emulator written in C++"
+cat << EOF
+Nestopia UE (Undead Edition) is a fork of the original source code, with
+enhancements from members of the emulation community. This includes
+support for new platforms, and bug fixes in the emulator core.
+EOF
