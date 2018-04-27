@@ -12,12 +12,17 @@ cp -v $SOURCE_CACHE/$SOURCE4  content/packages/
 fi                                                                          &&
 rm -f config.state                                                          &&
 touch config.state                                                          &&
-echo "CHOICE_debug_VALUE=$UQM_DEBUG"  >>  config.state                      &&
-echo "CHOICE_graphics_VALUE=$UQM_GRAPHICS"  >>  config.state                &&
-echo "CHOICE_sound_VALUE=$UQM_SOUND"  >>  config.state                      &&
-echo "CHOICE_ovcodec_VALUE=standard"  >>  config.state                      &&
-echo "CHOICE_ioformat_VALUE=stdio_zip"  >>  config.state                    &&
-echo "CHOICE_accel_VALUE=$UQM_ACCEL"  >>  config.state                      &&
+echo "CHOICE_accel_VALUE=$UQM_ACCEL"       >>  config.state &&
+echo "CHOICE_debug_VALUE=$UQM_DEBUG"       >>  config.state &&
+echo "CHOICE_graphics_VALUE=$UQM_GRAPHICS" >>  config.state &&
+echo "CHOICE_ioformat_VALUE=stdio_zip"     >>  config.state &&
+echo "CHOICE_joystick_VALUE='enabled'"     >>  config.state &&
+echo "CHOICE_mikmod_VALUE='external'"      >>  config.state &&
+echo "CHOICE_netplay_VALUE='full'"         >>  config.state &&
+echo "CHOICE_ovcodec_VALUE='standard'"     >>  config.state &&
+echo "CHOICE_ovcodec_VALUE=standard"       >>  config.state &&
+echo "CHOICE_sound_VALUE=$UQM_SOUND"       >>  config.state &&
+echo "CHOICE_threadlib_VALUE='sdl'"        >>  config.state &&
 echo "INPUT_install_prefix_VALUE=\"${INSTALL_ROOT}/usr/\""  >>  config.state        &&
 echo "INPUT_install_bindir_VALUE=\"${INSTALL_ROOT}/usr/games/\""  >>  config.state  &&
 echo "INPUT_install_libdir_VALUE=\"${INSTALL_ROOT}/usr/lib/\""  >>  config.state    &&

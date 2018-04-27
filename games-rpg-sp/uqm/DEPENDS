@@ -1,8 +1,10 @@
+depends  libmikmod  &&
+depends  libogg     &&
+depends  libvorbis  &&
 depends  sdl        &&
 depends  sdl_image  &&
-depends  libvorbis  &&
-depends  libogg     &&
 depends  zlib       &&
+
 if [[ "$UQM_ACCEL" == "asm" ]]
 then
 depends  nasm
