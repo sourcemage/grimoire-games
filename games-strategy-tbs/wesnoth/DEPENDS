@@ -12,7 +12,6 @@ depends sdl_image  &&
 depends sdl_mixer  &&
 depends sdl_net    &&
 depends sdl_ttf    &&
-depends lua        &&
 
 # TODO: add ASIO sub-dependency to boost spell
 if list_find "$WESNOTH_OPTS" "-DENABLE_TESTS=ON"; then
