@@ -1,9 +1,9 @@
            SPELL=fgfs-base
-         VERSION=2017.3.1
+         VERSION=2018.3.1
           SOURCE=FlightGear-${VERSION}-data.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/fgdata
    SOURCE_URL[0]=http://downloads.sourceforge.net/project/flightgear/release-$(echo $VERSION|cut -f1,2 -d'.')/$SOURCE
-     SOURCE_HASH=sha512:9a3a68103bbb0f74d7f019b45cca00e686122618c1b5142231ba0c8b83f1283956782d3ea4372b1d96d653ea45f7087c32f39f26fe97695faddad0be12f8d9ff
+     SOURCE_HASH=sha512:495ef2dc87244c10cbca6deed7731e84f07c4a495e6d70ea7a88581e655b366c17900603f2388d2d21c4fe5cc4279820ae2a112376deeba4d37a53cd3495c102
 #      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://flightgear.sourceforge.net
          ENTERED=20010922
