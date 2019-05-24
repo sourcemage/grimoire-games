@@ -1,3 +1,6 @@
+2019-05-24 Ismael Luceno <ismael@sourcemage.org>
+	* PRE_BUILD: Fixed build against musl
+
 2008-03-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 0.0.14.1
 
