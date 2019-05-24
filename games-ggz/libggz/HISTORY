@@ -1,4 +1,5 @@
 2019-05-24 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Fixed dependency on SSL library
 	* PRE_BUILD: Fixed build against musl
 
 2009-02-12 Eric Sandall <sandalle@sourcemage.org>
