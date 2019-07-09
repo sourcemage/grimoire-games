@@ -4,7 +4,8 @@ config_query_option  DOSBOX_CORE_INLINE                            \
                      "--enable-core-inline"                        \
                      "--disable-core-inline"                       &&
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]] ||
-   [[ ${SMGL_COMPAT_ARCHS[1]} == "ia32" ]]; then
+   [[ ${SMGL_COMPAT_ARCHS[1]} == "em64t"  ]] ||
+   [[ ${SMGL_COMPAT_ARCHS[1]} == "ia32"   ]]; then
   config_query_option  DOSBOX_X86_DYNAMIC                          \
                      "Enable x86 dynamic cpu core"                 \
                      "y"                                           \
