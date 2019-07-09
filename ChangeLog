@@ -1,3 +1,8 @@
+2019-07-08 Eric Sandall <sandalle@sourcemage.org>
+	* FUNCTIONS: In disable_pic, check 64-bit for EM64T as well.
+	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed
+	  SMGL_COMPAT_ARCH[1] from x86_64 to em64t.
+
 2018-04-24 Vlad Glagolev <stealth@sourcemage.org>
 	* games-emulators/nestopia: new spell, portable NES/Famicom emulator
 	  written in C++
@@ -6,8 +11,8 @@
 	* games-fps/eduke32: new spell, a port of the Duke Nukem 3D engine
 
 2018-01-15 Ismael Luceno <ismael@sourcemage.org>
-        * games-emulators/xmame: spell deprecated [project dead, x11 support
-          available in mame]
+	* games-emulators/xmame: spell deprecated [project dead, x11 support
+	  available in mame]
 
 2017-12-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* FUNCTIONS: port changes to qt*_cmake_build from test grimoire

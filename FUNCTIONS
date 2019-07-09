@@ -254,6 +254,7 @@ function verify_file() {
 #---
 disable_pic() {
   if [[ "${SMGL_COMPAT_ARCHS[1]}" != "x86_64" ]] &&
+     [[ "${SMGL_COMPAT_ARCHS[1]}" != "em64t"  ]] &&
      [[ "${SMGL_COMPAT_ARCHS[1]}" != "alpha"  ]] ||
      [[ "$1" == "force" ]]
   then
