@@ -1,10 +1,10 @@
            SPELL=allegro5
-         VERSION=5.0.11
+         VERSION=5.2.5.0
           SOURCE="allegro-$VERSION.tar.gz"
-   SOURCE_URL[0]=http://sourceforge.net/projects/alleg/files/allegro/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:bcf3bec236d5dee11c789394144959d2a2f6028ae3d89a91a726f796d74f785c7f28749ac1cda94becaf18c31c76fcf75b8f2f6d1f2c32c52d556f967a406052
+   SOURCE_URL[0]=https://github.com/liballeg/$SPELL/releases/download/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:c6341396ad7340233c1297ed122095e5c2d129a32da2350b4bb39c4b74f8d56d57ec4e608defec471d63fff51d786f0a9f3844be82f81cdb3d48d5bc49908b12
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/allegro-$VERSION"
-        WEB_SITE="http://alleg.sourceforge.net"
+        WEB_SITE='https://liballeg.org/'
       LICENSE[0]="$WEB_SITE/license.html"
          ENTERED=20150109
         KEYWORDS=""
@@ -24,13 +24,14 @@ advantage of modern hardware (e.g. hardware acceleration using 3D cards)
 and operating systems. Although it is not backwards compatible with earlier
 versions, it still occupies the same niche and retains a familiar style.
 
-Allegro 5.0 supports the following platforms:
+Allegro 5 supports the following platforms:
 
-    Unix/Linux Windows (MSVC, MinGW) MacOS X iPhone
-
-Allegro 5.1 also adds support for:
-
-    Android
+- Android
+- Apple Mac OS X / iOS / Darwin
+- FreeBSD
+- GNU HURD
+- GNU/Linux
+- Microsoft Windows (MSVC, MinGW)
 
 Allegro only supports 2D graphics primitives natively, but it is perfectly
 reasonable to use Allegro alongside a 3D API (e.g. OpenGL, Direct3D, and
