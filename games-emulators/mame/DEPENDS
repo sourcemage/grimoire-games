@@ -12,7 +12,7 @@ use_system PORTAUDIO &&
 use_system expat &&
 use_system flac &&
 use_system libuv UV &&
-#use_system portmidi &&
+use_system portmidi &&
 use_system sqlite SQLITE3 &&
 #use_system utf8proc &&
 use_system zlib
