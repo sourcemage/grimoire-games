@@ -4,6 +4,7 @@
    SOURCE_URL[0]="https://github.com/mamedev/mame/archive/$SOURCE"
      SOURCE_HASH=sha512:9132d88d78538aef615afb69993ad850a7c8fd5b36bab8f1312707f04ccb411ded4280530bccd22fe144adf2d1ac3085388e5f660e085c56791635532877bebd
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mame-mame${VERSION/.}"
+           TMPFS=off
         WEB_SITE="http://mamedev.org/"
       LICENSE[0]="GPLv2"
          ENTERED=20160726

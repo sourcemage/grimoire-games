@@ -1,6 +1,7 @@
 2019-09-18 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing python3 dependency
 	* DETAILS: updated spell to 0.213
+	  TMPFS=off
 	* BUILD: Fixed build against musl
 	  Added WNOERROR=1 to avoid failures due to non-fatal errors
 	* DEPENDS: Added portmidi
