@@ -1,6 +1,7 @@
 2019-09-18 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing python3 dependency
 	* DETAILS: updated spell to 0.213
+	* BUILD: Fixed build against musl
 
 2019-08-07 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 0.212
