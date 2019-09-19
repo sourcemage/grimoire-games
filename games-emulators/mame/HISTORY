@@ -1,5 +1,6 @@
 2019-09-19 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing dependency on sdl2_ttf
+	  PORTAUDIO -> portaudio19 (v18 not supported anymore)
 
 2019-09-18 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing python3 dependency
