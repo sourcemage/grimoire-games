@@ -1,3 +1,6 @@
+2019-09-19 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Added missing dependency on sdl2_ttf
+
 2019-09-18 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing python3 dependency
 	* DETAILS: updated spell to 0.213
