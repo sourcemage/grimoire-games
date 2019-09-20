@@ -1,3 +1,7 @@
+2019-09-20 Ismael Luceno <ismael@sourcemage.org>
+	* PRE_BUILD, patches/musl-netlist.patch, patches/musl-time_t.patch:
+	  Import portability fixes from Void Linux.
+
 2019-09-19 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: Added missing dependency on sdl2_ttf
 	  PORTAUDIO -> portaudio19 (v18 not supported anymore)
