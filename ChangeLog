@@ -1,6 +1,7 @@
 2019-11-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* FUNCTIONS: install to /usr/games and /usr/share/games when using
 	  cmake
+	* CMAKE_*: added
 
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: In disable_pic, check 64-bit for EM64T as well.
