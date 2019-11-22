@@ -86,7 +86,7 @@ function cmake_build() {
   cd $SOURCE_DIRECTORY  &&
   mkdir -p build        &&
   cd build              &&
-  cmake -DCMAKE_INSTALL_LIBDIR:PATH=lib -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../  $OPTS &&
+  cmake -DCMAKE_INSTALL_LIBDIR:PATH=lib -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../ -DCMAKE_INSTALL_BINDIR=games -DCMAKE_INSTALL_DATAROOTDIR=share/games $OPTS &&
   make
 }
 
