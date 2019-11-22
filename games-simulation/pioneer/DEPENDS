@@ -1,10 +1,13 @@
+source $GRIMOIRE/CMAKE_DEPENDS
 depends gcc &&
-depends automake &&
 depends curl &&
 depends libsigc++2 &&
 depends sdl2_image &&
 depends freetype2 &&
+depends freeimage &&
 depends libvorbis &&
 depends libpng &&
 depends assimp &&
-depends OPENGL 
+depends OPENGL &&
+depends glew   &&
+depends minizip
