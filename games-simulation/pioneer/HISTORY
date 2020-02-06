@@ -1,3 +1,6 @@
+2020-02-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 20200203
+
 2019-11-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 20191117
 	* BUILD, CONFIGURE, DEPENDS, DETAILS: use cmake
