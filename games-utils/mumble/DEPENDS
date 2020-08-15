@@ -1,8 +1,13 @@
 depends -sub CXX gcc &&
 depends boost &&
 
+# fixme: also supports libressl
+depends openssl &&
+
 # UI
-depends -sub SQLITE qt4 &&
+depends qtbase &&
+depends qtsvg &&
+
 depends libxevie &&
 optional_depends dbus \
                  '' \

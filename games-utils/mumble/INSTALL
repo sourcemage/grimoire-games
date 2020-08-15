@@ -4,7 +4,6 @@ cp -rv release/* $INSTALL_DIRECTORY &&
 cd $INSTALL_DIRECTORY &&
 find_and_scam &&
 chmod 755 . &&
-chmod 750 plugins/liblink.so plugins/libmanual.so &&
 if [[ "$MUMBLE_OVERLAY" = 'y' ]]; then
     chmod 750 libmumble.so
 fi &&

@@ -3,7 +3,7 @@ cd $SOURCE_DIRECTORY &&
 
 # Remove missing translations
 tmp=$(mktemp) &&
-f=src/mumble/mumble_qt.qrc &&
+f=src/mumble/mumble.qrc &&
 awk -F'[\t ]*<[^>]*>' '
 	function exists(f,	r, t) {
 		r = getline t < f
