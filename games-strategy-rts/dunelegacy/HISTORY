@@ -1,3 +1,9 @@
+2020-12-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 0.96.4
+	* PRE_BUILD, 0001-Fix-flickering-bug-with-NVidia-driver-on-linux.patch:
+	  fix bug with nvidia driver
+	* DEPENDS: use sd2
+
 2012-06-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 0.96.2
 

@@ -1,0 +1,25 @@
+From 3c2456f20f78187e67552e4a768ce014bc7d8605 Mon Sep 17 00:00:00 2001
+From: Florian Franzmann <bwlf@bandrate.org>
+Date: Wed, 23 Dec 2020 16:51:01 +0100
+Subject: [PATCH] Fix flickering bug with NVidia driver on linux
+
+---
+ src/Game.cpp | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/src/Game.cpp b/src/Game.cpp
+index 98279c7..473ffcc 100644
+--- a/src/Game.cpp
++++ b/src/Game.cpp
+@@ -1155,8 +1155,6 @@ void Game::runMainLoop() {
+ 
+         drawScreen();
+ 
+-        SDL_RenderPresent(renderer);
+-
+         SDL_SetRenderTarget(renderer, nullptr);
+         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+         SDL_RenderClear(renderer);
+-- 
+2.29.2
+

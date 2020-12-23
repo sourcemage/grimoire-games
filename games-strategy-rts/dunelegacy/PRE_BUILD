@@ -1,0 +1,8 @@
+default_pre_build      &&
+cd "$SOURCE_DIRECTORY" &&
+
+sed -e 's/MIX_INIT_FLUIDSYNTH/MIX_INIT_MID/g'  \
+    -i src/FileClasses/music/DirectoryPlayer.cpp \
+    -i src/FileClasses/music/XMIPlayer.cpp &&
+
+patch -p1 < "$SPELL_DIRECTORY/0001-Fix-flickering-bug-with-NVidia-driver-on-linux.patch"
