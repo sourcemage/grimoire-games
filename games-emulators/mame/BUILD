@@ -5,4 +5,4 @@ esac &&
 # Avoid non-fatal errors
 OPTS+=' NOWERROR=1' &&
 
-make $OPTS
+make -j "$MAKE_NJOBS" $OPTS
