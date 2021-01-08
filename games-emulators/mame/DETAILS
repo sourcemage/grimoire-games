@@ -1,8 +1,8 @@
            SPELL=mame
-         VERSION=0.214
+         VERSION=0.227
           SOURCE="mame${VERSION/.}.tar.gz"
    SOURCE_URL[0]="https://github.com/mamedev/mame/archive/$SOURCE"
-     SOURCE_HASH=sha512:1c5851c7a95f4f3a312b47ba182f2f8fdfd186e16593d58555c8291174c07d8f18b7c4bec8d26589755e427dc2f29c66404a2dfb4f35dca9b63292b42faaca1c
+     SOURCE_HASH=sha512:f3cafa359ae81a4feeef865f41a0ce1c85e1e44ce237dfca390fea6ead3b5ed8a1715d03ed34b1b7a381dcbff8d5f8a3900ddcddad0c5772a954cdeafaba27c4
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mame-mame${VERSION/.}"
            TMPFS=off
         WEB_SITE="http://mamedev.org/"

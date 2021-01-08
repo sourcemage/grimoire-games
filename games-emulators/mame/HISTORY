@@ -1,6 +1,7 @@
 2021-01-08 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD: Removed custom QT_HOME
 	  Made build parallel
+	* DETAILS: updated spell to 0.227
 
 2019-10-16 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 0.214
