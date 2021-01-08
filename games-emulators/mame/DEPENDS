@@ -2,8 +2,7 @@ use_system() {
   depends $1 "USE_SYSTEM_LIB_${2:-${1^^}}=1"
 }
 
-QTDIR="$INSTALL_ROOT/opt/qt5" &&
-depends qtbase QT_HOME="$QTDIR" &&
+depends qtbase &&
 depends sdl2 &&
 depends sdl2_ttf &&
 depends python3 PYTHON_EXECUTABLE=python3 &&
