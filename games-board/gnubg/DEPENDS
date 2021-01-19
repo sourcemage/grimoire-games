@@ -1,0 +1,37 @@
+depends glib2 &&
+optional_depends curl --with-libcurl --without-libcurl "for curl support" &&
+optional_depends gmp "" "" "" &&
+optional_depends gtk+3 --with-gtk3 --without-gtk3 "for the (experimental) GTK+ 3 GUI" &&
+if is_depends_enabled "$SPELL" gtk+3; then
+  gui=gtk3
+else
+  optional_depends gtk+2 --with-gtk --without-gtk "for the GTK+ GUI" &&
+    if is_depends_enabled "$SPELL" gtk+2; then
+      gui=gtk2
+    else
+      gui=none
+    fi
+fi
+if [ none != "$gui" ]; then
+  optional_depends cairo "" "" "for vector graphics support" &&
+  optional_depends pango "" "" "for text rendering support" &&
+  optional_depends freetype2 "" "" "" &&
+  optional_depends libcanberra "" "" "for audio support" &&
+  if is_depends_enabled "$SPELL" libcanberra; then
+    case "$gui" in
+      (gtk3)
+	sub_depends libcanberra GTK3 ;;
+      (gtk2)
+	sub_depends libcanberra GTK ;;
+    esac
+  fi &&
+  optional_depends gtkglext --with-board3d --without-board3d "for 3D board" &&
+  if is_depends_enabled "$SPELL" gtkglext; then
+    optional_depends glu "" "" "for GLU support"
+  fi &&
+  optional_depends libpng "" "" "for PNG support"
+fi &&
+optional_depends ncurses "" "" "for text-terminal UI" &&
+optional_depends python3 --with-python=python3 --without-python "for Python scripting support" &&
+optional_depends readline "" "" "for line editing on the terminal" &&
+optional_depends sqlite "" "" "for sqlite support"

@@ -1,3 +1,6 @@
+2021-01-19 Ismael Luceno <ismael@sourcemage.org>
+	* games-board/gnubg: new spell, GNU Backgammon
+
 2020-01-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* FUNCTIONS: filter -fno-plt in disable_pic
 

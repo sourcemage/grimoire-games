@@ -1,0 +1,22 @@
+           SPELL=gnubg
+         VERSION=1.06.002
+          SOURCE="$SPELL-release-$VERSION-sources.tar.gz"
+   SOURCE_URL[0]=https://ftp.gnu.org/gnu/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:77594209032a0d81deb802da249d7f40812127dd1e080413eda75015f324fec9592b1b51772403f501b21e39d3dd371931d82b43c24f614a7d16c5234d271948
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE="https://www.gnu.org/software/gnubg/"
+      LICENSE[0]="GPL-3.0-or-later"
+         ENTERED=20210119
+        KEYWORDS=""
+           SHORT="GNU Backgammon"
+cat << EOF
+GNU Backgammon (GNUbg) plays and analyzes backgammon games and matches. It is
+able to play and analyze both money games and tournament matches, evaluate
+and roll out positions, and more. Driven by a command-line interface,
+it displays an ASCII rendering of a board on text-only terminals, but also
+allows the user to play games and manipulate positions with a graphical GTK+
+interface. GNU Backgammon is extensible on platforms which support Python.
+
+GNU Backgammon is a world class opponent and rates at over 2000 on FIBS,
+the First Internet Backgammon Server.
+EOF
