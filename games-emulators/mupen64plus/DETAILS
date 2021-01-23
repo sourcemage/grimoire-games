@@ -1,10 +1,10 @@
            SPELL=mupen64plus
-         VERSION=2.0
+         VERSION=2.5.9
           SOURCE="${SPELL}-bundle-src-${VERSION}.tar.gz"
-   SOURCE_URL[0]=http://${SPELL}.googlecode.com/files/${SOURCE}
-     SOURCE_HASH=sha512:7dd3e0197d7775ee052ac6521e8764f7aa8f7edff4f6c4ef480c9c681382021b4a527994022ea1f8bf07045bcd1c564d61dd490ba531e5a34d9e36eda80154c3
+   SOURCE_URL[0]="https://github.com/$SPELL/$SPELL-core/releases/download/$VERSION/$SOURCE"
+     SOURCE_HASH=sha512:ba80c2ab2391d232b0ed6b96943a27d8e93cf1b3540a25a1a89fc5ba104cfcbb17cb81066ec6a0060b2159afb68eebbeb83536ae4a97779af6c52477e738cd5e
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-bundle-src-${VERSION}"
-        WEB_SITE="http://${SPELL}.googlecode.com"
+        WEB_SITE="https://mupen64plus.org/"
       LICENSE[0]=GPL
          ENTERED=20090108
            SHORT="Nintendo64 emulator"

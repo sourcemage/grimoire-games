@@ -1,5 +1,7 @@
 2021-01-23 Ismael Luceno <ismael@iodev.co.uk>
 	* BUILD: fixed build with GCC 10
+	* DETAILS: updated spell to 2.5.9
+	  fixed WEB_SITE
 
 2015-01-12 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 2.0
