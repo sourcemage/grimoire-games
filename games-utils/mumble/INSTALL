@@ -9,9 +9,9 @@ if [[ "$MUMBLE_OVERLAY" = 'y' ]]; then
 fi &&
 if [[ "$MUMBLE_CLIENT" = 'y' ]]; then
     chmod 750 mumble
-    ln -sv $INSTALL_DIRECTORY/mumble $INSTALL_ROOT/usr/games
+    ln -sfv $INSTALL_DIRECTORY/mumble $INSTALL_ROOT/usr/games
 fi &&
 if [[ "$MUMBLE_SERVER" = 'y' ]]; then
     chmod 750 murmurd
-    ln -sv $INSTALL_DIRECTORY/murmurd $INSTALL_ROOT/usr/games
+    ln -sfv $INSTALL_DIRECTORY/murmurd $INSTALL_ROOT/usr/games
 fi
