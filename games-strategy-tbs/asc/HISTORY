@@ -1,4 +1,4 @@
-2012-01-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-01-19 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD: use default_games_build
 	* DETAILS: version 2.5.0.0
 	* DEPENDS: added dependencies on lua51, WXWIDGET, libvorbis, libogg, curl,

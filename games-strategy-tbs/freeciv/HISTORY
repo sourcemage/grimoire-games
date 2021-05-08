@@ -1,26 +1,26 @@
-2021-04-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2021-04-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.4
 
-2020-12-31 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-12-31 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.3
 
-2020-11-27 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-11-27 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.2.1, switch to github
 	* PRE_BUILD, DEPENDS: run autoconf/automake
 
-2020-02-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-02-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.2
 
-2020-01-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-01-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.1
 
-2016-12-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-12-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.5.6
 
-2016-05-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-25 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.5.4
 
-2016-05-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.5.3
 	* TRIGGERS: on cast imagemagick cast self
 	* DEPENDS: depend on imagemagick
@@ -28,19 +28,19 @@
 2015-06-23 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 2.5.0
 
-2013-03-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-03-29 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.3.4
 
-2012-06-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-06-17 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.3.2
 
-2012-02-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-02-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.3.1
 
 2011-11-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 2.3.0
 
-2011-02-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-02-26 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.2.4
 
 2010-09-10 Eric Sandall <sandalle@sourcemage.org>

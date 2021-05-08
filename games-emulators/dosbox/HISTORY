@@ -3,7 +3,7 @@
 	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed
 	  SMGL_COMPAT_ARCHS[1] from x86_64 to em64t.
 
-2019-06-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-06-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 0.74-3
 	* PRE_BUILD, sdl-xorg-1.20.1.patch: removed
 
@@ -14,7 +14,7 @@
 	  unnecessary patches and add patch to work around an incompatibility
 	  with xorg 1.20.1
 
-2014-10-11 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-10-11 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: fix SOURCE_URL
 
 2012-05-19 Thomas Orgis <sobukus@sourcemage.org>

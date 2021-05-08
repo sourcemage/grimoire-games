@@ -1,13 +1,13 @@
-2020-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-06-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 0.46.0
 
-2018-07-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-07-24 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD, DEPENDS, DETAILS: version 0.44.0
 
-2017-12-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-12-03 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD, DEPENDS, DETAILS: version 0.43.0
 
-2017-11-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-11-12 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD, DEPENDS, DETAILS: spell created
 	* DEPENDS: add dependency on OPENAL, OPENGL, LIBAVCODEC, cmake, tinyxml,
 	  unshield

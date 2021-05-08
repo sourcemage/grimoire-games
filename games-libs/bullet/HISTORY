@@ -1,20 +1,20 @@
-2019-12-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-12-21 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.89
 
-2019-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.88
 
-2017-11-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-11-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.87
 
 2015-06-23 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Removed bogus line at the end.
 
-2015-05-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-05-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.83.4
 	* BUILD, CONFIGURE: update options
 
-2013-11-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-11-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.82-r2704
 
 2013-02-15 Robin Cook <rcook@wyrms.net>
@@ -22,7 +22,7 @@
 	* CONFIGURE: added options BULLET_THREADS, BULLET_SHARED, BULLET_DEMOS
 	* BUILD: applied options from CONFIGURE
 
-2012-04-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-04-14 Florian Franzmann <bwlf@bandrate.org>
   * DETAILS: version 2.80-rev2531
 
 2011-11-21 Robin Cook <rcook@wyrms.net>

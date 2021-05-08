@@ -1,13 +1,13 @@
-2020-12-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-12-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 0.96.4
 	* PRE_BUILD, 0001-Fix-flickering-bug-with-NVidia-driver-on-linux.patch:
 	  fix bug with nvidia driver
 	* DEPENDS: use sd2
 
-2012-06-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-06-17 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 0.96.2
 
-2010-04-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2010-04-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 0.96
 	* INSTALL, PRE_BUILD, dunelegacy-nowerror.diff, BUILD:
 	  removed

@@ -1,45 +1,45 @@
-2019-01-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-13 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2018.3.1
 
-2017-11-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-11-25 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2017.3.1
 
-2016-09-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-09-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2016.3.1
 
-2016-05-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-29 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2016.2.1
 
-2016-04-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-04-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2016.1.1
 
-2014-02-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-02-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 3.0.0
 
-2014-01-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-01-21 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: fix SOURCE_URLs
 
-2013-11-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-11-29 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.12.1
 
-2013-10-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-10-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS, INSTALL: version 2.12.0
 
-2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.10.0, TMPFS=off
 
-2013-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-01-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.8.0
 
-2012-01-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-01-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.6.0
 
-2012-01-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-01-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.4.0
 	* INSTALL: install to /usr/share/games/flightgear, which is
 	  where flightgear expects the data to be
 
-2011-03-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-03-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 2.0.0
 
 2009-05-06 Eric Sandall <sandalle@sourcemage.org>
@@ -47,7 +47,7 @@
 	  SOURCE is now FlightGear-data instead of fgfs-base
 	  Removed UPDATED
 
-2008-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2008-01-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: updated to 1.0.0
 
 2006-09-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
