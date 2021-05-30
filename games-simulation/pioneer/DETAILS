@@ -1,9 +1,9 @@
 isource $GRIMOIRE/CMAKE_FUNCTIONS
            SPELL=pioneer
-         VERSION=20200203
+         VERSION=20210203
           SOURCE="$SPELL-$VERSION.tar.gz"
    SOURCE_URL[0]=https://github.com/${SPELL}spacesim/${SPELL}/archive/${VERSION}.tar.gz
-     SOURCE_HASH=sha512:0e4a0dc968ecdf065dccd747215d97da371c80b58639aaf10b08ae8200c4bd2e7c929fcadcbefa6a27aa91432c03e4ca1ed87c6dd9b4edd0010b194a736c53bb
+     SOURCE_HASH=sha512:d1ec38530324bb8e5903f1eca94039acb3071393c020c47278794a70ae64ce1503da434389ed384f89749b1b09f16bcf4c854e8b2f56221e818461e72eb103e2
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-$VERSION"
         WEB_SITE="http://pioneerspacesim.net/"
       LICENSE[0]=GPL
