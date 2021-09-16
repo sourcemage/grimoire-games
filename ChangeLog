@@ -1,3 +1,6 @@
+2021-09-16 Ismael Luceno <ismael@sourcemage.org>
+	* games-emulators/openmsx: new spell, MSX emulator
+
 2021-01-19 Ismael Luceno <ismael@sourcemage.org>
 	* games-board/gnubg: new spell, GNU Backgammon
 

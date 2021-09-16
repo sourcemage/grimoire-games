@@ -1,0 +1,36 @@
+depends libpng &&
+depends python3 &&
+depends sdl2 &&
+depends sdl2_ttf &&
+depends tcl &&
+depends zlib &&
+
+# XXX broken buildsystem, forces optional dependencies
+if spell_ok alsa-lib; then
+  depends alsa-lib
+else
+  optional_depends alsa-lib \
+                   -Dalsamidi={enabled,disabled} \
+                   "for ALSA MIDI audio output support"
+fi &&
+if spell_ok libogg; then
+  depends libogg
+else
+  optional_depends libogg \
+                 -Dlaserdisc={enabled,disabled} \
+                 "for LaserDisc emulation"
+fi &&
+if is_depends_enabled "$SPELL" libogg; then
+  depends libtheora &&
+  depends libvorbis
+fi &&
+if spell_ok glew; then
+  depends glew
+else
+  optional_depends glew \
+                   -Dglrenderer={enabled,disabled} \
+                   "for OpenGL renderer"
+fi &&
+if is_depends_enabled "$SPELL" glew; then
+  depends OPENGL
+fi
