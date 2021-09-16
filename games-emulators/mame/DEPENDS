@@ -1,5 +1,10 @@
+opt_system() {
+  local dep="${2:-${1^^}}" &&
+  optional_depends "$1" "USE_SYSTEM_LIB_$dep=1" "NO_USE_$dep=1" "$3"
+}
 use_system() {
-  depends $1 "USE_SYSTEM_LIB_${2:-${1^^}}=1"
+  local dep="${2:-${1^^}}" &&
+  depends "$1" "USE_SYSTEM_LIB_$dep=1"
 }
 
 depends qtbase &&
@@ -8,11 +13,15 @@ depends sdl2_ttf &&
 depends python3 PYTHON_EXECUTABLE=python3 &&
 use_system JPEG &&
 use_system LUA &&
-use_system portaudio19 &&
+# FIXME BROKEN: use_system asio &&
 use_system expat &&
 use_system flac &&
-use_system libuv UV &&
+use_system glm &&
 use_system portmidi &&
+use_system pugixml &&
+use_system rapidjson &&
 use_system sqlite SQLITE3 &&
-#use_system utf8proc &&
-use_system zlib
+use_system utf8proc &&
+use_system zlib &&
+opt_system LIBPULSE PULSEAUDIO 'for PulseAudio support' &&
+opt_system portaudio19 PORTAUDIO 'for PortAudio support'

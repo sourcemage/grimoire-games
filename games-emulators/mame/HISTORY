@@ -1,3 +1,9 @@
+2021-09-16 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.235
+	* DEPENDS: made portaudio19 optional
+	  added glm, pugixml, rapidjson, utf8proc, LIBPULSE
+	  removed libuv
+
 2021-01-08 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD: Removed custom QT_HOME
 	  Made build parallel
