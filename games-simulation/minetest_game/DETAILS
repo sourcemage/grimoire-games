@@ -8,10 +8,10 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${MINETEST_GAME_BRANCH}
    SOURCE_URL[0]=git://github.com/minetest/${SPELL}.git
    SOURCE_IGNORE=volatile
 else
-         VERSION=0.4.10
+         VERSION=5.4.0
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=https://github.com/minetest/${SPELL}/archive/${VERSION}.tar.gz
-     SOURCE_HASH=sha512:eccfcb439d66809eff5088dc22f9c568a7e56b329c8ef9008d6007e9ad43b37f8c4282e0c652b638b10591fdec29f5e53d6dd0d148333906d9bf2df137aa0148
+     SOURCE_HASH=sha512:b0cfa5fc76b56dc6d188a5285af003c348f25e797aec2399369c6230e682c2ee8dbc6ae8769bcbd0bb45864588f0522cd609356f407833db30c601df4ddf9f8d
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
 fi
         WEB_SITE="https://github.com/minetest/minetest_game"
