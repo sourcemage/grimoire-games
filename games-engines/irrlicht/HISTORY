@@ -1,3 +1,8 @@
+2021-12-30 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.8.5
+	* BUILD, INSTALL: simplified
+	  don't call ldconfig on non-glibc systems
+
 2014-09-18 Jeremy Blosser <jblosser@sourcemage.org>
 	* *: moved to games
 

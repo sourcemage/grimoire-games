@@ -1,8 +1,8 @@
            SPELL=irrlicht
-         VERSION=1.8.1
+         VERSION=1.8.5
           SOURCE="${SPELL}-${VERSION}.zip"
    SOURCE_URL[0]=http://downloads.sourceforge.net/${SPELL}/${SOURCE}
-     SOURCE_HASH=sha512:93390c162e5a8edb231588d47dc421c24d21a34e833df1f3b92c85a9e8ef4a96a61d854e05eedb37f88f7f02821059e78a40a52cbc8e39356c4d36b17775dfbb
+     SOURCE_HASH=sha512:d11c7a056bfb8c9737ed583c5bc5794223bc59fb4620411b63bc4d1eedc41db2ed1cab5cb7a37fee42a7f38c0e0645f5fc53fd329fff0f2aa78e0df6804c47c9
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://irrlicht.sourceforge.net/"
       LICENSE[0]=ZLIB

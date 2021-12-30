@@ -1,2 +1,1 @@
-cd source/Irrlicht/     &&
-make NDEBUG=1 sharedlib
+make -C source/Irrlicht NDEBUG=1 sharedlib
