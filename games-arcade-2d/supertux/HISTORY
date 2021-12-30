@@ -1,3 +1,6 @@
+2021-12-30 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.6.3
+
 2015-06-24 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: openal -> OPENAL
 	* DETAILS: Fixed SOURCE_URL[0]
