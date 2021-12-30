@@ -1,17 +1,17 @@
            SPELL=wesnoth
 if [ "$WESNOTH_DEVEL" == "y" ]; then
-         VERSION=1.12.6
+         VERSION=1.16.1
           BRANCH=`echo $VERSION|cut -d. -f1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 else
-         VERSION=1.12.6
+         VERSION=1.16.1
           BRANCH=`echo $VERSION|cut -d. -f1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
      OLD_VERSION=${OLD_VERSION:-$VERSION}
 fi
   SECURITY_PATCH=1
-      SOURCE_GPG=gurus.gpg:$SOURCE.sig
+     SOURCE_HASH=sha512:fcbc37e98ccc8fba5dfcf24a569d85b786ea8bdf43721c1b8f35c1661367fad7daf578df2b6ba37ffedfd66f4c838d977cbff0b3793ae38eacf8a3e5841d58bf
 # check that we have the previous tarball first and if so, enable xdelta
 if [[ $WESNOTH_XDELTA == y && -e $SOURCE_CACHE/$SPELL-$OLD_VERSION.tar.bz2 ]]; then
           SOURCE=$SPELL-$OLD_VERSION.tar-$SPELL-$VERSION.tar.xdelta

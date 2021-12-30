@@ -1,3 +1,7 @@
+2021-12-30 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.16.1
+	* DEPENDS: switched to SDL2
+
 2018-05-24 Vlad Glagolev <stealth@sourcemage.org>
 	* DEPENDS: dropped lua, not required as internal version is used
 
