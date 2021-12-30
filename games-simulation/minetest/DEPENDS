@@ -41,7 +41,7 @@ if list_find "${MINETEST_OPTS}" "-DBUILD_SERVER=1"; then
                    "-DENABLE_LEVELDB=0" \
                    "leveldb as map backend" &&
   optional_depends redis \
-                   "-DENABLE_REDIS" \
+                   "-DENABLE_REDIS=1" \
                    "-DENABLE_REDIS=0" \
                    "redis as map backend" &&
 
