@@ -1,4 +1,5 @@
 default_pre_build  &&
 cd $SOURCE_DIRECTORY &&
-
-sed -i 's:#include "SDL.h":#include <SDL.h>:' src/pui/puSDL.h
+apply_patch_dir patches &&
+sedit 's:#include "SDL.h":#include <SDL.h>:' src/pui/puSDL.h &&
+sedit 's!maybe_os in$!& linux-musl*|\\!' config.sub

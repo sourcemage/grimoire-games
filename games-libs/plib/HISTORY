@@ -1,3 +1,14 @@
+2021-12-31 Ismael Luceno <ismael@sourcemage.org>
+	* PRE_BUILD: fixed build against musl and apply patches
+	* patches/musl-ushort.patch: fixed build against musl
+	* BUILD: removed, no longer needed
+	* patches/dont_break_joystick_system_calibration.patch:
+	  added patch to avoid breaking kernel's joystick calibration
+	* patches/spelling_errors.patch: added fix for spelling errors
+	* patches/CVE-2011-4620.patch, patches/CVE-2012-4552.patch,
+	  patches/CVE-2021-38714.patch: applied security fixes
+	* DETAILS: SECURITY_PATCH++
+
 2008-09-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* PRE_BUILD: fix sdl include, modified patch from skaalil #14721
 

@@ -1,5 +1,6 @@
            SPELL=plib
          VERSION=1.8.5
+  SECURITY_PATCH=1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://plib.sourceforge.net/dist/$SOURCE
