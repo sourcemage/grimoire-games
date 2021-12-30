@@ -5,6 +5,15 @@ QT4DIR=$INSTALL_ROOT/opt/qt4
 QT5DIR=$INSTALL_ROOT/opt/qt5
 
 #---------------------------------------------------------------------
+## Apply patches from a directory
+#---------------------------------------------------------------------
+function apply_patch_dir() {
+  [ -d "$SPELL_DIRECTORY/$1" ] || return 0
+  find "$SPELL_DIRECTORY/$1" \( -name \*.patch -o -name \*.diff \) -print0 |
+  sort -zV | xargs -0 -n 1 -t patch -fp1 -i
+}
+
+#---------------------------------------------------------------------
 ## Replaces sorcerys default_pre_build with a custom version using
 ## the invoke_gcc function from libgcc
 #---------------------------------------------------------------------
