@@ -77,17 +77,53 @@ function default_games_build() {
   default_build
 }
 
+# cmake flags use : which is an internal sorcery delimiter.
+# In order to facilitate the passing of depends flags, use % instead and call
+# this function at the start of BUILD. Don't use it anywhere else.
+# Example:
+# DEPENDS: depends kdelibs4 -DCRUFT%BOOL=FALSE; ...
+# BUILD: prepare_cmake_flags; ...
+function prepare_cmake_flags()
+{
+  OPTS="${OPTS//%/:}"
+}
+
 #---
 ## @Synopsis cmake_build function to build
 ## @Synopsis source code with cmake
 #---
 
-function cmake_build() {
-  cd $SOURCE_DIRECTORY  &&
+cmake_build() {
   mkdir -p build        &&
   cd build              &&
-  cmake -DCMAKE_INSTALL_LIBDIR:PATH=lib -DCMAKE_INSTALL_PREFIX=$INSTALL_ROOT/usr ../ -DCMAKE_INSTALL_BINDIR=games -DCMAKE_INSTALL_DATAROOTDIR=share/games $OPTS &&
-  make
+  prepare_cmake_flags   &&
+
+  if [[ -z $1 ]];then
+    CMAKE_INSTALL_PREFIX="$INSTALL_ROOT/usr"
+  else
+    CMAKE_INSTALL_PREFIX="$1"
+  fi &&
+
+  message INSTALL_PREFIX=$CMAKE_INSTALL_PREFIX &&
+
+  if is_depends_enabled $SPELL qt6base;then
+    OPTS+=" -DCMAKE_PREFIX_PATH=$QT6DIR/lib/cmake"
+  fi &&
+
+  cmake -DCMAKE_INSTALL_PREFIX=$CMAKE_INSTALL_PREFIX \
+        -DCMAKE_INSTALL_BINDIR=games \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_DATAROOTDIR=share/games \
+        -DCMAKE_INSTALL_SYSCONFDIR=$INSTALL_ROOT/etc \
+        -DCMAKE_BUILD_TYPE=$CM_BUILD_TYPE \
+        -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+        -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+         $OPTS ../  &&
+  cmake --build .
+}
+
+function cmake_install() {
+  cmake --install .
 }
 
 #---
