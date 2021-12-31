@@ -1,0 +1,6 @@
+default_pre_build &&
+cd "$SOURCE_DIRECTORY" &&
+unpack_file 2 &&
+while read i; do
+  patch -fp1 -i "debian/patches/$i" || exit 1
+done < debian/patches/series

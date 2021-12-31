@@ -1,5 +1,6 @@
 2021-12-31 Ismael Luceno <ismael@sourcemage.org>
 	* games-libs/dumb: new spell, dynamic universal music bibliotheque
+	* games-arcade-2d/alex4: new spell, Alex the Allegator 4
 
 2021-09-16 Ismael Luceno <ismael@sourcemage.org>
 	* games-emulators/openmsx: new spell, MSX emulator

@@ -1,0 +1,2 @@
+depends allegro &&
+depends dumb

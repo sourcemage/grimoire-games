@@ -1,0 +1,20 @@
+           SPELL=alex4
+         VERSION=1.1-9
+          SOURCE=alex4src_data.zip
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/allegator/Alex4/source%20and%20data/$SOURCE
+     SOURCE_HASH=sha512:3935dc6d0b78209441c18b012a0aef17a44cd50b431b93fff40ac5b4809b3a039669c1afea175ad7728e782cd386c9b487384587a29827e3d6c77a7fe022fe43
+         SOURCE2=alex4_$VERSION.debian.tar.xz
+  SOURCE2_URL[0]=http://deb.debian.org/debian/pool/main/a/alex4/$SOURCE2
+    SOURCE2_HASH=sha512:84876cbdef7c31e999601b7aabdfad64a9608ba58ac4f0547ca925269765da46c1d754751f01a7a2bac13168190c9493a9f5eaeb0eb6ffde3817b02ccfc67172
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/alex4src"
+        WEB_SITE="https://sourceforge.net/projects/allegator/"
+      LICENSE[0]="GPL-2.0"
+         ENTERED=20211230
+        KEYWORDS=""
+           SHORT="Alex the Allegator 4 - a retro platform game"
+Guide Alex the Allegator through the jungle in order to save his girlfriend
+Lola from evil humans who want to make a pair of shoes out of her. Plenty
+of classic platforming in four nice colors guaranteed!
+
+The game includes a built-in editor so you can design and share your own maps.
+EOF
