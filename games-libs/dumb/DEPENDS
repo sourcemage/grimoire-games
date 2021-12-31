@@ -1,0 +1,1 @@
+depends allegro 'allegro allegro-headers' # for libaldmb

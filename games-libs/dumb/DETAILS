@@ -1,0 +1,17 @@
+           SPELL=dumb
+         VERSION=0.9.3
+          SOURCE="$SPELL-$VERSION.tar.gz"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/project/$SPELL/$SPELL/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:9ecdea460858b7e6ad7ca2534ecb3581397e6c1fa904459affe19ce49f528e580e143b42b13413b292ae7b57901a8008e6a9ee3821824f6ff7914b136f75c658
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE="http://dumb.sourceforge.net/"
+      LICENSE[0]="Zlib DUMB"
+         ENTERED=20211231
+        KEYWORDS=""
+           SHORT="dynamic universal music bibliotheque"
+cat << EOF
+DUMB is a tracker library with support for IT, XM, S3M and MOD files. It
+targets maximum accuracy to the original formats, with low-pass resonant
+filters for the IT files, accurate timing and pitching, and three resampling
+quality settings (aliasing, linear interpolation and cubic interpolation).
+EOF
