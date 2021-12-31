@@ -1,0 +1,29 @@
+From 76337ac3ec9e122bd5c8b1b53a158b38d14683b6 Mon Sep 17 00:00:00 2001
+From: Florian Léger <florian.leger6@gmail.com>
+Date: Sun, 19 Jul 2020 11:17:43 +0200
+Subject: xwin.c: fix broken xwin_set_window_name
+
+Commit f05270883f2b4382b79ea3248d985938cd9934dc that introduced the use of three windows
+broke xwin_set_window_name.
+
+Adopt the same approach as commit 2e64350d03ff958960c3ccf4c2cc87437727afea
+and fix this by setting the Class Hints for the managed window instead of
+the real window.
+
+diff --git a/src/x/xwin.c b/src/x/xwin.c
+index 040603880712..eba84fc39d7e 100644
+--- a/src/x/xwin.c
++++ b/src/x/xwin.c
+@@ -2722,10 +2722,10 @@ static void _xwin_private_set_window_name(AL_CONST char *name, AL_CONST char *gr
+    else
+       _al_sane_strncpy(_xwin.application_class, group, sizeof(_xwin.application_class));
+ 
+-   if (_xwin.window != None) {
++   if (_xwin.wm_window != None) {
+       hint.res_name = _xwin.application_name;
+       hint.res_class = _xwin.application_class;
+-      XSetClassHint(_xwin.display, _xwin.window, &hint);
++      XSetClassHint(_xwin.display, _xwin.wm_window, &hint);
+    }
+ }
+ 

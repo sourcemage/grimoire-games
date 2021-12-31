@@ -1,0 +1,20 @@
+From cb670b9a856a1aaf6baf95b873e909f36e68688a Mon Sep 17 00:00:00 2001
+From: Peter Wang <tjaden@users.sourceforge.net>
+Date: Tue, 13 Mar 2012 12:15:53 +0000
+Subject: Fix typo preventing get_executable_name from using System V procfs
+ correctly.  Reported by Max Savenkov.
+
+
+diff --git a/src/unix/usystem.c b/src/unix/usystem.c
+index a8a171cc300b..3812c8e46e27 100644
+--- a/src/unix/usystem.c
++++ b/src/unix/usystem.c
+@@ -370,7 +370,7 @@ void _unix_get_executable_name(char *output, int size)
+    #ifdef ALLEGRO_HAVE_SV_PROCFS_H
+       sprintf (linkname, "/proc/%d/exe", (int)pid);
+       fd = open(linkname, O_RDONLY);
+-      if (!fd == -1) {
++      if (fd != -1) {
+          ioctl(fd, PIOCPSINFO, &psinfo);
+          close(fd);
+    

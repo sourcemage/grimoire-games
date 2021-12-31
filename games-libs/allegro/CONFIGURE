@@ -1,32 +1,20 @@
-message ${MESSAGE_COLOR}General options${DEFAULT_COLOR}
-config_query_option ALLEGRO_ASM "Enable assembler optimizations" y "--enable-asm=yes" "--enable-asm=no"
-config_query_option ALLEGRO_MMX "Enable mmx support" y "--enable-mmx=yes" "--enable-mmx=no"
-config_query_option ALLEGRO_SSE "Enable sse support" y "--enable-sse=yes" "--enable-sse=no"
-config_query_option ALLEGRO_PTHREADS "Enable threads" y "--enable-pthreads=yes" "--enable-pthreads=no"
+. "$GRIMOIRE"/CMAKE_CONFIGURE &&
 
-message ${MESSAGE_COLOR}Audio options${DEFAULT_COLOR}
-config_query_option ALLEGRO_OSSDIGI "Enable OSS digi support" n "--enable-ossdigi=yes" "--enable-ossdigi=no"
-config_query_option ALLEGRO_OSSMIDI "Enable OSS midi support" n "--enable-ossmidi=yes" "--enable-ossmidi=no"
-config_query_option ALLEGRO_ALSAMIDI "Enable ALSA midi" n "--enable-alsamidi=yes" "--enable-alsamidi=no"
-config_query_option ALLEGRO_SGIALDIGI "Enable SGI support" n "--enable-sgialdigi=yes" "--enable-sgialdigi=no"
+message ${MESSAGE_COLOR}Audio options${DEFAULT_COLOR} &&
+config_query_option ALLEGRO_OPTS "Enable OSS digi support" n \
+		    -DWANT_OSS={on,off} &&
 
-message ${MESSAGE_COLOR}Video options${DEFAULT_COLOR}
-config_query_option ALLEGRO_COLOR8 "Enable 8bpp colors" y "--enable-color8=yes" "--enable-color8=no"
-config_query_option ALLEGRO_COLOR16 "Enable 16bpp colors" y "--enable-color16=yes" "--enable-color16=no"
-config_query_option ALLEGRO_COLOR24 "Enable 24bpp colors" y "--enable-color24=yes" "--enable-color24=yes"
-config_query_option ALLEGRO_COLOR32 "Enable 32bpp colors" y "--enable-color32=yes" "--enable-color32=no"
-config_query_option ALLEGRO_SHM "Enable shared memory support" n "--enable-xwin-shm=yes" "--enable-xwin-shm=no"
-config_query_option ALLEGRO_VIDMODE "Enable use of X VidMode extensions" n "--enable-xwin-vidmode=yes" "--enable-xwin-vidmode=no"
-config_query_option ALLEGRO_DGA2 "Enable support for DGA2" n "--enable-xwin-dga2=yes" "--enable-xwin-dga2=no"
-config_query_option ALLEGRO_LINUX "Enable linux console support" y "--enable-linux=yes" "--enable-linux=no"
-config_query_option ALLEGRO_VGA "Enable vga support" y "--enable-vga=yes" "--enable-vga=no"
-config_query_option ALLEGRO_FBCON "Enable frambuffer console support" n "--enable-fbcon=yes" "--enable-fbcon=no"
-config_query_option ALLEGRO_VBEAF "Enable VBE/AF support" n "--enable-vbeaf=yes" "--enable-vbeaf=no"
+message ${MESSAGE_COLOR}Video options${DEFAULT_COLOR} &&
+config_query_option ALLEGRO_OPTS "Enable linux console support" n \
+		    -DWANT_LINUX_CONSOLE={on,off} &&
+config_query_option ALLEGRO_OPTS "Enable vga support" n \
+		    -DWANT_LINUX_VGA={on,off} &&
+config_query_option ALLEGRO_OPTS "Enable frambuffer console support" n \
+		    -DWANT_LINUX_FBCON={on,off} &&
 
-ALLEGRO_ALL_OPTS="$ALLEGRO_ASM \
-$ALLEGRO_MMX $ALLEGRO_SSE $ALLEGRO_PTHREADS \
-$ALLEGRO_OSSDIGI $ALLEGRO_OSSMIDI $ALLEGRO_ALSAMIDI \
-$ALLEGRO_SGIALDIGI $ALLEGRO_COLOR8 $ALLEGRO_COLOR16 \
-$ALLEGRO_COLOR24 $ALLEGRO_COLOR32 $ALLEGRO_SHM \
-$ALLEGRO_VIDMODE $ALLEGRO_DGA2 $ALLEGRO_LINUX \
-$ALLEGRO_VGA $ALLEGRO_FBCON $ALLEGRO_VBEAF"
+message ${MESSAGE_COLOR}Addons${DEFAULT_COLOR} &&
+config_query_option ALLEGRO_OPTS "Enable JPGAlleg" y \
+		    -DWANT_JPGALLEG={on,off} &&
+
+config_query_option ALLEGRO_OPTS "Enable Loadpng" y \
+		    -DWANT_LOADPNG={on,off}

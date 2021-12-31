@@ -1,0 +1,20 @@
+From 1ec647dd0ae9ca74a03fb959b5242b4b468a589e Mon Sep 17 00:00:00 2001
+From: Érico Vieira Porto <ericoporto2008@gmail.com>
+Date: Sat, 20 Jun 2020 10:42:21 -0300
+Subject: x/xkeyboard.c Changes setlocale to  LC_CTYPE
+
+This fixes allegro changing the locale for LC_NUMERIC and more when installing keyboard in the x platform.
+
+diff --git a/src/x/xkeyboard.c b/src/x/xkeyboard.c
+index 247fea748a1a..b02d7b18fb82 100644
+--- a/src/x/xkeyboard.c
++++ b/src/x/xkeyboard.c
+@@ -707,7 +707,7 @@ static int x_keyboard_init(void)
+ 
+ #ifdef ALLEGRO_XWINDOWS_WITH_XIM
+    /* Otherwise we are restricted to ISO-8859-1 characters. */
+-   if (setlocale(LC_ALL, "") == NULL) {
++   if (setlocale(LC_CTYPE, "") == NULL) {
+       TRACE(PREFIX_W "Could not set default locale.\n");
+    }
+ 

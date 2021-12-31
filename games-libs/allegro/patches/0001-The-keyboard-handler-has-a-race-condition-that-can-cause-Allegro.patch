@@ -1,0 +1,97 @@
+From ec6196afeeefe83c9e717ea5fba7a2f81632680d Mon Sep 17 00:00:00 2001
+From: Etienne Vouga <evouga@gmail.com>
+Date: Sun, 13 Aug 2017 01:38:32 -0500
+Subject: The keyboard handler has a race condition that can cause Allegro
+ programs to stop accepting any keyboard input (usually manifests itself after
+ the program has been running a considerable length of time). Replaced the old
+ attempt at protecting the critical section with a mutex.
+
+
+diff --git a/src/keyboard.c b/src/keyboard.c
+index c433268a7f6a..34fced3d9f2f 100644
+--- a/src/keyboard.c
++++ b/src/keyboard.c
+@@ -134,6 +134,7 @@ typedef struct KEY_BUFFER
+ static volatile KEY_BUFFER key_buffer;
+ static volatile KEY_BUFFER _key_buffer;
+ 
++static void *key_mutex;
+ 
+ 
+ /* add_key:
+@@ -163,12 +164,7 @@ static INLINE void add_key(volatile KEY_BUFFER *buffer, int key, int scancode)
+       }
+    }
+ 
+-   buffer->lock++;
+-
+-   if (buffer->lock != 1) {
+-      buffer->lock--;
+-      return;
+-   }
++   system_driver->lock_mutex(key_mutex);
+ 
+    if ((waiting_for_input) && (keyboard_driver) && (keyboard_driver->stop_waiting_for_input))
+       keyboard_driver->stop_waiting_for_input();
+@@ -184,7 +188,7 @@ static INLINE void add_key(volatile KEY_BUFFER *buffer, int key, int scancode)
+       buffer->end = c;
+    }
+ 
+-   buffer->lock--;
++   system_driver->unlock_mutex(key_mutex);
+ }
+ 
+ 
+@@ -197,14 +193,12 @@ void clear_keybuf(void)
+    if (keyboard_polled)
+       poll_keyboard();
+ 
+-   key_buffer.lock++;
+-   _key_buffer.lock++;
++   system_driver->lock_mutex(key_mutex);
+ 
+    key_buffer.start = key_buffer.end = 0;
+    _key_buffer.start = _key_buffer.end = 0;
+ 
+-   key_buffer.lock--;
+-   _key_buffer.lock--;
++   system_driver->unlock_mutex(key_mutex);
+ 
+    if ((keypressed_hook) && (readkey_hook))
+       while (keypressed_hook())
+@@ -400,6 +394,13 @@ END_OF_STATIC_FUNCTION(repeat_timer);
+ {
+    key_buffer.lock = _key_buffer.lock = 0;
+ 
++   // since this mode of using the keyboard handler does not have a removal
++   // function, it leaks memory---but at least we can limit the leak to only
++   // a single mutex even if the user calls this function a bunch of times
++   // for some reason.
++   if(!key_mutex)
++      key_mutex = system_driver->create_mutex();
++
+    clear_keybuf();
+    clear_key();
+ 
+@@ -651,6 +652,9 @@ int install_keyboard(void)
+    LOCK_FUNCTION(repeat_timer);
+ 
+    key_buffer.lock = _key_buffer.lock = 0;
++   
++   if(!key_mutex)
++      key_mutex = system_driver->create_mutex();
+ 
+    clear_keybuf();
+    clear_key();
+@@ -720,6 +724,11 @@ void remove_keyboard(void)
+ 
+    clear_keybuf();
+    clear_key();
++   
++   if(key_mutex) {
++      system_driver->destroy_mutex(key_mutex);
++      key_mutex = NULL;
++   }
+ 
+    key_shifts = _key_shifts = 0;
+ 

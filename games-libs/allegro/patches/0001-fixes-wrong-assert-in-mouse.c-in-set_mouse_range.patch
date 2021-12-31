@@ -1,0 +1,19 @@
+From 30aabedb5c520ef5696acbb791d080ebc6b037a1 Mon Sep 17 00:00:00 2001
+From: Érico Vieira Porto <ericoporto2008@gmail.com>
+Date: Sun, 21 Jun 2020 15:17:11 -0300
+Subject: fixes wrong assert in mouse.c in set_mouse_range
+
+
+diff --git a/src/mouse.c b/src/mouse.c
+index 96b25b284946..7f9c6a551879 100644
+--- a/src/mouse.c
++++ b/src/mouse.c
+@@ -858,7 +858,7 @@ void set_mouse_range(int x1, int y1, int x2, int y2)
+    ASSERT(x1 >= 0);
+    ASSERT(y1 >= 0);
+    ASSERT(x2 >= x1);
+-   ASSERT(y2 >= y2);
++   ASSERT(y2 >= y1);
+ 
+    if (!mouse_driver)
+       return;

@@ -1,3 +1,21 @@
+2021-12-30 Ismael Luceno <ismael@sourcemage.org>
+	* CONFIGURE, DEPENDS, DETAILS: updated spell to 4.4.2
+	* BUILD, INSTALL, asm.patch: removed, no longer needed
+	* PRE_BUILD: switched to apply_patch_dir
+	* 0001-Don-t-override-CMAKE_INSTALL_PREFIX-if-it-is-already-set..patch,
+	  0001-Fix-building-with-Mesa-18.2.5-and-later.patch,
+	  0001-Fix-typo-preventing-get_executable_name-from-using-System-V-procfs.patch,
+	  0001-Include-stdio.h-for-printf-declaration..patch,
+	  0001-Make-internal-function-get_value-in-jpgalleg-static.patch,
+	  0001-Remove-f-variants-of-fixed-math-functions.patch,
+	  0001-Fix-format-string-warnings-Andreas-R-nnquist-..patch,
+	  0001-The-keyboard-handler-has-a-race-condition-that-can-cause-Allegro.patch,
+	  0001-fixes-wrong-assert-in-mouse.c-in-set_mouse_range.patch,
+	  0001-x-xkeyboard.c-Changes-setlocale-to-LC_CTYPE.patch,
+	  0001-xwin.c-fix-broken-xwin_set_window_name.patch,
+	  0001-xwin.c-increase-X_MAX_EVENTS-to-50.patch:
+	  added build fixes and bug fixes
+
 2011-10-10 Bor Kraljič <pyrobor@ver.si>
 	* DEPENDS: removed arts as optional dependency
 

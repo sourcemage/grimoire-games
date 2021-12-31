@@ -1,0 +1,21 @@
+From 987f67ac1026871788b9a78761c20c1cfd13c227 Mon Sep 17 00:00:00 2001
+From: rofl0r <retnyg@gmx.net>
+Date: Sun, 13 Jan 2019 14:38:20 +0000
+Subject: xwin.c: increase X_MAX_EVENTS to 50
+
+this should fix mouse lag on Linux with hi-res devices.
+( see https://github.com/aseprite/aseprite/issues/283 )
+
+diff --git a/src/x/xwin.c b/src/x/xwin.c
+index a37f864ac4ed..040603880712 100644
+--- a/src/x/xwin.c
++++ b/src/x/xwin.c
+@@ -162,7 +162,7 @@ static int use_bgr_palette_hack = FALSE; /* use BGR hack for color conversion pa
+ int _xwin_missed_input;
+ #endif
+ 
+-#define X_MAX_EVENTS   5
++#define X_MAX_EVENTS   50
+ #define MOUSE_WARP_DELAY   200
+ 
+ static char _xwin_driver_desc[256] = EMPTY_STRING;

@@ -1,0 +1,135 @@
+From 15633498073044f0d0cbf4e102a6f51b2065e67d Mon Sep 17 00:00:00 2001
+From: Peter Wang <tjaden@users.sourceforge.net>
+Date: Thu, 12 Apr 2012 13:32:41 +0000
+Subject: Fix format string warnings (Andreas Rönnquist).
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+[ismael@sourcemage.org: Merged with followup patch by Peter Wang
+ 7c331f1b8115 ("Replace unnecessary uses of format string functions")
+ plus added a missing edit in the same spirit]
+
+diff --git a/examples/exkeys.c b/examples/exkeys.c
+index 9ea8485f5073..6d16202c7d04 100644
+--- a/examples/exkeys.c
++++ b/examples/exkeys.c
+@@ -73,7 +73,7 @@ void keypress_handler(int scancode)
+    color = scancode & 0x80 ? makecol(255, 255, 0) : makecol(128, 0, 0);
+    rectfill(screen, x, y, x + 95, y + 8, color);
+    ustrzncpy(str, sizeof(str), scancode_to_name(i), 12);
+-   textprintf_ex(screen, font, x + 1, y + 1, makecol(0, 0, 0), -1, "%s", str);
++   textout_ex(screen, font, str, x + 1, y + 1, makecol(0, 0, 0), -1);
+ }
+ END_OF_FUNCTION(keypress_handler)
+ 
+@@ -193,7 +193,7 @@ int main(void)
+       if (key_shifts & KB_NUMLOCK_FLAG)  strcat(buf, " num");
+       if (key_shifts & KB_SCROLOCK_FLAG) strcat(buf, " scrl");
+       scroll();
+-      textprintf_ex(screen, font, 8, SCREEN_H-16, makecol(0, 0, 0), makecol(255, 255, 255), buf);
++      textout_ex(screen, font, buf, 8, SCREEN_H-16, makecol(0, 0, 0), makecol(255, 255, 255);
+    } while (k != 27);
+ 
+    /* various scan codes are defined in allegro.h as KEY_* constants */
+@@ -234,7 +234,7 @@ int main(void)
+       if (key[KEY_8]) buf[8] = '8'; else buf[8] = ' ';
+       if (key[KEY_9]) buf[9] = '9'; else buf[9] = ' ';
+       buf[10] = 0;
+-      textprintf_ex(screen, font, 8, SCREEN_H-16, makecol(0, 0, 0), makecol(255, 255, 255), buf);
++      textout_ex(screen, font, buf, 8, SCREEN_H-16, makecol(0, 0, 0), makecol(255, 255, 255));
+       rest(1);
+    } while (!keypressed() || (readkey() >> 8) != KEY_ESC);
+ 
+diff --git a/examples/extrans2.c b/examples/extrans2.c
+index 4400a117b930..1b25f56446b8 100644
+--- a/examples/extrans2.c
++++ b/examples/extrans2.c
+@@ -211,7 +211,7 @@ int main(int argc, char **argv)
+       } else {
+          msg = "no flipping";
+       }
+-      textprintf_ex(buffer, font, 1, 1, makecol(255, 255, 255), -1, msg);
++      textout_ex(buffer, font, msg, 1, 1, makecol(255, 255, 255), -1);
+ 
+       /* finally blit the back buffer on the screen */
+       blit(buffer, screen, 0, 0, 0, 0, buffer->w, buffer->h);
+diff --git a/setup/setup.c b/setup/setup.c
+index 894bacbe283a..915ffeb55719 100644
+--- a/setup/setup.c
++++ b/setup/setup.c
+@@ -1163,7 +1163,7 @@ static void plot_joystick_state(BITMAP *bmp, int i)
+ 	 textprintf_ex(bmp, font, SCREEN_W/2-96, SCREEN_H/2-60+c*20, -1, -1, uconvert_ascii("%s (%d/%d)", tmp),
+                     joystick_driver->name, i+1, num_joysticks);
+       else
+-	 textprintf_ex(bmp, font, SCREEN_W/2-96, SCREEN_H/2-60+c*20, -1, -1, joystick_driver->name);
++	 textout_ex(bmp, font, joystick_driver->name, SCREEN_W/2-96, SCREEN_H/2-60+c*20, -1, -1);
+       c++;
+    }
+ 
+@@ -2879,7 +2879,7 @@ int main(void)
+       alert(uconvert_ascii("Error loading " SETUP_DATA_FILE, tmp1), NULL, NULL, uconvert_ascii("OK", tmp2), NULL, 13, 0);
+     #else
+       set_gfx_mode(GFX_TEXT, 0, 0, 0, 0);
+-      allegro_message(uconvert_ascii("Error loading " SETUP_DATA_FILE "\n", tmp1));
++      allegro_message("%s", uconvert_ascii("Error loading " SETUP_DATA_FILE "\n", tmp1));
+     #endif
+       return 1;
+    }
+diff --git a/src/linux/ljoy.c b/src/linux/ljoy.c
+index 283b8093c3f1..b60402315f4c 100644
+--- a/src/linux/ljoy.c
++++ b/src/linux/ljoy.c
+@@ -93,7 +93,7 @@ static int joy_init(void)
+ 
+       if (ioctl(joy_fd[i], JSIOCGVERSION, &raw_version) < 0) {
+          /* NOTE: IOCTL fails if the joystick API is version 0.x */
+-         uszprintf(allegro_error, ALLEGRO_ERROR_SIZE, get_config_text("Your Linux joystick API is version 0.x which is unsupported."));
++         ustrzcpy(allegro_error, ALLEGRO_ERROR_SIZE, get_config_text("Your Linux joystick API is version 0.x which is unsupported."));
+          return -1; 
+       }
+       
+diff --git a/src/unix/umodules.c b/src/unix/umodules.c
+index aaa070c48b7a..15afda0c8b7a 100644
+--- a/src/unix/umodules.c
++++ b/src/unix/umodules.c
+@@ -126,11 +126,11 @@ void _unix_load_modules(int system_driver)
+ 	 continue;
+ 
+       if (!fullpath_slash) {
+-         snprintf(fullpath, sizeof fullpath, filename);
++         strncpy(fullpath, filename, sizeof fullpath);
+ 	 fullpath[(sizeof fullpath) - 1] = 0;
+       }
+       else {
+-	 snprintf(fullpath_slash+1, (sizeof fullpath) - (fullpath_slash - fullpath) - 1, filename);
++	 strncpy(fullpath_slash+1, filename, (sizeof fullpath) - (fullpath_slash - fullpath) - 1);
+ 	 fullpath[(sizeof fullpath) - 1] = 0;
+       }
+       
+diff --git a/tests/play.c b/tests/play.c
+index c28230286efa..4885223aeca8 100644
+--- a/tests/play.c
++++ b/tests/play.c
+@@ -74,7 +74,7 @@ void usage(void)
+ 
+    strcat(msg, "\nIf you don't specify the card, Allegro will auto-detect (ie. guess :-)\n");
+ 
+-   allegro_message(msg);
++   allegro_message("%s", msg);
+    free(msg);
+ }
+ 
+diff --git a/tools/pack.c b/tools/pack.c
+index 09418530ee67..58d7f17b862f 100644
+--- a/tools/pack.c
++++ b/tools/pack.c
+@@ -42,7 +42,7 @@ static void err(char *s1, char *s2)
+       printf(": %s", s1);
+ 
+    if (s2)
+-      printf(s2);
++      printf("%s", s2);
+ 
+    printf("\n");
+ 

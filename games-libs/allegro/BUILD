@@ -1,3 +1,3 @@
-OPTS="$ALLEGRO_ALL_OPTS $OPTS" &&
-make_single &&
+OPTS+=' -DSHARED=on -DWANT_EXAMPLES=off' &&
+CFLAGS+=' -Wno-unused' &&
 default_build

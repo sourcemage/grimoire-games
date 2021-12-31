@@ -1,0 +1,19 @@
+From 71088c7ad2e7764d1aecdea2dbca9cd46cae18e8 Mon Sep 17 00:00:00 2001
+From: Trent Gamblin <trent@nooskewl.ca>
+Date: Tue, 3 Jan 2017 12:36:10 -0700
+Subject: Make internal function get_value in jpgalleg static
+
+
+diff --git a/addons/jpgalleg/src/decode.c b/addons/jpgalleg/src/decode.c
+index 6d5510c6999c..db1b9f2fcf18 100644
+--- a/addons/jpgalleg/src/decode.c
++++ b/addons/jpgalleg/src/decode.c
+@@ -477,7 +477,7 @@ get_bits(int num_bits)
+  *  Reads a string of bits from the input stream and returns a properly signed
+  *  number given the category.
+  */
+-INLINE int
++static INLINE int
+ get_value(int category)
+ {
+ 	int result = get_bits(category);
