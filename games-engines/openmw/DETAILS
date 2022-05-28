@@ -1,8 +1,8 @@
            SPELL=openmw
-         VERSION=0.46.0
+         VERSION=0.47.0
           SOURCE="${SPELL}-${VERSION}.tar.gz"
    SOURCE_URL[0]=https://github.com/OpenMW/${SPELL}/archive/${SOURCE}
-     SOURCE_HASH=sha512:da384aead300552817c0d0ce03515a5ccc95dcab4e02d4c1dd0d6c5f1b01ee01209bbaea74e2d12021e3465e49b051823bb018de39675c5a22c6892893624486
+     SOURCE_HASH=sha512:517e650d0054cdba8d38de05ed3975b0fcf8de32fda59c8df7c34b973e5390efa0dd9ec79babdfdaa79dee7aa8a75009776f62fad91b9aa9aa28016c5032652b
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${SPELL}-${VERSION}"
         WEB_SITE="https://openmw.org"
       LICENSE[0]=GPL
