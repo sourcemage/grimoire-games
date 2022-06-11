@@ -1,3 +1,6 @@
+2022-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* games-utils/mumble: move to test grimoire
+
 2021-12-31 Ismael Luceno <ismael@sourcemage.org>
 	* games-libs/dumb: new spell, dynamic universal music bibliotheque
 	* games-arcade-2d/alex4: new spell, Alex the Allegator 4
