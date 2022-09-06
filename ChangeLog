@@ -1,3 +1,6 @@
+2022-09-05 Vlad Glagolev <stealth@sourcemage.org>
+	* accounts, groups: sync account data with test grimoire
+
 2022-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* games-utils/mumble: move to test grimoire
 
