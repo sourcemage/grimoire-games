@@ -1,13 +1,32 @@
            SPELL=freedoom
-         VERSION=0.5
-          SOURCE=$SPELL-iwad-$VERSION.zip
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-iwad-$VERSION
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/$SPELL/$SOURCE
-        WEB_SITE=http://freedoom.sf.net
-     SOURCE_HASH=sha1:ee56bb859cbf25c19bfee014791a3e6365dd02d6
+         VERSION=0.12.1
+          SOURCE=$SPELL-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/freedoom/freedoom/releases/download/v$VERSION/$SOURCE
+        WEB_SITE=https://freedoom.github.io
+     SOURCE_HASH=sha512:c1cb0a45976b82d092cb0aaf6958fa920dc7c7e2fdd8dcc8ae9a3b622f648e2b78d1e8022a2d501e33965949f03643a63d1d25f7f03312a8831d430dd1c5af18
+            DOCS=
+         ARCHIVE=off
       LICENSE[0]=BSD
          ENTERED=20050115
-           SHORT=" This is a complete IWAD file which can be used to play freedoom"
+           SHORT="A free FPS for DOOM engines"
 cat << EOF
-As free replacements have not yet been found for all the material in doom yet, some of the material in here is "dummy" material to fill the gap until a replacement is found.
+The Freedoom project aims to create a complete free content first person
+shooter game. But Freedoom by itself is just the raw material for a game:
+it must be paired with a compatible game engine to be played.
+
+id Software released the source code to their classic game, Doom, under the
+GNU GPL license. This means that the program code that powers Doom is free;
+Freedoom complements this with free levels, artwork, sound effects and music
+to make a completely free game.
+
+Freedoom is actually three games in one, consisting of two single player
+campaigns and one set of levels intended for multiplayer deathmatch (FreeDM).
+
+Freedoom aims to be compatible with DOOM mods, and allows most to be played
+without the need to use non-free software.
+
+Freedoom contains hundreds of original textures, sound effects and music
+tracks that can be reused royalty-free by Doom level authors and other
+independent game developers.
 EOF
