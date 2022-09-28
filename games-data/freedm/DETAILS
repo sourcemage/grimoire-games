@@ -1,0 +1,32 @@
+           SPELL=freedm
+         VERSION=0.12.1
+          SOURCE=$SPELL-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/freedoom/freedoom/releases/download/v$VERSION/$SOURCE
+        WEB_SITE=https://freedoom.github.io
+     SOURCE_HASH=sha512:77beb926ade845eafc7105b8e5ba819f6431a35178362fc8c57530493a00186091af13c5b5eece65c4fe6e3356a9f1b7d7ea9d81bc1be363118f4a467a317dce
+            DOCS=
+         ARCHIVE=off
+      LICENSE[0]=BSD
+         ENTERED=20220928
+           SHORT="DeadMatch game part of the Freedoom project"
+cat << EOF
+The Freedoom project aims to create a complete free content first person
+shooter game. But Freedoom by itself is just the raw material for a game:
+it must be paired with a compatible game engine to be played.
+
+id Software released the source code to their classic game, Doom, under the
+GNU GPL license. This means that the program code that powers Doom is free;
+Freedoom complements this with free levels, artwork, sound effects and music
+to make a completely free game.
+
+Freedoom is actually three games in one, consisting of two single player
+campaigns and one set of levels intended for multiplayer deathmatch (FreeDM).
+
+Freedoom aims to be compatible with DOOM mods, and allows most to be played
+without the need to use non-free software.
+
+Freedoom contains hundreds of original textures, sound effects and music
+tracks that can be reused royalty-free by Doom level authors and other
+independent game developers.
+EOF

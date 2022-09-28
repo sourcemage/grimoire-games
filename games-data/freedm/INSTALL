@@ -1,0 +1,6 @@
+docdir="$INSTALL_ROOT"/usr/share/doc/"$SPELL-$VERSION" &&
+datadir="$INSTALL_ROOT"/usr/share/games/doom &&
+install -v -g games -m750 -d "$datadir" &&
+install -v -g games -m440 *.wad "$datadir" &&
+install -v -m750 -d "$docdir" &&
+install -v -m440 *.txt *.html *.pdf "$docdir"
