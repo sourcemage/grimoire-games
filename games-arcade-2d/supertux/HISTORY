@@ -1,3 +1,7 @@
+2022-11-09 Ismael Luceno <ismael@sourcemage.org>
+	* PRE_BUILD, patches/0001-Fix-missing-includes.patch:
+	  fixed build against GCC 12.x+
+
 2021-12-30 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 0.6.3
 

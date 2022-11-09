@@ -1,0 +1,26 @@
+From fdef2b7de0abe9247aa31caef3f91967dfcb6a68 Mon Sep 17 00:00:00 2001
+From: Ismael Luceno <ismael@iodev.co.uk>
+Subject: [PATCH] Fix missing includes
+Date: Wed, 20 Jul 2022 13:55:15 +0200
+
+* external/partio_zip/zip_manager.hpp
+  + <memory> for std::unique_ptr
+
+---
+ external/partio_zip/zip_manager.hpp |    1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/external/partio_zip/zip_manager.hpp b/external/partio_zip/zip_manager.hpp
+index 666884dda53f..5cc6ff8fed73 100644
+--- a/external/partio_zip/zip_manager.hpp
++++ b/external/partio_zip/zip_manager.hpp
+@@ -47,6 +47,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+ #include <string>
+ #include <stdexcept>
+ #include <vector>
++#include <memory>
+ 
+ namespace Partio{
+ struct ZipFileHeader;
+--
+2.36.0
