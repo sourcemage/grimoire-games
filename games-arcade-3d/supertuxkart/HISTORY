@@ -1,3 +1,7 @@
+2022-11-09 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.4
+	* DEPENDS: added optional dep on libopenglrecorder
+
 2015-06-24 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD: Changed to cmake_build.
 	* DETAILS: Fixed SOURCE_URL[0] and SOURCE

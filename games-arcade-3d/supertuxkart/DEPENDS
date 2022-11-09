@@ -2,6 +2,10 @@ depends OPENGL &&
 depends plib   &&
 depends sdl    &&
 
+optional_depends libopenglrecorder \
+		 -DBUILD_RECORDER={1,0} \
+		 'for in-game recorder support' &&
+
 optional_depends freealut \
                  ""       \
                  ""       \

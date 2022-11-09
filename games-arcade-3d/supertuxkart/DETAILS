@@ -1,9 +1,9 @@
            SPELL=supertuxkart
-         VERSION=0.9
-          SOURCE="$SPELL-$VERSION-src.tar.xz"
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/SuperTuxKart/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:0876ad8bda49b3a26be82ee60742704608f4aca3e16fc038a06d9aa8dce9389b15fa69b547eca4b4a3c073cea495e7872924732a2e66802987c905348ff25ebb
-SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+         VERSION=1.4
+          SOURCE="SuperTuxKart-$VERSION-src.tar.xz"
+   SOURCE_URL[0]=https://github.com/$SPELL/stk-code/releases/download/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:e88f3fb5ccdb38d0ef75e92d73b43c5cc7a1f6c76ac9502033df099a00d6dc3e86b2c5442b806237d2420c44ada7dd23a2c90ecf94785a44d2348c933770a5ab
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SOURCE%.tar.xz}"
         WEB_SITE="http://supertuxkart.sourceforge.net/"
       LICENSE[0]=GPL
          ENTERED=20080224
