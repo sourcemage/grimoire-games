@@ -1,8 +1,8 @@
            SPELL=openmsx
-         VERSION=17.0
+         VERSION=18.0
           SOURCE="$SPELL-$VERSION.tar.gz"
-   SOURCE_URL[0]=https://github.com/openMSX/openMSX/releases/download/RELEASE_17_0/$SOURCE
-     SOURCE_HASH=sha512:4fc87efd2bfbcd12bebb4e005b18b1cb2048f5d8f3188ef9b55f1e003c8d021fb47bd67d647137daa6a8640b5656b0db363f3b62158d690ddb5f7bf1af3459e1
+   SOURCE_URL[0]=https://github.com/openMSX/openMSX/releases/download/RELEASE_${VERSION/./_}/$SOURCE
+     SOURCE_HASH=sha512:f395fae8eac3bcb9334251c1c266a8c4d2951d6510a7c4885ddbc95aaed39f4ef8ae12a177d4a9ff44745ca368055f55f9983029b47441f4fd9731696f79809f
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
         WEB_SITE="https://openmsx.org/"
       LICENSE[0]="GPL-2.0-only"

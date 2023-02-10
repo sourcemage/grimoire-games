@@ -1,2 +1,6 @@
+2023-02-10 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS, PRE_BUILD, patches/0001-add-explicit-ctime-include.patch:
+	  updated spell to 18.0
+
 2021-09-16 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD, DEPENDS, DETAILS: spell created

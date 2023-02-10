@@ -1,0 +1,32 @@
+From 189b0a91a0cea58de3248cabfaf4ef67c6fd9639 Mon Sep 17 00:00:00 2001
+From: John Helmert III <ajak@gentoo.org>
+Date: Tue, 6 Sep 2022 20:50:46 -0500
+Subject: [PATCH] add explicit ctime include
+
+Without it, we hit build failures related to missing time_t in some
+cases:
+
+https://bugs.gentoo.org/868726
+
+Signed-off-by: John Helmert III <ajak@gentoo.org>
+Upstream-Status: Backport
+Signed-off-by: Ismael Luceno <ismael@sourcemage.org>
+---
+ src/file/FileBase.hh | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/file/FileBase.hh b/src/file/FileBase.hh
+index 979c851913eb..fcbcebcad92f 100644
+--- a/src/file/FileBase.hh
++++ b/src/file/FileBase.hh
+@@ -4,6 +4,7 @@
+ #include "MemBuffer.hh"
+ #include "span.hh"
+ #include <cstdint>
++#include <ctime>
+ #include <string>
+ 
+ namespace openmsx {
+-- 
+2.39.1
+
