@@ -1,9 +1,9 @@
 # Watch: https://github.com/mamedev/mame/releases >MAME ([0-9.]+)<
            SPELL=mame
-         VERSION=0.249
+         VERSION=0.253
           SOURCE="mame${VERSION/.}.tar.gz"
    SOURCE_URL[0]="https://github.com/mamedev/mame/archive/$SOURCE"
-     SOURCE_HASH=sha512:bb769afe0abd6d3e07d2491a376185cc0cc6e1f79f6d4e1a66435355ca025cd7639bbd45a1fcb7db5cc35c19e9519dfb6f117cf4d0c675ad2e365c61d7fa14bb
+     SOURCE_HASH=sha512:0cd9a95ef7e79a3d870ad7dc8d4d857e7001e067d10449c94f1ed4e83eb9e930343d4f2fa2a33ce3fd980f8202ffcac2a776c333b8db337120958da8eaeb5dc7
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/mame-mame${VERSION/.}"
            TMPFS=off
         WEB_SITE="http://mamedev.org/"
