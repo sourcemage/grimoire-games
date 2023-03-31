@@ -1,3 +1,4 @@
+# Watch: https://github.com/mamedev/mame/releases >MAME ([0-9.]+)<
            SPELL=mame
          VERSION=0.249
           SOURCE="mame${VERSION/.}.tar.gz"
