@@ -1,3 +1,3 @@
-iOPTS="${OPENTTD_DEDICATED} ${OPTS}" &&
+OPTS="${OPENTTD_DEDICATED} ${OPTS}" &&
 
 default_build
