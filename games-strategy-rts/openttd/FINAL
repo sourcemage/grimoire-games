@@ -1,3 +1,4 @@
+if [[ "$OPENTTD_GAME_FILES" == "original" ]]; then
   message "${PROBLEM_COLOR}Warning:${DEFAULT_COLOR}\n" \
           "  This game is dependant on non-free game data.\n" \
           "\n" \
@@ -6,7 +7,9 @@
           "    ${MESSAGE_COLOR}sample.cat${DEFAULT_COLOR}\n" \
           "    ${MESSAGE_COLOR}*.grf${DEFAULT_COLOR}" \
           "\n" \
-          "  Put these files into the ${MESSAGE_COLOR}/usr/share/games/openttd/data${DEFAULT_COLOR} directory.\n" \
+          "  Put these files into the ${MESSAGE_COLOR}/usr/share/games/openttd/baseset${DEFAULT_COLOR} directory.\n" \
           "\n" \
           "  If you would also like the original music, put the files from the ${MESSAGE_COLOR}gm/${DEFAULT_COLOR} dir\n" \
           "  into the ${MESSAGE_COLOR}/usr/share/games/openttd/gm${DEFAULT_COLOR} directory."
+          "  See https://wiki.openttd.org/en/Manual/Installation for official instructions."
+fi

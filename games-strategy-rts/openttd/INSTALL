@@ -1,1 +1,8 @@
-make install INSTALL:=1
+default_install &&
+
+if [[ "$OPENTTD_GAME_FILES" == "opensource" ]]; then
+	cd "${INSTALL_ROOT}/usr/share/games/openttd/baseset" &&
+        unpack_file 2
+        unpack_file 3
+        unpack_file 4
+fi
