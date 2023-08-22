@@ -1,3 +1,4 @@
+depends cmake    &&
 depends zlib     &&
 depends lzo      &&
 depends libpng   &&
