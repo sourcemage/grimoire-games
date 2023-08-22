@@ -1,43 +1,16 @@
-optional_depends  sdl                                          \
-                  "--with-sdl"                                 \
-                  "--without-sdl"                              \
-                  "SDL video driver"                           &&
-optional_depends  allegro                                      \
-                  "--with-allegro"                             \
-                  "--without-allegro"                          \
-                  "Allegro video driver"                       &&
-# This is _not_ tmidity the program, but libtimidity the
-# library.
-# Create a spell for that one and then we can depend on it.
-#optional_depends  TIMIDITY                                     \
-#                  --with-libtimidity                           \
-#                  --without-libtimidity                        \
-#                  "Enable MIDI music with TiMidity++"          &&
-optional_depends  libpng                                       \
-                  "--with-png"                                 \
-                  "--without-png"                              \
-                  "Enable screenshots using PNG"               &&
-optional_depends  zlib                                         \
-                  "--with-zlib"                                \
-                  "--without-zlib"                             \
-                  "Enable zlib-compressed savegames"           &&
-optional_depends  xz-utils                                     \
-                  --with-liblzma                               \
-                  --without-liblzma                            \
-                  "Enable LZMA-compressed savegames"           &&
-optional_depends  lzo                                          \
-                  --with-liblzo2                               \
-                  --without-liblzo2                            \
-                  "Enabze LZO-compressed savegames"            &&
-optional_depends  freetype2                                    \
-                  "--with-freetype"                            \
-                  "--without-freetype"                         \
-                  "Enable freetype support"                    &&
-optional_depends  fontconfig                                   \
-                  "--with-fontconfig"                          \
-                  "--without-config"                           \
-                  "Enable fontconfig"                          &&
-optional_depends  icu                                          \
-                  "--with-icu"                                 \
-                  "--without-icu"                              \
-                  "right-to-left text support"
+depends zlib     &&
+depends lzo      &&
+depends libpng   &&
+depends xz-utils &&
+
+if [[ "$OPENTTD_DEDICATED" == "n" ]]; then
+    depends sdl2       &&
+    depends allegro    &&
+    depends fluidsynth &&
+    depends freetype2  &&
+    depends fontconfig
+fi &&
+
+if [[ "$OPENTTD_GAME_FILES" == "opensource" ]]; then
+    depends unzip
+fi

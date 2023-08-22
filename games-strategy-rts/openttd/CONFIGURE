@@ -1,5 +1,9 @@
-config_query_option  OPENTTD_OPTS               \
-                     "Enable network support?"  \
-                     y                          \
-                     "--with-network"           \
-                     "--without-network"
+config_query_option  OPENTTD_DEDICATED                            \
+                     "Build dedicated (server, no GUI) version?"  \
+                     n                                            \
+                     "-DOPTION_DEDICATED=ON"                      \
+                     "-DOPTION_DEDICATED=OFF"                    &&
+
+config_query_list OPENTTD_GAME_FILES                              \
+                     "Which game files to use?"                   \
+                     original opensource

@@ -1,3 +1,19 @@
+2023-08-21: Stephane Fontaine <esselfe16@gmail.com>
+	* DETAILS: version 13.4
+	  Add opensource game files
+	  Change from gz to xz tarball
+	  Adjust warning about original files
+	  Change license from GPL to GPL2
+	  Use HTTPS links
+	* BUILD: switch to cmake build system
+	* INSTALL: switch to cmake and conditionally extract
+	  opensource game files
+	* DEPENDS: zlib, libpng, lzo and xz-utils now required
+	  Conditionally depend on sdl2, allegro, fluidsynth,
+	  freetype and fontconfig if not building the dedicated version
+	  Add depends on unzip if building with the opensource game files
+	* PREPARE, FINAL: Add link to official openttd wiki
+
 2016-04-09 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 1.6.0
 

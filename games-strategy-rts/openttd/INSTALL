@@ -1,1 +1,8 @@
-make install INSTALL:=1
+cmake_install &&
+
+if [[ "$OPENTTD_GAME_FILES" == "opensource" ]]; then
+	cd /usr/share/games/openttd/baseset &&
+        unpack_file 2
+        unpack_file 3
+        unpack_file 4
+fi

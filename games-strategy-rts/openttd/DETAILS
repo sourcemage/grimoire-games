@@ -1,12 +1,23 @@
            SPELL=openttd
-         VERSION=1.6.0
-          SOURCE=$SPELL-$VERSION-source.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://binaries.openttd.org/releases/${VERSION}/${SOURCE}
-        WEB_SITE=http://www.openttd.org/
-         ENTERED=20040708
+         VERSION=13.4
+          SOURCE=$SPELL-$VERSION-source.tar.xz
+   SOURCE_URL[0]=https://cdn.openttd.org/${SPELL}-releases/${VERSION}/${SOURCE}
      SOURCE_HASH=sha512:d235e6e094b2e3fda0cf58a2dce1e5d779654bee638def60f00da4e7c6443b00a6f3b204d5a63cf56e141074c8aa3700ce7e9f1b1eccbb5cd36260f1892ad501
-      LICENSE[0]=GPL
+if [[ "$OPENTTD_GAME_FILES" == "opensource" ]]; then
+         SOURCE2=opengfx-7.1-all.zip
+         SOURCE3=opensfx-1.0.3-all.zip
+         SOURCE4=openmsx-0.4.2-all.zip
+  SOURCE2_URL[0]=https://cdn.openttd.org/opengfx-releases/7.1/${SOURCE2}
+  SOURCE3_URL[0]=https://cdn.openttd.org/opensfx-releases/1.0.3/${SOURCE3}
+  SOURCE4_URL[0]=https://cdn.openttd.org/openmsx-releases/0.4.2/${SOURCE4}
+    SOURCE2_HASH=sha512:89dbb5cb45f3d720290d78904611ee3173617d97f4f49176fb10949b7d78bb0348b1aa7e12743c0cf3834b09ed73c1e161e04ae7532f2baffe4f1259bc8df04c
+    SOURCE3_HASH=sha512:4a3f0d19efe97729a1918101b8cb59a01a84aae43e432d697c9ca9af38296e1de0665b705dba0b3a29b8b04df6629c98eb8690534c7e70566f573ce72cab30b0
+    SOURCE4_HASH=sha512:6fdcec91ffcfa68ef367ff1733011a472caeb53f26fe07623ac510db80890789475919192317e6d5cddd6f3acea5bd58d8b174c23d506efcbd868392e418ed2f
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=https://www.openttd.org/
+         ENTERED=20040708
+      LICENSE[0]=GPL2
            SHORT="Open source clone of Microprose 'Transport Tycoon Deluxe'"
 cat << EOF
 OpenTTD is modeled after the original Transport Tycoon game by
@@ -38,6 +49,6 @@ Significant enhancements
 - build many trees on one tile
 - bribe the town authority
 
-IMPORTANT! You need the files from the original WINDOWS version
-of Transport Tycoon Deluxe.
+IMPORTANT! If not using the opensource game files, you need the files from the
+original WINDOWS version of Transport Tycoon Deluxe.
 EOF
