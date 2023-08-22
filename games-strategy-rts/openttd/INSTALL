@@ -1,4 +1,4 @@
-cmake_install &&
+default_install &&
 
 if [[ "$OPENTTD_GAME_FILES" == "opensource" ]]; then
 	cd /usr/share/games/openttd/baseset &&

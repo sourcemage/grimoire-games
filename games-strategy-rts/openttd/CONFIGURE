@@ -1,3 +1,5 @@
+source $GRIMOIRE/CMAKE_CONFIGURE &&
+
 config_query_option  OPENTTD_DEDICATED                            \
                      "Build dedicated (server, no GUI) version?"  \
                      n                                            \

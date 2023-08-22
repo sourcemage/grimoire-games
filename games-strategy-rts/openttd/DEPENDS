@@ -1,3 +1,4 @@
+source $GRIMOIRE/CMAKE_DEPENDS
 depends cmake    &&
 depends zlib     &&
 depends lzo      &&

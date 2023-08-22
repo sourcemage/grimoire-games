@@ -1,1 +1,1 @@
-cmake_build
+default_build
