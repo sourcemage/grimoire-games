@@ -1,0 +1,1 @@
+config_query WINEDEP 'Use system wine? (If no, external wine must be obtained elsewhere)' n

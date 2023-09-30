@@ -1,0 +1,16 @@
+# Watch: https://github.com/vinegarhq/vinegar/releases /tag/v([0-9.]+)
+           SPELL=vinegar
+         VERSION=1.4.4
+          SOURCE=$SPELL-v$VERSION.tar.xz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-v$VERSION"
+   SOURCE_URL[0]=https://github.com/${SPELL}hq/${SPELL}/releases/download/v${VERSION}/$SOURCE
+     SOURCE_HASH=sha512:cb64a1c114be8bdfd6fa6c37e4ae0cda1a8442c64b17136931105affee462ad1b1fd45f7709032299ebb735cffc4ae0025b2353aa0ff29d79efd74d427fb2e47
+      LICENSE[0]=GPL
+        WEB_SITE=https://vinegarhq.github.io/
+         ENTERED=20230930
+        KEYWORDS="roblox game grapejuice"
+           SHORT="minimal bootstrapper for roblox"
+cat << EOF
+Vinegar is a transparent, minimal, configurable, and fast bootstrapper
+for Roblox Player and Roblox Studio.
+EOF

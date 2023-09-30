@@ -1,3 +1,6 @@
+2023-09-30 Conner Clere <xenanthropy@sourcemage.org>
+	* games-z-rejected/vinegar: new spell, minimal bootstrapper for roblox
+
 2022-09-28 Ismael Luceno <ismael@sourcemage.org>
 	* games-data/freedm: new spell, DeadMatch game part of the Freedoom
 	  project

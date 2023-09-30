@@ -1,0 +1,9 @@
+message "${YELLOW}" \
+        "WARNING:${MESSAGE_COLOR} this spell relies on 32-bit libraries being supplied\n" \
+        "(Wine and gnutls) Without these, roblox will not work. If you are installing\n" \
+        "on 32-bit SMGL, you are fine. If you are installing on 64-bit SMGL, you\n" \
+        "will need to source 32-bit libraries of said programs elsewhere.\n" \
+        "(For wine, a pre-compiled package is recommended as you need both\n" \
+        "32-bit libs and binaries). If you go the pre-compiled route, you will need to\n" \
+        "edit vinegar's config with ${YELLOW}\`vinegar edit\`${MESSAGE_COLOR} and change 'wineroot'\n" \
+        "to the path of your extracted pre-built wine${DEFAULT_COLOR}"
