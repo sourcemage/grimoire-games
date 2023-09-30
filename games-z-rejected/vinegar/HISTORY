@@ -1,3 +1,6 @@
 2023-09-30 Conner Clere <xenanthropy@sourcemage.org>
+	* DETAILS: fix version number (1.4.4 > 1.4.5)
+
+2023-09-30 Conner Clere <xenanthropy@sourcemage.org>
 	* CONFIGURE, BUILD, DEPENDS, FINAL, DETAILS: version 1.4.5, new spell
 
