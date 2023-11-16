@@ -1,9 +1,0 @@
-depends PKG-CONFIG &&
-depends go         &&
-depends gnutls     &&
-
-if [[ $WINEDEP == y ]]; then
-  depends wine
-fi &&
-
-suggest_depends gamescope '' '' 'gamescope usage (highly recommended on wayland)'
