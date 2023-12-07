@@ -1,3 +1,6 @@
+2023-12-07 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS, DETAILS: updated spell to 5.8.0
+
 2021-12-30 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 5.4.0
 	* DEPENDS: fixed typo in redis dep

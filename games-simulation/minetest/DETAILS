@@ -10,10 +10,10 @@ FORCE_DOWNLOAD[1]=on
     SOURCE_URL[0]=git://github.com/${SPELL}/${SPELL}.git
     SOURCE_IGNORE=volatile
 else
-          VERSION=5.4.0
+          VERSION=5.8.0
            SOURCE=${SPELL}-${VERSION}.tar.gz
     SOURCE_URL[0]=https://github.com/${SPELL}/${SPELL}/archive/${VERSION}.tar.gz
-      SOURCE_HASH=sha512:4cb43678c56ee2ccf9d5dd9c1fc0007119d598a4a56df43fc2a1b827efe08feba0008a30bdb1a1fcd4efe0ada88484b7be0c9e46f108d5424451adb0999b0bcb
+      SOURCE_HASH=sha512:0b376ecc051032ccb542f2f76e2b1f5c351b32f1c211027825b1538095f44cb1447cd0976cb85a4cde4ecb53873bcb9f3778799271ed65b038a031dc137c2aba
  SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
 fi
           SOURCE2="irrlicht-${IRRLICHT_VERSION}.zip"

@@ -16,7 +16,7 @@ optional_depends gettext \
                  "translation support" &&
 
 if list_find "${MINETEST_OPTS}" "-DBUILD_CLIENT=1"; then
-  depends irrlicht &&
+  depends irrlichtmt &&
   depends bzip2 &&
   depends libpng &&
   depends JPEG &&
