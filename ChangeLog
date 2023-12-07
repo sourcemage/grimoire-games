@@ -1,3 +1,6 @@
+2023-12-07 Ismael Luceno <ismael@sourcemage.org>
+	* games-engines/irrlichtmt: new spell, Minetest's fork of Irrlicht
+
 2023-11-16 Conner Clere <xenanthropy@sourcemage.org>
 	* games-z-rejected/vinegar: removed, moving to z-rejected grimoire
 

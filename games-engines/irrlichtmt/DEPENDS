@@ -1,0 +1,15 @@
+. "$GRIMOIRE"/CMAKE_DEPENDS &&
+depends JPEG &&
+depends libpng &&
+depends libx11 &&
+depends zlib &&
+
+optional_depends OPENGL \
+                 -DENABLE_OPENGL=ON \
+                 -DENABLE_OPENGL=OFF \
+                 "OpenGL support (recommended)" &&
+
+optional_depends sdl2 \
+                 -DUSE_SDL2=ON \
+                 -DUSE_SDL2=OFF \
+                 "SDL2 support"

@@ -1,0 +1,17 @@
+# Watch: https://github.com/minetest/irrlicht/tags refs/tags/([0-9.]+mt[0-9]+)
+. "$GRIMOIRE"/CMAKE_FUNCTIONS
+           SPELL=irrlichtmt
+         VERSION=1.9.0mt13
+          SOURCE="irrlicht-$VERSION.tar.gz"
+   SOURCE_URL[0]=https://github.com/minetest/irrlicht/archive/refs/tags/$VERSION.tar.gz
+     SOURCE_HASH=sha512:5226d78eaacf8b56eafbbb6359bfb6137f9d6a555a252224e33d39c0d219fcb7d0d29fd3828961eee37d55940f3aa6e767fea31c96fb772dd5eca3889f5ac16e
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SOURCE%.tar.gz}"
+        WEB_SITE="https://github.com/minetest/irrlicht/"
+      LICENSE[0]=ZLIB
+         ENTERED=20231207
+           SHORT="Minetest's fork of Irrlicht"
+cat << EOF
+IrrlichtMt is the 3D engine of Minetest. It is based on the Irrlicht Engine
+but is now developed independently. It is intentionally not compatible to
+upstream and is planned to be eventually absorbed into Minetest.
+EOF
