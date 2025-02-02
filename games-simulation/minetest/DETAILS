@@ -1,4 +1,4 @@
-# Watch: https://github.com/minetest/minetest/tags /refs/tags/[0-9.]+[.]tar
+# Watch: https://github.com/minetest/minetest/tags
 . "$GRIMOIRE/FUNCTIONS"
            SPELL=minetest
  IRRLICHT_VERSION=1.8.1
