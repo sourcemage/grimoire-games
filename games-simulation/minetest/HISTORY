@@ -1,3 +1,10 @@
+2025-04-03 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 5.11.0
+	  updated WEB_SITE
+	* DEPENDS: build both server and client against irrlichtmt
+	* DETAILS, CONFIGURE: removed scm branch
+	* PRE_BUILD, PREPARE: removed, no longer needed
+
 2023-12-07 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS, DETAILS: updated spell to 5.8.0
 

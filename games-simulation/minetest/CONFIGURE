@@ -1,3 +1,5 @@
+persistent_remove MINETEST_BRANCH &&
+
 config_query_option MINETEST_OPTS "Build client?" y \
                     "-DBUILD_CLIENT=1" \
                     "-DBUILD_CLIENT=0" &&

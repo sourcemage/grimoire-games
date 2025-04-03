@@ -1,4 +1,5 @@
 depends cmake &&
+depends irrlichtmt &&
 depends zlib &&
 depends sqlite &&
 
@@ -16,7 +17,6 @@ optional_depends gettext \
                  "translation support" &&
 
 if list_find "${MINETEST_OPTS}" "-DBUILD_CLIENT=1"; then
-  depends irrlichtmt &&
   depends bzip2 &&
   depends libpng &&
   depends JPEG &&

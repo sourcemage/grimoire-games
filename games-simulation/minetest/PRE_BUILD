@@ -1,7 +1,0 @@
-default_pre_build        &&
-
-if list_find "${MINETEST_OPTS}" "-DBUILD_SERVER=1" && ! spell_ok irrlicht; then
-  cd "${SOURCE_DIRECTORY}" &&
-  unpack_file 2            &&
-  OPTS="${OPTS} -DIRRLICHT_SOURCE_DIR=./irrlicht-${IRRLICHT_VERSION}"
-fi

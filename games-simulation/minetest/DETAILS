@@ -1,25 +1,12 @@
 # Watch: https://github.com/minetest/minetest/tags
 . "$GRIMOIRE/FUNCTIONS"
            SPELL=minetest
- IRRLICHT_VERSION=1.8.1
-if [ "${MINETEST_BRANCH}" == "scm" ]; then
-          VERSION=$(get_scm_version)
-           SOURCE=${SPELL}-${MINETEST_BRANCH}.tar.bz2
- SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${MINETEST_BRANCH}
-FORCE_DOWNLOAD[1]=on
-    SOURCE_URL[0]=git://github.com/${SPELL}/${SPELL}.git
-    SOURCE_IGNORE=volatile
-else
-          VERSION=5.8.0
+          VERSION=5.11.0
            SOURCE=${SPELL}-${VERSION}.tar.gz
     SOURCE_URL[0]=https://github.com/${SPELL}/${SPELL}/archive/${VERSION}.tar.gz
-      SOURCE_HASH=sha512:0b376ecc051032ccb542f2f76e2b1f5c351b32f1c211027825b1538095f44cb1447cd0976cb85a4cde4ecb53873bcb9f3778799271ed65b038a031dc137c2aba
- SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
-fi
-          SOURCE2="irrlicht-${IRRLICHT_VERSION}.zip"
-   SOURCE2_URL[0]=http://downloads.sourceforge.net/irrlicht/${SOURCE2}
-     SOURCE2_HASH=sha512:93390c162e5a8edb231588d47dc421c24d21a34e833df1f3b92c85a9e8ef4a96a61d854e05eedb37f88f7f02821059e78a40a52cbc8e39356c4d36b17775dfbb
-         WEB_SITE="http://minetest.net/"
+      SOURCE_HASH=sha512:0d22efe21f42a671ee6df697282f3b0b82f098d0460b339fefca3d507c789edafc262e4b2154dc97d4b5f4a076e052f7cf14e794525643157be63fb28380f44d
+ SOURCE_DIRECTORY="${BUILD_DIRECTORY}/luanti-${VERSION}"
+         WEB_SITE="https://www.luanti.org/"
        LICENSE[0]=LGPL
           ENTERED=20140916
             SHORT="infinite-world block sandbox game with survival and crafting"
