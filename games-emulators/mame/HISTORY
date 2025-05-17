@@ -1,3 +1,15 @@
+2025-05-17 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: removed system lua (fails to build)
+	* BUILD: fixed MAKE_NJOBS usage
+	  fixed OS detection
+	* patches/musl-time_t.patch, patches/musl-netlist.patch:
+	  removed, no longer needed
+	* PRE_BUILD: apply patches using apply_patch_dir
+	* patches/0001-bx-Re-add-musl-libc-support.patch,
+	  patches/0001-pulse_sound-Fix-missing-include.patch:
+	  fixed build against musl
+	* DETAILS: updated spell to 0.277
+
 2023-03-31 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 0.253
 

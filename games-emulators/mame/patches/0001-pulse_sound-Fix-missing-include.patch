@@ -1,0 +1,24 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Taner Tas <taner76@gmail.com>
+Date: Sun, 27 Mar 2022 20:51:14 +0000
+Subject: [PATCH] pulse_sound: Fix missing include
+
+Origin: Alpine Linux
+Upstream-Status: Unknown
+
+[ismael@sourcemage.org: Normalised]
+Signed-off-by: Ismael Luceno <ismael@sourcemage.org>
+---
+ src/osd/modules/sound/pulse_sound.cpp |    1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/src/osd/modules/sound/pulse_sound.cpp
++++ b/src/osd/modules/sound/pulse_sound.cpp
+@@ -19,6 +19,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <poll.h>
++#include <signal.h>
+ 
+ #include <thread>
+ #include <pulse/pulseaudio.h>

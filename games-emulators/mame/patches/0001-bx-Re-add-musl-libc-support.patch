@@ -1,0 +1,60 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ismael Luceno <ismael@sourcemage.org>
+Date: Fri, 14 Jun 2024 08:45:35 +0200
+Subject: [PATCH] bx: Re-add musl libc support
+
+Upstream-Status: Pending
+Origin: Source Mage
+Signed-off-by: Ismael Luceno <ismael@sourcemage.org>
+---
+ 3rdparty/bx/include/bx/platform.h |    3 +++
+ 3rdparty/bx/tests/macros_test.cpp |    1 +
+ 3rdparty/bx/src/file.cpp          |    2 ++
+ 3 files changed, 6 insertions(+)
+
+diff --git a/3rdparty/bx/include/bx/platform.h b/3rdparty/bx/include/bx/platform.h
+index 37aa34edc..210d4b4d3 100644
+--- a/3rdparty/bx/include/bx/platform.h
++++ b/3rdparty/bx/include/bx/platform.h
+@@ -255,6 +255,7 @@
+ 	&& !BX_CRT_LIBCXX \
+ 	&& !BX_CRT_MINGW  \
+ 	&& !BX_CRT_MSVC   \
++	&& !BX_CRT_MUSL   \
+ 	&& !BX_CRT_NEWLIB
+ #		undef  BX_CRT_NONE
+ #		define BX_CRT_NONE 1
+@@ -432,6 +433,8 @@
+ #	define BX_CRT_NAME "Clang C Library"
+ #elif BX_CRT_NEWLIB
+ #	define BX_CRT_NAME "Newlib"
++#elif BX_CRT_MUSL
++#	define BX_CRT_NAME "musl libc"
+ #elif BX_CRT_NONE
+ #	define BX_CRT_NAME "None"
+ #else
+diff --git a/3rdparty/bx/tests/macros_test.cpp b/3rdparty/bx/tests/macros_test.cpp
+index eb39edb55..787068046 100644
+--- a/3rdparty/bx/tests/macros_test.cpp
++++ b/3rdparty/bx/tests/macros_test.cpp
+@@ -13,6 +13,7 @@ BX_STATIC_ASSERT(false
+ 	|| BX_CRT_LIBCXX
+ 	|| BX_CRT_MINGW
+ 	|| BX_CRT_MSVC
++	|| BX_CRT_MUSL
+ 	|| BX_CRT_NEWLIB
+ 	);
+ 
+diff --git a/src/file.cpp b/src/file.cpp
+index 1ed80a03bc85..8654ff81743e 100644
+--- a/3rdparty/bx/src/file.cpp
++++ b/3rdparty/bx/src/file.cpp
+@@ -3,6 +3,8 @@
+  * License: https://github.com/bkaradzic/bx/blob/master/LICENSE
+  */
+ 
++#define _LARGEFILE64_SOURCE // for fseeko64 & ftello64
++
+ #include <bx/file.h>
+ 
+ #ifndef BX_CONFIG_CRT_FILE_READER_WRITER
