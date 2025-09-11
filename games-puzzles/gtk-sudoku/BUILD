@@ -1,1 +1,2 @@
+CFLAGS+=' -fcommon' &&
 make

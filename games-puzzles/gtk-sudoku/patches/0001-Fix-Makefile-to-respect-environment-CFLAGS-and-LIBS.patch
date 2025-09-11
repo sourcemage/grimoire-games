@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ismael Luceno <ismael@sourcemage.org>
+Date: Thu, 11 Sep 2025 08:15:03 +0200
+Subject: Fix Makefile to respect environment CFLAGS and LIBS
+
+Upstream-Status: Pending
+Origin: Source Mage
+Signed-off-by: Ismael Luceno <ismael@sourcemage.org>
+---
+ Makefile |    5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index b54a8d315577..11d8f510df3b 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,6 @@
+-CFLAGS = -g -Wall -O2 `pkg-config --cflags gtk+-2.0 gthread-2.0`
+-LIBS = `pkg-config --libs gtk+-2.0 gthread-2.0`
++CFLAGS ?= -g -Wall -O2
++CFLAGS += `pkg-config --cflags gtk+-2.0 gthread-2.0`
++LIBS += `pkg-config --libs gtk+-2.0 gthread-2.0`
+ CC = gcc
+ OBJS = generator.o solver.o sudoku.o
+ 
