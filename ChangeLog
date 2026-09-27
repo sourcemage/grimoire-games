@@ -1,3 +1,6 @@
+2026-09-27 Ismael Luceno <ismael@sourcemage.org>
+	* games-emulators/dosbox: move spell to the main grimoire
+
 2023-12-07 Ismael Luceno <ismael@sourcemage.org>
 	* games-engines/irrlichtmt: new spell, Minetest's fork of Irrlicht
 
